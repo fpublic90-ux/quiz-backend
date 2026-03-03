@@ -18,11 +18,11 @@ function generateCode() {
 /**
  * Create a new room with the host player
  */
-function createRoom(playerName, socketId) {
+function createRoom(playerName, socketId, uid) {
     const code = generateCode();
     rooms[code] = {
         code,
-        players: [{ id: socketId, name: playerName, score: 0 }],
+        players: [{ id: socketId, uid, name: playerName, score: 0 }],
         status: 'waiting', // waiting | playing | finished
         questions: [],
         currentQuestionIndex: -1,
@@ -35,18 +35,30 @@ function createRoom(playerName, socketId) {
  * Join an existing room
  * Returns { success, room, error }
  */
-function joinRoom(code, playerName, socketId) {
+function joinRoom(code, playerName, socketId, uid) {
     const room = rooms[code];
     if (!room) return { success: false, error: 'Room not found' };
     if (room.status !== 'waiting') return { success: false, error: 'Game already in progress' };
-    if (room.players.length >= 4) return { success: false, error: 'Room is full (max 4 players)' };
+
+    // Handle reconnection by UID
+    if (uid) {
+        const existingPlayer = room.players.find((p) => p.uid === uid);
+        if (existingPlayer) {
+            console.log(`🔄 Player ${playerName} reconnected to room ${code} (UID: ${uid})`);
+            existingPlayer.id = socketId;
+            existingPlayer.name = playerName; // Update name in case it changed
+            return { success: true, room };
+        }
+    }
 
     // Prevent duplicate socket
     if (room.players.find((p) => p.id === socketId)) {
         return { success: true, room };
     }
 
-    room.players.push({ id: socketId, name: playerName, score: 0 });
+    if (room.players.length >= 6) return { success: false, error: 'Room is full (max 6 players)' };
+
+    room.players.push({ id: socketId, uid, name: playerName, score: 0 });
     return { success: true, room };
 }
 

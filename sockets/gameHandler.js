@@ -1,6 +1,7 @@
 const RoomManager = require('../managers/RoomManager');
 const TimerManager = require('../managers/TimerManager');
 const Question = require('../models/Question');
+const User = require('../models/User');
 
 const QUESTIONS_PER_GAME = 10;
 const POINTS_PER_CORRECT = 10;
@@ -78,10 +79,36 @@ async function advanceQuestion(io, code) {
 /**
  * End the game and send leaderboard
  */
-function endGame(io, code) {
+async function endGame(io, code) {
     TimerManager.clearTimer(code);
     RoomManager.setStatus(code, 'finished');
     const leaderboard = RoomManager.getLeaderboard(code);
+
+    // Persist stats for each player
+    const winnerId = leaderboard[0]?.id;
+
+    for (const player of leaderboard) {
+        if (player.uid) {
+            try {
+                const isWinner = player.id === winnerId;
+                const user = await User.findOne({ uid: player.uid });
+                if (user) {
+                    user.gamesPlayed += 1;
+                    user.totalScore += player.score;
+                    if (isWinner) user.wins += 1;
+
+                    // Simple leveling: 1 level per 100 total score points
+                    user.level = Math.floor(user.totalScore / 100) + 1;
+
+                    await user.save();
+                    console.log(`📈 Persisted stats for ${player.name} (UID: ${player.uid})`);
+                }
+            } catch (err) {
+                console.error(`❌ Failed to persist stats for ${player.name}:`, err);
+            }
+        }
+    }
+
     io.to(code).emit('game_over', {
         leaderboard,
         winner: leaderboard[0] || null,
@@ -93,12 +120,12 @@ function endGame(io, code) {
  */
 function registerGameHandlers(io, socket) {
     // ─── create_room ───────────────────────────────────────────────────────────
-    socket.on('create_room', ({ playerName }) => {
+    socket.on('create_room', ({ playerName, uid }) => {
         if (!playerName || playerName.trim() === '') {
             socket.emit('error', { message: 'Player name is required' });
             return;
         }
-        const room = RoomManager.createRoom(playerName.trim(), socket.id);
+        const room = RoomManager.createRoom(playerName.trim(), socket.id, uid);
         socket.join(room.code);
         socket.emit('room_created', {
             code: room.code,
@@ -108,13 +135,13 @@ function registerGameHandlers(io, socket) {
     });
 
     // ─── join_room ─────────────────────────────────────────────────────────────
-    socket.on('join_room', ({ roomCode, playerName }) => {
+    socket.on('join_room', ({ roomCode, playerName, uid }) => {
         if (!playerName || playerName.trim() === '' || !roomCode) {
             socket.emit('error', { message: 'Player name and room code are required' });
             return;
         }
 
-        const result = RoomManager.joinRoom(roomCode.toUpperCase(), playerName.trim(), socket.id);
+        const result = RoomManager.joinRoom(roomCode.toUpperCase(), playerName.trim(), socket.id, uid);
         if (!result.success) {
             socket.emit('error', { message: result.error });
             return;
@@ -128,12 +155,42 @@ function registerGameHandlers(io, socket) {
         socket.emit('room_joined', { code: room.code, players: playerList });
         io.to(room.code).emit('player_joined', { players: playerList });
 
-        console.log(`👤 ${playerName} joined room ${room.code} (${room.players.length}/4)`);
+        console.log(`👤 ${playerName} joined room ${room.code} (${room.players.length}/6)`);
 
-        // Auto-start when 4 players join
-        if (room.players.length === 4) {
-            startGame(io, room.code);
+        // Removed auto-start; favoring manual start by host
+    });
+
+    // ─── start_game ────────────────────────────────────────────────────────────
+    socket.on('start_game', ({ roomCode }) => {
+        const code = roomCode.toUpperCase();
+        console.log(`🚀 Received start_game for room: ${code}`);
+        socket.emit('info', { message: `Server received start_game for ${code}` });
+
+        const room = RoomManager.getRoom(code);
+        if (!room) {
+            console.log(`❌ Room not found: ${code}`);
+            socket.emit('error', { message: 'Room not found' });
+            return;
         }
+
+        socket.emit('info', { message: `Room found. Players: ${room.players.length}. Host ID matches: ${room.players[0].id === socket.id}` });
+
+        // Only host can start
+        if (room.players[0].id !== socket.id) {
+            console.log(`⚠️ Non-host tried to start game. Host: ${room.players[0].id}, Socket: ${socket.id}`);
+            socket.emit('error', { message: `Only the host can start the game. You: ${socket.id}, Host: ${room.players[0].id}` });
+            return;
+        }
+
+        if (room.players.length < 2) {
+            console.log(`⚠️ Not enough players: ${room.players.length}`);
+            socket.emit('error', { message: 'Need at least 2 players to start' });
+            return;
+        }
+
+        console.log('✅ Starting game sequence...');
+        socket.emit('info', { message: 'Starting game sequence...' });
+        startGame(io, code, socket);
     });
 
     // ─── submit_answer ─────────────────────────────────────────────────────────
@@ -205,16 +262,20 @@ function registerGameHandlers(io, socket) {
 /**
  * Start the game: fetch questions, set status, begin first question
  */
-async function startGame(io, code) {
+async function startGame(io, code, socket) {
     const room = RoomManager.getRoom(code);
     if (!room) return;
 
     try {
+        if (socket) socket.emit('info', { message: 'Fetching questions...' });
         const questions = await fetchQuestions(QUESTIONS_PER_GAME);
         if (questions.length < QUESTIONS_PER_GAME) {
-            io.to(code).emit('error', { message: 'Not enough questions in database. Please seed the DB.' });
+            console.log(`⚠️ Not enough questions in DB: ${questions.length}`);
+            io.to(code).emit('error', { message: 'Not enough questions in database (minimum 10 required). Please seed the DB.' });
             return;
         }
+
+        if (socket) socket.emit('info', { message: `Found ${questions.length} questions. Setting room state...` });
 
         RoomManager.setQuestions(code, questions);
         RoomManager.setStatus(code, 'playing');
@@ -225,6 +286,7 @@ async function startGame(io, code) {
         });
 
         console.log(`🎮 Game started in room ${code}`);
+        if (socket) socket.emit('info', { message: 'Game started! Emitted event to ALL.' });
 
         // Small delay then first question
         setTimeout(() => advanceQuestion(io, code), 1500);
