@@ -3,8 +3,30 @@ const router = express.Router();
 const Question = require('../models/Question');
 
 /**
+ * GET /api/questions?level=1&category=All&count=10
+ * Returns random questions matching filters
+ */
+router.get('/', async (req, res) => {
+    try {
+        const { level, category, count } = req.query;
+        const query = {};
+        if (level) query.level = parseInt(level);
+        if (category && category !== 'All') query.category = category;
+
+        const questions = await Question.aggregate([
+            { $match: query },
+            { $sample: { size: parseInt(count) || 10 } }
+        ]);
+        res.json(questions);
+    } catch (err) {
+        console.error('Error fetching questions:', err);
+        res.status(500).json({ error: 'Failed to fetch questions' });
+    }
+});
+
+/**
  * GET /api/questions/random?count=10
- * Returns N random questions (without correctIndex for security)
+ * Returns N random questions (legacy/general)
  */
 router.get('/random', async (req, res) => {
     try {
