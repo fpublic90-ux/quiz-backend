@@ -34,7 +34,7 @@ function broadcastScores(io, code) {
     const room = RoomManager.getRoom(code);
     if (!room) return;
     io.to(code).emit('update_score', {
-        players: room.players.map((p) => ({ id: p.id, uid: p.uid, name: p.name, score: p.score })),
+        players: room.players.map((p) => ({ id: p.id, uid: p.uid, name: p.name, score: p.score, isActive: p.isActive })),
     });
 }
 
@@ -110,8 +110,8 @@ async function endGame(io, code) {
     }
 
     io.to(code).emit('game_over', {
-        leaderboard: leaderboard.map(p => ({ id: p.id, uid: p.uid, name: p.name, score: p.score })),
-        winner: leaderboard[0] ? { id: leaderboard[0].id, uid: leaderboard[0].uid, name: leaderboard[0].name, score: leaderboard[0].score } : null,
+        leaderboard: leaderboard.map(p => ({ id: p.id, uid: p.uid, name: p.name, score: p.score, isActive: p.isActive })),
+        winner: leaderboard[0] ? { id: leaderboard[0].id, uid: leaderboard[0].uid, name: leaderboard[0].name, score: leaderboard[0].score, isActive: leaderboard[0].isActive } : null,
     });
 }
 
@@ -127,11 +127,18 @@ function registerGameHandlers(io, socket) {
         }
         const room = RoomManager.createRoom(playerName.trim(), socket.id, uid);
         socket.join(room.code);
+
+        const playerList = room.players.map((p) => ({ id: p.id, uid: p.uid, name: p.name, score: p.score }));
+
         socket.emit('room_created', {
             code: room.code,
-            players: room.players.map((p) => ({ id: p.id, uid: p.uid, name: p.name, score: p.score })),
+            players: playerList,
         });
-        console.log(`🏠 Room created: ${room.code} by ${playerName}`);
+
+        // Broadcast to everyone in the room (important if this was a reclamation)
+        io.to(room.code).emit('player_joined', { players: playerList });
+
+        console.log(`🏠 Room created/reclaimed: ${room.code} by ${playerName}. Total players: ${playerList.length}`);
     });
 
     // ─── join_room ─────────────────────────────────────────────────────────────
@@ -246,7 +253,7 @@ function registerGameHandlers(io, socket) {
             return;
         }
 
-        const playerList = room.players.map((p) => ({ id: p.id, uid: p.uid, name: p.name, score: p.score }));
+        const playerList = room.players.map((p) => ({ id: p.id, uid: p.uid, name: p.name, score: p.score, isActive: p.isActive }));
         io.to(code).emit('player_left', {
             playerName: removed?.name,
             players: playerList,
@@ -283,7 +290,7 @@ async function startGame(io, code, socket) {
 
         io.to(code).emit('start_game', {
             totalQuestions: QUESTIONS_PER_GAME,
-            players: room.players.map((p) => ({ id: p.id, uid: p.uid, name: p.name, score: p.score })),
+            players: room.players.map((p) => ({ id: p.id, uid: p.uid, name: p.name, score: p.score, isActive: p.isActive })),
         });
 
         console.log(`🎮 Game started in room ${code}`);

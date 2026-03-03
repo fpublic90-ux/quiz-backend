@@ -33,15 +33,15 @@ function createRoom(playerName, socketId, uid) {
             if (player) {
                 console.log(`🔄 Host reclaimed existing room ${code} (UID: ${uid})`);
 
-                // CRITICAL: Clear deletion timeout if host is back
-                if (existingRoom.deletionTimeout) {
-                    clearTimeout(existingRoom.deletionTimeout);
-                    existingRoom.deletionTimeout = null;
-                    console.log(`🛑 Deletion cancelled for reclaimed room ${code}`);
+                // Clear player's specific cleanup timeout if it exists
+                if (player.cleanupTimeout) {
+                    clearTimeout(player.cleanupTimeout);
+                    player.cleanupTimeout = null;
                 }
 
                 player.id = socketId;
                 player.name = playerName;
+                player.isActive = true;
                 return existingRoom;
             }
         }
@@ -50,7 +50,7 @@ function createRoom(playerName, socketId, uid) {
     const code = generateCode();
     rooms[code] = {
         code,
-        players: [{ id: socketId, uid, name: playerName, score: 0 }],
+        players: [{ id: socketId, uid, name: playerName, score: 0, isActive: true }],
         status: 'waiting',
         questions: [],
         currentQuestionIndex: -1,
@@ -59,30 +59,28 @@ function createRoom(playerName, socketId, uid) {
     return rooms[code];
 }
 
-/**
- * Join an existing room
- * Returns { success, room, error }
- */
 function joinRoom(code, playerName, socketId, uid) {
     const room = rooms[code];
     if (!room) return { success: false, error: 'Room not found' };
 
-    // Clear deletion timeout if it exists
-    if (room.deletionTimeout) {
-        clearTimeout(room.deletionTimeout);
-        room.deletionTimeout = null;
-        console.log(`🛑 Deletion cancelled for room ${code}`);
+    if (room.status !== 'waiting' && !room.players.find(p => p.uid === uid)) {
+        return { success: false, error: 'Game already in progress' };
     }
 
-    if (room.status !== 'waiting') return { success: false, error: 'Game already in progress' };
-
-    // Handle reconnection by UID
+    // Handle reconnection by UID (Guest Reclaim)
     if (uid) {
         const existingPlayer = room.players.find((p) => p.uid === uid);
         if (existingPlayer) {
             console.log(`🔄 Player ${playerName} reconnected to room ${code} (UID: ${uid})`);
+
+            if (existingPlayer.cleanupTimeout) {
+                clearTimeout(existingPlayer.cleanupTimeout);
+                existingPlayer.cleanupTimeout = null;
+            }
+
             existingPlayer.id = socketId;
-            existingPlayer.name = playerName; // Update name in case it changed
+            existingPlayer.name = playerName;
+            existingPlayer.isActive = true;
             return { success: true, room };
         }
     }
@@ -92,9 +90,9 @@ function joinRoom(code, playerName, socketId, uid) {
         return { success: true, room };
     }
 
-    if (room.players.length >= 6) return { success: false, error: 'Room is full (max 6 players)' };
+    if (room.players.length >= 6) return { success: false, error: 'Room is full' };
 
-    room.players.push({ id: socketId, uid, name: playerName, score: 0 });
+    room.players.push({ id: socketId, uid, name: playerName, score: 0, isActive: true });
     return { success: true, room };
 }
 
@@ -105,24 +103,29 @@ function joinRoom(code, playerName, socketId, uid) {
 function removePlayer(socketId) {
     for (const code in rooms) {
         const room = rooms[code];
-        const idx = room.players.findIndex((p) => p.id === socketId);
-        if (idx !== -1) {
-            const [removed] = room.players.splice(idx, 1);
-            room.answeredPlayers.delete(socketId);
+        const player = room.players.find((p) => p.id === socketId);
+        if (player) {
+            player.isActive = false;
+            player.id = null;
 
-            // If room is now empty, set a timeout to delete it
-            if (room.players.length === 0) {
-                console.log(`⏱️ Room ${code} is empty. Scheduling deletion in 30s...`);
-                room.deletionTimeout = setTimeout(() => {
-                    if (rooms[code] && rooms[code].players.length === 0) {
-                        delete rooms[code];
-                        console.log(`🗑️ Room ${code} deleted (timed out).`);
+            console.log(`⏱️ Player ${player.name} in room ${code} disconnected. Grace period (30s) started.`);
+
+            player.cleanupTimeout = setTimeout(() => {
+                if (!player.isActive) {
+                    const idx = room.players.indexOf(player);
+                    if (idx !== -1) {
+                        room.players.splice(idx, 1);
+                        console.log(`🗑️ Player ${player.name} permanently removed from room ${code}`);
+
+                        if (room.players.length === 0) {
+                            delete rooms[code];
+                            console.log(`🗑️ Room ${code} deleted (empty).`);
+                        }
                     }
-                }, 30000);
-                return { room: null, removed, code };
-            }
+                }
+            }, 30000);
 
-            return { room, removed, code };
+            return { room, removed: player, code };
         }
     }
     return null;
