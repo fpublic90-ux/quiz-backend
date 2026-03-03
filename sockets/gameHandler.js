@@ -151,6 +151,7 @@ function registerGameHandlers(io, socket) {
         socket.join(room.code);
 
         const playerList = room.players.map((p) => ({ id: p.id, name: p.name, score: p.score }));
+        console.log(`📡 Room ${room.code} now has ${playerList.length} players:`, playerList.map(p => p.name).join(', '));
 
         socket.emit('room_joined', { code: room.code, players: playerList });
         io.to(room.code).emit('player_joined', { players: playerList });

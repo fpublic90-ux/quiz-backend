@@ -11,7 +11,13 @@ function generateCode() {
     let code;
     do {
         code = crypto.randomBytes(3).toString('hex').toUpperCase();
-    } while (rooms[code]);
+    } while (rooms[code] && rooms[code].players.length > 0);
+
+    // If we're reusing a code that's pending deletion, clear its timeout
+    if (rooms[code] && rooms[code].deletionTimeout) {
+        clearTimeout(rooms[code].deletionTimeout);
+    }
+
     return code;
 }
 
@@ -19,11 +25,25 @@ function generateCode() {
  * Create a new room with the host player
  */
 function createRoom(playerName, socketId, uid) {
+    // If UID is provided, check if player is already in a room to reclaim it
+    if (uid) {
+        for (const code in rooms) {
+            const existingRoom = rooms[code];
+            const player = existingRoom.players.find(p => p.uid === uid);
+            if (player) {
+                console.log(`🔄 Host reclaimed existing room ${code} (UID: ${uid})`);
+                player.id = socketId;
+                player.name = playerName;
+                return existingRoom;
+            }
+        }
+    }
+
     const code = generateCode();
     rooms[code] = {
         code,
         players: [{ id: socketId, uid, name: playerName, score: 0 }],
-        status: 'waiting', // waiting | playing | finished
+        status: 'waiting',
         questions: [],
         currentQuestionIndex: -1,
         answeredPlayers: new Set(),
@@ -38,6 +58,14 @@ function createRoom(playerName, socketId, uid) {
 function joinRoom(code, playerName, socketId, uid) {
     const room = rooms[code];
     if (!room) return { success: false, error: 'Room not found' };
+
+    // Clear deletion timeout if it exists
+    if (room.deletionTimeout) {
+        clearTimeout(room.deletionTimeout);
+        room.deletionTimeout = null;
+        console.log(`🛑 Deletion cancelled for room ${code}`);
+    }
+
     if (room.status !== 'waiting') return { success: false, error: 'Game already in progress' };
 
     // Handle reconnection by UID
@@ -74,9 +102,15 @@ function removePlayer(socketId) {
             const [removed] = room.players.splice(idx, 1);
             room.answeredPlayers.delete(socketId);
 
-            // Clean up empty rooms
+            // If room is now empty, set a timeout to delete it
             if (room.players.length === 0) {
-                delete rooms[code];
+                console.log(`⏱️ Room ${code} is empty. Scheduling deletion in 30s...`);
+                room.deletionTimeout = setTimeout(() => {
+                    if (rooms[code] && rooms[code].players.length === 0) {
+                        delete rooms[code];
+                        console.log(`🗑️ Room ${code} deleted (timed out).`);
+                    }
+                }, 30000);
                 return { room: null, removed, code };
             }
 
