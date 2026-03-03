@@ -34,7 +34,7 @@ function broadcastScores(io, code) {
     const room = RoomManager.getRoom(code);
     if (!room) return;
     io.to(code).emit('update_score', {
-        players: room.players.map((p) => ({ id: p.id, name: p.name, score: p.score })),
+        players: room.players.map((p) => ({ id: p.id, uid: p.uid, name: p.name, score: p.score })),
     });
 }
 
@@ -110,8 +110,8 @@ async function endGame(io, code) {
     }
 
     io.to(code).emit('game_over', {
-        leaderboard,
-        winner: leaderboard[0] || null,
+        leaderboard: leaderboard.map(p => ({ id: p.id, uid: p.uid, name: p.name, score: p.score })),
+        winner: leaderboard[0] ? { id: leaderboard[0].id, uid: leaderboard[0].uid, name: leaderboard[0].name, score: leaderboard[0].score } : null,
     });
 }
 
@@ -129,7 +129,7 @@ function registerGameHandlers(io, socket) {
         socket.join(room.code);
         socket.emit('room_created', {
             code: room.code,
-            players: room.players.map((p) => ({ id: p.id, name: p.name, score: p.score })),
+            players: room.players.map((p) => ({ id: p.id, uid: p.uid, name: p.name, score: p.score })),
         });
         console.log(`🏠 Room created: ${room.code} by ${playerName}`);
     });
@@ -150,7 +150,7 @@ function registerGameHandlers(io, socket) {
         const room = result.room;
         socket.join(room.code);
 
-        const playerList = room.players.map((p) => ({ id: p.id, name: p.name, score: p.score }));
+        const playerList = room.players.map((p) => ({ id: p.id, uid: p.uid, name: p.name, score: p.score }));
         console.log(`📡 Room ${room.code} now has ${playerList.length} players:`, playerList.map(p => p.name).join(', '));
 
         socket.emit('room_joined', { code: room.code, players: playerList });
@@ -246,7 +246,7 @@ function registerGameHandlers(io, socket) {
             return;
         }
 
-        const playerList = room.players.map((p) => ({ id: p.id, name: p.name, score: p.score }));
+        const playerList = room.players.map((p) => ({ id: p.id, uid: p.uid, name: p.name, score: p.score }));
         io.to(code).emit('player_left', {
             playerName: removed?.name,
             players: playerList,
@@ -283,7 +283,7 @@ async function startGame(io, code, socket) {
 
         io.to(code).emit('start_game', {
             totalQuestions: QUESTIONS_PER_GAME,
-            players: room.players.map((p) => ({ id: p.id, name: p.name, score: p.score })),
+            players: room.players.map((p) => ({ id: p.id, uid: p.uid, name: p.name, score: p.score })),
         });
 
         console.log(`🎮 Game started in room ${code}`);

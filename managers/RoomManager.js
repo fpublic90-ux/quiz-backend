@@ -32,6 +32,14 @@ function createRoom(playerName, socketId, uid) {
             const player = existingRoom.players.find(p => p.uid === uid);
             if (player) {
                 console.log(`🔄 Host reclaimed existing room ${code} (UID: ${uid})`);
+
+                // CRITICAL: Clear deletion timeout if host is back
+                if (existingRoom.deletionTimeout) {
+                    clearTimeout(existingRoom.deletionTimeout);
+                    existingRoom.deletionTimeout = null;
+                    console.log(`🛑 Deletion cancelled for reclaimed room ${code}`);
+                }
+
                 player.id = socketId;
                 player.name = playerName;
                 return existingRoom;
