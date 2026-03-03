@@ -291,6 +291,13 @@ function registerGameHandlers(io, socket) {
     });
 
     // ─── disconnect ────────────────────────────────────────────────────────────
+    socket.on('send_reaction', ({ roomCode, emojiId }) => {
+        io.to(roomCode).emit('show_reaction', {
+            senderId: socket.id,
+            emojiId
+        });
+    });
+
     socket.on('disconnect', () => {
         const result = RoomManager.removePlayer(socket.id);
         if (!result) return;

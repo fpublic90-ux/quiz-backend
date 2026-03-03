@@ -7,6 +7,8 @@ const { Server } = require('socket.io');
 const questionRoutes = require('./routes/questions');
 const userRoutes = require('./routes/users');
 const leaderboardRoutes = require('./routes/leaderboard');
+const dailyRoutes = require('./routes/daily');
+const socialRoutes = require('./routes/social');
 const { registerGameHandlers } = require('./sockets/gameHandler');
 
 const app = express();
@@ -27,6 +29,8 @@ app.use(express.json());
 app.use('/api/questions', questionRoutes);
 app.use('/api/users', userRoutes);
 app.use('/api/leaderboard', leaderboardRoutes);
+app.use('/api/daily', dailyRoutes);
+app.use('/api/social', socialRoutes);
 
 app.get('/', (req, res) => {
   res.json({ status: 'Quiz Backend Running 🎯' });

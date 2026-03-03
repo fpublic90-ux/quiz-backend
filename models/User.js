@@ -60,6 +60,13 @@ const userSchema = new mongoose.Schema({
     following: [{
         type: String // List of UIDs
     }],
+    lastClaimedReward: {
+        type: Date
+    },
+    loginStreak: {
+        type: Number,
+        default: 0
+    },
     createdAt: {
         type: Date,
         default: Date.now
