@@ -25,8 +25,16 @@ const questionSchema = new mongoose.Schema(
             type: String,
             default: 'General Knowledge',
         },
+        level: {
+            type: Number,
+            required: true,
+            index: true, // Index for level-specific lookups
+        },
     },
     { timestamps: true }
 );
+
+// Composite index for level + category filtering
+questionSchema.index({ level: 1, category: 1 });
 
 module.exports = mongoose.model('Question', questionSchema);

@@ -9,8 +9,15 @@ const POINTS_PER_CORRECT = 10;
 /**
  * Fetch N random questions from MongoDB (with correctIndex for server-side grading)
  */
-async function fetchQuestions(count = QUESTIONS_PER_GAME) {
-    return Question.aggregate([{ $sample: { size: count } }]);
+async function fetchQuestions(level, category = 'All', count = QUESTIONS_PER_GAME) {
+    const query = { level: parseInt(level) };
+    if (category && category !== 'All') {
+        query.category = category;
+    }
+    return Question.aggregate([
+        { $match: query },
+        { $sample: { size: count } }
+    ]);
 }
 
 /**
@@ -169,9 +176,9 @@ function registerGameHandlers(io, socket) {
     });
 
     // ─── start_game ────────────────────────────────────────────────────────────
-    socket.on('start_game', ({ roomCode }) => {
+    socket.on('start_game', ({ roomCode, level, category }) => {
         const code = roomCode.toUpperCase();
-        console.log(`🚀 Received start_game for room: ${code}`);
+        console.log(`🚀 Received start_game for room: ${code} (Level: ${level}, Category: ${category})`);
         socket.emit('info', { message: `Server received start_game for ${code}` });
 
         const room = RoomManager.getRoom(code);
@@ -198,7 +205,7 @@ function registerGameHandlers(io, socket) {
 
         console.log('✅ Starting game sequence...');
         socket.emit('info', { message: 'Starting game sequence...' });
-        startGame(io, code, socket);
+        startGame(io, code, socket, level, category);
     });
 
     // ─── submit_answer ─────────────────────────────────────────────────────────
@@ -270,13 +277,13 @@ function registerGameHandlers(io, socket) {
 /**
  * Start the game: fetch questions, set status, begin first question
  */
-async function startGame(io, code, socket) {
+async function startGame(io, code, socket, level = 1, category = 'All') {
     const room = RoomManager.getRoom(code);
     if (!room) return;
 
     try {
-        if (socket) socket.emit('info', { message: 'Fetching questions...' });
-        const questions = await fetchQuestions(QUESTIONS_PER_GAME);
+        if (socket) socket.emit('info', { message: `Fetching questions for Level ${level} (${category})...` });
+        const questions = await fetchQuestions(level, category, QUESTIONS_PER_GAME);
         if (questions.length < QUESTIONS_PER_GAME) {
             console.log(`⚠️ Not enough questions in DB: ${questions.length}`);
             io.to(code).emit('error', { message: 'Not enough questions in database (minimum 10 required). Please seed the DB.' });
