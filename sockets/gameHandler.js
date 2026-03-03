@@ -2,6 +2,7 @@ const RoomManager = require('../managers/RoomManager');
 const TimerManager = require('../managers/TimerManager');
 const Question = require('../models/Question');
 const User = require('../models/User');
+const MatchmakingManager = require('../managers/MatchmakingManager');
 
 const QUESTIONS_PER_GAME = 10;
 const POINTS_PER_CORRECT = 10;
@@ -66,6 +67,36 @@ async function advanceQuestion(io, code) {
     const payload = safeQuestion(q, idx, room.questions.length);
 
     io.to(code).emit('new_question', payload);
+
+    // ── Bot Simulation ──────────────────
+    if (room.players.some(p => p.id.startsWith('bot_'))) {
+        room.players.forEach(p => {
+            if (p.id.startsWith('bot_')) {
+                // Bots answer between 3 and 12 seconds
+                const delay = Math.floor(Math.random() * 9000) + 3000;
+                setTimeout(() => {
+                    const currentRoom = RoomManager.getRoom(code);
+                    if (!currentRoom || currentRoom.status !== 'playing' || currentRoom.currentQuestionIndex !== idx) return;
+
+                    // Difficulty: 70% correct
+                    const isCorrect = Math.random() < 0.7;
+                    if (isCorrect) {
+                        RoomManager.addScore(code, p.id, POINTS_PER_CORRECT);
+                        broadcastScores(io, code);
+                    }
+                    const allAnswered = RoomManager.markAnswered(code, p.id);
+                    if (allAnswered) {
+                        TimerManager.clearTimer(code);
+                        io.to(code).emit('time_up', {
+                            correctIndex: q.correctIndex,
+                            correctAnswer: q.options[q.correctIndex],
+                        });
+                        setTimeout(() => advanceQuestion(io, code), 2000);
+                    }
+                }, delay);
+            }
+        });
+    }
 
     // Start server-side timer
     TimerManager.startTimer(
@@ -230,6 +261,12 @@ function registerGameHandlers(io, socket) {
         startGame(io, code, socket, level, category);
     });
 
+    // ─── find_match ─────────────────────────────────────────────────────────────
+    socket.on('find_match', ({ playerName, uid }) => {
+        if (!playerName || !uid) return;
+        MatchmakingManager.addToQueue(io, socket, playerName, uid);
+    });
+
     // ─── leave_room ────────────────────────────────────────────────────────────
     socket.on('leave_room', ({ roomCode }) => {
         const result = RoomManager.explicitLeave(socket.id);
@@ -367,4 +404,4 @@ async function startGame(io, code, socket, level = 1, category = 'All') {
     }
 }
 
-module.exports = { registerGameHandlers };
+module.exports = { registerGameHandlers, startGame };

@@ -9,7 +9,8 @@ const userRoutes = require('./routes/users');
 const leaderboardRoutes = require('./routes/leaderboard');
 const dailyRoutes = require('./routes/daily');
 const socialRoutes = require('./routes/social');
-const { registerGameHandlers } = require('./sockets/gameHandler');
+const { registerGameHandlers, startGame } = require('./sockets/gameHandler');
+const MatchmakingManager = require('./managers/MatchmakingManager');
 
 const app = express();
 const server = http.createServer(app);
@@ -20,6 +21,8 @@ const io = new Server(server, {
     methods: ['GET', 'POST'],
   },
 });
+
+MatchmakingManager.init(io, startGame);
 
 // Middleware
 app.use(cors());
