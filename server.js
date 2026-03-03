@@ -33,7 +33,7 @@ app.use('/api/questions', questionRoutes);
 app.use('/api/users', userRoutes);
 app.use('/api/leaderboard', leaderboardRoutes);
 app.use('/api/daily', dailyRoutes);
-app.use('/api/social', socialRoutes);
+app.use('/api/social', socialRoutes(io, userSockets));
 
 app.get('/', (req, res) => {
   res.json({ status: 'Quiz Backend Running 🎯' });

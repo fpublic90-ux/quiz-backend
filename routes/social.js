@@ -2,37 +2,53 @@ const express = require('express');
 const router = express.Router();
 const User = require('../models/User');
 
-// POST /api/social/follow/:targetUid
-router.post('/follow/:targetUid', async (req, res) => {
-    try {
-        const { uid } = req.body;
-        const { targetUid } = req.params;
+module.exports = (io, userSockets) => {
+    // POST /api/social/follow/:targetUid
+    router.post('/follow/:targetUid', async (req, res) => {
+        try {
+            const { uid } = req.body;
+            const { targetUid } = req.params;
 
-        if (!uid || !targetUid) return res.status(400).json({ message: 'UIDs are required' });
-        if (uid === targetUid) return res.status(400).json({ message: 'Cannot follow yourself' });
+            if (!uid || !targetUid) return res.status(400).json({ message: 'UIDs are required' });
+            if (uid === targetUid) return res.status(400).json({ message: 'Cannot follow yourself' });
 
-        const user = await User.findOne({ uid });
-        const target = await User.findOne({ uid: targetUid });
+            const user = await User.findOne({ uid });
+            const target = await User.findOne({ uid: targetUid });
 
-        if (!user || !target) return res.status(404).json({ message: 'User not found' });
+            if (!user || !target) return res.status(404).json({ message: 'User not found' });
 
-        const isFollowing = user.following.includes(targetUid);
-        if (isFollowing) {
-            // Unfollow
-            user.following = user.following.filter(id => id !== targetUid);
-        } else {
-            // Follow
-            user.following.push(targetUid);
+            const isFollowing = user.following.includes(targetUid);
+            if (isFollowing) {
+                // Unfollow
+                user.following = user.following.filter(id => id !== targetUid);
+            } else {
+                // Follow
+                user.following.push(targetUid);
+
+                // Notify target user via socket
+                if (io && userSockets) {
+                    const targetSocketId = userSockets.get(targetUid);
+                    if (targetSocketId) {
+                        io.to(targetSocketId).emit('new_follower', {
+                            followerName: user.displayName,
+                            followerUid: uid
+                        });
+                    }
+                }
+            }
+
+            await user.save();
+            res.json({ following: user.following, isFollowing: !isFollowing });
+
+        } catch (err) {
+            console.error('Follow Error:', err);
+            res.status(500).json({ message: 'Server error' });
         }
+    });
 
-        await user.save();
-        res.json({ following: user.following, isFollowing: !isFollowing });
-
-    } catch (err) {
-        console.error('Follow Error:', err);
-        res.status(500).json({ message: 'Server error' });
-    }
-});
+    // ... rest of the routes ...
+    return router;
+};
 
 // GET /api/social/search?q=query
 router.get('/search', async (req, res) => {
