@@ -162,6 +162,16 @@ async function endGame(io, code) {
 
                     await user.save();
                     console.log(`📈 Stats: ${player.name} +${xpGained} XP, +${coinReward} Coins. Tier: ${user.tier}`);
+
+                    // ── Achievements Check ──────────────────
+                    const newlyUnlocked = checkAchievements(user, player, room);
+                    if (newlyUnlocked.length > 0) {
+                        for (const achId of newlyUnlocked) {
+                            user.achievements.push({ id: achId });
+                        }
+                        await user.save();
+                        console.log(`🏆 Achievements Unlocked for ${player.name}: ${newlyUnlocked.join(', ')}`);
+                    }
                 }
             } catch (err) {
                 console.error(`❌ Failed to persist stats for ${player.name}:`, err);
@@ -304,6 +314,14 @@ function registerGameHandlers(io, socket) {
         const isCorrect = answerIndex === currentQ.correctIndex;
         if (isCorrect) {
             RoomManager.addScore(roomCode, socket.id, POINTS_PER_CORRECT);
+
+            // Speed Mastery tracking (Under 3 seconds)
+            const remaining = TimerManager.getTimeRemaining(roomCode);
+            if (remaining >= 12) {
+                const room = RoomManager.getRoom(roomCode);
+                const player = room.players.find(p => p.id === socket.id);
+                if (player) player.fastAnswers += 1;
+            }
         }
 
         socket.emit('answer_result', {
@@ -385,6 +403,7 @@ async function startGame(io, code, socket, level = 1, category = 'All') {
 
         if (socket) socket.emit('info', { message: `Found ${questions.length} questions. Setting room state...` });
 
+        room.category = category; // Save category for achievement tracking
         RoomManager.setQuestions(code, questions);
         RoomManager.setStatus(code, 'playing');
 
@@ -402,6 +421,57 @@ async function startGame(io, code, socket, level = 1, category = 'All') {
         console.error('Error starting game:', err);
         io.to(code).emit('error', { message: 'Failed to start game' });
     }
+}
+
+/**
+ * Check for all achievement criteria and return newly unlocked IDs
+ */
+function checkAchievements(user, roomPlayer, room) {
+    const newlyUnlocked = [];
+    const unlockedIds = new Set(user.achievements.map(a => a.id));
+
+    const check = (id, condition) => {
+        if (!unlockedIds.has(id) && condition) newlyUnlocked.push(id);
+    };
+
+    // Progression
+    check('first_win', user.wins >= 1);
+    check('century_club', user.level >= 100);
+    check('quiz_veteran', user.gamesPlayed >= 50);
+
+    // Tiers
+    check('silver_tier', ['Silver', 'Gold', 'Platinum', 'Diamond'].includes(user.tier));
+    check('gold_tier', ['Gold', 'Platinum', 'Diamond'].includes(user.tier));
+    check('diamond_tier', user.tier === 'Diamond');
+
+    // Stats & Skills
+    check('coin_hoarder', user.coins >= 1000);
+
+    // Category Mastery (Tracked at end of game)
+    if (room.category === 'Kerala') {
+        user.keralaGamesPlayed += 1;
+        check('malayali_expert', user.keralaGamesPlayed >= 10);
+    }
+    if (room.category === 'India') {
+        user.indiaGamesPlayed += 1;
+        check('india_champion', user.indiaGamesPlayed >= 10);
+    }
+
+    // Speed Mastery (Tracked during game)
+    if (roomPlayer.fastAnswers >= 5) {
+        user.speedMasteryCount += 1; // Increment lifetime fast games
+        check('swift_thinker', true); // Current session meta-achievement
+    } else if (user.speedMasteryCount >= 5) {
+        // Fallback for cumulative check if defined differently (desc says 5 questions total)
+        // Adjusting based on description: "Answer 5 questions in under 3 seconds"
+        // If it means 5 questions in ONE game or total.
+        // description says "Swift Thinker: Answer 5 questions in under 3 seconds"
+        // Let's assume 5 questions in ONE game based on the requirement string "Speed mastery".
+        // But if they already have it from a previous game:
+        check('swift_thinker', true);
+    }
+
+    return newlyUnlocked;
 }
 
 module.exports = { registerGameHandlers, startGame };

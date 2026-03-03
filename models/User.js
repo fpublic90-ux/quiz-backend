@@ -53,6 +53,9 @@ const userSchema = new mongoose.Schema({
         id: String,
         unlockedAt: { type: Date, default: Date.now }
     }],
+    keralaGamesPlayed: { type: Number, default: 0 },
+    indiaGamesPlayed: { type: Number, default: 0 },
+    speedMasteryCount: { type: Number, default: 0 },
     ownedItems: {
         type: [String],
         default: []

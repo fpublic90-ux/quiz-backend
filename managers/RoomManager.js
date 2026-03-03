@@ -51,7 +51,7 @@ function createRoom(playerName, socketId, uid) {
     const code = generateCode();
     rooms[code] = {
         code,
-        players: [{ id: socketId, uid, name: playerName, score: 0, isActive: true }],
+        players: [{ id: socketId, uid, name: playerName, score: 0, isActive: true, fastAnswers: 0 }],
         status: 'waiting',
         questions: [],
         currentQuestionIndex: -1,
@@ -94,7 +94,7 @@ function joinRoom(code, playerName, socketId, uid) {
 
     if (room.players.length >= 6) return { success: false, error: 'Room is full' };
 
-    room.players.push({ id: socketId, uid, name: playerName, score: 0, isActive: true });
+    room.players.push({ id: socketId, uid, name: playerName, score: 0, isActive: true, fastAnswers: 0 });
     return { success: true, room };
 }
 
