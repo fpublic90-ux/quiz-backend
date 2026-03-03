@@ -134,6 +134,29 @@ function removePlayer(socketId) {
 }
 
 /**
+ * Remove a player explicitly (no grace period)
+ */
+function explicitLeave(socketId) {
+    for (const code in rooms) {
+        const room = rooms[code];
+        const idx = room.players.indexOf(room.players.find((p) => p.id === socketId));
+        if (idx !== -1) {
+            const player = room.players[idx];
+            if (player.cleanupTimeout) clearTimeout(player.cleanupTimeout);
+            room.players.splice(idx, 1);
+            console.log(`👋 Player ${player.name} explicitly left room ${code}. No grace period.`);
+
+            if (room.players.length === 0) {
+                delete rooms[code];
+                console.log(`🗑️ Room ${code} deleted (empty).`);
+            }
+            return { code };
+        }
+    }
+    return null;
+}
+
+/**
  * Add score to a player
  */
 function addScore(code, socketId, points) {

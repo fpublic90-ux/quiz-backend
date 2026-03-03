@@ -208,6 +208,28 @@ function registerGameHandlers(io, socket) {
         startGame(io, code, socket, level, category);
     });
 
+    // ─── leave_room ────────────────────────────────────────────────────────────
+    socket.on('leave_room', ({ roomCode }) => {
+        const result = RoomManager.explicitLeave(socket.id);
+        if (!result) return;
+
+        const { code } = result;
+        const room = RoomManager.getRoom(code);
+
+        if (room) {
+            const playerList = room.players.map((p) => ({ id: p.id, uid: p.uid, name: p.name, score: p.score, isActive: p.isActive }));
+            io.to(code).emit('player_left', {
+                players: playerList,
+            });
+
+            if (room.status === 'playing' && room.players.length < 2) {
+                TimerManager.clearTimer(code);
+                endGame(io, code);
+            }
+        }
+        socket.leave(code);
+    });
+
     // ─── submit_answer ─────────────────────────────────────────────────────────
     socket.on('submit_answer', ({ roomCode, questionId, answerIndex }) => {
         const room = RoomManager.getRoom(roomCode);
@@ -280,6 +302,11 @@ function registerGameHandlers(io, socket) {
 async function startGame(io, code, socket, level = 1, category = 'All') {
     const room = RoomManager.getRoom(code);
     if (!room) return;
+
+    // Reset scores and answers for new level
+    room.players.forEach(p => p.score = 0);
+    room.answeredPlayers.clear();
+    room.currentQuestionIndex = 0;
 
     try {
         if (socket) socket.emit('info', { message: `Fetching questions for Level ${level} (${category})...` });
