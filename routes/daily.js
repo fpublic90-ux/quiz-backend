@@ -54,12 +54,7 @@ router.post('/claim', async (req, res) => {
         user.lastClaimedReward = now;
         await user.save();
 
-        res.json({
-            message: 'Daily reward claimed!',
-            reward: rewardCoins,
-            newBalance: user.coins,
-            streak: user.loginStreak
-        });
+        res.json(user);
 
     } catch (err) {
         console.error('Daily Claim Error:', err);
