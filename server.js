@@ -39,13 +39,29 @@ app.get('/', (req, res) => {
   res.json({ status: 'Quiz Backend Running 🎯' });
 });
 
+// In-memory mapping of UID to socket ID for invitations
+const userSockets = new Map(); // Map<uid, socketId>
+
 // Socket.io
 io.on('connection', (socket) => {
   console.log(`🔌 Client connected: ${socket.id}`);
-  registerGameHandlers(io, socket);
+
+  // Listen for user identification to map socket
+  socket.on('identify', (uid) => {
+    if (uid) {
+      userSockets.set(uid, socket.id);
+      socket.uid = uid;
+      console.log(`🆔 User identified: ${uid} -> ${socket.id}`);
+    }
+  });
+
+  registerGameHandlers(io, socket, userSockets);
 
   socket.on('disconnect', () => {
     console.log(`❌ Client disconnected: ${socket.id}`);
+    if (socket.uid) {
+      userSockets.delete(socket.uid);
+    }
   });
 });
 

@@ -188,7 +188,7 @@ async function endGame(io, code) {
 /**
  * Register all socket event handlers
  */
-function registerGameHandlers(io, socket) {
+function registerGameHandlers(io, socket, userSockets) {
     // ─── create_room ───────────────────────────────────────────────────────────
     socket.on('create_room', ({ playerName, uid }) => {
         if (!playerName || playerName.trim() === '') {
@@ -342,6 +342,21 @@ function registerGameHandlers(io, socket) {
                 correctAnswer: currentQ.options[currentQ.correctIndex],
             });
             setTimeout(() => advanceQuestion(io, roomCode), 2000);
+        }
+    });
+
+    // ─── invite_friend ──────────────────────────────────────────────────────────
+    socket.on('invite_friend', ({ targetUid, roomCode, hostName }) => {
+        const targetSocketId = userSockets.get(targetUid);
+        if (targetSocketId) {
+            io.to(targetSocketId).emit('receive_invite', {
+                hostName,
+                roomCode,
+                fromUid: socket.uid
+            });
+            console.log(`✉️ Invite sent from ${hostName} to User ${targetUid} for room ${roomCode}`);
+        } else {
+            socket.emit('error', { message: 'User is offline' });
         }
     });
 
