@@ -30,6 +30,10 @@ const questionSchema = new mongoose.Schema(
             required: true,
             index: true, // Index for level-specific lookups
         },
+        imageUrl: {
+            type: String, // Optional URL for image-based questions
+            default: null,
+        },
     },
     { timestamps: true }
 );

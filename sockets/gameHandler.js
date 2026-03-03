@@ -31,6 +31,7 @@ function safeQuestion(q, index, total) {
         category: q.category,
         questionNumber: index + 1,
         totalQuestions: total,
+        imageUrl: q.imageUrl || null,
     };
 }
 
@@ -92,23 +93,44 @@ async function endGame(io, code) {
     const leaderboard = RoomManager.getLeaderboard(code);
 
     // Persist stats for each player
-    const winnerId = leaderboard[0]?.id;
-
-    for (const player of leaderboard) {
+    for (let i = 0; i < leaderboard.length; i++) {
+        const player = leaderboard[i];
         if (player.uid) {
             try {
-                const isWinner = player.id === winnerId;
+                const rank = i + 1;
                 const user = await User.findOne({ uid: player.uid });
                 if (user) {
                     user.gamesPlayed += 1;
                     user.totalScore += player.score;
-                    if (isWinner) user.wins += 1;
+                    if (rank === 1) user.wins += 1;
 
-                    // Simple leveling: 1 level per 100 total score points
-                    user.level = Math.floor(user.totalScore / 100) + 1;
+                    // Award Coins based on rank
+                    let coinReward = 10;
+                    if (rank === 1) coinReward = 100;
+                    else if (rank === 2) coinReward = 50;
+                    else if (rank === 3) coinReward = 30;
+                    user.coins += coinReward;
+
+                    // Award XP based on score and rank multiplier
+                    let xpMultiplier = 1.0;
+                    if (rank === 1) xpMultiplier = 1.5;
+                    else if (rank === 2) xpMultiplier = 1.2;
+                    else if (rank === 3) xpMultiplier = 1.1;
+                    const xpGained = Math.round(player.score * xpMultiplier);
+                    user.xp += xpGained;
+
+                    // Leveling: 1 level per 200 total XP
+                    user.level = Math.floor(user.xp / 200) + 1;
+
+                    // Update Tier
+                    if (user.xp >= 15000) user.tier = 'Diamond';
+                    else if (user.xp >= 7000) user.tier = 'Platinum';
+                    else if (user.xp >= 3000) user.tier = 'Gold';
+                    else if (user.xp >= 1000) user.tier = 'Silver';
+                    else user.tier = 'Bronze';
 
                     await user.save();
-                    console.log(`📈 Persisted stats for ${player.name} (UID: ${player.uid})`);
+                    console.log(`📈 Stats: ${player.name} +${xpGained} XP, +${coinReward} Coins. Tier: ${user.tier}`);
                 }
             } catch (err) {
                 console.error(`❌ Failed to persist stats for ${player.name}:`, err);

@@ -6,6 +6,7 @@ const mongoose = require('mongoose');
 const { Server } = require('socket.io');
 const questionRoutes = require('./routes/questions');
 const userRoutes = require('./routes/users');
+const leaderboardRoutes = require('./routes/leaderboard');
 const { registerGameHandlers } = require('./sockets/gameHandler');
 
 const app = express();
@@ -25,6 +26,7 @@ app.use(express.json());
 // Routes
 app.use('/api/questions', questionRoutes);
 app.use('/api/users', userRoutes);
+app.use('/api/leaderboard', leaderboardRoutes);
 
 app.get('/', (req, res) => {
   res.json({ status: 'Quiz Backend Running 🎯' });

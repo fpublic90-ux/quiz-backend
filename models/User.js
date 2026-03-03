@@ -36,6 +36,30 @@ const userSchema = new mongoose.Schema({
         type: Number,
         default: 1
     },
+    xp: {
+        type: Number,
+        default: 0
+    },
+    coins: {
+        type: Number,
+        default: 100 // Start with some coins
+    },
+    tier: {
+        type: String,
+        enum: ['Bronze', 'Silver', 'Gold', 'Platinum', 'Diamond'],
+        default: 'Bronze'
+    },
+    achievements: [{
+        id: String,
+        unlockedAt: { type: Date, default: Date.now }
+    }],
+    ownedItems: {
+        type: [String],
+        default: []
+    },
+    following: [{
+        type: String // List of UIDs
+    }],
     createdAt: {
         type: Date,
         default: Date.now
