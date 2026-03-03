@@ -128,7 +128,7 @@ function registerGameHandlers(io, socket) {
         const room = RoomManager.createRoom(playerName.trim(), socket.id, uid);
         socket.join(room.code);
 
-        const playerList = room.players.map((p) => ({ id: p.id, uid: p.uid, name: p.name, score: p.score }));
+        const playerList = room.players.map((p) => ({ id: p.id, uid: p.uid, name: p.name, score: p.score, isActive: p.isActive }));
 
         socket.emit('room_created', {
             code: room.code,
@@ -157,7 +157,7 @@ function registerGameHandlers(io, socket) {
         const room = result.room;
         socket.join(room.code);
 
-        const playerList = room.players.map((p) => ({ id: p.id, uid: p.uid, name: p.name, score: p.score }));
+        const playerList = room.players.map((p) => ({ id: p.id, uid: p.uid, name: p.name, score: p.score, isActive: p.isActive }));
         console.log(`📡 Room ${room.code} now has ${playerList.length} players:`, playerList.map(p => p.name).join(', '));
 
         socket.emit('room_joined', { code: room.code, players: playerList });

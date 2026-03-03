@@ -26,10 +26,11 @@ function generateCode() {
  */
 function createRoom(playerName, socketId, uid) {
     // If UID is provided, check if player is already in a room to reclaim it
-    if (uid) {
+    const normalizedUid = uid ? uid.toString().trim() : null;
+    if (normalizedUid && normalizedUid !== '') {
         for (const code in rooms) {
             const existingRoom = rooms[code];
-            const player = existingRoom.players.find(p => p.uid === uid);
+            const player = existingRoom.players.find(p => p.uid === normalizedUid);
             if (player) {
                 console.log(`🔄 Host reclaimed existing room ${code} (UID: ${uid})`);
 
@@ -68,8 +69,9 @@ function joinRoom(code, playerName, socketId, uid) {
     }
 
     // Handle reconnection by UID (Guest Reclaim)
-    if (uid) {
-        const existingPlayer = room.players.find((p) => p.uid === uid);
+    const normalizedUid = uid ? uid.toString().trim() : null;
+    if (normalizedUid && normalizedUid !== '') {
+        const existingPlayer = room.players.find((p) => p.uid === normalizedUid);
         if (existingPlayer) {
             console.log(`🔄 Player ${playerName} reconnected to room ${code} (UID: ${uid})`);
 
