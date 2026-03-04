@@ -153,7 +153,7 @@ async function seedUsers() {
 
         for (const u of fakeUsers) {
             const fakeUid = `fake_${u.name.toLowerCase()}_${Date.now()}`;
-            const email = `${u.name.toLowerCase()}@quizblitz.fake`;
+            const email = u.email || `${u.name.toLowerCase()}@quizblitz.fake`;
 
             // Check if already exists
             const existing = await User.findOne({ email });
@@ -163,26 +163,31 @@ async function seedUsers() {
                 continue;
             }
 
-            const level = Math.floor(u.xp / 200) + 1;
+            // Calculation logic to avoid NaN
+            const level = u.level || (u.xp ? Math.floor(u.xp / 200) + 1 : 1);
+            const xp = u.xp || (u.level ? (u.level - 1) * 200 : 0);
+            const totalScore = u.totalScore || u.score || 0;
+            const gamesPlayed = u.games || (u.wins ? Math.floor(u.wins * 1.5) : 0);
+            const avatar = u.avatar || u.avatarKey || 'avatar1';
 
             await User.create({
                 uid: fakeUid,
                 displayName: u.name,
                 email,
-                avatar: u.avatarKey,
-                totalScore: u.score,
-                gamesPlayed: u.games,
-                wins: u.wins,
+                avatar,
+                totalScore,
+                gamesPlayed,
+                wins: u.wins || 0,
                 level,
-                xp: u.xp,
-                coins: u.coins,
-                tier: u.tier,
+                xp,
+                coins: u.coins || 100,
+                tier: u.tier || 'Bronze',
                 achievements: u.achievements || [],
                 ownedItems: u.ownedItems || [],
                 following: [],
             });
 
-            console.log(`✅ Created ${u.name} | XP: ${u.xp} | Tier: ${u.tier} | Level: ${level}`);
+            console.log(`✅ Created ${u.name} | Level: ${level} | Tier: ${u.tier}`);
             created++;
         }
 
