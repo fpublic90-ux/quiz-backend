@@ -169,6 +169,11 @@ async function endGame(io, code) {
                     if (newlyUnlocked.length > 0) {
                         await AchievementManager.persistAchievements(user, newlyUnlocked);
                         console.log(`🏆 Achievements Unlocked for ${player.name}: ${newlyUnlocked.join(', ')}`);
+
+                        // Emit real-time notification to this specific player
+                        io.to(player.id).emit('achievement_unlocked', {
+                            achievements: newlyUnlocked
+                        });
                     }
                 }
             } catch (err) {

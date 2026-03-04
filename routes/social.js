@@ -46,45 +46,42 @@ module.exports = (io, userSockets) => {
         }
     });
 
-    // ... rest of the routes ...
+    // GET /api/social/search?q=query
+    router.get('/search', async (req, res) => {
+        try {
+            const { q } = req.query;
+            if (!q) return res.json([]);
+
+            const users = await User.find({
+                displayName: { $regex: q, $options: 'i' }
+            })
+                .limit(10)
+                .select('uid displayName avatar level tier ownedItems');
+
+            res.json(users);
+        } catch (err) {
+            console.error('Search Error:', err);
+            res.status(500).json({ message: 'Server error' });
+        }
+    });
+
+    // GET /api/social/following/:uid
+    router.get('/following/:uid', async (req, res) => {
+        try {
+            const { uid } = req.params;
+            const user = await User.findOne({ uid });
+            if (!user) return res.status(404).json({ message: 'User not found' });
+
+            const followingUsers = await User.find({
+                uid: { $in: user.following }
+            }).select('uid displayName avatar level tier ownedItems');
+
+            res.json(followingUsers);
+        } catch (err) {
+            console.error('Get Following Error:', err);
+            res.status(500).json({ message: 'Server error' });
+        }
+    });
+
     return router;
 };
-
-// GET /api/social/search?q=query
-router.get('/search', async (req, res) => {
-    try {
-        const { q } = req.query;
-        if (!q) return res.json([]);
-
-        const users = await User.find({
-            displayName: { $regex: q, $options: 'i' }
-        })
-            .limit(10)
-            .select('uid displayName avatar level tier');
-
-        res.json(users);
-    } catch (err) {
-        console.error('Search Error:', err);
-        res.status(500).json({ message: 'Server error' });
-    }
-});
-
-// GET /api/social/following/:uid
-router.get('/following/:uid', async (req, res) => {
-    try {
-        const { uid } = req.params;
-        const user = await User.findOne({ uid });
-        if (!user) return res.status(404).json({ message: 'User not found' });
-
-        const followingUsers = await User.find({
-            uid: { $in: user.following }
-        }).select('uid displayName avatar level tier');
-
-        res.json(followingUsers);
-    } catch (err) {
-        console.error('Get Following Error:', err);
-        res.status(500).json({ message: 'Server error' });
-    }
-});
-
-module.exports = router;
