@@ -127,27 +127,50 @@ async function seedUsers() {
 
         console.log(`\n🎉 Seeded/Updated ${fakeUsers.length} players. Now linking them...`);
 
-        // Second pass: Interconnect all fake users
+        // Second pass: Interconnect all fake users with proper counts
         const allFakeUsers = await User.find({ displayName: { $in: fakeUsers.map(u => u.name) } });
         const allUids = allFakeUsers.map(u => u.uid);
 
-        for (const user of allFakeUsers) {
-            // Follow everyone EXCEPT themselves
-            const otherUids = allUids.filter(uid => uid !== user.uid);
-
-            // Update the user's following and followers lists to include all other fake users
-            await User.updateOne(
-                { uid: user.uid },
-                {
-                    $set: {
-                        following: otherUids,
-                        followers: otherUids
-                    }
-                }
-            );
+        // Build a map: name -> { followerCount, followingCount }
+        const userConfig = {};
+        for (const u of fakeUsers) {
+            userConfig[u.name] = {
+                followerCount: u.followerCount || 0,
+                followingCount: u.followingCount || 0,
+            };
         }
 
-        console.log(`✅ All ${allFakeUsers.length} players are now following each other!`);
+        for (const user of allFakeUsers) {
+            const cfg = userConfig[user.displayName] || {};
+            const targetFollowers = cfg.followerCount || 0;
+            const targetFollowing = cfg.followingCount || 0;
+
+            // Start with the real fake user UIDs (exclude self)
+            const otherUids = allUids.filter(uid => uid !== user.uid);
+
+            // Build followers list: real fake users + dummy UIDs to reach target
+            const followers = [...otherUids];
+            let fi = 0;
+            while (followers.length < targetFollowers) {
+                followers.push(`dummy_follower_${fi++}_${user.displayName}`);
+            }
+
+            // Build following list: real fake users + dummy UIDs to reach target
+            const following = [...otherUids];
+            let gi = 0;
+            while (following.length < targetFollowing) {
+                following.push(`dummy_following_${gi++}_${user.displayName}`);
+            }
+
+            await User.updateOne(
+                { uid: user.uid },
+                { $set: { followers, following } }
+            );
+
+            console.log(`🔗 ${user.displayName}: ${followers.length} followers, ${following.length} following`);
+        }
+
+        console.log(`✅ All ${allFakeUsers.length} players updated with realistic social counts!`);
         await mongoose.disconnect();
         process.exit(0);
     } catch (err) {
