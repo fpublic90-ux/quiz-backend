@@ -3,7 +3,7 @@ const router = express.Router();
 const User = require('../models/User');
 
 module.exports = (io, userSockets) => {
-    // POST /api/social/follow/:targetUid
+    // POST /api/social/follow/:targetUid (Request to follow)
     router.post('/follow/:targetUid', async (req, res) => {
         try {
             const { uid } = req.body;
@@ -17,31 +17,112 @@ module.exports = (io, userSockets) => {
 
             if (!user || !target) return res.status(404).json({ message: 'User not found' });
 
-            const isFollowing = user.following.includes(targetUid);
-            if (isFollowing) {
-                // Unfollow
+            // Check if already following
+            if (user.following.includes(targetUid)) {
+                // Unfollow logic
                 user.following = user.following.filter(id => id !== targetUid);
-            } else {
-                // Follow
-                user.following.push(targetUid);
+                target.followers = (target.followers || []).filter(id => id !== uid);
+                await user.save();
+                await target.save();
+                return res.json({ status: 'unfollowed', following: user.following });
+            }
 
-                // Notify target user via socket
-                if (io && userSockets) {
-                    const targetSocketId = userSockets.get(targetUid);
-                    if (targetSocketId) {
-                        io.to(targetSocketId).emit('new_follower', {
-                            followerName: user.displayName,
-                            followerUid: uid
-                        });
-                    }
+            // Check if request already pending
+            if (target.followRequests.includes(uid)) {
+                return res.json({ status: 'pending', message: 'Request already sent' });
+            }
+
+            // Add to follow requests
+            target.followRequests.push(uid);
+            await target.save();
+
+            // Notify target user via socket
+            if (io && userSockets) {
+                const targetSocketId = userSockets.get(targetUid);
+                if (targetSocketId) {
+                    io.to(targetSocketId).emit('follow_request', {
+                        requesterName: user.displayName,
+                        requesterUid: uid
+                    });
                 }
             }
 
-            await user.save();
-            res.json({ following: user.following, isFollowing: !isFollowing });
+            res.json({ status: 'requested' });
 
         } catch (err) {
             console.error('Follow Error:', err);
+            res.status(500).json({ message: 'Server error' });
+        }
+    });
+
+    // POST /api/social/accept-follow/:sourceUid
+    router.post('/accept-follow/:sourceUid', async (req, res) => {
+        try {
+            const { uid } = req.body; // The user accepting the request
+            const { sourceUid } = req.params; // The user who sent the request
+
+            const user = await User.findOne({ uid }); // Me
+            const source = await User.findOne({ uid: sourceUid }); // Requester
+
+            if (!user || !source) return res.status(404).json({ message: 'User not found' });
+
+            // Remove from requests
+            user.followRequests = user.followRequests.filter(id => id !== sourceUid);
+
+            // Add to followers/following
+            if (!user.followers.includes(sourceUid)) user.followers.push(sourceUid);
+            if (!source.following.includes(uid)) source.following.push(uid);
+
+            await user.save();
+            await source.save();
+
+            // Notify requester
+            if (io && userSockets) {
+                const sourceSocketId = userSockets.get(sourceUid);
+                if (sourceSocketId) {
+                    io.to(sourceSocketId).emit('follow_accepted', {
+                        userName: user.displayName,
+                        userUid: uid
+                    });
+                }
+            }
+
+            res.json({ status: 'accepted', followers: user.followers });
+        } catch (err) {
+            res.status(500).json({ message: 'Server error' });
+        }
+    });
+
+    // POST /api/social/decline-follow/:sourceUid
+    router.post('/decline-follow/:sourceUid', async (req, res) => {
+        try {
+            const { uid } = req.body;
+            const { sourceUid } = req.params;
+
+            const user = await User.findOne({ uid });
+            if (!user) return res.status(404).json({ message: 'User not found' });
+
+            user.followRequests = user.followRequests.filter(id => id !== sourceUid);
+            await user.save();
+
+            res.json({ status: 'declined' });
+        } catch (err) {
+            res.status(500).json({ message: 'Server error' });
+        }
+    });
+
+    // GET /api/social/requests/:uid
+    router.get('/requests/:uid', async (req, res) => {
+        try {
+            const user = await User.findOne({ uid: req.params.uid });
+            if (!user) return res.status(404).json({ message: 'User not found' });
+
+            const requests = await User.find({
+                uid: { $in: user.followRequests }
+            }).select('uid displayName avatar level tier');
+
+            res.json(requests);
+        } catch (err) {
             res.status(500).json({ message: 'Server error' });
         }
     });
