@@ -24,12 +24,26 @@ module.exports = (io, userSockets) => {
                 target.followers = (target.followers || []).filter(id => id !== uid);
                 await user.save();
                 await target.save();
+
+                // Notify target in real-time
+                if (io && userSockets) {
+                    const targetSocketId = userSockets.get(targetUid);
+                    if (targetSocketId) {
+                        io.to(targetSocketId).emit('user_unfollowed', {
+                            unfollowerUid: uid,
+                            unfollowerName: user.displayName
+                        });
+                    }
+                }
+
                 return res.json({ status: 'unfollowed', following: user.following });
             }
 
-            // Check if request already pending
+            // Cancel pending follow request if already sent
             if (target.followRequests.includes(uid)) {
-                return res.json({ status: 'pending', message: 'Request already sent' });
+                target.followRequests = target.followRequests.filter(id => id !== uid);
+                await target.save();
+                return res.json({ status: 'cancelled' });
             }
 
             // Add to follow requests
