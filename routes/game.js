@@ -6,7 +6,7 @@ const AchievementManager = require('../managers/AchievementManager');
 // Save game results (Solo or Matchmaking fallbacks)
 router.post('/save-results', async (req, res) => {
     try {
-        const { uid, score, rank, category, fastAnswers } = req.body;
+        const { uid, score, rank, category, fastAnswers, isPractice, questionIds } = req.body;
 
         if (!uid) {
             return res.status(400).json({ message: 'UID is required' });
@@ -17,7 +17,21 @@ router.post('/save-results', async (req, res) => {
             return res.status(404).json({ message: 'User not found' });
         }
 
-        // Update stats
+        // Always update question history if provided
+        if (questionIds && Array.isArray(questionIds)) {
+            user.answeredQuestions = [...(user.answeredQuestions || []), ...questionIds];
+            // Limit to last 500 seen questions
+            if (user.answeredQuestions.length > 500) {
+                user.answeredQuestions = user.answeredQuestions.slice(-500);
+            }
+        }
+
+        if (isPractice) {
+            await user.save();
+            return res.status(200).json({ message: 'Practice session history saved', user });
+        }
+
+        // Update stats for non-practice games
         user.gamesPlayed += 1;
         user.totalScore += (score || 0);
         if (rank === 1) user.wins += 1;
@@ -46,7 +60,6 @@ router.post('/save-results', async (req, res) => {
         else user.tier = 'Bronze';
 
         // Check Achievements
-        // We pass a mock room player for solo consistency
         const mockRoomPlayer = { fastAnswers: fastAnswers || 0 };
         const mockRoom = { category: category || 'All' };
 

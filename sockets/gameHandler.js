@@ -11,15 +11,35 @@ const POINTS_PER_CORRECT = 10;
 /**
  * Fetch N random questions from MongoDB (with correctIndex for server-side grading)
  */
-async function fetchQuestions(level, category = 'All', count = QUESTIONS_PER_GAME) {
+async function fetchQuestions(level, category = 'All', count = QUESTIONS_PER_GAME, uid = null) {
     const query = { level: parseInt(level) };
     if (category && category !== 'All') {
         query.category = category;
     }
-    return Question.aggregate([
-        { $match: query },
-        { $sample: { size: count } }
-    ]);
+
+    let excludeIds = [];
+    if (uid) {
+        const user = await User.findOne({ uid });
+        if (user && user.answeredQuestions) {
+            excludeIds = user.answeredQuestions;
+        }
+    }
+
+    const pipeline = [{ $match: query }];
+
+    if (excludeIds.length > 0) {
+        const availableCount = await Question.countDocuments({
+            ...query,
+            _id: { $nin: excludeIds }
+        });
+
+        if (availableCount >= count) {
+            pipeline.push({ $match: { _id: { $nin: excludeIds } } });
+        }
+    }
+
+    pipeline.push({ $sample: { size: count } });
+    return Question.aggregate(pipeline);
 }
 
 /**
@@ -160,6 +180,13 @@ async function endGame(io, code) {
                     else if (user.xp >= 3000) user.tier = 'Gold';
                     else if (user.xp >= 1000) user.tier = 'Silver';
                     else user.tier = 'Bronze';
+
+                    // Save question history (limit to last 500)
+                    const questionIds = room.questions.map(q => q._id);
+                    user.answeredQuestions = [...(user.answeredQuestions || []), ...questionIds];
+                    if (user.answeredQuestions.length > 500) {
+                        user.answeredQuestions = user.answeredQuestions.slice(-500);
+                    }
 
                     await user.save();
                     console.log(`📈 Stats: ${player.name} +${xpGained} XP, +${coinReward} Coins. Tier: ${user.tier}`);
@@ -419,8 +446,9 @@ async function startGame(io, code, socket, level = 1, category = 'All') {
     room.currentQuestionIndex = 0;
 
     try {
+        const hostUid = room.players[0]?.uid;
         if (socket) socket.emit('info', { message: `Fetching questions for Level ${level} (${category})...` });
-        const questions = await fetchQuestions(level, category, QUESTIONS_PER_GAME);
+        const questions = await fetchQuestions(level, category, QUESTIONS_PER_GAME, hostUid);
         if (questions.length < QUESTIONS_PER_GAME) {
             console.log(`⚠️ Not enough questions in DB: ${questions.length}`);
             io.to(code).emit('error', { message: 'Not enough questions in database (minimum 10 required). Please seed the DB.' });

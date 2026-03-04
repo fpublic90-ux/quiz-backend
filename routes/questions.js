@@ -8,15 +8,39 @@ const Question = require('../models/Question');
  */
 router.get('/', async (req, res) => {
     try {
-        const { level, category, count } = req.query;
+        const { level, category, count, uid } = req.query;
         const query = {};
         if (level) query.level = parseInt(level);
         if (category && category !== 'All') query.category = category;
 
-        const questions = await Question.aggregate([
-            { $match: query },
-            { $sample: { size: parseInt(count) || 10 } }
-        ]);
+        let excludeIds = [];
+        if (uid) {
+            const User = require('../models/User');
+            const user = await User.findOne({ uid });
+            if (user && user.answeredQuestions) {
+                excludeIds = user.answeredQuestions;
+            }
+        }
+
+        const requestedCount = parseInt(count) || 10;
+        const pipeline = [{ $match: query }];
+
+        // Repetition prevention: exclude seen questions if pool is large enough
+        if (excludeIds.length > 0) {
+            // Check remaining pool size first
+            const availableCount = await Question.countDocuments({
+                ...query,
+                _id: { $nin: excludeIds }
+            });
+
+            if (availableCount >= requestedCount) {
+                pipeline.push({ $match: { _id: { $nin: excludeIds } } });
+            }
+        }
+
+        pipeline.push({ $sample: { size: requestedCount } });
+
+        const questions = await Question.aggregate(pipeline);
         res.json(questions);
     } catch (err) {
         console.error('Error fetching questions:', err);

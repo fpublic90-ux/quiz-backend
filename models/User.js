@@ -60,6 +60,10 @@ const userSchema = new mongoose.Schema({
         type: [String],
         default: []
     },
+    answeredQuestions: [{
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'Question'
+    }],
     following: [{
         type: String // List of UIDs
     }],
