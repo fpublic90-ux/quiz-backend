@@ -9,28 +9,38 @@ const QUESTION_DURATION_MS = 15000; // 15 seconds
  * Start a countdown for a room question.
  */
 function startTimer(code, onTick, onExpire) {
-    clearTimer(code);
+    try {
+        clearTimer(code);
 
-    const now = Date.now();
-    const expiresAt = now + QUESTION_DURATION_MS;
-    endTimes[code] = expiresAt;
+        const now = Date.now();
+        const expiresAt = now + QUESTION_DURATION_MS;
+        endTimes[code] = expiresAt;
 
-    // Tick function to calculate remaining time exactly
-    const tick = () => {
-        const remaining = Math.max(0, Math.ceil((endTimes[code] - Date.now()) / 1000));
-        onTick(remaining, expiresAt); // Send both for sync
+        // Tick function to calculate remaining time exactly
+        const tick = () => {
+            try {
+                const remaining = Math.max(0, Math.ceil((endTimes[code] - Date.now()) / 1000));
+                onTick(remaining, expiresAt); // Send both for sync
 
-        if (remaining <= 0) {
-            clearTimer(code);
-            onExpire();
-        }
-    };
+                if (remaining <= 0) {
+                    clearTimer(code);
+                    onExpire();
+                }
+            } catch (error) {
+                console.error(`Error in timer tick for room ${code}:`, error);
+                clearTimer(code); // Attempt to clear timer on error
+            }
+        };
 
-    // Initial tick
-    tick();
+        // Initial tick
+        tick();
 
-    // Secondary interval for the seconds countdown
-    timers[code] = setInterval(tick, 1000);
+        // Secondary interval for the seconds countdown
+        timers[code] = setInterval(tick, 1000);
+    } catch (error) {
+        console.error(`Error starting timer for room ${code}:`, error);
+        clearTimer(code); // Ensure any partial timer is cleared
+    }
 }
 
 /**
@@ -52,7 +62,8 @@ function isRunning(code) {
 }
 
 function getTimeRemaining(code) {
-    return remainingTime[code] || 0;
+    if (!endTimes[code]) return 0;
+    return Math.max(0, (endTimes[code] - Date.now()) / 1000);
 }
 
 module.exports = { startTimer, clearTimer, isRunning, getTimeRemaining };

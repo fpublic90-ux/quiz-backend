@@ -72,147 +72,161 @@ function broadcastScores(io, code) {
  * Advance to the next question or end the game
  */
 async function advanceQuestion(io, code) {
-    const room = RoomManager.getRoom(code);
-    if (!room || room.status !== 'playing') return;
+    try {
+        const room = RoomManager.getRoom(code);
+        if (!room || room.status !== 'playing') return;
 
-    RoomManager.resetAnswered(code);
-    const idx = RoomManager.nextQuestion(code);
+        RoomManager.resetAnswered(code);
+        const idx = RoomManager.nextQuestion(code);
 
-    if (idx >= room.questions.length) {
-        // Game over
-        endGame(io, code);
-        return;
-    }
-
-    const q = room.questions[idx];
-    const payload = safeQuestion(q, idx, room.questions.length);
-
-    io.to(code).emit('new_question', payload);
-
-    // ── Bot Simulation ──────────────────
-    if (room.players.some(p => p.id.startsWith('bot_'))) {
-        room.players.forEach(p => {
-            if (p.id.startsWith('bot_')) {
-                // Bots answer between 3 and 12 seconds
-                const delay = Math.floor(Math.random() * 9000) + 3000;
-                setTimeout(() => {
-                    const currentRoom = RoomManager.getRoom(code);
-                    if (!currentRoom || currentRoom.status !== 'playing' || currentRoom.currentQuestionIndex !== idx) return;
-
-                    // Difficulty: 70% correct
-                    const isCorrect = Math.random() < 0.7;
-                    if (isCorrect) {
-                        RoomManager.addScore(code, p.id, POINTS_PER_CORRECT);
-                        broadcastScores(io, code);
-                    }
-                    const allAnswered = RoomManager.markAnswered(code, p.id);
-                    if (allAnswered) {
-                        TimerManager.clearTimer(code);
-                        io.to(code).emit('time_up', {
-                            correctIndex: q.correctIndex,
-                            correctAnswer: q.options[q.correctIndex],
-                        });
-                        setTimeout(() => advanceQuestion(io, code), 2000);
-                    }
-                }, delay);
-            }
-        });
-    }
-
-    // Start server-side timer
-    TimerManager.startTimer(
-        code,
-        (remaining, expiresAt) => {
-            io.to(code).emit('timer_tick', { remaining, expiresAt });
-        },
-        () => {
-            // Time expired
-            io.to(code).emit('time_up', {
-                correctIndex: q.correctIndex,
-                correctAnswer: q.options[q.correctIndex],
-            });
-            setTimeout(() => advanceQuestion(io, code), 2000);
+        if (idx >= room.questions.length) {
+            // Game over
+            endGame(io, code);
+            return;
         }
-    );
+
+        const q = room.questions[idx];
+        const payload = safeQuestion(q, idx, room.questions.length);
+
+        io.to(code).emit('new_question', payload);
+
+        // ── Bot Simulation ──────────────────
+        if (room.players.some(p => p.id.startsWith('bot_'))) {
+            room.players.forEach(p => {
+                if (p.id.startsWith('bot_')) {
+                    // Bots answer between 3 and 12 seconds
+                    const delay = Math.floor(Math.random() * 9000) + 3000;
+                    setTimeout(() => {
+                        const currentRoom = RoomManager.getRoom(code);
+                        if (!currentRoom || currentRoom.status !== 'playing' || currentRoom.currentQuestionIndex !== idx) return;
+
+                        // Difficulty: 70% correct
+                        const isCorrect = Math.random() < 0.7;
+                        if (isCorrect) {
+                            RoomManager.addScore(code, p.id, POINTS_PER_CORRECT);
+                            broadcastScores(io, code);
+                        }
+                        const allAnswered = RoomManager.markAnswered(code, p.id);
+                        if (allAnswered) {
+                            TimerManager.clearTimer(code);
+                            io.to(code).emit('time_up', {
+                                correctIndex: q.correctIndex,
+                                correctAnswer: q.options[q.correctIndex],
+                            });
+                            setTimeout(() => advanceQuestion(io, code), 2000);
+                        }
+                    }, delay);
+                }
+            });
+        }
+
+        // Start server-side timer
+        TimerManager.startTimer(
+            code,
+            (remaining, expiresAt) => {
+                io.to(code).emit('timer_tick', { remaining, expiresAt });
+            },
+            () => {
+                // Time expired
+                io.to(code).emit('time_up', {
+                    correctIndex: q.correctIndex,
+                    correctAnswer: q.options[q.correctIndex],
+                });
+                setTimeout(() => advanceQuestion(io, code), 2000);
+            }
+        );
+    } catch (error) {
+        console.error(`❌ Error in advanceQuestion for room ${code}:`, error);
+        endGame(io, code); // Safely end game on serious logic failure
+    }
 }
 
 /**
  * End the game and send leaderboard
  */
 async function endGame(io, code) {
-    TimerManager.clearTimer(code);
-    RoomManager.setStatus(code, 'finished');
-    const leaderboard = RoomManager.getLeaderboard(code);
+    try {
+        TimerManager.clearTimer(code);
+        const room = RoomManager.getRoom(code);
+        if (!room) return;
 
-    // Persist stats for each player
-    for (let i = 0; i < leaderboard.length; i++) {
-        const player = leaderboard[i];
-        if (player.uid) {
-            try {
-                const rank = i + 1;
-                const user = await User.findOne({ uid: player.uid });
-                if (user) {
-                    user.gamesPlayed += 1;
-                    user.totalScore += player.score;
-                    if (rank === 1) user.wins += 1;
+        RoomManager.setStatus(code, 'finished');
+        const leaderboard = RoomManager.getLeaderboard(code);
 
-                    // Award Coins based on rank
-                    let coinReward = 10;
-                    if (rank === 1) coinReward = 100;
-                    else if (rank === 2) coinReward = 50;
-                    else if (rank === 3) coinReward = 30;
-                    user.coins += coinReward;
+        // Persist stats for each player
+        for (let i = 0; i < leaderboard.length; i++) {
+            const player = leaderboard[i];
+            if (player.uid) {
+                try {
+                    const rank = i + 1;
+                    const user = await User.findOne({ uid: player.uid });
+                    if (user) {
+                        user.gamesPlayed += 1;
+                        user.totalScore += player.score;
+                        if (rank === 1) user.wins += 1;
 
-                    // Award XP based on score and rank multiplier
-                    let xpMultiplier = 1.0;
-                    if (rank === 1) xpMultiplier = 1.5;
-                    else if (rank === 2) xpMultiplier = 1.2;
-                    else if (rank === 3) xpMultiplier = 1.1;
-                    const xpGained = Math.round(player.score * xpMultiplier);
-                    user.xp += xpGained;
+                        // Award Coins based on rank
+                        let coinReward = 10;
+                        if (rank === 1) coinReward = 100;
+                        else if (rank === 2) coinReward = 50;
+                        else if (rank === 3) coinReward = 30;
+                        user.coins += coinReward;
 
-                    // Leveling: 1 level per 200 total XP
-                    user.level = Math.floor(user.xp / 200) + 1;
+                        // Award XP based on score and rank multiplier
+                        let xpMultiplier = 1.0;
+                        if (rank === 1) xpMultiplier = 1.5;
+                        else if (rank === 2) xpMultiplier = 1.2;
+                        else if (rank === 3) xpMultiplier = 1.1;
+                        const xpGained = Math.round(player.score * xpMultiplier);
+                        user.xp += xpGained;
 
-                    // Update Tier
-                    if (user.xp >= 15000) user.tier = 'Diamond';
-                    else if (user.xp >= 7000) user.tier = 'Platinum';
-                    else if (user.xp >= 3000) user.tier = 'Gold';
-                    else if (user.xp >= 1000) user.tier = 'Silver';
-                    else user.tier = 'Bronze';
+                        // Leveling: 1 level per 200 total XP
+                        user.level = Math.floor(user.xp / 200) + 1;
 
-                    // Save question history (limit to last 500)
-                    const questionIds = room.questions.map(q => q._id);
-                    user.answeredQuestions = [...(user.answeredQuestions || []), ...questionIds];
-                    if (user.answeredQuestions.length > 500) {
-                        user.answeredQuestions = user.answeredQuestions.slice(-500);
+                        // Update Tier
+                        if (user.xp >= 15000) user.tier = 'Diamond';
+                        else if (user.xp >= 7000) user.tier = 'Platinum';
+                        else if (user.xp >= 3000) user.tier = 'Gold';
+                        else if (user.xp >= 1000) user.tier = 'Silver';
+                        else user.tier = 'Bronze';
+
+                        // Save question history (limit to last 500)
+                        if (room && room.questions) {
+                            const questionIds = room.questions.map(q => q._id);
+                            user.answeredQuestions = [...(user.answeredQuestions || []), ...questionIds];
+                            if (user.answeredQuestions.length > 500) {
+                                user.answeredQuestions = user.answeredQuestions.slice(-500);
+                            }
+                        }
+
+                        await user.save();
+                        console.log(`📈 Stats: ${player.name} +${xpGained} XP, +${coinReward} Coins. Tier: ${user.tier}`);
+
+                        // ── Achievements Check ──────────────────
+                        const newlyUnlocked = AchievementManager.checkAchievements(user, player, room);
+                        if (newlyUnlocked.length > 0) {
+                            await AchievementManager.persistAchievements(user, newlyUnlocked);
+                            console.log(`🏆 Achievements Unlocked for ${player.name}: ${newlyUnlocked.join(', ')}`);
+
+                            // Emit real-time notification to this specific player
+                            io.to(player.id).emit('achievement_unlocked', {
+                                achievements: newlyUnlocked
+                            });
+                        }
                     }
-
-                    await user.save();
-                    console.log(`📈 Stats: ${player.name} +${xpGained} XP, +${coinReward} Coins. Tier: ${user.tier}`);
-
-                    // ── Achievements Check ──────────────────
-                    const newlyUnlocked = AchievementManager.checkAchievements(user, player, room);
-                    if (newlyUnlocked.length > 0) {
-                        await AchievementManager.persistAchievements(user, newlyUnlocked);
-                        console.log(`🏆 Achievements Unlocked for ${player.name}: ${newlyUnlocked.join(', ')}`);
-
-                        // Emit real-time notification to this specific player
-                        io.to(player.id).emit('achievement_unlocked', {
-                            achievements: newlyUnlocked
-                        });
-                    }
+                } catch (err) {
+                    console.error(`❌ Failed to persist stats for ${player.name}:`, err);
                 }
-            } catch (err) {
-                console.error(`❌ Failed to persist stats for ${player.name}:`, err);
             }
         }
-    }
 
-    io.to(code).emit('game_over', {
-        leaderboard: leaderboard.map(p => ({ id: p.id, uid: p.uid, name: p.name, score: p.score, isActive: p.isActive })),
-        winner: leaderboard[0] ? { id: leaderboard[0].id, uid: leaderboard[0].uid, name: leaderboard[0].name, score: leaderboard[0].score, isActive: leaderboard[0].isActive } : null,
-    });
+        io.to(code).emit('game_over', {
+            leaderboard: leaderboard.map(p => ({ id: p.id, uid: p.uid, name: p.name, score: p.score, isActive: p.isActive })),
+            winner: leaderboard[0] ? { id: leaderboard[0].id, uid: leaderboard[0].uid, name: leaderboard[0].name, score: leaderboard[0].score, isActive: leaderboard[0].isActive } : null,
+        });
+    } catch (err) {
+        console.error(`❌ Error in endGame for room ${code}:`, err);
+    }
 }
 
 /**
@@ -221,26 +235,31 @@ async function endGame(io, code) {
 function registerGameHandlers(io, socket, userSockets) {
     // ─── create_room ───────────────────────────────────────────────────────────
     socket.on('create_room', ({ playerName, uid }) => {
-        if (!playerName || playerName.trim() === '') {
-            socket.emit('error', { message: 'Player name is required' });
-            return;
+        try {
+            if (!playerName || playerName.trim() === '') {
+                socket.emit('error', { message: 'Player name is required' });
+                return;
+            }
+            const room = RoomManager.createRoom(playerName.trim(), socket.id, uid);
+            socket.join(room.code);
+
+            const playerList = room.players.map((p) => ({ id: p.id, uid: p.uid, name: p.name, score: p.score, isActive: p.isActive }));
+
+            socket.emit('room_created', {
+                code: room.code,
+                players: playerList,
+            });
+
+            // Broadcast to everyone in the room (important if this was a reclamation)
+            io.to(room.code).emit('player_joined', { players: playerList });
+
+            console.log(`🏠 Room created/reclaimed: ${room.code} by ${playerName}. Total players: ${playerList.length}`);
+
+            socket.to(room.code).emit('log', { message: `${playerName} joined the room` });
+        } catch (error) {
+            console.error('Error in create_room:', error);
+            socket.emit('error', { message: 'Internal server error' });
         }
-        const room = RoomManager.createRoom(playerName.trim(), socket.id, uid);
-        socket.join(room.code);
-
-        const playerList = room.players.map((p) => ({ id: p.id, uid: p.uid, name: p.name, score: p.score, isActive: p.isActive }));
-
-        socket.emit('room_created', {
-            code: room.code,
-            players: playerList,
-        });
-
-        // Broadcast to everyone in the room (important if this was a reclamation)
-        io.to(room.code).emit('player_joined', { players: playerList });
-
-        console.log(`🏠 Room created/reclaimed: ${room.code} by ${playerName}. Total players: ${playerList.length}`);
-
-        socket.to(room.code).emit('log', { message: `${playerName} joined the room` });
     });
 
     // ─── join_room ─────────────────────────────────────────────────────────────
@@ -328,65 +347,91 @@ function registerGameHandlers(io, socket, userSockets) {
                 endGame(io, code);
             }
         }
-        socket.leave(code);
+        try {
+            const result = RoomManager.explicitLeave(socket.id);
+            if (!result) return;
+
+            const { code } = result;
+            const room = RoomManager.getRoom(code);
+
+            if (room) {
+                const playerList = room.players.map((p) => ({ id: p.id, uid: p.uid, name: p.name, score: p.score, isActive: p.isActive }));
+                io.to(code).emit('player_left', {
+                    players: playerList,
+                });
+
+                if (room.status === 'playing' && room.players.length < 2) {
+                    TimerManager.clearTimer(code);
+                    endGame(io, code);
+                }
+            }
+            socket.leave(code);
+        } catch (error) {
+            console.error('Error in leave_room:', error);
+            socket.emit('error', { message: 'Failed to leave room' });
+        }
     });
 
     // ─── submit_answer ─────────────────────────────────────────────────────────
     socket.on('submit_answer', ({ roomCode, questionId, answerIndex }) => {
-        const room = RoomManager.getRoom(roomCode);
-        if (!room || room.status !== 'playing') return;
+        try {
+            const room = RoomManager.getRoom(roomCode);
+            if (!room || room.status !== 'playing') return;
 
-        const idx = room.currentQuestionIndex;
-        const currentQ = room.questions[idx];
-        if (!currentQ) return;
+            const idx = room.currentQuestionIndex;
+            const currentQ = room.questions[idx];
+            if (!currentQ) return;
 
-        // Anti-cheat: Check for impossibly fast answering (< 400ms)
-        const remaining = TimerManager.getTimeRemaining(roomCode);
-        if (remaining >= 14.6) { // 15s total, 14.6 means 400ms elapsed
-            console.log(`⚠️ Suspicious Speed: ${socket.id} answered in < 400ms.`);
-        }
-
-        // Prevent double-answering
-        if (room.answeredPlayers.has(socket.id)) return;
-
-        // Anti-cheat: Check for out-of-bounds index
-        if (answerIndex < 0 || answerIndex >= currentQ.options.length) {
-            console.log(`⚠️ Invalid Answer Index: ${socket.id} sent index ${answerIndex}`);
-            socket.emit('error', { message: 'Invalid answer selection' });
-            return;
-        }
-
-        const isCorrect = answerIndex === currentQ.correctIndex;
-        if (isCorrect) {
-            RoomManager.addScore(roomCode, socket.id, POINTS_PER_CORRECT);
-
-            // Speed Mastery tracking (Under 3 seconds)
+            // Anti-cheat: Check for impossibly fast answering (< 400ms)
             const remaining = TimerManager.getTimeRemaining(roomCode);
-            if (remaining >= 12) {
-                const room = RoomManager.getRoom(roomCode);
-                const player = room.players.find(p => p.id === socket.id);
-                if (player) player.fastAnswers += 1;
+            if (remaining >= 14.6) { // 15s total, 14.6 means 400ms elapsed
+                console.log(`⚠️ Suspicious Speed: ${socket.id} answered in < 400ms.`);
             }
-        }
 
-        socket.emit('answer_result', {
-            isCorrect,
-            correctIndex: currentQ.correctIndex,
-            correctAnswer: currentQ.options[currentQ.correctIndex],
-        });
+            // Prevent double-answering
+            if (room.answeredPlayers.has(socket.id)) return;
 
-        broadcastScores(io, roomCode);
+            // Anti-cheat: Check for out-of-bounds index
+            if (answerIndex < 0 || answerIndex >= currentQ.options.length) {
+                console.log(`⚠️ Invalid Answer Index: ${socket.id} sent index ${answerIndex}`);
+                socket.emit('error', { message: 'Invalid answer selection' });
+                return;
+            }
 
-        const allAnswered = RoomManager.markAnswered(roomCode, socket.id);
+            const isCorrect = answerIndex === currentQ.correctIndex;
+            if (isCorrect) {
+                RoomManager.addScore(roomCode, socket.id, POINTS_PER_CORRECT);
 
-        // If all players answered, advance early
-        if (allAnswered) {
-            TimerManager.clearTimer(roomCode);
-            io.to(roomCode).emit('time_up', {
+                // Speed Mastery tracking (Under 3 seconds)
+                const remainingTime = TimerManager.getTimeRemaining(roomCode);
+                if (remainingTime >= 12) {
+                    const player = room.players.find(p => p.id === socket.id);
+                    if (player) player.fastAnswers += 1;
+                }
+            }
+
+            socket.emit('answer_result', {
+                isCorrect,
                 correctIndex: currentQ.correctIndex,
                 correctAnswer: currentQ.options[currentQ.correctIndex],
             });
-            setTimeout(() => advanceQuestion(io, roomCode), 2000);
+
+            broadcastScores(io, roomCode);
+
+            const allAnswered = RoomManager.markAnswered(roomCode, socket.id);
+
+            // If all players answered, advance early
+            if (allAnswered) {
+                TimerManager.clearTimer(roomCode);
+                io.to(roomCode).emit('time_up', {
+                    correctIndex: currentQ.correctIndex,
+                    correctAnswer: currentQ.options[currentQ.correctIndex],
+                });
+                setTimeout(() => advanceQuestion(io, roomCode), 2000);
+            }
+        } catch (error) {
+            console.error('Error in submit_answer:', error);
+            socket.emit('error', { message: 'Failed to submit answer' });
         }
     });
 
