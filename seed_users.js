@@ -60,7 +60,7 @@ const fakeUsers = [
     {
         name: 'Parvathy',
         xp: 1050, tier: 'Silver', wins: 6, games: 18, score: 980, coins: 200,
-        ownedItems: ['avatar_crown', 'badge_fire', 'badge_diamond'],
+        ownedItems: ['avatar_crown', 'badge_fire', 'avatar_gem'],
         achievements: [
             { id: 'first_win', unlockedAt: new Date() },
             { id: 'gold_tier', unlockedAt: new Date() },
@@ -75,7 +75,7 @@ const fakeUsers = [
         wins: 156,
         totalScore: 45000,
         tier: 'Gold',
-        ownedItems: ['badge_fire', 'badge_gold'],
+        ownedItems: ['badge_fire', 'badge_bolt'],
         achievements: [
             { id: 'swift_thinker', unlockedAt: new Date() },
             { id: 'silver_tier', unlockedAt: new Date() }
@@ -89,7 +89,7 @@ const fakeUsers = [
         wins: 89,
         totalScore: 28000,
         tier: 'Silver',
-        ownedItems: ['badge_silver'],
+        ownedItems: ['badge_heart'],
         achievements: [
             { id: 'malayali_expert', unlockedAt: new Date() }
         ]
@@ -115,7 +115,7 @@ const fakeUsers = [
         wins: 234,
         totalScore: 89000,
         tier: 'Diamond',
-        ownedItems: ['avatar_crown', 'badge_diamond'],
+        ownedItems: ['avatar_crown', 'avatar_gem'],
         achievements: [
             { id: 'diamond_tier', unlockedAt: new Date() },
             { id: 'century_club', unlockedAt: new Date() }
