@@ -1,9 +1,10 @@
 const express = require('express');
 const router = express.Router();
 const User = require('../models/User');
+const { verifyToken } = require('../middleware/authMiddleware');
 
 // Sync user profile (Create or Update)
-router.post('/sync', async (req, res) => {
+router.post('/sync', verifyToken, async (req, res) => {
     try {
         const { uid, displayName, email, avatar } = req.body;
 
@@ -50,7 +51,7 @@ router.get('/profile/:uid', async (req, res) => {
 });
 
 // Purchase item from the shop
-router.post('/purchase', async (req, res) => {
+router.post('/purchase', verifyToken, async (req, res) => {
     try {
         const { uid, itemId, price } = req.body;
         if (!uid || !itemId || price == null) {

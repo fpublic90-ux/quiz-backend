@@ -1,9 +1,10 @@
 const express = require('express');
 const router = express.Router();
 const User = require('../models/User');
+const { verifyToken } = require('../middleware/authMiddleware');
 
 // POST /api/daily/claim
-router.post('/claim', async (req, res) => {
+router.post('/claim', verifyToken, async (req, res) => {
     try {
         const { uid } = req.body;
         if (!uid) return res.status(400).json({ message: 'UID is required' });

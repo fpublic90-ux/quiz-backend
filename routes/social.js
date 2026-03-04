@@ -1,10 +1,11 @@
 const express = require('express');
 const router = express.Router();
 const User = require('../models/User');
+const { verifyToken } = require('../middleware/authMiddleware');
 
 module.exports = (io, userSockets) => {
     // POST /api/social/follow/:targetUid (Request to follow)
-    router.post('/follow/:targetUid', async (req, res) => {
+    router.post('/follow/:targetUid', verifyToken, async (req, res) => {
         try {
             const { uid } = req.body;
             const { targetUid } = req.params;
@@ -70,7 +71,7 @@ module.exports = (io, userSockets) => {
     });
 
     // POST /api/social/accept-follow/:sourceUid
-    router.post('/accept-follow/:sourceUid', async (req, res) => {
+    router.post('/accept-follow/:sourceUid', verifyToken, async (req, res) => {
         try {
             const { uid } = req.body; // The user accepting the request
             const { sourceUid } = req.params; // The user who sent the request
@@ -108,7 +109,7 @@ module.exports = (io, userSockets) => {
     });
 
     // POST /api/social/decline-follow/:sourceUid
-    router.post('/decline-follow/:sourceUid', async (req, res) => {
+    router.post('/decline-follow/:sourceUid', verifyToken, async (req, res) => {
         try {
             const { uid } = req.body;
             const { sourceUid } = req.params;

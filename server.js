@@ -12,6 +12,15 @@ const socialRoutes = require('./routes/social');
 const gameRoutes = require('./routes/game');
 const { registerGameHandlers, startGame } = require('./sockets/gameHandler');
 const MatchmakingManager = require('./managers/MatchmakingManager');
+const admin = require('firebase-admin');
+
+// Initialize Firebase Admin (Uses GOOGLE_APPLICATION_CREDENTIALS or default config)
+try {
+  admin.initializeApp();
+  console.log('✅ Firebase Admin initialized');
+} catch (e) {
+  console.error('❌ Firebase Admin initialization failed:', e.message);
+}
 
 const app = express();
 const server = http.createServer(app);
