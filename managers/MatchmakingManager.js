@@ -18,7 +18,8 @@ class MatchmakingManager {
         if (this.queue.find(p => p.uid === uid)) return;
 
         console.log(`🔍 Matchmaking: ${playerName} joined queue.`);
-        this.queue.push({ socket, playerName, uid });
+        const entry = { socket, playerName, uid, isMatching: false };
+        this.queue.push(entry);
 
         this.tryMatch(io);
 
@@ -30,8 +31,23 @@ class MatchmakingManager {
 
     tryMatch(io) {
         if (this.queue.length >= 2) {
-            const p1 = this.queue.shift();
-            const p2 = this.queue.shift();
+            // Find two players who aren't already being matched
+            const playersToMatch = [];
+            for (let i = 0; i < this.queue.length && playersToMatch.length < 2; i++) {
+                if (!this.queue[i].isMatching) {
+                    playersToMatch.push(this.queue[i]);
+                }
+            }
+
+            if (playersToMatch.length < 2) return;
+
+            // Mark them as matching
+            playersToMatch.forEach(p => p.isMatching = true);
+
+            // Remove from queue
+            const p1 = playersToMatch[0];
+            const p2 = playersToMatch[1];
+            this.queue = this.queue.filter(q => q !== p1 && q !== p2);
 
             console.log(`🤝 Match Found: ${p1.playerName} vs ${p2.playerName}`);
 
@@ -67,9 +83,14 @@ class MatchmakingManager {
 
     handleFallback(io, uid) {
         const index = this.queue.findIndex(p => p.uid === uid);
-        if (index === -1) return; // Already matched
+        if (index === -1) return; // Already matched or entry removed
 
-        const p = this.queue.splice(index, 1)[0];
+        const p = this.queue[index];
+        if (p.isMatching) return; // Currently being handled by tryMatch
+
+        // Remove from queue
+        this.queue.splice(index, 1);
+
         console.log(`🤖 Matchmaking Fallback: No real opponent for ${p.playerName}. Spawning bots...`);
 
         // Create a room

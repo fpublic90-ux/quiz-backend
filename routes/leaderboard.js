@@ -8,7 +8,7 @@ router.get('/', async (req, res) => {
         const leaderboard = await User.find({})
             .sort({ xp: -1, totalScore: -1 })
             .limit(50)
-            .select('displayName avatar xp level tier wins ownedItems');
+            .select('uid displayName avatar xp level tier wins ownedItems');
 
         res.status(200).json(leaderboard);
     } catch (error) {
@@ -30,7 +30,7 @@ router.get('/my-rank/:uid', async (req, res) => {
             .sort({ xp: -1 })
             .skip(Math.max(0, rank - 3))
             .limit(5)
-            .select('displayName avatar xp level tier ownedItems');
+            .select('uid displayName avatar xp level tier wins ownedItems');
 
         res.status(200).json({
             rank,

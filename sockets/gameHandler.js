@@ -122,16 +122,16 @@ async function advanceQuestion(io, code) {
     // Start server-side timer
     TimerManager.startTimer(
         code,
-        (remaining) => {
-            io.to(code).emit('timer_tick', { remaining });
+        (remaining, expiresAt) => {
+            io.to(code).emit('timer_tick', { remaining, expiresAt });
         },
         () => {
-            // Time expired — move to next question
+            // Time expired
             io.to(code).emit('time_up', {
                 correctIndex: q.correctIndex,
                 correctAnswer: q.options[q.correctIndex],
             });
-            setTimeout(() => advanceQuestion(io, code), 2000); // 2s buffer
+            setTimeout(() => advanceQuestion(io, code), 2000);
         }
     );
 }
@@ -348,6 +348,13 @@ function registerGameHandlers(io, socket, userSockets) {
 
         // Prevent double-answering
         if (room.answeredPlayers.has(socket.id)) return;
+
+        // Anti-cheat: Check for out-of-bounds index
+        if (answerIndex < 0 || answerIndex >= currentQ.options.length) {
+            console.log(`⚠️ Invalid Answer Index: ${socket.id} sent index ${answerIndex}`);
+            socket.emit('error', { message: 'Invalid answer selection' });
+            return;
+        }
 
         const isCorrect = answerIndex === currentQ.correctIndex;
         if (isCorrect) {

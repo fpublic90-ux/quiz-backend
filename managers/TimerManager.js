@@ -1,33 +1,36 @@
 // Manages server-side countdown timers per room
 // timers: { [roomCode]: NodeJS.Timeout }
 const timers = {};
-const remainingTime = {}; // { [roomCode]: seconds }
+const endTimes = {}; // { [roomCode]: timestamp_ms }
 
 const QUESTION_DURATION_MS = 15000; // 15 seconds
 
 /**
  * Start a countdown for a room question.
- * @param {string} code - Room code
- * @param {Function} onTick - Called every second with remaining seconds
- * @param {Function} onExpire - Called when timer reaches 0
  */
 function startTimer(code, onTick, onExpire) {
     clearTimer(code);
 
-    remainingTime[code] = 15;
+    const now = Date.now();
+    const expiresAt = now + QUESTION_DURATION_MS;
+    endTimes[code] = expiresAt;
 
-    // Emit first tick immediately
-    onTick(remainingTime[code]);
+    // Tick function to calculate remaining time exactly
+    const tick = () => {
+        const remaining = Math.max(0, Math.ceil((endTimes[code] - Date.now()) / 1000));
+        onTick(remaining, expiresAt); // Send both for sync
 
-    timers[code] = setInterval(() => {
-        remainingTime[code] -= 1;
-        onTick(remainingTime[code]);
-
-        if (remainingTime[code] <= 0) {
+        if (remaining <= 0) {
             clearTimer(code);
             onExpire();
         }
-    }, 1000);
+    };
+
+    // Initial tick
+    tick();
+
+    // Secondary interval for the seconds countdown
+    timers[code] = setInterval(tick, 1000);
 }
 
 /**
@@ -38,7 +41,7 @@ function clearTimer(code) {
         clearInterval(timers[code]);
         delete timers[code];
     }
-    delete remainingTime[code];
+    delete endTimes[code];
 }
 
 /**
