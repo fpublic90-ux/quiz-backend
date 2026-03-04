@@ -25,6 +25,9 @@ const io = new Server(server, {
 
 MatchmakingManager.init(io, startGame);
 
+// In-memory mapping of UID to socket ID for invitations
+const userSockets = new Map(); // Map<uid, socketId>
+
 // Middleware
 app.use(cors());
 app.use(express.json());
@@ -41,8 +44,6 @@ app.get('/', (req, res) => {
   res.json({ status: 'Quiz Backend Running 🎯' });
 });
 
-// In-memory mapping of UID to socket ID for invitations
-const userSockets = new Map(); // Map<uid, socketId>
 
 // Socket.io
 io.on('connection', (socket) => {
