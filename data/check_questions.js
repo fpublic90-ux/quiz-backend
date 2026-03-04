@@ -2,45 +2,60 @@ require('dotenv').config();
 const mongoose = require('mongoose');
 const Question = require('../models/Question');
 
-async function checkDistribution() {
+async function check() {
     try {
         await mongoose.connect(process.env.MONGODB_URI);
-        console.log('✅ Connected to MongoDB for Diagnostics');
+        console.log('✅ Connected to MongoDB for Verification');
 
-        const total = await Question.countDocuments();
-        console.log(`📊 Total Questions: ${total}`);
+        // Fetch 50 random questions
+        const questions = await Question.aggregate([{ $sample: { size: 50 } }]);
 
-        // Check top categories
-        const catStats = await Question.aggregate([
-            { $group: { _id: "$category", count: { $sum: 1 } } },
-            { $sort: { count: -1 } }
-        ]);
-        console.log('📂 Category Distribution:');
-        catStats.forEach(stat => {
-            console.log(`   - ${stat._id.padEnd(20)}: ${stat.count}`);
+        console.log(`🔍 Verifying ${questions.length} random questions...`);
+
+        let errors = 0;
+        const knownAnswers = {
+            "What is the capital of Kerala?": "Thiruvananthapuram",
+            "Which is the state bird of Kerala?": "Great Hornbill",
+            "How many districts are there in Kerala?": "14",
+            "Who was the first PM of India?": "Jawaharlal Nehru",
+            "National animal of India?": "Tiger",
+            "Chemical symbol for Water?": "H2O",
+            "Red planet?": "Mars",
+            "What is 12 + 12?": "24",
+            "What is 12 × 12?": "144",
+            "Solve: 100 - 10": "90"
+        };
+
+        questions.forEach((q, i) => {
+            const correctAnswer = q.options[q.correctIndex];
+
+            // Check against known base facts if applicable
+            for (const [key, value] of Object.entries(knownAnswers)) {
+                if (q.question.includes(key) && correctAnswer !== value) {
+                    console.error(`❌ ERROR in Question: "${q.question}"`);
+                    console.error(`   Expected: ${value}, Found: ${correctAnswer}`);
+                    errors++;
+                }
+            }
+
+            // General logic check: ensure correctIndex is within bounds
+            if (q.correctIndex < 0 || q.correctIndex > 3) {
+                console.error(`❌ Bounds error in Question: "${q.question}" (Index: ${q.correctIndex})`);
+                errors++;
+            }
         });
 
-        // Deep check a few levels for "India" and "Kerala"
-        const levelsToCheck = [1, 50, 100, 200];
-        console.log('\n🔍 Deep Check (India & Kerala):');
-        for (const level of levelsToCheck) {
-            const keralaCount = await Question.countDocuments({ level, category: 'Kerala' });
-            const indiaCount = await Question.countDocuments({ level, category: 'India' });
-            console.log(`   Level ${level.toString().padEnd(3)} -> Kerala: ${keralaCount}, India: ${indiaCount}`);
-        }
-
-        // Check if any category/level combo has 0 (sample check)
-        const sampleCats = ['Physics', 'IT', 'Science'];
-        console.log('\n🔍 Sample Check (Other Categories):');
-        for (const cat of sampleCats) {
-            const count = await Question.countDocuments({ level: 1, category: cat });
-            console.log(`   Level 1   -> ${cat.padEnd(10)}: ${count}`);
+        if (errors === 0) {
+            console.log('✅ All sampled questions verified successfully!');
+        } else {
+            console.error(`⚠️ Found ${errors} errors in sample.`);
         }
 
         await mongoose.disconnect();
     } catch (err) {
-        console.error('❌ Diagnostic error:', err);
+        console.error('❌ Verification error:', err.message);
+        process.exit(1);
     }
 }
 
-checkDistribution();
+check();
