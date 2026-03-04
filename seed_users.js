@@ -41,26 +41,26 @@ const commonBios = [
     "Speed and accuracy is my game. ⚡"
 ];
 
-// Combine older users with new ones to seed a diverse pool
+// Sorted by XP rank (highest first). followerCount descends from 3000.
 const fakeUsers = [
-    { name: 'Shahal', xp: 18500, tier: 'Diamond', wins: 87, games: 140, score: 14200, coins: 2800, avatar: 'avatar_crown', ownedItems: ['avatar_crown', 'badge_fire', 'badge_shield', 'premium_ninja'], followerCount: 1250, followingCount: 85 },
-    { name: 'Dilna', xp: 9200, tier: 'Platinum', wins: 52, games: 95, score: 8800, coins: 1500, avatar: 'premium_gamer', ownedItems: ['premium_gamer', 'badge_bolt', 'avatar_gem'], followerCount: 840, followingCount: 120 },
-    { name: 'Farhana', xp: 7400, tier: 'Platinum', wins: 41, games: 80, score: 7100, coins: 1200, avatar: 'premium_cat', ownedItems: ['premium_cat', 'badge_heart', 'avatar_star'], followerCount: 620 },
-    { name: 'Sana', xp: 5600, tier: 'Gold', wins: 33, games: 65, score: 5400, coins: 900, avatar: 'avatar4', ownedItems: ['badge_fire', 'avatar_rocket'] },
-    { name: 'Shaan', xp: 4300, tier: 'Gold', wins: 28, games: 58, score: 4100, coins: 750, avatar: 'premium_robot', ownedItems: ['premium_robot', 'badge_bolt'] },
-    { name: 'Nidha', xp: 3200, tier: 'Gold', wins: 19, games: 44, score: 3000, coins: 600, avatar: 'avatar2', ownedItems: ['avatar_brain'] },
-    { name: 'Jasil', xp: 2600, tier: 'Silver', wins: 15, games: 38, score: 2400, coins: 480, avatar: 'avatar3', ownedItems: ['badge_shield', 'avatar_rocket'] },
-    { name: 'Midhulaj', xp: 1900, tier: 'Silver', wins: 11, games: 30, score: 1750, coins: 340, avatar: 'premium_ninja', ownedItems: ['premium_ninja'] },
-    { name: 'Sneha', xp: 1400, tier: 'Silver', wins: 8, games: 24, score: 1300, coins: 260, avatar: 'avatar1', ownedItems: ['badge_heart'] },
-    { name: 'Parvathy', xp: 1050, tier: 'Silver', wins: 6, games: 18, score: 980, coins: 200, avatar: 'avatar1', ownedItems: ['avatar_crown', 'badge_fire', 'avatar_gem'] },
-    { name: 'Arjun', xp: 3120, tier: 'Diamond', wins: 156, games: 240, score: 45000, coins: 5000, avatar: 'premium_ninja', ownedItems: ['premium_ninja', 'badge_fire', 'badge_bolt'] },
-    { name: 'Meera', xp: 15400, tier: 'Platinum', wins: 89, games: 150, score: 28000, coins: 2500, avatar: 'avatar3', ownedItems: ['badge_heart', 'badge_shield'] },
-    { name: 'Rahul', xp: 8200, tier: 'Platinum', wins: 45, games: 85, score: 12000, coins: 1500, avatar: 'avatar4', ownedItems: ['badge_bolt'] },
-    { name: 'Priya', xp: 45000, tier: 'Diamond', wins: 234, games: 320, score: 89000, coins: 8000, avatar: 'avatar_crown', ownedItems: ['avatar_crown', 'avatar_gem', 'badge_fire'], followerCount: 1250, followingCount: 85 },
-    { name: 'Izza', xp: 700, tier: 'Bronze', wins: 4, games: 14, score: 660, coins: 160, avatar: 'avatar3', ownedItems: ['badge_fire'] },
-    { name: 'Rena', xp: 420, tier: 'Bronze', wins: 3, games: 10, score: 390, coins: 130, avatar: 'avatar4', ownedItems: ['badge_bolt'] },
-    { name: 'Fathima', xp: 200, tier: 'Bronze', wins: 1, games: 6, score: 180, coins: 110, avatar: 'avatar1', ownedItems: [], followerCount: 1250, followingCount: 85 },
-    { name: 'Sheiza', xp: 80, tier: 'Bronze', wins: 0, games: 3, score: 70, coins: 100, avatar: 'avatar2', ownedItems: [] },
+    { name: 'Priya', xp: 45000, tier: 'Diamond', wins: 234, games: 320, score: 89000, coins: 8000, avatar: 'avatar_crown', ownedItems: ['avatar_crown', 'avatar_gem', 'badge_fire'], followerCount: 3000, followingCount: 320 },
+    { name: 'Shahal', xp: 18500, tier: 'Diamond', wins: 87, games: 140, score: 14200, coins: 2800, avatar: 'avatar_crown', ownedItems: ['avatar_crown', 'badge_fire', 'badge_shield', 'premium_ninja'], followerCount: 2820, followingCount: 240 },
+    { name: 'Meera', xp: 15400, tier: 'Platinum', wins: 89, games: 150, score: 28000, coins: 2500, avatar: 'avatar3', ownedItems: ['badge_heart', 'badge_shield'], followerCount: 2640, followingCount: 195 },
+    { name: 'Dilna', xp: 9200, tier: 'Platinum', wins: 52, games: 95, score: 8800, coins: 1500, avatar: 'premium_gamer', ownedItems: ['premium_gamer', 'badge_bolt', 'avatar_gem'], followerCount: 2460, followingCount: 165 },
+    { name: 'Rahul', xp: 8200, tier: 'Platinum', wins: 45, games: 85, score: 12000, coins: 1500, avatar: 'avatar4', ownedItems: ['badge_bolt'], followerCount: 2280, followingCount: 140 },
+    { name: 'Farhana', xp: 7400, tier: 'Platinum', wins: 41, games: 80, score: 7100, coins: 1200, avatar: 'premium_cat', ownedItems: ['premium_cat', 'badge_heart', 'avatar_star'], followerCount: 2100, followingCount: 118 },
+    { name: 'Sana', xp: 5600, tier: 'Gold', wins: 33, games: 65, score: 5400, coins: 900, avatar: 'avatar4', ownedItems: ['badge_fire', 'avatar_rocket'], followerCount: 1920, followingCount: 98 },
+    { name: 'Shaan', xp: 4300, tier: 'Gold', wins: 28, games: 58, score: 4100, coins: 750, avatar: 'premium_robot', ownedItems: ['premium_robot', 'badge_bolt'], followerCount: 1740, followingCount: 82 },
+    { name: 'Arjun', xp: 3120, tier: 'Diamond', wins: 156, games: 240, score: 45000, coins: 5000, avatar: 'premium_ninja', ownedItems: ['premium_ninja', 'badge_fire', 'badge_bolt'], followerCount: 1560, followingCount: 70 },
+    { name: 'Nidha', xp: 3200, tier: 'Gold', wins: 19, games: 44, score: 3000, coins: 600, avatar: 'avatar2', ownedItems: ['avatar_brain'], followerCount: 1380, followingCount: 58 },
+    { name: 'Jasil', xp: 2600, tier: 'Silver', wins: 15, games: 38, score: 2400, coins: 480, avatar: 'avatar3', ownedItems: ['badge_shield', 'avatar_rocket'], followerCount: 1200, followingCount: 48 },
+    { name: 'Midhulaj', xp: 1900, tier: 'Silver', wins: 11, games: 30, score: 1750, coins: 340, avatar: 'premium_ninja', ownedItems: ['premium_ninja'], followerCount: 1020, followingCount: 38 },
+    { name: 'Sneha', xp: 1400, tier: 'Silver', wins: 8, games: 24, score: 1300, coins: 260, avatar: 'avatar1', ownedItems: ['badge_heart'], followerCount: 840, followingCount: 30 },
+    { name: 'Parvathy', xp: 1050, tier: 'Silver', wins: 6, games: 18, score: 980, coins: 200, avatar: 'avatar1', ownedItems: ['avatar_crown', 'badge_fire', 'avatar_gem'], followerCount: 660, followingCount: 22 },
+    { name: 'Izza', xp: 700, tier: 'Bronze', wins: 4, games: 14, score: 660, coins: 160, avatar: 'avatar3', ownedItems: ['badge_fire'], followerCount: 480, followingCount: 14 },
+    { name: 'Rena', xp: 420, tier: 'Bronze', wins: 3, games: 10, score: 390, coins: 130, avatar: 'avatar4', ownedItems: ['badge_bolt'], followerCount: 300, followingCount: 8 },
+    { name: 'Fathima', xp: 200, tier: 'Bronze', wins: 1, games: 6, score: 180, coins: 110, avatar: 'avatar1', ownedItems: [], followerCount: 175, followingCount: 4 },
+    { name: 'Sheiza', xp: 80, tier: 'Bronze', wins: 0, games: 3, score: 70, coins: 100, avatar: 'avatar2', ownedItems: [], followerCount: 80, followingCount: 2 },
 ];
 
 async function seedUsers() {
