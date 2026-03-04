@@ -60,7 +60,66 @@ const fakeUsers = [
     {
         name: 'Parvathy',
         xp: 1050, tier: 'Silver', wins: 6, games: 18, score: 980, coins: 200,
-        avatarKey: 'avatar2', ownedItems: ['avatar_star'],
+        ownedItems: ['avatar_crown', 'badge_fire', 'badge_diamond'],
+        achievements: [
+            { id: 'first_win', unlockedAt: new Date() },
+            { id: 'gold_tier', unlockedAt: new Date() },
+            { id: 'quiz_veteran', unlockedAt: new Date() }
+        ]
+    },
+    {
+        name: 'Arjun',
+        email: 'arjun@fake.com',
+        avatar: 'avatar2',
+        level: 42,
+        wins: 156,
+        totalScore: 45000,
+        tier: 'Gold',
+        ownedItems: ['badge_fire', 'badge_gold'],
+        achievements: [
+            { id: 'swift_thinker', unlockedAt: new Date() },
+            { id: 'silver_tier', unlockedAt: new Date() }
+        ]
+    },
+    {
+        name: 'Meera',
+        email: 'meera@fake.com',
+        avatar: 'avatar3',
+        level: 28,
+        wins: 89,
+        totalScore: 28000,
+        tier: 'Silver',
+        ownedItems: ['badge_silver'],
+        achievements: [
+            { id: 'malayali_expert', unlockedAt: new Date() }
+        ]
+    },
+    {
+        name: 'Rahul',
+        email: 'rahul@fake.com',
+        avatar: 'avatar4',
+        level: 15,
+        wins: 45,
+        totalScore: 12000,
+        tier: 'Bronze',
+        ownedItems: [],
+        achievements: [
+            { id: 'first_win', unlockedAt: new Date() }
+        ]
+    },
+    {
+        name: 'Priya',
+        email: 'priya@fake.com',
+        avatar: 'avatar5',
+        level: 67,
+        wins: 234,
+        totalScore: 89000,
+        tier: 'Diamond',
+        ownedItems: ['avatar_crown', 'badge_diamond'],
+        achievements: [
+            { id: 'diamond_tier', unlockedAt: new Date() },
+            { id: 'century_club', unlockedAt: new Date() }
+        ]
     },
     {
         name: 'Izza',
@@ -118,7 +177,7 @@ async function seedUsers() {
                 xp: u.xp,
                 coins: u.coins,
                 tier: u.tier,
-                achievements: [],
+                achievements: u.achievements || [],
                 ownedItems: u.ownedItems || [],
                 following: [],
             });
