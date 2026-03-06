@@ -64,15 +64,6 @@ const userSchema = new mongoose.Schema({
         type: mongoose.Schema.Types.ObjectId,
         ref: 'Question'
     }],
-    following: [{
-        type: String // List of UIDs this user follows
-    }],
-    followers: [{
-        type: String // List of UIDs following this user
-    }],
-    followRequests: [{
-        type: String // List of UIDs requesting to follow this user
-    }],
     lastClaimedReward: {
         type: Date
     },

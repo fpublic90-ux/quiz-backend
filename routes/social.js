@@ -4,48 +4,43 @@ const User = require('../models/User');
 const { verifyToken } = require('../middleware/authMiddleware');
 
 module.exports = (io, userSockets) => {
-    // POST /api/social/follow/:targetUid (Immediate Follow)
-    router.post('/follow/:targetUid', verifyToken, async (req, res) => {
+    // POST /api/social/friend-request/send/:targetUid
+    router.post('/friend-request/send/:targetUid', verifyToken, async (req, res) => {
         try {
             const { uid } = req.body;
             const { targetUid } = req.params;
 
             if (!uid || !targetUid) return res.status(400).json({ message: 'UIDs are required' });
-            if (uid === targetUid) return res.status(400).json({ message: 'Cannot follow yourself' });
+            if (uid === targetUid) return res.status(400).json({ message: 'Cannot friend yourself' });
 
             const user = await User.findOne({ uid });
             const target = await User.findOne({ uid: targetUid });
 
             if (!user || !target) return res.status(404).json({ message: 'User not found' });
 
-            // Check if already following
-            if (user.following.includes(targetUid)) {
-                // Unfollow logic
-                user.following = user.following.filter(id => id !== targetUid);
-                target.followers = (target.followers || []).filter(id => id !== uid);
-                await user.save();
-                await target.save();
-
-                // Notify target in real-time
-                if (io && userSockets) {
-                    const targetSocketId = userSockets.get(targetUid);
-                    if (targetSocketId) {
-                        io.to(targetSocketId).emit('user_unfollowed', {
-                            unfollowerUid: uid,
-                            unfollowerName: user.displayName
-                        });
-                    }
-                }
-
-                return res.json({ status: 'unfollowed', following: user.following });
+            // Check if already friends
+            if (user.friends.includes(targetUid)) {
+                return res.status(400).json({ message: 'Already friends' });
             }
 
-            // Immediate Follow
-            if (!user.following.includes(targetUid)) user.following.push(targetUid);
-            if (!target.followers.includes(uid)) target.followers.push(uid);
+            // Check if request already sent
+            if (user.sentFriendRequests.includes(targetUid)) {
+                // Cancel request logic
+                user.sentFriendRequests = user.sentFriendRequests.filter(id => id !== targetUid);
+                target.receivedFriendRequests = target.receivedFriendRequests.filter(id => id !== uid);
+                await user.save();
+                await target.save();
+                return res.json({ status: 'cancelled', sentRequests: user.sentFriendRequests });
+            }
 
-            // Clean up any pending requests if they existed
-            target.followRequests = (target.followRequests || []).filter(id => id !== uid);
+            // Check if they already sent me a request (Accept automatically or block?)
+            if (user.receivedFriendRequests.includes(targetUid)) {
+                return res.status(400).json({ message: 'They already sent you a friend request' });
+            }
+
+            // Send Request
+            user.sentFriendRequests.push(targetUid);
+            target.receivedFriendRequests.push(uid);
 
             await user.save();
             await target.save();
@@ -54,38 +49,43 @@ module.exports = (io, userSockets) => {
             if (io && userSockets) {
                 const targetSocketId = userSockets.get(targetUid);
                 if (targetSocketId) {
-                    io.to(targetSocketId).emit('new_follower', {
-                        followerName: user.displayName,
-                        followerUid: uid
+                    io.to(targetSocketId).emit('new_friend_request', {
+                        requesterName: user.displayName,
+                        requesterUid: uid
                     });
                 }
             }
 
-            res.json({ status: 'following', following: user.following });
+            res.json({ status: 'requested', sentRequests: user.sentFriendRequests });
 
         } catch (err) {
-            console.error('Follow Error:', err);
+            console.error('Friend Request Error:', err);
             res.status(500).json({ message: 'Server error' });
         }
     });
 
-    // POST /api/social/accept-follow/:sourceUid
-    router.post('/accept-follow/:sourceUid', verifyToken, async (req, res) => {
+    // POST /api/social/friend-request/accept/:sourceUid
+    router.post('/friend-request/accept/:sourceUid', verifyToken, async (req, res) => {
         try {
-            const { uid } = req.body; // The user accepting the request
-            const { sourceUid } = req.params; // The user who sent the request
+            const { uid } = req.body; // Me
+            const { sourceUid } = req.params; // Requester
 
-            const user = await User.findOne({ uid }); // Me
-            const source = await User.findOne({ uid: sourceUid }); // Requester
+            const user = await User.findOne({ uid });
+            const source = await User.findOne({ uid: sourceUid });
 
             if (!user || !source) return res.status(404).json({ message: 'User not found' });
 
-            // Remove from requests
-            user.followRequests = user.followRequests.filter(id => id !== sourceUid);
+            // Ensure there was a request
+            if (!user.receivedFriendRequests.includes(sourceUid)) {
+                return res.status(400).json({ message: 'No pending request' });
+            }
 
-            // Add to followers/following
-            if (!user.followers.includes(sourceUid)) user.followers.push(sourceUid);
-            if (!source.following.includes(uid)) source.following.push(uid);
+            // Move from requests to friends
+            user.receivedFriendRequests = user.receivedFriendRequests.filter(id => id !== sourceUid);
+            source.sentFriendRequests = source.sentFriendRequests.filter(id => id !== uid);
+
+            if (!user.friends.includes(sourceUid)) user.friends.push(sourceUid);
+            if (!source.friends.includes(uid)) source.friends.push(uid);
 
             await user.save();
             await source.save();
@@ -94,32 +94,70 @@ module.exports = (io, userSockets) => {
             if (io && userSockets) {
                 const sourceSocketId = userSockets.get(sourceUid);
                 if (sourceSocketId) {
-                    io.to(sourceSocketId).emit('follow_accepted', {
+                    io.to(sourceSocketId).emit('friend_request_accepted', {
                         userName: user.displayName,
                         userUid: uid
                     });
                 }
             }
 
-            res.json({ status: 'accepted', followers: user.followers });
+            res.json({ status: 'accepted', friends: user.friends });
         } catch (err) {
             res.status(500).json({ message: 'Server error' });
         }
     });
 
-    // POST /api/social/decline-follow/:sourceUid
-    router.post('/decline-follow/:sourceUid', verifyToken, async (req, res) => {
+    // POST /api/social/friend-request/decline/:sourceUid
+    router.post('/friend-request/decline/:sourceUid', verifyToken, async (req, res) => {
         try {
             const { uid } = req.body;
             const { sourceUid } = req.params;
 
             const user = await User.findOne({ uid });
-            if (!user) return res.status(404).json({ message: 'User not found' });
+            const source = await User.findOne({ uid: sourceUid });
+            if (!user || !source) return res.status(404).json({ message: 'User not found' });
 
-            user.followRequests = user.followRequests.filter(id => id !== sourceUid);
+            user.receivedFriendRequests = user.receivedFriendRequests.filter(id => id !== sourceUid);
+            source.sentFriendRequests = source.sentFriendRequests.filter(id => id !== uid);
+
             await user.save();
+            await source.save();
 
             res.json({ status: 'declined' });
+        } catch (err) {
+            res.status(500).json({ message: 'Server error' });
+        }
+    });
+
+    // POST /api/social/friend/remove/:targetUid
+    router.post('/friend/remove/:targetUid', verifyToken, async (req, res) => {
+        try {
+            const { uid } = req.body;
+            const { targetUid } = req.params;
+
+            const user = await User.findOne({ uid });
+            const target = await User.findOne({ uid: targetUid });
+
+            if (!user || !target) return res.status(404).json({ message: 'User not found' });
+
+            user.friends = user.friends.filter(id => id !== targetUid);
+            target.friends = target.friends.filter(id => id !== uid);
+
+            await user.save();
+            await target.save();
+
+            // Notify target
+            if (io && userSockets) {
+                const targetSocketId = userSockets.get(targetUid);
+                if (targetSocketId) {
+                    io.to(targetSocketId).emit('friend_removed', {
+                        removedByUid: uid,
+                        removedByName: user.displayName
+                    });
+                }
+            }
+
+            res.json({ status: 'removed', friends: user.friends });
         } catch (err) {
             res.status(500).json({ message: 'Server error' });
         }
@@ -132,11 +170,29 @@ module.exports = (io, userSockets) => {
             if (!user) return res.status(404).json({ message: 'User not found' });
 
             const requests = await User.find({
-                uid: { $in: user.followRequests }
+                uid: { $in: user.receivedFriendRequests }
             }).select('uid displayName avatar level tier');
 
             res.json(requests);
         } catch (err) {
+            res.status(500).json({ message: 'Server error' });
+        }
+    });
+
+    // GET /api/social/friends/:uid
+    router.get('/friends/:uid', async (req, res) => {
+        try {
+            const { uid } = req.params;
+            const user = await User.findOne({ uid });
+            if (!user) return res.status(404).json({ message: 'User not found' });
+
+            const friends = await User.find({
+                uid: { $in: user.friends }
+            }).select('uid displayName avatar level tier ownedItems');
+
+            res.json(friends);
+        } catch (err) {
+            console.error('Get Friends Error:', err);
             res.status(500).json({ message: 'Server error' });
         }
     });
@@ -156,24 +212,6 @@ module.exports = (io, userSockets) => {
             res.json(users);
         } catch (err) {
             console.error('Search Error:', err);
-            res.status(500).json({ message: 'Server error' });
-        }
-    });
-
-    // GET /api/social/following/:uid
-    router.get('/following/:uid', async (req, res) => {
-        try {
-            const { uid } = req.params;
-            const user = await User.findOne({ uid });
-            if (!user) return res.status(404).json({ message: 'User not found' });
-
-            const followingUsers = await User.find({
-                uid: { $in: user.following }
-            }).select('uid displayName avatar level tier ownedItems');
-
-            res.json(followingUsers);
-        } catch (err) {
-            console.error('Get Following Error:', err);
             res.status(500).json({ message: 'Server error' });
         }
     });
