@@ -263,10 +263,21 @@ function registerGameHandlers(io, socket, userSockets) {
 
             const playerList = room.players.map((p) => ({ id: p.id, uid: p.uid, name: p.name, score: p.score, isActive: p.isActive }));
 
-            socket.emit('room_created', {
+            const payload = {
                 code: room.code,
                 players: playerList,
-            });
+            };
+
+            // If game is in progress, sync state
+            if (room.status === 'playing' && room.currentQuestionIndex >= 0) {
+                const q = room.questions[room.currentQuestionIndex];
+                payload.gameState = {
+                    currentQuestion: safeQuestion(q, room.currentQuestionIndex, room.questions.length),
+                    timerRemaining: Math.ceil(TimerManager.getTimeRemaining(room.code)),
+                };
+            }
+
+            socket.emit('room_created', payload);
 
             // Broadcast to everyone in the room (important if this was a reclamation)
             io.to(room.code).emit('player_joined', { players: playerList });
@@ -299,7 +310,18 @@ function registerGameHandlers(io, socket, userSockets) {
         const playerList = room.players.map((p) => ({ id: p.id, uid: p.uid, name: p.name, score: p.score, isActive: p.isActive }));
         console.log(`📡 Room ${room.code} now has ${playerList.length} players:`, playerList.map(p => p.name).join(', '));
 
-        socket.emit('room_joined', { code: room.code, players: playerList });
+        const payload = { code: room.code, players: playerList };
+
+        // If game is in progress, sync state
+        if (room.status === 'playing' && room.currentQuestionIndex >= 0) {
+            const q = room.questions[room.currentQuestionIndex];
+            payload.gameState = {
+                currentQuestion: safeQuestion(q, room.currentQuestionIndex, room.questions.length),
+                timerRemaining: Math.ceil(TimerManager.getTimeRemaining(room.code)),
+            };
+        }
+
+        socket.emit('room_joined', payload);
         io.to(room.code).emit('player_joined', { players: playerList });
 
         console.log(`👤 ${playerName} joined room ${room.code} (${room.players.length}/6)`);
