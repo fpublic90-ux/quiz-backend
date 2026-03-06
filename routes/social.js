@@ -4,7 +4,7 @@ const User = require('../models/User');
 const { verifyToken } = require('../middleware/authMiddleware');
 
 module.exports = (io, userSockets) => {
-    // POST /api/social/follow/:targetUid (Request to follow)
+    // POST /api/social/follow/:targetUid (Immediate Follow)
     router.post('/follow/:targetUid', verifyToken, async (req, res) => {
         try {
             const { uid } = req.body;
@@ -40,29 +40,28 @@ module.exports = (io, userSockets) => {
                 return res.json({ status: 'unfollowed', following: user.following });
             }
 
-            // Cancel pending follow request if already sent
-            if (target.followRequests.includes(uid)) {
-                target.followRequests = target.followRequests.filter(id => id !== uid);
-                await target.save();
-                return res.json({ status: 'cancelled' });
-            }
+            // Immediate Follow
+            if (!user.following.includes(targetUid)) user.following.push(targetUid);
+            if (!target.followers.includes(uid)) target.followers.push(uid);
 
-            // Add to follow requests
-            target.followRequests.push(uid);
+            // Clean up any pending requests if they existed
+            target.followRequests = (target.followRequests || []).filter(id => id !== uid);
+
+            await user.save();
             await target.save();
 
             // Notify target user via socket
             if (io && userSockets) {
                 const targetSocketId = userSockets.get(targetUid);
                 if (targetSocketId) {
-                    io.to(targetSocketId).emit('follow_request', {
-                        requesterName: user.displayName,
-                        requesterUid: uid
+                    io.to(targetSocketId).emit('new_follower', {
+                        followerName: user.displayName,
+                        followerUid: uid
                     });
                 }
             }
 
-            res.json({ status: 'requested' });
+            res.json({ status: 'following', following: user.following });
 
         } catch (err) {
             console.error('Follow Error:', err);
