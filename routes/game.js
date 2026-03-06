@@ -24,9 +24,9 @@ router.post('/save-results', async (req, res) => {
 
             user.answeredQuestions = [...(user.answeredQuestions || []), ...newIds];
 
-            // Limit to last 500 seen questions
-            if (user.answeredQuestions.length > 500) {
-                user.answeredQuestions = user.answeredQuestions.slice(-500);
+            // Limit to last 2000 seen questions (200 full sessions)
+            if (user.answeredQuestions.length > 2000) {
+                user.answeredQuestions = user.answeredQuestions.slice(-2000);
             }
         }
 
