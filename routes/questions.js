@@ -23,25 +23,34 @@ router.get('/', async (req, res) => {
         }
 
         const requestedCount = parseInt(count) || 10;
-        const pipeline = [{ $match: query }];
 
-        // Repetition prevention: exclude seen questions if pool is large enough
-        if (excludeIds.length > 0) {
-            // Check remaining pool size first
-            const availableCount = await Question.countDocuments({
-                ...query,
-                _id: { $nin: excludeIds }
-            });
+        // 1. Try to fetch only unseen questions
+        let questions = await Question.aggregate([
+            { $match: { ...query, _id: { $nin: excludeIds } } },
+            { $sample: { size: requestedCount } }
+        ]);
 
-            if (availableCount >= requestedCount) {
-                pipeline.push({ $match: { _id: { $nin: excludeIds } } });
-            }
+        // 2. If not enough unseen, fill the rest with random seen questions
+        if (questions.length < requestedCount) {
+            const needed = requestedCount - questions.length;
+            const seenQuestions = await Question.aggregate([
+                { $match: { ...query, _id: { $in: excludeIds } } },
+                { $sample: { size: Math.min(needed, excludeIds.length) } }
+            ]);
+            questions = [...questions, ...seenQuestions];
         }
 
-        pipeline.push({ $sample: { size: requestedCount } });
+        // 3. Last resort if pool is still tiny
+        if (questions.length < requestedCount) {
+            const currentIds = questions.map(q => q._id);
+            const fallbackQuestions = await Question.aggregate([
+                { $match: { ...query, _id: { $nin: currentIds } } },
+                { $sample: { size: requestedCount - questions.length } }
+            ]);
+            questions = [...questions, ...fallbackQuestions];
+        }
 
-        const questions = await Question.aggregate(pipeline);
-        res.json(questions);
+        res.json(questions.sort(() => Math.random() - 0.5));
     } catch (err) {
         console.error('Error fetching questions:', err);
         res.status(500).json({ error: 'Failed to fetch questions' });

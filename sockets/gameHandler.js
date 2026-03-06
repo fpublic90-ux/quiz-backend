@@ -25,21 +25,39 @@ async function fetchQuestions(level, category = 'All', count = QUESTIONS_PER_GAM
         }
     }
 
-    const pipeline = [{ $match: query }];
+    // 1. Try to fetch only unseen questions
+    const unseenPipeline = [
+        { $match: { ...query, _id: { $nin: excludeIds } } },
+        { $sample: { size: count } }
+    ];
+    let questions = await Question.aggregate(unseenPipeline);
 
-    if (excludeIds.length > 0) {
-        const availableCount = await Question.countDocuments({
-            ...query,
-            _id: { $nin: excludeIds }
-        });
-
-        if (availableCount >= count) {
-            pipeline.push({ $match: { _id: { $nin: excludeIds } } });
-        }
+    // 2. If not enough unseen, fill the rest with random seen questions
+    if (questions.length < count) {
+        const needed = count - questions.length;
+        const seenPipeline = [
+            { $match: { ...query, _id: { $in: excludeIds } } },
+            { $sample: { size: needed } }
+        ];
+        const seenQuestions = await Question.aggregate(seenPipeline);
+        questions = [...questions, ...seenQuestions];
     }
 
-    pipeline.push({ $sample: { size: count } });
-    return Question.aggregate(pipeline);
+    // 3. Last resort: if pool is STILL too small (e.g. total < count), 
+    // fetch everything matching query just in case (fallback)
+    if (questions.length < count) {
+        const remainingNeeded = count - questions.length;
+        const currentIds = questions.map(q => q._id);
+        const fallbackPipeline = [
+            { $match: { ...query, _id: { $nin: currentIds } } },
+            { $sample: { size: remainingNeeded } }
+        ];
+        const fallbackQuestions = await Question.aggregate(fallbackPipeline);
+        questions = [...questions, ...fallbackQuestions];
+    }
+
+    // Final shuffle to mix unseen and backfilled questions
+    return questions.sort(() => Math.random() - 0.5);
 }
 
 /**
