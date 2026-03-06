@@ -231,6 +231,7 @@ module.exports = {
     createRoom,
     joinRoom,
     removePlayer,
+    explicitLeave,
     addScore,
     markAnswered,
     resetAnswered,
