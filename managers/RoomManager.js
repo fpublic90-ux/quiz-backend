@@ -157,13 +157,24 @@ function explicitLeave(socketId) {
 }
 
 /**
- * Add score to a player
+ * Add score to a player (Search by socketId or uid for robustness)
  */
-function addScore(code, socketId, points) {
+function addScore(code, socketId, points, uid = null) {
     const room = rooms[code];
     if (!room) return null;
-    const player = room.players.find((p) => p.id === socketId);
-    if (player) player.score += points;
+
+    // Find by socketId first, then by UID as fallback
+    let player = room.players.find((p) => p.id === socketId);
+    if (!player && uid) {
+        player = room.players.find((p) => p.uid === uid);
+    }
+
+    if (player) {
+        player.score += points;
+        console.log(`✅ Scored: ${player.name} (+${points}). Total: ${player.score}`);
+    } else {
+        console.log(`⚠️ Failed to find player for scoring: SocketID=${socketId}, UID=${uid} in Room=${code}`);
+    }
     return room;
 }
 

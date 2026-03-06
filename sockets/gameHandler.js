@@ -399,7 +399,8 @@ function registerGameHandlers(io, socket, userSockets) {
     // ─── submit_answer ─────────────────────────────────────────────────────────
     socket.on('submit_answer', ({ roomCode, questionId, answerIndex }) => {
         try {
-            const room = RoomManager.getRoom(roomCode);
+            const code = roomCode ? roomCode.toUpperCase().trim() : '';
+            const room = RoomManager.getRoom(code);
             if (!room || room.status !== 'playing') return;
 
             const idx = room.currentQuestionIndex;
@@ -422,14 +423,15 @@ function registerGameHandlers(io, socket, userSockets) {
                 return;
             }
 
-            const isCorrect = answerIndex === currentQ.correctIndex;
+            const isCorrect = parseInt(answerIndex) === currentQ.correctIndex;
             if (isCorrect) {
-                RoomManager.addScore(roomCode, socket.id, POINTS_PER_CORRECT);
+                console.log(`🎯 Correct Answer from ${socket.id} (UID: ${socket.uid})`);
+                RoomManager.addScore(code, socket.id, POINTS_PER_CORRECT, socket.uid);
 
                 // Speed Mastery tracking (Under 3 seconds)
-                const remainingTime = TimerManager.getTimeRemaining(roomCode);
+                const remainingTime = TimerManager.getTimeRemaining(code);
                 if (remainingTime >= 12) {
-                    const player = room.players.find(p => p.id === socket.id);
+                    const player = room.players.find(p => p.id === socket.id || p.uid === socket.uid);
                     if (player) player.fastAnswers += 1;
                 }
             }
@@ -440,18 +442,18 @@ function registerGameHandlers(io, socket, userSockets) {
                 correctAnswer: currentQ.options[currentQ.correctIndex],
             });
 
-            broadcastScores(io, roomCode);
+            broadcastScores(io, code);
 
-            const allAnswered = RoomManager.markAnswered(roomCode, socket.id);
+            const allAnswered = RoomManager.markAnswered(code, socket.id);
 
             // If all players answered, advance early
             if (allAnswered) {
-                TimerManager.clearTimer(roomCode);
-                io.to(roomCode).emit('time_up', {
+                TimerManager.clearTimer(code);
+                io.to(code).emit('time_up', {
                     correctIndex: currentQ.correctIndex,
                     correctAnswer: currentQ.options[currentQ.correctIndex],
                 });
-                setTimeout(() => advanceQuestion(io, roomCode), 2000);
+                setTimeout(() => advanceQuestion(io, code), 2000);
             }
         } catch (error) {
             console.error('Error in submit_answer:', error);
@@ -476,7 +478,8 @@ function registerGameHandlers(io, socket, userSockets) {
 
     // ─── disconnect ────────────────────────────────────────────────────────────
     socket.on('send_reaction', ({ roomCode, emojiId }) => {
-        io.to(roomCode).emit('show_reaction', {
+        const code = roomCode ? roomCode.toUpperCase().trim() : '';
+        io.to(code).emit('show_reaction', {
             senderId: socket.id,
             emojiId
         });

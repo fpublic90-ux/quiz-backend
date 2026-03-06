@@ -53,6 +53,37 @@ const ELEMENTS = [
     { n: "Silver", s: "Ag", an: 47 }, { n: "Copper", s: "Cu", an: 29 }
 ];
 
+const TECH_IT = [
+    { n: "Google", p: "Search", f: "Sundar Pichai" },
+    { n: "Apple", p: "iPhone", f: "Steve Jobs" },
+    { n: "Microsoft", p: "Windows", f: "Bill Gates" },
+    { n: "Python", p: "Language", f: "Guido van Rossum" },
+    { n: "Meta", p: "Facebook", f: "Mark Zuckerberg" },
+    { n: "Linux", p: "Kernel", f: "Linus Torvalds" },
+    { n: "JavaScript", p: "Web Programming", f: "Brendan Eich" },
+    { n: "SpaceX", p: "Rockets", f: "Elon Musk" }
+];
+
+const SPORTS = [
+    { n: "Cricket", d: "Bat & Ball", s: "Virat Kohli" },
+    { n: "Football", d: "Pitch", s: "Lionel Messi" },
+    { n: "Basketball", d: "Hoop", s: "LeBron James" },
+    { n: "Tennis", d: "Racket", s: "Roger Federer" },
+    { n: "Hockey", d: "Stick", s: "Major Dhyan Chand" }
+];
+
+const ECONOMICS = [
+    { n: "USA", c: "Dollar" }, { n: "India", c: "Rupee" },
+    { n: "UK", c: "Pound" }, { n: "EU", c: "Euro" },
+    { n: "Japan", c: "Yen" }, { n: "China", c: "Yuan" }
+];
+
+const BIOLOGY = [
+    { n: "Heart", f: "Pumps blood" }, { n: "Lungs", f: "Respiration" },
+    { n: "Liver", f: "Detoxification" }, { n: "Kidneys", f: "Filtration" },
+    { n: "Brain", f: "Nervous System" }
+];
+
 // --- GENERATORS ---
 
 function generateMathQuestion(level, index) {
@@ -108,9 +139,20 @@ function generateScienceQuestion(level, index, category) {
             question = `Level ${level}: Atomic number of ${el.n}?`;
             answer = el.an.toString(); alts = [el.an + 1, el.an - 1, el.an + 10].map(String);
         }
+    } else if (category === 'Biology') {
+        const bio = BIOLOGY[(index + level) % BIOLOGY.length];
+        question = `Level ${level}: What is the main function of the ${bio.n}?`;
+        answer = bio.f; alts = BIOLOGY.filter(b => b.f !== bio.f).map(b => b.f).slice(0, 3);
+    } else if (category === 'Physics') {
+        const topics = ["Gravity", "Force", "Optics", "Energy", "Atom", "Magnetism"];
+        const t = topics[(index + level) % topics.length];
+        question = `Level ${level}: Which scientist is most famous for ${t}?`;
+        answer = t === "Gravity" ? "Newton" : t === "Energy" ? "Einstein" : "Marie Curie";
+        alts = ["Galileo", "Darwin", "Tesla", "Edison"].filter(a => a !== answer).slice(0, 3);
     } else {
-        question = `Level ${level} ${category} Quiz - Q${index + 1}`;
-        answer = "Option A"; alts = ["Option B", "Option C", "Option D"];
+        question = `Level ${level}: Which of these is a study of ${category}?`;
+        answer = `${category} Basics`;
+        alts = ["General Math", "Art History", "Music", "Photography"].slice(0, 3);
     }
 
     const options = [answer, ...alts].sort(() => Math.random() - 0.5);
@@ -138,25 +180,52 @@ function generateGeographyQuestion(level, index, category) {
 }
 
 function generateGenericQuestion(level, index, category) {
-    const qText = `Level ${level} ${category} Challenge - Q${index + 1}`;
-    const answer = "Correct Choice";
-    const options = [answer, "Wrong Choice 1", "Wrong Choice 2", "Wrong Choice 3"].sort(() => Math.random() - 0.5);
+    let question, answer, alts;
+    if (category === 'Technology' || category === 'IT') {
+        const tech = TECH_IT[(index + level) % TECH_IT.length];
+        const type = (index + level) % 2;
+        if (type === 0) {
+            question = `Level ${level}: Who is a key figure behind ${tech.n}?`;
+            answer = tech.f; alts = TECH_IT.filter(t => t.f !== tech.f).map(t => t.f).slice(0, 3);
+        } else {
+            question = `Level ${level}: What is ${tech.n} best known for?`;
+            answer = tech.p; alts = TECH_IT.filter(t => t.p !== tech.p).map(t => t.p).slice(0, 3);
+        }
+    } else if (category === 'Sports') {
+        const s = SPORTS[(index + level) % SPORTS.length];
+        question = `Level ${level}: Identify the sports icon: ${s.s}`;
+        answer = s.n; alts = SPORTS.filter(it => it.n !== s.n).map(it => it.n).slice(0, 3);
+    } else if (category === 'Economics') {
+        const eco = ECONOMICS[(index + level) % ECONOMICS.length];
+        question = `Level ${level}: What is the currency used in ${eco.n}?`;
+        answer = eco.c; alts = ["Dollar", "Euro", "Pound", "Yen"].filter(a => a !== eco.c).slice(0, 3);
+    } else {
+        question = `Level ${level}: A common ${category} question - Q${index + 1}`;
+        answer = "Standard Answer"; alts = ["Alt 1", "Alt 2", "Alt 3"];
+    }
 
-    return { question: qText, options, correctIndex: options.indexOf(answer), category, level };
+    const options = [answer, ...alts].sort(() => Math.random() - 0.5);
+    return { question, options, correctIndex: options.indexOf(answer), category, level };
 }
 
 function generateIndiaKerala(level, index, category) {
-    const kPool = ["Kerala Capital?", "Kerala Bird?", "Kerala Language?"];
-    const iPool = ["India PM?", "India Animal?", "India Flower?"];
+    const kPool = [
+        { q: "What is the capital of Kerala?", a: "Thiruvananthapuram", alt: ["Kochi", "Kozhikode", "Thrissur"] },
+        { q: "What is the official bird of Kerala?", a: "Great Hornbill", alt: ["Peacock", "Emerald Dove", "Kingfisher"] },
+        { q: "Which is the main language of Kerala?", a: "Malayalam", alt: ["Tamil", "Kannada", "Telugu"] },
+        { q: "National Animal of India?", a: "Tiger", alt: ["Lion", "Elephant", "Leopard"] },
+        { q: "National Bird of India?", a: "Peacock", alt: ["Parrot", "Eagle", "Sparrow"] },
+        { q: "National Flower of India?", a: "Lotus", alt: ["Rose", "Jasmine", "Marigold"] }
+    ];
 
-    const pool = category === 'Kerala' ? kPool : iPool;
-    const baseQ = pool[(index + level) % pool.length];
-    const uniqueQ = `Level ${level}: ${baseQ}`;
+    const item = kPool[(index + level) % kPool.length];
+    const uniqueQ = `Level ${level}: ${item.q}`;
+    const options = [item.a, ...item.alt].sort(() => Math.random() - 0.5);
 
     return {
         question: uniqueQ,
-        options: ["Option 1", "Option 2", "Option 3", "Option 4"],
-        correctIndex: 0,
+        options,
+        correctIndex: options.indexOf(item.a),
         category,
         level
     };
