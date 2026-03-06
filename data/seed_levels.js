@@ -84,6 +84,28 @@ const BIOLOGY = [
     { n: "Brain", f: "Nervous System" }
 ];
 
+const GEOLOGY = [
+    { n: "Diamond", p: "Hardest natural substance" },
+    { n: "Magma", p: "Molten rock below surface" },
+    { n: "Quartz", p: "Common desktop mineral" },
+    { n: "Seismograph", p: "Measures earthquakes" }
+];
+
+const SOCIAL_SCIENCE = [
+    { n: "Democracy", p: "Power to the people" },
+    { n: "Magna Carta", p: "Signed in 1215" },
+    { n: "Constitution", p: "Supreme law of land" },
+    { n: "Renaissance", p: "Cultural rebirth in Europe" }
+];
+
+const INVENTIONS = [
+    { n: "Telephone", i: "Alexander Graham Bell" },
+    { n: "Light Bulb", i: "Thomas Edison" },
+    { n: "Penicillin", i: "Alexander Fleming" },
+    { n: "Steam Engine", i: "James Watt" },
+    { n: "Printing Press", i: "Johannes Gutenberg" }
+];
+
 // --- GENERATORS ---
 
 function generateMathQuestion(level, index) {
@@ -160,19 +182,38 @@ function generateScienceQuestion(level, index, category) {
 }
 
 function generateGeographyQuestion(level, index, category) {
-    const cIdx = (index + level) % COUNTRIES.length;
-    const country = COUNTRIES[cIdx];
     let question, answer, alts;
-
-    const type = (index + level) % 2;
-    if (type === 0) {
-        question = `Level ${level}: Capital of ${country.n}?`;
-        answer = country.c;
-        alts = COUNTRIES.filter(c => c.c !== country.c).map(c => c.c).sort(() => Math.random() - 0.5).slice(0, 3);
+    if (category === 'Geology') {
+        const geo = GEOLOGY[(index + level) % GEOLOGY.length];
+        question = `Level ${level}: ${geo.p}?`;
+        answer = geo.n; alts = GEOLOGY.filter(g => g.n !== geo.n).map(g => g.n).slice(0, 3);
+    } else if (category === 'Social Science') {
+        const ss = SOCIAL_SCIENCE[(index + level) % SOCIAL_SCIENCE.length];
+        question = `Level ${level}: What best describes ${ss.n}?`;
+        answer = ss.p; alts = SOCIAL_SCIENCE.filter(s => s.p !== ss.p).map(s => s.p).slice(0, 3);
+    } else if (category === 'General Knowledge') {
+        const inv = INVENTIONS[(index + level) % INVENTIONS.length];
+        const type = (index + level) % 2;
+        if (type === 0) {
+            question = `Level ${level}: Who invented the ${inv.n}?`;
+            answer = inv.i; alts = INVENTIONS.filter(v => v.i !== inv.i).map(v => v.i).slice(0, 3);
+        } else {
+            question = `Level ${level}: What was invented by ${inv.i}?`;
+            answer = inv.n; alts = INVENTIONS.filter(v => v.n !== inv.n).map(v => v.n).slice(0, 3);
+        }
     } else {
-        question = `Level ${level}: Continent for ${country.n}?`;
-        answer = country.cont;
-        alts = ["Asia", "Europe", "Africa", "South America", "North America", "Oceania"].filter(a => a !== country.cont).slice(0, 3);
+        const cIdx = (index + level) % COUNTRIES.length;
+        const country = COUNTRIES[cIdx];
+        const type = (index + level) % 2;
+        if (type === 0) {
+            question = `Level ${level}: Capital of ${country.n}?`;
+            answer = country.c;
+            alts = COUNTRIES.filter(c => c.c !== country.c).map(c => c.c).sort(() => Math.random() - 0.5).slice(0, 3);
+        } else {
+            question = `Level ${level}: Continent for ${country.n}?`;
+            answer = country.cont;
+            alts = ["Asia", "Europe", "Africa", "South America", "North America", "Oceania"].filter(a => a !== country.cont).slice(0, 3);
+        }
     }
 
     const options = [answer, ...alts].sort(() => Math.random() - 0.5);
