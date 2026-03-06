@@ -76,6 +76,18 @@ const userSchema = new mongoose.Schema({
         trim: true,
         maxLength: 150
     },
+    friends: [{
+        type: String,
+        ref: 'User'
+    }],
+    sentFriendRequests: [{
+        type: String,
+        ref: 'User'
+    }],
+    receivedFriendRequests: [{
+        type: String,
+        ref: 'User'
+    }],
     createdAt: {
         type: Date,
         default: Date.now
