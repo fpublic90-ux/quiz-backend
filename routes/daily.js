@@ -55,7 +55,10 @@ router.post('/claim', verifyToken, async (req, res) => {
         user.lastClaimedReward = now;
         await user.save();
 
-        res.json(user);
+        res.json({
+            user,
+            rewardAmount: rewardCoins
+        });
 
     } catch (err) {
         console.error('Daily Claim Error:', err);
