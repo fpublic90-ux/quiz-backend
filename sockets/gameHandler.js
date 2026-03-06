@@ -348,23 +348,6 @@ function registerGameHandlers(io, socket, userSockets) {
 
     // ─── leave_room ────────────────────────────────────────────────────────────
     socket.on('leave_room', ({ roomCode }) => {
-        const result = RoomManager.explicitLeave(socket.id);
-        if (!result) return;
-
-        const { code } = result;
-        const room = RoomManager.getRoom(code);
-
-        if (room) {
-            const playerList = room.players.map((p) => ({ id: p.id, uid: p.uid, name: p.name, score: p.score, isActive: p.isActive }));
-            io.to(code).emit('player_left', {
-                players: playerList,
-            });
-
-            if (room.status === 'playing' && room.players.length < 2) {
-                TimerManager.clearTimer(code);
-                endGame(io, code);
-            }
-        }
         try {
             const result = RoomManager.explicitLeave(socket.id);
             if (!result) return;
@@ -384,6 +367,7 @@ function registerGameHandlers(io, socket, userSockets) {
                 }
             }
             socket.leave(code);
+            console.log(`👤 ${socket.id} explicitly left room ${code}`);
         } catch (error) {
             console.error('Error in leave_room:', error);
             socket.emit('error', { message: 'Failed to leave room' });

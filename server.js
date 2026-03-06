@@ -16,7 +16,11 @@ const admin = require('firebase-admin');
 
 // Initialize Firebase Admin (Uses GOOGLE_APPLICATION_CREDENTIALS or default config)
 try {
-  admin.initializeApp();
+  // Initialize Firebase Admin
+  // If FIREBASE_PROJECT_ID is provided, use it to ensure project detection
+  admin.initializeApp({
+    projectId: process.env.FIREBASE_PROJECT_ID
+  });
   console.log('✅ Firebase Admin initialized');
 } catch (e) {
   console.error('❌ Firebase Admin initialization failed:', e.message);
