@@ -21,12 +21,14 @@ router.post('/claim', verifyToken, async (req, res) => {
             const diffInHours = diffInMs / (1000 * 60 * 60);
 
             if (diffInHours < 24) {
-                // Already claimed today (or less than 24h ago)
-                // Check if it's actually a different calendar day in UTC
-                const lastDate = new Date(lastClaimed).getUTCDate();
-                const nowDate = now.getUTCDate();
+                // Check if it's actually the same calendar day in UTC
+                const lastD = new Date(lastClaimed);
+                const isSameDay =
+                    lastD.getUTCFullYear() === now.getUTCFullYear() &&
+                    lastD.getUTCMonth() === now.getUTCMonth() &&
+                    lastD.getUTCDate() === now.getUTCDate();
 
-                if (lastDate === nowDate) {
+                if (isSameDay) {
                     return res.status(400).json({
                         message: 'Reward already claimed today',
                         nextAvailable: new Date(new Date().setUTCHours(24, 0, 0, 0))
