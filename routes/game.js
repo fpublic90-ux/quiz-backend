@@ -19,7 +19,11 @@ router.post('/save-results', async (req, res) => {
 
         // Always update question history if provided
         if (questionIds && Array.isArray(questionIds)) {
-            user.answeredQuestions = [...(user.answeredQuestions || []), ...questionIds];
+            const existingIds = (user.answeredQuestions || []).map(id => id.toString());
+            const newIds = questionIds.filter(id => !existingIds.includes(id.toString()));
+
+            user.answeredQuestions = [...(user.answeredQuestions || []), ...newIds];
+
             // Limit to last 500 seen questions
             if (user.answeredQuestions.length > 500) {
                 user.answeredQuestions = user.answeredQuestions.slice(-500);

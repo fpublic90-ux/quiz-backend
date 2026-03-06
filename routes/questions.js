@@ -18,9 +18,15 @@ router.get('/', async (req, res) => {
             const User = require('../models/User');
             const user = await User.findOne({ uid });
             if (user && user.answeredQuestions) {
-                excludeIds = user.answeredQuestions;
+                // Ensure they are correctly formatted as ObjectIds for aggregation
+                const mongoose = require('mongoose');
+                excludeIds = user.answeredQuestions.map(id =>
+                    typeof id === 'string' ? new mongoose.Types.ObjectId(id) : id
+                );
             }
         }
+
+        console.log(`🔍 Fetching for ${uid || 'guest'}: Level ${level}, Cat ${category}. Excluded count: ${excludeIds.length}`);
 
         const requestedCount = parseInt(count) || 10;
 
