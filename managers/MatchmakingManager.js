@@ -133,10 +133,12 @@ class MatchmakingManager {
         const botNames = ['Adil', 'Farhan', 'Shihab', 'Jaseela', 'Nimna', 'Lubna', 'Shalba', 'Keerthana', 'Marwa', 'Suhra', 'Thanha'];
         const numBots = Math.floor(Math.random() * 2) + 1;
 
+        const botAvatars = ['avatar1', 'avatar2', 'avatar3', 'avatar4', 'avatar_rocket', 'avatar_brain', 'premium_robot', 'premium_ninja'];
+
         for (let i = 0; i < numBots; i++) {
             const name = botNames[Math.floor(Math.random() * botNames.length)];
-            // Randomly assign an avatar to bot (avatar1 to avatar12)
-            const botAvatar = `avatar${Math.floor(Math.random() * 12) + 1}`;
+            // Randomly assign a valid avatar to bot
+            const botAvatar = botAvatars[Math.floor(Math.random() * botAvatars.length)];
             // Bots have 'bot_' id prefix
             RoomManager.joinRoom(room.code, name, `bot_${Math.random().toString(36).substr(2, 9)}`, `bot_${name}`, botAvatar);
         }

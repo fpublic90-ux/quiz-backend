@@ -52,7 +52,7 @@ function createRoom(playerName, socketId, uid, avatar = null, level = 1, tier = 
     const code = generateCode();
     rooms[code] = {
         code,
-        players: [{ id: socketId, uid: normalizedUid, name: playerName, avatar, score: 0, isActive: true, fastAnswers: 0, level: 1, tier: 'Bronze' }],
+        players: [{ id: socketId, uid: normalizedUid, name: playerName, avatar, score: 0, isActive: true, fastAnswers: 0, level, tier }],
         status: 'waiting',
         questions: [],
         currentQuestionIndex: -1,
