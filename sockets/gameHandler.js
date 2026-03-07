@@ -2,7 +2,7 @@ const RoomManager = require('../managers/RoomManager');
 const TimerManager = require('../managers/TimerManager');
 const Question = require('../models/Question');
 const User = require('../models/User');
-const MatchmakingManager = require( '../managers/MatchmakingManager');
+const MatchmakingManager = require('../managers/MatchmakingManager');
 const AchievementManager = require('../managers/AchievementManager');
 
 const QUESTIONS_PER_GAME = 10;
@@ -163,7 +163,7 @@ async function advanceQuestion(io, code) {
 /**
  * End the game and send leaderboard
  */
-async function endGame(io, code) {
+async function endGame(io, code, reason = null) {
     try {
         TimerManager.clearTimer(code);
         const room = RoomManager.getRoom(code);
@@ -184,11 +184,18 @@ async function endGame(io, code) {
                         user.totalScore += player.score;
                         if (rank === 1) user.wins += 1;
 
-                        // Award Coins based on rank
+                        // Award Coins based on rank or premature end
                         let coinReward = 10;
-                        if (rank === 1) coinReward = 100;
-                        else if (rank === 2) coinReward = 50;
-                        else if (rank === 3) coinReward = 30;
+                        if (reason === 'opponent_left' && leaderboard.length === 1) {
+                            coinReward = 25; // Fair Play Bonus
+                            console.log(`🎁 Fair Play Bonus: 25 coins for ${player.name}`);
+                        } else if (rank === 1) {
+                            coinReward = 100;
+                        } else if (rank === 2) {
+                            coinReward = 50;
+                        } else if (rank === 3) {
+                            coinReward = 30;
+                        }
                         user.coins += coinReward;
 
                         // Award XP based on score and rank multiplier
@@ -405,9 +412,10 @@ function registerGameHandlers(io, socket, userSockets) {
                     players: playerList,
                 });
 
-                if (room.status === 'playing' && room.players.length < 2) {
+                if (room.status === 'playing' && room.players.filter(p => p.isActive).length < 2) {
                     TimerManager.clearTimer(code);
-                    endGame(io, code);
+                    io.to(code).emit('opponent_left', { message: 'Opponent left the game!' });
+                    endGame(io, code, 'opponent_left');
                 }
             }
             socket.leave(code);
@@ -574,10 +582,11 @@ function registerGameHandlers(io, socket, userSockets) {
             players: playerList,
         });
 
-        // End game if < 2 players remain during active game
-        if (room.status === 'playing' && room.players.length < 2) {
+        // End game if < 2 players (active) remain during active game
+        if (room.status === 'playing' && room.players.filter(p => p.isActive).length < 2) {
             TimerManager.clearTimer(code);
-            endGame(io, code);
+            io.to(code).emit('opponent_left', { message: 'Opponent left the game!' });
+            endGame(io, code, 'opponent_left');
         }
     });
 }
