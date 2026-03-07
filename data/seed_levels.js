@@ -5,7 +5,7 @@ const Question = require('../models/Question');
 const CATEGORIES = [
     'Kerala', 'India', 'Technology', 'Science', 'Physics', 'Chemistry',
     'Biology', 'History', 'Geology', 'Social Science', 'Mathematics',
-    'IT', 'Sports', 'Economics', 'General Knowledge'
+    'IT', 'Sports', 'Economics', 'General Knowledge', 'Movies'
 ];
 
 // ─── DATA POOLS ─────────────────────────────────────────────────────────────
@@ -309,6 +309,29 @@ const SOCIAL_SCIENCE_POOL = [
     { q: "What is a monarchy?", a: "System of rule by a king or queen", alt: ["Rule by elected officials", "Rule by military generals", "Rule by religious leaders"] }
 ];
 
+const MOVIES_POOL = [
+    { q: "Who directed 'Inception'?", a: "Christopher Nolan", alt: ["Steven Spielberg", "James Cameron", "Quentin Tarantino"] },
+    { q: "Which movie won the first Oscar for Best Picture?", a: "Wings", alt: ["Sunrise", "The Racket", "Seventh Heaven"] },
+    { q: "What is the highest-grossing film of all time (unadjusted)?", a: "Avatar", alt: ["Avengers: Endgame", "Titanic", "Star Wars: The Force Awakens"] },
+    { q: "Who played Jack in 'Titanic'?", a: "Leonardo DiCaprio", alt: ["Brad Pitt", "Tom Cruise", "Johnny Depp"] },
+    { q: "Which film has the line: 'I'm going to make him an offer he can't refuse'?", a: "The Godfather", alt: ["Goodfellas", "Scarface", "Casino"] },
+    { q: "Who is the voice of Woody in 'Toy Story'?", a: "Tom Hanks", alt: ["Tim Allen", "John Ratzenberger", "Don Rickles"] },
+    { q: "Which 1994 movie features a character named Forrest Gump?", a: "Forrest Gump", alt: ["Pulp Fiction", "The Lion King", "Speed"] },
+    { q: "Who directed 'Jaws'?", a: "Steven Spielberg", alt: ["George Lucas", "Alfred Hitchcock", "Martin Scorsese"] },
+    { q: "Which actor played Iron Man in the MCU?", a: "Robert Downey Jr.", alt: ["Chris Evans", "Chris Hemsworth", "Mark Ruffalo"] },
+    { q: "What is the name of the kingdom in 'Frozen'?", a: "Arendelle", alt: ["Corona", "DunBroch", "Agrabah"] },
+    { q: "Who played Joker in 'The Dark Knight'?", a: "Heath Ledger", alt: ["Joaquin Phoenix", "Jack Nicholson", "Jared Leto"] },
+    { q: "Which movie features a theme park with cloned dinosaurs?", a: "Jurassic Park", alt: ["King Kong", "The Lost World", "Westworld"] },
+    { q: "First feature-length animated movie released?", a: "Snow White and the Seven Dwarfs", alt: ["Pinocchio", "Fantasia", "Dumbo"] },
+    { q: "Who directed 'Pulp Fiction'?", a: "Quentin Tarantino", alt: ["Guy Ritchie", "David Fincher", "Bryan Singer"] },
+    { q: "Which film features the character 'Darth Vader'?", a: "Star Wars", alt: ["Star Trek", "The Matrix", "Blade Runner"] },
+    { q: "Who played Katniss Everdeen in 'The Hunger Games'?", a: "Jennifer Lawrence", alt: ["Emma Watson", "Shailene Woodley", "Hailee Steinfeld"] },
+    { q: "Which 2019 film follows a poor family infiltrating a wealthy household?", a: "Parasite", alt: ["The Irishman", "Joker", "1917"] },
+    { q: "Who directed 'Schindler's List'?", a: "Steven Spielberg", alt: ["James Cameron", "Ron Howard", "Ridley Scott"] },
+    { q: "Which film features the line: 'May the Force be with you'?", a: "Star Wars", alt: ["E.T.", "Back to the Future", "The Terminator"] },
+    { q: "Who played the main character in 'The Matrix'?", a: "Keanu Reeves", alt: ["Laurence Fishburne", "Hugo Weaving", "Carrie-Anne Moss"] }
+];
+
 const GENERAL_KNOWLEDGE_POOL = [
     { q: "Who invented the telephone?", a: "Alexander Graham Bell", alt: ["Thomas Edison", "Nikola Tesla", "Guglielmo Marconi"] },
     { q: "Who invented the light bulb?", a: "Thomas Edison", alt: ["Nikola Tesla", "Benjamin Franklin", "James Watt"] },
@@ -463,6 +486,9 @@ async function seed() {
                             break;
                         case 'General Knowledge':
                             q = generateFromPool(GENERAL_KNOWLEDGE_POOL, level, qIdx, category);
+                            break;
+                        case 'Movies':
+                            q = generateFromPool(MOVIES_POOL, level, qIdx, category);
                             break;
                         default:
                             q = generateFromPool(GENERAL_KNOWLEDGE_POOL, level, qIdx, category);
