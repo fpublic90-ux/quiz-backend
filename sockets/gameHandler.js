@@ -468,6 +468,54 @@ function registerGameHandlers(io, socket, userSockets) {
         }
     });
 
+    // ─── update_room_config ───────────────────────────────────────────────────
+    socket.on('update_room_config', ({ roomCode, level, category }) => {
+        const code = roomCode ? roomCode.toUpperCase().trim() : '';
+        const room = RoomManager.getRoom(code);
+        if (!room) return;
+
+        // Only host can update config
+        if (room.players[0].id !== socket.id) return;
+
+        // Broadcast to all (including host for confirmation if needed, but usually host updates locally first)
+        io.to(code).emit('room_config_updated', {
+            level: parseInt(level),
+            category
+        });
+        console.log(`⚙️ Room ${code} config updated by host: Level ${level}, Category ${category}`);
+    });
+
+    // ─── kick_player ────────────────────────────────────────────────────────
+    socket.on('kick_player', ({ roomCode, targetUid }) => {
+        const code = roomCode ? roomCode.toUpperCase().trim() : '';
+        const room = RoomManager.getRoom(code);
+        if (!room) return;
+
+        // Only host can kick
+        if (room.players[0].id !== socket.id) return;
+
+        // Find the socket ID for the target UID in this room
+        const targetPlayer = room.players.find(p => p.uid === targetUid);
+        if (!targetPlayer) return;
+
+        const targetSocketId = targetPlayer.id;
+
+        // Tell the target they were kicked
+        io.to(targetSocketId).emit('player_kicked', { targetUid });
+
+        // Remove them from the room
+        RoomManager.explicitLeave(targetSocketId);
+
+        // Notify others
+        const playerList = room.players.map((p) => ({ id: p.id, uid: p.uid, name: p.name, score: p.score, isActive: p.isActive }));
+        io.to(code).emit('player_left', {
+            playerName: targetPlayer.name,
+            players: playerList,
+        });
+
+        console.log(`👢 Player ${targetPlayer.name} (UID: ${targetUid}) was kicked from room ${code}`);
+    });
+
     // ─── invite_friend ──────────────────────────────────────────────────────────
     socket.on('invite_friend', ({ targetUid, roomCode, hostName }) => {
         const targetSocketId = userSockets.get(targetUid);
