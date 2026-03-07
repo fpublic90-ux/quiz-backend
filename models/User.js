@@ -71,6 +71,11 @@ const userSchema = new mongoose.Schema({
         type: Number,
         default: 0
     },
+    practiceLevels: {
+        type: Map,
+        of: Number,
+        default: {}
+    },
     loginStreak: {
         type: Number,
         default: 0
