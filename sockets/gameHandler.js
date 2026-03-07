@@ -82,7 +82,7 @@ function broadcastScores(io, code) {
     const room = RoomManager.getRoom(code);
     if (!room) return;
     io.to(code).emit('update_score', {
-        players: room.players.map((p) => ({ id: p.id, uid: p.uid, name: p.name, score: p.score, isActive: p.isActive })),
+        players: room.players.map((p) => ({ id: p.id, uid: p.uid, name: p.name, avatar: p.avatar, score: p.score, isActive: p.isActive })),
     });
 }
 
@@ -239,8 +239,8 @@ async function endGame(io, code) {
         }
 
         io.to(code).emit('game_over', {
-            leaderboard: leaderboard.map(p => ({ id: p.id, uid: p.uid, name: p.name, score: p.score, isActive: p.isActive })),
-            winner: leaderboard[0] ? { id: leaderboard[0].id, uid: leaderboard[0].uid, name: leaderboard[0].name, score: leaderboard[0].score, isActive: leaderboard[0].isActive } : null,
+            leaderboard: leaderboard.map(p => ({ id: p.id, uid: p.uid, name: p.name, avatar: p.avatar, score: p.score, isActive: p.isActive })),
+            winner: leaderboard[0] ? { id: leaderboard[0].id, uid: leaderboard[0].uid, name: leaderboard[0].name, avatar: leaderboard[0].avatar, score: leaderboard[0].score, isActive: leaderboard[0].isActive } : null,
         });
     } catch (err) {
         console.error(`❌ Error in endGame for room ${code}:`, err);
@@ -377,9 +377,9 @@ function registerGameHandlers(io, socket, userSockets) {
     });
 
     // ─── find_match ─────────────────────────────────────────────────────────────
-    socket.on('find_match', ({ playerName, uid }) => {
+    socket.on('find_match', ({ playerName, uid, avatar, category }) => {
         if (!playerName || !uid) return;
-        MatchmakingManager.addToQueue(io, socket, playerName, uid);
+        MatchmakingManager.addToQueue(io, socket, playerName, uid, avatar, category);
     });
 
     // ─── cancel_match ────────────────────────────────────────────────────────
@@ -611,7 +611,7 @@ async function startGame(io, code, socket, level = 1, category = 'All') {
 
         io.to(code).emit('start_game', {
             totalQuestions: QUESTIONS_PER_GAME,
-            players: room.players.map((p) => ({ id: p.id, uid: p.uid, name: p.name, score: p.score, isActive: p.isActive })),
+            players: room.players.map((p) => ({ id: p.id, uid: p.uid, name: p.name, avatar: p.avatar, score: p.score, isActive: p.isActive })),
         });
 
         console.log(`🎮 Game started in room ${code}`);

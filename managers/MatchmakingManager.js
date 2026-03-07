@@ -13,12 +13,12 @@ class MatchmakingManager {
         this.startGame = startGame;
     }
 
-    addToQueue(io, socket, playerName, uid) {
+    addToQueue(io, socket, playerName, uid, avatar, category = 'All') {
         // Prevent duplicate entries
         if (this.queue.find(p => p.uid === uid)) return;
 
-        console.log(`🔍 Matchmaking: ${playerName} joined queue.`);
-        const entry = { socket, playerName, uid, isMatching: false };
+        console.log(`🔍 Matchmaking: ${playerName} (${category}) joined queue.`);
+        const entry = { socket, playerName, uid, avatar, category, isMatching: false };
         this.queue.push(entry);
 
         this.tryMatch(io);
@@ -31,31 +31,51 @@ class MatchmakingManager {
 
     tryMatch(io) {
         if (this.queue.length >= 2) {
-            // Find two players who aren't already being matched
-            const playersToMatch = [];
-            for (let i = 0; i < this.queue.length && playersToMatch.length < 2; i++) {
-                if (!this.queue[i].isMatching) {
-                    playersToMatch.push(this.queue[i]);
+            let p1, p2;
+
+            // Try to find two players with matching categories first
+            const availablePlayers = this.queue.filter(p => !p.isMatching);
+            if (availablePlayers.length < 2) return;
+
+            // Group by category
+            const categories = {};
+            availablePlayers.forEach(p => {
+                if (!categories[p.category]) categories[p.category] = [];
+                categories[p.category].push(p);
+            });
+
+            // Find any category with at least 2 players
+            for (const cat in categories) {
+                if (categories[cat].length >= 2) {
+                    p1 = categories[cat][0];
+                    p2 = categories[cat][1];
+                    break;
                 }
             }
 
-            if (playersToMatch.length < 2) return;
+            // Fallback: Just take the first two available players if no category match
+            if (!p1 || !p2) {
+                p1 = availablePlayers[0];
+                p2 = availablePlayers[1];
+            }
 
             // Mark them as matching
-            playersToMatch.forEach(p => p.isMatching = true);
+            p1.isMatching = true;
+            p2.isMatching = true;
 
             // Remove from queue
-            const p1 = playersToMatch[0];
-            const p2 = playersToMatch[1];
             this.queue = this.queue.filter(q => q !== p1 && q !== p2);
 
-            console.log(`🤝 Match Found: ${p1.playerName} vs ${p2.playerName}`);
+            console.log(`🤝 Match Found: ${p1.playerName} vs ${p2.playerName} in category ${p1.category === p2.category ? p1.category : 'Mixed'}`);
+
+            // Use p1's category for the room if they match, else 'All'
+            const roomCategory = p1.category === p2.category ? p1.category : 'All';
 
             // Create a real room for them
-            const room = RoomManager.createRoom(p1.playerName, p1.socket.id, p1.uid);
+            const room = RoomManager.createRoom(p1.playerName, p1.socket.id, p1.uid, p1.avatar);
 
             // Add p2
-            RoomManager.joinRoom(room.code, p2.playerName, p2.socket.id, p2.uid);
+            RoomManager.joinRoom(room.code, p2.playerName, p2.socket.id, p2.uid, p2.avatar);
 
             // Join sockets to room
             p1.socket.join(room.code);
@@ -66,6 +86,7 @@ class MatchmakingManager {
                 id: p.id,
                 uid: p.uid,
                 name: p.name,
+                avatar: p.avatar,
                 score: p.score,
                 isActive: p.isActive
             }));
@@ -75,7 +96,7 @@ class MatchmakingManager {
             // Automatically start the game for the matched players
             setTimeout(() => {
                 if (this.startGame) {
-                    this.startGame(io, room.code, p1.socket, 1, 'All');
+                    this.startGame(io, room.code, p1.socket, 1, roomCategory);
                 }
             }, 1500);
         }
@@ -94,7 +115,7 @@ class MatchmakingManager {
         console.log(`🤖 Matchmaking Fallback: No real opponent for ${p.playerName}. Spawning bots...`);
 
         // Create a room
-        const room = RoomManager.createRoom(p.playerName, p.socket.id, p.uid);
+        const room = RoomManager.createRoom(p.playerName, p.socket.id, p.uid, p.avatar);
         p.socket.join(room.code);
 
         // Add 1-2 bots
@@ -103,24 +124,27 @@ class MatchmakingManager {
 
         for (let i = 0; i < numBots; i++) {
             const name = botNames[Math.floor(Math.random() * botNames.length)];
+            // Randomly assign an avatar to bot (avatar1 to avatar12)
+            const botAvatar = `avatar${Math.floor(Math.random() * 12) + 1}`;
             // Bots have 'bot_' id prefix
-            RoomManager.joinRoom(room.code, name, `bot_${Math.random().toString(36).substr(2, 9)}`, `bot_${name}`);
+            RoomManager.joinRoom(room.code, name, `bot_${Math.random().toString(36).substr(2, 9)}`, `bot_${name}`, botAvatar);
         }
 
         const players = room.players.map(p => ({
             id: p.id,
             uid: p.uid,
             name: p.name,
+            avatar: p.avatar,
             score: p.score,
             isActive: p.isActive
         }));
 
         p.socket.emit('room_joined', { code: room.code, players });
 
-        // Automatically start the game with bots
+        // Automatically start the game with bots using player's preferred category
         setTimeout(() => {
             if (this.startGame) {
-                this.startGame(io, room.code, p.socket, 1, 'All');
+                this.startGame(io, room.code, p.socket, 1, p.category);
             }
         }, 1500);
     }
