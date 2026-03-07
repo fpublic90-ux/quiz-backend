@@ -368,6 +368,13 @@ function registerGameHandlers(io, socket, userSockets) {
         MatchmakingManager.addToQueue(io, socket, playerName, uid);
     });
 
+    // ─── cancel_match ────────────────────────────────────────────────────────
+    socket.on('cancel_match', ({ uid }) => {
+        if (!uid) return;
+        MatchmakingManager.removeFromQueue(uid);
+        console.log(`📡 Matchmaking Canceled: User ${uid} left the queue.`);
+    });
+
     // ─── leave_room ────────────────────────────────────────────────────────────
     socket.on('leave_room', ({ roomCode }) => {
         try {
