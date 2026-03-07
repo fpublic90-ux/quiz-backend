@@ -24,7 +24,7 @@ function generateCode() {
 /**
  * Create a new room with the host player
  */
-function createRoom(playerName, socketId, uid) {
+function createRoom(playerName, socketId, uid, avatar = null) {
     // If UID is provided, check if player is already in a room to reclaim it
     const normalizedUid = uid ? uid.toString().trim() : null;
     if (normalizedUid && normalizedUid !== '') {
@@ -42,6 +42,7 @@ function createRoom(playerName, socketId, uid) {
 
                 player.id = socketId;
                 player.name = playerName;
+                player.avatar = avatar; // Update avatar on reclaim
                 player.isActive = true;
                 return existingRoom;
             }
@@ -51,7 +52,7 @@ function createRoom(playerName, socketId, uid) {
     const code = generateCode();
     rooms[code] = {
         code,
-        players: [{ id: socketId, uid, name: playerName, score: 0, isActive: true, fastAnswers: 0 }],
+        players: [{ id: socketId, uid: normalizedUid, name: playerName, avatar, score: 0, isActive: true, fastAnswers: 0 }],
         status: 'waiting',
         questions: [],
         currentQuestionIndex: -1,
@@ -60,7 +61,7 @@ function createRoom(playerName, socketId, uid) {
     return rooms[code];
 }
 
-function joinRoom(code, playerName, socketId, uid) {
+function joinRoom(code, playerName, socketId, uid, avatar = null) {
     const room = rooms[code];
     if (!room) return { success: false, error: 'Room not found' };
 
@@ -82,6 +83,7 @@ function joinRoom(code, playerName, socketId, uid) {
 
             existingPlayer.id = socketId;
             existingPlayer.name = playerName;
+            existingPlayer.avatar = avatar; // Update avatar on reconnect
             existingPlayer.isActive = true;
             return { success: true, room };
         }
@@ -94,7 +96,7 @@ function joinRoom(code, playerName, socketId, uid) {
 
     if (room.players.length >= 6) return { success: false, error: 'Room is full' };
 
-    room.players.push({ id: socketId, uid, name: playerName, score: 0, isActive: true, fastAnswers: 0 });
+    room.players.push({ id: socketId, uid, name: playerName, avatar, score: 0, isActive: true, fastAnswers: 0 });
     return { success: true, room };
 }
 
