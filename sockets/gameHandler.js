@@ -14,7 +14,8 @@ const POINTS_PER_CORRECT = 10;
 async function fetchQuestions(level, category = 'All', count = QUESTIONS_PER_GAME, uid = null) {
     const query = { level: parseInt(level) };
     if (category && category !== 'All') {
-        query.category = category;
+        // Use case-insensitive regex for robustness
+        query.category = { $regex: new RegExp(`^${category}$`, 'i') };
     }
 
     let excludeIds = [];
@@ -598,8 +599,8 @@ async function startGame(io, code, socket, level = 1, category = 'All') {
         if (socket) socket.emit('info', { message: `Fetching questions for Level ${level} (${category})...` });
         const questions = await fetchQuestions(level, category, QUESTIONS_PER_GAME, hostUid);
         if (questions.length < QUESTIONS_PER_GAME) {
-            console.log(`⚠️ Not enough questions in DB: ${questions.length}`);
-            io.to(code).emit('error', { message: 'Not enough questions in database (minimum 10 required). Please seed the DB.' });
+            console.error(`❌ Game Start Error: Not enough questions for ${category} (Level ${level}). Found only ${questions.length}.`);
+            io.to(code).emit('error', { message: `Not enough questions for ${category}. Please try another category or seed more questions.` });
             return;
         }
 

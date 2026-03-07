@@ -91,12 +91,20 @@ class MatchmakingManager {
                 isActive: p.isActive
             }));
 
-            io.to(room.code).emit('room_joined', { code: room.code, players });
+            // Notify both individually (more reliable than io.to after join)
+            const payload = { code: room.code, players };
+            p1.socket.emit('room_joined', payload);
+            p2.socket.emit('room_joined', payload);
+
+            console.log(`📡 Matchmaking: Emitted room_joined to ${p1.playerName} and ${p2.playerName}`);
 
             // Automatically start the game for the matched players
+            console.log(`⏱️ Matchmaking: Starting game in 1.5s for room ${room.code}...`);
             setTimeout(() => {
                 if (this.startGame) {
                     this.startGame(io, room.code, p1.socket, 1, roomCategory);
+                } else {
+                    console.error('❌ Matchmaking Error: this.startGame is not defined!');
                 }
             }, 1500);
         }
