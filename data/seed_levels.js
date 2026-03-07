@@ -310,26 +310,42 @@ const SOCIAL_SCIENCE_POOL = [
 ];
 
 const MOVIES_POOL = [
+    // Hollywood / English
     { q: "Who directed 'Inception'?", a: "Christopher Nolan", alt: ["Steven Spielberg", "James Cameron", "Quentin Tarantino"] },
-    { q: "Which movie won the first Oscar for Best Picture?", a: "Wings", alt: ["Sunrise", "The Racket", "Seventh Heaven"] },
-    { q: "What is the highest-grossing film of all time (unadjusted)?", a: "Avatar", alt: ["Avengers: Endgame", "Titanic", "Star Wars: The Force Awakens"] },
+    { q: "What is the highest-grossing film of all time?", a: "Avatar", alt: ["Avengers: Endgame", "Titanic", "Star Wars"] },
     { q: "Who played Jack in 'Titanic'?", a: "Leonardo DiCaprio", alt: ["Brad Pitt", "Tom Cruise", "Johnny Depp"] },
-    { q: "Which film has the line: 'I'm going to make him an offer he can't refuse'?", a: "The Godfather", alt: ["Goodfellas", "Scarface", "Casino"] },
     { q: "Who is the voice of Woody in 'Toy Story'?", a: "Tom Hanks", alt: ["Tim Allen", "John Ratzenberger", "Don Rickles"] },
-    { q: "Which 1994 movie features a character named Forrest Gump?", a: "Forrest Gump", alt: ["Pulp Fiction", "The Lion King", "Speed"] },
-    { q: "Who directed 'Jaws'?", a: "Steven Spielberg", alt: ["George Lucas", "Alfred Hitchcock", "Martin Scorsese"] },
-    { q: "Which actor played Iron Man in the MCU?", a: "Robert Downey Jr.", alt: ["Chris Evans", "Chris Hemsworth", "Mark Ruffalo"] },
-    { q: "What is the name of the kingdom in 'Frozen'?", a: "Arendelle", alt: ["Corona", "DunBroch", "Agrabah"] },
-    { q: "Who played Joker in 'The Dark Knight'?", a: "Heath Ledger", alt: ["Joaquin Phoenix", "Jack Nicholson", "Jared Leto"] },
-    { q: "Which movie features a theme park with cloned dinosaurs?", a: "Jurassic Park", alt: ["King Kong", "The Lost World", "Westworld"] },
-    { q: "First feature-length animated movie released?", a: "Snow White and the Seven Dwarfs", alt: ["Pinocchio", "Fantasia", "Dumbo"] },
-    { q: "Who directed 'Pulp Fiction'?", a: "Quentin Tarantino", alt: ["Guy Ritchie", "David Fincher", "Bryan Singer"] },
-    { q: "Which film features the character 'Darth Vader'?", a: "Star Wars", alt: ["Star Trek", "The Matrix", "Blade Runner"] },
-    { q: "Who played Katniss Everdeen in 'The Hunger Games'?", a: "Jennifer Lawrence", alt: ["Emma Watson", "Shailene Woodley", "Hailee Steinfeld"] },
-    { q: "Which 2019 film follows a poor family infiltrating a wealthy household?", a: "Parasite", alt: ["The Irishman", "Joker", "1917"] },
-    { q: "Who directed 'Schindler's List'?", a: "Steven Spielberg", alt: ["James Cameron", "Ron Howard", "Ridley Scott"] },
-    { q: "Which film features the line: 'May the Force be with you'?", a: "Star Wars", alt: ["E.T.", "Back to the Future", "The Terminator"] },
-    { q: "Who played the main character in 'The Matrix'?", a: "Keanu Reeves", alt: ["Laurence Fishburne", "Hugo Weaving", "Carrie-Anne Moss"] }
+
+    // Malayalam
+    { q: "Who is known as the 'Complete Actor' in Malayalam cinema?", a: "Mohanlal", alt: ["Mammootty", "Suresh Gopi", "Jayaram"] },
+    { q: "Which Malayalam movie won the first National Film Award for Best Feature Film?", a: "Chemmeen", alt: ["Neelakuyil", "Swayamvaram", "Elippathayam"] },
+    { q: "Who directed the movie 'Drishyam'?", a: "Jeethu Joseph", alt: ["Lijo Jose Pellissery", "Aashiq Abu", "Alphonse Puthren"] },
+    { q: "Who is the lead actor in 'Lucifer'?", a: "Mohanlal", alt: ["Prithviraj", "Tovino Thomas", "Fahadh Faasil"] },
+    { q: "Which film is considered the first '3D' movie in India (Malayalam)?", a: "My Dear Kuttichathan", alt: ["Padayottam", "Jwaala", "Vidyarthigale Ithile Ithile"] },
+
+    // Hindi (Bollywood)
+    { q: "Who is known as the 'Baadshah of Bollywood'?", a: "Shah Rukh Khan", alt: ["Aamir Khan", "Salman Khan", "Akshay Kumar"] },
+    { q: "Which Hindi movie is known as the 'Greatest of All Time'?", a: "Sholay", alt: ["Mughal-E-Azam", "Lagaan", "Dilwale Dulhania Le Jayenge"] },
+    { q: "Who directed the movie 'Lagaan'?", a: "Ashutosh Gowariker", alt: ["Sanjay Leela Bhansali", "Karan Johar", "Rajkumar Hirani"] },
+    { q: "Who played the lead role in 'Dangal'?", a: "Aamir Khan", alt: ["Shah Rukh Khan", "Salman Khan", "Ranbir Kapoor"] },
+
+    // Tamil (Kollywood)
+    { q: "Who is called 'Superstar' in Tamil cinema?", a: "Rajinikanth", alt: ["Kamal Haasan", "Vijay", "Ajith"] },
+    { q: "Who directed the epic film 'Ponniyin Selvan'?", a: "Mani Ratnam", alt: ["Shankar", "Vetrimaaran", "Pa. Ranjith"] },
+    { q: "Which Tamil movie features the character 'Chitti' the Robot?", a: "Enthiran", alt: ["Sivaji", "2.0", "Anniyan"] },
+    { q: "Who is known as 'Ulaganayagan'?", a: "Kamal Haasan", alt: ["Rajinikanth", "Suriya", "Vikram"] },
+
+    // Telugu (Tollywood)
+    { q: "Which Telugu movie became a global phenomenon and won an Oscar for 'Naatu Naatu'?", a: "RRR", alt: ["Baahubali", "Pushpa", "Eega"] },
+    { q: "Who directed the 'Baahubali' series?", a: "S.S. Rajamouli", alt: ["Sukumar", "Trivikram Srinivas", "Puri Jagannadh"] },
+    { q: "Who is the lead actor of 'Pushpa: The Rise'?", a: "Allu Arjun", alt: ["Mahesh Babu", "Prabhas", "Ram Charan"] },
+    { q: "Who is known as 'Mega Star' in Tollywood?", a: "Chiranjeevi", alt: ["Pawan Kalyan", "NTR Jr", "Balakrishna"] },
+
+    // Kannada (Sandalwood)
+    { q: "Which Kannada movie series broke records across India starting in 2018?", a: "K.G.F", alt: ["Kantara", "777 Charlie", "Vikrant Rona"] },
+    { q: "Who is the lead actor in 'K.G.F'?", a: "Yash", alt: ["Rishab Shetty", "Rakshit Shetty", "Sudeep"] },
+    { q: "Which Kannada film gained massive popularity for its 'Bhoota Kola' theme?", a: "Kantara", alt: ["K.G.F", "Raajakumara", "Lucia"] },
+    { q: "Who is known as 'Power Star' in Kannada cinema?", a: "Puneeth Rajkumar", alt: ["Darshan", "Yash", "Upendra"] }
 ];
 
 const GENERAL_KNOWLEDGE_POOL = [
