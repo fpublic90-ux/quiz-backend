@@ -2,7 +2,7 @@ const RoomManager = require('../managers/RoomManager');
 const TimerManager = require('../managers/TimerManager');
 const Question = require('../models/Question');
 const User = require('../models/User');
-const MatchmakingManager = require('../managers/MatchmakingManager');
+const MatchmakingManager = require( '../managers/MatchmakingManager');
 const AchievementManager = require('../managers/AchievementManager');
 
 const QUESTIONS_PER_GAME = 10;

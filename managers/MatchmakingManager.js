@@ -3,7 +3,7 @@ const RoomManager = require('./RoomManager');
 class MatchmakingManager {
     constructor() {
         this.queue = []; // Array of { socket, playerName, uid }
-        this.matchmakingTimeout = 10000; // 10 seconds wait before bot fallback
+        this.matchmakingTimeout = 5000; // 5 seconds wait before bot fallback
         this.io = null;
         this.startGame = null;
     }
@@ -23,7 +23,8 @@ class MatchmakingManager {
 
         this.tryMatch(io);
 
-        // Set fallback timeout
+        // Set fallback timeout with a unique reference if needed, though simple setTimeout is fine here
+        console.log(`⏱️ Matchmaking: Fallback timer started for ${playerName} (5s)`);
         setTimeout(() => {
             this.handleFallback(io, uid);
         }, this.matchmakingTimeout);
