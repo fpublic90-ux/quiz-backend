@@ -31,6 +31,10 @@ router.post('/save-results', async (req, res) => {
         }
 
         if (isPractice) {
+            // Save highest practice level reached
+            if (practiceLevel && practiceLevel > (user.highestPracticeLevel || 0)) {
+                user.highestPracticeLevel = practiceLevel;
+            }
             await user.save();
             return res.status(200).json({ message: 'Practice session history saved', user });
         }

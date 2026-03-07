@@ -67,6 +67,10 @@ const userSchema = new mongoose.Schema({
     lastClaimedReward: {
         type: Date
     },
+    highestPracticeLevel: {
+        type: Number,
+        default: 0
+    },
     loginStreak: {
         type: Number,
         default: 0
