@@ -631,7 +631,7 @@ async function startGame(io, code, socket, level = 1, category = 'All') {
     // Reset scores and answers for new level
     room.players.forEach(p => p.score = 0);
     room.answeredPlayers.clear();
-    room.currentQuestionIndex = 0;
+    room.currentQuestionIndex = -1;
 
     try {
         const hostUid = room.players[0]?.uid;
