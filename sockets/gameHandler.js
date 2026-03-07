@@ -83,7 +83,7 @@ function broadcastScores(io, code) {
     const room = RoomManager.getRoom(code);
     if (!room) return;
     io.to(code).emit('update_score', {
-        players: room.players.map((p) => ({ id: p.id, uid: p.uid, name: p.name, avatar: p.avatar, score: p.score, isActive: p.isActive })),
+        players: room.players.map((p) => ({ id: p.id, uid: p.uid, name: p.name, avatar: p.avatar, score: p.score, isActive: p.isActive, level: p.level, tier: p.tier })),
     });
 }
 
@@ -247,8 +247,8 @@ async function endGame(io, code, reason = null) {
         }
 
         io.to(code).emit('game_over', {
-            leaderboard: leaderboard.map(p => ({ id: p.id, uid: p.uid, name: p.name, avatar: p.avatar, score: p.score, isActive: p.isActive })),
-            winner: leaderboard[0] ? { id: leaderboard[0].id, uid: leaderboard[0].uid, name: leaderboard[0].name, avatar: leaderboard[0].avatar, score: leaderboard[0].score, isActive: leaderboard[0].isActive } : null,
+            leaderboard: leaderboard.map(p => ({ id: p.id, uid: p.uid, name: p.name, avatar: p.avatar, score: p.score, isActive: p.isActive, level: p.level, tier: p.tier })),
+            winner: leaderboard[0] ? { id: leaderboard[0].id, uid: leaderboard[0].uid, name: leaderboard[0].name, avatar: leaderboard[0].avatar, score: leaderboard[0].score, isActive: leaderboard[0].isActive, level: leaderboard[0].level, tier: leaderboard[0].tier } : null,
         });
     } catch (err) {
         console.error(`❌ Error in endGame for room ${code}:`, err);
@@ -260,13 +260,24 @@ async function endGame(io, code, reason = null) {
  */
 function registerGameHandlers(io, socket, userSockets) {
     // ─── create_room ───────────────────────────────────────────────────────────
-    socket.on('create_room', ({ playerName, uid, avatar }) => {
+    socket.on('create_room', async (data) => {
+        const { playerName, uid, avatar } = data;
         try {
             if (!playerName || playerName.trim() === '') {
                 socket.emit('error', { message: 'Player name is required' });
                 return;
             }
-            const room = RoomManager.createRoom(playerName.trim(), socket.id, uid, avatar);
+            let userLevel = 1;
+            let userTier = 'Bronze';
+            if (uid) {
+                const user = await User.findOne({ uid });
+                if (user) {
+                    userLevel = user.level;
+                    userTier = user.tier;
+                }
+            }
+
+            const room = RoomManager.createRoom(playerName.trim(), socket.id, uid, avatar, userLevel, userTier);
             socket.join(room.code);
 
             const playerList = room.players.map((p) => ({
@@ -275,7 +286,9 @@ function registerGameHandlers(io, socket, userSockets) {
                 name: p.name,
                 avatar: p.avatar,
                 score: p.score,
-                isActive: p.isActive
+                isActive: p.isActive,
+                level: p.level,
+                tier: p.tier
             }));
 
             const payload = {
@@ -307,7 +320,8 @@ function registerGameHandlers(io, socket, userSockets) {
     });
 
     // ─── join_room ─────────────────────────────────────────────────────────────
-    socket.on('join_room', ({ roomCode, playerName, uid, avatar }) => {
+    socket.on('join_room', async (data) => {
+        const { roomCode, playerName, uid, avatar } = data;
         if (!playerName || playerName.trim() === '' || !roomCode) {
             socket.emit('error', { message: 'Player name and room code are required' });
             return;
@@ -328,7 +342,9 @@ function registerGameHandlers(io, socket, userSockets) {
             name: p.name,
             avatar: p.avatar,
             score: p.score,
-            isActive: p.isActive
+            isActive: p.isActive,
+            level: p.level,
+            tier: p.tier
         }));
         console.log(`📡 Room ${room.code} now has ${playerList.length} players:`, playerList.map(p => p.name).join(', '));
 
@@ -385,9 +401,23 @@ function registerGameHandlers(io, socket, userSockets) {
     });
 
     // ─── find_match ─────────────────────────────────────────────────────────────
-    socket.on('find_match', ({ playerName, uid, avatar, category }) => {
+    socket.on('find_match', async (data) => {
+        const { playerName, uid, avatar, category } = data;
         if (!playerName || !uid) return;
-        MatchmakingManager.addToQueue(io, socket, playerName, uid, avatar, category);
+
+        let userLevel = 1;
+        let userTier = 'Bronze';
+        try {
+            const user = await User.findOne({ uid });
+            if (user) {
+                userLevel = user.level;
+                userTier = user.tier;
+            }
+        } catch (err) {
+            console.error('Error fetching user for matchmaking:', err);
+        }
+
+        MatchmakingManager.addToQueue(io, socket, playerName, uid, avatar, category, userLevel, userTier);
     });
 
     // ─── cancel_match ────────────────────────────────────────────────────────
@@ -407,7 +437,7 @@ function registerGameHandlers(io, socket, userSockets) {
             const room = RoomManager.getRoom(code);
 
             if (room) {
-                const playerList = room.players.map((p) => ({ id: p.id, uid: p.uid, name: p.name, score: p.score, isActive: p.isActive }));
+                const playerList = room.players.map((p) => ({ id: p.id, uid: p.uid, name: p.name, score: p.score, isActive: p.isActive, level: p.level, tier: p.tier }));
                 io.to(code).emit('player_left', {
                     players: playerList,
                 });
@@ -576,7 +606,7 @@ function registerGameHandlers(io, socket, userSockets) {
             return;
         }
 
-        const playerList = room.players.map((p) => ({ id: p.id, uid: p.uid, name: p.name, score: p.score, isActive: p.isActive }));
+        const playerList = room.players.map((p) => ({ id: p.id, uid: p.uid, name: p.name, score: p.score, isActive: p.isActive, level: p.level, tier: p.tier }));
         io.to(code).emit('player_left', {
             playerName: removed?.name,
             players: playerList,
@@ -621,7 +651,7 @@ async function startGame(io, code, socket, level = 1, category = 'All') {
 
         io.to(code).emit('start_game', {
             totalQuestions: QUESTIONS_PER_GAME,
-            players: room.players.map((p) => ({ id: p.id, uid: p.uid, name: p.name, avatar: p.avatar, score: p.score, isActive: p.isActive })),
+            players: room.players.map((p) => ({ id: p.id, uid: p.uid, name: p.name, avatar: p.avatar, score: p.score, isActive: p.isActive, level: p.level, tier: p.tier })),
         });
 
         console.log(`🎮 Game started in room ${code}`);

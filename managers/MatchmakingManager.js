@@ -13,12 +13,12 @@ class MatchmakingManager {
         this.startGame = startGame;
     }
 
-    addToQueue(io, socket, playerName, uid, avatar, category = 'All') {
+    addToQueue(io, socket, playerName, uid, avatar, category = 'All', level = 1, tier = 'Bronze') {
         // Prevent duplicate entries
         if (this.queue.find(p => p.uid === uid)) return;
 
         console.log(`🔍 Matchmaking: ${playerName} (${category}) joined queue.`);
-        const entry = { socket, playerName, uid, avatar, category, isMatching: false };
+        const entry = { socket, playerName, uid, avatar, category, level, tier, isMatching: false };
         this.queue.push(entry);
 
         this.tryMatch(io);
@@ -73,10 +73,10 @@ class MatchmakingManager {
             const roomCategory = p1.category === p2.category ? p1.category : 'All';
 
             // Create a real room for them
-            const room = RoomManager.createRoom(p1.playerName, p1.socket.id, p1.uid, p1.avatar);
+            const room = RoomManager.createRoom(p1.playerName, p1.socket.id, p1.uid, p1.avatar, p1.level, p1.tier);
 
             // Add p2
-            RoomManager.joinRoom(room.code, p2.playerName, p2.socket.id, p2.uid, p2.avatar);
+            RoomManager.joinRoom(room.code, p2.playerName, p2.socket.id, p2.uid, p2.avatar, p2.level, p2.tier);
 
             // Join sockets to room
             p1.socket.join(room.code);
@@ -89,7 +89,9 @@ class MatchmakingManager {
                 name: p.name,
                 avatar: p.avatar,
                 score: p.score,
-                isActive: p.isActive
+                isActive: p.isActive,
+                level: p.level,
+                tier: p.tier
             }));
 
             // Notify both individually (more reliable than io.to after join)
@@ -124,7 +126,7 @@ class MatchmakingManager {
         console.log(`🤖 Matchmaking Fallback: No real opponent for ${p.playerName}. Spawning bots...`);
 
         // Create a room
-        const room = RoomManager.createRoom(p.playerName, p.socket.id, p.uid, p.avatar);
+        const room = RoomManager.createRoom(p.playerName, p.socket.id, p.uid, p.avatar, p.level, p.tier);
         p.socket.join(room.code);
 
         // Add 1-2 bots
@@ -145,7 +147,9 @@ class MatchmakingManager {
             name: p.name,
             avatar: p.avatar,
             score: p.score,
-            isActive: p.isActive
+            isActive: p.isActive,
+            level: p.level,
+            tier: p.tier
         }));
 
         p.socket.emit('room_joined', { code: room.code, players });

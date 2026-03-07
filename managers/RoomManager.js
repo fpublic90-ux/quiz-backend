@@ -24,7 +24,7 @@ function generateCode() {
 /**
  * Create a new room with the host player
  */
-function createRoom(playerName, socketId, uid, avatar = null) {
+function createRoom(playerName, socketId, uid, avatar = null, level = 1, tier = 'Bronze') {
     // If UID is provided, check if player is already in a room to reclaim it
     const normalizedUid = uid ? uid.toString().trim() : null;
     if (normalizedUid && normalizedUid !== '') {
@@ -52,7 +52,7 @@ function createRoom(playerName, socketId, uid, avatar = null) {
     const code = generateCode();
     rooms[code] = {
         code,
-        players: [{ id: socketId, uid: normalizedUid, name: playerName, avatar, score: 0, isActive: true, fastAnswers: 0 }],
+        players: [{ id: socketId, uid: normalizedUid, name: playerName, avatar, score: 0, isActive: true, fastAnswers: 0, level: 1, tier: 'Bronze' }],
         status: 'waiting',
         questions: [],
         currentQuestionIndex: -1,
@@ -61,7 +61,7 @@ function createRoom(playerName, socketId, uid, avatar = null) {
     return rooms[code];
 }
 
-function joinRoom(code, playerName, socketId, uid, avatar = null) {
+function joinRoom(code, playerName, socketId, uid, avatar = null, level = 1, tier = 'Bronze') {
     const room = rooms[code];
     if (!room) return { success: false, error: 'Room not found' };
 
@@ -96,7 +96,7 @@ function joinRoom(code, playerName, socketId, uid, avatar = null) {
 
     if (room.players.length >= 6) return { success: false, error: 'Room is full' };
 
-    room.players.push({ id: socketId, uid, name: playerName, avatar, score: 0, isActive: true, fastAnswers: 0 });
+    room.players.push({ id: socketId, uid, name: playerName, avatar, score: 0, isActive: true, fastAnswers: 0, level, tier });
     return { success: true, room };
 }
 
