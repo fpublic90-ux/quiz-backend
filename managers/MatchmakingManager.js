@@ -73,7 +73,7 @@ class MatchmakingManager {
             const roomCategory = p1.category === p2.category ? p1.category : 'All';
 
             // Create a real room for them
-            const room = RoomManager.createRoom(p1.playerName, p1.socket.id, p1.uid, p1.avatar, p1.level, p1.tier);
+            const room = RoomManager.createRoom(p1.playerName, p1.socket.id, p1.uid, p1.avatar, p1.level, p1.tier, 'matchmaking');
 
             // Add p2
             RoomManager.joinRoom(room.code, p2.playerName, p2.socket.id, p2.uid, p2.avatar, p2.level, p2.tier);
@@ -126,7 +126,7 @@ class MatchmakingManager {
         console.log(`🤖 Matchmaking Fallback: No real opponent for ${p.playerName}. Spawning bots...`);
 
         // Create a room
-        const room = RoomManager.createRoom(p.playerName, p.socket.id, p.uid, p.avatar, p.level, p.tier);
+        const room = RoomManager.createRoom(p.playerName, p.socket.id, p.uid, p.avatar, p.level, p.tier, 'matchmaking');
         p.socket.join(room.code);
 
         // Add 1-2 bots

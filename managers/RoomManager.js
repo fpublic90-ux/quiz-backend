@@ -24,7 +24,7 @@ function generateCode() {
 /**
  * Create a new room with the host player
  */
-function createRoom(playerName, socketId, uid, avatar = null, level = 1, tier = 'Bronze') {
+function createRoom(playerName, socketId, uid, avatar = null, level = 1, tier = 'Bronze', type = 'social') {
     // If UID is provided, check if player is already in a room to reclaim it
     const normalizedUid = uid ? uid.toString().trim() : null;
     if (normalizedUid && normalizedUid !== '') {
@@ -52,6 +52,7 @@ function createRoom(playerName, socketId, uid, avatar = null, level = 1, tier = 
     const code = generateCode();
     rooms[code] = {
         code,
+        type, // 'matchmaking' or 'social'
         players: [{ id: socketId, uid: normalizedUid, name: playerName, avatar, score: 0, isActive: true, fastAnswers: 0, totalTimeTaken: 0, level, tier }],
         status: 'waiting',
         questions: [],

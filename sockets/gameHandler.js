@@ -184,11 +184,12 @@ async function endGame(io, code, reason = null) {
                         user.totalScore += player.score;
                         if (rank === 1) user.wins += 1;
 
-                        // Award Coins based on rank or premature end
+                        // Award Coins and XP based on rank (Matchmaking only)
                         let coinReward = 0;
                         let xpMultiplier = 0;
+                        let xpGained = 0;
 
-                        if (player.isActive) {
+                        if (player.isActive && room.type === 'matchmaking') {
                             // 1. Base Multiplier/Rank Rewards
                             if (rank === 1) {
                                 coinReward = 100;
@@ -210,13 +211,16 @@ async function endGame(io, code, reason = null) {
                                 player.xpBonus = 50; // New: Flat XP bonus
                                 console.log(`🎁 Fair Play Bonus: +25 coins, +50 XP for ${player.name}`);
                             }
+
+                            const baseXP = Math.round(player.score * xpMultiplier);
+                            xpGained = baseXP + (player.xpBonus || 0);
+                        } else if (room.type !== 'matchmaking') {
+                            console.log(`🎮 Social Match: 0 coins/XP awarded for ${player.name}`);
                         } else {
                             console.log(`🚫 Quitter/Inactive: 0 rewards for ${player.name}`);
                         }
 
                         user.coins += coinReward;
-                        const baseXP = Math.round(player.score * xpMultiplier);
-                        const xpGained = baseXP + (player.xpBonus || 0);
                         user.xp += xpGained;
 
                         // Attach specific rewards to player object for game_over payload
@@ -333,7 +337,7 @@ function registerGameHandlers(io, socket, userSockets) {
                 }
             }
 
-            const room = RoomManager.createRoom(playerName.trim(), socket.id, uid, avatar, userLevel, userTier);
+            const room = RoomManager.createRoom(playerName.trim(), socket.id, uid, avatar, userLevel, userTier, 'social');
             socket.join(room.code);
 
             const playerList = room.players.map((p) => ({
