@@ -249,6 +249,7 @@ async function endGame(io, code, reason = null) {
         io.to(code).emit('game_over', {
             leaderboard: leaderboard.map(p => ({ id: p.id, uid: p.uid, name: p.name, avatar: p.avatar, score: p.score, isActive: p.isActive, level: p.level, tier: p.tier })),
             winner: leaderboard[0] ? { id: leaderboard[0].id, uid: leaderboard[0].uid, name: leaderboard[0].name, avatar: leaderboard[0].avatar, score: leaderboard[0].score, isActive: leaderboard[0].isActive, level: leaderboard[0].level, tier: leaderboard[0].tier } : null,
+            reason: reason,
         });
     } catch (err) {
         console.error(`❌ Error in endGame for room ${code}:`, err);
