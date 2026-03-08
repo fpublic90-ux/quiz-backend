@@ -247,8 +247,8 @@ async function endGame(io, code, reason = null) {
         }
 
         io.to(code).emit('game_over', {
-            leaderboard: leaderboard.map(p => ({ id: p.id, uid: p.uid, name: p.name, avatar: p.avatar, score: p.score, isActive: p.isActive, level: p.level, tier: p.tier })),
-            winner: leaderboard[0] ? { id: leaderboard[0].id, uid: leaderboard[0].uid, name: leaderboard[0].name, avatar: leaderboard[0].avatar, score: leaderboard[0].score, isActive: leaderboard[0].isActive, level: leaderboard[0].level, tier: leaderboard[0].tier } : null,
+            leaderboard: leaderboard.map(p => ({ id: p.id, uid: p.uid, name: p.name, avatar: p.avatar, score: p.score, isActive: p.isActive, level: p.level, tier: p.tier, fastAnswers: p.fastAnswers, totalTimeTaken: p.totalTimeTaken })),
+            winner: leaderboard[0] ? { id: leaderboard[0].id, uid: leaderboard[0].uid, name: leaderboard[0].name, avatar: leaderboard[0].avatar, score: leaderboard[0].score, isActive: leaderboard[0].isActive, level: leaderboard[0].level, tier: leaderboard[0].tier, fastAnswers: leaderboard[0].fastAnswers, totalTimeTaken: leaderboard[0].totalTimeTaken } : null,
             reason: reason,
         });
     } catch (err) {
@@ -383,12 +383,7 @@ function registerGameHandlers(io, socket, userSockets) {
 
         socket.emit('info', { message: `Room found. Players: ${room.players.length}. Host ID matches: ${room.players[0].id === socket.id}` });
 
-        // Only host can start
-        if (room.players[0].id !== socket.id) {
-            console.log(`⚠️ Non-host tried to start game. Host: ${room.players[0].id}, Socket: ${socket.id}`);
-            socket.emit('error', { message: `Only the host can start the game. You: ${socket.id}, Host: ${room.players[0].id}` });
-            return;
-        }
+        // Removed host-only check to allow any player to start
 
         if (room.players.length < 2) {
             console.log(`⚠️ Not enough players: ${room.players.length}`);
@@ -482,6 +477,13 @@ function registerGameHandlers(io, socket, userSockets) {
                 console.log(`⚠️ Invalid Answer Index: ${socket.id} sent index ${answerIndex}`);
                 socket.emit('error', { message: 'Invalid answer selection' });
                 return;
+            }
+
+            const remainingTime = TimerManager.getTimeRemaining(code);
+            const timeTaken = 15 - remainingTime;
+            const player = room.players.find(p => p.id === socket.id || p.uid === socket.uid);
+            if (player) {
+                player.totalTimeTaken = (player.totalTimeTaken || 0) + timeTaken;
             }
 
             const isCorrect = parseInt(answerIndex) === currentQ.correctIndex;
@@ -630,7 +632,11 @@ async function startGame(io, code, socket, level = 1, category = 'All') {
     if (!room) return;
 
     // Reset scores and answers for new level
-    room.players.forEach(p => p.score = 0);
+    room.players.forEach(p => {
+        p.score = 0;
+        p.totalTimeTaken = 0;
+        p.fastAnswers = 0;
+    });
     room.answeredPlayers.clear();
     room.currentQuestionIndex = -1;
 

@@ -52,7 +52,7 @@ function createRoom(playerName, socketId, uid, avatar = null, level = 1, tier = 
     const code = generateCode();
     rooms[code] = {
         code,
-        players: [{ id: socketId, uid: normalizedUid, name: playerName, avatar, score: 0, isActive: true, fastAnswers: 0, level, tier }],
+        players: [{ id: socketId, uid: normalizedUid, name: playerName, avatar, score: 0, isActive: true, fastAnswers: 0, totalTimeTaken: 0, level, tier }],
         status: 'waiting',
         questions: [],
         currentQuestionIndex: -1,
@@ -96,7 +96,7 @@ function joinRoom(code, playerName, socketId, uid, avatar = null, level = 1, tie
 
     if (room.players.length >= 6) return { success: false, error: 'Room is full' };
 
-    room.players.push({ id: socketId, uid, name: playerName, avatar, score: 0, isActive: true, fastAnswers: 0, level, tier });
+    room.players.push({ id: socketId, uid, name: playerName, avatar, score: 0, isActive: true, fastAnswers: 0, totalTimeTaken: 0, level, tier });
     return { success: true, room };
 }
 
@@ -204,7 +204,10 @@ function resetAnswered(code) {
 function getLeaderboard(code) {
     const room = rooms[code];
     if (!room) return [];
-    return [...room.players].sort((a, b) => b.score - a.score);
+    return [...room.players].sort((a, b) => {
+        if (b.score !== a.score) return b.score - a.score;
+        return a.totalTimeTaken - b.totalTimeTaken; // Faster (lower time) wins tie
+    });
 }
 
 /**
