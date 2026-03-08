@@ -207,14 +207,16 @@ async function endGame(io, code, reason = null) {
                             // 2. Fair Play Bonus (Additive)
                             if (reason === 'opponent_left' && leaderboard.filter(p => p.isActive).length === 1) {
                                 coinReward += 25;
-                                console.log(`🎁 Fair Play Bonus: +25 coins for ${player.name}`);
+                                player.xpBonus = 50; // New: Flat XP bonus
+                                console.log(`🎁 Fair Play Bonus: +25 coins, +50 XP for ${player.name}`);
                             }
                         } else {
                             console.log(`🚫 Quitter/Inactive: 0 rewards for ${player.name}`);
                         }
 
                         user.coins += coinReward;
-                        const xpGained = Math.round(player.score * xpMultiplier);
+                        const baseXP = Math.round(player.score * xpMultiplier);
+                        const xpGained = baseXP + (player.xpBonus || 0);
                         user.xp += xpGained;
 
                         // Attach specific rewards to player object for game_over payload
