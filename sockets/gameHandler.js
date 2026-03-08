@@ -442,6 +442,17 @@ function registerGameHandlers(io, socket, userSockets) {
 
         socket.emit('info', { message: `Room found. Players: ${room.players.length}.` });
 
+        // Only host can start if room is in 'waiting' status (Initial Start)
+        // For handshake acceptance (post-waiting), anyone can start
+        if (room.status === 'waiting') {
+            const isHost = room.players[0]?.id === socket.id;
+            if (!isHost) {
+                console.log(`🚫 Non-host ${socket.id} tried to start waiting room ${code}`);
+                socket.emit('error', { message: 'Only the host can start the game' });
+                return;
+            }
+        }
+
         if (room.players.length < 2) {
             console.log(`⚠️ Not enough players: ${room.players.length}`);
             socket.emit('error', { message: 'Need at least 2 players to start' });
