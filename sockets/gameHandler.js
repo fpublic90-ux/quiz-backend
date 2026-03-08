@@ -243,6 +243,16 @@ async function endGame(io, code, reason = null) {
                         await user.save();
                         console.log(`📈 Stats: ${player.name} +${xpGained} XP, +${coinReward} Coins. Tier: ${user.tier}`);
 
+                        // Attach updated stats for realtime sync
+                        player.updatedProfile = {
+                            coins: user.coins,
+                            xp: user.xp,
+                            level: user.level,
+                            tier: user.tier,
+                            wins: user.wins,
+                            gamesPlayed: user.gamesPlayed
+                        };
+
                         // ── Achievements Check ──────────────────
                         const newlyUnlocked = AchievementManager.checkAchievements(user, player, room);
                         if (newlyUnlocked.length > 0) {
@@ -274,7 +284,8 @@ async function endGame(io, code, reason = null) {
                 fastAnswers: p.fastAnswers,
                 totalTimeTaken: p.totalTimeTaken,
                 earnedCoins: p.earnedCoins || 0,
-                earnedXp: p.earnedXp || 0
+                earnedXp: p.earnedXp || 0,
+                updatedProfile: p.updatedProfile || null
             })),
             winner: leaderboard[0] ? {
                 id: leaderboard[0].id,
@@ -288,7 +299,8 @@ async function endGame(io, code, reason = null) {
                 fastAnswers: leaderboard[0].fastAnswers,
                 totalTimeTaken: leaderboard[0].totalTimeTaken,
                 earnedCoins: leaderboard[0].earnedCoins || 0,
-                earnedXp: leaderboard[0].earnedXp || 0
+                earnedXp: leaderboard[0].earnedXp || 0,
+                updatedProfile: leaderboard[0].updatedProfile || null
             } : null,
             reason: reason,
         });
