@@ -185,31 +185,41 @@ async function endGame(io, code, reason = null) {
                         if (rank === 1) user.wins += 1;
 
                         // Award Coins based on rank or premature end
-                        let coinReward = 10;
-                        if (!player.isActive) {
-                            coinReward = 0;
-                            console.log(`🚫 Quitter/Inactive: 0 coins for ${player.name}`);
-                        } else if (reason === 'opponent_left' && leaderboard.filter(p => p.isActive).length === 1) {
-                            coinReward = 25; // Fair Play Bonus
-                            console.log(`🎁 Fair Play Bonus: 25 coins for ${player.name}`);
-                        } else if (rank === 1) {
-                            coinReward = 100;
-                        } else if (rank === 2) {
-                            coinReward = 50;
-                        } else if (rank === 3) {
-                            coinReward = 30;
+                        let coinReward = 0;
+                        let xpMultiplier = 0;
+
+                        if (player.isActive) {
+                            // 1. Base Multiplier/Rank Rewards
+                            if (rank === 1) {
+                                coinReward = 100;
+                                xpMultiplier = 1.5;
+                            } else if (rank === 2) {
+                                coinReward = 50;
+                                xpMultiplier = 1.2;
+                            } else if (rank === 3) {
+                                coinReward = 30;
+                                xpMultiplier = 1.1;
+                            } else {
+                                coinReward = 10;
+                                xpMultiplier = 1.0;
+                            }
+
+                            // 2. Fair Play Bonus (Additive)
+                            if (reason === 'opponent_left' && leaderboard.filter(p => p.isActive).length === 1) {
+                                coinReward += 25;
+                                console.log(`🎁 Fair Play Bonus: +25 coins for ${player.name}`);
+                            }
+                        } else {
+                            console.log(`🚫 Quitter/Inactive: 0 rewards for ${player.name}`);
                         }
+
                         user.coins += coinReward;
-
-                        // Award XP based on score and rank multiplier
-                        let xpMultiplier = 1.0;
-                        if (!player.isActive) xpMultiplier = 0;
-                        else if (rank === 1) xpMultiplier = 1.5;
-                        else if (rank === 2) xpMultiplier = 1.2;
-                        else if (rank === 3) xpMultiplier = 1.1;
-
                         const xpGained = Math.round(player.score * xpMultiplier);
                         user.xp += xpGained;
+
+                        // Attach specific rewards to player object for game_over payload
+                        player.earnedCoins = coinReward;
+                        player.earnedXp = xpGained;
 
                         // Leveling: 1 level per 200 total XP
                         user.level = Math.floor(user.xp / 200) + 1;
@@ -252,8 +262,34 @@ async function endGame(io, code, reason = null) {
         }
 
         io.to(code).emit('game_over', {
-            leaderboard: leaderboard.map(p => ({ id: p.id, uid: p.uid, name: p.name, avatar: p.avatar, score: p.score, isActive: p.isActive, level: p.level, tier: p.tier, fastAnswers: p.fastAnswers, totalTimeTaken: p.totalTimeTaken })),
-            winner: leaderboard[0] ? { id: leaderboard[0].id, uid: leaderboard[0].uid, name: leaderboard[0].name, avatar: leaderboard[0].avatar, score: leaderboard[0].score, isActive: leaderboard[0].isActive, level: leaderboard[0].level, tier: leaderboard[0].tier, fastAnswers: leaderboard[0].fastAnswers, totalTimeTaken: leaderboard[0].totalTimeTaken } : null,
+            leaderboard: leaderboard.map(p => ({
+                id: p.id,
+                uid: p.uid,
+                name: p.name,
+                avatar: p.avatar,
+                score: p.score,
+                isActive: p.isActive,
+                level: p.level,
+                tier: p.tier,
+                fastAnswers: p.fastAnswers,
+                totalTimeTaken: p.totalTimeTaken,
+                earnedCoins: p.earnedCoins || 0,
+                earnedXp: p.earnedXp || 0
+            })),
+            winner: leaderboard[0] ? {
+                id: leaderboard[0].id,
+                uid: leaderboard[0].uid,
+                name: leaderboard[0].name,
+                avatar: leaderboard[0].avatar,
+                score: leaderboard[0].score,
+                isActive: leaderboard[0].isActive,
+                level: leaderboard[0].level,
+                tier: leaderboard[0].tier,
+                fastAnswers: leaderboard[0].fastAnswers,
+                totalTimeTaken: leaderboard[0].totalTimeTaken,
+                earnedCoins: leaderboard[0].earnedCoins || 0,
+                earnedXp: leaderboard[0].earnedXp || 0
+            } : null,
             reason: reason,
         });
     } catch (err) {
