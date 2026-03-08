@@ -456,25 +456,53 @@ function registerGameHandlers(io, socket, userSockets) {
         const { playerName, uid, avatar, category } = data;
         if (!playerName || !uid) return;
 
-        let userLevel = 1;
-        let userTier = 'Bronze';
         try {
             const user = await User.findOne({ uid });
-            if (user) {
-                userLevel = user.level;
-                userTier = user.tier;
+            if (!user) {
+                socket.emit('error', { message: 'User not found' });
+                return;
             }
-        } catch (err) {
-            console.error('Error fetching user for matchmaking:', err);
-        }
 
-        MatchmakingManager.addToQueue(io, socket, playerName, uid, avatar, category, userLevel, userTier);
+            // Entry Fee Check
+            if (user.coins < 50) {
+                socket.emit('error', { message: 'Insufficient coins. Entry fee is 50 coins.' });
+                return;
+            }
+
+            // Deduct Fee
+            user.coins -= 50;
+            await user.save();
+
+            // Sync balance to frontend
+            socket.emit('update_profile', { coins: user.coins });
+
+            console.log(`🪙 Entry Fee: 50 coins deducted from ${playerName}. Balance: ${user.coins}`);
+
+            MatchmakingManager.addToQueue(io, socket, playerName, uid, avatar, category, user.level, user.tier);
+        } catch (err) {
+            console.error('Error in find_match:', err);
+            socket.emit('error', { message: 'Failed to join matchmaking' });
+        }
     });
 
     // ─── cancel_match ────────────────────────────────────────────────────────
-    socket.on('cancel_match', ({ uid }) => {
+    socket.on('cancel_match', async ({ uid }) => {
         if (!uid) return;
-        MatchmakingManager.removeFromQueue(uid);
+
+        const removed = MatchmakingManager.removeFromQueue(uid);
+        if (removed) {
+            try {
+                const user = await User.findOne({ uid });
+                if (user) {
+                    user.coins += 50; // Refund
+                    await user.save();
+                    socket.emit('update_profile', { coins: user.coins });
+                    console.log(`🪙 Refund: 50 coins returned to User ${uid}. Balance: ${user.coins}`);
+                }
+            } catch (err) {
+                console.error('Error refunding match fee:', err);
+            }
+        }
         console.log(`📡 Matchmaking Canceled: User ${uid} left the queue.`);
     });
 

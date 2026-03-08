@@ -165,7 +165,12 @@ class MatchmakingManager {
     }
 
     removeFromQueue(uid) {
-        this.queue = this.queue.filter(p => p.uid !== uid);
+        const index = this.queue.findIndex(p => p.uid === uid);
+        if (index !== -1) {
+            console.log(`📡 Matchmaking: Removing ${this.queue[index].playerName} from queue.`);
+            return this.queue.splice(index, 1)[0];
+        }
+        return null;
     }
 }
 
