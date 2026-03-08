@@ -186,7 +186,10 @@ async function endGame(io, code, reason = null) {
 
                         // Award Coins based on rank or premature end
                         let coinReward = 10;
-                        if (reason === 'opponent_left' && leaderboard.length === 1) {
+                        if (!player.isActive) {
+                            coinReward = 0;
+                            console.log(`🚫 Quitter/Inactive: 0 coins for ${player.name}`);
+                        } else if (reason === 'opponent_left' && leaderboard.filter(p => p.isActive).length === 1) {
                             coinReward = 25; // Fair Play Bonus
                             console.log(`🎁 Fair Play Bonus: 25 coins for ${player.name}`);
                         } else if (rank === 1) {
@@ -200,9 +203,11 @@ async function endGame(io, code, reason = null) {
 
                         // Award XP based on score and rank multiplier
                         let xpMultiplier = 1.0;
-                        if (rank === 1) xpMultiplier = 1.5;
+                        if (!player.isActive) xpMultiplier = 0;
+                        else if (rank === 1) xpMultiplier = 1.5;
                         else if (rank === 2) xpMultiplier = 1.2;
                         else if (rank === 3) xpMultiplier = 1.1;
+
                         const xpGained = Math.round(player.score * xpMultiplier);
                         user.xp += xpGained;
 
