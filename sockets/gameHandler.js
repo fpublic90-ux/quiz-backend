@@ -184,38 +184,38 @@ async function endGame(io, code, reason = null) {
                         user.totalScore += player.score;
                         if (rank === 1) user.wins += 1;
 
-                        // Award Coins and XP based on rank (Matchmaking only)
+                        // Award Coins and XP based on rank
                         let coinReward = 0;
                         let xpMultiplier = 0;
                         let xpGained = 0;
 
-                        if (player.isActive && room.type === 'matchmaking') {
-                            // 1. Base Multiplier/Rank Rewards
+                        if (player.isActive) {
+                            // 1. Base Multiplier/Rank Rewards (Social matches get 50% base rewards to discourage farming)
+                            const baseRewardMultiplier = room.type === 'matchmaking' ? 1.0 : 0.5;
+
                             if (rank === 1) {
-                                coinReward = 100;
+                                coinReward = Math.round(100 * baseRewardMultiplier);
                                 xpMultiplier = 1.5;
                             } else if (rank === 2) {
-                                coinReward = 50;
+                                coinReward = Math.round(50 * baseRewardMultiplier);
                                 xpMultiplier = 1.2;
                             } else if (rank === 3) {
-                                coinReward = 30;
+                                coinReward = Math.round(30 * baseRewardMultiplier);
                                 xpMultiplier = 1.1;
                             } else {
-                                coinReward = 10;
+                                coinReward = Math.round(10 * baseRewardMultiplier);
                                 xpMultiplier = 1.0;
                             }
 
-                            // 2. Fair Play Bonus (Additive)
+                            // 2. Fair Play Bonus (Full Bonus even in social matches as requested)
                             if (reason === 'opponent_left' && leaderboard.filter(p => p.isActive).length === 1) {
                                 coinReward += 25;
-                                player.xpBonus = 50; // New: Flat XP bonus
+                                player.xpBonus = 50; // Flat XP bonus
                                 console.log(`🎁 Fair Play Bonus: +25 coins, +50 XP for ${player.name}`);
                             }
 
                             const baseXP = Math.round(player.score * xpMultiplier);
                             xpGained = baseXP + (player.xpBonus || 0);
-                        } else if (room.type !== 'matchmaking') {
-                            console.log(`🎮 Social Match: 0 coins/XP awarded for ${player.name}`);
                         } else {
                             console.log(`🚫 Quitter/Inactive: 0 rewards for ${player.name}`);
                         }
@@ -440,9 +440,7 @@ function registerGameHandlers(io, socket, userSockets) {
             return;
         }
 
-        socket.emit('info', { message: `Room found. Players: ${room.players.length}. Host ID matches: ${room.players[0].id === socket.id}` });
-
-        // Removed host-only check to allow any player to start
+        socket.emit('info', { message: `Room found. Players: ${room.players.length}.` });
 
         if (room.players.length < 2) {
             console.log(`⚠️ Not enough players: ${room.players.length}`);
@@ -451,8 +449,23 @@ function registerGameHandlers(io, socket, userSockets) {
         }
 
         console.log('✅ Starting game sequence...');
-        socket.emit('info', { message: 'Starting game sequence...' });
         startGame(io, code, socket, level, category);
+    });
+
+    // ─── request_start_game ──────────────────────────────────────────────────
+    socket.on('request_start_game', ({ roomCode, level, category, playerName }) => {
+        const code = roomCode.toUpperCase();
+        const room = RoomManager.getRoom(code);
+        if (!room) return;
+
+        console.log(`✉️ Start request from ${playerName} for room ${code} (Level ${level})`);
+
+        // Notify others in the room
+        socket.to(code).emit('game_start_requested', {
+            fromName: playerName,
+            level: level || room.level + 1,
+            category: category || room.category
+        });
     });
 
     // ─── find_match ─────────────────────────────────────────────────────────────
