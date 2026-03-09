@@ -549,10 +549,12 @@ function registerGameHandlers(io, socket, userSockets) {
                     players: playerList,
                 });
 
-                if (room.status === 'playing' && room.players.filter(p => p.isActive).length < 2) {
+                if (room.players.filter(p => p.isActive).length < 2) {
                     TimerManager.clearTimer(code);
                     io.to(code).emit('opponent_left', { message: 'Opponent left the game!' });
-                    endGame(io, code, 'opponent_left');
+                    if (room.status === 'playing') {
+                        endGame(io, code, 'opponent_left');
+                    }
                 }
             }
             socket.leave(code);
@@ -727,10 +729,12 @@ function registerGameHandlers(io, socket, userSockets) {
         });
 
         // End game if < 2 players (active) remain during active game
-        if (room.status === 'playing' && room.players.filter(p => p.isActive).length < 2) {
+        if (room.players.filter(p => p.isActive).length < 2) {
             TimerManager.clearTimer(code);
             io.to(code).emit('opponent_left', { message: 'Opponent left the game!' });
-            endGame(io, code, 'opponent_left');
+            if (room.status === 'playing') {
+                endGame(io, code, 'opponent_left');
+            }
         }
     });
 }

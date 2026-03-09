@@ -37,6 +37,36 @@ router.post('/sync', verifyToken, async (req, res) => {
     }
 });
 
+// ─── Shop Catalog (Server-side Source of Truth) ───────────────────────────
+const K_SHOP_CATALOG = {
+    // Badges
+    'avatar_rocket': { price: 200 },
+    'avatar_star': { price: 300 },
+    'avatar_crown': { price: 500 },
+    'avatar_gem': { price: 750 },
+    'avatar_brain': { price: 400 },
+    'badge_fire': { price: 250 },
+    'badge_bolt': { price: 200 },
+    'badge_shield': { price: 300 },
+    'badge_heart': { price: 150 },
+    // Classic Premium Avatars
+    'premium_ninja': { price: 400 },
+    'premium_robot': { price: 450 },
+    'premium_cat': { price: 350 },
+    'premium_gamer': { price: 600 },
+    // Famous Characters
+    'char_bheem': { price: 500 },
+    'char_bean': { price: 350 },
+    'char_scooby': { price: 400 },
+    'char_harry': { price: 550 },
+    'char_batman': { price: 600 },
+    'char_doraemon': { price: 450 },
+    'char_spiderman': { price: 600 },
+    'char_ironman': { price: 700 },
+    'char_pikachu': { price: 400 },
+    'char_naruto': { price: 500 },
+};
+
 // Get user profile
 router.get('/profile/:uid', async (req, res) => {
     try {
@@ -53,11 +83,17 @@ router.get('/profile/:uid', async (req, res) => {
 // Purchase item from the shop
 router.post('/purchase', verifyToken, async (req, res) => {
     try {
-        const { uid, itemId, price } = req.body;
-        if (!uid || !itemId || price == null) {
-            return res.status(400).json({ message: 'uid, itemId and price are required' });
+        const { uid, itemId } = req.body;
+        if (!uid || !itemId) {
+            return res.status(400).json({ message: 'uid and itemId are required' });
         }
 
+        const item = K_SHOP_CATALOG[itemId];
+        if (!item) {
+            return res.status(404).json({ message: 'Item not found in catalog' });
+        }
+
+        const price = item.price;
         const user = await User.findOne({ uid });
         if (!user) return res.status(404).json({ message: 'User not found' });
 
