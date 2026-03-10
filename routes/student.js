@@ -29,8 +29,8 @@ router.post('/complete-level', async (req, res) => {
     try {
         const { uid, board, class: className, medium, subject, chapter, level, score } = req.body;
 
-        if (score < 10) {
-            return res.status(400).json({ message: 'Score must be 10/10 to complete level' });
+        if (score < 100) {
+            return res.status(400).json({ message: 'Score must be 100/100 to complete level' });
         }
 
         const user = await User.findOne({ uid });

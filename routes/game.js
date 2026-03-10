@@ -6,7 +6,7 @@ const AchievementManager = require('../managers/AchievementManager');
 // Save game results (Solo or Matchmaking fallbacks)
 router.post('/save-results', async (req, res) => {
     try {
-        const { uid, score, rank, category, fastAnswers, isPractice, questionIds } = req.body;
+        const { uid, score, rank, category, fastAnswers, isPractice, practiceLevel, questionIds, chapter } = req.body;
 
         if (!uid) {
             return res.status(400).json({ message: 'UID is required' });
@@ -75,7 +75,7 @@ router.post('/save-results', async (req, res) => {
         else user.tier = 'Bronze';
 
         // Suppress rewards for Student Center chapter quizzes
-        if (category === 'Student Center' && req.body.chapter != null) {
+        if (category === 'Student Center' && chapter != null) {
             user.coins -= coinReward; // Revert
             user.xp -= xpGained; // Revert
             coinReward = 0;
