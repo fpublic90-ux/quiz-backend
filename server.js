@@ -10,6 +10,7 @@ const leaderboardRoutes = require('./routes/leaderboard');
 const dailyRoutes = require('./routes/daily');
 const socialRoutes = require('./routes/social');
 const gameRoutes = require('./routes/game');
+const studentRoutes = require('./routes/student');
 const { registerGameHandlers, startGame } = require('./sockets/gameHandler');
 const MatchmakingManager = require('./managers/MatchmakingManager');
 const admin = require('firebase-admin');
@@ -52,6 +53,7 @@ app.use('/api/leaderboard', leaderboardRoutes);
 app.use('/api/daily', dailyRoutes);
 app.use('/api/social', socialRoutes(io, userSockets));
 app.use('/api/game', gameRoutes);
+app.use('/api/student', studentRoutes);
 
 app.get('/', (req, res) => {
   res.json({ status: 'Quiz Backend Running 🎯' });

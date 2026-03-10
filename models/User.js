@@ -103,6 +103,11 @@ const userSchema = new mongoose.Schema({
         medium: { type: String, default: null },
         selectedSubjects: { type: [String], default: [] }
     },
+    studentProgress: {
+        type: Map,
+        of: Number, // format: "Board|Class|Medium|Subject|Chapter" -> LastCompletedLevel
+        default: {}
+    },
     createdAt: {
         type: Date,
         default: Date.now

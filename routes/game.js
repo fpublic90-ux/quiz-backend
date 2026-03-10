@@ -74,6 +74,14 @@ router.post('/save-results', async (req, res) => {
         else if (user.xp >= 1000) user.tier = 'Silver';
         else user.tier = 'Bronze';
 
+        // Suppress rewards for Student Center chapter quizzes
+        if (category === 'Student Center' && req.body.chapter != null) {
+            user.coins -= coinReward; // Revert
+            user.xp -= xpGained; // Revert
+            coinReward = 0;
+            xpGained = 0;
+        }
+
         // Check Achievements
         const mockRoomPlayer = { fastAnswers: fastAnswers || 0 };
         const mockRoom = { category: category || 'All' };

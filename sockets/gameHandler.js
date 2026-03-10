@@ -220,6 +220,13 @@ async function endGame(io, code, reason = null) {
                             console.log(`🚫 Quitter/Inactive: 0 rewards for ${player.name}`);
                         }
 
+                        // Suppress rewards for Student Center chapter quizzes
+                        const isStudentChapter = room.category === 'Student Center' && room.chapter != null;
+                        if (isStudentChapter) {
+                            coinReward = 0;
+                            xpGained = 0;
+                        }
+
                         user.coins += coinReward;
                         user.xp += xpGained;
 

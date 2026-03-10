@@ -8,7 +8,7 @@ const Question = require('../models/Question');
  */
 router.get('/', async (req, res) => {
     try {
-        const { level, category, count, uid, board, class: className, medium, subject } = req.query;
+        const { level, category, count, uid, board, class: className, medium, subject, chapter } = req.query;
         const query = {};
         if (level) query.level = parseInt(level);
         if (category && category !== 'All') query.category = category;
@@ -16,13 +16,13 @@ router.get('/', async (req, res) => {
         if (className) query.class = className;
         if (medium) query.medium = medium;
         if (subject) query.subject = subject;
+        if (chapter && chapter !== 'All Chapters') query.chapter = chapter;
 
         let excludeIds = [];
         if (uid) {
             const User = require('../models/User');
             const user = await User.findOne({ uid });
             if (user && user.answeredQuestions) {
-                // Ensure they are correctly formatted as ObjectIds for aggregation
                 const mongoose = require('mongoose');
                 excludeIds = user.answeredQuestions.map(id =>
                     typeof id === 'string' ? new mongoose.Types.ObjectId(id) : id
@@ -30,17 +30,33 @@ router.get('/', async (req, res) => {
             }
         }
 
-        console.log(`🔍 Fetching for ${uid || 'guest'}: Level ${level}, Cat ${category}. Excluded count: ${excludeIds.length}`);
+        console.log(`🔍 Fetching for ${uid || 'guest'}: Sub: ${subject}, Ch: ${chapter}, Lvl: ${level}. Excluded count: ${excludeIds.length}`);
 
         const requestedCount = parseInt(count) || 10;
+        const page = parseInt(level) || 1;
 
-        // 1. Try to fetch only unseen questions
+        // If it's a specific student level (not 'All Chapters' or random practice)
+        // we use deterministic sorting and pagination
+        if (chapter && chapter !== 'All Chapters' && level) {
+            // Remove global level filter if we are doing chapter-based pagination
+            const studentQuery = { ...query };
+            delete studentQuery.level;
+
+            const studentQuestions = await Question.find(studentQuery)
+                .sort({ _id: 1 })
+                .skip((page - 1) * 10)
+                .limit(10);
+
+            console.log(`✅ Returned ${studentQuestions.length} deterministic questions for Chapter Level ${level}`);
+            return res.json(studentQuestions);
+        }
+
+        // aggregation logic for random practice...
         let questions = await Question.aggregate([
             { $match: { ...query, _id: { $nin: excludeIds } } },
             { $sample: { size: requestedCount } }
         ]);
 
-        // 2. If not enough unseen, fill the rest with random seen questions
         if (questions.length < requestedCount) {
             const needed = requestedCount - questions.length;
             const seenQuestions = await Question.aggregate([
@@ -50,7 +66,6 @@ router.get('/', async (req, res) => {
             questions = [...questions, ...seenQuestions];
         }
 
-        // 3. Last resort if pool is still tiny
         if (questions.length < requestedCount) {
             const currentIds = questions.map(q => q._id);
             const fallbackQuestions = await Question.aggregate([
@@ -64,6 +79,29 @@ router.get('/', async (req, res) => {
     } catch (err) {
         console.error('Error fetching questions:', err);
         res.status(500).json({ error: 'Failed to fetch questions' });
+    }
+});
+
+/**
+ * GET /api/questions/chapters
+ * Returns distinct chapters for given filters
+ */
+router.get('/chapters', async (req, res) => {
+    try {
+        const { board, class: className, medium, subject } = req.query;
+        const query = {};
+        if (board) query.board = board;
+        if (className) query.class = className;
+        if (medium) query.medium = medium;
+        if (subject) query.subject = subject;
+
+        const chapters = await Question.distinct('chapter', query);
+        // Filter out null/empty and sort
+        const filteredChapters = chapters.filter(c => c).sort();
+        res.json(filteredChapters);
+    } catch (err) {
+        console.error('Error fetching chapters:', err);
+        res.status(500).json({ error: 'Failed to fetch chapters' });
     }
 });
 

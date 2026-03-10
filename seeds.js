@@ -15,7 +15,7 @@ const questions = [
         board: "Kerala State",
         class: "10th (SSLC)",
         medium: "English",
-        subject: "Maths",
+        subject: 'Mathematics',
         chapter: "Arithmetic Sequences"
     },
     {
@@ -26,7 +26,7 @@ const questions = [
         board: "Kerala State",
         class: "10th (SSLC)",
         medium: "English",
-        subject: "Maths",
+        subject: 'Mathematics',
         chapter: "Arithmetic Sequences"
     },
     {
@@ -37,7 +37,7 @@ const questions = [
         board: "Kerala State",
         class: "10th (SSLC)",
         medium: "English",
-        subject: "Maths",
+        subject: 'Mathematics',
         chapter: "Circles"
     },
     // PHYSICS - Kerala Syllabus 10th
@@ -27356,7 +27356,7 @@ const questions = [
     },
     // Batch 5: Trigonometry & Coordinate Geometry (60 questions)
     {
-        subject: 'Trigonometry',
+        subject: 'Mathematics',
         medium: 'English',
         board: "Kerala State",
         class: "10th (SSLC)",
@@ -27365,7 +27365,7 @@ const questions = [
         correctIndex: 0, level: 1, chapter: "Trigonometry & Coordinate Geometry"
     },
     {
-        subject: 'Trigonometry',
+        subject: 'Mathematics',
         medium: 'English',
         board: "Kerala State",
         class: "10th (SSLC)",
@@ -27374,7 +27374,7 @@ const questions = [
         correctIndex: 0, level: 1, chapter: "Trigonometry & Coordinate Geometry"
     },
     {
-        subject: 'Trigonometry',
+        subject: 'Mathematics',
         medium: 'English',
         board: "Kerala State",
         class: "10th (SSLC)",
@@ -27383,7 +27383,7 @@ const questions = [
         correctIndex: 0, level: 1, chapter: "Trigonometry & Coordinate Geometry"
     },
     {
-        subject: 'Trigonometry',
+        subject: 'Mathematics',
         medium: 'English',
         board: "Kerala State",
         class: "10th (SSLC)",
@@ -27392,7 +27392,7 @@ const questions = [
         correctIndex: 0, level: 1, chapter: "Trigonometry & Coordinate Geometry"
     },
     {
-        subject: 'Trigonometry',
+        subject: 'Mathematics',
         medium: 'English',
         board: "Kerala State",
         class: "10th (SSLC)",
@@ -27401,7 +27401,7 @@ const questions = [
         correctIndex: 0, level: 1, chapter: "Trigonometry & Coordinate Geometry"
     },
     {
-        subject: 'Trigonometry',
+        subject: 'Mathematics',
         medium: 'English',
         board: "Kerala State",
         class: "10th (SSLC)",
@@ -27410,7 +27410,7 @@ const questions = [
         correctIndex: 0, level: 1, chapter: "Trigonometry & Coordinate Geometry"
     },
     {
-        subject: 'Trigonometry',
+        subject: 'Mathematics',
         medium: 'English',
         board: "Kerala State",
         class: "10th (SSLC)",
@@ -27419,7 +27419,7 @@ const questions = [
         correctIndex: 0, level: 1, chapter: "Trigonometry & Coordinate Geometry"
     },
     {
-        subject: 'Trigonometry',
+        subject: 'Mathematics',
         medium: 'English',
         board: "Kerala State",
         class: "10th (SSLC)",
@@ -27428,7 +27428,7 @@ const questions = [
         correctIndex: 0, level: 1, chapter: "Trigonometry & Coordinate Geometry"
     },
     {
-        subject: 'Trigonometry',
+        subject: 'Mathematics',
         medium: 'English',
         board: "Kerala State",
         class: "10th (SSLC)",
@@ -27437,7 +27437,7 @@ const questions = [
         correctIndex: 0, level: 1, chapter: "Trigonometry & Coordinate Geometry"
     },
     {
-        subject: 'Trigonometry',
+        subject: 'Mathematics',
         medium: 'English',
         board: "Kerala State",
         class: "10th (SSLC)",
@@ -27446,7 +27446,7 @@ const questions = [
         correctIndex: 0, level: 1, chapter: "Trigonometry & Coordinate Geometry"
     },
     {
-        subject: 'Trigonometry',
+        subject: 'Mathematics',
         medium: 'English',
         board: "Kerala State",
         class: "10th (SSLC)",
@@ -27455,7 +27455,7 @@ const questions = [
         correctIndex: 0, level: 1, chapter: "Trigonometry & Coordinate Geometry"
     },
     {
-        subject: 'Trigonometry',
+        subject: 'Mathematics',
         medium: 'English',
         board: "Kerala State",
         class: "10th (SSLC)",
@@ -27464,7 +27464,7 @@ const questions = [
         correctIndex: 0, level: 1, chapter: "Trigonometry & Coordinate Geometry"
     },
     {
-        subject: 'Trigonometry',
+        subject: 'Mathematics',
         medium: 'English',
         board: "Kerala State",
         class: "10th (SSLC)",
@@ -27473,7 +27473,7 @@ const questions = [
         correctIndex: 0, level: 1, chapter: "Trigonometry & Coordinate Geometry"
     },
     {
-        subject: 'Trigonometry',
+        subject: 'Mathematics',
         medium: 'English',
         board: "Kerala State",
         class: "10th (SSLC)",
@@ -27482,7 +27482,7 @@ const questions = [
         correctIndex: 0, level: 1, chapter: "Trigonometry & Coordinate Geometry"
     },
     {
-        subject: 'Coordinate Geometry',
+        subject: 'Mathematics',
         medium: 'English',
         board: "Kerala State",
         class: "10th (SSLC)",
@@ -27491,7 +27491,7 @@ const questions = [
         correctIndex: 0, level: 1, chapter: "Trigonometry & Coordinate Geometry"
     },
     {
-        subject: 'Coordinate Geometry',
+        subject: 'Mathematics',
         medium: 'English',
         board: "Kerala State",
         class: "10th (SSLC)",
@@ -27500,7 +27500,7 @@ const questions = [
         correctIndex: 0, level: 1, chapter: "Trigonometry & Coordinate Geometry"
     },
     {
-        subject: 'Coordinate Geometry',
+        subject: 'Mathematics',
         medium: 'English',
         board: "Kerala State",
         class: "10th (SSLC)",
@@ -27509,7 +27509,7 @@ const questions = [
         correctIndex: 0, level: 1, chapter: "Trigonometry & Coordinate Geometry"
     },
     {
-        subject: 'Coordinate Geometry',
+        subject: 'Mathematics',
         medium: 'English',
         board: "Kerala State",
         class: "10th (SSLC)",
@@ -27518,7 +27518,7 @@ const questions = [
         correctIndex: 0, level: 1, chapter: "Trigonometry & Coordinate Geometry"
     },
     {
-        subject: 'Coordinate Geometry',
+        subject: 'Mathematics',
         medium: 'English',
         board: "Kerala State",
         class: "10th (SSLC)",
@@ -27527,7 +27527,7 @@ const questions = [
         correctIndex: 0, level: 1, chapter: "Trigonometry & Coordinate Geometry"
     },
     {
-        subject: 'Coordinate Geometry',
+        subject: 'Mathematics',
         medium: 'English',
         board: "Kerala State",
         class: "10th (SSLC)",
@@ -27536,7 +27536,7 @@ const questions = [
         correctIndex: 0, level: 1, chapter: "Trigonometry & Coordinate Geometry"
     },
     {
-        subject: 'Coordinate Geometry',
+        subject: 'Mathematics',
         medium: 'English',
         board: "Kerala State",
         class: "10th (SSLC)",
@@ -27545,7 +27545,7 @@ const questions = [
         correctIndex: 0, level: 1, chapter: "Trigonometry & Coordinate Geometry"
     },
     {
-        subject: 'Coordinate Geometry',
+        subject: 'Mathematics',
         medium: 'English',
         board: "Kerala State",
         class: "10th (SSLC)",
@@ -27554,7 +27554,7 @@ const questions = [
         correctIndex: 0, level: 1, chapter: "Trigonometry & Coordinate Geometry"
     },
     {
-        subject: 'Trigonometry',
+        subject: 'Mathematics',
         medium: 'English',
         board: "Kerala State",
         class: "10th (SSLC)",
@@ -27563,7 +27563,7 @@ const questions = [
         correctIndex: 0, level: 1, chapter: "Trigonometry & Coordinate Geometry"
     },
     {
-        subject: 'Trigonometry',
+        subject: 'Mathematics',
         medium: 'English',
         board: "Kerala State",
         class: "10th (SSLC)",
@@ -27572,7 +27572,7 @@ const questions = [
         correctIndex: 0, level: 1, chapter: "Trigonometry & Coordinate Geometry"
     },
     {
-        subject: 'Trigonometry',
+        subject: 'Mathematics',
         medium: 'English',
         board: "Kerala State",
         class: "10th (SSLC)",
@@ -27581,7 +27581,7 @@ const questions = [
         correctIndex: 0, level: 1, chapter: "Trigonometry & Coordinate Geometry"
     },
     {
-        subject: 'Trigonometry',
+        subject: 'Mathematics',
         medium: 'English',
         board: "Kerala State",
         class: "10th (SSLC)",
@@ -27590,7 +27590,7 @@ const questions = [
         correctIndex: 0, level: 1, chapter: "Trigonometry & Coordinate Geometry"
     },
     {
-        subject: 'Trigonometry',
+        subject: 'Mathematics',
         medium: 'English',
         board: "Kerala State",
         class: "10th (SSLC)",
@@ -27599,7 +27599,7 @@ const questions = [
         correctIndex: 0, level: 1, chapter: "Trigonometry & Coordinate Geometry"
     },
     {
-        subject: 'Trigonometry',
+        subject: 'Mathematics',
         medium: 'English',
         board: "Kerala State",
         class: "10th (SSLC)",
@@ -27608,7 +27608,7 @@ const questions = [
         correctIndex: 0, level: 1, chapter: "Trigonometry & Coordinate Geometry"
     },
     {
-        subject: 'Coordinate Geometry',
+        subject: 'Mathematics',
         medium: 'English',
         board: "Kerala State",
         class: "10th (SSLC)",
@@ -27617,7 +27617,7 @@ const questions = [
         correctIndex: 0, level: 1, chapter: "Trigonometry & Coordinate Geometry"
     },
     {
-        subject: 'Coordinate Geometry',
+        subject: 'Mathematics',
         medium: 'English',
         board: "Kerala State",
         class: "10th (SSLC)",
@@ -27626,7 +27626,7 @@ const questions = [
         correctIndex: 0, level: 1, chapter: "Trigonometry & Coordinate Geometry"
     },
     {
-        subject: 'Coordinate Geometry',
+        subject: 'Mathematics',
         medium: 'English',
         board: "Kerala State",
         class: "10th (SSLC)",
@@ -27635,7 +27635,7 @@ const questions = [
         correctIndex: 0, level: 1, chapter: "Trigonometry & Coordinate Geometry"
     },
     {
-        subject: 'Coordinate Geometry',
+        subject: 'Mathematics',
         medium: 'English',
         board: "Kerala State",
         class: "10th (SSLC)",
@@ -27644,7 +27644,7 @@ const questions = [
         correctIndex: 0, level: 1, chapter: "Trigonometry & Coordinate Geometry"
     },
     {
-        subject: 'Coordinate Geometry',
+        subject: 'Mathematics',
         medium: 'English',
         board: "Kerala State",
         class: "10th (SSLC)",
@@ -27653,7 +27653,7 @@ const questions = [
         correctIndex: 0, level: 1, chapter: "Trigonometry & Coordinate Geometry"
     },
     {
-        subject: 'Coordinate Geometry',
+        subject: 'Mathematics',
         medium: 'English',
         board: "Kerala State",
         class: "10th (SSLC)",
@@ -27662,7 +27662,7 @@ const questions = [
         correctIndex: 0, level: 1, chapter: "Trigonometry & Coordinate Geometry"
     },
     {
-        subject: 'Coordinate Geometry',
+        subject: 'Mathematics',
         medium: 'English',
         board: "Kerala State",
         class: "10th (SSLC)",
@@ -27671,7 +27671,7 @@ const questions = [
         correctIndex: 0, level: 1, chapter: "Trigonometry & Coordinate Geometry"
     },
     {
-        subject: 'Coordinate Geometry',
+        subject: 'Mathematics',
         medium: 'English',
         board: "Kerala State",
         class: "10th (SSLC)",
@@ -27680,7 +27680,7 @@ const questions = [
         correctIndex: 0, level: 1, chapter: "Trigonometry & Coordinate Geometry"
     },
     {
-        subject: 'Coordinate Geometry',
+        subject: 'Mathematics',
         medium: 'English',
         board: "Kerala State",
         class: "10th (SSLC)",
@@ -27689,7 +27689,7 @@ const questions = [
         correctIndex: 0, level: 1, chapter: "Trigonometry & Coordinate Geometry"
     },
     {
-        subject: 'Coordinate Geometry',
+        subject: 'Mathematics',
         medium: 'English',
         board: "Kerala State",
         class: "10th (SSLC)",
@@ -27698,7 +27698,7 @@ const questions = [
         correctIndex: 0, level: 1, chapter: "Trigonometry & Coordinate Geometry"
     },
     {
-        subject: 'Coordinate Geometry',
+        subject: 'Mathematics',
         medium: 'English',
         board: "Kerala State",
         class: "10th (SSLC)",
@@ -27707,7 +27707,7 @@ const questions = [
         correctIndex: 0, level: 1, chapter: "Trigonometry & Coordinate Geometry"
     },
     {
-        subject: 'Coordinate Geometry',
+        subject: 'Mathematics',
         medium: 'English',
         board: "Kerala State",
         class: "10th (SSLC)",
@@ -27716,7 +27716,7 @@ const questions = [
         correctIndex: 0, level: 1, chapter: "Trigonometry & Coordinate Geometry"
     },
     {
-        subject: 'Trigonometry',
+        subject: 'Mathematics',
         medium: 'English',
         board: "Kerala State",
         class: "10th (SSLC)",
@@ -27725,7 +27725,7 @@ const questions = [
         correctIndex: 0, level: 1, chapter: "Trigonometry & Coordinate Geometry"
     },
     {
-        subject: 'Trigonometry',
+        subject: 'Mathematics',
         medium: 'English',
         board: "Kerala State",
         class: "10th (SSLC)",
@@ -27734,7 +27734,7 @@ const questions = [
         correctIndex: 0, level: 1, chapter: "Trigonometry & Coordinate Geometry"
     },
     {
-        subject: 'Trigonometry',
+        subject: 'Mathematics',
         medium: 'English',
         board: "Kerala State",
         class: "10th (SSLC)",
@@ -27743,7 +27743,7 @@ const questions = [
         correctIndex: 0, level: 1, chapter: "Trigonometry & Coordinate Geometry"
     },
     {
-        subject: 'Trigonometry',
+        subject: 'Mathematics',
         medium: 'English',
         board: "Kerala State",
         class: "10th (SSLC)",
@@ -27752,7 +27752,7 @@ const questions = [
         correctIndex: 0, level: 1, chapter: "Trigonometry & Coordinate Geometry"
     },
     {
-        subject: 'Coordinate Geometry',
+        subject: 'Mathematics',
         medium: 'English',
         board: "Kerala State",
         class: "10th (SSLC)",
@@ -27761,7 +27761,7 @@ const questions = [
         correctIndex: 0, level: 1, chapter: "Trigonometry & Coordinate Geometry"
     },
     {
-        subject: 'Coordinate Geometry',
+        subject: 'Mathematics',
         medium: 'English',
         board: "Kerala State",
         class: "10th (SSLC)",
@@ -27770,7 +27770,7 @@ const questions = [
         correctIndex: 0, level: 1, chapter: "Trigonometry & Coordinate Geometry"
     },
     {
-        subject: 'Coordinate Geometry',
+        subject: 'Mathematics',
         medium: 'English',
         board: "Kerala State",
         class: "10th (SSLC)",
@@ -27779,7 +27779,7 @@ const questions = [
         correctIndex: 0, level: 1, chapter: "Trigonometry & Coordinate Geometry"
     },
     {
-        subject: 'Coordinate Geometry',
+        subject: 'Mathematics',
         medium: 'English',
         board: "Kerala State",
         class: "10th (SSLC)",
@@ -27788,7 +27788,7 @@ const questions = [
         correctIndex: 0, level: 1, chapter: "Trigonometry & Coordinate Geometry"
     },
     {
-        subject: 'Coordinate Geometry',
+        subject: 'Mathematics',
         medium: 'English',
         board: "Kerala State",
         class: "10th (SSLC)",
@@ -27797,7 +27797,7 @@ const questions = [
         correctIndex: 0, level: 1, chapter: "Trigonometry & Coordinate Geometry"
     },
     {
-        subject: 'Trigonometry',
+        subject: 'Mathematics',
         medium: 'English',
         board: "Kerala State",
         class: "10th (SSLC)",
@@ -27806,7 +27806,7 @@ const questions = [
         correctIndex: 0, level: 1, chapter: "Trigonometry & Coordinate Geometry"
     },
     {
-        subject: 'Trigonometry',
+        subject: 'Mathematics',
         medium: 'English',
         board: "Kerala State",
         class: "10th (SSLC)",
@@ -27815,7 +27815,7 @@ const questions = [
         correctIndex: 0, level: 1, chapter: "Trigonometry & Coordinate Geometry"
     },
     {
-        subject: 'Trigonometry',
+        subject: 'Mathematics',
         medium: 'English',
         board: "Kerala State",
         class: "10th (SSLC)",
@@ -27824,7 +27824,7 @@ const questions = [
         correctIndex: 0, level: 1, chapter: "Trigonometry & Coordinate Geometry"
     },
     {
-        subject: 'Coordinate Geometry',
+        subject: 'Mathematics',
         medium: 'English',
         board: "Kerala State",
         class: "10th (SSLC)",
@@ -27833,7 +27833,7 @@ const questions = [
         correctIndex: 0, level: 1, chapter: "Trigonometry & Coordinate Geometry"
     },
     {
-        subject: 'Coordinate Geometry',
+        subject: 'Mathematics',
         medium: 'English',
         board: "Kerala State",
         class: "10th (SSLC)",
@@ -27842,7 +27842,7 @@ const questions = [
         correctIndex: 0, level: 1, chapter: "Trigonometry & Coordinate Geometry"
     },
     {
-        subject: 'Coordinate Geometry',
+        subject: 'Mathematics',
         medium: 'English',
         board: "Kerala State",
         class: "10th (SSLC)",
@@ -27851,7 +27851,7 @@ const questions = [
         correctIndex: 0, level: 1, chapter: "Trigonometry & Coordinate Geometry"
     },
     {
-        subject: 'Coordinate Geometry',
+        subject: 'Mathematics',
         medium: 'English',
         board: "Kerala State",
         class: "10th (SSLC)",
@@ -27860,7 +27860,7 @@ const questions = [
         correctIndex: 0, level: 1, chapter: "Trigonometry & Coordinate Geometry"
     },
     {
-        subject: 'Coordinate Geometry',
+        subject: 'Mathematics',
         medium: 'English',
         board: "Kerala State",
         class: "10th (SSLC)",
@@ -27869,7 +27869,7 @@ const questions = [
         correctIndex: 0, level: 1, chapter: "Trigonometry & Coordinate Geometry"
     },
     {
-        subject: 'Coordinate Geometry',
+        subject: 'Mathematics',
         medium: 'English',
         board: "Kerala State",
         class: "10th (SSLC)",
@@ -27878,7 +27878,7 @@ const questions = [
         correctIndex: 0, level: 1, chapter: "Trigonometry & Coordinate Geometry"
     },
     {
-        subject: 'Coordinate Geometry',
+        subject: 'Mathematics',
         medium: 'English',
         board: "Kerala State",
         class: "10th (SSLC)",
@@ -27887,7 +27887,7 @@ const questions = [
         correctIndex: 0, level: 1, chapter: "Trigonometry & Coordinate Geometry"
     },
     {
-        subject: 'Coordinate Geometry',
+        subject: 'Mathematics',
         medium: 'English',
         board: "Kerala State",
         class: "10th (SSLC)",
