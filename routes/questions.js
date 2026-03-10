@@ -8,10 +8,14 @@ const Question = require('../models/Question');
  */
 router.get('/', async (req, res) => {
     try {
-        const { level, category, count, uid } = req.query;
+        const { level, category, count, uid, board, class: className, medium, subject } = req.query;
         const query = {};
         if (level) query.level = parseInt(level);
         if (category && category !== 'All') query.category = category;
+        if (board) query.board = board;
+        if (className) query.class = className;
+        if (medium) query.medium = medium;
+        if (subject) query.subject = subject;
 
         let excludeIds = [];
         if (uid) {

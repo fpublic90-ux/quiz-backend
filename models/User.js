@@ -97,6 +97,12 @@ const userSchema = new mongoose.Schema({
         type: String,
         ref: 'User'
     }],
+    studentInfo: {
+        board: { type: String, default: null },
+        class: { type: String, default: null },
+        medium: { type: String, default: null },
+        selectedSubjects: { type: [String], default: [] }
+    },
     createdAt: {
         type: Date,
         default: Date.now
