@@ -2,6 +2,22 @@ const express = require('express');
 const router = express.Router();
 const Question = require('../models/Question');
 
+// Helper to shuffle options and update correctIndex
+const shuffleQuestion = (q) => {
+    const options = [...q.options];
+    const correctAnswer = options[q.correctIndex];
+
+    // Fisher-Yates shuffle
+    for (let i = options.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [options[i], options[j]] = [options[j], options[i]];
+    }
+
+    q.options = options;
+    q.correctIndex = options.indexOf(correctAnswer);
+    return q;
+};
+
 /**
  * GET /api/questions?level=1&category=All&count=10
  * Returns random questions matching filters
@@ -45,10 +61,13 @@ router.get('/', async (req, res) => {
             const studentQuestions = await Question.find(studentQuery)
                 .sort({ _id: 1 })
                 .skip((page - 1) * 10)
-                .limit(10);
+                .limit(10)
+                .lean();
 
-            console.log(`✅ Returned ${studentQuestions.length} deterministic questions for Chapter Level ${level}`);
-            return res.json(studentQuestions);
+            const processed = studentQuestions.map(shuffleQuestion);
+
+            console.log(`✅ Returned ${processed.length} deterministic shuffled questions for Chapter Level ${level}`);
+            return res.json(processed);
         }
 
         // aggregation logic for random practice...
@@ -75,7 +94,8 @@ router.get('/', async (req, res) => {
             questions = [...questions, ...fallbackQuestions];
         }
 
-        res.json(questions.sort(() => Math.random() - 0.5));
+        const processed = questions.map(shuffleQuestion);
+        res.json(processed.sort(() => Math.random() - 0.5));
     } catch (err) {
         console.error('Error fetching questions:', err);
         res.status(500).json({ error: 'Failed to fetch questions' });
