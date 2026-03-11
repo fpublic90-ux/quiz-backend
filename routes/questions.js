@@ -15,6 +15,12 @@ const shuffleQuestion = (q) => {
 
     q.options = options;
     q.correctIndex = options.indexOf(correctAnswer);
+
+    // 🎓 Student Center Fix: If it's a student question, use the subject as the category
+    if (q.subject) {
+        q.category = q.subject;
+    }
+
     return q;
 };
 
@@ -51,10 +57,9 @@ router.get('/', async (req, res) => {
         const requestedCount = parseInt(count) || 10;
         const page = parseInt(level) || 1;
 
-        // If it's a specific student level (not 'All Chapters' or random practice)
+        // If it's a student center request (subject or chapter provided) with a level,
         // we use deterministic sorting and pagination
-        if (chapter && chapter !== 'All Chapters' && level) {
-            // Remove global level filter if we are doing chapter-based pagination
+        if ((chapter || subject) && level) {
             const studentQuery = { ...query };
             delete studentQuery.level;
 
