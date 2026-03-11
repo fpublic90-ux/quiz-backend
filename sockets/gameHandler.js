@@ -4,6 +4,7 @@ const Question = require('../models/Question');
 const User = require('../models/User');
 const MatchmakingManager = require('../managers/MatchmakingManager');
 const AchievementManager = require('../managers/AchievementManager');
+const { shuffleQuestion } = require('../utils/questionUtils');
 
 const QUESTIONS_PER_GAME = 10;
 const POINTS_PER_CORRECT = 10;
@@ -58,7 +59,10 @@ async function fetchQuestions(level, category = 'All', count = QUESTIONS_PER_GAM
     }
 
     // Final shuffle to mix unseen and backfilled questions
-    return questions.sort(() => Math.random() - 0.5);
+    const finalQuestions = questions.sort(() => Math.random() - 0.5);
+
+    // 🎲 Online Mode Fix: Shuffle options for each question
+    return finalQuestions.map(shuffleQuestion);
 }
 
 /**

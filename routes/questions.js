@@ -2,27 +2,7 @@ const express = require('express');
 const router = express.Router();
 const Question = require('../models/Question');
 
-// Helper to shuffle options and update correctIndex
-const shuffleQuestion = (q) => {
-    const options = [...q.options];
-    const correctAnswer = options[q.correctIndex];
-
-    // Fisher-Yates shuffle
-    for (let i = options.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [options[i], options[j]] = [options[j], options[i]];
-    }
-
-    q.options = options;
-    q.correctIndex = options.indexOf(correctAnswer);
-
-    // 🎓 Student Center Fix: If it's a student question, use the subject as the category
-    if (q.subject) {
-        q.category = q.subject;
-    }
-
-    return q;
-};
+const { shuffleQuestion } = require('../utils/questionUtils');
 
 /**
  * GET /api/questions?level=1&category=All&count=10
