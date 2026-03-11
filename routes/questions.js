@@ -137,6 +137,30 @@ router.get('/chapters', async (req, res) => {
 });
 
 /**
+ * GET /api/questions/categories
+ * Returns distinct categories for the practice mode
+ */
+router.get('/categories', async (req, res) => {
+    try {
+        const categories = await Question.distinct('category');
+        // Filter out null/empty and sort
+        const filteredCategories = categories.filter(c => c).sort();
+
+        // Map to UI-friendly objects (we can expand this later with icons/colors)
+        const categoryList = filteredCategories.map(name => ({
+            name,
+            icon: 'public', // Default icon
+            color: '#607D8B' // Default color
+        }));
+
+        res.json(categoryList);
+    } catch (err) {
+        console.error('Error fetching categories:', err);
+        res.status(500).json({ error: 'Failed to fetch categories' });
+    }
+});
+
+/**
  * GET /api/questions/random?count=10
  * Returns N random questions (legacy/general)
  */

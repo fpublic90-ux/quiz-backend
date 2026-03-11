@@ -41,11 +41,23 @@ module.exports = (io, userSockets) => {
                     }
                 }
 
+                // Practice Rewards: Small fixed reward for completion
+                const practiceRewards = { coins: 5, xp: 20 };
+                if (!update.$inc) update.$inc = {};
+                update.$inc.coins = practiceRewards.coins;
+                update.$inc.xp = practiceRewards.xp;
+                update.$inc.totalXp = practiceRewards.xp;
+
                 const updatedUser = Object.keys(update).length > 0
                     ? await User.findOneAndUpdate({ uid }, update, { new: true })
                     : user;
 
-                return res.status(200).json({ message: 'Practice session history saved', user: updatedUser });
+                return res.status(200).json({
+                    message: 'Practice session history saved',
+                    user: updatedUser,
+                    coinReward: practiceRewards.coins,
+                    xpGained: practiceRewards.xp
+                });
             }
 
             // 2. Normal Mode (Competitive/Student Center)

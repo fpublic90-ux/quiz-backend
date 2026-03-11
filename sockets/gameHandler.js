@@ -406,6 +406,16 @@ function registerGameHandlers(io, socket, userSockets) {
         });
     });
 
+    // ─── decline_start_game ──────────────────────────────────────────────────
+    socket.on('decline_start_game', ({ roomCode, playerName }) => {
+        const code = roomCode.toUpperCase();
+        console.log(`👎 Start request declined by ${playerName} in room ${code}`);
+        socket.to(code).emit('game_start_declined', {
+            fromName: playerName,
+            message: `${playerName} declined the next level match.`
+        });
+    });
+
     // ─── find_match ─────────────────────────────────────────────────────────────
     socket.on('find_match', async (data) => {
         const { playerName, uid, avatar, category } = data;
