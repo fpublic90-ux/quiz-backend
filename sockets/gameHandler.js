@@ -160,6 +160,8 @@ async function advanceQuestion(io, code) {
     }
 }
 
+const RewardManager = require('../managers/RewardManager');
+
 /**
  * End the game and send leaderboard
  */
@@ -172,149 +174,57 @@ async function endGame(io, code, reason = null) {
         RoomManager.setStatus(code, 'finished');
         const leaderboard = RoomManager.getLeaderboard(code);
 
-        // Persist stats for each player
-        for (let i = 0; i < leaderboard.length; i++) {
-            const player = leaderboard[i];
-            if (player.uid) {
-                try {
-                    const rank = i + 1;
-                    const user = await User.findOne({ uid: player.uid });
-                    if (user) {
-                        user.gamesPlayed += 1;
-                        user.totalScore += player.score;
-                        if (rank === 1) user.wins += 1;
+        // ─── Parallel Persistence ───────────────────────────────────────────
+        const updatePromises = leaderboard.map(async (player) => {
+            if (!player.uid) return null;
 
-                        // Award Coins and XP based on rank
-                        let coinReward = 0;
-                        let xpMultiplier = 0;
-                        let xpGained = 0;
+            try {
+                // 1. Calculate Rewards (XP, Coins, isWin)
+                const rewards = RewardManager.calculateRewards(player, leaderboard, room, reason);
 
-                        if (player.isActive) {
-                            // 1. Base Multiplier/Rank Rewards (Social matches get 50% base rewards to discourage farming)
-                            const baseRewardMultiplier = room.type === 'matchmaking' ? 1.0 : 0.5;
+                // 2. Persist Stats & Achievements in ONE pass
+                const updatedProfile = await RewardManager.updateUserStats(
+                    player.uid,
+                    rewards,
+                    player,
+                    room,
+                    AchievementManager,
+                    io
+                );
 
-                            if (rank === 1) {
-                                coinReward = Math.round(100 * baseRewardMultiplier);
-                                xpMultiplier = 1.5;
-                            } else if (rank === 2) {
-                                coinReward = Math.round(50 * baseRewardMultiplier);
-                                xpMultiplier = 1.2;
-                            } else if (rank === 3) {
-                                coinReward = Math.round(30 * baseRewardMultiplier);
-                                xpMultiplier = 1.1;
-                            } else {
-                                coinReward = Math.round(10 * baseRewardMultiplier);
-                                xpMultiplier = 1.0;
-                            }
-
-                            // 2. Fair Play Bonus (Full Bonus even in social matches as requested)
-                            if (reason === 'opponent_left' && leaderboard.filter(p => p.isActive).length === 1) {
-                                coinReward += 25;
-                                player.xpBonus = 50; // Flat XP bonus
-                                console.log(`🎁 Fair Play Bonus: +25 coins, +50 XP for ${player.name}`);
-                            }
-
-                            const baseXP = Math.round(player.score * xpMultiplier);
-                            xpGained = baseXP + (player.xpBonus || 0);
-                        } else {
-                            console.log(`🚫 Quitter/Inactive: 0 rewards for ${player.name}`);
-                        }
-
-                        // Suppress rewards for Student Center chapter quizzes
-                        const isStudentChapter = room.category === 'Student Center' && room.chapter != null;
-                        if (isStudentChapter) {
-                            coinReward = 0;
-                            xpGained = 0;
-                        }
-
-                        user.coins += coinReward;
-                        user.xp += xpGained;
-
-                        // Attach specific rewards to player object for game_over payload
-                        player.earnedCoins = coinReward;
-                        player.earnedXp = xpGained;
-
-                        // Leveling: 1 level per 200 total XP
-                        user.level = Math.floor(user.xp / 200) + 1;
-
-                        // Update Tier
-                        if (user.xp >= 15000) user.tier = 'Diamond';
-                        else if (user.xp >= 7000) user.tier = 'Platinum';
-                        else if (user.xp >= 3000) user.tier = 'Gold';
-                        else if (user.xp >= 1000) user.tier = 'Silver';
-                        else user.tier = 'Bronze';
-
-                        // Save question history (limit to last 500)
-                        if (room && room.questions) {
-                            const questionIds = room.questions.map(q => q._id);
-                            user.answeredQuestions = [...(user.answeredQuestions || []), ...questionIds];
-                            if (user.answeredQuestions.length > 500) {
-                                user.answeredQuestions = user.answeredQuestions.slice(-500);
-                            }
-                        }
-
-                        await user.save();
-                        console.log(`📈 Stats: ${player.name} +${xpGained} XP, +${coinReward} Coins. Tier: ${user.tier}`);
-
-                        // Attach updated stats for realtime sync
-                        player.updatedProfile = {
-                            coins: user.coins,
-                            xp: user.xp,
-                            level: user.level,
-                            tier: user.tier,
-                            wins: user.wins,
-                            gamesPlayed: user.gamesPlayed
-                        };
-
-                        // ── Achievements Check ──────────────────
-                        const newlyUnlocked = AchievementManager.checkAchievements(user, player, room);
-                        if (newlyUnlocked.length > 0) {
-                            await AchievementManager.persistAchievements(user, newlyUnlocked);
-                            console.log(`🏆 Achievements Unlocked for ${player.name}: ${newlyUnlocked.join(', ')}`);
-
-                            // Emit real-time notification to this specific player
-                            io.to(player.id).emit('achievement_unlocked', {
-                                achievements: newlyUnlocked
-                            });
-                        }
-                    }
-                } catch (err) {
-                    console.error(`❌ Failed to persist stats for ${player.name}:`, err);
+                if (updatedProfile) {
+                    player.earnedCoins = rewards.coins;
+                    player.earnedXp = rewards.xp;
+                    player.updatedProfile = updatedProfile;
+                    console.log(`📈 Stats: ${player.name} +${rewards.xp} XP, +${rewards.coins} Coins.`);
                 }
+            } catch (err) {
+                console.error(`❌ Failed to persist stats for ${player.name}:`, err);
             }
-        }
+        });
+
+        await Promise.allSettled(updatePromises);
+
+        // ─── Final Broadcast ────────────────────────────────────────────────
+        const finalLeaderboard = leaderboard.map(p => ({
+            id: p.id,
+            uid: p.uid,
+            name: p.name,
+            avatar: p.avatar,
+            score: p.score,
+            isActive: p.isActive,
+            level: p.level,
+            tier: p.tier,
+            fastAnswers: p.fastAnswers,
+            totalTimeTaken: p.totalTimeTaken,
+            earnedCoins: p.earnedCoins || 0,
+            earnedXp: p.earnedXp || 0,
+            updatedProfile: p.updatedProfile || null
+        }));
 
         io.to(code).emit('game_over', {
-            leaderboard: leaderboard.map(p => ({
-                id: p.id,
-                uid: p.uid,
-                name: p.name,
-                avatar: p.avatar,
-                score: p.score,
-                isActive: p.isActive,
-                level: p.level,
-                tier: p.tier,
-                fastAnswers: p.fastAnswers,
-                totalTimeTaken: p.totalTimeTaken,
-                earnedCoins: p.earnedCoins || 0,
-                earnedXp: p.earnedXp || 0,
-                updatedProfile: p.updatedProfile || null
-            })),
-            winner: leaderboard[0] ? {
-                id: leaderboard[0].id,
-                uid: leaderboard[0].uid,
-                name: leaderboard[0].name,
-                avatar: leaderboard[0].avatar,
-                score: leaderboard[0].score,
-                isActive: leaderboard[0].isActive,
-                level: leaderboard[0].level,
-                tier: leaderboard[0].tier,
-                fastAnswers: leaderboard[0].fastAnswers,
-                totalTimeTaken: leaderboard[0].totalTimeTaken,
-                earnedCoins: leaderboard[0].earnedCoins || 0,
-                earnedXp: leaderboard[0].earnedXp || 0,
-                updatedProfile: leaderboard[0].updatedProfile || null
-            } : null,
+            leaderboard: finalLeaderboard,
+            winner: finalLeaderboard[0] || null,
             reason: reason,
         });
     } catch (err) {

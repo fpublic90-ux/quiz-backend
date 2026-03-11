@@ -27894,7 +27894,117 @@ const questions = [
         question: 'Trigonometry and Coordinate Geometry are the last chapters for this batch.',
         options: ['True', 'False', 'Partially', 'None'],
         correctIndex: 0, level: 1, chapter: "Trigonometry & Coordinate Geometry"
-    }
+    },
+    {
+        question: "Which of the following is the subshell electronic configuration of 'Ar' (Atomic Number 18)?",
+        options: ["1s2 2s2 2p6 3s2 3p6", "1s2 2s2 2p6 3s2 3p4", "1s2 2s2 2p6 3s1", "1s2 2s2 2p6"],
+        correctIndex: 0,
+        level: 1,
+        board: "Kerala State",
+        class: "10th (SSLC)",
+        medium: "English",
+        subject: "Chemistry",
+        chapter: "Periodic Table and Electronic Configuration"
+    },
+    {
+        question: "How many electrons can be accommodated in the 'd' subshell?",
+        options: ["2", "6", "10", "14"],
+        correctIndex: 2,
+        level: 1,
+        board: "Kerala State",
+        class: "10th (SSLC)",
+        medium: "English",
+        subject: "Chemistry",
+        chapter: "Periodic Table and Electronic Configuration"
+    },
+    {
+        question: "Which block of the periodic table contains transition elements?",
+        options: ["s-block", "p-block", "d-block", "f-block"],
+        correctIndex: 2,
+        level: 1,
+        board: "Kerala State",
+        class: "10th (SSLC)",
+        medium: "English",
+        subject: "Chemistry",
+        chapter: "Periodic Table and Electronic Configuration"
+    },
+    {
+        question: "What is the oxidation state of Iron in FeCl3?",
+        options: ["+1", "+2", "+3", "+4"],
+        correctIndex: 2,
+        level: 1,
+        board: "Kerala State",
+        class: "10th (SSLC)",
+        medium: "English",
+        subject: "Chemistry",
+        chapter: "Periodic Table and Electronic Configuration"
+    },
+    {
+        question: "Which element has the electronic configuration [Ar] 4s2 3d1?",
+        options: ["Scandium", "Titanium", "Vanadium", "Chromium"],
+        correctIndex: 0,
+        level: 1,
+        board: "Kerala State",
+        class: "10th (SSLC)",
+        medium: "English",
+        subject: "Chemistry",
+        chapter: "Periodic Table and Electronic Configuration"
+    },
+    {
+        question: "Noble gases belong to which group in the periodic table?",
+        options: ["Group 1", "Group 2", "Group 17", "Group 18"],
+        correctIndex: 3,
+        level: 1,
+        board: "Kerala State",
+        class: "10th (SSLC)",
+        medium: "English",
+        subject: "Chemistry",
+        chapter: "Periodic Table and Electronic Configuration"
+    },
+    {
+        question: "Which subshell is filled after 3p according to Aufbau principle?",
+        options: ["3d", "4s", "4p", "4d"],
+        correctIndex: 1,
+        level: 1,
+        board: "Kerala State",
+        class: "10th (SSLC)",
+        medium: "English",
+        subject: "Chemistry",
+        chapter: "Periodic Table and Electronic Configuration"
+    },
+    {
+        question: "Lanthanides and Actinides belong to which block?",
+        options: ["s-block", "p-block", "d-block", "f-block"],
+        correctIndex: 3,
+        level: 1,
+        board: "Kerala State",
+        class: "10th (SSLC)",
+        medium: "English",
+        subject: "Chemistry",
+        chapter: "Periodic Table and Electronic Configuration"
+    },
+    {
+        question: "What is the maximum number of electrons that can be held in a 'p' subshell?",
+        options: ["2", "6", "10", "14"],
+        correctIndex: 1,
+        level: 1,
+        board: "Kerala State",
+        class: "10th (SSLC)",
+        medium: "English",
+        subject: "Chemistry",
+        chapter: "Periodic Table and Electronic Configuration"
+    },
+    {
+        question: "Which element belongs to the s-block?",
+        options: ["Sodium", "Iron", "Oxygen", "Gold"],
+        correctIndex: 0,
+        level: 1,
+        board: "Kerala State",
+        class: "10th (SSLC)",
+        medium: "English",
+        subject: "Chemistry",
+        chapter: "Periodic Table and Electronic Configuration"
+    },
 ];
 
 

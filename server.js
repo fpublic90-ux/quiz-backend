@@ -64,12 +64,18 @@ app.get('/', (req, res) => {
 io.on('connection', (socket) => {
   console.log(`🔌 Client connected: ${socket.id}`);
 
-  // Listen for user identification to map socket
-  socket.on('identify', (uid) => {
-    if (uid) {
+  // Listen for user identification to map socket (Secured with Token)
+  socket.on('identify', async (token) => {
+    if (!token) return;
+    try {
+      const decodedToken = await admin.auth().verifyIdToken(token);
+      const uid = decodedToken.uid;
       userSockets.set(uid, socket.id);
       socket.uid = uid;
-      console.log(`🆔 User identified: ${uid} -> ${socket.id}`);
+      console.log(`🆔 User verified & identified: ${uid} -> ${socket.id}`);
+    } catch (error) {
+      console.error('❌ Socket identification failed:', error.message);
+      socket.emit('error', { message: 'Authentication failed' });
     }
   });
 

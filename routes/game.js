@@ -2,9 +2,10 @@ const express = require('express');
 const router = express.Router();
 const User = require('../models/User');
 const AchievementManager = require('../managers/AchievementManager');
+const { verifyToken } = require('../middleware/authMiddleware');
 
 // Save game results (Solo or Matchmaking fallbacks)
-router.post('/save-results', async (req, res) => {
+router.post('/save-results', verifyToken, async (req, res) => {
     try {
         const { uid, score, rank, category, fastAnswers, isPractice, practiceLevel, questionIds, chapter } = req.body;
 

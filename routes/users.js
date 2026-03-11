@@ -67,14 +67,31 @@ const K_SHOP_CATALOG = {
     'char_naruto': { price: 500 },
 };
 
-// Get user profile
-router.get('/profile/:uid', async (req, res) => {
+// Get user profile (Secured with IDOR protection)
+router.get('/profile/:uid', verifyToken, async (req, res) => {
     try {
+        const isOwner = req.user.uid === req.params.uid;
         const user = await User.findOne({ uid: req.params.uid });
         if (!user) {
             return res.status(404).json({ message: 'User not found' });
         }
-        res.status(200).json(user);
+
+        if (isOwner) {
+            res.status(200).json(user);
+        } else {
+            // Return public view only
+            const publicProfile = {
+                uid: user.uid,
+                displayName: user.displayName,
+                avatar: user.avatar,
+                level: user.level,
+                tier: user.tier,
+                totalScore: user.totalScore,
+                gamesPlayed: user.gamesPlayed,
+                wins: user.wins
+            };
+            res.status(200).json(publicProfile);
+        }
     } catch (error) {
         res.status(500).json({ message: 'Server error' });
     }

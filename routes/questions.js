@@ -103,6 +103,28 @@ router.get('/', async (req, res) => {
 });
 
 /**
+ * GET /api/questions/stats
+ * Returns the total count of questions matching the filters
+ */
+router.get('/stats', async (req, res) => {
+    try {
+        const { board, class: className, medium, subject, chapter } = req.query;
+        const query = {};
+        if (board) query.board = board;
+        if (className) query.class = className;
+        if (medium) query.medium = medium;
+        if (subject) query.subject = subject;
+        if (chapter && chapter !== 'All Chapters') query.chapter = chapter;
+
+        const count = await Question.countDocuments(query);
+        res.json({ count });
+    } catch (err) {
+        console.error('Error fetching question stats:', err);
+        res.status(500).json({ error: 'Failed to fetch question stats' });
+    }
+});
+
+/**
  * GET /api/questions/chapters
  * Returns distinct chapters for given filters
  */
