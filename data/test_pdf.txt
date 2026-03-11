@@ -1,0 +1,419 @@
+Physics Standard X: Sound Waves Chapter Answers
+Comprehensive Solutions to All Questions and Activities
+1
+www.educationobserver.com
+www.educationobserver.com
+www.educationobserver.com
+----------------Page (0) Break----------------
+1 Answers to Questions and Activities
+1.1 Oscillatory Motion
+1.What type of motion does the swing have? (circular / oscillatory)
+Answer: Oscillatory. A swing moves to and fro about its equilibrium position, not
+in a full circular path.
+2.What is the initial position of the swing when it starts oscillating from
+its free state (equilibrium position)? (A / O / B)
+Answer: O. The swing starts from its equilibrium position (O) before moving to
+extremes A or B.
+3.In the figure, what is the maximum displacement to one side from the
+equilibrium position? (2a, a/2, a)
+Answer: a. The maximum displacement from equilibrium to one side is the am-
+plitude, denoted asa.
+4.When does the swing complete one oscillation? (when the pendulum
+starts from O, reaches A and returns to O / when the pendulum starts
+from O, reaches A, then to B and back to O)
+Answer: When the pendulum starts from O, reaches A, then to B, and back to O.
+This completes one full cycle.
+5.What could be the reason that the number of oscillations counted by
+the child waiting for his turn to swing and the child on the swing were
+different? Discuss and find out.
+Answer: The difference arises because the children may start counting from dif-
+ferent points. The child on the swing might count from an extreme position (A to
+B to A), while the waiting child might count from the equilibrium (O to A to B to
+O). Accurate counting requires starting from the same point and completing a full
+cycle (O to A to B to O).
+6.Give more examples of oscillatory motion.
+Answer:
+• Pendulum of a clock.
+• Vibrating guitar string.
+• Mass on a spring.
+• Tuning fork prongs.
+7.If a pendulum takes 1 minute to complete 30 oscillations, how long does
+it take to complete one oscillation?
+Answer: Time for 30 oscillations = 1 minute = 60 s.
+Time for 1 oscillation =6030= 2s.
+8.Find the number of oscillations the same pendulum completes in one
+second.
+Answer: Number of oscillations in 60 s = 30.
+Number of oscillations in 1 s =3060= 0.5oscillations.
+1
+www.educationobserver.com
+www.educationobserver.com
+----------------Page (1) Break----------------
+9.What is the change in frequency when the length of the pendulum in-
+creases? (increases / decreases)
+Answer: Decreases. A longer pendulum has a longer period, reducing frequency
+(f=1T).
+10.What is the relation between period and frequency?
+Answer: Frequency (f) is the reciprocal of period (T):f=1T.
+11.Complete table 1.1 by doing an experiment using a simple pendulum,
+meter scale, and a stopwatch.
+Answer: Set up a simple pendulum with lengths 25 cm, 60 cm, and 100 cm.
+Time 10 oscillations for accuracy, then calculate period (T=Time10) and frequency
+(f=10Time). Example:
+(Note: Actual times depend on experimental conditions.)
+Table 1: Simple Pendulum Experiment
+Length (cm)Time for 10 Oscillations (s)Period (s)Frequency (Hz)
+2510 (example)1010= 11010= 1
+6014 (example)1410= 1.41014≈0.714
+10020 (example)2010= 21020= 0.5
+12.Observe various tuning forks and note down the markings on each of
+them with their units.
+Answer: Example markings: 256 Hz, 512 Hz. These indicate the natural frequency
+in Hertz (Hz).
+13.Do you feel any difference? (Excite tuning forks of different frequencies
+and listen to the sound.)
+Answer: Yes, different frequencies produce distinct pitches. Higher frequencies
+(e.g., 512 Hz) sound higher-pitched than lower ones (e.g., 256 Hz).
+14.Isn’t the difference in frequency the reason for the difference in sound
+here?
+Answer: Yes, the frequency determines the pitch of the sound produced by the
+tuning fork.
+15.What is the change in the sound heard when the stem of the excited
+tuning fork is pressed on the table? What could be the reason for the
+sound being louder?
+Answer: The sound becomes louder. The table undergoes forced vibration, vi-
+brating with the tuning fork, amplifying the sound energy.
+16.Excite the hacksaw blade A by tapping with your finger. What do you
+observe? (all blades vibrate / only A vibrates)
+Answer: Only A vibrates initially, as it is directly tapped.
+17.Are all the blades vibrating with the same amplitude?
+Answer: No, only blades with the same natural frequency as A (e.g., C and E)
+vibrate significantly due to resonance.
+2
+www.educationobserver.com
+www.educationobserver.com
+----------------Page (2) Break----------------
+18.Which of them vibrates with maximum amplitude?
+Answer: Blades C and E, which share the same natural frequency as A, vibrate
+with maximum amplitude due to resonance.
+19.After all the blades have stopped vibrating, excite B and record the
+observation in the science diary.
+Answer: Exciting blade B causes it to vibrate. Blades D and F (same length as
+B, 17 cm) vibrate with maximum amplitude due to resonance, while others vibrate
+minimally or not at all.
+20.When blade A vibrates, why would the hacksaw blades C and E vibrate
+with maximum amplitude?
+Answer: Blades C and E have the same natural frequency as A (same length, 13
+cm), causing resonance and maximum amplitude.
+21.Immerse in water a PVC pipe of about 50 cm length and 4 cm diame-
+ter. Excite a tuning fork of frequency 512 Hz and hold it close to the
+mouth of the pipe. Vary the length of the air column inside the pipe by
+gradually raising both the tuning fork and the pipe. Don’t you hear a
+louder sound at a particular stage? What could be the reason for this?
+Record in your science diary.
+Answer: A louder sound is heard when the air column’s length matches the fre-
+quency of the tuning fork (512 Hz), causing resonance. The air column vibrates
+with maximum amplitude, amplifying the sound.
+22.Stretch both ends of a slinky placed on a table. Compress and release a
+few coils at one end of the slinky. Notice the disturbance formed in the
+slinky.
+Answer: A compression wave travels along the slinky, with coils bunching up and
+spreading out, forming a longitudinal wave.
+23.Move one end of the slinky back and forth. What do you observe?
+Answer: A transverse wave forms, with coils moving up and down, creating crests
+and troughs that travel along the slinky.
+24.Are the coils in the slinky moving towards the other end along with the
+disturbances?
+Answer: No, the coils oscillate locally; only the disturbance (wave) travels to the
+other end.
+25.In figure 1.8 (b), did the coils in the slinky move parallel or perpendicular
+to the direction of propagation of the wave?
+Answer: Perpendicular. The slinky in this setup forms a transverse wave.
+26.Do all these waves require a medium to travel? Complete table 1.2
+appropriately.
+Answer:
+27.In figure 1.9, as the prong of the tuning fork moves from the equilib-
+rium position to the side A, the air pressure on that side (increases /
+decreases).
+Answer: Increases. The prong compresses air molecules, forming a compression.
+3
+www.educationobserver.com
+www.educationobserver.com
+----------------Page (3) Break----------------
+Table 2: Waves and Medium Requirements
+Waves Requiring MediumWaves Not Requiring Medium
+Sound wavesRadio waves
+Seismic wavesLight waves
+Ripples on waterMicrowaves
+Ultraviolet rays
+X-rays
+Gamma rays
+28.What about the air pressure on side A when the same prong moves to
+side B?
+Answer: Decreases. The prong moves away, creating a rarefaction.
+29.When the prongs of the tuning fork vibrate continuously, aren’t regions
+of high and low pressure formed intermittently in the air?
+Answer: Yes, continuous vibration creates alternating compressions (high pres-
+sure) and rarefactions (low pressure).
+30.Compare the wave produced in the slinky with the wave produced by
+the tuning fork in the air.
+Answer: The slinky wave (figure 1.8b) is transverse, with coils moving perpen-
+dicular to the wave direction, forming crests and troughs. The tuning fork wave
+is longitudinal, with air molecules vibrating parallel, forming compressions and
+rarefactions.
+31.Press and release the spring continuously. What do you observe?
+Answer: A transverse wave forms, with the string moving up and down, creating
+crests and troughs that propagate.
+32.What is the direction of motion of the particles in the string, with respect
+to the equilibrium position? (parallel / perpendicular)
+Answer: Perpendicular. The string particles move up and down relative to the
+wave’s horizontal propagation.
+33.Does each point on the string move parallel or perpendicular to the
+direction of propagation of the wave formed in the string?
+Answer: Perpendicular. The wave is transverse.
+34.Do the particles on the string undergo resultant translatory motion other
+than moving vertically up and down from their equilibrium position?
+Answer: No, particles oscillate vertically without net displacement along the
+wave’s direction.
+35.Are the coils moving parallel or perpendicular to the waveform created
+on the slinky?
+Answer: Perpendicular. The slinky forms a transverse wave.
+36.What type of waveform is formed in the slinky?
+Answer: Transverse waveform, with crests and troughs.
+37.Some of the characteristics related to transverse waves and longitudinal
+waves are given below. Classify them and complete the table.
+4
+www.educationobserver.com
+www.educationobserver.com
+----------------Page (4) Break----------------
+Answer:
+Table 3: Longitudinal vs. Transverse Waves
+Longitudinal WavesTransverse Waves
+Particles vibrate parallelParticles vibrate perpendicular
+Compressions and rarefactionsCrests and troughs
+Pressure variations occurNo pressure variations
+38.In the figure, which are the points with maximum displacement from
+the equilibrium position of the wave? (A, B, C, D, E)
+Answer: Points A and B. These represent the crests and troughs with maximum
+amplitude.
+39.What is the amplitude of this wave?
+Answer: The maximum displacement from equilibrium to A or B, denoted asa,
+in meters.
+40.In figure 1.11, what is the time taken by the particle in the medium to
+complete one vibration?
+Answer: The period (T), the time from one crest (or trough) to the next identical
+point on the graph, in seconds.
+41.What is the period of the wave in the figure?
+Answer: The time for one complete cycle, as shown on the displacement-time
+graph, in seconds.
+42.If the wave shown in figure 1.11 takes 1 s to travel from O to D, find the
+frequency of the wave.
+Answer: Assuming the distance O to D represents one wavelength (λ), frequency
+=Speedλ. Without specific distances, frequency depends on the number of cycles in
+1 s, determined from the graph (e.g., if 2 cycles,f= 2Hz).
+43.In figure 1.13 (a), which particle is in the same phase of vibration as
+particle A? (B, C, D, E)
+Answer: Particle D (assuming D is one wavelength from A, in the same phase).
+44.In the case of particle P?
+Answer: The particle one wavelength from P, in the same phase (depends on figure
+specifics).
+45.In the case of particle B?
+Answer: The particle one wavelength from B, in the same phase (depends on
+figure specifics).
+46.In figure 1.13 (b), which represents the wavelength (λ)? (CR, RR)
+Answer: CR. In longitudinal waves, wavelength is the distance between consecu-
+tive compressions (C to C) or rarefactions (R to R).
+47.Here CR represents (λ,λ2,λ4)?
+Answer:λ. CR is the distance between consecutive compressions, equal to one
+wavelength.
+5
+www.educationobserver.com
+www.educationobserver.com
+----------------Page (5) Break----------------
+48.If a wave travels 700 m in 2 s, what is the speed of the wave?
+Answer: Speed =7002= 350m/s.
+49.If the frequency of the wave is changed, will the wavelength change?
+Answer: Yes, for constant speed, wavelength is inversely proportional to frequency
+(v=fλ).
+50.In figure 1.14 (a), what is the wavelength of the wave?
+Answer: The distance between two consecutive crests or troughs, measured from
+the figure (e.g., 4 m, depending on specifics).
+51.What is the wavelength of the wave in figure 1.14 (b)?
+Answer: The distance between consecutive crests or troughs, typically shorter or
+longer than figure 1.14 (a) based on visual comparison (e.g., 2 m).
+52.In figure 1.14 (a), if both the waves take 1 s to travel a distance of 12
+m, what is the frequency of the wave?
+Answer: Speed =121= 12m/s. If wavelength = 4 m (example), frequency =
+124= 3Hz.
+53.In figure 1.14 (b), what is the frequency of the wave?
+Answer: Speed = 12 m/s. If wavelength = 2 m (example), frequency =122= 6Hz.
+54.Which wave has a longer wavelength?
+Answer: Figure 1.14 (a), as it typically shows fewer cycles, indicating a longer
+wavelength.
+55.Which wave has a higher frequency?
+Answer: Figure 1.14 (b), as shorter wavelength implies higher frequency for the
+same speed.
+56.What is the relation between wavelength and frequency?
+Answer: Inversely proportional:f∝1λwhen speed is constant.
+57.What is the wavelength (λ)?
+Answer: The distance between consecutive points in the same phase, e.g., crest to
+crest, in meters.
+58.If the wave takes 1 s to reach A from O, what is the frequency (f)?
+Answer: If O to A is one wavelength, frequency =Speedλ. Without specific values,
+frequency depends on the figure’s scale.
+59.What is the speed of the wave (v)?
+Answer: Speed =Distance from O to A1=fλ, calculated from the figure’s specifics.
+60.Find the relation between wavelength, frequency, and speed of a wave.
+Answer:v=fλ.
+61.How many crests are there in the figure?
+Answer: Count the elevated portions in the transverse wave (depends on figure,
+e.g., 3 crests).
+62.How many troughs are there?
+Answer: Count the lowest portions (e.g., 3 troughs, depending on figure).
+6
+www.educationobserver.com
+www.educationobserver.com
+----------------Page (6) Break----------------
+63.What is the wavelength?
+Answer: Distancebetweenconsecutivecrestsortroughs, measuredfromthefigure.
+64.If the frequency of a longitudinal wave travelling at a speed of 350 m/s
+in the air is 35 Hz, what is the distance between two consecutive com-
+pressions of this wave?
+Answer: Wavelength =vf=35035= 10m.
+65.What about the distance between two consecutive rarefactions?
+Answer: Also 10 m, as the distance between consecutive rarefactions equals the
+wavelength.
+66.A sound wave with a frequency of 175 Hz has a wavelength of 2 m.
+Calculate the speed of sound.
+Answer: Speed =fλ= 175×2 = 350m/s.
+67.Adjust the pipe B at different angles and listen to the ticking sound from
+the clock. What could be the reason for the ticking sound being heard
+from the clock through the pipe B?
+Answer: The sound reflects off the glass plate into pipe B, allowing it to be heard.
+68.Don’t you feel a decrease in the loudness of the reflecting sound? What
+is the reason? (Using rough surfaces instead of glass)
+Answer: Yes, loudnessdecreases. Roughsurfacesscattersound, reducingreflection
+intensity.
+69.Does sound from a source always travel directly to the listener?
+Answer: No, sound can reflect off surfaces, reaching the listener indirectly.
+70.How long will it take to hear the echo distinctly after hearing the first
+sound?
+Answer: 0.1 s, due to the persistence of hearing.
+71.How far does the sound travel during this time? (Speed of sound = 350
+m/s)
+ascendedAnswer: Distance =350×110= 35m.
+72.The echo of fire cracker is heard after 1 s by the person who burst it.
+How far is the reflecting surface? (Speed = 350 m/s)
+Answer: Distance =350×12= 175m.
+73.What should be the minimum distance between the source and the re-
+flecting surface to hear the echo in water? (Speed = 1480 m/s)
+Answer: Distance =1480×0.12= 74m.
+74.If an ultrasonic wave emitted by a transmitter on a ship returns after
+0.2 s, what is the distance to the rock? (Speed = 1522 m/s)
+Answer: Distance =1522×0.22= 152.2m.
+75.What measures can be taken to safeguard against tsunamis? Discuss
+and make notes.
+Answer: Follow tsunami warning center instructions, evacuate to higher ground,
+avoid coastal areas, and prepare emergency kits.
+7
+www.educationobserver.com
+www.educationobserver.com
+----------------Page (7) Break----------------
+76.The frequency of a simple pendulum is 1 Hz. What is its period?
+Answer: Period =1f=11= 1s.
+77.If a pendulum takes 0.5 s to complete one oscillation, what is its fre-
+quency?
+Answer: Frequency =1T=10.5= 2Hz.
+78.A tuning fork of frequency 512 Hz is excited and its stem is pressed on
+a table. Does the table vibrate? What is this phenomenon called?
+Answer: Yes, the table vibrates. This is forced vibration.
+79.How does the air near a 256 Hz tuning fork vibrate?
+Answer: The air vibrates 256 times per second, forming longitudinal waves with
+compressions and rarefactions.
+2 Assessment Questions
+1.Which of the following statements is correct?
+a) Sound and light are transverse waves.
+b) Sound and light are longitudinal waves.
+c) Sound is a longitudinal wave and light is a transverse wave.
+d) Sound is a transverse wave and light is a longitudinal wave.
+Answer: c) Sound is a longitudinal wave and light is a transverse wave.
+Explanation: Sound involves parallel vibrations; light involves perpendicular vi-
+brations.
+2.The upper limit of frequency of sound that a bat can hear is 120 kHz.
+What is the maximum wavelength? (Speed = 350 m/s)
+Answer: Wavelength =vf=350120×103= 0.00292m= 2.92mm.
+3.Find the frequency, period, and wavelength of each wave. (Two waves
+at 3.2 m/s)
+Answer: Without specific figure data, assume example wavelengths (e.g., 1.6 m
+and 0.8 m).
+Wave 1:f=3.21.6= 2Hz,T=12= 0.5s,λ= 1.6m.
+Wave 2:f=3.20.8= 4Hz,T=14= 0.25s,λ= 0.8m.
+4.Which frequency can be heard by humans?
+a) 5 Hz
+b) 2000 Hz
+c) 200 kHz
+d) 50 kHz
+8
+www.educationobserver.com
+www.educationobserver.com
+----------------Page (8) Break----------------
+Answer: b) 2000 Hz.
+Explanation: Human hearing range is 20 Hz to 20 kHz.
+5.A wave has a frequency of 2 kHz and a wavelength of 35 cm. How far
+does it travel in 0.5 s?
+Answer: Speed =2000×0.35 = 700m/s.
+Distance =700×0.5 = 350m.
+6.What is the frequency of a wave that produces 50 crests and 50 troughs
+in 0.5 s?
+Answer: Frequency =500.5= 100Hz.
+7.Which of the following is different regarding the waves given in the
+figures 1.31 (a) and 1.31 (b)? (frequency, amplitude, wavelength)
+Answer: Wavelength.
+Explanation: Different wavelengths are indicated by different crest spacing in the
+figures.
+8.The distance between two adjacent troughs of a transverse wave is 2 m.
+Find the frequency if its speed is 20 m/s.
+Answer: Frequency =vλ=202= 10Hz.
+9.When sound passes through a medium, what travels?
+a) The particles in the medium
+b) The wave
+c) The source of sound
+d) The medium
+Answer: b) The wave.
+Explanation: The wave transfers energy, not the medium or source.
+10.Two pith balls near a tuning fork move slightly when a piano is played.
+What is the reason? (forced vibration / echo)
+Answer: Forced vibration. The piano’s vibrations cause the pith balls to vibrate.
+11.While playing certain notes on the piano, the pith balls are thrown to a
+maximum distance. Which phenomenon is responsible? (reverberation
+/ resonance)
+Answer: Resonance. Matching frequencies cause maximum amplitude.
+3 Extended Activities
+1.Plan an activity that illustrates the resonance of sound.
+Answer: Setuptwotuningforksof512Hzonstands. Exciteoneforkbystrikingit,
+then place it near the second fork. The second fork vibrates loudly due to resonance,
+as their natural frequencies match, amplifying the sound. Record observations in a
+science diary, noting the increased loudness when frequencies align.
+9
+www.educationobserver.com
+www.educationobserver.com
+----------------Page (9) Break----------------
+2.Prepare and present a seminar paper on the topic: ‘Ultrasonic Waves
+and their Applications.’
+Answer:Seminar Paper Outline:
+Title: Ultrasonic Waves and Their Applications
+Introduction: Ultrasonic waves (>20 kHz) are inaudible, used in various fields.
+Medical Applications:
+• Ultrasonography: Imaging organs via reflected waves.
+• Kidney stone crushing: High-intensity waves break stones.
+• Physiotherapy: Promotes tissue healing.
+Industrial Applications: Cleaning intricate parts (e.g., electronics) using ultra-
+sonic vibrations in fluid.
+Navigation: SONAR measures underwater distances (e.g., 1522 m/s wave returns
+in 0.2 s: distance = 152.2 m).
+Conclusion: Ultrasonic waves enhance precision in medicine, industry, and navi-
+gation, showcasing physics’ practical impact.
+10
+www.educationobserver.com
+www.educationobserver.com
+----------------Page (10) Break----------------

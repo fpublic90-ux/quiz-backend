@@ -18,6 +18,9 @@ router.get('/', async (req, res) => {
             query.board = board;
         } else if (!category || category === 'All') {
             query.board = { $exists: false };
+            query.subject = { $exists: false };
+            query.class = { $exists: false };
+            query.category = { $ne: 'Islamic' };
         }
         if (className) query.class = className;
         if (medium) query.medium = medium;
