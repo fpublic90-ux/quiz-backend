@@ -137,6 +137,26 @@ router.get('/chapters', async (req, res) => {
 });
 
 /**
+ * GET /api/questions/past-papers-meta
+ * Returns available subjects for Past Papers
+ */
+router.get('/past-papers-meta', async (req, res) => {
+    try {
+        const query = { category: 'Past Papers', board: 'Kerala', class: '10' };
+
+        // Find which subjects have past papers available
+        const subjects = await Question.distinct('subject', query);
+        const filteredSubjects = subjects.filter(s => s).sort();
+
+        // Also get total count per subject if wanted, but distinct is enough for UI
+        res.json({ success: true, subjects: filteredSubjects, board: 'Kerala SSLC' });
+    } catch (err) {
+        console.error('Error fetching past papers metadata:', err);
+        res.status(500).json({ error: 'Failed to fetch past papers metadata' });
+    }
+});
+
+/**
  * GET /api/questions/categories
  * Returns distinct categories for the practice mode
  */

@@ -2,3 +2,11 @@ node_modules/
 .env
 *.log
 .DS_Store
+
+# Data Assets
+data/pdf books/
+data/papers/
+data/extracted_sslc_questions.json
+data/test_*.js
+data/debug_*.js
+data/temp_*.json
