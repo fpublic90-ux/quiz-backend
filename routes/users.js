@@ -111,20 +111,32 @@ router.post('/purchase', verifyToken, async (req, res) => {
         }
 
         const price = item.price;
-        const user = await User.findOne({ uid });
-        if (!user) return res.status(404).json({ message: 'User not found' });
 
-        const ownedItems = user.ownedItems || [];
-        if (ownedItems.includes(itemId)) {
-            return res.status(400).json({ message: 'Already owned' });
-        }
-        if (user.coins < price) {
-            return res.status(400).json({ message: 'Not enough coins' });
+        // Atomic check and update: 
+        // 1. User must have enough coins
+        // 2. User must not already own the item
+        const user = await User.findOneAndUpdate(
+            {
+                uid,
+                coins: { $gte: price },
+                ownedItems: { $ne: itemId }
+            },
+            {
+                $inc: { coins: -price },
+                $push: { ownedItems: itemId }
+            },
+            { new: true }
+        );
+
+        if (!user) {
+            // Either user not found, not enough coins, or already owned
+            const checkUser = await User.findOne({ uid });
+            if (!checkUser) return res.status(404).json({ message: 'User not found' });
+            if (checkUser.ownedItems.includes(itemId)) return res.status(400).json({ message: 'Already owned' });
+            if (checkUser.coins < price) return res.status(400).json({ message: 'Not enough coins' });
+            return res.status(400).json({ message: 'Purchase failed' });
         }
 
-        user.coins -= price;
-        user.ownedItems = [...ownedItems, itemId];
-        await user.save();
         res.status(200).json(user);
     } catch (error) {
         console.error('Purchase error:', error);

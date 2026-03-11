@@ -11,6 +11,7 @@ const dailyRoutes = require('./routes/daily');
 const socialRoutes = require('./routes/social');
 const gameRoutes = require('./routes/game');
 const studentRoutes = require('./routes/student');
+const notificationRoutes = require('./routes/notifications');
 const { registerGameHandlers, startGame } = require('./sockets/gameHandler');
 const MatchmakingManager = require('./managers/MatchmakingManager');
 const admin = require('firebase-admin');
@@ -52,17 +53,28 @@ app.use('/api/users', userRoutes);
 app.use('/api/leaderboard', leaderboardRoutes);
 app.use('/api/daily', dailyRoutes);
 app.use('/api/social', socialRoutes(io, userSockets));
-app.use('/api/game', gameRoutes);
+app.use('/api/game', gameRoutes(io, userSockets));
 app.use('/api/student', studentRoutes);
+app.use('/api/notifications', notificationRoutes);
 
 app.get('/', (req, res) => {
   res.json({ status: 'Quiz Backend Running 🎯' });
 });
 
 
+const socketRateLimiter = require('./utils/socketRateLimiter');
+
 // Socket.io
 io.on('connection', (socket) => {
   console.log(`🔌 Client connected: ${socket.id}`);
+
+  // Rate Limiting Middleware for this socket
+  socket.use(([event, ...args], next) => {
+    if (socketRateLimiter.isRateLimited(socket.id)) {
+      return next(new Error('Rate limit exceeded. Slow down!'));
+    }
+    next();
+  });
 
   // Listen for user identification to map socket (Secured with Token)
   socket.on('identify', async (token) => {
@@ -83,6 +95,7 @@ io.on('connection', (socket) => {
 
   socket.on('disconnect', () => {
     console.log(`❌ Client disconnected: ${socket.id}`);
+    socketRateLimiter.cleanup(socket.id);
     if (socket.uid) {
       userSockets.delete(socket.uid);
     }

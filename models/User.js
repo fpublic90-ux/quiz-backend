@@ -40,6 +40,14 @@ const userSchema = new mongoose.Schema({
         type: Number,
         default: 0
     },
+    weeklyXp: {
+        type: Number,
+        default: 0
+    },
+    monthlyXp: {
+        type: Number,
+        default: 0
+    },
     coins: {
         type: Number,
         default: 100 // Start with some coins

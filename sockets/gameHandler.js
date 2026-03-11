@@ -4,6 +4,7 @@ const Question = require('../models/Question');
 const User = require('../models/User');
 const MatchmakingManager = require('../managers/MatchmakingManager');
 const AchievementManager = require('../managers/AchievementManager');
+const NotificationManager = require('../managers/NotificationManager');
 const { shuffleQuestion } = require('../utils/questionUtils');
 
 const QUESTIONS_PER_GAME = 10;
@@ -193,7 +194,9 @@ async function endGame(io, code, reason = null) {
                     player,
                     room,
                     AchievementManager,
-                    io
+                    NotificationManager,
+                    io,
+                    userSockets
                 );
 
                 if (updatedProfile) {

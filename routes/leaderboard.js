@@ -2,13 +2,19 @@ const express = require('express');
 const router = express.Router();
 const User = require('../models/User');
 
-// Get global leaderboard (Top 50 by XP)
+// Get global leaderboard (Top 50 by XP, Weekly XP, or Monthly XP)
 router.get('/', async (req, res) => {
     try {
+        const { type } = req.query; // 'global', 'weekly', 'monthly'
+        let sortField = 'xp';
+
+        if (type === 'weekly') sortField = 'weeklyXp';
+        else if (type === 'monthly') sortField = 'monthlyXp';
+
         const leaderboard = await User.find({})
-            .sort({ xp: -1, totalScore: -1 })
+            .sort({ [sortField]: -1, totalScore: -1 })
             .limit(50)
-            .select('uid displayName avatar xp level tier wins ownedItems');
+            .select('uid displayName avatar xp weeklyXp monthlyXp level tier wins ownedItems');
 
         res.status(200).json(leaderboard);
     } catch (error) {

@@ -68,58 +68,93 @@ class RewardManager {
      * @param {Object} achievementManager - The AchievementManager instance
      * @param {Object} io - Socket.io instance for notifications
      */
-    async updateUserStats(uid, rewards, roomPlayer, room, achievementManager, io) {
+    /**
+     * Persist rewards and update user profile stats + achievements
+     * @param {String} uid - User ID
+     * @param {Object} rewards - { coins, xp, isWin }
+     * @param {Object} roomPlayer - Player session object (for achievements)
+     * @param {Object} room - Room object
+     * @param {Object} achievementManager - The AchievementManager instance
+     * @param {Object} notificationManager - The NotificationManager instance
+     * @param {Object} io - Socket.io instance for notifications
+     * @param {Map} userSockets - UID to SocketID map
+     */
+    async updateUserStats(uid, rewards, roomPlayer, room, achievementManager, notificationManager, io, userSockets) {
         if (!uid) return null;
 
         try {
             const user = await User.findOne({ uid });
             if (!user) return null;
 
-            user.gamesPlayed += 1;
-            user.totalScore += roomPlayer.score;
-            if (rewards.isWin) user.wins += 1;
+            // 1. Check achievements and extra stats updates
+            const { newlyUnlocked, statsUpdate } = achievementManager.checkAchievements(user, roomPlayer, room);
 
-            user.coins += rewards.coins;
-            user.xp += rewards.xp;
+            // 2. Build atomic update
+            const update = {
+                $inc: {
+                    gamesPlayed: 1,
+                    totalScore: roomPlayer.score,
+                    wins: rewards.isWin ? 1 : 0,
+                    coins: rewards.coins,
+                    xp: rewards.xp,
+                    weeklyXp: rewards.xp,
+                    monthlyXp: rewards.xp,
+                    ...statsUpdate // Merge extra stats like sslcPhysicsCount etc.
+                }
+            };
 
-            // Update Level & Tier
-            user.level = Math.floor(user.xp / 200) + 1;
-            user.tier = this.calculateTier(user.xp);
+            // 3. Status projected updates
+            const projectedXpx = user.xp + rewards.xp;
+            const newLevel = Math.floor(projectedXpx / 200) + 1;
+            const newTier = this.calculateTier(projectedXpx);
 
-            // History tracking
+            update.$set = {
+                level: newLevel,
+                tier: newTier
+            };
+
+            // 4. Persistence setup
             if (room.questions) {
                 const questionIds = room.questions.map(q => q._id);
-                user.answeredQuestions = [...(user.answeredQuestions || []), ...questionIds];
-                if (user.answeredQuestions.length > 500) {
-                    user.answeredQuestions = user.answeredQuestions.slice(-500);
-                }
+                if (!update.$push) update.$push = {};
+                update.$push.answeredQuestions = {
+                    $each: questionIds,
+                    $slice: -2000
+                };
             }
 
-            // ── Achievements Check (Consolidated) ──────────────────
-            const newlyUnlocked = achievementManager.checkAchievements(user, roomPlayer, room);
+            // 5. Achievement Handling
             if (newlyUnlocked.length > 0) {
-                newlyUnlocked.forEach(id => {
-                    user.achievements.push({ id });
-                });
-                console.log(`🏆 Achievements Unlocked for ${roomPlayer.name}: ${newlyUnlocked.join(', ')}`);
+                if (!update.$push) update.$push = {};
+                update.$push.achievements = {
+                    $each: newlyUnlocked.map(id => ({ id }))
+                };
 
-                // Real-time notification
-                if (io) {
-                    io.to(roomPlayer.id).emit('achievement_unlocked', {
-                        achievements: newlyUnlocked
+                // Emit real-time notifications for each achievement
+                for (const achievementId of newlyUnlocked) {
+                    await notificationManager.notify(io, userSockets, {
+                        recipient: uid,
+                        type: 'achievement',
+                        title: 'Achievement Unlocked! 🏆',
+                        message: `Congratulations! You've earned the "${achievementId.replace(/_/g, ' ')}" medal.`,
+                        data: { achievementId }
                     });
                 }
             }
 
-            await user.save();
+            const updatedUser = await User.findOneAndUpdate(
+                { uid },
+                update,
+                { new: true }
+            );
 
             return {
-                coins: user.coins,
-                xp: user.xp,
-                level: user.level,
-                tier: user.tier,
-                wins: user.wins,
-                gamesPlayed: user.gamesPlayed
+                coins: updatedUser.coins,
+                xp: updatedUser.xp,
+                level: updatedUser.level,
+                tier: updatedUser.tier,
+                wins: updatedUser.wins,
+                gamesPlayed: updatedUser.gamesPlayed
             };
         } catch (error) {
             console.error(`❌ RewardManager Error for UID ${uid}:`, error);
