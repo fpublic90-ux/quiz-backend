@@ -14,7 +14,11 @@ router.get('/', async (req, res) => {
         const query = {};
         if (level) query.level = parseInt(level);
         if (category && category !== 'All') query.category = category;
-        if (board) query.board = board;
+        if (board) {
+            query.board = board;
+        } else if (!category || category === 'All') {
+            query.board = { $exists: false };
+        }
         if (className) query.class = className;
         if (medium) query.medium = medium;
         if (subject) query.subject = subject;
@@ -140,8 +144,9 @@ router.get('/random', async (req, res) => {
     try {
         const count = parseInt(req.query.count) || 10;
         const questions = await Question.aggregate([
+            { $match: { board: { $exists: false } } }, // Exclude educational content
             { $sample: { size: count } },
-            { $project: { question: 1, options: 1, category: 1 } }, // exclude correctIndex
+            { $project: { question: 1, options: 1, category: 1 } },
         ]);
         res.json({ success: true, questions });
     } catch (err) {

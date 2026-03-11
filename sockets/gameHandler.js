@@ -18,6 +18,9 @@ async function fetchQuestions(level, category = 'All', count = QUESTIONS_PER_GAM
     if (category && category !== 'All') {
         // Use case-insensitive regex for robustness
         query.category = { $regex: new RegExp(`^${category}$`, 'i') };
+    } else {
+        // For 'All' (Play Online / General Practice), exclude educational content
+        query.board = { $exists: false };
     }
 
     let excludeIds = [];
