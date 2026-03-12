@@ -20,7 +20,7 @@ router.get('/', async (req, res) => {
             query.board = { $exists: false };
             query.subject = { $exists: false };
             query.class = { $exists: false };
-            query.category = { $ne: 'Islamic' };
+            query.category = { $nin: ['Islamic', 'Kerala', 'SSLC', 'Kerala Padavali'] };
         }
         if (className) query.class = className;
         if (medium) query.medium = medium;
@@ -44,25 +44,24 @@ router.get('/', async (req, res) => {
         const requestedCount = parseInt(count) || 10;
         const page = parseInt(level) || 1;
 
-        // If it's a student center request (subject or chapter provided) with a level,
-        // we use deterministic sorting and pagination
-        if ((chapter || subject) && level) {
-            const studentQuery = { ...query };
-            delete studentQuery.level;
+        // If a specific level is requested, use deterministic sorting and pagination
+        // This makes questions permanent for both Student Center and Practice Hub levels.
+        if (level) {
+            const deterministicQuery = { ...query };
+            delete deterministicQuery.level;
 
-            const studentQuestions = await Question.find(studentQuery)
+            let questions = await Question.find(deterministicQuery)
                 .sort({ _id: 1 })
-                .skip((page - 1) * 10)
-                .limit(10)
+                .skip((page - 1) * requestedCount)
+                .limit(requestedCount)
                 .lean();
-
-            const processed = studentQuestions.map(shuffleQuestion);
-
-            console.log(`✅ Returned ${processed.length} deterministic shuffled questions for Chapter Level ${level}`);
+            
+            const processed = questions.map(shuffleQuestion);
+            console.log(`✅ Returned ${processed.length} deterministic questions for Level ${level}`);
             return res.json(processed);
         }
 
-        // aggregation logic for random practice...
+        // aggregation logic for random practice (used when no specific level is requested)
         let questions = await Question.aggregate([
             { $match: { ...query, _id: { $nin: excludeIds } } },
             { $sample: { size: requestedCount } }

@@ -3,7 +3,7 @@ const RoomManager = require('./RoomManager');
 class MatchmakingManager {
     constructor() {
         this.queue = []; // Array of { socket, playerName, uid }
-        this.matchmakingTimeout = 5000; // 5 seconds wait before bot fallback
+        this.matchmakingTimeout = 10000; // 10 seconds wait before bot fallback
         this.io = null;
         this.startGame = null;
     }
