@@ -20,10 +20,12 @@ async function fetchQuestions(level, category = 'All', count = QUESTIONS_PER_GAM
         query.category = { $regex: new RegExp(`^${category}$`, 'i') };
     } else {
         // For 'All' (Play Online / General Practice), exclude educational content and Islamic questions
-        query.board = { $exists: false };
-        query.subject = { $exists: false };
-        query.class = { $exists: false };
-        query.category = { $ne: 'Islamic' };
+        query.$and = [
+            { board: { $exists: false } },
+            { subject: { $exists: false } },
+            { class: { $exists: false } },
+            { category: { $nin: ['Islamic', 'Kerala', 'SSLC', 'Kerala Padavali'] } }
+        ];
     }
 
     let excludeIds = [];

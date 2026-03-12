@@ -34,10 +34,13 @@ module.exports = (io, userSockets) => {
                 }
 
                 if (practiceLevel && category) {
-                    const existing = user.practiceLevels.get(category) || 0;
-                    if (practiceLevel > existing) {
-                        if (!update.$set) update.$set = {};
-                        update.$set[`practiceLevels.${category}`] = practiceLevel;
+                    // Only advance practice level if user scored 10/10 (100 points)
+                    if (score === 100 || score === 10) { // Keep 10 or 100 just in case logic varies for selfplay max score
+                        const existing = user.practiceLevels.get(category) || 0;
+                        if (practiceLevel > existing) {
+                            if (!update.$set) update.$set = {};
+                            update.$set[`practiceLevels.${category}`] = practiceLevel;
+                        }
                     }
                 }
 
