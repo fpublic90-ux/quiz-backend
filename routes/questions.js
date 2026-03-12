@@ -164,7 +164,13 @@ router.get('/past-papers-meta', async (req, res) => {
  */
 router.get('/categories', async (req, res) => {
     try {
-        const categories = await Question.distinct('category');
+        // Exclude student center / regional / special categories from the Practice Hub list
+        const EXCLUDED_CATEGORIES = ['Past Papers', 'SSLC', 'Kerala', 'Kerala Padavali', 'Islamic'];
+
+        const categories = await Question.distinct('category', {
+            category: { $nin: EXCLUDED_CATEGORIES },
+            board: { $exists: false },  // Exclude board-linked (student center) questions
+        });
         // Filter out null/empty and sort
         const filteredCategories = categories.filter(c => c).sort();
 
