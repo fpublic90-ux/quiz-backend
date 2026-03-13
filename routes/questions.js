@@ -55,9 +55,31 @@ router.get('/', async (req, res) => {
                 .skip((page - 1) * requestedCount)
                 .limit(requestedCount)
                 .lean();
+
+            // Expand short levels to exactly 10 questions
+            if (questions.length < requestedCount) {
+                const needed = requestedCount - questions.length;
+                const currentIds = questions.map(q => q._id);
+                // Fetch random from the same category
+                const fallbackQuestions = await Question.aggregate([
+                    { $match: { ...deterministicQuery, _id: { $nin: currentIds } } },
+                    { $sample: { size: needed } }
+                ]);
+                questions = [...questions, ...fallbackQuestions];
+                
+                // If total questions in DB for this category is literally < 10, duplicate to pad
+                if (questions.length < requestedCount && questions.length > 0) {
+                    const extraNeeded = requestedCount - questions.length;
+                    let initialCount = questions.length;
+                    for (let i = 0; i < extraNeeded; i++) {
+                        // Clone the object so we don't mutate identically
+                        questions.push({ ...questions[i % initialCount], _id: questions[i % initialCount]._id + '_' + i });
+                    }
+                }
+            }
             
             const processed = questions.map(shuffleQuestion);
-            console.log(`✅ Returned ${processed.length} deterministic questions for Level ${level}`);
+            console.log(`✅ Returned ${processed.length} deterministic questions for Level ${level} (expanded if needed)`);
             return res.json(processed);
         }
 

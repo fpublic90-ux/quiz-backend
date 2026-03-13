@@ -21,6 +21,17 @@ module.exports = (io, userSockets) => {
                 return res.status(404).json({ message: 'User not found' });
             }
 
+            // --- Anti-Cheat Validation ---
+            // Max 10 base points + up to 5 points speed bonus per question
+            const qCount = (questionIds && Array.isArray(questionIds)) ? questionIds.length : 10;
+            const maxPossibleScore = qCount * 15; 
+            
+            let validatedScore = score || 0;
+            if (validatedScore > maxPossibleScore) {
+                console.warn(`🚨 Anti-Cheat Flag: User ${uid} submitted score ${validatedScore} which exceeds max ${maxPossibleScore}. Capping score.`);
+                validatedScore = maxPossibleScore;
+            }
+
             // 1. Practice Mode (Simple history update)
             if (isPractice) {
                 const update = {};
@@ -34,8 +45,9 @@ module.exports = (io, userSockets) => {
                 }
 
                 if (practiceLevel && category) {
-                    // Only advance practice level if user scored 10/10 (100 points)
-                    if (score === 100 || score === 10) { // Keep 10 or 100 just in case logic varies for selfplay max score
+                    // Advance practice level if user performed well (e.g. at least passing)
+                    // We now expand practice levels to 10 minimum, so 80+ is a good pass threshold
+                    if (validatedScore >= 80) { 
                         const existing = user.practiceLevels.get(category) || 0;
                         if (practiceLevel > existing) {
                             if (!update.$set) update.$set = {};
@@ -65,9 +77,9 @@ module.exports = (io, userSockets) => {
 
             // 2. Normal Mode (Competitive/Student Center)
             // Calculate Rewards
-            const leaderboard = [{ uid, score: score || 0 }]; // Mock for calculating rank rewards
+            const leaderboard = [{ uid, score: validatedScore }]; // Mock for calculating rank rewards
             const socketId = userSockets.get(uid);
-            const roomPlayer = { id: socketId, name: user.displayName, score: score || 0, fastAnswers: fastAnswers || 0 };
+            const roomPlayer = { id: socketId, name: user.displayName, score: validatedScore, fastAnswers: fastAnswers || 0 };
             const room = {
                 type: 'solo',
                 category: category || 'General',
