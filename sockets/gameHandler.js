@@ -433,22 +433,24 @@ function registerGameHandlers(io, socket, userSockets) {
                 return;
             }
 
-            // Entry Fee Check
-            if (user.coins < 50) {
+            // Atomic Entry Fee Check and Deduct
+            const updatedUser = await User.findOneAndUpdate(
+                { uid: uid, coins: { $gte: 50 } },
+                { $inc: { coins: -50 } },
+                { new: true }
+            );
+
+            if (!updatedUser) {
                 socket.emit('error', { message: 'Insufficient coins. Entry fee is 50 coins.' });
                 return;
             }
 
-            // Deduct Fee
-            user.coins -= 50;
-            await user.save();
-
             // Sync balance to frontend
-            socket.emit('update_profile', { coins: user.coins });
+            socket.emit('update_profile', { coins: updatedUser.coins });
 
-            console.log(`🪙 Entry Fee: 50 coins deducted from ${playerName}. Balance: ${user.coins}`);
+            console.log(`🪙 Entry Fee: 50 coins deducted from ${playerName}. Balance: ${updatedUser.coins}`);
 
-            MatchmakingManager.addToQueue(io, socket, playerName, uid, avatar, category, user.level, user.tier);
+            MatchmakingManager.addToQueue(io, socket, playerName, uid, avatar, category, updatedUser.level, updatedUser.tier);
         } catch (err) {
             console.error('Error in find_match:', err);
             socket.emit('error', { message: 'Failed to join matchmaking' });
@@ -521,7 +523,9 @@ function registerGameHandlers(io, socket, userSockets) {
             // Anti-cheat: Check for impossibly fast answering (< 400ms)
             const remaining = TimerManager.getTimeRemaining(roomCode);
             if (remaining >= 14.6) { // 15s total, 14.6 means 400ms elapsed
-                console.log(`⚠️ Suspicious Speed: ${socket.id} answered in < 400ms.`);
+                console.log(`⚠️ Active Anti-Cheat: ${socket.id} answered in < 400ms. Rejecting answer.`);
+                socket.emit('error', { message: 'Answered too quickly. Detected macro.' });
+                return;
             }
 
             // Prevent double-answering
