@@ -7,6 +7,8 @@ const AchievementManager = require('../managers/AchievementManager');
 const NotificationManager = require('../managers/NotificationManager');
 const { shuffleQuestion } = require('../utils/questionUtils');
 
+let globalUserSockets = null;
+
 const QUESTIONS_PER_GAME = 10;
 const POINTS_PER_CORRECT = 10;
 
@@ -204,7 +206,7 @@ async function endGame(io, code, reason = null) {
                     AchievementManager,
                     NotificationManager,
                     io,
-                    userSockets
+                    globalUserSockets
                 );
 
                 if (updatedProfile) {
@@ -251,6 +253,7 @@ async function endGame(io, code, reason = null) {
  * Register all socket event handlers
  */
 function registerGameHandlers(io, socket, userSockets) {
+    if (!globalUserSockets) globalUserSockets = userSockets;
     // ─── create_room ───────────────────────────────────────────────────────────
     socket.on('create_room', async (data) => {
         const { playerName, uid, avatar } = data;
