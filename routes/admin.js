@@ -32,12 +32,30 @@ router.use(isAdmin);
 // Get all questions (paginated)
 router.get('/questions', async (req, res) => {
     try {
-        const { page = 1, limit = 20, search = '' } = req.query;
-        const query = search ? { question: { $regex: search, $options: 'i' } } : {};
+        const { 
+            page = 1, 
+            limit = 20, 
+            search = '', 
+            category, 
+            board, 
+            class: className, 
+            medium, 
+            subject 
+        } = req.query;
+
+        const query = {};
+        if (search) query.question = { $regex: search, $options: 'i' };
+        if (category && category !== 'All') query.category = category;
+        if (board) query.board = board;
+        if (className) query.class = className;
+        if (medium) query.medium = medium;
+        if (subject) query.subject = subject;
+
         const questions = await Question.find(query)
             .limit(limit * 1)
             .skip((page - 1) * limit)
             .sort({ createdAt: -1 });
+
         const count = await Question.countDocuments(query);
         res.json({
             questions,
