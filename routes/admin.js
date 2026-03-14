@@ -2,6 +2,8 @@ const express = require('express');
 const router = express.Router();
 const Question = require('../models/Question');
 const User = require('../models/User');
+const Notification = require('../models/Notification');
+const Settings = require('../models/Settings');
 const { verifyToken } = require('../middleware/authMiddleware');
 const fs = require('fs');
 const path = require('path');
@@ -142,6 +144,77 @@ router.delete('/users/:uid', async (req, res) => {
         res.json({ message: 'User deleted' });
     } catch (err) {
         res.status(500).json({ message: err.message });
+    }
+});
+
+// --- Management & Settings ---
+
+// Send Global Announcement
+router.post('/broadcast', async (req, res) => {
+    try {
+        const { title, message, type = 'system' } = req.body;
+        if (!title || !message) return res.status(400).json({ message: 'Title and message required' });
+
+        const users = await User.find({}).select('uid');
+        const notifications = users.map(user => ({
+            recipient: user.uid,
+            title,
+            message,
+            type
+        }));
+
+        await Notification.insertMany(notifications);
+        console.log(`📢 Broadcast sent to ${users.length} users`);
+        res.json({ message: `Announcement sent to ${users.length} users` });
+    } catch (err) {
+        res.status(500).json({ message: err.message });
+    }
+});
+
+// Leaderboard Reset
+router.post('/leaderboard/reset', async (req, res) => {
+    try {
+        const { type } = req.body; // 'weekly' or 'monthly'
+        if (!['weekly', 'monthly'].includes(type)) {
+            return res.status(400).json({ message: 'Invalid reset type' });
+        }
+
+        const resetField = type === 'weekly' ? 'weeklyXp' : 'monthlyXp';
+        await User.updateMany({}, { [resetField]: 0 });
+
+        console.log(`🏆 ${type} leaderboard reset by admin`);
+        res.json({ message: `${type} leaderboard reset successfully` });
+    } catch (err) {
+        res.status(500).json({ message: err.message });
+    }
+});
+
+// Reward Settings
+router.get('/settings/rewards', async (req, res) => {
+    try {
+        let settings = await Settings.findOne({ key: 'reward_config' });
+        if (!settings) {
+            settings = await Settings.create({
+                key: 'reward_config',
+                value: { base: 50, streakBonus: 10, maxStreak: 30 }
+            });
+        }
+        res.json(settings.value);
+    } catch (err) {
+        res.status(500).json({ message: err.message });
+    }
+});
+
+router.put('/settings/rewards', async (req, res) => {
+    try {
+        const updated = await Settings.findOneAndUpdate(
+            { key: 'reward_config' },
+            { value: req.body, updatedAt: Date.now() },
+            { upsert: true, new: true }
+        );
+        res.json(updated.value);
+    } catch (err) {
+        res.status(400).json({ message: err.message });
     }
 });
 

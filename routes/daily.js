@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const User = require('../models/User');
+const Settings = require('../models/Settings');
 const { verifyToken } = require('../middleware/authMiddleware');
 
 // POST /api/daily/claim
@@ -11,6 +12,10 @@ router.post('/claim', verifyToken, async (req, res) => {
 
         const user = await User.findOne({ uid });
         if (!user) return res.status(404).json({ message: 'User not found' });
+
+        // Fetch dynamic reward settings
+        let settings = await Settings.findOne({ key: 'reward_config' });
+        const config = settings ? settings.value : { base: 50, streakBonus: 10, maxStreak: 30 };
 
         const now = new Date();
         const lastClaimed = user.lastClaimedReward;
@@ -49,9 +54,9 @@ router.post('/claim', verifyToken, async (req, res) => {
             user.loginStreak = 1;
         }
 
-        // Cap streak bonus at 30 days
-        const bonusMultiplier = Math.min(user.loginStreak, 30);
-        const rewardCoins = 50 + (bonusMultiplier * 10);
+        // Apply dynamic configuration
+        const bonusMultiplier = Math.min(user.loginStreak, config.maxStreak);
+        const rewardCoins = config.base + (bonusMultiplier * config.streakBonus);
 
         user.coins += rewardCoins;
         user.lastClaimedReward = now;
