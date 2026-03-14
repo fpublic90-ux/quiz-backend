@@ -4,6 +4,7 @@ const express = require('express');
 const cors = require('cors');
 const mongoose = require('mongoose');
 const { Server } = require('socket.io');
+const User = require('./models/User');
 const questionRoutes = require('./routes/questions');
 const userRoutes = require('./routes/users');
 const leaderboardRoutes = require('./routes/leaderboard');
@@ -93,10 +94,24 @@ io.on('connection', (socket) => {
 
   registerGameHandlers(io, socket, userSockets);
 
-  socket.on('disconnect', () => {
+  socket.on('disconnect', async () => {
     console.log(`❌ Client disconnected: ${socket.id}`);
     socketRateLimiter.cleanup(socket.id);
     if (socket.uid) {
+      // 🪙 Matchmaking Refund: Check if they were in queue
+      const removed = MatchmakingManager.removeFromQueue(socket.uid);
+      if (removed) {
+        try {
+          const user = await User.findOne({ uid: socket.uid });
+          if (user) {
+            user.coins += 50; 
+            await user.save();
+            console.log(`🪙 Refund: 50 coins returned to User ${socket.uid} on disconnect. Balance: ${user.coins}`);
+          }
+        } catch (err) {
+          console.error('❌ Error refunding match fee on disconnect:', err);
+        }
+      }
       userSockets.delete(socket.uid);
     }
   });

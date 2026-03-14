@@ -63,6 +63,9 @@ const userSchema = new mongoose.Schema({
     }],
     keralaGamesPlayed: { type: Number, default: 0 },
     indiaGamesPlayed: { type: Number, default: 0 },
+    totalCorrectAnswers: { type: Number, default: 0 },
+    totalQuestionsAttempts: { type: Number, default: 0 },
+    totalAttempts: { type: Number, default: 0 },
     speedMasteryCount: { type: Number, default: 0 },
     ownedItems: {
         type: [String],

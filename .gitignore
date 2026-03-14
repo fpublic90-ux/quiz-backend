@@ -10,3 +10,4 @@ data/extracted_sslc_questions.json
 data/test_*.js
 data/debug_*.js
 data/temp_*.json
+serviceAccountKey.json.json

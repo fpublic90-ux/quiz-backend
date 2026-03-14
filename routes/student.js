@@ -47,6 +47,8 @@ router.post('/complete-level', verifyToken, async (req, res) => {
 
         if (level > currentProgress) {
             user.studentProgress.set(key, level);
+            // RewardManager handles primary stats, but we can ensure attempts are tracked here too
+            // though they are likely already incremented by the /save-results call
             await user.save();
         }
 

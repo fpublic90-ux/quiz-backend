@@ -45,9 +45,9 @@ module.exports = (io, userSockets) => {
                 }
 
                 if (practiceLevel && category) {
-                    // Advance practice level if user performed well (e.g. at least passing)
-                    // We now expand practice levels to 10 minimum, so 80+ is a good pass threshold
-                    if (validatedScore >= 80) { 
+                    // Advance practice level if user performed well (e.g. perfect score to master)
+                    // We now expand practice levels to 10 minimum
+                    if (validatedScore >= 100) { 
                         const existing = user.practiceLevels.get(category) || 0;
                         if (practiceLevel > existing) {
                             if (!update.$set) update.$set = {};
@@ -56,12 +56,17 @@ module.exports = (io, userSockets) => {
                     }
                 }
 
-                // Practice Rewards: Small fixed reward for completion
-                const practiceRewards = { coins: 5, xp: 20 };
+                // Practice Rewards: 10/10 correct (100+ score) -> 20 coins + 10 XP
+                const isPerfect = validatedScore >= 100;
+                const practiceRewards = isPerfect ? { coins: 20, xp: 10 } : { coins: 0, xp: 0 };
+                
                 if (!update.$inc) update.$inc = {};
                 update.$inc.coins = practiceRewards.coins;
                 update.$inc.xp = practiceRewards.xp;
                 update.$inc.totalXp = practiceRewards.xp;
+                update.$inc.totalAttempts = 1;
+                update.$inc.totalCorrectAnswers = Math.floor(validatedScore / 10);
+                update.$inc.totalQuestionsAttempts = qCount;
 
                 const updatedUser = Object.keys(update).length > 0
                     ? await User.findOneAndUpdate({ uid }, update, { new: true })

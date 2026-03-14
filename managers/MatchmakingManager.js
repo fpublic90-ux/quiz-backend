@@ -137,10 +137,27 @@ class MatchmakingManager {
 
         for (let i = 0; i < numBots; i++) {
             const name = botNames[Math.floor(Math.random() * botNames.length)];
-            // Randomly assign a valid avatar to bot
             const botAvatar = botAvatars[Math.floor(Math.random() * botAvatars.length)];
-            // Bots have 'bot_' id prefix
+            
+            // Assign bot difficulty
+            const difficulties = [
+                { type: 'Easy', accuracy: 0.60, minDelay: 6000, maxDelay: 12000 },
+                { type: 'Medium', accuracy: 0.75, minDelay: 4000, maxDelay: 9000 },
+                { type: 'Hard', accuracy: 0.90, minDelay: 2000, maxDelay: 6000 }
+            ];
+            const difficulty = difficulties[Math.floor(Math.random() * difficulties.length)];
+
             RoomManager.joinRoom(room.code, name, `bot_${Math.random().toString(36).substr(2, 9)}`, `bot_${name}`, botAvatar);
+            
+            // Attach bot logic to the player object in the room
+            const botPlayer = room.players.find(p => p.name === name);
+            if (botPlayer) {
+                botPlayer.isBot = true;
+                botPlayer.difficulty = difficulty.type;
+                botPlayer.accuracy = difficulty.accuracy;
+                botPlayer.minDelay = difficulty.minDelay;
+                botPlayer.maxDelay = difficulty.maxDelay;
+            }
         }
 
         const players = room.players.map(p => ({

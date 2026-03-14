@@ -27,16 +27,16 @@ class RewardManager {
 
         // 3. Rank-based rewards
         if (rank === 1) {
-            coinReward = Math.round(100 * baseRewardMultiplier);
+            coinReward = Math.round(120 * baseRewardMultiplier);
             xpMultiplier = 1.5;
         } else if (rank === 2) {
-            coinReward = Math.round(50 * baseRewardMultiplier);
+            coinReward = Math.round(60 * baseRewardMultiplier);
             xpMultiplier = 1.2;
         } else if (rank === 3) {
-            coinReward = Math.round(30 * baseRewardMultiplier);
+            coinReward = Math.round(20 * baseRewardMultiplier);
             xpMultiplier = 1.1;
         } else {
-            coinReward = Math.round(10 * baseRewardMultiplier);
+            coinReward = Math.round(5 * baseRewardMultiplier);
             xpMultiplier = 1.0;
         }
 
@@ -92,7 +92,10 @@ class RewardManager {
                     coins: rewards.coins,
                     xp: rewards.xp,
                     weeklyXp: rewards.xp,
-                    monthlyXp: rewards.xp
+                    monthlyXp: rewards.xp,
+                    totalCorrectAnswers: Math.floor(roomPlayer.score / 10),
+                    totalQuestionsAttempts: (room.questions || []).length,
+                    totalAttempts: 1
                 }
             };
 

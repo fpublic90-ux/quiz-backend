@@ -128,14 +128,19 @@ async function advanceQuestion(io, code) {
         if (room.players.some(p => p.id.startsWith('bot_'))) {
             room.players.forEach(p => {
                 if (p.id.startsWith('bot_')) {
-                    // Bots answer between 3 and 12 seconds
-                    const delay = Math.floor(Math.random() * 9000) + 3000;
+                    // Bots answer between their min/max delays
+                    const minD = p.minDelay || 3000;
+                    const maxD = p.maxDelay || 12000;
+                    const delay = Math.floor(Math.random() * (maxD - minD)) + minD;
+                    
                     setTimeout(() => {
                         const currentRoom = RoomManager.getRoom(code);
                         if (!currentRoom || currentRoom.status !== 'playing' || currentRoom.currentQuestionIndex !== idx) return;
 
-                        // Difficulty: 70% correct
-                        const isCorrect = Math.random() < 0.7;
+                        // Use bot's specific accuracy or fallback to 70%
+                        const botAccuracy = p.accuracy || 0.7;
+                        const isCorrect = Math.random() < botAccuracy;
+                        
                         if (isCorrect) {
                             RoomManager.addScore(code, p.id, POINTS_PER_CORRECT);
                             broadcastScores(io, code);
