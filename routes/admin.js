@@ -6,6 +6,7 @@ const { verifyToken } = require('../middleware/authMiddleware');
 const fs = require('fs');
 const path = require('path');
 const { exec } = require('child_process');
+const admin = require('firebase-admin');
 
 // Middleware to check if user is admin
 const isAdmin = async (req, res, next) => {
@@ -104,12 +105,32 @@ router.get('/users', async (req, res) => {
     }
 });
 
-// Update user (e.g., change role, coins, level)
+// Update user (e.g., change role, coins, level, password)
 router.put('/users/:uid', async (req, res) => {
     try {
-        const updatedUser = await User.findOneAndUpdate({ uid: req.params.uid }, req.body, { new: true });
+        const { password, ...updateData } = req.body;
+
+        // If password is provided, update in Firebase Authentication
+        if (password && password.trim().length >= 6) {
+            await admin.auth().updateUser(req.params.uid, {
+                password: password
+            });
+            console.log(`📡 Password updated in Firebase for UID: ${req.params.uid}`);
+        }
+
+        const updatedUser = await User.findOneAndUpdate(
+            { uid: req.params.uid },
+            updateData,
+            { new: true }
+        );
+
+        if (!updatedUser) {
+            return res.status(404).json({ message: 'User not found in database' });
+        }
+
         res.json(updatedUser);
     } catch (err) {
+        console.error('❌ User update error:', err.message);
         res.status(400).json({ message: err.message });
     }
 });
