@@ -13,18 +13,29 @@ const socialRoutes = require('./routes/social');
 const gameRoutes = require('./routes/game');
 const studentRoutes = require('./routes/student');
 const notificationRoutes = require('./routes/notifications');
+const adminRoutes = require('./routes/admin');
 const { registerGameHandlers, startGame } = require('./sockets/gameHandler');
 const MatchmakingManager = require('./managers/MatchmakingManager');
 const admin = require('firebase-admin');
 
-// Initialize Firebase Admin (Uses GOOGLE_APPLICATION_CREDENTIALS or default config)
+// Initialize Firebase Admin
 try {
-  // Initialize Firebase Admin
-  // If FIREBASE_PROJECT_ID is provided, use it to ensure project detection
-  admin.initializeApp({
-    projectId: process.env.FIREBASE_PROJECT_ID
-  });
-  console.log('✅ Firebase Admin initialized');
+  if (process.env.FIREBASE_PRIVATE_KEY) {
+    admin.initializeApp({
+      credential: admin.credential.cert({
+        projectId: process.env.FIREBASE_PROJECT_ID,
+        clientEmail: process.env.FIREBASE_CLIENT_EMAIL,
+        // Handle escaped newlines in private key
+        privateKey: process.env.FIREBASE_PRIVATE_KEY.replace(/\\n/g, '\n'),
+      }),
+    });
+    console.log('✅ Firebase Admin initialized with Service Account');
+  } else {
+    admin.initializeApp({
+      projectId: process.env.FIREBASE_PROJECT_ID
+    });
+    console.log('✅ Firebase Admin initialized (Default)');
+  }
 } catch (e) {
   console.error('❌ Firebase Admin initialization failed:', e.message);
 }
@@ -57,6 +68,7 @@ app.use('/api/social', socialRoutes(io, userSockets));
 app.use('/api/game', gameRoutes(io, userSockets));
 app.use('/api/student', studentRoutes);
 app.use('/api/notifications', notificationRoutes);
+app.use('/api/admin', adminRoutes);
 
 app.get('/', (req, res) => {
   res.json({ status: 'Quiz Backend Running 🎯' });
@@ -125,8 +137,8 @@ mongoose
   .connect(MONGODB_URI)
   .then(() => {
     console.log('✅ MongoDB connected');
-    server.listen(PORT, () => {
-      console.log(`🚀 Server running on port ${PORT}`);
+    server.listen(PORT, '0.0.0.0', () => {
+      console.log(`🚀 Server running on http://0.0.0.0:${PORT}`);
     });
   })
   .catch((err) => {

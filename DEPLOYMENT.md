@@ -66,6 +66,10 @@ git push -u origin main
    |---|---|
    | `MONGODB_URI` | Your Atlas URI |
    | `PORT` | `3000` |
+   | `FIREBASE_PROJECT_ID` | Your Firebase Project ID |
+   | `FIREBASE_CLIENT_EMAIL` | service-account@...iam.gserviceaccount.com |
+   | `FIREBASE_PRIVATE_KEY` | `-----BEGIN PRIVATE KEY-----\n...` |
+   | `GEMINI_API_KEY` | Your Google AI Studio Key |
 6. Click **Create Web Service**
 
 ---
