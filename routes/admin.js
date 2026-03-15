@@ -9,6 +9,23 @@ const fs = require('fs');
 const path = require('path');
 const { exec } = require('child_process');
 const admin = require('firebase-admin');
+const multer = require('multer');
+
+// Configure multer for file uploads
+const storage = multer.diskStorage({
+    destination: (req, file, cb) => {
+        cb(null, 'uploads/');
+    },
+    filename: (req, file, cb) => {
+        const uniqueSuffix = Date.now() + '-' + Math.round(Math.random() * 1E9);
+        cb(null, uniqueSuffix + path.extname(file.originalname));
+    }
+});
+
+const upload = multer({ 
+    storage: storage,
+    limits: { fileSize: 5 * 1024 * 1024 } // 5MB limit
+});
 
 // Middleware to check if user is admin
 const isAdmin = async (req, res, next) => {
@@ -25,6 +42,20 @@ const isAdmin = async (req, res, next) => {
 };
 
 router.use(verifyToken);
+
+// Public upload endpoint (before admin check or keep it protected)
+router.post('/upload', upload.single('image'), (req, res) => {
+    try {
+        if (!req.file) {
+            return res.status(400).json({ message: 'No file uploaded' });
+        }
+        const fileUrl = `/uploads/${req.file.filename}`;
+        res.json({ url: fileUrl });
+    } catch (err) {
+        res.status(500).json({ message: err.message });
+    }
+});
+
 router.use(isAdmin);
 
 // --- Questions CRUD ---
@@ -190,6 +221,27 @@ router.post('/broadcast', async (req, res) => {
 });
 
 // Leaderboard Reset
+// --- Leaderboard ---
+
+// Get leaderboard for admin (with full user details)
+router.get('/leaderboard', async (req, res) => {
+    try {
+        const { type = 'global', limit = 50 } = req.query;
+        let sortField = 'xp';
+        if (type === 'weekly') sortField = 'weeklyXp';
+        else if (type === 'monthly') sortField = 'monthlyXp';
+
+        const leaderboard = await User.find({})
+            .sort({ [sortField]: -1, totalScore: -1 })
+            .limit(limit * 1)
+            .select('uid displayName email avatar xp weeklyXp monthlyXp level tier wins coins role');
+
+        res.json(leaderboard);
+    } catch (err) {
+        res.status(500).json({ message: err.message });
+    }
+});
+
 router.post('/leaderboard/reset', async (req, res) => {
     try {
         const { type } = req.body; // 'weekly' or 'monthly'
