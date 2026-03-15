@@ -71,14 +71,14 @@ app.use('/uploads', express.static(uploadsDir));
 
 // Routes
 app.use('/api/questions', questionRoutes);
-app.use('/api/users', userRoutes);
+app.use('/api/users', userRoutes(io, userSockets));
 app.use('/api/leaderboard', leaderboardRoutes);
 app.use('/api/daily', dailyRoutes);
 app.use('/api/social', socialRoutes(io, userSockets));
 app.use('/api/game', gameRoutes(io, userSockets));
 app.use('/api/student', studentRoutes);
 app.use('/api/notifications', notificationRoutes);
-app.use('/api/admin', adminRoutes);
+app.use('/api/admin', adminRoutes(io, userSockets));
 
 app.get('/', (req, res) => {
   res.json({ status: 'Quiz Backend Running 🎯' });
