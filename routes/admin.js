@@ -313,4 +313,46 @@ router.post('/github/sync', async (req, res) => {
     }
 });
 
+// --- System Dashboard Stats ---
+router.get('/stats', async (req, res) => {
+    try {
+        const totalUsers = await User.countDocuments();
+        const totalQuestions = await Question.countDocuments();
+        const totalAdmins = await User.countDocuments({ role: 'admin' });
+        
+        // Count new users today
+        const today = new Date();
+        today.setHours(0, 0, 0, 0);
+        const newUsersToday = await User.countDocuments({ createdAt: { $gte: today } });
+
+        res.json({
+            totalUsers,
+            totalQuestions,
+            totalAdmins,
+            newUsersToday
+        });
+    } catch (err) {
+        res.status(500).json({ message: err.message });
+    }
+});
+
+// --- Dynamic Student Metadata ---
+router.get('/student/meta', async (req, res) => {
+    try {
+        const boards = await Question.distinct('board');
+        const classes = await Question.distinct('class');
+        const mediums = await Question.distinct('medium');
+        const subjects = await Question.distinct('subject');
+
+        res.json({
+            boards: boards.filter(b => b),
+            classes: classes.filter(c => c),
+            mediums: mediums.filter(m => m),
+            subjects: subjects.filter(s => s)
+        });
+    } catch (err) {
+        res.status(500).json({ message: err.message });
+    }
+});
+
 module.exports = router;
