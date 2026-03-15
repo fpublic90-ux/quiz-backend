@@ -40,4 +40,16 @@ router.post('/read-all', verifyToken, async (req, res) => {
     }
 });
 
+// Clear all notifications
+router.post('/delete-all', verifyToken, async (req, res) => {
+    try {
+        const { uid } = req.body;
+        await Notification.deleteMany({ recipient: uid });
+        res.status(200).json({ message: 'All notifications cleared' });
+    } catch (error) {
+        console.error('Error clearing notifications:', error);
+        res.status(500).json({ message: 'Server error' });
+    }
+});
+
 module.exports = router;

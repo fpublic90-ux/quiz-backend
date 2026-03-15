@@ -159,6 +159,11 @@ class RewardManager {
 
             // 7. Emit real-time notifications for each achievement (only AFTER DB updates)
             if (newlyUnlocked.length > 0) {
+                const socketId = userSockets.get(uid);
+                if (socketId && io) {
+                    io.to(socketId).emit('achievement_unlocked', { achievements: newlyUnlocked });
+                }
+
                 for (const achievementId of newlyUnlocked) {
                     await notificationManager.notify(io, userSockets, {
                         recipient: uid,
