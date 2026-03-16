@@ -35,7 +35,12 @@ module.exports = (io, userSockets) => {
             if (user && user.role === 'admin') {
                 next();
             } else {
-                res.status(403).json({ message: 'Forbidden: Admin access required' });
+                console.warn(`[isAdmin] 403 Forbidden: User ${req.user.uid} (${req.user.email}) is role: ${user ? user.role : 'NOT_IN_DB'}`);
+                res.status(403).json({ 
+                    message: 'Forbidden: Admin access required',
+                    uid: req.user.uid,
+                    role: user ? user.role : 'none'
+                });
             }
         } catch (error) {
             res.status(500).json({ message: 'Server error check admin' });
@@ -43,6 +48,48 @@ module.exports = (io, userSockets) => {
     };
 
     router.use(verifyToken);
+
+    // Diagnostic endpoint to check auth status before isAdmin check
+    router.get('/auth-status', async (req, res) => {
+        try {
+            const user = await User.findOne({ uid: req.user.uid });
+            res.json({
+                uid: req.user.uid,
+                email: req.user.email,
+                existsInDb: !!user,
+                role: user ? user.role : 'none',
+                message: user ? `User found with role ${user.role}` : 'User not found in MongoDB'
+            });
+        } catch (err) {
+            res.status(500).json({ error: err.message });
+        }
+    });
+
+    // Emergency Admin Restoration (Temporary)
+    // Allows restoring admin status via a secure secret
+    router.post('/emergency-promote', async (req, res) => {
+        try {
+            const { secret } = req.body;
+            if (secret !== 'WizQuizRestoreAdmin_2024_Security!@#') {
+                return res.status(403).json({ message: 'Invalid secret' });
+            }
+            
+            const updatedUser = await User.findOneAndUpdate(
+                { uid: req.user.uid },
+                { role: 'admin' },
+                { new: true }
+            );
+            
+            if (!updatedUser) {
+                return res.status(404).json({ message: 'User not found in MongoDB' });
+            }
+            
+            console.log(`📡 Emergency Admin Promotion: ${req.user.email} promoted by secret`);
+            res.json({ message: 'Admin status successfully restored', user: updatedUser });
+        } catch (err) {
+            res.status(500).json({ error: err.message });
+        }
+    });
 
     // Public upload endpoint (before admin check or keep it protected)
     router.post('/upload', upload.single('image'), (req, res) => {
@@ -131,6 +178,7 @@ module.exports = (io, userSockets) => {
     });
 
     // --- Users CRUD ---
+    const { v4: uuidv4 } = require('uuid');
 
     // Get all users
     router.get('/users', async (req, res) => {
@@ -154,6 +202,39 @@ module.exports = (io, userSockets) => {
             });
         } catch (err) {
             res.status(500).json({ message: err.message });
+        }
+    });
+
+    // Create new user (bot)
+    router.post('/users', async (req, res) => {
+        try {
+            console.log('[CreateUser] Body:', JSON.stringify(req.body, null, 2));
+            const { displayName, email, avatar, coins, level, xp, role, tier } = req.body;
+            
+            // Use provided UID or generate a bot UID
+            const uid = req.body.uid || `bot_${uuidv4()}`;
+            console.log('[CreateUser] Generated UID:', uid);
+            
+            const newUser = new User({
+                uid,
+                displayName: displayName || 'WizBot',
+                email: email || `${uid}@bot.quizblitz.com`,
+                avatar: avatar || 'default',
+                coins: coins || 500,
+                level: level || 1,
+                xp: xp || 0,
+                role: role || 'user',
+                tier: tier || 'Bronze',
+                isBot: true
+            });
+
+            console.log('[CreateUser] Saving user...');
+            const savedUser = await newUser.save();
+            console.log('[CreateUser] Saved successfully:', savedUser._id);
+            res.status(201).json(savedUser);
+        } catch (err) {
+            console.error('[CreateUser] Error:', err);
+            res.status(400).json({ message: err.message });
         }
     });
 
@@ -202,12 +283,36 @@ module.exports = (io, userSockets) => {
         }
     });
 
-    // Delete user
+    // Delete user permanently (DB + Auth)
     router.delete('/users/:uid', async (req, res) => {
         try {
-            await User.findOneAndDelete({ uid: req.params.uid });
-            res.json({ message: 'User deleted' });
+            const uid = req.params.uid;
+            console.log(`🗑️ Permanently deleting user: ${uid}`);
+            
+            // 1. Delete from Firebase Auth
+            try {
+                await admin.auth().deleteUser(uid);
+                console.log(`✅ User ${uid} deleted from Firebase Auth`);
+            } catch (authError) {
+                // If user doesn't exist in Firebase, we still want to delete from DB
+                if (authError.code === 'auth/user-not-found') {
+                    console.warn(`⚠️ User ${uid} not found in Firebase Auth, proceeding with DB deletion`);
+                } else {
+                    console.error(`❌ Firebase Auth deletion failed for ${uid}:`, authError.message);
+                }
+            }
+
+            // 2. Delete from MongoDB
+            const deletedUser = await User.findOneAndDelete({ uid: uid });
+            
+            if (!deletedUser) {
+                return res.status(404).json({ message: 'User not found in database' });
+            }
+
+            console.log(`✅ User ${uid} deleted from MongoDB`);
+            res.json({ message: 'User permanently deleted from database and auth' });
         } catch (err) {
+            console.error(`❌ Permanent deletion failed for ${req.params.uid}:`, err.message);
             res.status(500).json({ message: err.message });
         }
     });
