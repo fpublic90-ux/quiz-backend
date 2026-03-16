@@ -54,20 +54,20 @@ module.exports = (io, userSockets) => {
     // ─── Shop Catalog (Server-side Source of Truth) ───────────────────────────
     const K_SHOP_CATALOG = {
         // Badges
-        'avatar_rocket': { price: 200 },
-        'avatar_star': { price: 300 },
-        'avatar_crown': { price: 500 },
-        'avatar_gem': { price: 750 },
-        'avatar_brain': { price: 400 },
+        'badge_rocket': { price: 200 },
+        'badge_star': { price: 300 },
+        'badge_crown': { price: 500 },
+        'badge_gem': { price: 750 },
+        'badge_brain': { price: 400 },
         'badge_fire': { price: 250 },
         'badge_bolt': { price: 200 },
         'badge_shield': { price: 300 },
         'badge_heart': { price: 150 },
-        // Classic Premium Avatars
+        // Classic Premium Avatars / New Badges
         'premium_ninja': { price: 400 },
-        'premium_robot': { price: 450 },
+        'badge_bot': { price: 450 },
         'premium_cat': { price: 350 },
-        'premium_gamer': { price: 600 },
+        'badge_gamer': { price: 600 },
         // Famous Characters
         'char_bheem': { price: 500 },
         'char_bean': { price: 350 },
