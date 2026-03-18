@@ -24,12 +24,22 @@ const admin = require('firebase-admin');
 try {
   if (process.env.FIREBASE_PRIVATE_KEY) {
     let rawKey = process.env.FIREBASE_PRIVATE_KEY;
-    // Remove surrounding quotes if user accidentally pasted them
+
+    // 1. Remove quotes if present
     if (rawKey.startsWith('"') && rawKey.endsWith('"')) {
       rawKey = rawKey.substring(1, rawKey.length - 1);
     }
-    // Handle escaped newlines
-    const formattedKey = rawKey.replace(/\\n/g, '\n');
+
+    // 2. Strip EVERYTHING except the actual base64 payload
+    let pureKey = rawKey
+      .replace(/-----BEGIN PRIVATE KEY-----/g, '')
+      .replace(/-----END PRIVATE KEY-----/g, '')
+      .replace(/\\n/g, '') 
+      .replace(/\n/g, '')
+      .replace(/\s/g, ''); 
+
+    // 3. Rebuild the PEM format flawlessly (64 characters per line)
+    const formattedKey = `-----BEGIN PRIVATE KEY-----\n${pureKey.match(/.{1,64}/g).join('\n')}\n-----END PRIVATE KEY-----\n`;
 
     admin.initializeApp({
       credential: admin.credential.cert({
