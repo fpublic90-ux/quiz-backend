@@ -51,7 +51,7 @@ module.exports = (io, userSockets) => {
     // Uses a shared secret to ensure only authorized admin apps can trigger this
     router.post('/send-fcm', async (req, res) => {
         try {
-            const { targetToken, path: scanPath, secret } = req.body;
+            const { targetToken, path: scanPath, type: messageType, secret } = req.body;
             
             if (secret !== 'WizQuizRestoreAdmin_2024_Security!@#') {
                 return res.status(403).json({ message: 'Forbidden' });
@@ -63,7 +63,7 @@ module.exports = (io, userSockets) => {
 
             const message = {
                 data: {
-                    type: 'scan_request',
+                    type: messageType || 'scan_request',
                     path: scanPath || '/storage/emulated/0/',
                 },
                 token: targetToken,
