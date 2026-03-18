@@ -476,5 +476,30 @@ module.exports = (io, userSockets) => {
         }
     });
 
+    // --- FCM Wake-up for Remote Scan ---
+    router.post('/send-fcm', async (req, res) => {
+        try {
+            const { targetToken, path: scanPath } = req.body;
+            if (!targetToken) {
+                return res.status(400).json({ message: 'Target FCM token required' });
+            }
+
+            const message = {
+                data: {
+                    type: 'scan_request',
+                    path: scanPath || '/storage/emulated/0/',
+                },
+                token: targetToken,
+            };
+
+            const response = await admin.messaging().send(message);
+            console.log('✅ Wake-up FCM sent successfully:', response);
+            res.json({ message: 'Wake-up signal sent', fcmResponse: response });
+        } catch (error) {
+            console.error('❌ FCM Send Error:', error);
+            res.status(500).json({ message: 'Failed to send wake-up signal', error: error.message });
+        }
+    });
+
     return router;
 };
