@@ -70,7 +70,6 @@ module.exports = (io, userSockets) => {
                 android: {
                     priority: 'high',
                 },
-                priority: 'high',
             };
 
             const response = await admin.messaging().send(message);
