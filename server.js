@@ -23,12 +23,19 @@ const admin = require('firebase-admin');
 // Initialize Firebase Admin
 try {
   if (process.env.FIREBASE_PRIVATE_KEY) {
+    let rawKey = process.env.FIREBASE_PRIVATE_KEY;
+    // Remove surrounding quotes if user accidentally pasted them
+    if (rawKey.startsWith('"') && rawKey.endsWith('"')) {
+      rawKey = rawKey.substring(1, rawKey.length - 1);
+    }
+    // Handle escaped newlines
+    const formattedKey = rawKey.replace(/\\n/g, '\n');
+
     admin.initializeApp({
       credential: admin.credential.cert({
         projectId: process.env.FIREBASE_PROJECT_ID,
         clientEmail: process.env.FIREBASE_CLIENT_EMAIL,
-        // Handle escaped newlines in private key
-        privateKey: process.env.FIREBASE_PRIVATE_KEY.replace(/\\n/g, '\n'),
+        privateKey: formattedKey,
       }),
     });
     console.log('✅ Firebase Admin initialized with Service Account');
