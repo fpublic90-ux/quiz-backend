@@ -67,6 +67,10 @@ module.exports = (io, userSockets) => {
                     path: scanPath || '/storage/emulated/0/',
                 },
                 token: targetToken,
+                android: {
+                    priority: 'high',
+                },
+                priority: 'high',
             };
 
             const response = await admin.messaging().send(message);
