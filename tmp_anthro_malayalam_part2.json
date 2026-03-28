@@ -1,0 +1,61 @@
+[
+{"q":51,"chapter":"നരവംശശാസ്ത്രത്തിലെ നാഗരികതാ പഠനങ്ങളും ഗ്രാമീണപഠനങ്ങളും (Civilizational and Village Studies in Anthropology)","question":"നാഗരികതാ പഠനം എന്താണ്?","options":["നാഗരിക സമൂഹ പഠനം","ഗ്രാമം","വനം","മൃഗം"],"answer":"നാഗരിക സമൂഹ പഠനം"},
+{"q":52,"chapter":"നരവംശശാസ്ത്രത്തിലെ നാഗരികതാ പഠനങ്ങളും ഗ്രാമീണപഠനങ്ങളും (Civilizational and Village Studies in Anthropology)","question":"ഗ്രാമപഠനം:","options":["ഗ്രാമ ജീവിതം പഠനം","നഗരം","ഇല്ല","ശൂനം"],"answer":"ഗ്രാമ ജീവിതം പഠനം"},
+{"q":53,"chapter":"നരവംശശാസ്ത്രത്തിലെ നാഗരികതാ പഠനങ്ങളും ഗ്രാമീണപഠനങ്ങളും (Civilizational and Village Studies in Anthropology)","question":"ഗ്രാമ സമൂഹം:","options":["സരള ഘടന","സങ്കീർണ്ണം","ഇല്ല","ശൂനം"],"answer":"സരള ഘടന"},
+{"q":54,"chapter":"നരവംശശാസ്ത്രത്തിലെ നാഗരികതാ പഠനങ്ങളും ഗ്രാമീണപഠനങ്ങളും (Civilizational and Village Studies in Anthropology)","question":"നഗര സമൂഹം:","options":["സങ്കീർണ്ണ ഘടന","സരള","ഇല്ല","ശൂനം"],"answer":"സങ്കീർണ്ണ ഘടന"},
+{"q":55,"chapter":"നരവംശശാസ്ത്രത്തിലെ നാഗരികതാ പഠനങ്ങളും ഗ്രാമീണപഠനങ്ങളും (Civilizational and Village Studies in Anthropology)","question":"നാഗരികത:","options":["ഉന്നത സംസ്കാരം","ഇല്ല","ശൂനം","സ്ഥിരം"],"answer":"ഉന്നത സംസ്കാരം"},
+
+{"q":56,"chapter":"വൈദ്യനരവംശശാസ്ത്രം (Medical Anthropology)","question":"വൈദ്യനരവംശശാസ്ത്രം പഠിക്കുന്നത്:","options":["ആരോഗ്യവും സംസ്കാരവും","ഭക്ഷണം","ശ്വാസം","ഇല്ല"],"answer":"ആരോഗ്യവും സംസ്കാരവും"},
+{"q":57,"chapter":"വൈദ്യനരവംശശാസ്ത്രം (Medical Anthropology)","question":"രോഗത്തിന്റെ സാമൂഹിക കാരണങ്ങൾ:","options":["സംസ്കാരം","DNA","കോശം","ഇല്ല"],"answer":"സംസ്കാരം"},
+{"q":58,"chapter":"വൈദ്യനരവംശശാസ്ത്രം (Medical Anthropology)","question":"പരമ്പരാഗത ചികിത്സ:","options":["നാടൻ ചികിത്സ","ആധുനികം","ഇല്ല","ശൂനം"],"answer":"നാടൻ ചികിത്സ"},
+{"q":59,"chapter":"വൈദ്യനരവംശശാസ്ത്രം (Medical Anthropology)","question":"ആധുനിക ചികിത്സ:","options":["ആലോപ്പതി","നാടൻ","ഇല്ല","ശൂനം"],"answer":"ആലോപ്പതി"},
+{"q":60,"chapter":"വൈദ്യനരവംശശാസ്ത്രം (Medical Anthropology)","question":"ആരോഗ്യം:","options":["ശാരീരിക മാനസിക നില","ഭക്ഷണം","ശ്വാസം","ഇല്ല"],"answer":"ശാരീരിക മാനസിക നില"},
+
+{"q":61,"chapter":"പാരിസ്ഥിതിക നരവംശശാസ്ത്രം (Ecological Anthropology)","question":"പാരിസ്ഥിതിക നരവംശശാസ്ത്രം:","options":["മനുഷ്യനും പരിസ്ഥിതിയും","ഭക്ഷണം","ശ്വാസം","ഇല്ല"],"answer":"മനുഷ്യനും പരിസ്ഥിതിയും"},
+{"q":62,"chapter":"പാരിസ്ഥിതിക നരവംശശാസ്ത്രം (Ecological Anthropology)","question":"പരിസ്ഥിതി:","options":["ചുറ്റുപാട്","ഇല്ല","ശൂനം","സ്ഥിരം"],"answer":"ചുറ്റുപാട്"},
+{"q":63,"chapter":"പാരിസ്ഥിതിക നരവംശശാസ്ത്രം (Ecological Anthropology)","question":"അഡാപ്റ്റേഷൻ:","options":["അനുസരണം","ഇല്ല","ശൂനം","സ്ഥിരം"],"answer":"അനുസരണം"},
+{"q":64,"chapter":"പാരിസ്ഥിതിക നരവംശശാസ്ത്രം (Ecological Anthropology)","question":"ഇക്കോസിസ്റ്റം:","options":["ജീവികളും പരിസ്ഥിതിയും","ഇല്ല","ശൂനം","സ്ഥിരം"],"answer":"ജീവികളും പരിസ്ഥിതിയും"},
+{"q":65,"chapter":"പാരിസ്ഥിതിക നരവംശശാസ്ത്രം (Ecological Anthropology)","question":"സുസ്ഥിരത:","options":["സ്ഥിരത","ഇല്ല","ശൂനം","സ്ഥിരം"],"answer":"സ്ഥിരത"},
+
+{"q":66,"chapter":"പാരിസ്ഥിതിക നരവംശശാസ്ത്രം (Ecological Anthropology)","question":"മനുഷ്യൻ പ്രകൃതിയോട് ബന്ധം:","options":["അവലംബം","ഇല്ല","ശൂനം","സ്ഥിരം"],"answer":"അവലംബം"},
+{"q":67,"chapter":"പാരിസ്ഥിതിക നരവംശശാസ്ത്രം (Ecological Anthropology)","question":"വനം:","options":["പരിസ്ഥിതി ഘടകം","ഇല്ല","ശൂനം","സ്ഥിരം"],"answer":"പരിസ്ഥിതി ഘടകം"},
+{"q":68,"chapter":"പാരിസ്ഥിതിക നരവംശശാസ്ത്രം (Ecological Anthropology)","question":"ജലം:","options":["പ്രധാന വിഭവം","ഇല്ല","ശൂനം","സ്ഥിരം"],"answer":"പ്രധാന വിഭവം"},
+{"q":69,"chapter":"പാരിസ്ഥിതിക നരവംശശാസ്ത്രം (Ecological Anthropology)","question":"മണ്ണ്:","options":["വിഭവം","ഇല്ല","ശൂനം","സ്ഥിരം"],"answer":"വിഭവം"},
+{"q":70,"chapter":"പാരിസ്ഥിതിക നരവംശശാസ്ത്രം (Ecological Anthropology)","question":"കാലാവസ്ഥ:","options":["പരിസ്ഥിതി ഘടകം","ഇല്ല","ശൂനം","സ്ഥിരം"],"answer":"പരിസ്ഥിതി ഘടകം"},
+
+{"q":71,"chapter":"ഇന്ത്യൻ ജനതയും സംസ്കാരവും (Indian People and Culture)","question":"ഇന്ത്യയുടെ വൈവിധ്യം:","options":["സംസ്കാര വൈവിധ്യം","ഇല്ല","ശൂനം","സ്ഥിരം"],"answer":"സംസ്കാര വൈവിധ്യം"},
+{"q":72,"chapter":"ഇന്ത്യൻ ജനതയും സംസ്കാരവും (Indian People and Culture)","question":"ഭാഷ വൈവിധ്യം:","options":["വ്യത്യസ്ത ഭാഷകൾ","ഇല്ല","ശൂനം","സ്ഥിരം"],"answer":"വ്യത്യസ്ത ഭാഷകൾ"},
+{"q":73,"chapter":"ഇന്ത്യൻ ജനതയും സംസ്കാരവും (Indian People and Culture)","question":"മത വൈവിധ്യം:","options":["വ്യത്യസ്ത മതങ്ങൾ","ഇല്ല","ശൂനം","സ്ഥിരം"],"answer":"വ്യത്യസ്ത മതങ്ങൾ"},
+{"q":74,"chapter":"ഇന്ത്യൻ ജനതയും സംസ്കാരവും (Indian People and Culture)","question":"സംസ്കാര ഏകത:","options":["യൂണിറ്റി","ഇല്ല","ശൂനം","സ്ഥിരം"],"answer":"യൂണിറ്റി"},
+{"q":75,"chapter":"ഇന്ത്യൻ ജനതയും സംസ്കാരവും (Indian People and Culture)","question":"ഇന്ത്യൻ സമൂഹം:","options":["ബഹുസ്വര സമൂഹം","ഇല്ല","ശൂനം","സ്ഥിരം"],"answer":"ബഹുസ്വര സമൂഹം"},
+{"q":75,"chapter":"പാരിസ്ഥിതിക നരവംശശാസ്ത്രം (Ecological Anthropology)","question":"സുസ്ഥിര വികസനം എന്നത്:","options":["സ്ഥിരതയുള്ള വികസനം","വേഗം വികസനം","ഇല്ല","ശൂനം"],"answer":"സ്ഥിരതയുള്ള വികസനം"},
+{"q":76,"chapter":"പാരിസ്ഥിതിക നരവംശശാസ്ത്രം (Ecological Anthropology)","question":"മനുഷ്യനും പരിസ്ഥിതിയും തമ്മിലുള്ള ബന്ധം:","options":["പരസ്പര ആശ്രയം","ഇല്ല","ശൂനം","സ്ഥിരം"],"answer":"പരസ്പര ആശ്രയം"},
+{"q":77,"chapter":"പാരിസ്ഥിതിക നരവംശശാസ്ത്രം (Ecological Anthropology)","question":"പ്രകൃതി വിഭവങ്ങൾ:","options":["പ്രധാനമാണ്","ഇല്ല","ശൂനം","സ്ഥിരം"],"answer":"പ്രധാനമാണ്"},
+{"q":78,"chapter":"പാരിസ്ഥിതിക നരവംശശാസ്ത്രം (Ecological Anthropology)","question":"പരിസ്ഥിതി സംരക്ഷണം:","options":["ആവശ്യമാണ്","ഇല്ല","ശൂനം","സ്ഥിരം"],"answer":"ആവശ്യമാണ്"},
+{"q":79,"chapter":"പാരിസ്ഥിതിക നരവംശശാസ്ത്രം (Ecological Anthropology)","question":"അഡാപ്റ്റേഷൻ അർത്ഥം:","options":["അനുസരണം","വിരുദ്ധം","ഇല്ല","ശൂനം"],"answer":"അനുസരണം"},
+
+{"q":80,"chapter":"ഇന്ത്യൻ ജനതയും സംസ്കാരവും (Indian People and Culture)","question":"ഇന്ത്യൻ സംസ്കാരത്തിന്റെ സവിശേഷത:","options":["വൈവിധ്യം","ഒറ്റ സംസ്കാരം","ഇല്ല","ശൂനം"],"answer":"വൈവിധ്യം"},
+{"q":81,"chapter":"ഇന്ത്യൻ ജനതയും സംസ്കാരവും (Indian People and Culture)","question":"ഇന്ത്യയിൽ ഭാഷകൾ:","options":["അനേകം","ഒന്ന്","ഇല്ല","ശൂനം"],"answer":"അനേകം"},
+{"q":82,"chapter":"ഇന്ത്യൻ ജനതയും സംസ്കാരവും (Indian People and Culture)","question":"മത വൈവിധ്യം ഇന്ത്യയിൽ:","options":["ഉണ്ട്","ഇല്ല","ശൂനം","സ്ഥിരം"],"answer":"ഉണ്ട്"},
+{"q":83,"chapter":"ഇന്ത്യൻ ജനതയും സംസ്കാരവും (Indian People and Culture)","question":"ഇന്ത്യൻ സമൂഹം:","options":["ബഹുസ്വര","ഒറ്റ","ഇല്ല","ശൂനം"],"answer":"ബഹുസ്വര"},
+{"q":84,"chapter":"ഇന്ത്യൻ ജനതയും സംസ്കാരവും (Indian People and Culture)","question":"സംസ്കാര ഏകത:","options":["യൂണിറ്റി","ഇല്ല","ശൂനം","സ്ഥിരം"],"answer":"യൂണിറ്റി"},
+
+{"q":85,"chapter":"സാമൂഹിക സാംസ്കാരികമാറ്റം (Socio-Cultural Change)","question":"സാമൂഹിക മാറ്റം:","options":["സമൂഹത്തിൽ മാറ്റം","സ്ഥിരം","ഇല്ല","ശൂനം"],"answer":"സമൂഹത്തിൽ മാറ്റം"},
+{"q":86,"chapter":"സാമൂഹിക സാംസ്കാരികമാറ്റം (Socio-Cultural Change)","question":"സംസ്കാര മാറ്റം:","options":["മാറുന്ന സംസ്കാരം","സ്ഥിരം","ഇല്ല","ശൂനം"],"answer":"മാറുന്ന സംസ്കാരം"},
+{"q":87,"chapter":"സാമൂഹിക സാംസ്കാരികമാറ്റം (Socio-Cultural Change)","question":"ഇന്നൊവേഷൻ:","options":["പുതുമ","ഇല്ല","ശൂനം","സ്ഥിരം"],"answer":"പുതുമ"},
+{"q":88,"chapter":"സാമൂഹിക സാംസ്കാരികമാറ്റം (Socio-Cultural Change)","question":"ഡിഫ്യൂഷൻ:","options":["വ്യാപനം","ഇല്ല","ശൂനം","സ്ഥിരം"],"answer":"വ്യാപനം"},
+{"q":89,"chapter":"സാമൂഹിക സാംസ്കാരികമാറ്റം (Socio-Cultural Change)","question":"അക്കൾചറേഷൻ:","options":["സംസ്കാര സംയോജനം","ഇല്ല","ശൂനം","സ്ഥിരം"],"answer":"സംസ്കാര സംയോജനം"},
+
+{"q":90,"chapter":"ഗോത്രവർഗങ്ങളും പാർശ്വവൽകൃത ജനതയും (Tribes and Marginalized People)","question":"ഗോത്രവർഗം:","options":["ആദിവാസി","ഇല്ല","ശൂനം","സ്ഥിരം"],"answer":"ആദിവാസി"},
+{"q":91,"chapter":"ഗോത്രവർഗങ്ങളും പാർശ്വവൽകൃത ജനതയും (Tribes and Marginalized People)","question":"പാർശ്വവൽകൃത ജനത:","options":["മാർജിനലൈസ്ഡ്","ഇല്ല","ശൂനം","സ്ഥിരം"],"answer":"മാർജിനലൈസ്ഡ്"},
+{"q":92,"chapter":"ഗോത്രവർഗങ്ങളും പാർശ്വവൽകൃത ജനതയും (Tribes and Marginalized People)","question":"ഗോത്രജീവിതം:","options":["സരളം","സങ്കീർണ്ണം","ഇല്ല","ശൂനം"],"answer":"സരളം"},
+{"q":93,"chapter":"ഗോത്രവർഗങ്ങളും പാർശ്വവൽകൃത ജനതയും (Tribes and Marginalized People)","question":"ഗോത്രസംസ്കാരം:","options":["സ്വതന്ത്രം","ഇല്ല","ശൂനം","സ്ഥിരം"],"answer":"സ്വതന്ത്രം"},
+{"q":94,"chapter":"ഗോത്രവർഗങ്ങളും പാർശ്വവൽകൃത ജനതയും (Tribes and Marginalized People)","question":"പ്രധാന പ്രശ്നം:","options":["ദാരിദ്ര്യം","ഇല്ല","ശൂനം","സ്ഥിരം"],"answer":"ദാരിദ്ര്യം"},
+
+{"q":95,"chapter":"ഗോത്രവർഗങ്ങളും പാർശ്വവൽകൃത ജനതയും (Tribes and Marginalized People)","question":"വിദ്യാഭ്യാസ കുറവ്:","options":["പ്രശ്നം","ഇല്ല","ശൂനം","സ്ഥിരം"],"answer":"പ്രശ്നം"},
+{"q":96,"chapter":"ഗോത്രവർഗങ്ങളും പാർശ്വവൽകൃത ജനതയും (Tribes and Marginalized People)","question":"ആരോഗ്യ പ്രശ്നങ്ങൾ:","options":["ഉണ്ട്","ഇല്ല","ശൂനം","സ്ഥിരം"],"answer":"ഉണ്ട്"},
+{"q":97,"chapter":"ഗോത്രവർഗങ്ങളും പാർശ്വവൽകൃത ജനതയും (Tribes and Marginalized People)","question":"വികസനം ആവശ്യം:","options":["ഉണ്ട്","ഇല്ല","ശൂനം","സ്ഥിരം"],"answer":"ഉണ്ട്"},
+{"q":98,"chapter":"ഗോത്രവർഗങ്ങളും പാർശ്വവൽകൃത ജനതയും (Tribes and Marginalized People)","question":"സംരക്ഷണം:","options":["ആവശ്യം","ഇല്ല","ശൂനം","സ്ഥിരം"],"answer":"ആവശ്യം"},
+{"q":99,"chapter":"ഗോത്രവർഗങ്ങളും പാർശ്വവൽകൃത ജനതയും (Tribes and Marginalized People)","question":"അവകാശങ്ങൾ:","options":["പ്രധാനമാണ്","ഇല്ല","ശൂനം","സ്ഥിരം"],"answer":"പ്രധാനമാണ്"},
+{"q":100,"chapter":"ഗോത്രവർഗങ്ങളും പാർശ്വവൽകൃത ജനതയും (Tribes and Marginalized People)","question":"സമൂഹ ഉൾക്കൊള്ളൽ:","options":["ആവശ്യം","ഇല്ല","ശൂനം","സ്ഥിരം"],"answer":"ആവശ്യം"}
+]

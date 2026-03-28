@@ -640,17 +640,40 @@ function registerGameHandlers(io, socket, userSockets) {
     });
 
     // ─── invite_friend ──────────────────────────────────────────────────────────
-    socket.on('invite_friend', ({ targetUid, roomCode, hostName }) => {
-        const targetSocketId = userSockets.get(targetUid);
-        if (targetSocketId) {
-            io.to(targetSocketId).emit('receive_invite', {
-                hostName,
-                roomCode,
-                fromUid: socket.uid
+    socket.on('invite_friend', async ({ targetUid, roomCode, hostName }) => {
+        try {
+            const targetUser = await User.findOne({ uid: targetUid }).select('allowInvitations');
+            if (targetUser && targetUser.allowInvitations === false) {
+                socket.emit('error', { message: 'User has disabled game invitations.' });
+                return;
+            }
+
+            await NotificationManager.notify(io, userSockets, {
+                recipient: targetUid,
+                sender: socket.uid,
+                type: 'game_invite',
+                title: 'Play Invitation',
+                message: `${hostName} invited you to play a game!`,
+                data: {
+                    hostName,
+                    roomCode,
+                    fromUid: socket.uid
+                }
             });
-            console.log(`✉️ Invite sent from ${hostName} to User ${targetUid} for room ${roomCode}`);
-        } else {
-            socket.emit('error', { message: 'User is offline' });
+            
+            // Still emit the old event for frontend compatibility (if it expects receive_invite specifically)
+            const targetSocketId = userSockets.get(targetUid);
+            if (targetSocketId) {
+                io.to(targetSocketId).emit('receive_invite', {
+                    hostName,
+                    roomCode,
+                    fromUid: socket.uid
+                });
+            }
+            console.log(`✉️ Invite sent and recorded for User ${targetUid} from ${hostName}`);
+        } catch (error) {
+            console.error('Error in invite_friend:', error);
+            socket.emit('error', { message: 'Failed to send invite' });
         }
     });
 

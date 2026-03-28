@@ -1,0 +1,61 @@
+[
+{"q":151,"chapter":"സർക്കാർ ബജറ്റും സമ്പദ്വ്യവസ്ഥയും","question":"സർക്കാർ ബജറ്റ് എന്താണ്?","options":["സർക്കാരിന്റെ വരവും ചെലവും രേഖ","ഉത്പാദനം","ഇല്ല","ശൂനം"],"answer":"സർക്കാരിന്റെ വരവും ചെലവും രേഖ"},
+{"q":152,"chapter":"സർക്കാർ ബജറ്റും സമ്പദ്വ്യവസ്ഥയും","question":"Budget includes revenue:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":153,"chapter":"സർക്കാർ ബജറ്റും സമ്പദ്വ്യവസ്ഥയും","question":"Budget includes expenditure:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":154,"chapter":"സർക്കാർ ബജറ്റും സമ്പദ്വ്യവസ്ഥയും","question":"Revenue receipt എന്താണ്?","options":["വരുമാന വരവ്","ചെലവ്","ഇല്ല","ശൂനം"],"answer":"വരുമാന വരവ്"},
+{"q":155,"chapter":"സർക്കാർ ബജറ്റും സമ്പദ്വ്യവസ്ഥയും","question":"Capital receipt എന്താണ്?","options":["മൂലധന വരവ്","വരുമാനം","ഇല്ല","ശൂനം"],"answer":"മൂലധന വരവ്"},
+
+{"q":156,"chapter":"സർക്കാർ ബജറ്റും സമ്പദ്വ്യവസ്ഥയും","question":"Revenue expenditure എന്താണ്?","options":["വരുമാന ചെലവ്","മൂലധന ചെലവ്","ഇല്ല","ശൂനം"],"answer":"വരുമാന ചെലവ്"},
+{"q":157,"chapter":"സർക്കാർ ബജറ്റും സമ്പദ്വ്യവസ്ഥയും","question":"Capital expenditure എന്താണ്?","options":["മൂലധന ചെലവ്","വരുമാന ചെലവ്","ഇല്ല","ശൂനം"],"answer":"മൂലധന ചെലവ്"},
+{"q":158,"chapter":"സർക്കാർ ബജറ്റും സമ്പദ്വ്യവസ്ഥയും","question":"Fiscal deficit എന്താണ്?","options":["വരുമാന കുറവ്","ലാഭം","ഇല്ല","ശൂനം"],"answer":"വരുമാന കുറവ്"},
+{"q":159,"chapter":"സർക്കാർ ബജറ്റും സമ്പദ്വ്യവസ്ഥയും","question":"Budget deficit എന്താണ്?","options":["ചെലവ് കൂടുതലുള്ള സ്ഥിതി","ലാഭം","ഇല്ല","ശൂനം"],"answer":"ചെലവ് കൂടുതലുള്ള സ്ഥിതി"},
+{"q":160,"chapter":"സർക്കാർ ബജറ്റും സമ്പദ്വ്യവസ്ഥയും","question":"Surplus budget എന്താണ്?","options":["വരുമാനം കൂടുതലുള്ള സ്ഥിതി","നഷ്ടം","ഇല്ല","ശൂനം"],"answer":"വരുമാനം കൂടുതലുള്ള സ്ഥിതി"},
+
+{"q":161,"chapter":"സർക്കാർ ബജറ്റും സമ്പദ്വ്യവസ്ഥയും","question":"Balanced budget എന്താണ്?","options":["വരുമാനവും ചെലവും തുല്യം","വരുമാനം കൂടുതലാണ്","ഇല്ല","ശൂനം"],"answer":"വരുമാനവും ചെലവും തുല്യം"},
+{"q":162,"chapter":"സർക്കാർ ബജറ്റും സമ്പദ്വ്യവസ്ഥയും","question":"Taxes budget ഭാഗമാണോ?","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":163,"chapter":"സർക്കാർ ബജറ്റും സമ്പദ്വ്യവസ്ഥയും","question":"Non-tax revenue ഉണ്ടോ?","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":164,"chapter":"സർക്കാർ ബജറ്റും സമ്പദ്വ്യവസ്ഥയും","question":"Budget helps economic planning:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":165,"chapter":"സർക്കാർ ബജറ്റും സമ്പദ്വ്യവസ്ഥയും","question":"Budget helps development:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+
+{"q":166,"chapter":"സർക്കാർ ബജറ്റും സമ്പദ്വ്യവസ്ഥയും","question":"Government spending increases growth:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":167,"chapter":"സർക്കാർ ബജറ്റും സമ്പദ്വ്യവസ്ഥയും","question":"Taxes affect income:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":168,"chapter":"സർക്കാർ ബജറ്റും സമ്പദ്വ്യവസ്ഥയും","question":"Budget controls inflation:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":169,"chapter":"സർക്കാർ ബജറ്റും സമ്പദ്വ്യവസ്ഥയും","question":"Budget reduces inequality:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":170,"chapter":"സർക്കാർ ബജറ്റും സമ്പദ്വ്യവസ്ഥയും","question":"Budget important economic tool ആണോ?","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+
+{"q":171,"chapter":"സതുല്യവിനിമയവും തുറന്ന സമ്പദ്വ്യവസ്ഥയും","question":"Balance of Payments എന്താണ്?","options":["അന്താരാഷ്ട്ര ഇടപാട് രേഖ","ബജറ്റ്","ഇല്ല","ശൂനം"],"answer":"അന്താരാഷ്ട്ര ഇടപാട് രേഖ"},
+{"q":172,"chapter":"സതുല്യവിനിമയവും തുറന്ന സമ്പദ്വ്യവസ്ഥയും","question":"BOP includes current account:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":173,"chapter":"സതുല്യവിനിമയവും തുറന്ന സമ്പദ്വ്യവസ്ഥയും","question":"BOP includes capital account:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":174,"chapter":"സതുല്യവിനിമയവും തുറന്ന സമ്പദ്വ്യവസ്ഥയും","question":"Exports എന്താണ്?","options":["കയറ്റുമതി","ഇറക്കുമതി","ഇല്ല","ശൂനം"],"answer":"കയറ്റുമതി"},
+{"q":175,"chapter":"സതുല്യവിനിമയവും തുറന്ന സമ്പദ്വ്യവസ്ഥയും","question":"Imports എന്താണ്?","options":["ഇറക്കുമതി","കയറ്റുമതി","ഇല്ല","ശൂനം"],"answer":"ഇറക്കുമതി"},
+
+{"q":176,"chapter":"സതുല്യവിനിമയവും തുറന്ന സമ്പദ്വ്യവസ്ഥയും","question":"Trade balance എന്താണ്?","options":["കയറ്റുമതി - ഇറക്കുമതി","ബജറ്റ്","ഇല്ല","ശൂനം"],"answer":"കയറ്റുമതി - ഇറക്കുമതി"},
+{"q":177,"chapter":"സതുല്യവിനിമയവും തുറന്ന സമ്പദ്വ്യവസ്ഥയും","question":"Current account includes trade:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":178,"chapter":"സതുല്യവിനിമയവും തുറന്ന സമ്പദ്വ്യവസ്ഥയും","question":"Capital account includes investment:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":179,"chapter":"സതുല്യവിനിമയവും തുറന്ന സമ്പദ്വ്യവസ്ഥയും","question":"Open economy interacts with world:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":180,"chapter":"സതുല്യവിനിമയവും തുറന്ന സമ്പദ്വ്യവസ്ഥയും","question":"Closed economy no trade:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+
+{"q":181,"chapter":"സതുല്യവിനിമയവും തുറന്ന സമ്പദ്വ്യവസ്ഥയും","question":"Exchange rate എന്താണ്?","options":["നാണയ വില","വരുമാനം","ഇല്ല","ശൂനം"],"answer":"നാണയ വില"},
+{"q":182,"chapter":"സതുല്യവിനിമയവും തുറന്ന സമ്പദ്വ്യവസ്ഥയും","question":"Flexible exchange rate exists:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":183,"chapter":"സതുല്യവിനിമയവും തുറന്ന സമ്പദ്വ്യവസ്ഥയും","question":"Fixed exchange rate exists:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":184,"chapter":"സതുല്യവിനിമയവും തുറന്ന സമ്പദ്വ്യവസ്ഥയും","question":"BOP imbalance possible ആണോ?","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":185,"chapter":"സതുല്യവിനിമയവും തുറന്ന സമ്പദ്വ്യവസ്ഥയും","question":"Deficit means imports > exports:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+
+{"q":186,"chapter":"സതുല്യവിനിമയവും തുറന്ന സമ്പദ്വ്യവസ്ഥയും","question":"Surplus means exports > imports:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":187,"chapter":"സതുല്യവിനിമയവും തുറന്ന സമ്പദ്വ്യവസ്ഥയും","question":"Open economy allows trade:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":188,"chapter":"സതുല്യവിനിമയവും തുറന്ന സമ്പദ്വ്യവസ്ഥയും","question":"Globalisation related ആണോ?","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":189,"chapter":"സതുല്യവിനിമയവും തുറന്ന സമ്പദ്വ്യവസ്ഥയും","question":"Foreign exchange important ആണോ?","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":190,"chapter":"സതുല്യവിനിമയവും തുറന്ന സമ്പദ്വ്യവസ്ഥയും","question":"BOP reflects economy:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+
+{"q":191,"chapter":"സതുല്യവിനിമയവും തുറന്ന സമ്പദ്വ്യവസ്ഥയും","question":"Imports reduce domestic production:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":192,"chapter":"സതുല്യവിനിമയവും തുറന്ന സമ്പദ്വ്യവസ്ഥയും","question":"Exports increase income:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":193,"chapter":"സതുല്യവിനിമയവും തുറന്ന സമ്പദ്വ്യവസ്ഥയും","question":"Exchange rate affects trade:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":194,"chapter":"സതുല്യവിനിമയവും തുറന്ന സമ്പദ്വ്യവസ്ഥയും","question":"Foreign trade important ആണോ?","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":195,"chapter":"സതുല്യവിനിമയവും തുറന്ന സമ്പദ്വ്യവസ്ഥയും","question":"Open economy increases opportunities:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+
+{"q":196,"chapter":"സതുല്യവിനിമയവും തുറന്ന സമ്പദ്വ്യവസ്ഥയും","question":"Open economy increases competition:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":197,"chapter":"സതുല്യവിനിമയവും തുറന്ന സമ്പദ്വ്യവസ്ഥയും","question":"Trade helps growth:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":198,"chapter":"സതുല്യവിനിമയവും തുറന്ന സമ്പദ്വ്യവസ്ഥയും","question":"Foreign investment important ആണോ?","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":199,"chapter":"സതുല്യവിനിമയവും തുറന്ന സമ്പദ്വ്യവസ്ഥയും","question":"BOP helps policy making:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":200,"chapter":"സതുല്യവിനിമയവും തുറന്ന സമ്പദ്വ്യവസ്ഥയും","question":"Open economy essential in modern world ആണോ?","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"}
+]

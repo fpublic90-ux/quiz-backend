@@ -1,0 +1,61 @@
+[
+{"q":101,"chapter":"ആസൂത്രണം","question":"Planning എന്താണ്?","options":["ഭാവി പ്രവർത്തന പദ്ധതി","നിയന്ത്രണം","സംഘാടനം","ഇല്ല"],"answer":"ഭാവി പ്രവർത്തന പദ്ധതി"},
+{"q":102,"chapter":"ആസൂത്രണം","question":"Planning future oriented ആണോ?","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":103,"chapter":"ആസൂത്രണം","question":"Planning reduces risk:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":104,"chapter":"ആസൂത്രണം","question":"Planning decision making ഉൾപ്പെടുമോ?","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":105,"chapter":"ആസൂത്രണം","question":"Planning primary function ആണോ?","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+
+{"q":106,"chapter":"ആസൂത്രണം","question":"Planning helps coordination:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":107,"chapter":"ആസൂത്രണം","question":"Planning goal oriented ആണോ?","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":108,"chapter":"ആസൂത്രണം","question":"Planning improves efficiency:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":109,"chapter":"ആസൂത്രണം","question":"Planning continuous process ആണോ?","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":110,"chapter":"ആസൂത്രണം","question":"Planning flexible ആണോ?","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+
+{"q":111,"chapter":"സംഘാടനം","question":"Organising എന്താണ്?","options":["പ്രവർത്തന ക്രമീകരണം","നിയന്ത്രണം","പദ്ധതി","ഇല്ല"],"answer":"പ്രവർത്തന ക്രമീകരണം"},
+{"q":112,"chapter":"സംഘാടനം","question":"Organising helps division of work:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":113,"chapter":"സംഘാടനം","question":"Organising defines authority:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":114,"chapter":"സംഘാടനം","question":"Organising helps coordination:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":115,"chapter":"സംഘാടനം","question":"Organising improves efficiency:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+
+{"q":116,"chapter":"സംഘാടനം","question":"Organising establishes relationships:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":117,"chapter":"സംഘാടനം","question":"Organising ensures clarity of roles:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":118,"chapter":"സംഘാടനം","question":"Organising helps optimum use of resources:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":119,"chapter":"സംഘാടനം","question":"Organising reduces duplication:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":120,"chapter":"സംഘാടനം","question":"Organising improves communication:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+
+{"q":121,"chapter":"ഉദ്യോഗസ്ഥ നിയമനം","question":"Staffing എന്താണ്?","options":["ഉദ്യോഗസ്ഥ നിയമനം","സംഘാടനം","നിയന്ത്രണം","ഇല്ല"],"answer":"ഉദ്യോഗസ്ഥ നിയമനം"},
+{"q":122,"chapter":"ഉദ്യോഗസ്ഥ നിയമനം","question":"Staffing ensures right person:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":123,"chapter":"ഉദ്യോഗസ്ഥ നിയമനം","question":"Staffing includes recruitment:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":124,"chapter":"ഉദ്യോഗസ്ഥ നിയമനം","question":"Staffing includes training:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":125,"chapter":"ഉദ്യോഗസ്ഥ നിയമനം","question":"Staffing improves performance:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+
+{"q":126,"chapter":"ഉദ്യോഗസ്ഥ നിയമനം","question":"Recruitment എന്താണ്?","options":["അഭ്യർത്ഥകരെ കണ്ടെത്തൽ","തിരഞ്ഞെടുപ്പ്","ഇല്ല","ശൂനം"],"answer":"അഭ്യർത്ഥകരെ കണ്ടെത്തൽ"},
+{"q":127,"chapter":"ഉദ്യോഗസ്ഥ നിയമനം","question":"Selection എന്താണ്?","options":["തിരഞ്ഞെടുപ്പ്","നിയമനം","ഇല്ല","ശൂനം"],"answer":"തിരഞ്ഞെടുപ്പ്"},
+{"q":128,"chapter":"ഉദ്യോഗസ്ഥ നിയമനം","question":"Training എന്താണ്?","options":["പരിശീലനം","തിരഞ്ഞെടുപ്പ്","ഇല്ല","ശൂനം"],"answer":"പരിശീലനം"},
+{"q":129,"chapter":"ഉദ്യോഗസ്ഥ നിയമനം","question":"Development എന്താണ്?","options":["വികസനം","പരിശീലനം","ഇല്ല","ശൂനം"],"answer":"വികസനം"},
+{"q":130,"chapter":"ഉദ്യോഗസ്ഥ നിയമനം","question":"Staffing continuous process ആണോ?","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+
+{"q":131,"chapter":"ഉദ്യോഗസ്ഥ നിയമനം","question":"Staffing helps efficiency:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":132,"chapter":"ഉദ്യോഗസ്ഥ നിയമനം","question":"Staffing ensures growth:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":133,"chapter":"ഉദ്യോഗസ്ഥ നിയമനം","question":"Staffing improves morale:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":134,"chapter":"ഉദ്യോഗസ്ഥ നിയമനം","question":"Staffing helps right placement:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":135,"chapter":"ഉദ്യോഗസ്ഥ നിയമനം","question":"Staffing reduces labour turnover:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+
+{"q":136,"chapter":"ഉദ്യോഗസ്ഥ നിയമനം","question":"Internal recruitment:","options":["അകത്തെ നിയമനം","പുറത്ത്","ഇല്ല","ശൂനം"],"answer":"അകത്തെ നിയമനം"},
+{"q":137,"chapter":"ഉദ്യോഗസ്ഥ നിയമനം","question":"External recruitment:","options":["പുറത്തെ നിയമനം","അകത്ത്","ഇല്ല","ശൂനം"],"answer":"പുറത്തെ നിയമനം"},
+{"q":138,"chapter":"ഉദ്യോഗസ്ഥ നിയമനം","question":"Promotion:","options":["പദോന്നതി","നിയമനം","ഇല്ല","ശൂനം"],"answer":"പദോന്നതി"},
+{"q":139,"chapter":"ഉദ്യോഗസ്ഥ നിയമനം","question":"Transfer:","options":["സ്ഥലംമാറ്റം","നിയമനം","ഇല്ല","ശൂനം"],"answer":"സ്ഥലംമാറ്റം"},
+{"q":140,"chapter":"ഉദ്യോഗസ്ഥ നിയമനം","question":"Training improves skills:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+
+{"q":141,"chapter":"ഉദ്യോഗസ്ഥ നിയമനം","question":"Selection process important ആണോ?","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":142,"chapter":"ഉദ്യോഗസ്ഥ നിയമനം","question":"Staffing ensures productivity:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":143,"chapter":"ഉദ്യോഗസ്ഥ നിയമനം","question":"Staffing reduces cost:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":144,"chapter":"ഉദ്യോഗസ്ഥ നിയമനം","question":"Staffing ensures right job:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":145,"chapter":"ഉദ്യോഗസ്ഥ നിയമനം","question":"Staffing improves organisation:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+
+{"q":146,"chapter":"ഉദ്യോഗസ്ഥ നിയമനം","question":"Training necessary ആണോ?","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":147,"chapter":"ഉദ്യോഗസ്ഥ നിയമനം","question":"Development improves growth:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":148,"chapter":"ഉദ്യോഗസ്ഥ നിയമനം","question":"Staffing helps coordination:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":149,"chapter":"ഉദ്യോഗസ്ഥ നിയമനം","question":"Staffing ensures satisfaction:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":150,"chapter":"ഉദ്യോഗസ്ഥ നിയമനം","question":"Staffing important function ആണോ?","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"}
+]

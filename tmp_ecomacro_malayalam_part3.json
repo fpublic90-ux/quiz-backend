@@ -1,0 +1,61 @@
+[
+{"q":101,"chapter":"പണം ബാങ്കിംഗ് സംവിധാനവും","question":"പണം എന്താണ്?","options":["വിനിമയ മാധ്യമം","ഉത്പാദനം","ഇല്ല","ശൂനം"],"answer":"വിനിമയ മാധ്യമം"},
+{"q":102,"chapter":"പണം ബാങ്കിംഗ് സംവിധാനവും","question":"Money medium of exchange ആണോ?","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":103,"chapter":"പണം ബാങ്കിംഗ് സംവിധാനവും","question":"Money store of value ആണോ?","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":104,"chapter":"പണം ബാങ്കിംഗ് സംവിധാനവും","question":"Money unit of account ആണോ?","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":105,"chapter":"പണം ബാങ്കിംഗ് സംവിധാനവും","question":"Legal tender എന്താണ്?","options":["നിയമപരമായ പണം","സ്വകാര്യ പണം","ഇല്ല","ശൂനം"],"answer":"നിയമപരമായ പണം"},
+
+{"q":106,"chapter":"പണം ബാങ്കിംഗ് സംവിധാനവും","question":"Currency includes coins:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":107,"chapter":"പണം ബാങ്കിംഗ് സംവിധാനവും","question":"Currency includes notes:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":108,"chapter":"പണം ബാങ്കിംഗ് സംവിധാനവും","question":"Bank deposits part of money supply ആണോ?","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":109,"chapter":"പണം ബാങ്കിംഗ് സംവിധാനവും","question":"Money supply includes demand deposits:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":110,"chapter":"പണം ബാങ്കിംഗ് സംവിധാനവും","question":"Central bank എന്താണ്?","options":["മദ്ധ്യബാങ്ക്","സ്വകാര്യ ബാങ്ക്","ഇല്ല","ശൂനം"],"answer":"മദ്ധ്യബാങ്ക്"},
+
+{"q":111,"chapter":"പണം ബാങ്കിംഗ് സംവിധാനവും","question":"RBI ഇന്ത്യയുടെ മദ്ധ്യബാങ്കാണോ?","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":112,"chapter":"പണം ബാങ്കിംഗ് സംവിധാനവും","question":"Commercial bank deposits സ്വീകരിക്കുമോ?","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":113,"chapter":"പണം ബാങ്കിംഗ് സംവിധാനവും","question":"Banks loans നൽകുമോ?","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":114,"chapter":"പണം ബാങ്കിംഗ് സംവിധാനവും","question":"Bank creates credit:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":115,"chapter":"പണം ബാങ്കിംഗ് സംവിധാനവും","question":"CRR എന്താണ്?","options":["Cash Reserve Ratio","Capital Ratio","ഇല്ല","ശൂനം"],"answer":"Cash Reserve Ratio"},
+
+{"q":116,"chapter":"പണം ബാങ്കിംഗ് സംവിധാനവും","question":"SLR എന്താണ്?","options":["Statutory Liquidity Ratio","Saving Ratio","ഇല്ല","ശൂനം"],"answer":"Statutory Liquidity Ratio"},
+{"q":117,"chapter":"പണം ബാങ്കിംഗ് സംവിധാനവും","question":"Repo rate എന്താണ്?","options":["ബാങ്കുകൾക്ക് വായ്പ നൽകുന്ന നിരക്ക്","നികുതി","ഇല്ല","ശൂനം"],"answer":"ബാങ്കുകൾക്ക് വായ്പ നൽകുന്ന നിരക്ക്"},
+{"q":118,"chapter":"പണം ബാങ്കിംഗ് സംവിധാനവും","question":"Reverse repo rate എന്താണ്?","options":["ബാങ്കുകൾ നിക്ഷേപിക്കുന്ന നിരക്ക്","വായ്പ","ഇല്ല","ശൂനം"],"answer":"ബാങ്കുകൾ നിക്ഷേപിക്കുന്ന നിരക്ക്"},
+{"q":119,"chapter":"പണം ബാങ്കിംഗ് സംവിധാനവും","question":"Money supply controlled by RBI ആണോ?","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":120,"chapter":"പണം ബാങ്കിംഗ് സംവിധാനവും","question":"Banking system important ആണോ?","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+
+{"q":121,"chapter":"വരുമാനനിർണ്ണയവും തൊഴിൽനിർണ്ണയവും","question":"Income determination എന്താണ്?","options":["വരുമാനം നിർണ്ണയം","ഉത്പാദനം","ഇല്ല","ശൂനം"],"answer":"വരുമാനം നിർണ്ണയം"},
+{"q":122,"chapter":"വരുമാനനിർണ്ണയവും തൊഴിൽനിർണ്ണയവും","question":"Employment determination എന്താണ്?","options":["തൊഴിൽ നിർണ്ണയം","വരുമാനം","ഇല്ല","ശൂനം"],"answer":"തൊഴിൽ നിർണ്ണയം"},
+{"q":123,"chapter":"വരുമാനനിർണ്ണയവും തൊഴിൽനിർണ്ണയവും","question":"Aggregate demand എന്താണ്?","options":["ആകെ ആവശ്യകത","വിതരണം","ഇല്ല","ശൂനം"],"answer":"ആകെ ആവശ്യകത"},
+{"q":124,"chapter":"വരുമാനനിർണ്ണയവും തൊഴിൽനിർണ്ണയവും","question":"Aggregate supply എന്താണ്?","options":["ആകെ വിതരണം","ആവശ്യം","ഇല്ല","ശൂനം"],"answer":"ആകെ വിതരണം"},
+{"q":125,"chapter":"വരുമാനനിർണ്ണയവും തൊഴിൽനിർണ്ണയവും","question":"Equilibrium എന്താണ്?","options":["സമതുല്യം","അസമതുല്യം","ഇല്ല","ശൂനം"],"answer":"സമതുല്യം"},
+
+{"q":126,"chapter":"വരുമാനനിർണ്ണയവും തൊഴിൽനിർണ്ണയവും","question":"Consumption function എന്താണ്?","options":["ഉപഭോഗ ബന്ധം","വിതരണം","ഇല്ല","ശൂനം"],"answer":"ഉപഭോഗ ബന്ധം"},
+{"q":127,"chapter":"വരുമാനനിർണ്ണയവും തൊഴിൽനിർണ്ണയവും","question":"Saving function എന്താണ്?","options":["സേവിംഗ് ബന്ധം","ഉപഭോഗം","ഇല്ല","ശൂനം"],"answer":"സേവിംഗ് ബന്ധം"},
+{"q":128,"chapter":"വരുമാനനിർണ്ണയവും തൊഴിൽനിർണ്ണയവും","question":"MPC എന്താണ്?","options":["Marginal Propensity to Consume","Saving","ഇല്ല","ശൂനം"],"answer":"Marginal Propensity to Consume"},
+{"q":129,"chapter":"വരുമാനനിർണ്ണയവും തൊഴിൽനിർണ്ണയവും","question":"MPS എന്താണ്?","options":["Marginal Propensity to Save","Consume","ഇല്ല","ശൂനം"],"answer":"Marginal Propensity to Save"},
+{"q":130,"chapter":"വരുമാനനിർണ്ണയവും തൊഴിൽനിർണ്ണയവും","question":"MPC + MPS = 1 ആണോ?","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+
+{"q":131,"chapter":"വരുമാനനിർണ്ണയവും തൊഴിൽനിർണ്ണയവും","question":"Multiplier effect എന്താണ്?","options":["ഗുണിതം","കുറവ്","ഇല്ല","ശൂനം"],"answer":"ഗുണിതം"},
+{"q":132,"chapter":"വരുമാനനിർണ്ണയവും തൊഴിൽനിർണ്ണയവും","question":"Investment increases income:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":133,"chapter":"വരുമാനനിർണ്ണയവും തൊഴിൽനിർണ്ണയവും","question":"Consumption depends on income:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":134,"chapter":"വരുമാനനിർണ്ണയവും തൊഴിൽനിർണ്ണയവും","question":"Saving depends on income:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":135,"chapter":"വരുമാനനിർണ്ണയവും തൊഴിൽനിർണ്ണയവും","question":"Equilibrium where AD = AS ആണോ?","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+
+{"q":136,"chapter":"വരുമാനനിർണ്ണയവും തൊഴിൽനിർണ്ണയവും","question":"Unemployment എന്താണ്?","options":["തൊഴിൽ ഇല്ലായ്മ","തൊഴിൽ","ഇല്ല","ശൂനം"],"answer":"തൊഴിൽ ഇല്ലായ്മ"},
+{"q":137,"chapter":"വരുമാനനിർണ്ണയവും തൊഴിൽനിർണ്ണയവും","question":"Full employment possible ആണോ?","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":138,"chapter":"വരുമാനനിർണ്ണയവും തൊഴിൽനിർണ്ണയവും","question":"Underemployment എന്താണ്?","options":["അപൂർണ്ണ തൊഴിൽ","പൂർണ്ണ തൊഴിൽ","ഇല്ല","ശൂനം"],"answer":"അപൂർണ്ണ തൊഴിൽ"},
+{"q":139,"chapter":"വരുമാനനിർണ്ണയവും തൊഴിൽനിർണ്ണയവും","question":"Keynes theory deals with demand:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":140,"chapter":"വരുമാനനിർണ്ണയവും തൊഴിൽനിർണ്ണയവും","question":"Demand affects income:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+
+{"q":141,"chapter":"വരുമാനനിർണ്ണയവും തൊഴിൽനിർണ്ണയവും","question":"Investment increases employment:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":142,"chapter":"വരുമാനനിർണ്ണയവും തൊഴിൽനിർണ്ണയവും","question":"Multiplier increases income:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":143,"chapter":"വരുമാനനിർണ്ണയവും തൊഴിൽനിർണ്ണയവും","question":"AD increases output:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":144,"chapter":"വരുമാനനിർണ്ണയവും തൊഴിൽനിർണ്ണയവും","question":"AS depends on production:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":145,"chapter":"വരുമാനനിർണ്ണയവും തൊഴിൽനിർണ്ണയവും","question":"Income determination important ആണോ?","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+
+{"q":146,"chapter":"വരുമാനനിർണ്ണയവും തൊഴിൽനിർണ്ണയവും","question":"Equilibrium ensures stability:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":147,"chapter":"വരുമാനനിർണ്ണയവും തൊഴിൽനിർണ്ണയവും","question":"Income increases consumption:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":148,"chapter":"വരുമാനനിർണ്ണയവും തൊഴിൽനിർണ്ണയവും","question":"Savings reduce consumption:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":149,"chapter":"വരുമാനനിർണ്ണയവും തൊഴിൽനിർണ്ണയവും","question":"Keynesian model important ആണോ?","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":150,"chapter":"വരുമാനനിർണ്ണയവും തൊഴിൽനിർണ്ണയവും","question":"Income-employment theory essential ആണോ?","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"}
+]

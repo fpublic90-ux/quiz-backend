@@ -24,7 +24,7 @@ module.exports = (io, userSockets) => {
                 // Create new user
                 user = new User({
                     uid,
-                    displayName: displayName || 'WizQuizzer',
+                    displayName: displayName || 'Guest Player',
                     email,
                     avatar: avatar || 'default'
                 });
@@ -163,6 +163,51 @@ module.exports = (io, userSockets) => {
             res.status(200).json(user);
         } catch (error) {
             console.error('Purchase error:', error);
+            res.status(500).json({ message: 'Server error' });
+        }
+    });
+
+    // Update FCM token for push notifications
+    router.post('/update-fcm', verifyToken, async (req, res) => {
+        try {
+            const { uid, fcmToken } = req.body;
+            if (!uid || !fcmToken) {
+                return res.status(400).json({ message: 'UID and FCM token are required' });
+            }
+
+            const user = await User.findOneAndUpdate(
+                { uid },
+                { fcmToken },
+                { new: true }
+            );
+
+            if (!user) {
+                return res.status(404).json({ message: 'User not found' });
+            }
+
+            res.status(200).json({ success: true, message: 'FCM token updated' });
+        } catch (error) {
+            console.error('Error updating FCM token:', error);
+            res.status(500).json({ message: 'Server error' });
+        }
+    });
+
+    // Update User Settings (Invitations, etc.)
+    router.post('/update-settings', verifyToken, async (req, res) => {
+        try {
+            const { uid, allowInvitations } = req.body;
+            if (!uid) return res.status(400).json({ message: 'UID is required' });
+
+            const user = await User.findOneAndUpdate(
+                { uid },
+                { allowInvitations },
+                { new: true }
+            );
+
+            if (!user) return res.status(404).json({ message: 'User not found' });
+            res.status(200).json(user);
+        } catch (error) {
+            console.error('Error updating settings:', error);
             res.status(500).json({ message: 'Server error' });
         }
     });

@@ -1,0 +1,61 @@
+[
+{"q":1,"chapter":"Ray Optics & Optical Instruments","question":"According to the law of reflection, the angle of incidence is equal to:","options":["Angle of reflection","Angle of refraction","90°","0°"],"answer":"Angle of reflection"},
+{"q":2,"chapter":"Ray Optics & Optical Instruments","question":"Incident ray, reflected ray and normal lie in:","options":["Same plane","Different planes","Parallel planes","No plane"],"answer":"Same plane"},
+{"q":3,"chapter":"Ray Optics & Optical Instruments","question":"Mirror formula is:","options":["1/f = 1/v + 1/u","f = uv","v=u+f","u=v"],"answer":"1/f = 1/v + 1/u"},
+{"q":4,"chapter":"Ray Optics & Optical Instruments","question":"Focal length of spherical mirror is:","options":["R/2","2R","R²","1/R"],"answer":"R/2"},
+{"q":5,"chapter":"Ray Optics & Optical Instruments","question":"Convex mirror always forms:","options":["Virtual image","Real image","Inverted image","Magnified image"],"answer":"Virtual image"},
+
+{"q":6,"chapter":"Ray Optics & Optical Instruments","question":"Concave mirror can form:","options":["Real and virtual images","Only real","Only virtual","No image"],"answer":"Real and virtual images"},
+{"q":7,"chapter":"Ray Optics & Optical Instruments","question":"Magnification of mirror is:","options":["-v/u","v/u","u/v","v+u"],"answer":"-v/u"},
+{"q":8,"chapter":"Ray Optics & Optical Instruments","question":"Refraction occurs due to change in:","options":["Speed of light","Mass","Charge","Energy"],"answer":"Speed of light"},
+{"q":9,"chapter":"Ray Optics & Optical Instruments","question":"Snell’s law is given by:","options":["n1 sin i = n2 sin r","V=IR","F=ma","E=mc²"],"answer":"n1 sin i = n2 sin r"},
+{"q":10,"chapter":"Ray Optics & Optical Instruments","question":"Refractive index is ratio of:","options":["Speed of light in vacuum to medium","Mass","Charge","Time"],"answer":"Speed of light in vacuum to medium"},
+
+{"q":11,"chapter":"Ray Optics & Optical Instruments","question":"Total internal reflection occurs when light travels from:","options":["Denser to rarer medium","Rarer to denser","Vacuum","Air"],"answer":"Denser to rarer medium"},
+{"q":12,"chapter":"Ray Optics & Optical Instruments","question":"Critical angle is defined for:","options":["Denser to rarer medium","Rarer to denser","Vacuum","Air"],"answer":"Denser to rarer medium"},
+{"q":13,"chapter":"Ray Optics & Optical Instruments","question":"Optical fibre works on:","options":["Total internal reflection","Reflection","Refraction","Diffraction"],"answer":"Total internal reflection"},
+{"q":14,"chapter":"Ray Optics & Optical Instruments","question":"Lens formula is:","options":["1/f = 1/v + 1/u","v = u","f = uv","u=v"],"answer":"1/f = 1/v + 1/u"},
+{"q":15,"chapter":"Ray Optics & Optical Instruments","question":"Power of lens is:","options":["1/f","f","f²","1/f²"],"answer":"1/f"},
+
+{"q":16,"chapter":"Ray Optics & Optical Instruments","question":"Unit of lens power is:","options":["Dioptre","Volt","Ohm","Ampere"],"answer":"Dioptre"},
+{"q":17,"chapter":"Ray Optics & Optical Instruments","question":"Convex lens is:","options":["Converging lens","Diverging lens","Plane lens","Neutral lens"],"answer":"Converging lens"},
+{"q":18,"chapter":"Ray Optics & Optical Instruments","question":"Concave lens is:","options":["Diverging lens","Converging lens","Plane lens","Neutral lens"],"answer":"Diverging lens"},
+{"q":19,"chapter":"Ray Optics & Optical Instruments","question":"Magnification of lens is:","options":["v/u","u/v","v+u","v-u"],"answer":"v/u"},
+{"q":20,"chapter":"Ray Optics & Optical Instruments","question":"Real image is formed when rays:","options":["Actually meet","Appear to meet","Parallel","Diverge"],"answer":"Actually meet"},
+
+{"q":21,"chapter":"Ray Optics & Optical Instruments","question":"Virtual image is formed when rays:","options":["Appear to meet","Actually meet","Parallel","Converge"],"answer":"Appear to meet"},
+{"q":22,"chapter":"Ray Optics & Optical Instruments","question":"Human eye lens is:","options":["Convex","Concave","Plane","None"],"answer":"Convex"},
+{"q":23,"chapter":"Ray Optics & Optical Instruments","question":"Myopia is corrected using:","options":["Concave lens","Convex lens","Mirror","Prism"],"answer":"Concave lens"},
+{"q":24,"chapter":"Ray Optics & Optical Instruments","question":"Hypermetropia is corrected using:","options":["Convex lens","Concave lens","Mirror","Prism"],"answer":"Convex lens"},
+{"q":25,"chapter":"Ray Optics & Optical Instruments","question":"Near point of normal eye is:","options":["25 cm","50 cm","10 cm","100 cm"],"answer":"25 cm"},
+
+{"q":26,"chapter":"Ray Optics & Optical Instruments","question":"Far point of normal eye is:","options":["Infinity","25 cm","50 cm","10 cm"],"answer":"Infinity"},
+{"q":27,"chapter":"Ray Optics & Optical Instruments","question":"Simple microscope uses:","options":["Convex lens","Concave lens","Mirror","Prism"],"answer":"Convex lens"},
+{"q":28,"chapter":"Ray Optics & Optical Instruments","question":"Telescope magnifies:","options":["Angular size","Distance","Mass","Charge"],"answer":"Angular size"},
+{"q":29,"chapter":"Ray Optics & Optical Instruments","question":"Dispersion occurs in:","options":["Prism","Lens","Mirror","Wire"],"answer":"Prism"},
+{"q":30,"chapter":"Ray Optics & Optical Instruments","question":"White light splits into:","options":["Spectrum","Charge","Mass","Energy"],"answer":"Spectrum"},
+
+{"q":31,"chapter":"Ray Optics & Optical Instruments","question":"Violet light has:","options":["Maximum deviation","Minimum deviation","No deviation","Zero"],"answer":"Maximum deviation"},
+{"q":32,"chapter":"Ray Optics & Optical Instruments","question":"Red light has:","options":["Minimum deviation","Maximum deviation","Zero","Infinite"],"answer":"Minimum deviation"},
+{"q":33,"chapter":"Ray Optics & Optical Instruments","question":"Sign convention used is:","options":["Cartesian","Polar","Vector","Matrix"],"answer":"Cartesian"},
+{"q":34,"chapter":"Ray Optics & Optical Instruments","question":"Focal length of convex lens is:","options":["Positive","Negative","Zero","Infinite"],"answer":"Positive"},
+{"q":35,"chapter":"Ray Optics & Optical Instruments","question":"Focal length of concave lens is:","options":["Negative","Positive","Zero","Infinite"],"answer":"Negative"},
+
+{"q":36,"chapter":"Ray Optics & Optical Instruments","question":"Refractive index symbol is:","options":["n","m","r","k"],"answer":"n"},
+{"q":37,"chapter":"Ray Optics & Optical Instruments","question":"Optical density depends on:","options":["Refractive index","Mass","Time","Charge"],"answer":"Refractive index"},
+{"q":38,"chapter":"Ray Optics & Optical Instruments","question":"Image formed by plane mirror is:","options":["Virtual and erect","Real","Inverted","Magnified"],"answer":"Virtual and erect"},
+{"q":39,"chapter":"Ray Optics & Optical Instruments","question":"Plane mirror magnification is:","options":["1","0","-1","Infinite"],"answer":"1"},
+{"q":40,"chapter":"Ray Optics & Optical Instruments","question":"Angle between incident and reflected ray is:","options":["2i","i","i/2","90°"],"answer":"2i"},
+
+{"q":41,"chapter":"Ray Optics & Optical Instruments","question":"Lens maker formula relates:","options":["f and refractive index","Mass","Charge","Time"],"answer":"f and refractive index"},
+{"q":42,"chapter":"Ray Optics & Optical Instruments","question":"Power of convex lens is:","options":["Positive","Negative","Zero","Infinite"],"answer":"Positive"},
+{"q":43,"chapter":"Ray Optics & Optical Instruments","question":"Power of concave lens is:","options":["Negative","Positive","Zero","Infinite"],"answer":"Negative"},
+{"q":44,"chapter":"Ray Optics & Optical Instruments","question":"Refraction at plane surface obeys:","options":["Snell law","Ohm law","Newton law","Gauss law"],"answer":"Snell law"},
+{"q":45,"chapter":"Ray Optics & Optical Instruments","question":"Optical path depends on:","options":["Refractive index","Mass","Charge","Time"],"answer":"Refractive index"},
+
+{"q":46,"chapter":"Ray Optics & Optical Instruments","question":"Lens forms image by:","options":["Refraction","Reflection","Diffraction","Interference"],"answer":"Refraction"},
+{"q":47,"chapter":"Ray Optics & Optical Instruments","question":"Mirror forms image by:","options":["Reflection","Refraction","Diffraction","Interference"],"answer":"Reflection"},
+{"q":48,"chapter":"Ray Optics & Optical Instruments","question":"Angle of deviation in prism depends on:","options":["Refractive index","Mass","Charge","Time"],"answer":"Refractive index"},
+{"q":49,"chapter":"Ray Optics & Optical Instruments","question":"Critical angle increases when refractive index:","options":["Decreases","Increases","Constant","Zero"],"answer":"Decreases"},
+{"q":50,"chapter":"Ray Optics & Optical Instruments","question":"Optics is study of:","options":["Light","Sound","Heat","Electricity"],"answer":"Light"}
+]

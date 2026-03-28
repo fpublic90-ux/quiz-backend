@@ -1,0 +1,61 @@
+[
+{"q":151,"question":"Magnetic field unit is:","options":["Tesla","Volt","Ohm","Coulomb"],"answer":"Tesla"},
+{"q":152,"question":"Force on moving charge in magnetic field:","options":["qvB","qE","mv","F=ma"],"answer":"qvB"},
+{"q":153,"question":"Right hand rule gives:","options":["Direction","Magnitude","Mass","Charge"],"answer":"Direction"},
+{"q":154,"question":"Magnetic field lines form:","options":["Closed loops","Straight lines","Random","Points"],"answer":"Closed loops"},
+{"q":155,"question":"Biot-Savart law gives:","options":["Magnetic field","Electric field","Voltage","Resistance"],"answer":"Magnetic field"},
+
+{"q":156,"question":"Ampere’s law relates:","options":["Field & current","Charge","Mass","Time"],"answer":"Field & current"},
+{"q":157,"question":"Magnetic moment unit:","options":["A·m²","C","V","Ohm"],"answer":"A·m²"},
+{"q":158,"question":"Earth behaves like:","options":["Magnet","Charge","Field","Dipole"],"answer":"Earth behaves like"},
+{"q":159,"question":"Electromagnetic induction discovered by:","options":["Faraday","Newton","Einstein","Maxwell"],"answer":"Faraday"},
+{"q":160,"question":"Induced EMF depends on:","options":["Rate of flux change","Charge","Mass","Time"],"answer":"Rate of flux change"},
+
+{"q":161,"question":"Lenz law gives:","options":["Direction","Magnitude","Mass","Charge"],"answer":"Direction"},
+{"q":162,"question":"Self inductance unit is:","options":["Henry","Volt","Ohm","Ampere"],"answer":"Henry"},
+{"q":163,"question":"Mutual inductance unit is:","options":["Henry","Volt","Ohm","Ampere"],"answer":"Henry"},
+{"q":164,"question":"AC current varies:","options":["Sinusoidally","Linearly","Constant","Random"],"answer":"Sinusoidally"},
+{"q":165,"question":"Frequency unit:","options":["Hz","Volt","Ohm","Ampere"],"answer":"Hz"},
+
+{"q":166,"question":"RMS value of AC:","options":["Effective value","Max value","Min value","Zero"],"answer":"Effective value"},
+{"q":167,"question":"Reactance unit is:","options":["Ohm","Volt","Ampere","Coulomb"],"answer":"Ohm"},
+{"q":168,"question":"Impedance is combination of:","options":["R,L,C","Mass","Charge","Time"],"answer":"R,L,C"},
+{"q":169,"question":"Power factor is:","options":["cosφ","sinφ","tanφ","secφ"],"answer":"cosφ"},
+{"q":170,"question":"Transformer works on:","options":["Mutual induction","Self induction","Resistance","Capacitance"],"answer":"Mutual induction"},
+
+{"q":171,"question":"Step-up transformer increases:","options":["Voltage","Current","Resistance","Charge"],"answer":"Voltage"},
+{"q":172,"question":"Step-down transformer decreases:","options":["Voltage","Current","Charge","Mass"],"answer":"Voltage"},
+{"q":173,"question":"AC cannot be stored because:","options":["Changes direction","Constant","Zero","Infinite"],"answer":"Changes direction"},
+{"q":174,"question":"Inductor opposes change in:","options":["Current","Voltage","Charge","Mass"],"answer":"Current"},
+{"q":175,"question":"Capacitor in AC opposes:","options":["Voltage change","Current change","Mass","Energy"],"answer":"Voltage change"},
+
+{"q":176,"question":"Magnetic flux unit is:","options":["Weber","Tesla","Henry","Volt"],"answer":"Weber"},
+{"q":177,"question":"Faraday law relates:","options":["EMF & flux","Charge","Mass","Time"],"answer":"EMF & flux"},
+{"q":178,"question":"AC generator converts:","options":["Mechanical to electrical","Electrical to mechanical","Heat to energy","Light to energy"],"answer":"Mechanical to electrical"},
+{"q":179,"question":"DC current is:","options":["Constant","Variable","Zero","Infinite"],"answer":"Constant"},
+{"q":180,"question":"Magnetic field inside solenoid is:","options":["Uniform","Zero","Infinite","Variable"],"answer":"Uniform"},
+
+{"q":181,"question":"Force between parallel currents:","options":["Attractive or repulsive","Zero","Infinite","Constant"],"answer":"Attractive or repulsive"},
+{"q":182,"question":"Cyclotron works on:","options":["Magnetic field","Electric field","Gravity","Friction"],"answer":"Magnetic field"},
+{"q":183,"question":"Magnetic dipole moment depends on:","options":["Current & area","Charge","Mass","Time"],"answer":"Current & area"},
+{"q":184,"question":"Torque on current loop depends on:","options":["Magnetic field","Charge","Mass","Time"],"answer":"Magnetic field"},
+{"q":185,"question":"AC frequency in India is:","options":["50 Hz","60 Hz","100 Hz","25 Hz"],"answer":"50 Hz"},
+
+{"q":186,"question":"Power in AC circuit is maximum when:","options":["cosφ=1","cosφ=0","sinφ=1","tanφ=1"],"answer":"cosφ=1"},
+{"q":187,"question":"Inductive reactance depends on:","options":["Frequency","Charge","Mass","Time"],"answer":"Frequency"},
+{"q":188,"question":"Capacitive reactance depends on:","options":["Frequency","Charge","Mass","Time"],"answer":"Frequency"},
+{"q":189,"question":"Impedance unit is:","options":["Ohm","Volt","Ampere","Henry"],"answer":"Ohm"},
+{"q":190,"question":"Transformer losses include:","options":["All","Copper","Iron","Flux"],"answer":"All"},
+
+{"q":191,"question":"AC voltage alternates:","options":["Direction","Magnitude only","Mass","Time"],"answer":"Direction"},
+{"q":192,"question":"Induced EMF direction given by:","options":["Lenz law","Ohm law","Gauss law","Newton law"],"answer":"Lenz law"},
+{"q":193,"question":"Magnetic field due to straight wire:","options":["Circular","Linear","Random","Zero"],"answer":"Circular"},
+{"q":194,"question":"EMI occurs due to:","options":["Changing flux","Constant flux","Charge","Mass"],"answer":"Changing flux"},
+{"q":195,"question":"Self inductance resists:","options":["Change in current","Voltage","Mass","Charge"],"answer":"Change in current"},
+
+{"q":196,"question":"AC waveform is:","options":["Sine wave","Square","Triangle","Random"],"answer":"Sine wave"},
+{"q":197,"question":"Energy loss in transformer reduced by:","options":["Laminations","Heat","Charge","Mass"],"answer":"Laminations"},
+{"q":198,"question":"Magnetic permeability unit is:","options":["H/m","Ohm","Volt","C"],"answer":"H/m"},
+{"q":199,"question":"Inductor stores energy in:","options":["Magnetic field","Electric field","Charge","Heat"],"answer":"Magnetic field"},
+{"q":200,"question":"Capacitor stores energy in:","options":["Electric field","Magnetic field","Charge","Heat"],"answer":"Electric field"}
+]

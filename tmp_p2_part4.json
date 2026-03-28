@@ -1,0 +1,37 @@
+[
+{"q":121,"chapter":"Dual Nature of Radiation & Matter","question":"Einstein’s photoelectric equation is:","options":["hf = W0 + KE","E=mc²","V=IR","F=ma"],"answer":"hf = W0 + KE"},
+{"q":122,"chapter":"Dual Nature of Radiation & Matter","question":"Work function is:","options":["Minimum energy to remove electron","Maximum energy","Kinetic energy","Potential energy"],"answer":"Minimum energy to remove electron"},
+{"q":123,"chapter":"Dual Nature of Radiation & Matter","question":"Photoelectric emission occurs only if frequency is:","options":["Above threshold","Below threshold","Equal to zero","Infinite"],"answer":"Above threshold"},
+{"q":124,"chapter":"Dual Nature of Radiation & Matter","question":"Kinetic energy of emitted electrons depends on:","options":["Frequency","Intensity","Mass","Charge"],"answer":"Frequency"},
+{"q":125,"chapter":"Dual Nature of Radiation & Matter","question":"Intensity of light affects:","options":["Photoelectric current","Stopping potential","Frequency","Work function"],"answer":"Photoelectric current"},
+
+{"q":126,"chapter":"Dual Nature of Radiation & Matter","question":"De Broglie wavelength depends on:","options":["Momentum","Mass","Charge","Time"],"answer":"Momentum"},
+{"q":127,"chapter":"Dual Nature of Radiation & Matter","question":"For electron, wavelength decreases with:","options":["Increase in momentum","Decrease in momentum","Mass","Charge"],"answer":"Increase in momentum"},
+{"q":128,"chapter":"Dual Nature of Radiation & Matter","question":"Dual nature means:","options":["Wave and particle nature","Only wave","Only particle","Mass and energy"],"answer":"Wave and particle nature"},
+{"q":129,"chapter":"Dual Nature of Radiation & Matter","question":"Photon has:","options":["Energy and momentum","Mass only","Charge only","Energy only"],"answer":"Energy and momentum"},
+{"q":130,"chapter":"Dual Nature of Radiation & Matter","question":"Stopping potential is used to measure:","options":["Maximum kinetic energy","Frequency","Intensity","Mass"],"answer":"Maximum kinetic energy"},
+
+{"q":131,"chapter":"Atoms","question":"Bohr model explains atom of:","options":["Hydrogen","Helium","Oxygen","Nitrogen"],"answer":"Hydrogen"},
+{"q":132,"chapter":"Electron revolves in:","options":["Fixed orbits","Random paths","Straight lines","Ellipses only"],"answer":"Fixed orbits"},
+{"q":133,"chapter":"Angular momentum in Bohr model is:","options":["Quantized","Continuous","Zero","Infinite"],"answer":"Quantized"},
+{"q":134,"chapter":"Energy levels are:","options":["Discrete","Continuous","Infinite","Zero"],"answer":"Discrete"},
+{"q":135,"chapter":"Ground state corresponds to:","options":["Lowest energy","Highest energy","Zero energy","Infinite"],"answer":"Lowest energy"},
+
+{"q":136,"chapter":"Atoms","question":"Excited state has energy:","options":["Higher than ground state","Lower than ground state","Zero","Constant"],"answer":"Higher than ground state"},
+{"q":137,"chapter":"Atoms","question":"Spectral lines are due to:","options":["Electron transitions","Mass change","Charge change","Temperature"],"answer":"Electron transitions"},
+{"q":138,"chapter":"Atoms","question":"Photon emitted when electron:","options":["Falls to lower orbit","Moves to higher orbit","Stops","Moves randomly"],"answer":"Falls to lower orbit"},
+{"q":139,"chapter":"Atoms","question":"Photon absorbed when electron:","options":["Moves to higher orbit","Falls down","Stops","Moves randomly"],"answer":"Moves to higher orbit"},
+{"q":140,"chapter":"Atoms","question":"Energy difference between levels gives:","options":["Photon energy","Mass","Charge","Time"],"answer":"Photon energy"},
+
+{"q":141,"chapter":"Atoms","question":"Bohr radius depends on:","options":["Quantum number","Mass","Charge","Time"],"answer":"Quantum number"},
+{"q":142,"chapter":"Atoms","question":"Energy of nth level is proportional to:","options":["1/n²","n²","n","1/n"],"answer":"1/n²"},
+{"q":143,"chapter":"Atoms","question":"Higher orbit means:","options":["Higher energy","Lower energy","Zero energy","Same energy"],"answer":"Higher energy"},
+{"q":144,"chapter":"Atoms","question":"Ionization energy is:","options":["Energy to remove electron","Energy to add electron","Mass","Charge"],"answer":"Energy to remove electron"},
+{"q":145,"chapter":"Atoms","question":"Electron in ground state has:","options":["Minimum energy","Maximum energy","Zero","Infinite"],"answer":"Minimum energy"},
+
+{"q":146,"chapter":"Atoms","question":"Bohr model is valid for:","options":["Hydrogen-like atoms","All atoms","Molecules","Nuclei"],"answer":"Hydrogen-like atoms"},
+{"q":147,"chapter":"Atoms","question":"Electron orbit is:","options":["Circular","Elliptical","Random","Straight"],"answer":"Circular"},
+{"q":148,"chapter":"Atoms","question":"Energy emitted equals:","options":["Difference of levels","Sum of levels","Product","Zero"],"answer":"Difference of levels"},
+{"q":149,"chapter":"Atoms","question":"Spectral series belongs to:","options":["Hydrogen spectrum","Nucleus","Electron","Photon"],"answer":"Hydrogen spectrum"},
+{"q":150,"chapter":"Atoms","question":"Quantum number n determines:","options":["Energy level","Mass","Charge","Time"],"answer":"Energy level"}
+]

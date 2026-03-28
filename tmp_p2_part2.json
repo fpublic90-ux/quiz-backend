@@ -1,0 +1,61 @@
+[
+{"q":51,"chapter":"Wave Optics","question":"Huygens principle states that every point on wavefront acts as:","options":["Source of wavelets","Mass","Charge","Energy"],"answer":"Source of wavelets"},
+{"q":52,"chapter":"Wave optics explains:","options":["Wave nature of light","Particle nature","Mass","Charge"],"answer":"Wave nature of light"},
+{"q":53,"chapter":"Interference is due to:","options":["Superposition","Reflection","Refraction","Diffraction"],"answer":"Superposition"},
+{"q":54,"chapter":"Constructive interference occurs when phase difference is:","options":["0 or 2π","π","π/2","3π/2"],"answer":"0 or 2π"},
+{"q":55,"chapter":"Destructive interference occurs when phase difference is:","options":["π","0","2π","4π"],"answer":"π"},
+
+{"q":56,"chapter":"Young’s double slit experiment proves:","options":["Wave nature","Particle nature","Mass","Charge"],"answer":"Wave nature"},
+{"q":57,"chapter":"Fringe width is proportional to:","options":["Wavelength","Mass","Charge","Time"],"answer":"Wavelength"},
+{"q":58,"chapter":"Fringe width formula is:","options":["λD/d","d/λ","D/λ","λ/d"],"answer":"λD/d"},
+{"q":59,"chapter":"Coherent sources have:","options":["Same phase","Different phase","Random phase","Zero phase"],"answer":"Same phase"},
+{"q":60,"chapter":"Path difference for bright fringe is:","options":["nλ","λ/2","(2n+1)λ/2","π"],"answer":"nλ"},
+
+{"q":61,"chapter":"Path difference for dark fringe is:","options":["(2n+1)λ/2","nλ","λ","0"],"answer":"(2n+1)λ/2"},
+{"q":62,"chapter":"Diffraction occurs when aperture size is:","options":["Comparable to wavelength","Large","Infinite","Zero"],"answer":"Comparable to wavelength"},
+{"q":63,"chapter":"Central maximum in diffraction is:","options":["Bright","Dark","Zero","Infinite"],"answer":"Bright"},
+{"q":64,"chapter":"Diffraction pattern consists of:","options":["Bright and dark fringes","Only bright","Only dark","None"],"answer":"Bright and dark fringes"},
+{"q":65,"chapter":"Polarization proves light is:","options":["Transverse wave","Longitudinal wave","Stationary wave","None"],"answer":"Transverse wave"},
+
+{"q":66,"chapter":"Unpolarized light vibrates in:","options":["All directions","One direction","Two directions","None"],"answer":"All directions"},
+{"q":67,"chapter":"Polarized light vibrates in:","options":["One plane","All planes","Zero plane","Two planes"],"answer":"One plane"},
+{"q":68,"chapter":"Malus law relates:","options":["Intensity and angle","Mass","Charge","Time"],"answer":"Intensity and angle"},
+{"q":69,"chapter":"Intensity is proportional to:","options":["Amplitude²","Amplitude","Frequency","Time"],"answer":"Amplitude²"},
+{"q":70,"chapter":"Wavefront is surface of:","options":["Constant phase","Constant mass","Charge","Time"],"answer":"Constant phase"},
+
+{"q":71,"chapter":"Plane wavefront is from:","options":["Distant source","Near source","Point source","Line source"],"answer":"Distant source"},
+{"q":72,"chapter":"Spherical wavefront is from:","options":["Point source","Plane source","Line source","None"],"answer":"Point source"},
+{"q":73,"chapter":"Speed of light in vacuum is:","options":["3×10^8 m/s","3×10^6","3×10^5","3×10^7"],"answer":"3×10^8 m/s"},
+{"q":74,"chapter":"Refractive index is:","options":["c/v","v/c","cv","c+v"],"answer":"c/v"},
+{"q":75,"chapter":"Interference fringes are:","options":["Equally spaced","Random","Unequal","Zero"],"answer":"Equally spaced"},
+
+{"q":76,"chapter":"Diffraction causes:","options":["Spreading of light","Reflection","Refraction","Absorption"],"answer":"Spreading of light"},
+{"q":77,"chapter":"Coherence means:","options":["Fixed phase relation","No phase","Random","Infinite"],"answer":"Fixed phase relation"},
+{"q":78,"chapter":"Fringe width increases with:","options":["Distance D","Slit width","Mass","Charge"],"answer":"Distance D"},
+{"q":79,"chapter":"Fringe width decreases with:","options":["Slit separation","Distance","Mass","Charge"],"answer":"Slit separation"},
+{"q":80,"chapter":"Diffraction strongest when slit is:","options":["Narrow","Wide","Infinite","Zero"],"answer":"Narrow"},
+
+{"q":81,"chapter":"Polarizer produces:","options":["Plane polarized light","Random light","Circular light","Zero"],"answer":"Plane polarized light"},
+{"q":82,"chapter":"Analyzer is used to:","options":["Detect polarization","Create light","Reflect light","Absorb light"],"answer":"Detect polarization"},
+{"q":83,"chapter":"Interference disappears if sources are:","options":["Incoherent","Coherent","Bright","Dark"],"answer":"Incoherent"},
+{"q":84,"chapter":"Wavelength unit is:","options":["Meter","Second","Volt","Ohm"],"answer":"Meter"},
+{"q":85,"chapter":"Frequency unit is:","options":["Hz","Volt","Ohm","Ampere"],"answer":"Hz"},
+
+{"q":86,"chapter":"Wave speed is given by:","options":["fλ","λ/f","f/λ","1/f"],"answer":"fλ"},
+{"q":87,"chapter":"Diffraction depends on:","options":["Wavelength","Mass","Charge","Time"],"answer":"Wavelength"},
+{"q":88,"chapter":"Interference depends on:","options":["Superposition","Mass","Charge","Time"],"answer":"Superposition"},
+{"q":89,"chapter":"Wave optics explains:","options":["Interference and diffraction","Charge","Mass","Time"],"answer":"Interference and diffraction"},
+{"q":90,"chapter":"Polarization occurs only in:","options":["Transverse waves","Longitudinal waves","Both","None"],"answer":"Transverse waves"},
+
+{"q":91,"chapter":"Light behaves as wave in:","options":["Interference","Photoelectric effect","Compton effect","None"],"answer":"Interference"},
+{"q":92,"chapter":"Path difference causes:","options":["Fringes","Mass","Charge","Time"],"answer":"Fringes"},
+{"q":93,"chapter":"Coherent sources must have same:","options":["Frequency","Mass","Charge","Time"],"answer":"Frequency"},
+{"q":94,"chapter":"Diffraction pattern central maxima is:","options":["Widest","Narrowest","Zero","Infinite"],"answer":"Widest"},
+{"q":95,"chapter":"Secondary wavelets travel:","options":["Forward","Backward","Random","Circular"],"answer":"Forward"},
+
+{"q":96,"chapter":"Wavefront advances according to:","options":["Huygens principle","Ohm law","Newton law","Gauss law"],"answer":"Huygens principle"},
+{"q":97,"chapter":"Interference maxima condition is:","options":["nλ","λ/2","π","Zero"],"answer":"nλ"},
+{"q":98,"chapter":"Interference minima condition is:","options":["(2n+1)λ/2","nλ","λ","Zero"],"answer":"(2n+1)λ/2"},
+{"q":99,"chapter":"Diffraction increases when slit width:","options":["Decreases","Increases","Constant","Zero"],"answer":"Decreases"},
+{"q":100,"chapter":"Wave optics is based on:","options":["Wave theory","Particle theory","Quantum theory","None"],"answer":"Wave theory"}
+]

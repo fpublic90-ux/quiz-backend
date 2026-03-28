@@ -1,0 +1,61 @@
+[
+{"q":51,"chapter":"ദേശീയ വരുമാനം കണക്കാക്കൽ","question":"ദേശീയ വരുമാനം എന്താണ്?","options":["രാജ്യത്തിന്റെ മൊത്ത വരുമാനം","വ്യക്തി വരുമാനം","ഇല്ല","ശൂനം"],"answer":"രാജ്യത്തിന്റെ മൊത്ത വരുമാനം"},
+{"q":52,"chapter":"ദേശീയ വരുമാനം കണക്കാക്കൽ","question":"GDP എന്താണ്?","options":["മൊത്ത ആഭ്യന്തര ഉൽപ്പാദനം","ദേശീയ വരുമാനം","ഇല്ല","ശൂനം"],"answer":"മൊത്ത ആഭ്യന്തര ഉൽപ്പാദനം"},
+{"q":53,"chapter":"ദേശീയ വരുമാനം കണക്കാക്കൽ","question":"GNP എന്താണ്?","options":["മൊത്ത ദേശീയ ഉൽപ്പാദനം","GDP","ഇല്ല","ശൂനം"],"answer":"മൊത്ത ദേശീയ ഉൽപ്പാദനം"},
+{"q":54,"chapter":"ദേശീയ വരുമാനം കണക്കാക്കൽ","question":"NNP എന്താണ്?","options":["ശുദ്ധ ദേശീയ ഉൽപ്പാദനം","GDP","ഇല്ല","ശൂനം"],"answer":"ശുദ്ധ ദേശീയ ഉൽപ്പാദനം"},
+{"q":55,"chapter":"ദേശീയ വരുമാനം കണക്കാക്കൽ","question":"Per capita income എന്താണ്?","options":["തലശ്ശരി വരുമാനം","ദേശീയ വരുമാനം","ഇല്ല","ശൂനം"],"answer":"തലശ്ശരി വരുമാനം"},
+
+{"q":56,"chapter":"ദേശീയ വരുമാനം കണക്കാക്കൽ","question":"National income measures:","options":["ആകെ വരുമാനം","വ്യക്തി വരുമാനം","ഇല്ല","ശൂനം"],"answer":"ആകെ വരുമാനം"},
+{"q":57,"chapter":"ദേശീയ വരുമാനം കണക്കാക്കൽ","question":"GDP includes domestic production:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":58,"chapter":"ദേശീയ വരുമാനം കണക്കാക്കൽ","question":"GNP includes foreign income:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":59,"chapter":"ദേശീയ വരുമാനം കണക്കാക്കൽ","question":"Depreciation എന്താണ്?","options":["ക്ഷയം","ലാഭം","ഇല്ല","ശൂനം"],"answer":"ക്ഷയം"},
+{"q":60,"chapter":"ദേശീയ വരുമാനം കണക്കാക്കൽ","question":"Net = Gross – Depreciation ആണോ?","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+
+{"q":61,"chapter":"ദേശീയ വരുമാനം കണക്കാക്കൽ","question":"Market price includes taxes:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":62,"chapter":"ദേശീയ വരുമാനം കണക്കാക്കൽ","question":"Factor cost excludes taxes:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":63,"chapter":"ദേശീയ വരുമാനം കണക്കാക്കൽ","question":"Indirect tax എന്താണ്?","options":["അപ്രത്യക്ഷ നികുതി","പ്രത്യക്ഷ നികുതി","ഇല്ല","ശൂനം"],"answer":"അപ്രത്യക്ഷ നികുതി"},
+{"q":64,"chapter":"ദേശീയ വരുമാനം കണക്കാക്കൽ","question":"Subsidy എന്താണ്?","options":["സഹായധനം","നികുതി","ഇല്ല","ശൂനം"],"answer":"സഹായധനം"},
+{"q":65,"chapter":"ദേശീയ വരുമാനം കണക്കാക്കൽ","question":"GDP at market price includes subsidy?","options":["ഇല്ല","അതെ","കുറച്ച്","അറിയില്ല"],"answer":"ഇല്ല"},
+
+{"q":66,"chapter":"ദേശീയ വരുമാനം കണക്കാക്കൽ","question":"Income method measures income:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":67,"chapter":"ദേശീയ വരുമാനം കണക്കാക്കൽ","question":"Expenditure method measures spending:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":68,"chapter":"ദേശീയ വരുമാനം കണക്കാക്കൽ","question":"Output method measures production:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":69,"chapter":"ദേശീയ വരുമാനം കണക്കാക്കൽ","question":"Triple methods used:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":70,"chapter":"ദേശീയ വരുമാനം കണക്കാക്കൽ","question":"Value added concept important ആണോ?","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+
+{"q":71,"chapter":"ദേശീയ വരുമാനം കണക്കാക്കൽ","question":"Double counting avoid ചെയ്യണോ?","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":72,"chapter":"ദേശീയ വരുമാനം കണക്കാക്കൽ","question":"Intermediate goods included ആണോ?","options":["ഇല്ല","അതെ","കുറച്ച്","അറിയില്ല"],"answer":"ഇല്ല"},
+{"q":73,"chapter":"ദേശീയ വരുമാനം കണക്കാക്കൽ","question":"Final goods included ആണോ?","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":74,"chapter":"ദേശീയ വരുമാനം കണക്കാക്കൽ","question":"Consumption expenditure included ആണോ?","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":75,"chapter":"ദേശീയ വരുമാനം കണക്കാക്കൽ","question":"Investment expenditure included ആണോ?","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+
+{"q":76,"chapter":"ദേശീയ വരുമാനം കണക്കാക്കൽ","question":"Government expenditure included ആണോ?","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":77,"chapter":"ദേശീയ വരുമാനം കണക്കാക്കൽ","question":"Exports included ആണോ?","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":78,"chapter":"ദേശീയ വരുമാനം കണക്കാക്കൽ","question":"Imports deducted ആണോ?","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":79,"chapter":"ദേശീയ വരുമാനം കണക്കാക്കൽ","question":"NI = GDP + NFIA ആണോ?","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":80,"chapter":"ദേശീയ വരുമാനം കണക്കാക്കൽ","question":"NFIA എന്താണ്?","options":["വിദേശ വരുമാന വ്യത്യാസം","GDP","ഇല്ല","ശൂനം"],"answer":"വിദേശ വരുമാന വ്യത്യാസം"},
+
+{"q":81,"chapter":"ദേശീയ വരുമാനം കണക്കാക്കൽ","question":"Personal income എന്താണ്?","options":["വ്യക്തിഗത വരുമാനം","ദേശീയ വരുമാനം","ഇല്ല","ശൂനം"],"answer":"വ്യക്തിഗത വരുമാനം"},
+{"q":82,"chapter":"ദേശീയ വരുമാനം കണക്കാക്കൽ","question":"Disposable income എന്താണ്?","options":["ഉപയോഗിക്കാവുന്ന വരുമാനം","ലാഭം","ഇല്ല","ശൂനം"],"answer":"ഉപയോഗിക്കാവുന്ന വരുമാനം"},
+{"q":83,"chapter":"ദേശീയ വരുമാനം കണക്കാക്കൽ","question":"Savings = Income – Consumption ആണോ?","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":84,"chapter":"ദേശീയ വരുമാനം കണക്കാക്കൽ","question":"NI measures economic performance:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":85,"chapter":"ദേശീയ വരുമാനം കണക്കാക്കൽ","question":"GDP growth indicates development:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+
+{"q":86,"chapter":"ദേശീയ വരുമാനം കണക്കാക്കൽ","question":"Real GDP adjusts inflation:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":87,"chapter":"ദേശീയ വരുമാനം കണക്കാക്കൽ","question":"Nominal GDP ignores inflation:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":88,"chapter":"ദേശീയ വരുമാനം കണക്കാക്കൽ","question":"Price index used for real GDP:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":89,"chapter":"ദേശീയ വരുമാനം കണക്കാക്കൽ","question":"National income important indicator ആണോ?","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":90,"chapter":"ദേശീയ വരുമാനം കണക്കാക്കൽ","question":"Economic growth measured by GDP:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+
+{"q":91,"chapter":"ദേശീയ വരുമാനം കണക്കാക്കൽ","question":"Income method includes wages:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":92,"chapter":"ദേശീയ വരുമാനം കണക്കാക്കൽ","question":"Income method includes rent:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":93,"chapter":"ദേശീയ വരുമാനം കണക്കാക്കൽ","question":"Income method includes profit:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":94,"chapter":"ദേശീയ വരുമാനം കണക്കാക്കൽ","question":"Income method includes interest:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":95,"chapter":"ദേശീയ വരുമാനം കണക്കാക്കൽ","question":"Expenditure method includes consumption:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+
+{"q":96,"chapter":"ദേശീയ വരുമാനം കണക്കാക്കൽ","question":"Expenditure method includes investment:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":97,"chapter":"ദേശീയ വരുമാനം കണക്കാക്കൽ","question":"Expenditure method includes government spending:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":98,"chapter":"ദേശീയ വരുമാനം കണക്കാക്കൽ","question":"Expenditure method includes net exports:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":99,"chapter":"ദേശീയ വരുമാനം കണക്കാക്കൽ","question":"Output method uses value added:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":100,"chapter":"ദേശീയ വരുമാനം കണക്കാക്കൽ","question":"National income accounting important ആണോ?","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"}
+]

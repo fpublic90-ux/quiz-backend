@@ -1,0 +1,31 @@
+[
+{"q":126,"question":"Superconductivity occurs at:","options":["Low temperature","High temperature","Room temperature","Infinite temperature"],"answer":"Low temperature"},
+{"q":127,"question":"Resistivity of a superconductor is:","options":["Zero","Infinite","High","Variable"],"answer":"Zero"},
+{"q":128,"question":"Drift velocity depends on:","options":["Electric field","Mass","Temperature only","Time"],"answer":"Electric field"},
+{"q":129,"question":"Ohm’s law is valid for:","options":["Ohmic materials","All materials","Insulators only","Semiconductors only"],"answer":"Ohmic materials"},
+{"q":130,"question":"Electric current direction is:","options":["Opposite to electron flow","Same as electron flow","Random","Circular"],"answer":"Opposite to electron flow"},
+
+{"q":131,"question":"Resistivity unit is:","options":["Ohm-meter","Ohm","Volt","Ampere"],"answer":"Ohm-meter"},
+{"q":132,"question":"Resistance depends on temperature because of:","options":["Electron scattering","Mass change","Charge loss","Time"],"answer":"Electron scattering"},
+{"q":133,"question":"Current density is proportional to:","options":["Electric field","Mass","Charge","Time"],"answer":"Electric field"},
+{"q":134,"question":"Microscopic Ohm’s law is:","options":["J = σE","V=IR","P=VI","Q=CV"],"answer":"J = σE"},
+{"q":135,"question":"Conductivity is reciprocal of:","options":["Resistivity","Resistance","Voltage","Current"],"answer":"Resistivity"},
+
+{"q":136,"question":"Combination of resistors in series has:","options":["Same current","Same voltage","Zero current","Infinite voltage"],"answer":"Same current"},
+{"q":137,"question":"Combination of resistors in parallel has:","options":["Same voltage","Same current","Zero voltage","Infinite current"],"answer":"Same voltage"},
+{"q":138,"question":"Equivalent resistance in series is:","options":["Sum of resistances","Inverse sum","Product","Zero"],"answer":"Sum of resistances"},
+{"q":139,"question":"Equivalent resistance in parallel is:","options":["Inverse sum","Sum","Product","Zero"],"answer":"Inverse sum"},
+{"q":140,"question":"Power dissipated in resistor is:","options":["I²R","V/I","Q/V","R/I"],"answer":"I²R"},
+
+{"q":141,"question":"Heating effect of current is based on:","options":["Joule’s law","Ohm’s law","Gauss law","Faraday law"],"answer":"Joule’s law"},
+{"q":142,"question":"Electrical energy is given by:","options":["VIt","IR","V/I","I/R"],"answer":"VIt"},
+{"q":143,"question":"Cell EMF depends on:","options":["Nature of electrolyte","Wire length","Resistance","Time"],"answer":"Nature of electrolyte"},
+{"q":144,"question":"Internal resistance increases with:","options":["Length of electrolyte","Area","Charge","Voltage"],"answer":"Length of electrolyte"},
+{"q":145,"question":"Internal resistance decreases with:","options":["Area","Length","Charge","Voltage"],"answer":"Area"},
+
+{"q":146,"question":"Terminal voltage is maximum when:","options":["Current is zero","Current is max","Resistance is zero","Voltage is zero"],"answer":"Current is zero"},
+{"q":147,"question":"Short circuit causes:","options":["High current","Low current","Zero current","No effect"],"answer":"High current"},
+{"q":148,"question":"Kirchhoff’s laws are used for:","options":["Complex circuits","Simple circuits","Fields","Waves"],"answer":"Complex circuits"},
+{"q":149,"question":"Wheatstone bridge is used to measure:","options":["Unknown resistance","Voltage","Current","Power"],"answer":"Unknown resistance"},
+{"q":150,"question":"Meter bridge works on:","options":["Wheatstone principle","Ohm law","Gauss law","Faraday law"],"answer":"Wheatstone principle"}
+]

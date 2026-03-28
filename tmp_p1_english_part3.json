@@ -1,0 +1,31 @@
+[
+{"q":101,"question":"Electric current is flow of:","options":["Charge","Mass","Energy","Force"],"answer":"Charge"},
+{"q":102,"question":"SI unit of current is:","options":["Ampere","Volt","Ohm","Coulomb"],"answer":"Ampere"},
+{"q":103,"question":"Current is rate of flow of:","options":["Charge","Mass","Time","Energy"],"answer":"Charge"},
+{"q":104,"question":"Ohm’s law states V is proportional to:","options":["I","R","Q","T"],"answer":"I"},
+{"q":105,"question":"Resistance unit is:","options":["Ohm","Volt","Ampere","Coulomb"],"answer":"Ohm"},
+
+{"q":106,"question":"Conductance is reciprocal of:","options":["Resistance","Voltage","Current","Charge"],"answer":"Resistance"},
+{"q":107,"question":"Resistivity depends on:","options":["Material","Length","Area","Voltage"],"answer":"Material"},
+{"q":108,"question":"Resistance increases with:","options":["Length","Area","Charge","Time"],"answer":"Length"},
+{"q":109,"question":"Resistance decreases with:","options":["Area","Length","Mass","Charge"],"answer":"Area"},
+{"q":110,"question":"Temperature increases resistance in:","options":["Metals","Insulators","Semiconductors","Vacuum"],"answer":"Metals"},
+
+{"q":111,"question":"Drift velocity is:","options":["Average velocity","Instant velocity","Max velocity","Zero"],"answer":"Average velocity"},
+{"q":112,"question":"Current density unit is:","options":["A/m²","V","Ohm","C"],"answer":"A/m²"},
+{"q":113,"question":"Mobility depends on:","options":["Drift velocity","Mass","Time","Energy"],"answer":"Drift velocity"},
+{"q":114,"question":"Kirchhoff’s law deals with:","options":["Circuits","Fields","Energy","Mass"],"answer":"Circuits"},
+{"q":115,"question":"Loop rule is based on:","options":["Energy conservation","Charge conservation","Mass conservation","Momentum"],"answer":"Energy conservation"},
+
+{"q":116,"question":"Junction rule based on:","options":["Charge conservation","Energy","Mass","Force"],"answer":"Charge conservation"},
+{"q":117,"question":"EMF is:","options":["Energy per charge","Charge per energy","Power","Voltage"],"answer":"Energy per charge"},
+{"q":118,"question":"Internal resistance is resistance of:","options":["Source","Wire","Load","Circuit"],"answer":"Source"},
+{"q":119,"question":"Terminal voltage equals:","options":["EMF - IR","IR","V+I","R/I"],"answer":"EMF - IR"},
+{"q":120,"question":"Power formula is:","options":["VI","V/I","I/V","R/I"],"answer":"VI"},
+
+{"q":121,"question":"Electrical energy unit is:","options":["Joule","Volt","Ohm","Ampere"],"answer":"Joule"},
+{"q":122,"question":"Watt is unit of:","options":["Power","Energy","Current","Charge"],"answer":"Power"},
+{"q":123,"question":"Electric power formula also:","options":["I²R","V/I","Q/V","R/I"],"answer":"I²R"},
+{"q":124,"question":"Resistance of wire depends on:","options":["Length & area","Charge","Mass","Time"],"answer":"Length & area"},
+{"q":125,"question":"Superconductors have resistance:","options":["Zero","Max","Infinite","Variable"],"answer":"Zero"}
+]

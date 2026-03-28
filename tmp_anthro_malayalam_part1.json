@@ -1,0 +1,61 @@
+[
+{"q":1,"chapter":"നരവംശശാസ്ത്ര ഗവേഷണരീതികളും സങ്കേതങ്ങളും (Anthropological Research Methods and Techniques)","question":"നരവംശശാസ്ത്രം എന്താണ് പഠിക്കുന്നത്?","options":["മനുഷ്യനും സംസ്കാരവും","സസ്യങ്ങൾ","മൃഗങ്ങൾ","പാറകൾ"],"answer":"മനുഷ്യനും സംസ്കാരവും"},
+{"q":2,"chapter":"നരവംശശാസ്ത്ര ഗവേഷണരീതികളും സങ്കേതങ്ങളും (Anthropological Research Methods and Techniques)","question":"Anthropology എന്ന പദം ഏത് ഭാഷയിൽ നിന്നാണ് വന്നത്?","options":["ഗ്രീക്ക്","ലാറ്റിൻ","ഇംഗ്ലീഷ്","ഫ്രഞ്ച്"],"answer":"ഗ്രീക്ക്"},
+{"q":3,"chapter":"നരവംശശാസ്ത്ര ഗവേഷണരീതികളും സങ്കേതങ്ങളും (Anthropological Research Methods and Techniques)","question":"Anthropos എന്നതിന് അർത്ഥം:","options":["മനുഷ്യൻ","ജ്ഞാനം","ഭൂമി","സമൂഹം"],"answer":"മനുഷ്യൻ"},
+{"q":4,"chapter":"നരവംശശാസ്ത്ര ഗവേഷണരീതികളും സങ്കേതങ്ങളും (Anthropological Research Methods and Techniques)","question":"Logos എന്നതിന് അർത്ഥം:","options":["പഠനം","ഭക്ഷണം","ചലനം","ശ്വാസം"],"answer":"പഠനം"},
+{"q":5,"chapter":"നരവംശശാസ്ത്ര ഗവേഷണരീതികളും സങ്കേതങ്ങളും (Anthropological Research Methods and Techniques)","question":"ഗവേഷണം എന്നത് എന്താണ്?","options":["ക്രമബദ്ധമായ പഠനം","ഭക്ഷണം","ശ്വാസം","ചലനം"],"answer":"ക്രമബദ്ധമായ പഠനം"},
+
+{"q":6,"chapter":"നരവംശശാസ്ത്ര ഗവേഷണരീതികളും സങ്കേതങ്ങളും (Anthropological Research Methods and Techniques)","question":"ഹൈപ്പോത്തസിസ് എന്നത്:","options":["ധാരണ","ഫലം","ഡാറ്റ","റിപ്പോർട്ട്"],"answer":"ധാരണ"},
+{"q":7,"chapter":"നരവംശശാസ്ത്ര ഗവേഷണരീതികളും സങ്കേതങ്ങളും (Anthropological Research Methods and Techniques)","question":"ഡാറ്റ എന്നത്:","options":["വിവരം","ശ്വാസം","ഭക്ഷണം","ഇല്ല"],"answer":"വിവരം"},
+{"q":8,"chapter":"നരവംശശാസ്ത്ര ഗവേഷണരീതികളും സങ്കേതങ്ങളും (Anthropological Research Methods and Techniques)","question":"പ്രൈമറി ഡാറ്റ:","options":["നേരിട്ട് ശേഖരിച്ചത്","മുൻ വിവരങ്ങൾ","ഇല്ല","ശൂനം"],"answer":"നേരിട്ട് ശേഖരിച്ചത്"},
+{"q":9,"chapter":"നരവംശശാസ്ത്ര ഗവേഷണരീതികളും സങ്കേതങ്ങളും (Anthropological Research Methods and Techniques)","question":"സെക്കൻഡറി ഡാറ്റ:","options":["മുൻ ശേഖരിച്ച വിവരം","പുതിയത്","ഇല്ല","ശൂനം"],"answer":"മുൻ ശേഖരിച്ച വിവരം"},
+{"q":10,"chapter":"നരവംശശാസ്ത്ര ഗവേഷണരീതികളും സങ്കേതങ്ങളും (Anthropological Research Methods and Techniques)","question":"ഒബ്ജക്ടിവിറ്റി:","options":["പക്ഷപാതമില്ലായ്മ","പക്ഷപാതം","ഇല്ല","ശൂനം"],"answer":"പക്ഷപാതമില്ലായ്മ"},
+
+{"q":11,"chapter":"നരവംശശാസ്ത്ര ഗവേഷണരീതികളും സങ്കേതങ്ങളും (Anthropological Research Methods and Techniques)","question":"സബ്ജക്ടിവിറ്റി:","options":["സ്വകാര്യാഭിപ്രായം","ശാസ്ത്രീയം","ഇല്ല","ശൂനം"],"answer":"സ്വകാര്യാഭിപ്രായം"},
+{"q":12,"chapter":"നരവംശശാസ്ത്ര ഗവേഷണരീതികളും സങ്കേതങ്ങളും (Anthropological Research Methods and Techniques)","question":"ഫീൽഡ് വർക്ക്:","options":["പ്രായോഗിക പഠനം","ക്ലാസ് പഠനം","ഇല്ല","ശൂനം"],"answer":"പ്രായോഗിക പഠനം"},
+{"q":13,"chapter":"നരവംശശാസ്ത്ര ഗവേഷണരീതികളും സങ്കേതങ്ങളും (Anthropological Research Methods and Techniques)","question":"എഥ്നോഗ്രാഫി:","options":["സംസ്കാര വിവരണം","DNA പഠനം","ഇല്ല","ശൂനം"],"answer":"സംസ്കാര വിവരണം"},
+{"q":14,"chapter":"നരവംശശാസ്ത്ര ഗവേഷണരീതികളും സങ്കേതങ്ങളും (Anthropological Research Methods and Techniques)","question":"ഒബ്സർവേഷൻ:","options":["നിരീക്ഷണം","ഭക്ഷണം","ശ്വാസം","ഇല്ല"],"answer":"നിരീക്ഷണം"},
+{"q":15,"chapter":"നരവംശശാസ്ത്ര ഗവേഷണരീതികളും സങ്കേതങ്ങളും (Anthropological Research Methods and Techniques)","question":"പാർട്ടിസിപ്പന്റ് ഒബ്സർവേഷൻ:","options":["പങ്കെടുത്ത് നിരീക്ഷണം","പങ്കെടുപ്പില്ല","ഇല്ല","ശൂനം"],"answer":"പങ്കെടുത്ത് നിരീക്ഷണം"},
+
+{"q":16,"chapter":"നരവംശശാസ്ത്ര ഗവേഷണരീതികളും സങ്കേതങ്ങളും (Anthropological Research Methods and Techniques)","question":"നോൺ പാർട്ടിസിപ്പന്റ് ഒബ്സർവേഷൻ:","options":["പങ്കെടുപ്പില്ലാത്ത നിരീക്ഷണം","പങ്കെടുപ്പ്","ഇല്ല","ശൂനം"],"answer":"പങ്കെടുപ്പില്ലാത്ത നിരീക്ഷണം"},
+{"q":17,"chapter":"നരവംശശാസ്ത്ര ഗവേഷണരീതികളും സങ്കേതങ്ങളും (Anthropological Research Methods and Techniques)","question":"ഇന്റർവ്യൂ:","options":["മുഖാമുഖം ചോദ്യം","ഭക്ഷണം","ശ്വാസം","ഇല്ല"],"answer":"മുഖാമുഖം ചോദ്യം"},
+{"q":18,"chapter":"നരവംശശാസ്ത്ര ഗവേഷണരീതികളും സങ്കേതങ്ങളും (Anthropological Research Methods and Techniques)","question":"ക്വഷ്ണെയർ:","options":["ചോദ്യപത്രം","ഉത്തരം","ഇല്ല","ശൂനം"],"answer":"ചോദ്യപത്രം"},
+{"q":19,"chapter":"നരവംശശാസ്ത്ര ഗവേഷണരീതികളും സങ്കേതങ്ങളും (Anthropological Research Methods and Techniques)","question":"സർവേ:","options":["വിവരശേഖരണം","ശ്വാസം","ഭക്ഷണം","ഇല്ല"],"answer":"വിവരശേഖരണം"},
+{"q":20,"chapter":"നരവംശശാസ്ത്ര ഗവേഷണരീതികളും സങ്കേതങ്ങളും (Anthropological Research Methods and Techniques)","question":"സാമ്പിൾ:","options":["പ്രതിനിധി ഭാഗം","മുഴുവൻ","ഇല്ല","ശൂനം"],"answer":"പ്രതിനിധി ഭാഗം"},
+
+{"q":21,"chapter":"സാംസ്കാരിക നരവംശശാസ്ത്ര സിദ്ധാന്തങ്ങൾ (Cultural Anthropological Theories)","question":"സംസ്കാരം എന്താണ്?","options":["ജീവിതരീതി","ശ്വാസം","ഭക്ഷണം","ചലനം"],"answer":"ജീവിതരീതി"},
+{"q":22,"chapter":"സാംസ്കാരിക നരവംശശാസ്ത്ര സിദ്ധാന്തങ്ങൾ (Cultural Anthropological Theories)","question":"സംസ്കാരത്തിന്റെ ഏറ്റവും ചെറിയ ഘടകം:","options":["ട്രെയ്റ്റ്","കോംപ്ലെക്സ്","പാറ്റേൺ","സിസ്റ്റം"],"answer":"ട്രെയ്റ്റ്"},
+{"q":23,"chapter":"സാംസ്കാരിക നരവംശശാസ്ത്ര സിദ്ധാന്തങ്ങൾ (Cultural Anthropological Theories)","question":"സംസ്കാര സമുച്ചയം:","options":["കോംപ്ലെക്സ്","ട്രെയ്റ്റ്","പാറ്റേൺ","DNA"],"answer":"കോംപ്ലെക്സ്"},
+{"q":24,"chapter":"സാംസ്കാരിക നരവംശശാസ്ത്ര സിദ്ധാന്തങ്ങൾ (Cultural Anthropological Theories)","question":"സംസ്കാര മാതൃക:","options":["പാറ്റേൺ","ട്രെയ്റ്റ്","കോംപ്ലെക്സ്","DNA"],"answer":"പാറ്റേൺ"},
+{"q":25,"chapter":"സാംസ്കാരിക നരവംശശാസ്ത്ര സിദ്ധാന്തങ്ങൾ (Cultural Anthropological Theories)","question":"സംസ്കാരം പകർന്നു നൽകുന്നത്:","options":["സാമൂഹികമായി","ജന്മനാ","ഇല്ല","ശൂനം"],"answer":"സാമൂഹികമായി"},
+
+{"q":26,"chapter":"സാംസ്കാരിക നരവംശശാസ്ത്ര സിദ്ധാന്തങ്ങൾ (Cultural Anthropological Theories)","question":"സംസ്കാര പരിണാമ സിദ്ധാന്തം:","options":["ടൈലർ","ഡാർവിൻ","ന്യൂട്ടൺ","ഐൻസ്റ്റൈൻ"],"answer":"ടൈലർ"},
+{"q":27,"chapter":"സാംസ്കാരിക നരവംശശാസ്ത്ര സിദ്ധാന്തങ്ങൾ (Cultural Anthropological Theories)","question":"ഡിഫ്യൂഷൻ:","options":["സംസ്കാര വ്യാപനം","സ്ഥിരം","ഇല്ല","ശൂനം"],"answer":"സംസ്കാര വ്യാപനം"},
+{"q":28,"chapter":"സാംസ്കാരിക നരവംശശാസ്ത്ര സിദ്ധാന്തങ്ങൾ (Cultural Anthropological Theories)","question":"ഫങ്ഷണലിസം:","options":["പ്രവർത്തന അടിസ്ഥാനമാക്കിയുള്ളത്","ഇല്ല","ശൂനം","സ്ഥിരം"],"answer":"പ്രവർത്തന അടിസ്ഥാനമാക്കിയുള്ളത്"},
+{"q":29,"chapter":"സാംസ്കാരിക നരവംശശാസ്ത്ര സിദ്ധാന്തങ്ങൾ (Cultural Anthropological Theories)","question":"സ്ട്രക്ചറൽ ഫങ്ഷണലിസം:","options":["ഘടനയും പ്രവർത്തനവും","ഇല്ല","ശൂനം","സ്ഥിരം"],"answer":"ഘടനയും പ്രവർത്തനവും"},
+{"q":30,"chapter":"സാംസ്കാരിക നരവംശശാസ്ത്ര സിദ്ധാന്തങ്ങൾ (Cultural Anthropological Theories)","question":"എത്ത്നോസെൻട്രിസം:","options":["സ്വസംസ്കാര മേൽക്കോയ്മ","ഇല്ല","ശൂനം","സ്ഥിരം"],"answer":"സ്വസംസ്കാര മേൽക്കോയ്മ"},
+
+{"q":31,"chapter":"സാംസ്കാരിക നരവംശശാസ്ത്ര സിദ്ധാന്തങ്ങൾ (Cultural Anthropological Theories)","question":"സാംസ്കാരിക സാപേക്ഷത:","options":["ഓരോ സംസ്കാരവും സ്വന്തം രീതിയിൽ വിലയിരുത്തൽ","ഇല്ല","ശൂനം","സ്ഥിരം"],"answer":"ഓരോ സംസ്കാരവും സ്വന്തം രീതിയിൽ വിലയിരുത്തൽ"},
+{"q":32,"chapter":"സാംസ്കാരിക നരവംശശാസ്ത്ര സിദ്ധാന്തങ്ങൾ (Cultural Anthropological Theories)","question":"സംസ്കാര വൈകല്യം:","options":["മാറ്റത്തിലെ വൈകൽ്യം","ഇല്ല","ശൂനം","സ്ഥിരം"],"answer":"മാറ്റത്തിലെ വൈകൽ്യം"},
+{"q":33,"chapter":"സാംസ്കാരിക നരവംശശാസ്ത്ര സിദ്ധാന്തങ്ങൾ (Cultural Anthropological Theories)","question":"അക്കൾചറേഷൻ:","options":["സംസ്കാര സംയോജനം","ഇല്ല","ശൂനം","സ്ഥിരം"],"answer":"സംസ്കാര സംയോജനം"},
+{"q":34,"chapter":"സാംസ്കാരിക നരവംശശാസ്ത്ര സിദ്ധാന്തങ്ങൾ (Cultural Anthropological Theories)","question":"അസിമിലേഷൻ:","options":["സംസ്കാര ഏകീകരണം","ഇല്ല","ശൂനം","സ്ഥിരം"],"answer":"സംസ്കാര ഏകീകരണം"},
+{"q":35,"chapter":"സാംസ്കാരിക നരവംശശാസ്ത്ര സിദ്ധാന്തങ്ങൾ (Cultural Anthropological Theories)","question":"സംസ്കാര വ്യത്യാസം:","options":["ഡൈവേഴ്സിറ്റി","ഇല്ല","ശൂനം","സ്ഥിരം"],"answer":"ഡൈവേഴ്സിറ്റി"},
+
+{"q":36,"chapter":"സാംസ്കാരിക നരവംശശാസ്ത്ര സിദ്ധാന്തങ്ങൾ (Cultural Anthropological Theories)","question":"മൂല്യങ്ങൾ:","options":["വാല്യൂസ്","ഇല്ല","ശൂനം","സ്ഥിരം"],"answer":"വാല്യൂസ്"},
+{"q":37,"chapter":"സാംസ്കാരിക നരവംശശാസ്ത്ര സിദ്ധാന്തങ്ങൾ (Cultural Anthropological Theories)","question":"നിയമങ്ങൾ:","options":["നോർമ്സ്","ഇല്ല","ശൂനം","സ്ഥിരം"],"answer":"നോർമ്സ്"},
+{"q":38,"chapter":"സാംസ്കാരിക നരവംശശാസ്ത്ര സിദ്ധാന്തങ്ങൾ (Cultural Anthropological Theories)","question":"ആചാരങ്ങൾ:","options":["കസ്റ്റംസ്","ഇല്ല","ശൂനം","സ്ഥിരം"],"answer":"കസ്റ്റംസ്"},
+{"q":39,"chapter":"സാംസ്കാരിക നരവംശശാസ്ത്ര സിദ്ധാന്തങ്ങൾ (Cultural Anthropological Theories)","question":"പരമ്പര:","options":["ട്രഡിഷൻ","ഇല്ല","ശൂനം","സ്ഥിരം"],"answer":"ട്രഡിഷൻ"},
+{"q":40,"chapter":"സാംസ്കാരിക നരവംശശാസ്ത്ര സിദ്ധാന്തങ്ങൾ (Cultural Anthropological Theories)","question":"വിശ്വാസം:","options":["ബിലീഫ്","ഇല്ല","ശൂനം","സ്ഥിരം"],"answer":"ബിലീഫ്"},
+
+{"q":41,"chapter":"സാംസ്കാരിക നരവംശശാസ്ത്ര സിദ്ധാന്തങ്ങൾ (Cultural Anthropological Theories)","question":"മതം:","options":["റിലീജൻ","ഇല്ല","ശൂനം","സ്ഥിരം"],"answer":"റിലീജൻ"},
+{"q":42,"chapter":"സാംസ്കാരിക നരവംശശാസ്ത്ര സിദ്ധാന്തങ്ങൾ (Cultural Anthropological Theories)","question":"ഭാഷ:","options":["ലാംഗ്വേജ്","ഇല്ല","ശൂനം","സ്ഥിരം"],"answer":"ലാംഗ്വേജ്"},
+{"q":43,"chapter":"സാംസ്കാരിക നരവംശശാസ്ത്ര സിദ്ധാന്തങ്ങൾ (Cultural Anthropological Theories)","question":"കല:","options":["ആർട്ട്","ഇല്ല","ശൂനം","സ്ഥിരം"],"answer":"ആർട്ട്"},
+{"q":44,"chapter":"സാംസ്കാരിക നരവംശശാസ്ത്ര സിദ്ധാന്തങ്ങൾ (Cultural Anthropological Theories)","question":"സംസ്കാര പാരമ്പര്യം:","options":["ഹെറിറ്റേജ്","ഇല്ല","ശൂനം","സ്ഥിരം"],"answer":"ഹെറിറ്റേജ്"},
+{"q":45,"chapter":"സാംസ്കാരിക നരവംശശാസ്ത്ര സിദ്ധാന്തങ്ങൾ (Cultural Anthropological Theories)","question":"സംസ്കാര മാറ്റം:","options":["സമയം കൊണ്ട്","ഇല്ല","ശൂനം","സ്ഥിരം"],"answer":"സമയം കൊണ്ട്"},
+
+{"q":46,"chapter":"സാംസ്കാരിക നരവംശശാസ്ത്ര സിദ്ധാന്തങ്ങൾ (Cultural Anthropological Theories)","question":"സംസ്കാര നവീകരണം:","options":["ഇന്നൊവേഷൻ","ഇല്ല","ശൂനം","സ്ഥിരം"],"answer":"ഇന്നൊവേഷൻ"},
+{"q":47,"chapter":"സാംസ്കാരിക നരവംശശാസ്ത്ര സിദ്ധാന്തങ്ങൾ (Cultural Anthropological Theories)","question":"സംസ്കാര സ്വീകരണം:","options":["അഡോപ്ഷൻ","ഇല്ല","ശൂനം","സ്ഥിരം"],"answer":"അഡോപ്ഷൻ"},
+{"q":48,"chapter":"സാംസ്കാരിക നരവംശശാസ്ത്ര സിദ്ധാന്തങ്ങൾ (Cultural Anthropological Theories)","question":"സംസ്കാര നിരാകരണം:","options":["റിജക്ഷൻ","ഇല്ല","ശൂനം","സ്ഥിരം"],"answer":"റിജക്ഷൻ"},
+{"q":49,"chapter":"സാംസ്കാരിക നരവംശശാസ്ത്ര സിദ്ധാന്തങ്ങൾ (Cultural Anthropological Theories)","question":"സംസ്കാര സംയോജനം:","options":["ഇന്റഗ്രേഷൻ","ഇല്ല","ശൂനം","സ്ഥിരം"],"answer":"ഇന്റഗ്രേഷൻ"},
+{"q":50,"chapter":"സാംസ്കാരിക നരവംശശാസ്ത്ര സിദ്ധാന്തങ്ങൾ (Cultural Anthropological Theories)","question":"സംസ്കാരം പഠിക്കുന്ന ശാസ്ത്രം:","options":["നരവംശശാസ്ത്രം","ഭൗതികശാസ്ത്രം","രസതന്ത്രം","ഗണിതം"],"answer":"നരവംശശാസ്ത്രം"}
+]

@@ -1,0 +1,61 @@
+[
+{"q":51,"question":"Electrostatic potential is defined as work done per unit:","options":["Charge","Mass","Distance","Time"],"answer":"Charge"},
+{"q":52,"question":"SI unit of electric potential is:","options":["Volt","Ampere","Ohm","Coulomb"],"answer":"Volt"},
+{"q":53,"question":"Potential difference is:","options":["Work per unit charge","Charge per unit work","Energy per unit mass","Force per unit charge"],"answer":"Work per unit charge"},
+{"q":54,"question":"Electric potential is a:","options":["Scalar","Vector","Tensor","Wave"],"answer":"Scalar"},
+{"q":55,"question":"Potential due to point charge varies as:","options":["1/r","1/r²","r","Constant"],"answer":"1/r"},
+
+{"q":56,"question":"Electric potential energy depends on:","options":["Charge and position","Mass","Temperature","Time"],"answer":"Charge and position"},
+{"q":57,"question":"Equipotential surface has:","options":["Same potential","Same field","Same charge","Same current"],"answer":"Same potential"},
+{"q":58,"question":"Work done moving charge along equipotential surface:","options":["Zero","Maximum","Infinite","Negative"],"answer":"Zero"},
+{"q":59,"question":"Electric field is perpendicular to:","options":["Equipotential surface","Charge","Mass","Time"],"answer":"Equipotential surface"},
+{"q":60,"question":"Capacitance is defined as:","options":["Q/V","V/Q","QV","Q+V"],"answer":"Q/V"},
+
+{"q":61,"question":"SI unit of capacitance is:","options":["Farad","Volt","Ohm","Ampere"],"answer":"Farad"},
+{"q":62,"question":"Capacitance increases with:","options":["Area","Distance","Charge","Time"],"answer":"Area"},
+{"q":63,"question":"Capacitance decreases with:","options":["Distance","Area","Charge","Voltage"],"answer":"Distance"},
+{"q":64,"question":"Parallel plate capacitor formula:","options":["εA/d","d/A","A+d","ε/d"],"answer":"εA/d"},
+{"q":65,"question":"Energy stored in capacitor is:","options":["1/2 CV²","CV","V/C","Q/V"],"answer":"1/2 CV²"},
+
+{"q":66,"question":"Dielectric increases:","options":["Capacitance","Voltage","Charge","Resistance"],"answer":"Capacitance"},
+{"q":67,"question":"Dielectric constant is ratio of:","options":["Permittivities","Charges","Voltages","Mass"],"answer":"Permittivities"},
+{"q":68,"question":"Capacitors in series have:","options":["Less capacitance","More capacitance","Same capacitance","Infinite"],"answer":"Less capacitance"},
+{"q":69,"question":"Capacitors in parallel have:","options":["More capacitance","Less capacitance","Zero","Infinite"],"answer":"More capacitance"},
+{"q":70,"question":"Potential inside conductor is:","options":["Constant","Zero","Infinite","Variable"],"answer":"Constant"},
+
+{"q":71,"question":"Electric field inside conductor:","options":["Zero","Max","Infinite","Constant"],"answer":"Zero"},
+{"q":72,"question":"Surface charge resides on:","options":["Surface","Center","Edges only","Volume"],"answer":"Surface"},
+{"q":73,"question":"Electric potential at infinity is:","options":["Zero","Max","Infinite","Constant"],"answer":"Zero"},
+{"q":74,"question":"Potential energy between charges depends on:","options":["Distance","Mass","Time","Temperature"],"answer":"Distance"},
+{"q":75,"question":"Electric field is gradient of:","options":["Potential","Charge","Mass","Energy"],"answer":"Potential"},
+
+{"q":76,"question":"Unit of electric field can also be:","options":["V/m","J","C","Ohm"],"answer":"V/m"},
+{"q":77,"question":"Capacitance depends on dielectric constant:","options":["Yes","No","Sometimes","Never"],"answer":"Yes"},
+{"q":78,"question":"Potential due to multiple charges follows:","options":["Superposition","Ohm law","Gauss law","Faraday law"],"answer":"Superposition"},
+{"q":79,"question":"Work done bringing charge from infinity is:","options":["Potential energy","Kinetic energy","Power","Current"],"answer":"Potential energy"},
+{"q":80,"question":"Capacitance unit Farad equals:","options":["C/V","V/C","J/C","N/C"],"answer":"C/V"},
+
+{"q":81,"question":"Energy stored in capacitor is stored in:","options":["Electric field","Magnetic field","Charge","Voltage"],"answer":"Electric field"},
+{"q":82,"question":"Potential due to dipole varies as:","options":["1/r²","1/r","1/r³","Constant"],"answer":"1/r²"},
+{"q":83,"question":"Equipotential surfaces never:","options":["Intersect","Curve","Form","Exist"],"answer":"Intersect"},
+{"q":84,"question":"Capacitance is independent of:","options":["Charge","Area","Distance","Dielectric"],"answer":"Charge"},
+{"q":85,"question":"Energy density of electric field is proportional to:","options":["E²","E","1/E","Constant"],"answer":"E²"},
+
+{"q":86,"question":"Potential is maximum near:","options":["Charge","Infinity","Neutral","Ground"],"answer":"Charge"},
+{"q":87,"question":"Electric potential is zero at:","options":["Infinity","Charge","Surface","Center"],"answer":"Infinity"},
+{"q":88,"question":"Capacitor stores energy in form of:","options":["Electric field","Charge","Heat","Current"],"answer":"Electric field"},
+{"q":89,"question":"Potential decreases with:","options":["Distance","Charge","Area","Time"],"answer":"Distance"},
+{"q":90,"question":"Potential difference drives:","options":["Current","Charge","Mass","Energy"],"answer":"Current"},
+
+{"q":91,"question":"Electric potential is work done against:","options":["Electric field","Gravity","Magnetism","Friction"],"answer":"Electric field"},
+{"q":92,"question":"Capacitance of isolated sphere depends on:","options":["Radius","Mass","Charge","Time"],"answer":"Radius"},
+{"q":93,"question":"Potential inside hollow sphere:","options":["Constant","Zero","Infinite","Variable"],"answer":"Constant"},
+{"q":94,"question":"Energy in capacitor increases with:","options":["Voltage","Distance","Time","Mass"],"answer":"Voltage"},
+{"q":95,"question":"Capacitance is higher for:","options":["Large plates","Small plates","Thin wires","Points"],"answer":"Large plates"},
+
+{"q":96,"question":"Electric potential energy is:","options":["Scalar","Vector","Tensor","Wave"],"answer":"Scalar"},
+{"q":97,"question":"Potential due to system is sum of:","options":["Individual potentials","Fields","Charges","Mass"],"answer":"Individual potentials"},
+{"q":98,"question":"Electric potential decreases along:","options":["Field direction","Opposite","Random","Circular"],"answer":"Field direction"},
+{"q":99,"question":"Capacitor opposes change in:","options":["Voltage","Charge","Mass","Energy"],"answer":"Voltage"},
+{"q":100,"question":"Electric potential is related to work done per unit:","options":["Charge","Mass","Time","Distance"],"answer":"Charge"}
+]

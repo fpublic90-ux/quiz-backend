@@ -1,0 +1,61 @@
+[
+{"q":51,"chapter":"ധനകാര്യ വിപണി","question":"ധനകാര്യ വിപണി എന്താണ്?","options":["ധന ഇടപാട് നടക്കുന്ന സ്ഥലം","മാർക്കറ്റിംഗ്","ഉത്പാദനം","ഇല്ല"],"answer":"ധന ഇടപാട് നടക്കുന്ന സ്ഥലം"},
+{"q":52,"chapter":"ധനകാര്യ വിപണി","question":"Financial market deals with:","options":["ധനം","ഉത്പന്നങ്ങൾ","സേവനങ്ങൾ","ഇല്ല"],"answer":"ധനം"},
+{"q":53,"chapter":"ധനകാര്യ വിപണി","question":"Money market എന്താണ്?","options":["ഹൃസ്വകാല ധന വിപണി","ദീർഘകാല വിപണി","ഇല്ല","ശൂനം"],"answer":"ഹൃസ്വകാല ധന വിപണി"},
+{"q":54,"chapter":"ധനകാര്യ വിപണി","question":"Capital market എന്താണ്?","options":["ദീർഘകാല ധന വിപണി","ഹൃസ്വകാല വിപണി","ഇല്ല","ശൂനം"],"answer":"ദീർഘകാല ധന വിപണി"},
+{"q":55,"chapter":"ധനകാര്യ വിപണി","question":"Primary market എന്താണ്?","options":["പുതിയ securities വിൽപ്പന","പഴയ securities","ഇല്ല","ശൂനം"],"answer":"പുതിയ securities വിൽപ്പന"},
+
+{"q":56,"chapter":"ധനകാര്യ വിപണി","question":"Secondary market എന്താണ്?","options":["പഴയ securities വ്യാപാരം","പുതിയത്","ഇല്ല","ശൂനം"],"answer":"പഴയ securities വ്യാപാരം"},
+{"q":57,"chapter":"ധനകാര്യ വിപണി","question":"Stock exchange എന്താണ്?","options":["securities വ്യാപാര കേന്ദ്രം","മാർക്കറ്റിംഗ്","ഇല്ല","ശൂനം"],"answer":"securities വ്യാപാര കേന്ദ്രം"},
+{"q":58,"chapter":"ധനകാര്യ വിപണി","question":"SEBI എന്താണ്?","options":["നിയന്ത്രണ ഏജൻസി","ബാങ്ക്","ഇല്ല","ശൂനം"],"answer":"നിയന്ത്രണ ഏജൻസി"},
+{"q":59,"chapter":"ധനകാര്യ വിപണി","question":"SEBI full form:","options":["Securities and Exchange Board of India","State Bank of India","ഇല്ല","ശൂനം"],"answer":"Securities and Exchange Board of India"},
+{"q":60,"chapter":"ധനകാര്യ വിപണി","question":"Financial market liquidity നൽകുന്നുണ്ടോ?","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+
+{"q":61,"chapter":"ധനകാര്യ വിപണി","question":"Money market instruments:","options":["Treasury bill","Shares","ഇല്ല","ശൂനം"],"answer":"Treasury bill"},
+{"q":62,"chapter":"ധനകാര്യ വിപണി","question":"Capital market instruments:","options":["Shares","Treasury bill","ഇല്ല","ശൂനം"],"answer":"Shares"},
+{"q":63,"chapter":"ധനകാര്യ വിപണി","question":"Financial markets mobilise savings:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":64,"chapter":"ധനകാര്യ വിപണി","question":"Financial market helps investment:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":65,"chapter":"ധനകാര്യ വിപണി","question":"Financial market provides price discovery:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+
+{"q":66,"chapter":"ധനകാര്യ വിപണി","question":"Financial market reduces risk:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":67,"chapter":"ധനകാര്യ വിപണി","question":"Stock exchange regulated by SEBI:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":68,"chapter":"ധനകാര്യ വിപണി","question":"Financial market helps economic growth:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":69,"chapter":"ധനകാര്യ വിപണി","question":"Primary market direct investment:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":70,"chapter":"ധനകാര്യ വിപണി","question":"Secondary market liquidity നൽകുന്നു:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+
+{"q":71,"chapter":"ധനകാര്യ വിപണി","question":"Debentures എന്താണ്?","options":["കടപത്രങ്ങൾ","ഷെയർ","ഇല്ല","ശൂനം"],"answer":"കടപത്രങ്ങൾ"},
+{"q":72,"chapter":"ധനകാര്യ വിപണി","question":"Shares represent ownership:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":73,"chapter":"ധനകാര്യ വിപണി","question":"Financial market efficient allocation ചെയ്യുമോ?","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":74,"chapter":"ധനകാര്യ വിപണി","question":"Financial market provides safety:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":75,"chapter":"ധനകാര്യ വിപണി","question":"Financial market helps capital formation:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+
+{"q":76,"chapter":"ധനകാര്യ വിപണി","question":"IPO എന്താണ്?","options":["Initial Public Offer","Public bank","ഇല്ല","ശൂനം"],"answer":"Initial Public Offer"},
+{"q":77,"chapter":"ധനകാര്യ വിപണി","question":"Stock market volatile ആണോ?","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":78,"chapter":"ധനകാര്യ വിപണി","question":"Financial market transparent ആണോ?","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":79,"chapter":"ധനകാര്യ വിപണി","question":"Financial market investor protection നൽകുന്നു:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":80,"chapter":"ധനകാര്യ വിപണി","question":"Financial market essential ആണോ?","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+
+{"q":81,"chapter":"ധനകാര്യ വിപണി","question":"Financial market long-term funds നൽകുന്നു:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":82,"chapter":"ധനകാര്യ വിപണി","question":"Financial market short-term funds നൽകുന്നു:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":83,"chapter":"ധനകാര്യ വിപണി","question":"Stock exchange helps trading:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":84,"chapter":"ധനകാര്യ വിപണി","question":"Financial market risk involved:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":85,"chapter":"ധനകാര്യ വിപണി","question":"Financial market improves economy:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+
+{"q":86,"chapter":"ധനകാര്യ വിപണി","question":"Financial market connects investors & companies:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":87,"chapter":"ധനകാര്യ വിപണി","question":"Financial market ensures liquidity:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":88,"chapter":"ധനകാര്യ വിപണി","question":"Financial market regulates prices:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":89,"chapter":"ധനകാര്യ വിപണി","question":"Financial market helps savings:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":90,"chapter":"ധനകാര്യ വിപണി","question":"Financial market helps growth:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+
+{"q":91,"chapter":"ധനകാര്യ വിപണി","question":"Market efficiency important:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":92,"chapter":"ധനകാര്യ വിപണി","question":"Financial market dynamic ആണോ?","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":93,"chapter":"ധനകാര്യ വിപണി","question":"Financial market complex ആണോ?","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":94,"chapter":"ധനകാര്യ വിപണി","question":"Financial market global ആണോ?","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":95,"chapter":"ധനകാര്യ വിപണി","question":"Financial market growth depends on economy:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+
+{"q":96,"chapter":"ധനകാര്യ വിപണി","question":"Financial market improves investment:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":97,"chapter":"ധനകാര്യ വിപണി","question":"Financial market reduces idle funds:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":98,"chapter":"ധനകാര്യ വിപണി","question":"Financial market encourages savings:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":99,"chapter":"ധനകാര്യ വിപണി","question":"Financial market ensures transparency:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":100,"chapter":"ധനകാര്യ വിപണി","question":"Financial market important for business:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"}
+]

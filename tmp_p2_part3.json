@@ -1,0 +1,25 @@
+[
+{"q":101,"chapter":"Dual Nature of Radiation & Matter","question":"Photoelectric effect proves:","options":["Particle nature of light","Wave nature","Mass","Charge"],"answer":"Particle nature of light"},
+{"q":102,"chapter":"Photon energy is given by:","options":["E=hf","E=mc²","V=IR","F=ma"],"answer":"E=hf"},
+{"q":103,"chapter":"Threshold frequency is minimum frequency for:","options":["Emission of electrons","Reflection","Refraction","Diffraction"],"answer":"Emission of electrons"},
+{"q":104,"chapter":"Stopping potential depends on:","options":["Frequency","Intensity","Mass","Charge"],"answer":"Frequency"},
+{"q":105,"chapter":"Photoelectric current depends on:","options":["Intensity","Frequency","Mass","Charge"],"answer":"Intensity"},
+
+{"q":106,"chapter":"De Broglie wavelength is:","options":["h/p","p/h","hp","h+p"],"answer":"h/p"},
+{"q":107,"chapter":"Matter waves are associated with:","options":["Moving particles","Rest particles","Mass","Charge"],"answer":"Moving particles"},
+{"q":108,"chapter":"Electron shows:","options":["Wave nature","Mass only","Charge only","Energy only"],"answer":"Wave nature"},
+{"q":109,"chapter":"Bohr model explains:","options":["Hydrogen atom","Nucleus","Electron only","Proton"],"answer":"Hydrogen atom"},
+{"q":110,"chapter":"Bohr orbit radius depends on:","options":["Quantum number","Mass","Charge","Time"],"answer":"Quantum number"},
+
+{"q":111,"chapter":"Energy levels are:","options":["Quantized","Continuous","Infinite","Zero"],"answer":"Quantized"},
+{"q":112,"chapter":"Ground state has:","options":["Minimum energy","Maximum energy","Zero energy","Infinite energy"],"answer":"Minimum energy"},
+{"q":113,"chapter":"Excited state has:","options":["Higher energy","Lower energy","Zero energy","Constant"],"answer":"Higher energy"},
+{"q":114,"chapter":"Spectral lines are due to:","options":["Electron transition","Mass","Charge","Time"],"answer":"Electron transition"},
+{"q":115,"chapter":"Photon emitted when electron:","options":["Falls to lower level","Goes higher","Stops","Moves randomly"],"answer":"Falls to lower level"},
+
+{"q":116,"chapter":"Photon absorbed when electron:","options":["Goes to higher level","Falls down","Stops","Moves randomly"],"answer":"Goes to higher level"},
+{"q":117,"chapter":"Bohr model applies to:","options":["Hydrogen-like atoms","All atoms","Molecules","Nuclei"],"answer":"Hydrogen-like atoms"},
+{"q":118,"chapter":"Angular momentum is:","options":["nh/2π","h","p","m"],"answer":"nh/2π"},
+{"q":119,"chapter":"Electron orbits are:","options":["Circular","Elliptical","Random","Straight"],"answer":"Circular"},
+{"q":120,"chapter":"Energy emitted equals:","options":["Difference of levels","Sum","Product","Zero"],"answer":"Difference of levels"}
+]

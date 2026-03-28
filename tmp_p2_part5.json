@@ -1,0 +1,37 @@
+[
+{"q":151,"chapter":"Nuclei","question":"Nucleus consists of:","options":["Protons and neutrons","Electrons","Photons","Ions"],"answer":"Protons and neutrons"},
+{"q":152,"chapter":"Atomic number is number of:","options":["Protons","Neutrons","Electrons","Nucleons"],"answer":"Protons"},
+{"q":153,"chapter":"Mass number is:","options":["Protons + neutrons","Electrons","Protons","Neutrons"],"answer":"Protons + neutrons"},
+{"q":154,"chapter":"Isotopes have same:","options":["Atomic number","Mass number","Charge","Energy"],"answer":"Atomic number"},
+{"q":155,"chapter":"Radioactivity is:","options":["Spontaneous emission","Forced emission","Reflection","Refraction"],"answer":"Spontaneous emission"},
+
+{"q":156,"chapter":"Half-life is time for:","options":["Half nuclei to decay","All decay","No decay","Double decay"],"answer":"Half nuclei to decay"},
+{"q":157,"chapter":"Binding energy holds:","options":["Nucleus","Electron","Atom","Photon"],"answer":"Nucleus"},
+{"q":158,"chapter":"Nuclear force is:","options":["Strong","Weak","Electric","Magnetic"],"answer":"Strong"},
+{"q":159,"chapter":"Fission is:","options":["Splitting nucleus","Combining nucleus","Electron loss","Photon emission"],"answer":"Splitting nucleus"},
+{"q":160,"chapter":"Fusion is:","options":["Combining nuclei","Splitting","Decay","Absorption"],"answer":"Combining nuclei"},
+
+{"q":161,"chapter":"Semiconductor","question":"Semiconductors have conductivity:","options":["Between conductor & insulator","High","Zero","Infinite"],"answer":"Between conductor & insulator"},
+{"q":162,"chapter":"Intrinsic semiconductor is:","options":["Pure","Doped","Mixed","Impure"],"answer":"Pure"},
+{"q":163,"chapter":"Extrinsic semiconductor is:","options":["Doped","Pure","Neutral","None"],"answer":"Doped"},
+{"q":164,"chapter":"n-type has majority carriers:","options":["Electrons","Holes","Protons","Neutrons"],"answer":"Electrons"},
+{"q":165,"chapter":"p-type has majority carriers:","options":["Holes","Electrons","Protons","Neutrons"],"answer":"Holes"},
+
+{"q":166,"chapter":"Diode allows current in:","options":["One direction","Both directions","No direction","Random"],"answer":"One direction"},
+{"q":167,"chapter":"Forward bias reduces:","options":["Barrier potential","Resistance","Mass","Charge"],"answer":"Barrier potential"},
+{"q":168,"chapter":"Reverse bias increases:","options":["Barrier potential","Current","Charge","Mass"],"answer":"Barrier potential"},
+{"q":169,"chapter":"Transistor is used as:","options":["Amplifier","Battery","Wire","Lens"],"answer":"Amplifier"},
+{"q":170,"chapter":"Logic gates perform:","options":["Logical operations","Physical work","Heat transfer","Mass flow"],"answer":"Logical operations"},
+
+{"q":171,"chapter":"AND gate output is 1 when:","options":["All inputs 1","Any one 1","All zero","None"],"answer":"All inputs 1"},
+{"q":172,"chapter":"OR gate output is 1 when:","options":["Any input 1","All zero","None","All 1"],"answer":"Any input 1"},
+{"q":173,"chapter":"NOT gate gives:","options":["Opposite output","Same output","Zero","Infinite"],"answer":"Opposite output"},
+{"q":174,"chapter":"Semiconductor devices include:","options":["Diodes & transistors","Mirrors","Lenses","Prisms"],"answer":"Diodes & transistors"},
+{"q":175,"chapter":"Band gap determines:","options":["Conductivity","Mass","Charge","Time"],"answer":"Conductivity"},
+
+{"q":176,"chapter":"LED works on:","options":["Recombination","Reflection","Refraction","Diffraction"],"answer":"Recombination"},
+{"q":177,"chapter":"Solar cell converts:","options":["Light to electricity","Heat to light","Charge to mass","Mass to energy"],"answer":"Light to electricity"},
+{"q":178,"chapter":"Zener diode used for:","options":["Voltage regulation","Amplification","Reflection","Diffraction"],"answer":"Voltage regulation"},
+{"q":179,"chapter":"Rectifier converts:","options":["AC to DC","DC to AC","Heat to energy","Light to heat"],"answer":"AC to DC"},
+{"q":180,"chapter":"Semiconductor physics deals with:","options":["Electronic devices","Optics","Mechanics","Thermodynamics"],"answer":"Electronic devices"}
+]

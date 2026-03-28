@@ -1,0 +1,60 @@
+[
+{"q":51,"chapter":"മാനേജ്മെന്റ് തത്വങ്ങൾ","question":"മാനേജ്മെന്റ് തത്വങ്ങൾ എന്താണ്?","options":["മാർഗ്ഗനിർദ്ദേശങ്ങൾ","നിയമങ്ങൾ","നിയന്ത്രണം","ഇല്ല"],"answer":"മാർഗ്ഗനിർദ്ദേശങ്ങൾ"},
+{"q":52,"chapter":"മാനേജ്മെന്റ് തത്വങ്ങൾ","question":"തത്വങ്ങൾ നിർണ്ണയിച്ചത് ആര്?","options":["ഹെൻറി ഫയോൾ","ടെയ്ലർ","മാർക്സ","ഇല്ല"],"answer":"ഹെൻറി ഫയോൾ"},
+{"q":53,"chapter":"മാനേജ്മെന്റ് തത്വങ്ങൾ","question":"ടെയ്ലറിന്റെ ശാസ്ത്രീയ മാനേജ്മെന്റ്:","options":["Scientific management","Planning","Control","ഇല്ല"],"answer":"Scientific management"},
+{"q":54,"chapter":"മാനേജ്മെന്റ് തത്വങ്ങൾ","question":"Unity of Command എന്താണ്?","options":["ഒരു മേൽനോട്ടം","ഒന്നിലധികം","ഇല്ല","ശൂനം"],"answer":"ഒരു മേൽനോട്ടം"},
+{"q":55,"chapter":"മാനേജ്മെന്റ് തത്വങ്ങൾ","question":"Division of Work:","options":["ജോലി വിഭജനം","ഒന്നായി ജോലി","ഇല്ല","ശൂനം"],"answer":"ജോലി വിഭജനം"},
+
+{"q":56,"chapter":"മാനേജ്മെന്റ് തത്വങ്ങൾ","question":"Discipline എന്താണ്?","options":["ക്രമശിക്ഷണം","അക്രമം","ഇല്ല","ശൂനം"],"answer":"ക്രമശിക്ഷണം"},
+{"q":57,"chapter":"മാനേജ്മെന്റ് തത്വങ്ങൾ","question":"Scalar Chain:","options":["അധികാര ശൃംഖല","ബന്ധമില്ല","ഇല്ല","ശൂനം"],"answer":"അധികാര ശൃംഖല"},
+{"q":58,"chapter":"മാനേജ്മെന്റ് തത്വങ്ങൾ","question":"Equity:","options":["സമത്വം","അസമത്വം","ഇല്ല","ശൂനം"],"answer":"സമത്വം"},
+{"q":59,"chapter":"മാനേജ്മെന്റ് തത്വങ്ങൾ","question":"Centralisation:","options":["കേന്ദ്രികരണം","വികേന്ദ്രീകരണം","ഇല്ല","ശൂനം"],"answer":"കേന്ദ്രികരണം"},
+{"q":60,"chapter":"മാനേജ്മെന്റ് തത്വങ്ങൾ","question":"Initiative:","options":["സ്വമേധയാ പ്രവർത്തനം","ഇല്ല","ശൂനം","സ്ഥിരം"],"answer":"സ്വമേധയാ പ്രവർത്തനം"},
+
+{"q":61,"chapter":"ബിസിനസ് പരിസ്ഥിതി","question":"ബിസിനസ് പരിസ്ഥിതി എന്താണ്?","options":["ബിസിനസിനെ ചുറ്റിപ്പറ്റിയ ഘടകങ്ങൾ","ഇല്ല","ശൂനം","സ്ഥിരം"],"answer":"ബിസിനസിനെ ചുറ്റിപ്പറ്റിയ ഘടകങ്ങൾ"},
+{"q":62,"chapter":"ബിസിനസ് പരിസ്ഥിതി","question":"Internal environment:","options":["അകത്തെ ഘടകങ്ങൾ","പുറത്തെ ഘടകങ്ങൾ","ഇല്ല","ശൂനം"],"answer":"അകത്തെ ഘടകങ്ങൾ"},
+{"q":63,"chapter":"ബിസിനസ് പരിസ്ഥിതി","question":"External environment:","options":["പുറത്തെ ഘടകങ്ങൾ","അകത്തെ ഘടകങ്ങൾ","ഇല്ല","ശൂനം"],"answer":"പുറത്തെ ഘടകങ്ങൾ"},
+{"q":64,"chapter":"ബിസിനസ് പരിസ്ഥിതി","question":"Economic environment:","options":["സാമ്പത്തിക ഘടകങ്ങൾ","സാമൂഹികം","ഇല്ല","ശൂനം"],"answer":"സാമ്പത്തിക ഘടകങ്ങൾ"},
+{"q":65,"chapter":"ബിസിനസ് പരിസ്ഥിതി","question":"Social environment:","options":["സാമൂഹിക ഘടകങ്ങൾ","സാമ്പത്തികം","ഇല്ല","ശൂനം"],"answer":"സാമൂഹിക ഘടകങ്ങൾ"},
+
+{"q":66,"chapter":"ബിസിനസ് പരിസ്ഥിതി","question":"Technological environment:","options":["സാങ്കേതിക ഘടകങ്ങൾ","സാമൂഹികം","ഇല്ല","ശൂനം"],"answer":"സാങ്കേതിക ഘടകങ്ങൾ"},
+{"q":67,"chapter":"ബിസിനസ് പരിസ്ഥിതി","question":"Political environment:","options":["രാഷ്ട്രീയ ഘടകങ്ങൾ","സാമ്പത്തികം","ഇല്ല","ശൂനം"],"answer":"രാഷ്ട്രീയ ഘടകങ്ങൾ"},
+{"q":68,"chapter":"ബിസിനസ് പരിസ്ഥിതി","question":"Legal environment:","options":["നിയമ ഘടകങ്ങൾ","സാമൂഹികം","ഇല്ല","ശൂനം"],"answer":"നിയമ ഘടകങ്ങൾ"},
+{"q":69,"chapter":"ബിസിനസ് പരിസ്ഥിതി","question":"Business environment dynamic ആണോ?","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":70,"chapter":"ബിസിനസ് പരിസ്ഥിതി","question":"Business environment uncertainty ഉണ്ടോ?","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+
+{"q":71,"chapter":"ബിസിനസ് പരിസ്ഥിതി","question":"Environment opportunities നൽകുന്നുണ്ടോ?","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":72,"chapter":"ബിസിനസ് പരിസ്ഥിതി","question":"Environment threats ഉണ്ടോ?","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":73,"chapter":"ബിസിനസ് പരിസ്ഥിതി","question":"PESTLE analysis:","options":["Environmental analysis","Planning","Control","ഇല്ല"],"answer":"Environmental analysis"},
+{"q":74,"chapter":"ബിസിനസ് പരിസ്ഥിതി","question":"Globalisation impact:","options":["ഉണ്ട്","ഇല്ല","ശൂനം","സ്ഥിരം"],"answer":"ഉണ്ട്"},
+{"q":75,"chapter":"ബിസിനസ് പരിസ്ഥിതി","question":"Liberalisation:","options":["നിയന്ത്രണം കുറയ്ക്കൽ","കൂടുതൽ നിയന്ത്രണം","ഇല്ല","ശൂനം"],"answer":"നിയന്ത്രണം കുറയ്ക്കൽ"},
+
+{"q":76,"chapter":"ബിസിനസ് പരിസ്ഥിതി","question":"Privatisation:","options":["സ്വകാര്യവൽക്കരണം","സർക്കാർ","ഇല്ല","ശൂനം"],"answer":"സ്വകാര്യവൽക്കരണം"},
+{"q":77,"chapter":"ബിസിനസ് പരിസ്ഥിതി","question":"Competition:","options":["മത്സരം","സഹകരണം","ഇല്ല","ശൂനം"],"answer":"മത്സരം"},
+{"q":78,"chapter":"ബിസിനസ് പരിസ്ഥിതി","question":"Environment scanning:","options":["പരിസ്ഥിതി പഠനം","ഇല്ല","ശൂനം","സ്ഥിരം"],"answer":"പരിസ്ഥിതി പഠനം"},
+{"q":79,"chapter":"ബിസിനസ് പരിസ്ഥിതി","question":"Business success depends on environment:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":80,"chapter":"ബിസിനസ് പരിസ്ഥിതി","question":"Environment changes:","options":["തുടർച്ചയായി","സ്ഥിരം","ഇല്ല","ശൂനം"],"answer":"തുടർച്ചയായി"},
+
+{"q":81,"chapter":"ബിസിനസ് പരിസ്ഥിതി","question":"Business adaptability:","options":["പ്രധാനമാണ്","ഇല്ല","ശൂനം","സ്ഥിരം"],"answer":"പ്രധാനമാണ്"},
+{"q":82,"chapter":"ബിസിനസ് പരിസ്ഥിതി","question":"Government policy effect:","options":["ഉണ്ട്","ഇല്ല","ശൂനം","സ്ഥിരം"],"answer":"ഉണ്ട്"},
+{"q":83,"chapter":"ബിസിനസ് പരിസ്ഥിതി","question":"Market trends:","options":["മാറ്റം വരുന്നു","സ്ഥിരം","ഇല്ല","ശൂനം"],"answer":"മാറ്റം വരുന്നു"},
+{"q":84,"chapter":"ബിസിനസ് പരിസ്ഥിതി","question":"Customer preference:","options":["മാറ്റം വരുന്നു","സ്ഥിരം","ഇല്ല","ശൂനം"],"answer":"മാറ്റം വരുന്നു"},
+{"q":85,"chapter":"ബിസിനസ് പരിസ്ഥിതി","question":"Technology impact:","options":["വലിയതാണ്","ഇല്ല","ശൂനം","സ്ഥിരം"],"answer":"വലിയതാണ്"},
+
+{"q":86,"chapter":"ബിസിനസ് പരിസ്ഥിതി","question":"Economic policy:","options":["പ്രധാനമാണ്","ഇല്ല","ശൂനം","സ്ഥിരം"],"answer":"പ്രധാനമാണ്"},
+{"q":87,"chapter":"ബിസിനസ് പരിസ്ഥിതി","question":"Social change effect:","options":["ഉണ്ട്","ഇല്ല","ശൂനം","സ്ഥിരം"],"answer":"ഉണ്ട്"},
+{"q":88,"chapter":"ബിസിനസ് പരിസ്ഥിതി","question":"Environmental awareness:","options":["വളരുന്നു","ഇല്ല","ശൂനം","സ്ഥിരം"],"answer":"വളരുന്നു"},
+{"q":89,"chapter":"ബിസിനസ് പരിസ്ഥിതി","question":"Business risk:","options":["ഉണ്ട്","ഇല്ല","ശൂനം","സ്ഥിരം"],"answer":"ഉണ്ട്"},
+{"q":90,"chapter":"ബിസിനസ് പരിസ്ഥിതി","question":"Decision making depends on environment:","options":["അതെ","ഇല്ല","ശൂനം","സ്ഥിരം"],"answer":"അതെ"},
+
+{"q":91,"chapter":"ബിസിനസ് പരിസ്ഥിതി","question":"Business planning needs environment study:","options":["അതെ","ഇല്ല","ശൂനം","സ്ഥിരം"],"answer":"അതെ"},
+{"q":92,"chapter":"ബിസിനസ് പരിസ്ഥിതി","question":"Environment analysis helps growth:","options":["അതെ","ഇല്ല","ശൂനം","സ്ഥിരം"],"answer":"അതെ"},
+{"q":93,"chapter":"ബിസിനസ് പരിസ്ഥിതി","question":"Market competition increases:","options":["അതെ","ഇല്ല","ശൂനം","സ്ഥിരം"],"answer":"അതെ"},
+{"q":94,"chapter":"ബിസിനസ് പരിസ്ഥിതി","question":"Innovation needed in business:","options":["അതെ","ഇല്ല","ശൂനം","സ്ഥിരം"],"answer":"അതെ"},
+{"q":95,"chapter":"ബിസിനസ് പരിസ്ഥിതി","question":"Environment helps decision making:","options":["അതെ","ഇല്ല","ശൂനം","സ്ഥിരം"],"answer":"അതെ"},
+{"q":96,"chapter":"ബിസിനസ് പരിസ്ഥിതി","question":"Environment study reduces risk:","options":["അതെ","ഇല്ല","ശൂനം","സ്ഥിരം"],"answer":"അതെ"},
+{"q":97,"chapter":"ബിസിനസ് പരിസ്ഥിതി","question":"Business growth depends on environment:","options":["അതെ","ഇല്ല","ശൂനം","സ്ഥിരം"],"answer":"അതെ"},
+{"q":98,"chapter":"ബിസിനസ് പരിസ്ഥിതി","question":"External forces affect business:","options":["അതെ","ഇല്ല","ശൂനം","സ്ഥിരം"],"answer":"അതെ"},
+{"q":99,"chapter":"ബിസിനസ് പരിസ്ഥിതി","question":"Internal factors important:","options":["അതെ","ഇല്ല","ശൂനം","സ്ഥിരം"],"answer":"അതെ"},
+{"q":100,"chapter":"ബിസിനസ് പരിസ്ഥിതി","question":"Business environment complex ആണോ?","options":["അതെ","ഇല്ല","ശൂനം","സ്ഥിരം"],"answer":"അതെ"}
+]

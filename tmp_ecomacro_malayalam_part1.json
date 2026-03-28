@@ -1,0 +1,61 @@
+[
+{"q":1,"chapter":"ആമുഖം","question":"ആമുഖം എന്നത് എന്താണ്?","options":["പരിചയം","ഉത്പാദനം","വിപണനം","ഇല്ല"],"answer":"പരിചയം"},
+{"q":2,"chapter":"ആമുഖം","question":"സാമ്പത്തിക ശാസ്ത്രം എന്തിനെ കുറിച്ചാണ്?","options":["വസ്തുക്കളുടെ ഉത്പാദനവും വിതരണം","ഗണിതം","ഭൗതികശാസ്ത്രം","ഇല്ല"],"answer":"വസ്തുക്കളുടെ ഉത്പാദനവും വിതരണം"},
+{"q":3,"chapter":"ആമുഖം","question":"Macro economics എന്താണ്?","options":["മൊത്ത സാമ്പത്തിക പഠനം","വ്യക്തിഗത പഠനം","ഇല്ല","ശൂനം"],"answer":"മൊത്ത സാമ്പത്തിക പഠനം"},
+{"q":4,"chapter":"ആമുഖം","question":"Micro economics എന്താണ്?","options":["വ്യക്തിഗത സാമ്പത്തിക പഠനം","മൊത്തം","ഇല്ല","ശൂനം"],"answer":"വ്യക്തിഗത സാമ്പത്തിക പഠനം"},
+{"q":5,"chapter":"ആമുഖം","question":"Economic agents ആരാണ്?","options":["സാമ്പത്തിക പ്രവർത്തകർ","വിദ്യാർത്ഥികൾ","ഇല്ല","ശൂനം"],"answer":"സാമ്പത്തിക പ്രവർത്തകർ"},
+
+{"q":6,"chapter":"ആമുഖം","question":"Households എന്താണ്?","options":["ഉപഭോക്താക്കൾ","ഉത്പാദകർ","ഇല്ല","ശൂനം"],"answer":"ഉപഭോക്താക്കൾ"},
+{"q":7,"chapter":"ആമുഖം","question":"Firms എന്താണ്?","options":["ഉത്പാദകർ","ഉപഭോക്താക്കൾ","ഇല്ല","ശൂനം"],"answer":"ഉത്പാദകർ"},
+{"q":8,"chapter":"ആമുഖം","question":"Economy എന്താണ്?","options":["സാമ്പത്തിക സംവിധാനം","വീട്","ഇല്ല","ശൂനം"],"answer":"സാമ്പത്തിക സംവിധാനം"},
+{"q":9,"chapter":"ആമുഖം","question":"Goods എന്താണ്?","options":["വസ്തുക്കൾ","സേവനങ്ങൾ","ഇല്ല","ശൂനം"],"answer":"വസ്തുക്കൾ"},
+{"q":10,"chapter":"ആമുഖം","question":"Services എന്താണ്?","options":["സേവനങ്ങൾ","വസ്തുക്കൾ","ഇല്ല","ശൂനം"],"answer":"സേവനങ്ങൾ"},
+
+{"q":11,"chapter":"ആമുഖം","question":"Scarcity എന്താണ്?","options":["അഭാവം","അധികം","ഇല്ല","ശൂനം"],"answer":"അഭാവം"},
+{"q":12,"chapter":"ആമുഖം","question":"Choice എന്താണ്?","options":["തിരഞ്ഞെടുപ്പ്","വിതരണം","ഇല്ല","ശൂനം"],"answer":"തിരഞ്ഞെടുപ്പ്"},
+{"q":13,"chapter":"ആമുഖം","question":"Opportunity cost എന്താണ്?","options":["വിട്ടുപോകുന്ന അവസരം","ലാഭം","ഇല്ല","ശൂനം"],"answer":"വിട്ടുപോകുന്ന അവസരം"},
+{"q":14,"chapter":"ആമുഖം","question":"Production എന്താണ്?","options":["ഉത്പാദനം","വിതരണം","ഇല്ല","ശൂനം"],"answer":"ഉത്പാദനം"},
+{"q":15,"chapter":"ആമുഖം","question":"Consumption എന്താണ്?","options":["ഉപഭോഗം","ഉത്പാദനം","ഇല്ല","ശൂനം"],"answer":"ഉപഭോഗം"},
+
+{"q":16,"chapter":"ആമുഖം","question":"Distribution എന്താണ്?","options":["വിതരണം","ഉത്പാദനം","ഇല്ല","ശൂനം"],"answer":"വിതരണം"},
+{"q":17,"chapter":"ആമുഖം","question":"Economics is science:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":18,"chapter":"ആമുഖം","question":"Economics deals with scarcity:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":19,"chapter":"ആമുഖം","question":"Resources limited ആണോ?","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":20,"chapter":"ആമുഖം","question":"Wants unlimited ആണോ?","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+
+{"q":21,"chapter":"ആമുഖം","question":"Macro economics deals with aggregate:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":22,"chapter":"ആമുഖം","question":"Micro economics deals with individual:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":23,"chapter":"ആമുഖം","question":"Economics helps decision making:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":24,"chapter":"ആമുഖം","question":"Economic activity includes production:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":25,"chapter":"ആമുഖം","question":"Economic activity includes consumption:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+
+{"q":26,"chapter":"ആമുഖം","question":"Economic activity includes distribution:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":27,"chapter":"ആമുഖം","question":"Economics studies allocation:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":28,"chapter":"ആമുഖം","question":"Economics helps planning:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":29,"chapter":"ആമുഖം","question":"Economics helps growth:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":30,"chapter":"ആമുഖം","question":"Economics important subject ആണോ?","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+
+{"q":31,"chapter":"ആമുഖം","question":"Firms produce goods:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":32,"chapter":"ആമുഖം","question":"Households consume goods:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":33,"chapter":"ആമുഖം","question":"Economy includes firms & households:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":34,"chapter":"ആമുഖം","question":"Resources scarce ആണോ?","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":35,"chapter":"ആമുഖം","question":"Choice necessary ആണോ?","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+
+{"q":36,"chapter":"ആമുഖം","question":"Economics helps understanding economy:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":37,"chapter":"ആമുഖം","question":"Economic system includes production:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":38,"chapter":"ആമുഖം","question":"Economic system includes distribution:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":39,"chapter":"ആമുഖം","question":"Economic system includes consumption:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":40,"chapter":"ആമുഖം","question":"Economics scientific subject ആണോ?","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+
+{"q":41,"chapter":"ആമുഖം","question":"Economics helps policy making:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":42,"chapter":"ആമുഖം","question":"Economics helps analysis:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":43,"chapter":"ആമുഖം","question":"Economics practical subject ആണോ?","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":44,"chapter":"ആമുഖം","question":"Economics helps understanding society:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":45,"chapter":"ആമുഖം","question":"Economics helps allocation:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+
+{"q":46,"chapter":"ആമുഖം","question":"Economics deals with human behaviour:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":47,"chapter":"ആമുഖം","question":"Economics deals with choices:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":48,"chapter":"ആമുഖം","question":"Economics deals with scarcity:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":49,"chapter":"ആമുഖം","question":"Economics deals with allocation:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":50,"chapter":"ആമുഖം","question":"Economics important for life:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"}
+]

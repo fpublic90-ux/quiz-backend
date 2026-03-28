@@ -1,0 +1,61 @@
+[
+{"q":101,"chapter":"വിപണനം","question":"വിപണനം എന്താണ്?","options":["ഉത്പന്നം ഉപഭോക്താവിലേക്ക് എത്തിക്കൽ","ഉത്പാദനം","ഇല്ല","ശൂനം"],"answer":"ഉത്പന്നം ഉപഭോക്താവിലേക്ക് എത്തിക്കൽ"},
+{"q":102,"chapter":"വിപണനം","question":"Marketing customer oriented ആണോ?","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":103,"chapter":"വിപണനം","question":"Marketing includes exchange process:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":104,"chapter":"വിപണനം","question":"Marketing aims at customer satisfaction:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":105,"chapter":"വിപണനം","question":"Marketing function of business ആണോ?","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+
+{"q":106,"chapter":"വിപണനം","question":"Marketing mix എന്താണ്?","options":["4P’s","5P’s","3P’s","ഇല്ല"],"answer":"4P’s"},
+{"q":107,"chapter":"വിപണനം","question":"4P’s include product:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":108,"chapter":"വിപണനം","question":"4P’s include price:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":109,"chapter":"വിപണനം","question":"4P’s include place:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":110,"chapter":"വിപണനം","question":"4P’s include promotion:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+
+{"q":111,"chapter":"വിപണനം","question":"Product എന്താണ്?","options":["വസ്തു/സേവനം","പണം","ഇല്ല","ശൂനം"],"answer":"വസ്തു/സേവനം"},
+{"q":112,"chapter":"വിപണനം","question":"Price എന്താണ്?","options":["വില","സ്ഥലം","ഇല്ല","ശൂനം"],"answer":"വില"},
+{"q":113,"chapter":"വിപണനം","question":"Place എന്താണ്?","options":["വിതരണ സ്ഥലം","വില","ഇല്ല","ശൂനം"],"answer":"വിതരണ സ്ഥലം"},
+{"q":114,"chapter":"വിപണനം","question":"Promotion എന്താണ്?","options":["പ്രചാരണം","വില","ഇല്ല","ശൂനം"],"answer":"പ്രചാരണം"},
+{"q":115,"chapter":"വിപണനം","question":"Marketing helps sales:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+
+{"q":116,"chapter":"വിപണനം","question":"Marketing creates demand:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":117,"chapter":"വിപണനം","question":"Marketing helps profit:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":118,"chapter":"വിപണനം","question":"Marketing focuses on customer needs:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":119,"chapter":"വിപണനം","question":"Branding എന്താണ്?","options":["ബ്രാൻഡ് സൃഷ്ടിക്കൽ","വില","ഇല്ല","ശൂനം"],"answer":"ബ്രാൻഡ് സൃഷ്ടിക്കൽ"},
+{"q":120,"chapter":"വിപണനം","question":"Packaging എന്താണ്?","options":["പാക്കിംഗ്","വില","ഇല്ല","ശൂനം"],"answer":"പാക്കിംഗ്"},
+
+{"q":121,"chapter":"വിപണനം","question":"Labelling എന്താണ്?","options":["ലേബൽ ഇടൽ","വില","ഇല്ല","ശൂനം"],"answer":"ലേബൽ ഇടൽ"},
+{"q":122,"chapter":"വിപണനം","question":"Marketing communication important ആണോ?","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":123,"chapter":"വിപണനം","question":"Advertising എന്താണ്?","options":["പരസ്യം","വില","ഇല്ല","ശൂനം"],"answer":"പരസ്യം"},
+{"q":124,"chapter":"വിപണനം","question":"Sales promotion എന്താണ്?","options":["വിൽപ്പന പ്രോത്സാഹനം","വില","ഇല്ല","ശൂനം"],"answer":"വിൽപ്പന പ്രോത്സാഹനം"},
+{"q":125,"chapter":"വിപണനം","question":"Personal selling എന്താണ്?","options":["നേരിട്ട് വിൽപ്പന","പരസ്യം","ഇല്ല","ശൂനം"],"answer":"നേരിട്ട് വിൽപ്പന"},
+
+{"q":126,"chapter":"വിപണനം","question":"Marketing improves customer satisfaction:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":127,"chapter":"വിപണനം","question":"Marketing builds relationship:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":128,"chapter":"വിപണനം","question":"Marketing essential function ആണോ?","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":129,"chapter":"വിപണനം","question":"Marketing helps growth:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":130,"chapter":"വിപണനം","question":"Marketing creates value:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+
+{"q":131,"chapter":"വിപണനം","question":"Marketing involves planning:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":132,"chapter":"വിപണനം","question":"Marketing involves pricing:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":133,"chapter":"വിപണനം","question":"Marketing involves distribution:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":134,"chapter":"വിപണനം","question":"Marketing involves promotion:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":135,"chapter":"വിപണനം","question":"Marketing increases sales:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+
+{"q":136,"chapter":"വിപണനം","question":"Product quality important ആണോ?","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":137,"chapter":"വിപണനം","question":"Customer satisfaction key goal ആണോ?","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":138,"chapter":"വിപണനം","question":"Marketing creates utility:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":139,"chapter":"വിപണനം","question":"Place utility important ആണോ?","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":140,"chapter":"വിപണനം","question":"Time utility important ആണോ?","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+
+{"q":141,"chapter":"വിപണനം","question":"Marketing helps awareness:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":142,"chapter":"വിപണനം","question":"Promotion increases demand:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":143,"chapter":"വിപണനം","question":"Advertising costly ആണോ?","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":144,"chapter":"വിപണനം","question":"Personal selling direct contact:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":145,"chapter":"വിപണനം","question":"Marketing customer satisfaction ഉറപ്പാക്കുന്നു:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+
+{"q":146,"chapter":"വിപണനം","question":"Marketing improves image:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":147,"chapter":"വിപണനം","question":"Marketing builds brand loyalty:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":148,"chapter":"വിപണനം","question":"Marketing helps competition:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":149,"chapter":"വിപണനം","question":"Marketing increases profit:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":150,"chapter":"വിപണനം","question":"Marketing long-term success നൽകുന്നു:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"}
+]

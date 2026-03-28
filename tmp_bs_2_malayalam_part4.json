@@ -1,0 +1,61 @@
+[
+{"q":151,"chapter":"ഉപഭോക്തൃ സംരക്ഷണം","question":"ഉപഭോക്തൃ സംരക്ഷണം എന്താണ്?","options":["ഉപഭോക്താവിന്റെ അവകാശ സംരക്ഷണം","മാർക്കറ്റിംഗ്","ഉത്പാദനം","ഇല്ല"],"answer":"ഉപഭോക്താവിന്റെ അവകാശ സംരക്ഷണം"},
+{"q":152,"chapter":"ഉപഭോക്തൃ സംരക്ഷണം","question":"Consumer rights എന്താണ്?","options":["ഉപഭോക്താവിന്റെ അവകാശങ്ങൾ","വില","ഇല്ല","ശൂനം"],"answer":"ഉപഭോക്താവിന്റെ അവകാശങ്ങൾ"},
+{"q":153,"chapter":"ഉപഭോക്തൃ സംരക്ഷണം","question":"Right to safety എന്താണ്?","options":["സുരക്ഷയ്ക്കുള്ള അവകാശം","വില","ഇല്ല","ശൂനം"],"answer":"സുരക്ഷയ്ക്കുള്ള അവകാശം"},
+{"q":154,"chapter":"ഉപഭോക്തൃ സംരക്ഷണം","question":"Right to be informed:","options":["വിവരം അറിയാനുള്ള അവകാശം","വില","ഇല്ല","ശൂനം"],"answer":"വിവരം അറിയാനുള്ള അവകാശം"},
+{"q":155,"chapter":"ഉപഭോക്തൃ സംരക്ഷണം","question":"Right to choose:","options":["തിരഞ്ഞെടുക്കാനുള്ള അവകാശം","വില","ഇല്ല","ശൂനം"],"answer":"തിരഞ്ഞെടുക്കാനുള്ള അവകാശം"},
+
+{"q":156,"chapter":"ഉപഭോക്തൃ സംരക്ഷണം","question":"Right to be heard:","options":["പരാതി പറയാനുള്ള അവകാശം","വില","ഇല്ല","ശൂനം"],"answer":"പരാതി പറയാനുള്ള അവകാശം"},
+{"q":157,"chapter":"ഉപഭോക്തൃ സംരക്ഷണം","question":"Right to seek redressal:","options":["പരിഹാരം തേടാനുള്ള അവകാശം","വില","ഇല്ല","ശൂനം"],"answer":"പരിഹാരം തേടാനുള്ള അവകാശം"},
+{"q":158,"chapter":"ഉപഭോക്തൃ സംരക്ഷണം","question":"Consumer protection act:","options":["നിയമം","മാർക്കറ്റിംഗ്","ഇല്ല","ശൂനം"],"answer":"നിയമം"},
+{"q":159,"chapter":"ഉപഭോക്തൃ സംരക്ഷണം","question":"Consumer awareness important ആണോ?","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":160,"chapter":"ഉപഭോക്തൃ സംരക്ഷണം","question":"Consumer courts:","options":["ഉപഭോക്തൃ കോടതികൾ","ബാങ്ക്","ഇല്ല","ശൂനം"],"answer":"ഉപഭോക്തൃ കോടതികൾ"},
+
+{"q":161,"chapter":"ഉപഭോക്തൃ സംരക്ഷണം","question":"Consumer protection prevents exploitation:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":162,"chapter":"ഉപഭോക്തൃ സംരക്ഷണം","question":"Consumer education needed:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":163,"chapter":"ഉപഭോക്തൃ സംരക്ഷണം","question":"Consumer rights enforceable ആണോ?","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":164,"chapter":"ഉപഭോക്തൃ സംരക്ഷണം","question":"Consumer protection helps safety:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":165,"chapter":"ഉപഭോക്തൃ സംരക്ഷണം","question":"Consumer complaints addressed:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+
+{"q":166,"chapter":"ഉപഭോക്തൃ സംരക്ഷണം","question":"Consumer protection improves trust:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":167,"chapter":"ഉപഭോക്തൃ സംരക്ഷണം","question":"Consumer protection promotes fairness:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":168,"chapter":"ഉപഭോക്തൃ സംരക്ഷണം","question":"Consumer protection essential ആണോ?","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":169,"chapter":"ഉപഭോക്തൃ സംരക്ഷണം","question":"Consumer protection ensures quality:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":170,"chapter":"ഉപഭോക്തൃ സംരക്ഷണം","question":"Consumer protection reduces fraud:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+
+{"q":171,"chapter":"സംരംഭകത്വ വികസനം","question":"സംരംഭകത്വം എന്താണ്?","options":["ബിസിനസ് ആരംഭിക്കൽ","ഉത്പാദനം","ഇല്ല","ശൂനം"],"answer":"ബിസിനസ് ആരംഭിക്കൽ"},
+{"q":172,"chapter":"സംരംഭകത്വ വികസനം","question":"Entrepreneur ആരാണ്?","options":["സംരംഭകൻ","തൊഴിലാളി","ഇല്ല","ശൂനം"],"answer":"സംരംഭകൻ"},
+{"q":173,"chapter":"സംരംഭകത്വ വികസനം","question":"Entrepreneurship involves risk:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":174,"chapter":"സംരംഭകത്വ വികസനം","question":"Entrepreneurship creates employment:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":175,"chapter":"സംരംഭകത്വ വികസനം","question":"Entrepreneurship promotes innovation:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+
+{"q":176,"chapter":"സംരംഭകത്വ വികസനം","question":"Entrepreneurship improves economy:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":177,"chapter":"സംരംഭകത്വ വികസനം","question":"Entrepreneur takes decisions:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":178,"chapter":"സംരംഭകത്വ വികസനം","question":"Entrepreneur organises resources:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":179,"chapter":"സംരംഭകത്വ വികസനം","question":"Entrepreneurship continuous process ആണോ?","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":180,"chapter":"സംരംഭകത്വ വികസനം","question":"Entrepreneurship essential ആണോ?","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+
+{"q":181,"chapter":"സംരംഭകത്വ വികസനം","question":"Entrepreneur creates value:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":182,"chapter":"സംരംഭകത്വ വികസനം","question":"Entrepreneurship helps growth:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":183,"chapter":"സംരംഭകത്വ വികസനം","question":"Entrepreneurship generates income:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":184,"chapter":"സംരംഭകത്വ വികസനം","question":"Entrepreneurship reduces unemployment:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":185,"chapter":"സംരംഭകത്വ വികസനം","question":"Entrepreneurship promotes development:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+
+{"q":186,"chapter":"സംരംഭകത്വ വികസനം","question":"Entrepreneur faces uncertainty:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":187,"chapter":"സംരംഭകത്വ വികസനം","question":"Entrepreneur takes initiative:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":188,"chapter":"സംരംഭകത്വ വികസനം","question":"Entrepreneur manages business:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":189,"chapter":"സംരംഭകത്വ വികസനം","question":"Entrepreneurship builds economy:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":190,"chapter":"സംരംഭകത്വ വികസനം","question":"Entrepreneurship important function ആണോ?","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+
+{"q":191,"chapter":"സംരംഭകത്വ വികസനം","question":"Entrepreneurship helps innovation:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":192,"chapter":"സംരംഭകത്വ വികസനം","question":"Entrepreneurship requires skills:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":193,"chapter":"സംരംഭകത്വ വികസനം","question":"Entrepreneurship needs planning:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":194,"chapter":"സംരംഭകത്വ വികസനം","question":"Entrepreneurship involves leadership:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":195,"chapter":"സംരംഭകത്വ വികസനം","question":"Entrepreneurship improves society:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+
+{"q":196,"chapter":"സംരംഭകത്വ വികസനം","question":"Entrepreneurship supports growth:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":197,"chapter":"സംരംഭകത്വ വികസനം","question":"Entrepreneurship helps development:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":198,"chapter":"സംരംഭകത്വ വികസനം","question":"Entrepreneurship builds future:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":199,"chapter":"സംരംഭകത്വ വികസനം","question":"Entrepreneurship creates opportunities:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":200,"chapter":"സംരംഭകത്വ വികസനം","question":"Entrepreneurship essential for economy:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"}
+]

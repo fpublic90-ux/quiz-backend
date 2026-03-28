@@ -1,0 +1,602 @@
+[
+  {
+    "question_number": 51,
+    "chapter": "ഹാലോആൽക്കെയിൻസ് ഹാലോആറനുകൾ",
+    "question": "E2 റിയാക്ഷൻ ഏത്?",
+    "options": {
+      "A": "ബേസ് + ഹാലൈഡ്",
+      "B": "ഹാലൈഡ് മാത്രം",
+      "C": "ന്യൂക്ലിയോഫൈൽ",
+      "D": "അല്ലാത്തത്"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 52,
+    "chapter": "ഹാലോആൽക്കെയിൻസ് ഹാലോആറനുകൾ",
+    "question": "Wurtz റിയാക്ഷൻ ഏത്?",
+    "options": {
+      "A": "2RX + 2Na → R-R + 2NaX",
+      "B": "RX + NaOH",
+      "C": "RX + KCN",
+      "D": "RX + AgNO₃"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 53,
+    "chapter": "ഹാലോആൽക്കെയിൻസ് ഹാലോആറനുകൾ",
+    "question": "Finkelstein റിയാക്ഷൻ?",
+    "options": {
+      "A": "RCl + NaI → RI + NaCl",
+      "B": "RBr + NaI",
+      "C": "RI + NaCl",
+      "D": "അല്ലാത്തത്"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 54,
+    "chapter": "ഹാലോആൽക്കെയിൻസ് ഹാലോആറനുകൾ",
+    "question": "ഹാലോആൽക്കെയിൻസിന്റെ ബോയിലിങ് പോയിന്റ് ക്രമം?",
+    "options": {
+      "A": "RI > RBr > RCl > RF",
+      "B": "RF > RCl > RBr > RI",
+      "C": "RCl > RBr > RI > RF",
+      "D": "അല്ലാത്തത്"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 55,
+    "chapter": "ഹാലോആൽക്കെയിൻസ് ഹാലോആറനുകൾ",
+    "question": "ഹാലോആറനുകളുടെ ബോയിലിങ് പോയിന്റ് ഉയർന്നത്?",
+    "options": {
+      "A": "C—X ബന്ധം ശക്തം",
+      "B": "പോളാർ",
+      "C": "രണ്ടും",
+      "D": "ഒന്നുമല്ല"
+    },
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 56,
+    "chapter": "ഹാലോആൽക്കെയിൻസ് ഹാലോആറനുകൾ",
+    "question": "ഹാലോആൽക്കെയിൻസ് വാട്ടറിൽ ലയിക്കുന്നതോ?",
+    "options": {
+      "A": "അല്ല",
+      "B": "അതെ",
+      "C": "ചിലത്",
+      "D": "അല്ലാത്തത്"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 57,
+    "chapter": "ഹാലോആൽക്കെയിൻസ് ഹാലോആറനുകൾ",
+    "question": "SN1 യിൽ റേറ്റ് ഡിപ്പൻഡന്റ്?",
+    "options": {
+      "A": "ഹാലൈഡ് മാത്രം",
+      "B": "ന്യൂക്ലിയോഫൈൽ",
+      "C": "രണ്ടും",
+      "D": "ഒന്നുമല്ല"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 58,
+    "chapter": "ഹാലോആൽക്കെയിൻസ് ഹാലോആറനുകൾ",
+    "question": "SN2 യിൽ റേറ്റ് ഡിപ്പൻഡന്റ്?",
+    "options": {
+      "A": "ഹാലൈഡ് + ന്യൂക്ലിയോഫൈൽ",
+      "B": "ഹാലൈഡ് മാത്രം",
+      "C": "ന്യൂക്ലിയോഫൈൽ മാത്രം",
+      "D": "അല്ലാത്തത്"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 59,
+    "chapter": "ഹാലോആൽക്കെയിൻസ് ഹാലോആറനുകൾ",
+    "question": "E2 റിയാക്ഷൻ ഏത്?",
+    "options": {
+      "A": "ബേസ് + ഹാലൈഡ്",
+      "B": "ഹാലൈഡ് മാത്രം",
+      "C": "ന്യൂക്ലിയോഫൈൽ",
+      "D": "അല്ലാത്തത്"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 60,
+    "chapter": "ഹാലോആൽക്കെയിൻസ് ഹാലോആറനുകൾ",
+    "question": "Wurtz റിയാക്ഷൻ ഏത്?",
+    "options": {
+      "A": "2RX + 2Na → R-R + 2NaX",
+      "B": "RX + NaOH",
+      "C": "RX + KCN",
+      "D": "RX + AgNO₃"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 61,
+    "chapter": "ഹാലോആൽക്കെയിൻസ് ഹാലോആറനുകൾ",
+    "question": "Finkelstein റിയാക്ഷൻ?",
+    "options": {
+      "A": "RCl + NaI → RI + NaCl",
+      "B": "RBr + NaI",
+      "C": "RI + NaCl",
+      "D": "അല്ലാത്തത്"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 62,
+    "chapter": "ഹാലോആൽക്കെയിൻസ് ഹാലോആറനുകൾ",
+    "question": "ഹാലോആൽക്കെയിൻസിന്റെ ബോയിലിങ് പോയിന്റ് ക്രമം?",
+    "options": {
+      "A": "RI > RBr > RCl > RF",
+      "B": "RF > RCl > RBr > RI",
+      "C": "RCl > RBr > RI > RF",
+      "D": "അല്ലാത്തത്"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 63,
+    "chapter": "ഹാലോആൽക്കെയിൻസ് ഹാലോആറനുകൾ",
+    "question": "ഹാലോആറനുകളുടെ ബോയിലിങ് പോയിന്റ് ഉയർന്നത്?",
+    "options": {
+      "A": "C—X ബന്ധം ശക്തം",
+      "B": "പോളാർ",
+      "C": "രണ്ടും",
+      "D": "ഒന്നുമല്ല"
+    },
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 64,
+    "chapter": "ഹാലോആൽക്കെയിൻസ് ഹാലോആറനുകൾ",
+    "question": "ഹാലോആൽക്കെയിൻസ് വാട്ടറിൽ ലയിക്കുന്നതോ?",
+    "options": {
+      "A": "അല്ല",
+      "B": "അതെ",
+      "C": "ചിലത്",
+      "D": "അല്ലാത്തത്"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 65,
+    "chapter": "ഹാലോആൽക്കെയിൻസ് ഹാലോആറനുകൾ",
+    "question": "SN1 യിൽ റേറ്റ് ഡിപ്പൻഡന്റ്?",
+    "options": {
+      "A": "ഹാലൈഡ് മാത്രം",
+      "B": "ന്യൂക്ലിയോഫൈൽ",
+      "C": "രണ്ടും",
+      "D": "ഒന്നുമല്ല"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 66,
+    "chapter": "ഹാലോആൽക്കെയിൻസ് ഹാലോആറനുകൾ",
+    "question": "SN2 യിൽ റേറ്റ് ഡിപ്പൻഡന്റ്?",
+    "options": {
+      "A": "ഹാലൈഡ് + ന്യൂക്ലിയോഫൈൽ",
+      "B": "ഹാലൈഡ് മാത്രം",
+      "C": "ന്യൂക്ലിയോഫൈൽ മാത്രം",
+      "D": "അല്ലാത്തത്"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 67,
+    "chapter": "ഹാലോആൽക്കെയിൻസ് ഹാലോആറനുകൾ",
+    "question": "E2 റിയാക്ഷൻ ഏത്?",
+    "options": {
+      "A": "ബേസ് + ഹാലൈഡ്",
+      "B": "ഹാലൈഡ് മാത്രം",
+      "C": "ന്യൂക്ലിയോഫൈൽ",
+      "D": "അല്ലാത്തത്"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 68,
+    "chapter": "ഹാലോആൽക്കെയിൻസ് ഹാലോആറനുകൾ",
+    "question": "Wurtz റിയാക്ഷൻ ഏത്?",
+    "options": {
+      "A": "2RX + 2Na → R-R + 2NaX",
+      "B": "RX + NaOH",
+      "C": "RX + KCN",
+      "D": "RX + AgNO₃"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 69,
+    "chapter": "ഹാലോആൽക്കെയിൻസ് ഹാലോആറനുകൾ",
+    "question": "Finkelstein റിയാക്ഷൻ?",
+    "options": {
+      "A": "RCl + NaI → RI + NaCl",
+      "B": "RBr + NaI",
+      "C": "RI + NaCl",
+      "D": "അല്ലാത്തത്"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 70,
+    "chapter": "ഹാലോആൽക്കെയിൻസ് ഹാലോആറനുകൾ",
+    "question": "ഹാലോആൽക്കെയിൻസിന്റെ ബോയിലിങ് പോയിന്റ് ക്രമം?",
+    "options": {
+      "A": "RI > RBr > RCl > RF",
+      "B": "RF > RCl > RBr > RI",
+      "C": "RCl > RBr > RI > RF",
+      "D": "അല്ലാത്തത്"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 71,
+    "chapter": "ഹാലോആൽക്കെയിൻസ് ഹാലോആറനുകൾ",
+    "question": "ഹാലോആറനുകളുടെ ബോയിലിങ് പോയിന്റ് ഉയർന്നത്?",
+    "options": {
+      "A": "C—X ബന്ധം ശക്തം",
+      "B": "പോളാർ",
+      "C": "രണ്ടും",
+      "D": "ഒന്നുമല്ല"
+    },
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 72,
+    "chapter": "ഹാലോആൽക്കെയിൻസ് ഹാലോആറനുകൾ",
+    "question": "ഹാലോആൽക്കെയിൻസ് വാട്ടറിൽ ലയിക്കുന്നതോ?",
+    "options": {
+      "A": "അല്ല",
+      "B": "അതെ",
+      "C": "ചിലത്",
+      "D": "അല്ലാത്തത്"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 73,
+    "chapter": "ഹാലോആൽക്കെയിൻസ് ഹാലോആറനുകൾ",
+    "question": "SN1 യിൽ റേറ്റ് ഡിപ്പൻഡന്റ്?",
+    "options": {
+      "A": "ഹാലൈഡ് മാത്രം",
+      "B": "ന്യൂക്ലിയോഫൈൽ",
+      "C": "രണ്ടും",
+      "D": "ഒന്നുമല്ല"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 74,
+    "chapter": "ഹാലോആൽക്കെയിൻസ് ഹാലോആറനുകൾ",
+    "question": "SN2 യിൽ റേറ്റ് ഡിപ്പൻഡന്റ്?",
+    "options": {
+      "A": "ഹാലൈഡ് + ന്യൂക്ലിയോഫൈൽ",
+      "B": "ഹാലൈഡ് മാത്രം",
+      "C": "ന്യൂക്ലിയോഫൈൽ മാത്രം",
+      "D": "അല്ലാത്തത്"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 75,
+    "chapter": "ഹാലോആൽക്കെയിൻസ് ഹാലോആറനുകൾ",
+    "question": "E2 റിയാക്ഷൻ ഏത്?",
+    "options": {
+      "A": "ബേസ് + ഹാലൈഡ്",
+      "B": "ഹാലൈഡ് മാത്രം",
+      "C": "ന്യൂക്ലിയോഫൈൽ",
+      "D": "അല്ലാത്തത്"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 76,
+    "chapter": "ഹാലോആൽക്കെയിൻസ് ഹാലോആറനുകൾ",
+    "question": "Wurtz റിയാക്ഷൻ ഏത്?",
+    "options": {
+      "A": "2RX + 2Na → R-R + 2NaX",
+      "B": "RX + NaOH",
+      "C": "RX + KCN",
+      "D": "RX + AgNO₃"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 77,
+    "chapter": "ഹാലോആൽക്കെയിൻസ് ഹാലോആറനുകൾ",
+    "question": "Finkelstein റിയാക്ഷൻ?",
+    "options": {
+      "A": "RCl + NaI → RI + NaCl",
+      "B": "RBr + NaI",
+      "C": "RI + NaCl",
+      "D": "അല്ലാത്തത്"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 78,
+    "chapter": "ഹാലോആൽക്കെയിൻസ് ഹാലോആറനുകൾ",
+    "question": "ഹാലോആൽക്കെയിൻസിന്റെ ബോയിലിങ് പോയിന്റ് ക്രമം?",
+    "options": {
+      "A": "RI > RBr > RCl > RF",
+      "B": "RF > RCl > RBr > RI",
+      "C": "RCl > RBr > RI > RF",
+      "D": "അല്ലാത്തത്"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 79,
+    "chapter": "ഹാലോആൽക്കെയിൻസ് ഹാലോആറനുകൾ",
+    "question": "ഹാലോആറനുകളുടെ ബോയിലിങ് പോയിന്റ് ഉയർന്നത്?",
+    "options": {
+      "A": "C—X ബന്ധം ശക്തം",
+      "B": "പോളാർ",
+      "C": "രണ്ടും",
+      "D": "ഒന്നുമല്ല"
+    },
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 80,
+    "chapter": "ഹാലോആൽക്കെയിൻസ് ഹാലോആറനുകൾ",
+    "question": "ഹാലോആൽക്കെയിൻസ് വാട്ടറിൽ ലയിക്കുന്നതോ?",
+    "options": {
+      "A": "അല്ല",
+      "B": "അതെ",
+      "C": "ചിലത്",
+      "D": "അല്ലാത്തത്"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 81,
+    "chapter": "ഹാലോആൽക്കെയിൻസ് ഹാലോആറനുകൾ",
+    "question": "SN1 യിൽ റേറ്റ് ഡിപ്പൻഡന്റ്?",
+    "options": {
+      "A": "ഹാലൈഡ് മാത്രം",
+      "B": "ന്യൂക്ലിയോഫൈൽ",
+      "C": "രണ്ടും",
+      "D": "ഒന്നുമല്ല"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 82,
+    "chapter": "ഹാലോആൽക്കെയിൻസ് ഹാലോആറനുകൾ",
+    "question": "SN2 യിൽ റേറ്റ് ഡിപ്പൻഡന്റ്?",
+    "options": {
+      "A": "ഹാലൈഡ് + ന്യൂക്ലിയോഫൈൽ",
+      "B": "ഹാലൈഡ് മാത്രം",
+      "C": "ന്യൂക്ലിയോഫൈൽ മാത്രം",
+      "D": "അല്ലാത്തത്"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 83,
+    "chapter": "ഹാലോആൽക്കെയിൻസ് ഹാലോആറനുകൾ",
+    "question": "E2 റിയാക്ഷൻ ഏത്?",
+    "options": {
+      "A": "ബേസ് + ഹാലൈഡ്",
+      "B": "ഹാലൈഡ് മാത്രം",
+      "C": "ന്യൂക്ലിയോഫൈൽ",
+      "D": "അല്ലാത്തത്"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 84,
+    "chapter": "ഹാലോആൽക്കെയിൻസ് ഹാലോആറനുകൾ",
+    "question": "Wurtz റിയാക്ഷൻ ഏത്?",
+    "options": {
+      "A": "2RX + 2Na → R-R + 2NaX",
+      "B": "RX + NaOH",
+      "C": "RX + KCN",
+      "D": "RX + AgNO₃"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 85,
+    "chapter": "ഹാലോആൽക്കെയിൻസ് ഹാലോആറനുകൾ",
+    "question": "Finkelstein റിയാക്ഷൻ?",
+    "options": {
+      "A": "RCl + NaI → RI + NaCl",
+      "B": "RBr + NaI",
+      "C": "RI + NaCl",
+      "D": "അല്ലാത്തത്"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 86,
+    "chapter": "ഹാലോആൽക്കെയിൻസ് ഹാലോആറനുകൾ",
+    "question": "ഹാലോആൽക്കെയിൻസിന്റെ ബോയിലിങ് പോയിന്റ് ക്രമം?",
+    "options": {
+      "A": "RI > RBr > RCl > RF",
+      "B": "RF > RCl > RBr > RI",
+      "C": "RCl > RBr > RI > RF",
+      "D": "അല്ലാത്തത്"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 87,
+    "chapter": "ഹാലോആൽക്കെയിൻസ് ഹാലോആറനുകൾ",
+    "question": "ഹാലോആറനുകളുടെ ബോയിലിങ് പോയിന്റ് ഉയർന്നത്?",
+    "options": {
+      "A": "C—X ബന്ധം ശക്തം",
+      "B": "പോളാർ",
+      "C": "രണ്ടും",
+      "D": "ഒന്നുമല്ല"
+    },
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 88,
+    "chapter": "ഹാലോആൽക്കെയിൻസ് ഹാലോആറനുകൾ",
+    "question": "ഹാലോആൽക്കെയിൻസ് വാട്ടറിൽ ലയിക്കുന്നതോ?",
+    "options": {
+      "A": "അല്ല",
+      "B": "അതെ",
+      "C": "ചിലത്",
+      "D": "അല്ലാത്തത്"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 89,
+    "chapter": "ഹാലോആൽക്കെയിൻസ് ഹാലോആറനുകൾ",
+    "question": "SN1 യിൽ റേറ്റ് ഡിപ്പൻഡന്റ്?",
+    "options": {
+      "A": "ഹാലൈഡ് മാത്രം",
+      "B": "ന്യൂക്ലിയോഫൈൽ",
+      "C": "രണ്ടും",
+      "D": "ഒന്നുമല്ല"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 90,
+    "chapter": "ഹാലോആൽക്കെയിൻസ് ഹാലോആറനുകൾ",
+    "question": "SN2 യിൽ റേറ്റ് ഡിപ്പൻഡന്റ്?",
+    "options": {
+      "A": "ഹാലൈഡ് + ന്യൂക്ലിയോഫൈൽ",
+      "B": "ഹാലൈഡ് മാത്രം",
+      "C": "ന്യൂക്ലിയോഫൈൽ മാത്രം",
+      "D": "അല്ലാത്തത്"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 91,
+    "chapter": "ഹാലോആൽക്കെയിൻസ് ഹാലോആറനുകൾ",
+    "question": "E2 റിയാക്ഷൻ ഏത്?",
+    "options": {
+      "A": "ബേസ് + ഹാലൈഡ്",
+      "B": "ഹാലൈഡ് മാത്രം",
+      "C": "ന്യൂക്ലിയോഫൈൽ",
+      "D": "അല്ലാത്തത്"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 92,
+    "chapter": "ഹാലോആൽക്കെയിൻസ് ഹാലോആറനുകൾ",
+    "question": "Wurtz റിയാക്ഷൻ ഏത്?",
+    "options": {
+      "A": "2RX + 2Na → R-R + 2NaX",
+      "B": "RX + NaOH",
+      "C": "RX + KCN",
+      "D": "RX + AgNO₃"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 93,
+    "chapter": "ഹാലോആൽക്കെയിൻസ് ഹാലോആറനുകൾ",
+    "question": "Finkelstein റിയാക്ഷൻ?",
+    "options": {
+      "A": "RCl + NaI → RI + NaCl",
+      "B": "RBr + NaI",
+      "C": "RI + NaCl",
+      "D": "അല്ലാത്തത്"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 94,
+    "chapter": "ഹാലോആൽക്കെയിൻസ് ഹാലോആറനുകൾ",
+    "question": "ഹാലോആൽക്കെയിൻസിന്റെ ബോയിലിങ് പോയിന്റ് ക്രമം?",
+    "options": {
+      "A": "RI > RBr > RCl > RF",
+      "B": "RF > RCl > RBr > RI",
+      "C": "RCl > RBr > RI > RF",
+      "D": "അല്ലാത്തത്"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 95,
+    "chapter": "ഹാലോആൽക്കെയിൻസ് ഹാലോആറനുകൾ",
+    "question": "ഹാലോആറനുകളുടെ ബോയിലിങ് പോയിന്റ് ഉയർന്നത്?",
+    "options": {
+      "A": "C—X ബന്ധം ശക്തം",
+      "B": "പോളാർ",
+      "C": "രണ്ടും",
+      "D": "ഒന്നുമല്ല"
+    },
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 96,
+    "chapter": "ഹാലോആൽക്കെയിൻസ് ഹാലോആറനുകൾ",
+    "question": "ഹാലോആൽക്കെയിൻസ് വാട്ടറിൽ ലയിക്കുന്നതോ?",
+    "options": {
+      "A": "അല്ല",
+      "B": "അതെ",
+      "C": "ചിലത്",
+      "D": "അല്ലാത്തത്"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 97,
+    "chapter": "ഹാലോആൽക്കെയിൻസ് ഹാലോആറനുകൾ",
+    "question": "SN1 യിൽ റേറ്റ് ഡിപ്പൻഡന്റ്?",
+    "options": {
+      "A": "ഹാലൈഡ് മാത്രം",
+      "B": "ന്യൂക്ലിയോഫൈൽ",
+      "C": "രണ്ടും",
+      "D": "ഒന്നുമല്ല"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 98,
+    "chapter": "ഹാലോആൽക്കെയിൻസ് ഹാലോആറനുകൾ",
+    "question": "SN2 യിൽ റേറ്റ് ഡിപ്പൻഡന്റ്?",
+    "options": {
+      "A": "ഹാലൈഡ് + ന്യൂക്ലിയോഫൈൽ",
+      "B": "ഹാലൈഡ് മാത്രം",
+      "C": "ന്യൂക്ലിയോഫൈൽ മാത്രം",
+      "D": "അല്ലാത്തത്"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 99,
+    "chapter": "ഹാലോആൽക്കെയിൻസ് ഹാലോആറനുകൾ",
+    "question": "E2 റിയാക്ഷൻ ഏത്?",
+    "options": {
+      "A": "ബേസ് + ഹാലൈഡ്",
+      "B": "ഹാലൈഡ് മാത്രം",
+      "C": "ന്യൂക്ലിയോഫൈൽ",
+      "D": "അല്ലാത്തത്"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 100,
+    "chapter": "ഹാലോആൽക്കെയിൻസ് ഹാലോആറനുകൾ",
+    "question": "Wurtz റിയാക്ഷൻ ഏത്?",
+    "options": {
+      "A": "2RX + 2Na → R-R + 2NaX",
+      "B": "RX + NaOH",
+      "C": "RX + KCN",
+      "D": "RX + AgNO₃"
+    },
+    "correct_answer": "A"
+  }
+]

@@ -1,0 +1,602 @@
+[
+  {
+    "question_number": 151,
+    "chapter": "ഹാലോആൽക്കെയിൻസ് ഹാലോആറനുകൾ",
+    "question": "ആൽക്കൈൽ ഹാലൈഡ് aq. KOH യോട് പ്രതികരിക്കുമ്പോൾ ലഭിക്കുന്നത്?",
+    "options": {
+      "A": "ആൽക്കഹോൾ",
+      "B": "ആൽക്കീൻ",
+      "C": "ആൽക്കൈൻ",
+      "D": "ഹാലോജൻ"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 152,
+    "chapter": "ഹാലോആൽക്കെയിൻസ് ഹാലോആറനുകൾ",
+    "question": "ആൽക്കൈൽ ഹാലൈഡ് alc. KOH യോട് പ്രതികരിക്കുമ്പോൾ ലഭിക്കുന്നത്?",
+    "options": {
+      "A": "ആൽക്കഹോൾ",
+      "B": "ആൽക്കീൻ",
+      "C": "ആൽക്കൈൻ",
+      "D": "എസ്റ്റർ"
+    },
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 153,
+    "chapter": "ഹാലോആൽക്കെയിൻസ് ഹാലോആറനുകൾ",
+    "question": "RX + KCN പ്രതികരണം ലഭിക്കുന്നത്?",
+    "options": {
+      "A": "R-CN",
+      "B": "R-NC",
+      "C": "R-OH",
+      "D": "R-NH₂"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 154,
+    "chapter": "ഹാലോആൽക്കെയിൻസ് ഹാലോആറനുകൾ",
+    "question": "RX + AgCN പ്രതികരണം ലഭിക്കുന്നത്?",
+    "options": {
+      "A": "R-CN",
+      "B": "R-NC",
+      "C": "R-OH",
+      "D": "R-NH₂"
+    },
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 155,
+    "chapter": "ഹാലോആൽക്കെയിൻസ് ഹാലോആറനുകൾ",
+    "question": "RX + NH₃ (അധികം) ലഭിക്കുന്നത്?",
+    "options": {
+      "A": "പ്രൈമറി അമൈൻ",
+      "B": "സെക്കൻഡറി അമൈൻ",
+      "C": "തേർഷ്യറി അമൈൻ",
+      "D": "ക്വാട്ടേണറി അമോണിയം ലവണം"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 156,
+    "chapter": "ഹാലോആൽക്കെയിൻസ് ഹാലോആറനുകൾ",
+    "question": "Grignard reagent തയ്യാറാക്കാൻ ഉപയോഗിക്കുന്നത്?",
+    "options": {
+      "A": "RX + Mg (dry ether)",
+      "B": "RX + Na",
+      "C": "RX + KCN",
+      "D": "RX + AgNO₃"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 157,
+    "chapter": "ഹാലോആൽക്കെയിൻസ് ഹാലോആറനുകൾ",
+    "question": "ആറൈൽ ഹാലൈഡ് nucleophilic substitution റിയാക്ഷൻ എന്തുകൊണ്ട് ബുദ്ധിമുട്ടാണ്?",
+    "options": {
+      "A": "Resonance effect",
+      "B": "Polar C-X bond",
+      "C": "Steric hindrance",
+      "D": "High boiling point"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 158,
+    "chapter": "ഹാലോആൽക്കെയിൻസ് ഹാലോആറനുകൾ",
+    "question": "Chlorobenzene ന്റെ IUPAC നാമം?",
+    "options": {
+      "A": "Chlorobenzene",
+      "B": "Bromobenzene",
+      "C": "1-Chlorobenzene",
+      "D": "Phenyl chloride"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 159,
+    "chapter": "ഹാലോആൽക്കെയിൻസ് ഹാലോആറനുകൾ",
+    "question": "Sandmeyer reaction ഉപയോഗിച്ച് തയ്യാറാക്കുന്നത്?",
+    "options": {
+      "A": "Aryl halide from diazonium salt",
+      "B": "Alkyl halide from alcohol",
+      "C": "Alkene from alkyl halide",
+      "D": "Amine from alkyl halide"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 160,
+    "chapter": "ഹാലോആൽക്കെയിൻസ് ഹാലോആറനുകൾ",
+    "question": "Wurtz-Fittig reaction ഏത്?",
+    "options": {
+      "A": "Aryl halide + alkyl halide + Na",
+      "B": "2 Alkyl halide + Na",
+      "C": "Alkyl halide + KCN",
+      "D": "Aryl halide + Mg"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 161,
+    "chapter": "ഹാലോആൽക്കെയിൻസ് ഹാലോആറനുകൾ",
+    "question": "SN1 mechanism ലെ intermediate?",
+    "options": {
+      "A": "Carbocation",
+      "B": "Carbanion",
+      "C": "Free radical",
+      "D": "Transition state only"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 162,
+    "chapter": "ഹാലോആൽക്കെയിൻസ് ഹാലോആറനുകൾ",
+    "question": "SN2 mechanism ലെ stereochemistry?",
+    "options": {
+      "A": "Inversion of configuration",
+      "B": "Retention of configuration",
+      "C": "Racemization",
+      "D": "No change"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 163,
+    "chapter": "ഹാലോആൽക്കെയിൻസ് ഹാലോആറനുകൾ",
+    "question": "Tertiary alkyl halide ഏത് solvent ൽ SN1 പ്രോത്സാഹിപ്പിക്കുന്നു?",
+    "options": {
+      "A": "Polar protic",
+      "B": "Polar aprotic",
+      "C": "Non-polar",
+      "D": "Aqueous only"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 164,
+    "chapter": "ഹാലോആൽക്കെയിൻസ് ഹാലോആറനുകൾ",
+    "question": "Primary alkyl halide ഏത് solvent ൽ SN2 പ്രോത്സാഹിപ്പിക്കുന്നു?",
+    "options": {
+      "A": "Polar aprotic",
+      "B": "Polar protic",
+      "C": "Non-polar",
+      "D": "Aqueous"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 165,
+    "chapter": "ഹാലോആൽക്കെയിൻസ് ഹാലോആറനുകൾ",
+    "question": "Vinyl halide reactivity?",
+    "options": {
+      "A": "Low due to sp² carbon",
+      "B": "High",
+      "C": "Same as alkyl",
+      "D": "Higher than aryl"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 166,
+    "chapter": "ഹാലോആൽക്കെയിൻസ് ഹാലോആറനുകൾ",
+    "question": "Allyl halide reactivity?",
+    "options": {
+      "A": "High due to resonance",
+      "B": "Low",
+      "C": "Same as alkyl",
+      "D": "Lower than vinyl"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 167,
+    "chapter": "ഹാലോആൽക്കെയിൻസ് ഹാലോആറനുകൾ",
+    "question": "Benzyl halide reactivity?",
+    "options": {
+      "A": "High due to resonance",
+      "B": "Low",
+      "C": "Same as aryl",
+      "D": "Lower than primary alkyl"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 168,
+    "chapter": "ഹാലോആൽക്കെയിൻസ് ഹാലോആറനുകൾ",
+    "question": "Aryl halide + NaOH (high temp, pressure) ലഭിക്കുന്നത്?",
+    "options": {
+      "A": "Phenol",
+      "B": "Alcohol",
+      "C": "Benzene",
+      "D": "Aniline"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 169,
+    "chapter": "ഹാലോആൽക്കെയിൻസ് ഹാലോആറനുകൾ",
+    "question": "Chlorobenzene + CH₃Cl (anhy. AlCl₃) ലഭിക്കുന്നത്?",
+    "options": {
+      "A": "p-Chlorotoluene",
+      "B": "Toluene",
+      "C": "Benzene",
+      "D": "o-Chlorotoluene"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 170,
+    "chapter": "ഹാലോആൽക്കെയിൻസ് ഹാലോആറനുകൾ",
+    "question": "Haloalkanes യുടെ boiling point ക്രമം?",
+    "options": {
+      "A": "RI > RBr > RCl > RF",
+      "B": "RF > RCl > RBr > RI",
+      "C": "RCl > RBr > RI > RF",
+      "D": "Equal for all"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 171,
+    "chapter": "ഹാലോആൽക്കെയിൻസ് ഹാലോആറനുകൾ",
+    "question": "Haloalkanes density ക്രമം?",
+    "options": {
+      "A": "RI > RBr > RCl > RF",
+      "B": "RF > RCl > RBr > RI",
+      "C": "Same for all",
+      "D": "RCl > RBr > RI"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 172,
+    "chapter": "ഹാലോആൽക്കെയിൻസ് ഹാലോആറനുകൾ",
+    "question": "Haloarenes solubility in water?",
+    "options": {
+      "A": "Insoluble",
+      "B": "Soluble",
+      "C": "Partially soluble",
+      "D": "Highly soluble"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 173,
+    "chapter": "ഹാലോആൽക്കെയിൻസ് ഹാലോആറനുകൾ",
+    "question": "C-X bond polarity?",
+    "options": {
+      "A": "High in alkyl halides",
+      "B": "Low in aryl",
+      "C": "Same",
+      "D": "Zero"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 174,
+    "chapter": "ഹാലോആൽക്കെയിൻസ് ഹാലോആറനുകൾ",
+    "question": "Free radical halogenation ലെ major product?",
+    "options": {
+      "A": "Tertiary halide",
+      "B": "Primary halide",
+      "C": "Secondary",
+      "D": "Equal"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 175,
+    "chapter": "ഹാലോആൽക്കെയിൻസ് ഹാലോആറനുകൾ",
+    "question": "Markovnikov's rule apply ചെയ്യുന്ന reaction?",
+    "options": {
+      "A": "Alkene + HX",
+      "B": "Alkane + X₂",
+      "C": "Alcohol + HX",
+      "D": "Aryl halide"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 176,
+    "chapter": "ഹാലോആൽക്കെയിൻസ് ഹാലോആറനുകൾ",
+    "question": "Anti-Markovnikov ലഭിക്കാൻ?",
+    "options": {
+      "A": "Peroxide effect (HBr)",
+      "B": "Normal condition",
+      "C": "High temperature",
+      "D": "Aqueous KOH"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 177,
+    "chapter": "ഹാലോആൽക്കെയിൻസ് ഹാലോആറനുകൾ",
+    "question": "Haloalkanes യുടെ ഉപയോഗം?",
+    "options": {
+      "A": "Solvent, refrigerant, anaesthetic",
+      "B": "Only fuel",
+      "C": "Only medicine",
+      "D": "None"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 178,
+    "chapter": "ഹാലോആൽക്കെയിൻസ് ഹാലോആറനുകൾ",
+    "question": "DDT എന്താണ്?",
+    "options": {
+      "A": "Insecticide (dichloro diphenyl trichloroethane)",
+      "B": "Anaesthetic",
+      "C": "Refrigerant",
+      "D": "Solvent"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 179,
+    "chapter": "ഹാലോആൽക്കെയിൻസ് ഹാലോആറനുകൾ",
+    "question": "Chloroform യുടെ ഉപയോഗം?",
+    "options": {
+      "A": "Anaesthetic",
+      "B": "Insecticide",
+      "C": "Refrigerant",
+      "D": "All"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 180,
+    "chapter": "ഹാലോആൽക്കെയിൻസ് ഹാലോആറനുകൾ",
+    "question": "Freon യുടെ ഉപയോഗം?",
+    "options": {
+      "A": "Refrigerant",
+      "B": "Anaesthetic",
+      "C": "Insecticide",
+      "D": "Solvent"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 181,
+    "chapter": "ഹാലോആൽക്കെയിൻസ് ഹാലോആറനുകൾ",
+    "question": "Iodoform test positive ആകുന്നത്?",
+    "options": {
+      "A": "CH₃CH(OH)R or CH₃COR",
+      "B": "All alcohols",
+      "C": "Only primary",
+      "D": "Aryl only"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 182,
+    "chapter": "ഹാലോആൽക്കെയിൻസ് ഹാലോആറനുകൾ",
+    "question": "Carbocation stability ക്രമം?",
+    "options": {
+      "A": "3° > 2° > 1°",
+      "B": "1° > 2° > 3°",
+      "C": "Equal",
+      "D": "2° > 1° > 3°"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 183,
+    "chapter": "ഹാലോആൽക്കെയിൻസ് ഹാലോആറനുകൾ",
+    "question": "Elimination reaction major product?",
+    "options": {
+      "A": "Saytzeff rule (more substituted alkene)",
+      "B": "Hofmann rule",
+      "C": "Markovnikov",
+      "D": "Anti-Markovnikov"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 184,
+    "chapter": "ഹാലോആൽക്കെയിൻസ് ഹാലോആറനുകൾ",
+    "question": "Haloalkanes യിൽ C-X bond strength?",
+    "options": {
+      "A": "C-F > C-Cl > C-Br > C-I",
+      "B": "C-I > C-Br > C-Cl > C-F",
+      "C": "Equal",
+      "D": "C-Cl > C-F"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 185,
+    "chapter": "ഹാലോആൽക്കെയിൻസ് ഹാലോആറനുകൾ",
+    "question": "Aryl halide hydrolysis requires?",
+    "options": {
+      "A": "High temperature and pressure",
+      "B": "Room temperature",
+      "C": "Acid catalyst",
+      "D": "Base only"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 186,
+    "chapter": "ഹാലോആൽക്കെയിൻസ് ഹാലോആറനുകൾ",
+    "question": "Finkelstein reaction ലഭിക്കുന്നത്?",
+    "options": {
+      "A": "Alkyl iodide from chloride/bromide",
+      "B": "Alkyl bromide",
+      "C": "Aryl iodide",
+      "D": "All"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 187,
+    "chapter": "ഹാലോആൽക്കെയിൻസ് ഹാലോആറനുകൾ",
+    "question": "Swarts reaction ഉപയോഗം?",
+    "options": {
+      "A": "Alkyl fluoride from chloride",
+      "B": "Alkyl chloride",
+      "C": "Iodide",
+      "D": "Bromide"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 188,
+    "chapter": "ഹാലോആൽക്കെയിൻസ് ഹാലോആറനുകൾ",
+    "question": "Hunsdiecker reaction ലഭിക്കുന്നത്?",
+    "options": {
+      "A": "Alkyl bromide from silver carboxylate",
+      "B": "Alkyl iodide",
+      "C": "Aryl halide",
+      "D": "Alkene"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 189,
+    "chapter": "ഹാലോആൽക്കെയിൻസ് ഹാലോആറനുകൾ",
+    "question": "Vicinal dihalide തയ്യാറാക്കാൻ?",
+    "options": {
+      "A": "Alkene + X₂",
+      "B": "Alkane + X₂",
+      "C": "Alcohol + HX",
+      "D": "Aryl + X₂"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 190,
+    "chapter": "ഹാലോആൽക്കെയിൻസ് ഹാലോആറനുകൾ",
+    "question": "Geminal dihalide തയ്യാറാക്കാൻ?",
+    "options": {
+      "A": "Alkyne + 2HX",
+      "B": "Alkene + X₂",
+      "C": "Alcohol + PCl₅",
+      "D": "All"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 191,
+    "chapter": "ഹാലോആൽക്കെയിൻസ് ഹാലോആറനുകൾ",
+    "question": "Dehydrohalogenation ലഭിക്കുന്നത്?",
+    "options": {
+      "A": "Alkene from alkyl halide",
+      "B": "Alkane",
+      "C": "Alcohol",
+      "D": "Amine"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 192,
+    "chapter": "ഹാലോആൽക്കെയിൻസ് ഹാലോആറനുകൾ",
+    "question": "Reimer-Tiemann reaction ഏത്?",
+    "options": {
+      "A": "Phenol to salicylaldehyde",
+      "B": "Aryl halide",
+      "C": "Alkyl",
+      "D": "None"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 193,
+    "chapter": "ഹാലോആൽക്കെയിൻസ് ഹാലോആറനുകൾ",
+    "question": "Dow process ഏത്?",
+    "options": {
+      "A": "Chlorobenzene to phenol",
+      "B": "Alkyl halide to alcohol",
+      "C": "Aryl to alkyl",
+      "D": "None"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 194,
+    "chapter": "ഹാലോആൽക്കെയിൻസ് ഹാലോആറനുകൾ",
+    "question": "Friedel-Crafts alkylation ലഭിക്കുന്നത്?",
+    "options": {
+      "A": "Aryl halide + alkyl halide + AlCl₃",
+      "B": "Alkyl halide only",
+      "C": "Phenol",
+      "D": "None"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 195,
+    "chapter": "ഹാലോആൽക്കെയിൻസ് ഹാലോആറനുകൾ",
+    "question": "Nucleophilic substitution in aryl halide requires?",
+    "options": {
+      "A": "Strong nucleophile and activating group",
+      "B": "Weak nucleophile",
+      "C": "No condition",
+      "D": "Acid medium"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 196,
+    "chapter": "ഹാലോആൽക്കെയിൻസ് ഹാലോആറനുകൾ",
+    "question": "Benzyne mechanism ഏത് reaction?",
+    "options": {
+      "A": "Aryl halide with strong base",
+      "B": "Alkyl halide SN1",
+      "C": "SN2",
+      "D": "Elimination"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 197,
+    "chapter": "ഹാലോആൽക്കെയിൻസ് ഹാലോആറനുകൾ",
+    "question": "Haloform reaction ലഭിക്കുന്നത്?",
+    "options": {
+      "A": "Methyl ketone or alcohol with I₂/NaOH",
+      "B": "All ketones",
+      "C": "Aryl only",
+      "D": "None"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 198,
+    "chapter": "ഹാലോആൽക്കെയിൻസ് ഹാലോആറനുകൾ",
+    "question": "Tetraethyl lead യുടെ ഉപയോഗം?",
+    "options": {
+      "A": "Anti-knock agent",
+      "B": "Refrigerant",
+      "C": "Insecticide",
+      "D": "Anaesthetic"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 199,
+    "chapter": "ഹാലോആൽക്കെയിൻസ് ഹാലോആറനുകൾ",
+    "question": "Environmental issue with haloalkanes?",
+    "options": {
+      "A": "Ozone depletion (CFCs)",
+      "B": "No issue",
+      "C": "Only toxicity",
+      "D": "None"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 200,
+    "chapter": "ഹാലോആൽക്കെയിൻസ് ഹാലോആറനുകൾ",
+    "question": "Class 12 NCERT Unit 10 പ്രധാന തീമുകൾ?",
+    "options": {
+      "A": "Nomenclature, preparation, properties, reactions",
+      "B": "Only nomenclature",
+      "C": "Only reactions",
+      "D": "None"
+    },
+    "correct_answer": "A"
+  }
+]

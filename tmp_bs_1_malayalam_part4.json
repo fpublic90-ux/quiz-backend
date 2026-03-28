@@ -1,0 +1,61 @@
+[
+{"q":151,"chapter":"കാര്യനിർവഹണം","question":"Directing എന്താണ്?","options":["നേതൃത്വം നൽകൽ","നിയന്ത്രണം","സംഘാടനം","ഇല്ല"],"answer":"നേതൃത്വം നൽകൽ"},
+{"q":152,"chapter":"കാര്യനിർവഹണം","question":"Directing includes supervision:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":153,"chapter":"കാര്യനിർവഹണം","question":"Directing includes motivation:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":154,"chapter":"കാര്യനിർവഹണം","question":"Directing includes leadership:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":155,"chapter":"കാര്യനിർവഹണം","question":"Directing includes communication:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+
+{"q":156,"chapter":"കാര്യനിർവഹണം","question":"Supervision എന്താണ്?","options":["പരിരക്ഷണം/മേൽനോട്ടം","നിയന്ത്രണം","ഇല്ല","ശൂനം"],"answer":"പരിരക്ഷണം/മേൽനോട്ടം"},
+{"q":157,"chapter":"കാര്യനിർവഹണം","question":"Motivation എന്താണ്?","options":["പ്രചോദനം","നിയന്ത്രണം","ഇല്ല","ശൂനം"],"answer":"പ്രചോദനം"},
+{"q":158,"chapter":"കാര്യനിർവഹണം","question":"Leadership എന്താണ്?","options":["നേതൃത്വം","നിയന്ത്രണം","ഇല്ല","ശൂനം"],"answer":"നേതൃത്വം"},
+{"q":159,"chapter":"കാര്യനിർവഹണം","question":"Communication എന്താണ്?","options":["വിവരവിനിമയം","നിയന്ത്രണം","ഇല്ല","ശൂനം"],"answer":"വിവരവിനിമയം"},
+{"q":160,"chapter":"കാര്യനിർവഹണം","question":"Directing continuous process ആണോ?","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+
+{"q":161,"chapter":"കാര്യനിർവഹണം","question":"Motivation improves performance:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":162,"chapter":"കാര്യനിർവഹണം","question":"Leadership influences people:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":163,"chapter":"കാര്യനിർവഹണം","question":"Communication ensures clarity:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":164,"chapter":"കാര്യനിർവഹണം","question":"Directing helps coordination:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":165,"chapter":"കാര്യനിർവഹണം","question":"Directing goal oriented ആണോ?","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+
+{"q":166,"chapter":"കാര്യനിർവഹണം","question":"Supervision ensures discipline:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":167,"chapter":"കാര്യനിർവഹണം","question":"Motivation increases efficiency:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":168,"chapter":"കാര്യനിർവഹണം","question":"Leadership builds confidence:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":169,"chapter":"കാര്യനിർവഹണം","question":"Communication reduces misunderstanding:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":170,"chapter":"കാര്യനിർവഹണം","question":"Directing important function ആണോ?","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+
+{"q":171,"chapter":"നിയന്ത്രണം","question":"Controlling എന്താണ്?","options":["പ്രവർത്തനം നിയന്ത്രിക്കൽ","നേതൃത്വം","ഇല്ല","ശൂനം"],"answer":"പ്രവർത്തനം നിയന്ത്രിക്കൽ"},
+{"q":172,"chapter":"നിയന്ത്രണം","question":"Controlling compares performance:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":173,"chapter":"നിയന്ത്രണം","question":"Controlling ensures standards:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":174,"chapter":"നിയന്ത്രണം","question":"Controlling continuous process ആണോ?","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":175,"chapter":"നിയന്ത്രണം","question":"Controlling corrective action ഉൾപ്പെടുമോ?","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+
+{"q":176,"chapter":"നിയന്ത്രണം","question":"Controlling measures performance:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":177,"chapter":"നിയന്ത്രണം","question":"Controlling reduces deviation:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":178,"chapter":"നിയന്ത്രണം","question":"Controlling improves efficiency:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":179,"chapter":"നിയന്ത്രണം","question":"Controlling ensures discipline:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":180,"chapter":"നിയന്ത്രണം","question":"Controlling helps goal achievement:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+
+{"q":181,"chapter":"നിയന്ത്രണം","question":"Standards setting is first step:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":182,"chapter":"നിയന്ത്രണം","question":"Performance measurement needed:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":183,"chapter":"നിയന്ത്രണം","question":"Comparison of results important:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":184,"chapter":"നിയന്ത്രണം","question":"Deviation analysis needed:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":185,"chapter":"നിയന്ത്രണം","question":"Corrective action necessary:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+
+{"q":186,"chapter":"നിയന്ത്രണം","question":"Controlling improves planning:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":187,"chapter":"നിയന്ത്രണം","question":"Controlling reduces risk:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":188,"chapter":"നിയന്ത്രണം","question":"Controlling ensures coordination:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":189,"chapter":"നിയന്ത്രണം","question":"Controlling helps efficiency:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":190,"chapter":"നിയന്ത്രണം","question":"Controlling helps discipline:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+
+{"q":191,"chapter":"നിയന്ത്രണം","question":"Controlling future improvement:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":192,"chapter":"നിയന്ത്രണം","question":"Controlling performance oriented:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":193,"chapter":"നിയന്ത്രണം","question":"Controlling systematic process ആണോ?","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":194,"chapter":"നിയന്ത്രണം","question":"Controlling part of management cycle ആണോ?","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":195,"chapter":"നിയന്ത്രണം","question":"Controlling ensures organisational success:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+
+{"q":196,"chapter":"നിയന്ത്രണം","question":"Controlling linked with planning:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":197,"chapter":"നിയന്ത്രണം","question":"Controlling improves decision making:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":198,"chapter":"നിയന്ത്രണം","question":"Controlling reduces errors:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":199,"chapter":"നിയന്ത്രണം","question":"Controlling ensures accuracy:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":200,"chapter":"നിയന്ത്രണം","question":"Controlling essential function ആണോ?","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"}
+]

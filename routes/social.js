@@ -2,6 +2,7 @@ const express = require('express');
 const router = express.Router();
 const User = require('../models/User');
 const { verifyToken } = require('../middleware/authMiddleware');
+const NotificationManager = require('../managers/NotificationManager');
 
 module.exports = (io, userSockets) => {
     // POST /api/social/friend-request/send/:targetUid
@@ -45,16 +46,19 @@ module.exports = (io, userSockets) => {
             await user.save();
             await target.save();
 
-            // Notify target user via socket
-            if (io && userSockets) {
-                const targetSocketId = userSockets.get(targetUid);
-                if (targetSocketId) {
-                    io.to(targetSocketId).emit('new_friend_request', {
-                        requesterName: user.displayName,
-                        requesterUid: uid
-                    });
+            // Notify target user via NotificationManager (Persist + Socket + FCM)
+            await NotificationManager.notify(io, userSockets, {
+                recipient: targetUid,
+                sender: uid,
+                type: 'friend_request',
+                title: 'New Friend Request',
+                message: `${user.displayName} sent you a friend request!`,
+                data: {
+                    requesterUid: uid,
+                    requesterName: user.displayName,
+                    requesterAvatar: user.avatar
                 }
-            }
+            });
 
             res.json({ status: 'requested', sentRequests: user.sentFriendRequests });
 
@@ -90,19 +94,23 @@ module.exports = (io, userSockets) => {
             await user.save();
             await source.save();
 
-            // Notify requester
-            if (io && userSockets) {
-                const sourceSocketId = userSockets.get(sourceUid);
-                if (sourceSocketId) {
-                    io.to(sourceSocketId).emit('friend_request_accepted', {
-                        userName: user.displayName,
-                        userUid: uid
-                    });
+            // Notify requester that request was accepted
+            await NotificationManager.notify(io, userSockets, {
+                recipient: sourceUid,
+                sender: uid,
+                type: 'friend_accept',
+                title: 'Friend Request Accepted',
+                message: `${user.displayName} accepted your friend request!`,
+                data: {
+                    userUid: uid,
+                    userName: user.displayName,
+                    userAvatar: user.avatar
                 }
-            }
+            });
 
             res.json({ status: 'accepted', friends: user.friends });
         } catch (err) {
+            console.error('Accept Friend Request Error:', err);
             res.status(500).json({ message: 'Server error' });
         }
     });

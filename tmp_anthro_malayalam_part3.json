@@ -1,0 +1,63 @@
+[
+{"q":101,"chapter":"ഇന്ത്യൻ ജനതയും സംസ്കാരവും (Indian People and Culture)","question":"ഇന്ത്യൻ സംസ്കാരത്തിന്റെ പ്രധാന സവിശേഷത:","options":["വൈവിധ്യം","ഒറ്റ സംസ്കാരം","ഇല്ല","ശൂനം"],"answer":"വൈവിധ്യം"},
+{"q":102,"chapter":"ഇന്ത്യൻ ജനതയും സംസ്കാരവും (Indian People and Culture)","question":"ഭാഷാ വൈവിധ്യം ഇന്ത്യയിൽ:","options":["കൂടുതൽ","കുറവ്","ഇല്ല","ശൂനം"],"answer":"കൂടുതൽ"},
+{"q":103,"chapter":"ഇന്ത്യൻ ജനതയും സംസ്കാരവും (Indian People and Culture)","question":"മത വൈവിധ്യം:","options":["ഉണ്ട്","ഇല്ല","ശൂനം","സ്ഥിരം"],"answer":"ഉണ്ട്"},
+{"q":104,"chapter":"ഇന്ത്യൻ ജനതയും സംസ്കാരവും (Indian People and Culture)","question":"ഇന്ത്യൻ സമൂഹം:","options":["ബഹുസ്വര","ഒറ്റ","ഇല്ല","ശൂനം"],"answer":"ബഹുസ്വര"},
+{"q":105,"chapter":"ഇന്ത്യൻ ജനതയും സംസ്കാരവും (Indian People and Culture)","question":"സംസ്കാര ഏകത:","options":["യൂണിറ്റി","ഇല്ല","ശൂനം","സ്ഥിരം"],"answer":"യൂണിറ്റി"},
+
+{"q":106,"chapter":"സാമൂഹിക സാംസ്കാരികമാറ്റം (Socio-Cultural Change)","question":"സാമൂഹിക മാറ്റം എന്താണ്?","options":["സമൂഹത്തിൽ മാറ്റം","ഇല്ല","ശൂനം","സ്ഥിരം"],"answer":"സമൂഹത്തിൽ മാറ്റം"},
+{"q":107,"chapter":"സാമൂഹിക സാംസ്കാരികമാറ്റം (Socio-Cultural Change)","question":"സംസ്കാര മാറ്റം:","options":["മാറുന്ന സംസ്കാരം","ഇല്ല","ശൂനം","സ്ഥിരം"],"answer":"മാറുന്ന സംസ്കാരം"},
+{"q":108,"chapter":"സാമൂഹിക സാംസ്കാരികമാറ്റം (Socio-Cultural Change)","question":"ഇന്നൊവേഷൻ:","options":["പുതുമ","ഇല്ല","ശൂനം","സ്ഥിരം"],"answer":"പുതുമ"},
+{"q":109,"chapter":"സാമൂഹിക സാംസ്കാരികമാറ്റം (Socio-Cultural Change)","question":"ഡിഫ്യൂഷൻ:","options":["വ്യാപനം","ഇല്ല","ശൂനം","സ്ഥിരം"],"answer":"വ്യാപനം"},
+{"q":110,"chapter":"സാമൂഹിക സാംസ്കാരികമാറ്റം (Socio-Cultural Change)","question":"അക്കൾചറേഷൻ:","options":["സംയോജനം","ഇല്ല","ശൂനം","സ്ഥിരം"],"answer":"സംയോജനം"},
+
+{"q":111,"chapter":"ഗോത്രവർഗങ്ങളും പാർശ്വവൽകൃത ജനതയും (Tribes and Marginalized People)","question":"ഗോത്രവർഗം:","options":["ആദിവാസി","ഇല്ല","ശൂനം","സ്ഥിരം"],"answer":"ആദിവാസി"},
+{"q":112,"chapter":"ഗോത്രവർഗങ്ങളും പാർശ്വവൽകൃത ജനതയും (Tribes and Marginalized People)","question":"പാർശ്വവൽകൃത ജനത:","options":["മാർജിനലൈസ്ഡ്","ഇല്ല","ശൂനം","സ്ഥിരം"],"answer":"മാർജിനലൈസ്ഡ്"},
+{"q":113,"chapter":"ഗോത്രവർഗങ്ങളും പാർശ്വവൽകൃത ജനതയും (Tribes and Marginalized People)","question":"ആദിവാസി ജീവിതം:","options":["സരളം","സങ്കീർണ്ണം","ഇല്ല","ശൂനം"],"answer":"സരളം"},
+{"q":114,"chapter":"ഗോത്രവർഗങ്ങളും പാർശ്വവൽകൃത ജനതയും (Tribes and Marginalized People)","question":"ഗോത്രസംസ്കാരം:","options":["സ്വതന്ത്രം","ഇല്ല","ശൂനം","സ്ഥിരം"],"answer":"സ്വതന്ത്രം"},
+{"q":115,"chapter":"ഗോത്രവർഗങ്ങളും പാർശ്വവൽകൃത ജനതയും (Tribes and Marginalized People)","question":"സാമൂഹിക പ്രശ്നങ്ങൾ:","options":["ദാരിദ്ര്യം","ഇല്ല","ശൂനം","സ്ഥിരം"],"answer":"ദാരിദ്ര്യം"},
+
+{"q":116,"chapter":"ഗോത്രവർഗങ്ങളും പാർശ്വവൽകൃത ജനതയും (Tribes and Marginalized People)","question":"വിദ്യാഭ്യാസം കുറവ്:","options":["പ്രശ്നം","ഇല്ല","ശൂനം","സ്ഥിരം"],"answer":"പ്രശ്നം"},
+{"q":117,"chapter":"ഗോത്രവർഗങ്ങളും പാർശ്വവൽകൃത ജനതയും (Tribes and Marginalized People)","question":"ആരോഗ്യ പ്രശ്നം:","options":["ഉണ്ട്","ഇല്ല","ശൂനം","സ്ഥിരം"],"answer":"ഉണ്ട്"},
+{"q":118,"chapter":"ഗോത്രവർഗങ്ങളും പാർശ്വവൽകൃത ജനതയും (Tribes and Marginalized People)","question":"വികസനം ആവശ്യം:","options":["ഉണ്ട്","ഇല്ല","ശൂനം","സ്ഥിരം"],"answer":"ഉണ്ട്"},
+{"q":119,"chapter":"ഗോത്രവർഗങ്ങളും പാർശ്വവൽകൃത ജനതയും (Tribes and Marginalized People)","question":"സംരക്ഷണം:","options":["ആവശ്യം","ഇല്ല","ശൂനം","സ്ഥിരം"],"answer":"ആവശ്യം"},
+{"q":120,"chapter":"ഗോത്രവർഗങ്ങളും പാർശ്വവൽകൃത ജനതയും (Tribes and Marginalized People)","question":"അവകാശങ്ങൾ:","options":["പ്രധാനമാണ്","ഇല്ല","ശൂനം","സ്ഥിരം"],"answer":"പ്രധാനമാണ്"},
+
+{"q":120,"chapter":"ഗോത്രവർഗങ്ങളും പാർശ്വവൽകൃത ജനതയും (Tribes and Marginalized People)","question":"ഗോത്രവർഗങ്ങളുടെ പ്രധാന ആവശ്യങ്ങൾ:","options":["വികസനം","ഇല്ല","ശൂനം","സ്ഥിരം"],"answer":"വികസനം"},
+
+{"q":121,"chapter":"പ്രയുക്ത-വികസന നരവംശശാസ്ത്രം (Applied and Development Anthropology)","question":"പ്രയുക്ത നരവംശശാസ്ത്രം എന്നത്:","options":["പ്രായോഗിക ഉപയോഗം","സിദ്ധാന്തം മാത്രം","ഇല്ല","ശൂനം"],"answer":"പ്രായോഗിക ഉപയോഗം"},
+{"q":122,"chapter":"പ്രയുക്ത-വികസന നരവംശശാസ്ത്രം (Applied and Development Anthropology)","question":"വികസന നരവംശശാസ്ത്രം:","options":["സമൂഹ വികസനം","ഇല്ല","ശൂനം","സ്ഥിരം"],"answer":"സമൂഹ വികസനം"},
+{"q":123,"chapter":"പ്രയുക്ത-വികസന നരവംശശാസ്ത്രം (Applied and Development Anthropology)","question":"സുസ്ഥിര വികസനം:","options":["ദീർഘകാല പുരോഗതി","ഇല്ല","ശൂനം","സ്ഥിരം"],"answer":"ദീർഘകാല പുരോഗതി"},
+{"q":124,"chapter":"പ്രയുക്ത-വികസന നരവംശശാസ്ത്രം (Applied and Development Anthropology)","question":"സമൂഹ പങ്കാളിത്തം:","options":["പ്രധാനമാണ്","ഇല്ല","ശൂനം","സ്ഥിരം"],"answer":"പ്രധാനമാണ്"},
+{"q":125,"chapter":"പ്രയുക്ത-വികസന നരവംശശാസ്ത്രം (Applied and Development Anthropology)","question":"പദ്ധതി രൂപകൽപ്പന:","options":["അവശ്യമാണ്","ഇല്ല","ശൂനം","സ്ഥിരം"],"answer":"അവശ്യമാണ്"},
+
+{"q":126,"chapter":"പ്രയുക്ത-വികസന നരവംശശാസ്ത്രം (Applied and Development Anthropology)","question":"വികസന പദ്ധതി:","options":["സമൂഹത്തിനായി","ഇല്ല","ശൂനം","സ്ഥിരം"],"answer":"സമൂഹത്തിനായി"},
+{"q":127,"chapter":"പ്രയുക്ത-വികസന നരവംശശാസ്ത്രം (Applied and Development Anthropology)","question":"സ്രോതസുകൾ ഉപയോഗം:","options":["കാര്യക്ഷമമായി","ഇല്ല","ശൂനം","സ്ഥിരം"],"answer":"കാര്യക്ഷമമായി"},
+{"q":128,"chapter":"പ്രയുക്ത-വികസന നരവംശശാസ്ത്രം (Applied and Development Anthropology)","question":"വികസന ലക്ഷ്യം:","options":["ജീവിത നിലവാരം ഉയർത്തൽ","ഇല്ല","ശൂനം","സ്ഥിരം"],"answer":"ജീവിത നിലവാരം ഉയർത്തൽ"},
+{"q":129,"chapter":"പ്രയുക്ത-വികസന നരവംശശാസ്ത്രം (Applied and Development Anthropology)","question":"സമൂഹ സേവനം:","options":["പ്രധാനമാണ്","ഇല്ല","ശൂനം","സ്ഥിരം"],"answer":"പ്രധാനമാണ്"},
+{"q":130,"chapter":"പ്രയുക്ത-വികസന നരവംശശാസ്ത്രം (Applied and Development Anthropology)","question":"വികസന പരിപാടികൾ:","options":["ആവശ്യമാണ്","ഇല്ല","ശൂനം","സ്ഥിരം"],"answer":"ആവശ്യമാണ്"},
+
+{"q":131,"chapter":"ഇന്ത്യൻ നരവംശശാസ്ത്രത്തിലെ പ്രാമാണികർ (Eminent Figures in Indian Anthropology)","question":"ഇന്ത്യൻ നരവംശശാസ്ത്രത്തിലെ പ്രമുഖർ:","options":["പലരുണ്ട്","ഇല്ല","ശൂനം","സ്ഥിരം"],"answer":"പലരുണ്ട്"},
+{"q":132,"chapter":"ഇന്ത്യൻ നരവംശശാസ്ത്രത്തിലെ പ്രാമാണികർ (Eminent Figures in Indian Anthropology)","question":"ഗവേഷണ സംഭാവനകൾ:","options":["പ്രധാനമാണ്","ഇല്ല","ശൂനം","സ്ഥിരം"],"answer":"പ്രധാനമാണ്"},
+{"q":133,"chapter":"ഇന്ത്യൻ നരവംശശാസ്ത്രത്തിലെ പ്രാമാണികർ (Eminent Figures in Indian Anthropology)","question":"ഇന്ത്യൻ നരവംശശാസ്ത്ര വികസനം:","options":["വളരുന്നു","ഇല്ല","ശൂനം","സ്ഥിരം"],"answer":"വളരുന്നു"},
+{"q":134,"chapter":"ഇന്ത്യൻ നരവംശശാസ്ത്രത്തിലെ പ്രാമാണികർ (Eminent Figures in Indian Anthropology)","question":"വിദ്യാഭ്യാസ മേഖലയിൽ സംഭാവന:","options":["ഉണ്ട്","ഇല്ല","ശൂനം","സ്ഥിരം"],"answer":"ഉണ്ട്"},
+{"q":135,"chapter":"ഇന്ത്യൻ നരവംശശാസ്ത്രത്തിലെ പ്രാമാണികർ (Eminent Figures in Indian Anthropology)","question":"സാമൂഹിക പഠനത്തിൽ പങ്ക്:","options":["പ്രധാനമാണ്","ഇല്ല","ശൂനം","സ്ഥിരം"],"answer":"പ്രധാനമാണ്"},
+
+{"q":136,"chapter":"ഇന്ത്യൻ നരവംശശാസ്ത്രത്തിലെ പ്രാമാണികർ (Eminent Figures in Indian Anthropology)","question":"ഗവേഷണ പ്രവർത്തനം:","options":["വ്യാപകമാണ്","ഇല്ല","ശൂനം","സ്ഥിരം"],"answer":"വ്യാപകമാണ്"},
+{"q":137,"chapter":"ഇന്ത്യൻ നരവംശശാസ്ത്രത്തിലെ പ്രാമാണികർ (Eminent Figures in Indian Anthropology)","question":"വിജ്ഞാന സംഭാവന:","options":["പ്രധാനമാണ്","ഇല്ല","ശൂനം","സ്ഥിരം"],"answer":"പ്രധാനമാണ്"},
+{"q":138,"chapter":"ഇന്ത്യൻ നരവംശശാസ്ത്രത്തിലെ പ്രാമാണികർ (Eminent Figures in Indian Anthropology)","question":"വിദ്യാർത്ഥികൾക്ക് പ്രചോദനം:","options":["നൽകുന്നു","ഇല്ല","ശൂനം","സ്ഥിരം"],"answer":"നൽകുന്നു"},
+{"q":139,"chapter":"ഇന്ത്യൻ നരവംശശാസ്ത്രത്തിലെ പ്രാമാണികർ (Eminent Figures in Indian Anthropology)","question":"വിദ്യാഭ്യാസ പുരോഗതി:","options":["ഉണ്ട്","ഇല്ല","ശൂനം","സ്ഥിരം"],"answer":"ഉണ്ട്"},
+{"q":140,"chapter":"ഇന്ത്യൻ നരവംശശാസ്ത്രത്തിലെ പ്രാമാണികർ (Eminent Figures in Indian Anthropology)","question":"പുതിയ പഠന മേഖലകൾ:","options":["ഉണ്ട്","ഇല്ല","ശൂനം","സ്ഥിരം"],"answer":"ഉണ്ട്"},
+
+{"q":141,"chapter":"ഇന്ത്യൻ നരവംശശാസ്ത്രത്തിലെ പ്രാമാണികർ (Eminent Figures in Indian Anthropology)","question":"ശാസ്ത്രീയ സമീപനം:","options":["പ്രധാനമാണ്","ഇല്ല","ശൂനം","സ്ഥിരം"],"answer":"പ്രധാനമാണ്"},
+{"q":142,"chapter":"ഇന്ത്യൻ നരവംശശാസ്ത്രത്തിലെ പ്രാമാണികർ (Eminent Figures in Indian Anthropology)","question":"പഠന രീതികൾ:","options":["വികസിക്കുന്നു","ഇല്ല","ശൂനം","സ്ഥിരം"],"answer":"വികസിക്കുന്നു"},
+{"q":143,"chapter":"ഇന്ത്യൻ നരവംശശാസ്ത്രത്തിലെ പ്രാമാണികർ (Eminent Figures in Indian Anthropology)","question":"സംഭാവനകൾ വിലമതിക്കുന്നത്:","options":["ആവശ്യമാണ്","ഇല്ല","ശൂനം","സ്ഥിരം"],"answer":"ആവശ്യമാണ്"},
+{"q":144,"chapter":"ഇന്ത്യൻ നരവംശശാസ്ത്രത്തിലെ പ്രാമാണികർ (Eminent Figures in Indian Anthropology)","question":"പുതിയ ആശയങ്ങൾ:","options":["ഉണ്ട്","ഇല്ല","ശൂനം","സ്ഥിരം"],"answer":"ഉണ്ട്"},
+{"q":145,"chapter":"ഇന്ത്യൻ നരവംശശാസ്ത്രത്തിലെ പ്രാമാണികർ (Eminent Figures in Indian Anthropology)","question":"വിജ്ഞാന വളർച്ച:","options":["തുടരുന്നു","ഇല്ല","ശൂനം","സ്ഥിരം"],"answer":"തുടരുന്നു"},
+
+{"q":146,"chapter":"ഇന്ത്യൻ നരവംശശാസ്ത്രത്തിലെ പ്രാമാണികർ (Eminent Figures in Indian Anthropology)","question":"പുതിയ ഗവേഷണം:","options":["നടക്കുന്നു","ഇല്ല","ശൂനം","സ്ഥിരം"],"answer":"നടക്കുന്നു"},
+{"q":147,"chapter":"ഇന്ത്യൻ നരവംശശാസ്ത്രത്തിലെ പ്രാമാണികർ (Eminent Figures in Indian Anthropology)","question":"വിദ്യാഭ്യാസ വികസനം:","options":["ഉണ്ട്","ഇല്ല","ശൂനം","സ്ഥിരം"],"answer":"ഉണ്ട്"},
+{"q":148,"chapter":"ഇന്ത്യൻ നരവംശശാസ്ത്രത്തിലെ പ്രാമാണികർ (Eminent Figures in Indian Anthropology)","question":"സമൂഹ സേവനം:","options":["പ്രധാനമാണ്","ഇല്ല","ശൂനം","സ്ഥിരം"],"answer":"പ്രധാനമാണ്"},
+{"q":149,"chapter":"ഇന്ത്യൻ നരവംശശാസ്ത്രത്തിലെ പ്രാമാണികർ (Eminent Figures in Indian Anthropology)","question":"വിദ്യാഭ്യാസ പ്രാധാന്യം:","options":["ഉണ്ട്","ഇല്ല","ശൂനം","സ്ഥിരം"],"answer":"ഉണ്ട്"},
+{"q":150,"chapter":"ഇന്ത്യൻ നരവംശശാസ്ത്രത്തിലെ പ്രാമാണികർ (Eminent Figures in Indian Anthropology)","question":"നരവംശശാസ്ത്രം:","options":["പ്രധാന ശാസ്ത്രം","ഇല്ല","ശൂനം","സ്ഥിരം"],"answer":"പ്രധാന ശാസ്ത്രം"}
+]

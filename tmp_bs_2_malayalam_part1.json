@@ -1,0 +1,61 @@
+[
+{"q":1,"chapter":"ധനകാര്യ മാനേജ്മെന്റ്","question":"ധനകാര്യ മാനേജ്മെന്റ് എന്താണ്?","options":["ധനസമ്പത്ത് നിയന്ത്രണം","ഉത്പാദനം","മാർക്കറ്റിംഗ്","ഇല്ല"],"answer":"ധനസമ്പത്ത് നിയന്ത്രണം"},
+{"q":2,"chapter":"ധനകാര്യ മാനേജ്മെന്റ്","question":"Financial management പ്രധാനമായും എന്തിനെ കുറിച്ചാണ്?","options":["ധനം","മാർക്കറ്റിംഗ്","ഉത്പാദനം","ഇല്ല"],"answer":"ധനം"},
+{"q":3,"chapter":"ധനകാര്യ മാനേജ്മെന്റ്","question":"പ്രധാന ലക്ഷ്യം എന്താണ്?","options":["സമ്പത്ത് വർദ്ധിപ്പിക്കൽ","നഷ്ടം വർദ്ധിപ്പിക്കൽ","ഇല്ല","ശൂനം"],"answer":"സമ്പത്ത് വർദ്ധിപ്പിക്കൽ"},
+{"q":4,"chapter":"ധനകാര്യ മാനേജ്മെന്റ്","question":"Investment decision എന്താണ്?","options":["നിക്ഷേപ തീരുമാനം","ധനശേഖരണം","ഇല്ല","ശൂനം"],"answer":"നിക്ഷേപ തീരുമാനം"},
+{"q":5,"chapter":"ധനകാര്യ മാനേജ്മെന്റ്","question":"Financing decision എന്താണ്?","options":["ധനശേഖരണം","നിക്ഷേപം","ഇല്ല","ശൂനം"],"answer":"ധനശേഖരണം"},
+
+{"q":6,"chapter":"ധനകാര്യ മാനേജ്മെന്റ്","question":"Dividend decision എന്താണ്?","options":["ലാഭവിഹിതം","നിക്ഷേപം","ഇല്ല","ശൂനം"],"answer":"ലാഭവിഹിതം"},
+{"q":7,"chapter":"ധനകാര്യ മാനേജ്മെന്റ്","question":"Working capital എന്താണ്?","options":["പ്രവർത്തന മൂലധനം","സ്ഥിര മൂലധനം","ഇല്ല","ശൂനം"],"answer":"പ്രവർത്തന മൂലധനം"},
+{"q":8,"chapter":"ധനകാര്യ മാനേജ്മെന്റ്","question":"Fixed capital എന്താണ്?","options":["സ്ഥിര മൂലധനം","പ്രവർത്തന മൂലധനം","ഇല്ല","ശൂനം"],"answer":"സ്ഥിര മൂലധനം"},
+{"q":9,"chapter":"ധനകാര്യ മാനേജ്മെന്റ്","question":"Financial planning എന്താണ്?","options":["ധന പദ്ധതി","നിയന്ത്രണം","ഇല്ല","ശൂനം"],"answer":"ധന പദ്ധതി"},
+{"q":10,"chapter":"ധനകാര്യ മാനേജ്മെന്റ്","question":"Liquidity എന്താണ്?","options":["തത്സമയം പണമാക്കൽ","നിക്ഷേപം","ഇല്ല","ശൂനം"],"answer":"തത്സമയം പണമാക്കൽ"},
+
+{"q":11,"chapter":"ധനകാര്യ മാനേജ്മെന്റ്","question":"Profit maximisation ലക്ഷ്യമാണോ?","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":12,"chapter":"ധനകാര്യ മാനേജ്മെന്റ്","question":"Risk ഉണ്ടോ financial decisions-ൽ?","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":13,"chapter":"ധനകാര്യ മാനേജ്മെന്റ്","question":"Return എന്താണ്?","options":["ലാഭം","നഷ്ടം","ഇല്ല","ശൂനം"],"answer":"ലാഭം"},
+{"q":14,"chapter":"ധനകാര്യ മാനേജ്മെന്റ്","question":"Cost of capital എന്താണ്?","options":["ധനച്ചെലവ്","ലാഭം","ഇല്ല","ശൂനം"],"answer":"ധനച്ചെലവ്"},
+{"q":15,"chapter":"ധനകാര്യ മാനേജ്മെന്റ്","question":"Capital structure എന്താണ്?","options":["ധനഘടന","ഉത്പാദനം","ഇല്ല","ശൂനം"],"answer":"ധനഘടന"},
+
+{"q":16,"chapter":"ധനകാര്യ മാനേജ്മെന്റ്","question":"Financial management continuous process ആണോ?","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":17,"chapter":"ധനകാര്യ മാനേജ്മെന്റ്","question":"Financial management helps decision making:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":18,"chapter":"ധനകാര്യ മാനേജ്മെന്റ്","question":"Working capital short-term ആണോ?","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":19,"chapter":"ധനകാര്യ മാനേജ്മെന്റ്","question":"Investment decision long-term ആണോ?","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":20,"chapter":"ധനകാര്യ മാനേജ്മെന്റ്","question":"Financial planning reduces risk:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+
+{"q":21,"chapter":"ധനകാര്യ മാനേജ്മെന്റ്","question":"Financial management improves efficiency:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":22,"chapter":"ധനകാര്യ മാനേജ്മെന്റ്","question":"Dividend relates to:","options":["ലാഭവിഹിതം","നിക്ഷേപം","ഇല്ല","ശൂനം"],"answer":"ലാഭവിഹിതം"},
+{"q":23,"chapter":"ധനകാര്യ മാനേജ്മെന്റ്","question":"Financial decisions risky ആണോ?","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":24,"chapter":"ധനകാര്യ മാനേജ്മെന്റ്","question":"Liquidity ensures:","options":["പണമാറ്റം എളുപ്പം","നഷ്ടം","ഇല്ല","ശൂനം"],"answer":"പണമാറ്റം എളുപ്പം"},
+{"q":25,"chapter":"ധനകാര്യ മാനേജ്മെന്റ്","question":"Wealth maximisation means:","options":["സമ്പത്ത് വർദ്ധിപ്പിക്കൽ","നഷ്ടം","ഇല്ല","ശൂനം"],"answer":"സമ്പത്ത് വർദ്ധിപ്പിക്കൽ"},
+
+{"q":26,"chapter":"ധനകാര്യ മാനേജ്മെന്റ്","question":"Financial planning is important:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":27,"chapter":"ധനകാര്യ മാനേജ്മെന്റ്","question":"Capital structure includes debt:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":28,"chapter":"ധനകാര്യ മാനേജ്മെന്റ്","question":"Capital structure includes equity:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":29,"chapter":"ധനകാര്യ മാനേജ്മെന്റ്","question":"Financial management deals with funds:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":30,"chapter":"ധനകാര്യ മാനേജ്മെന്റ്","question":"Working capital required daily operations:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+
+{"q":31,"chapter":"ധനകാര്യ മാനേജ്മെന്റ്","question":"Fixed capital used for long-term assets:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":32,"chapter":"ധനകാര്യ മാനേജ്മെന്റ്","question":"Financial management important function ആണോ?","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":33,"chapter":"ധനകാര്യ മാനേജ്മെന്റ്","question":"Return higher means better:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":34,"chapter":"ധനകാര്യ മാനേജ്മെന്റ്","question":"Risk higher means uncertainty:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":35,"chapter":"ധനകാര്യ മാനേജ്മെന്റ്","question":"Financial management supports growth:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+
+{"q":36,"chapter":"ധനകാര്യ മാനേജ്മെന്റ്","question":"Funds needed for business:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":37,"chapter":"ധനകാര്യ മാനേജ്മെന്റ്","question":"Planning helps control:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":38,"chapter":"ധനകാര്യ മാനേജ്മെന്റ്","question":"Finance affects all departments:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":39,"chapter":"ധനകാര്യ മാനേജ്മെന്റ്","question":"Financial management helps survival:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":40,"chapter":"ധനകാര്യ മാനേജ്മെന്റ്","question":"Funds allocation important:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+
+{"q":41,"chapter":"ധനകാര്യ മാനേജ്മെന്റ്","question":"Financial decisions affect profit:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":42,"chapter":"ധനകാര്യ മാനേജ്മെന്റ്","question":"Financial planning improves efficiency:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":43,"chapter":"ധനകാര്യ മാനേജ്മെന്റ്","question":"Capital structure decision important:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":44,"chapter":"ധനകാര്യ മാനേജ്മെന്റ്","question":"Financial management helps coordination:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":45,"chapter":"ധനകാര്യ മാനേജ്മെന്റ്","question":"Financial management reduces risk:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+
+{"q":46,"chapter":"ധനകാര്യ മാനേജ്മെന്റ്","question":"Finance required for growth:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":47,"chapter":"ധനകാര്യ മാനേജ്മെന്റ്","question":"Finance required for expansion:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":48,"chapter":"ധനകാര്യ മാനേജ്മെന്റ്","question":"Finance required for survival:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":49,"chapter":"ധനകാര്യ മാനേജ്മെന്റ്","question":"Financial management helps planning:","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"},
+{"q":50,"chapter":"ധനകാര്യ മാനേജ്മെന്റ്","question":"Financial management essential function ആണോ?","options":["അതെ","ഇല്ല","കുറച്ച്","അറിയില്ല"],"answer":"അതെ"}
+]
