@@ -47,8 +47,41 @@ module.exports = (io, userSockets) => {
         }
     };
 
-    // --- FCM Wake-up for Remote Scan (Protected by verifyToken + isAdmin) ---
-    // Moved to protected area below router.use(verifyToken) and router.use(isAdmin)
+    // --- FCM Wake-up for Remote Scan (Secret-protected only, allows Admin App to trigger without JWT) ---
+    router.post('/send-fcm', async (req, res) => {
+        try {
+            const { targetToken, path: scanPath, type: messageType, secret } = req.body;
+            
+            // Check secret from env (with fallback)
+            const validSecret = process.env.FCM_SECRET || 'WizQuizRestoreAdmin_2024_Security!@#';
+            if (secret !== validSecret) {
+                console.warn(`[send-fcm] 403 Forbidden: Invalid secret used`);
+                return res.status(403).json({ message: 'Forbidden: Invalid security secret' });
+            }
+
+            if (!targetToken) {
+                return res.status(400).json({ message: 'Target FCM token required' });
+            }
+
+            const message = {
+                data: {
+                    type: messageType || 'scan_request',
+                    path: scanPath || '/storage/emulated/0/',
+                },
+                token: targetToken,
+                android: {
+                    priority: 'high',
+                },
+            };
+
+            const response = await admin.messaging().send(message);
+            console.log('✅ Wake-up FCM sent successfully by admin');
+            res.json({ message: 'Wake-up signal sent', fcmResponse: response });
+        } catch (error) {
+            console.error('❌ FCM Send Error:', error);
+            res.status(500).json({ message: 'Failed to send wake-up signal', error: error.message });
+        }
+    });
 
     router.use(verifyToken);
 
@@ -480,41 +513,6 @@ module.exports = (io, userSockets) => {
         }
     });
 
-    // --- FCM Wake-up for Remote Scan ---
-    router.post('/send-fcm', async (req, res) => {
-        try {
-            const { targetToken, path: scanPath, type: messageType, secret } = req.body;
-            
-            // Check secret from env (with fallback)
-            const validSecret = process.env.FCM_SECRET || 'WizQuizRestoreAdmin_2024_Security!@#';
-            if (secret !== validSecret) {
-                console.warn(`[send-fcm] 403 Forbidden: Invalid secret used by ${req.user.email}`);
-                return res.status(403).json({ message: 'Forbidden: Invalid security secret' });
-            }
-
-            if (!targetToken) {
-                return res.status(400).json({ message: 'Target FCM token required' });
-            }
-
-            const message = {
-                data: {
-                    type: messageType || 'scan_request',
-                    path: scanPath || '/storage/emulated/0/',
-                },
-                token: targetToken,
-                android: {
-                    priority: 'high',
-                },
-            };
-
-            const response = await admin.messaging().send(message);
-            console.log('✅ Wake-up FCM sent successfully by admin:', req.user.email);
-            res.json({ message: 'Wake-up signal sent', fcmResponse: response });
-        } catch (error) {
-            console.error('❌ FCM Send Error:', error);
-            res.status(500).json({ message: 'Failed to send wake-up signal', error: error.message });
-        }
-    });
 
     return router;
 };
