@@ -6,7 +6,11 @@
   "scripts": {
     "start": "node server.js",
     "dev": "nodemon server.js",
-    "seed": "node data/seed.js"
+    "seed": "node data/seed.js",
+    "seed:zoology": "node seeds/seed_zoology_plus_two.js",
+    "seed:geology": "node seeds/seed_geology_plus_two.js",
+    "seed:computer-science": "node seeds/seed_computer_science_plus_two.js",
+    "seed:history": "node seeds/seed_history_plus_two.js"
   },
   "dependencies": {
     "@google/generative-ai": "^0.24.1",

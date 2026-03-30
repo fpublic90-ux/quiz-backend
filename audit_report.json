@@ -1,0 +1,667 @@
+[
+  {
+    "class": "+2",
+    "subject": "Chemistry 2",
+    "medium": "Malayalam",
+    "total": 95,
+    "brokenChapters": []
+  },
+  {
+    "class": "+2",
+    "subject": "Social Work",
+    "medium": "Malayalam",
+    "total": 10,
+    "brokenChapters": []
+  },
+  {
+    "class": "10th (SSLC)",
+    "subject": "Adisthana Padavali",
+    "medium": "English",
+    "total": 163,
+    "brokenChapters": [
+      {
+        "_id": "വിജ്ഞാനഭാഷയും വൈജ്ഞാനികസമൂഹവും",
+        "count": 6
+      },
+      {
+        "_id": "എന്റെ ഭാഷ",
+        "count": 6
+      },
+      {
+        "_id": "ഏകോദരസോദരർ നാം",
+        "count": 9
+      },
+      {
+        "_id": "വിഷുക്കണി",
+        "count": 9
+      },
+      {
+        "_id": "ആനന്ദാശ്രുക്കൾ",
+        "count": 8
+      },
+      {
+        "_id": "കെത്തളു",
+        "count": 7
+      }
+    ]
+  },
+  {
+    "class": "10th (SSLC)",
+    "subject": "Adisthana Padavali",
+    "medium": "Malayalam",
+    "total": 163,
+    "brokenChapters": [
+      {
+        "_id": "കെത്തളു",
+        "count": 7
+      },
+      {
+        "_id": "വിജ്ഞാനഭാഷയും വൈജ്ഞാനികസമൂഹവും",
+        "count": 6
+      },
+      {
+        "_id": "ഏകോദരസോദരർ നാം",
+        "count": 9
+      },
+      {
+        "_id": "എന്റെ ഭാഷ",
+        "count": 6
+      },
+      {
+        "_id": "ആനന്ദാശ്രുക്കൾ",
+        "count": 8
+      },
+      {
+        "_id": "വിഷുക്കണി",
+        "count": 9
+      }
+    ]
+  },
+  {
+    "class": "10th (SSLC)",
+    "subject": "Arabic",
+    "medium": "Malayalam",
+    "total": 2,
+    "brokenChapters": [
+      {
+        "_id": "Vocabulary",
+        "count": 1
+      },
+      {
+        "_id": "Islamic History",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "class": "10th (SSLC)",
+    "subject": "Biology",
+    "medium": "English",
+    "total": 316,
+    "brokenChapters": [
+      {
+        "_id": "Endocrine System",
+        "count": 1
+      },
+      {
+        "_id": "Sensations and Responses",
+        "count": 1
+      },
+      {
+        "_id": "Genetic Mysteries",
+        "count": 1
+      },
+      {
+        "_id": "Nervous System",
+        "count": 1
+      },
+      {
+        "_id": "Chemical Messages for Homeostasis",
+        "count": 1
+      },
+      {
+        "_id": "Windows of Knowledge",
+        "count": 1
+      },
+      {
+        "_id": "Immune System",
+        "count": 1
+      },
+      {
+        "_id": "Soldiers of Defense",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "class": "10th (SSLC)",
+    "subject": "Biology",
+    "medium": "Malayalam",
+    "total": 254,
+    "brokenChapters": [
+      {
+        "_id": "Endocrine System",
+        "count": 1
+      },
+      {
+        "_id": "Nervous System",
+        "count": 1
+      },
+      {
+        "_id": "ജനിതകശാസ്ത്രം",
+        "count": 3
+      }
+    ]
+  },
+  {
+    "class": "10th (SSLC)",
+    "subject": "Chemistry",
+    "medium": "Malayalam",
+    "total": 300,
+    "brokenChapters": [
+      {
+        "_id": "Periodic Table",
+        "count": 1
+      },
+      {
+        "_id": "Gas Laws",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "class": "10th (SSLC)",
+    "subject": "Chemistry",
+    "medium": "English",
+    "total": 318,
+    "brokenChapters": [
+      {
+        "_id": "Reactivity Series",
+        "count": 2
+      },
+      {
+        "_id": "Nomenclature of Organic Compounds",
+        "count": 1
+      },
+      {
+        "_id": "Periodic Table",
+        "count": 3
+      },
+      {
+        "_id": "Mole Concept",
+        "count": 1
+      },
+      {
+        "_id": "Chemical Reactions",
+        "count": 1
+      },
+      {
+        "_id": "Gas Laws",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "class": "10th (SSLC)",
+    "subject": "English",
+    "medium": "English",
+    "total": 201,
+    "brokenChapters": [
+      {
+        "_id": "The Trumpets of Change",
+        "count": 1
+      },
+      {
+        "_id": "A Piece of String",
+        "count": 5
+      },
+      {
+        "_id": "Grammar",
+        "count": 2
+      },
+      {
+        "_id": "Poetry",
+        "count": 1
+      },
+      {
+        "_id": "Breaking Barriers, I Will Fly",
+        "count": 8
+      },
+      {
+        "_id": "Paths to Progress",
+        "count": 1
+      },
+      {
+        "_id": "Another Day in Paradise",
+        "count": 4
+      },
+      {
+        "_id": "War",
+        "count": 4
+      }
+    ]
+  },
+  {
+    "class": "10th (SSLC)",
+    "subject": "English",
+    "medium": "Malayalam",
+    "total": 198,
+    "brokenChapters": [
+      {
+        "_id": "Paths to Progress",
+        "count": 1
+      },
+      {
+        "_id": "Another Day in Paradise",
+        "count": 4
+      },
+      {
+        "_id": "War",
+        "count": 4
+      },
+      {
+        "_id": "Breaking Barriers, I Will Fly",
+        "count": 8
+      },
+      {
+        "_id": "The Trumpets of Change",
+        "count": 1
+      },
+      {
+        "_id": "A Piece of String",
+        "count": 5
+      }
+    ]
+  },
+  {
+    "class": "10th (SSLC)",
+    "subject": "General",
+    "medium": "English",
+    "total": 21,
+    "brokenChapters": []
+  },
+  {
+    "class": "10th (SSLC)",
+    "subject": "ICT",
+    "medium": "Malayalam",
+    "total": 360,
+    "brokenChapters": [
+      {
+        "_id": "മോഡൽ আইടി റിവിഷൻ",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "class": "10th (SSLC)",
+    "subject": "Kerala Padavali",
+    "medium": "English",
+    "total": 147,
+    "brokenChapters": [
+      {
+        "_id": "Literature",
+        "count": 1
+      },
+      {
+        "_id": "Grammar",
+        "count": 1
+      },
+      {
+        "_id": "പാവങ്ങൾ",
+        "count": 3
+      },
+      {
+        "_id": "കടൽത്തീരത്ത്",
+        "count": 2
+      },
+      {
+        "_id": "കൊച്ചു ചക്കരച്ചി",
+        "count": 3
+      },
+      {
+        "_id": "ചിത്രകാരി",
+        "count": 3
+      },
+      {
+        "_id": "ഭാഷയും സംസ്കാരവും",
+        "count": 4
+      },
+      {
+        "_id": "സ്വാതന്ത്ര്യത്തിന്റെ ചിറകുകൾ",
+        "count": 8
+      },
+      {
+        "_id": "മാതൃഭാഷ",
+        "count": 5
+      }
+    ]
+  },
+  {
+    "class": "10th (SSLC)",
+    "subject": "Kerala Padavali",
+    "medium": "Malayalam",
+    "total": 149,
+    "brokenChapters": [
+      {
+        "_id": "പാവങ്ങൾ",
+        "count": 3
+      },
+      {
+        "_id": "Literature",
+        "count": 1
+      },
+      {
+        "_id": "Grammar",
+        "count": 1
+      },
+      {
+        "_id": "കടൽത്തീരത്ത്",
+        "count": 2
+      },
+      {
+        "_id": "ഭാഷയും സംസ്കാരവും",
+        "count": 4
+      },
+      {
+        "_id": "സ്വാതന്ത്ര്യത്തിന്റെ ചിറകുകൾ",
+        "count": 9
+      },
+      {
+        "_id": "കൊച്ചു ചക്കരച്ചി",
+        "count": 3
+      },
+      {
+        "_id": "ചിത്രകാരി",
+        "count": 3
+      },
+      {
+        "_id": "മാതൃഭാഷ",
+        "count": 5
+      }
+    ]
+  },
+  {
+    "class": "10th (SSLC)",
+    "subject": "Malayalam Adisthana Padavali",
+    "medium": "Malayalam",
+    "total": 145,
+    "brokenChapters": [
+      {
+        "_id": "കെത്തളു",
+        "count": 7
+      },
+      {
+        "_id": "ആനന്ദാശ്രുക്കൾ",
+        "count": 7
+      },
+      {
+        "_id": "അറിവിന്നറിവായ് നിറവായ്",
+        "count": 9
+      },
+      {
+        "_id": "ചриത്രം രചിച്ച നാടകം",
+        "count": 1
+      },
+      {
+        "_id": "ഏകോദരസോദരർ നാം",
+        "count": 2
+      },
+      {
+        "_id": "ചരിത്രം രചിച്ച നാടകം",
+        "count": 9
+      }
+    ]
+  },
+  {
+    "class": "10th (SSLC)",
+    "subject": "Mathematics",
+    "medium": "English",
+    "total": 341,
+    "brokenChapters": [
+      {
+        "_id": "Trigonometry",
+        "count": 6
+      }
+    ]
+  },
+  {
+    "class": "10th (SSLC)",
+    "subject": "Mathematics",
+    "medium": "Malayalam",
+    "total": 337,
+    "brokenChapters": [
+      {
+        "_id": "Trigonometry",
+        "count": 6
+      }
+    ]
+  },
+  {
+    "class": "10th (SSLC)",
+    "subject": "Physics",
+    "medium": "Malayalam",
+    "total": 303,
+    "brokenChapters": [
+      {
+        "_id": "Magnetic Effect of Electric Current",
+        "count": 1
+      },
+      {
+        "_id": "Electromagnetic Induction",
+        "count": 1
+      },
+      {
+        "_id": "Effects of Electric Current",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "class": "10th (SSLC)",
+    "subject": "Physics",
+    "medium": "English",
+    "total": 320,
+    "brokenChapters": [
+      {
+        "_id": "Magnetic Effect of Electric Current",
+        "count": 1
+      },
+      {
+        "_id": "Reflection of Light",
+        "count": 2
+      },
+      {
+        "_id": "Electromagnetic Induction",
+        "count": 2
+      },
+      {
+        "_id": "Refraction of Light",
+        "count": 1
+      },
+      {
+        "_id": "World of Color",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "class": "10th (SSLC)",
+    "subject": "Social Science",
+    "medium": "English",
+    "total": 15,
+    "brokenChapters": [
+      {
+        "_id": "British Exploitation and Resistance",
+        "count": 1
+      },
+      {
+        "_id": "Struggle and Freedom",
+        "count": 1
+      },
+      {
+        "_id": "Financial Institutions",
+        "count": 1
+      },
+      {
+        "_id": "India: Physiography and Seasons",
+        "count": 1
+      },
+      {
+        "_id": "World in the 20th Century",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "class": "10th (SSLC)",
+    "subject": "Social Science I",
+    "medium": "Malayalam",
+    "total": 223,
+    "brokenChapters": [
+      {
+        "_id": "സാമൂഹിക വിശകലനം",
+        "count": 5
+      },
+      {
+        "_id": "Culture and Nationalism",
+        "count": 1
+      },
+      {
+        "_id": "Struggle and Freedom",
+        "count": 1
+      },
+      {
+        "_id": "മാനവിത",
+        "count": 1
+      },
+      {
+        "_id": "ജനാഭിപ്രായം ജനാധിപത്യത്തിൽ",
+        "count": 5
+      },
+      {
+        "_id": "മിശ്രം",
+        "count": 2
+      }
+    ]
+  },
+  {
+    "class": "10th (SSLC)",
+    "subject": "Social Science I",
+    "medium": "English",
+    "total": 176,
+    "brokenChapters": [
+      {
+        "_id": "Public Administration",
+        "count": 1
+      },
+      {
+        "_id": "Social Analysis",
+        "count": 5
+      },
+      {
+        "_id": "Democracy",
+        "count": 5
+      },
+      {
+        "_id": "Culture and Nationalism",
+        "count": 1
+      },
+      {
+        "_id": "Struggle and Freedom",
+        "count": 1
+      },
+      {
+        "_id": "Social Analysis: Through Sociological Imagination",
+        "count": 7
+      }
+    ]
+  },
+  {
+    "class": "10th (SSLC)",
+    "subject": "Social Science II",
+    "medium": "Malayalam",
+    "total": 369,
+    "brokenChapters": [
+      {
+        "_id": "ലോകസമ്പദ്വ്യവസ്ഥ",
+        "count": 5
+      },
+      {
+        "_id": "Public Administration",
+        "count": 1
+      },
+      {
+        "_id": "അപ്പനും അമ്മയും",
+        "count": 5
+      },
+      {
+        "_id": "Atmosphere",
+        "count": 1
+      },
+      {
+        "_id": "ഇന്ത്യൻ റെയിൽവേ",
+        "count": 5
+      },
+      {
+        "_id": "ജനാധിപത്യം",
+        "count": 5
+      },
+      {
+        "_id": "ലിംഗനീതി",
+        "count": 5
+      },
+      {
+        "_id": "കേരള ചരിത്രം",
+        "count": 5
+      },
+      {
+        "_id": "സൂര്യതേജസ്സ്",
+        "count": 5
+      }
+    ]
+  },
+  {
+    "class": "10th (SSLC)",
+    "subject": "Social Science II",
+    "medium": "English",
+    "total": 596,
+    "brokenChapters": [
+      {
+        "_id": "Public Administration",
+        "count": 1
+      },
+      {
+        "_id": "Revision",
+        "count": 7
+      },
+      {
+        "_id": "Atmosphere",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "class": "10th (SSLC)",
+    "subject": "العربية",
+    "medium": "Malayalam",
+    "total": 5,
+    "brokenChapters": [
+      {
+        "_id": "قواعد",
+        "count": 5
+      }
+    ]
+  },
+  {
+    "class": "10th (SSLC)",
+    "subject": "العربية",
+    "medium": "English",
+    "total": 1,
+    "brokenChapters": [
+      {
+        "_id": "قواعد",
+        "count": 1
+      }
+    ]
+  }
+]

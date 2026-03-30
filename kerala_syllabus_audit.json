@@ -1,0 +1,674 @@
+[
+  {
+    "class": "10th (SSLC)",
+    "medium": "Malayalam",
+    "appSubject": "Maths",
+    "dbSubject": "Mathematics",
+    "count": 337
+  },
+  {
+    "class": "10th (SSLC)",
+    "medium": "Malayalam",
+    "appSubject": "Physics 1",
+    "dbSubject": "Physics 1",
+    "count": 0
+  },
+  {
+    "class": "10th (SSLC)",
+    "medium": "Malayalam",
+    "appSubject": "Physics 2",
+    "dbSubject": "Physics 2",
+    "count": 0
+  },
+  {
+    "class": "10th (SSLC)",
+    "medium": "Malayalam",
+    "appSubject": "Chemistry 1",
+    "dbSubject": "Chemistry 1",
+    "count": 0
+  },
+  {
+    "class": "10th (SSLC)",
+    "medium": "Malayalam",
+    "appSubject": "Chemistry 2",
+    "dbSubject": "Chemistry 2",
+    "count": 0
+  },
+  {
+    "class": "10th (SSLC)",
+    "medium": "Malayalam",
+    "appSubject": "Biology",
+    "dbSubject": "Biology",
+    "count": 254
+  },
+  {
+    "class": "10th (SSLC)",
+    "medium": "Malayalam",
+    "appSubject": "Geology",
+    "dbSubject": "Geology",
+    "count": 0
+  },
+  {
+    "class": "10th (SSLC)",
+    "medium": "Malayalam",
+    "appSubject": "Zoology",
+    "dbSubject": "Zoology",
+    "count": 0
+  },
+  {
+    "class": "10th (SSLC)",
+    "medium": "Malayalam",
+    "appSubject": "History",
+    "dbSubject": "History",
+    "count": 0
+  },
+  {
+    "class": "10th (SSLC)",
+    "medium": "Malayalam",
+    "appSubject": "Geography",
+    "dbSubject": "Geography",
+    "count": 0
+  },
+  {
+    "class": "10th (SSLC)",
+    "medium": "Malayalam",
+    "appSubject": "English",
+    "dbSubject": "English",
+    "count": 198
+  },
+  {
+    "class": "10th (SSLC)",
+    "medium": "Malayalam",
+    "appSubject": "Computer Science",
+    "dbSubject": "ICT",
+    "count": 360
+  },
+  {
+    "class": "10th (SSLC)",
+    "medium": "Malayalam",
+    "appSubject": "Malayalam Kerala Padavali",
+    "dbSubject": "Kerala Padavali",
+    "count": 149
+  },
+  {
+    "class": "10th (SSLC)",
+    "medium": "Malayalam",
+    "appSubject": "Malayalam Adisthana Padavali",
+    "dbSubject": "Malayalam Adisthana Padavali",
+    "count": 0
+  },
+  {
+    "class": "10th (SSLC)",
+    "medium": "Malayalam",
+    "appSubject": "Social Work",
+    "dbSubject": "Social Work",
+    "count": 0
+  },
+  {
+    "class": "10th (SSLC)",
+    "medium": "Malayalam",
+    "appSubject": "العربية",
+    "dbSubject": "العربية",
+    "count": 5
+  },
+  {
+    "class": "10th (SSLC)",
+    "medium": "English",
+    "appSubject": "Maths",
+    "dbSubject": "Mathematics",
+    "count": 341
+  },
+  {
+    "class": "10th (SSLC)",
+    "medium": "English",
+    "appSubject": "Physics 1",
+    "dbSubject": "Physics 1",
+    "count": 0
+  },
+  {
+    "class": "10th (SSLC)",
+    "medium": "English",
+    "appSubject": "Physics 2",
+    "dbSubject": "Physics 2",
+    "count": 0
+  },
+  {
+    "class": "10th (SSLC)",
+    "medium": "English",
+    "appSubject": "Chemistry 1",
+    "dbSubject": "Chemistry 1",
+    "count": 0
+  },
+  {
+    "class": "10th (SSLC)",
+    "medium": "English",
+    "appSubject": "Chemistry 2",
+    "dbSubject": "Chemistry 2",
+    "count": 0
+  },
+  {
+    "class": "10th (SSLC)",
+    "medium": "English",
+    "appSubject": "Biology",
+    "dbSubject": "Biology",
+    "count": 316
+  },
+  {
+    "class": "10th (SSLC)",
+    "medium": "English",
+    "appSubject": "Geology",
+    "dbSubject": "Geology",
+    "count": 0
+  },
+  {
+    "class": "10th (SSLC)",
+    "medium": "English",
+    "appSubject": "Zoology",
+    "dbSubject": "Zoology",
+    "count": 0
+  },
+  {
+    "class": "10th (SSLC)",
+    "medium": "English",
+    "appSubject": "History",
+    "dbSubject": "History",
+    "count": 0
+  },
+  {
+    "class": "10th (SSLC)",
+    "medium": "English",
+    "appSubject": "Geography",
+    "dbSubject": "Geography",
+    "count": 0
+  },
+  {
+    "class": "10th (SSLC)",
+    "medium": "English",
+    "appSubject": "English",
+    "dbSubject": "English",
+    "count": 201
+  },
+  {
+    "class": "10th (SSLC)",
+    "medium": "English",
+    "appSubject": "Computer Science",
+    "dbSubject": "ICT",
+    "count": 300
+  },
+  {
+    "class": "10th (SSLC)",
+    "medium": "English",
+    "appSubject": "Malayalam Kerala Padavali",
+    "dbSubject": "Kerala Padavali",
+    "count": 147
+  },
+  {
+    "class": "10th (SSLC)",
+    "medium": "English",
+    "appSubject": "Malayalam Adisthana Padavali",
+    "dbSubject": "Malayalam Adisthana Padavali",
+    "count": 0
+  },
+  {
+    "class": "10th (SSLC)",
+    "medium": "English",
+    "appSubject": "Social Work",
+    "dbSubject": "Social Work",
+    "count": 0
+  },
+  {
+    "class": "10th (SSLC)",
+    "medium": "English",
+    "appSubject": "العربية",
+    "dbSubject": "العربية",
+    "count": 1
+  },
+  {
+    "class": "+1",
+    "medium": "Malayalam",
+    "appSubject": "Maths",
+    "dbSubject": "Mathematics",
+    "count": 0
+  },
+  {
+    "class": "+1",
+    "medium": "Malayalam",
+    "appSubject": "Physics 1",
+    "dbSubject": "Physics 1",
+    "count": 0
+  },
+  {
+    "class": "+1",
+    "medium": "Malayalam",
+    "appSubject": "Physics 2",
+    "dbSubject": "Physics 2",
+    "count": 0
+  },
+  {
+    "class": "+1",
+    "medium": "Malayalam",
+    "appSubject": "Chemistry 1",
+    "dbSubject": "Chemistry 1",
+    "count": 0
+  },
+  {
+    "class": "+1",
+    "medium": "Malayalam",
+    "appSubject": "Chemistry 2",
+    "dbSubject": "Chemistry 2",
+    "count": 0
+  },
+  {
+    "class": "+1",
+    "medium": "Malayalam",
+    "appSubject": "Biology",
+    "dbSubject": "Biology",
+    "count": 0
+  },
+  {
+    "class": "+1",
+    "medium": "Malayalam",
+    "appSubject": "Geology",
+    "dbSubject": "Geology",
+    "count": 0
+  },
+  {
+    "class": "+1",
+    "medium": "Malayalam",
+    "appSubject": "Zoology",
+    "dbSubject": "Zoology",
+    "count": 0
+  },
+  {
+    "class": "+1",
+    "medium": "Malayalam",
+    "appSubject": "History",
+    "dbSubject": "History",
+    "count": 0
+  },
+  {
+    "class": "+1",
+    "medium": "Malayalam",
+    "appSubject": "Geography",
+    "dbSubject": "Geography",
+    "count": 0
+  },
+  {
+    "class": "+1",
+    "medium": "Malayalam",
+    "appSubject": "English",
+    "dbSubject": "English",
+    "count": 0
+  },
+  {
+    "class": "+1",
+    "medium": "Malayalam",
+    "appSubject": "Computer Science",
+    "dbSubject": "ICT",
+    "count": 0
+  },
+  {
+    "class": "+1",
+    "medium": "Malayalam",
+    "appSubject": "Malayalam Kerala Padavali",
+    "dbSubject": "Kerala Padavali",
+    "count": 0
+  },
+  {
+    "class": "+1",
+    "medium": "Malayalam",
+    "appSubject": "Malayalam Adisthana Padavali",
+    "dbSubject": "Malayalam Adisthana Padavali",
+    "count": 0
+  },
+  {
+    "class": "+1",
+    "medium": "Malayalam",
+    "appSubject": "Social Work",
+    "dbSubject": "Social Work",
+    "count": 0
+  },
+  {
+    "class": "+1",
+    "medium": "Malayalam",
+    "appSubject": "العربية",
+    "dbSubject": "العربية",
+    "count": 0
+  },
+  {
+    "class": "+1",
+    "medium": "English",
+    "appSubject": "Maths",
+    "dbSubject": "Mathematics",
+    "count": 0
+  },
+  {
+    "class": "+1",
+    "medium": "English",
+    "appSubject": "Physics 1",
+    "dbSubject": "Physics 1",
+    "count": 0
+  },
+  {
+    "class": "+1",
+    "medium": "English",
+    "appSubject": "Physics 2",
+    "dbSubject": "Physics 2",
+    "count": 0
+  },
+  {
+    "class": "+1",
+    "medium": "English",
+    "appSubject": "Chemistry 1",
+    "dbSubject": "Chemistry 1",
+    "count": 0
+  },
+  {
+    "class": "+1",
+    "medium": "English",
+    "appSubject": "Chemistry 2",
+    "dbSubject": "Chemistry 2",
+    "count": 0
+  },
+  {
+    "class": "+1",
+    "medium": "English",
+    "appSubject": "Biology",
+    "dbSubject": "Biology",
+    "count": 0
+  },
+  {
+    "class": "+1",
+    "medium": "English",
+    "appSubject": "Geology",
+    "dbSubject": "Geology",
+    "count": 0
+  },
+  {
+    "class": "+1",
+    "medium": "English",
+    "appSubject": "Zoology",
+    "dbSubject": "Zoology",
+    "count": 0
+  },
+  {
+    "class": "+1",
+    "medium": "English",
+    "appSubject": "History",
+    "dbSubject": "History",
+    "count": 0
+  },
+  {
+    "class": "+1",
+    "medium": "English",
+    "appSubject": "Geography",
+    "dbSubject": "Geography",
+    "count": 0
+  },
+  {
+    "class": "+1",
+    "medium": "English",
+    "appSubject": "English",
+    "dbSubject": "English",
+    "count": 0
+  },
+  {
+    "class": "+1",
+    "medium": "English",
+    "appSubject": "Computer Science",
+    "dbSubject": "ICT",
+    "count": 0
+  },
+  {
+    "class": "+1",
+    "medium": "English",
+    "appSubject": "Malayalam Kerala Padavali",
+    "dbSubject": "Kerala Padavali",
+    "count": 0
+  },
+  {
+    "class": "+1",
+    "medium": "English",
+    "appSubject": "Malayalam Adisthana Padavali",
+    "dbSubject": "Malayalam Adisthana Padavali",
+    "count": 0
+  },
+  {
+    "class": "+1",
+    "medium": "English",
+    "appSubject": "Social Work",
+    "dbSubject": "Social Work",
+    "count": 0
+  },
+  {
+    "class": "+1",
+    "medium": "English",
+    "appSubject": "العربية",
+    "dbSubject": "العربية",
+    "count": 0
+  },
+  {
+    "class": "+2",
+    "medium": "Malayalam",
+    "appSubject": "Maths",
+    "dbSubject": "Mathematics",
+    "count": 0
+  },
+  {
+    "class": "+2",
+    "medium": "Malayalam",
+    "appSubject": "Physics 1",
+    "dbSubject": "Physics 1",
+    "count": 0
+  },
+  {
+    "class": "+2",
+    "medium": "Malayalam",
+    "appSubject": "Physics 2",
+    "dbSubject": "Physics 2",
+    "count": 0
+  },
+  {
+    "class": "+2",
+    "medium": "Malayalam",
+    "appSubject": "Chemistry 1",
+    "dbSubject": "Chemistry 1",
+    "count": 200
+  },
+  {
+    "class": "+2",
+    "medium": "Malayalam",
+    "appSubject": "Chemistry 2",
+    "dbSubject": "Chemistry 2",
+    "count": 0
+  },
+  {
+    "class": "+2",
+    "medium": "Malayalam",
+    "appSubject": "Biology",
+    "dbSubject": "Biology",
+    "count": 0
+  },
+  {
+    "class": "+2",
+    "medium": "Malayalam",
+    "appSubject": "Geology",
+    "dbSubject": "Geology",
+    "count": 0
+  },
+  {
+    "class": "+2",
+    "medium": "Malayalam",
+    "appSubject": "Zoology",
+    "dbSubject": "Zoology",
+    "count": 0
+  },
+  {
+    "class": "+2",
+    "medium": "Malayalam",
+    "appSubject": "History",
+    "dbSubject": "History",
+    "count": 0
+  },
+  {
+    "class": "+2",
+    "medium": "Malayalam",
+    "appSubject": "Geography",
+    "dbSubject": "Geography",
+    "count": 0
+  },
+  {
+    "class": "+2",
+    "medium": "Malayalam",
+    "appSubject": "English",
+    "dbSubject": "English",
+    "count": 0
+  },
+  {
+    "class": "+2",
+    "medium": "Malayalam",
+    "appSubject": "Computer Science",
+    "dbSubject": "ICT",
+    "count": 0
+  },
+  {
+    "class": "+2",
+    "medium": "Malayalam",
+    "appSubject": "Malayalam Kerala Padavali",
+    "dbSubject": "Kerala Padavali",
+    "count": 0
+  },
+  {
+    "class": "+2",
+    "medium": "Malayalam",
+    "appSubject": "Malayalam Adisthana Padavali",
+    "dbSubject": "Malayalam Adisthana Padavali",
+    "count": 0
+  },
+  {
+    "class": "+2",
+    "medium": "Malayalam",
+    "appSubject": "Social Work",
+    "dbSubject": "Social Work",
+    "count": 10
+  },
+  {
+    "class": "+2",
+    "medium": "Malayalam",
+    "appSubject": "العربية",
+    "dbSubject": "العربية",
+    "count": 0
+  },
+  {
+    "class": "+2",
+    "medium": "English",
+    "appSubject": "Maths",
+    "dbSubject": "Mathematics",
+    "count": 390
+  },
+  {
+    "class": "+2",
+    "medium": "English",
+    "appSubject": "Physics 1",
+    "dbSubject": "Physics 1",
+    "count": 0
+  },
+  {
+    "class": "+2",
+    "medium": "English",
+    "appSubject": "Physics 2",
+    "dbSubject": "Physics 2",
+    "count": 0
+  },
+  {
+    "class": "+2",
+    "medium": "English",
+    "appSubject": "Chemistry 1",
+    "dbSubject": "Chemistry 1",
+    "count": 0
+  },
+  {
+    "class": "+2",
+    "medium": "English",
+    "appSubject": "Chemistry 2",
+    "dbSubject": "Chemistry 2",
+    "count": 0
+  },
+  {
+    "class": "+2",
+    "medium": "English",
+    "appSubject": "Biology",
+    "dbSubject": "Biology",
+    "count": 0
+  },
+  {
+    "class": "+2",
+    "medium": "English",
+    "appSubject": "Geology",
+    "dbSubject": "Geology",
+    "count": 150
+  },
+  {
+    "class": "+2",
+    "medium": "English",
+    "appSubject": "Zoology",
+    "dbSubject": "Zoology",
+    "count": 210
+  },
+  {
+    "class": "+2",
+    "medium": "English",
+    "appSubject": "History",
+    "dbSubject": "History",
+    "count": 0
+  },
+  {
+    "class": "+2",
+    "medium": "English",
+    "appSubject": "Geography",
+    "dbSubject": "Geography",
+    "count": 0
+  },
+  {
+    "class": "+2",
+    "medium": "English",
+    "appSubject": "English",
+    "dbSubject": "English",
+    "count": 0
+  },
+  {
+    "class": "+2",
+    "medium": "English",
+    "appSubject": "Computer Science",
+    "dbSubject": "ICT",
+    "count": 0
+  },
+  {
+    "class": "+2",
+    "medium": "English",
+    "appSubject": "Malayalam Kerala Padavali",
+    "dbSubject": "Kerala Padavali",
+    "count": 0
+  },
+  {
+    "class": "+2",
+    "medium": "English",
+    "appSubject": "Malayalam Adisthana Padavali",
+    "dbSubject": "Malayalam Adisthana Padavali",
+    "count": 0
+  },
+  {
+    "class": "+2",
+    "medium": "English",
+    "appSubject": "Social Work",
+    "dbSubject": "Social Work",
+    "count": 0
+  },
+  {
+    "class": "+2",
+    "medium": "English",
+    "appSubject": "العربية",
+    "dbSubject": "العربية",
+    "count": 0
+  }
+]
