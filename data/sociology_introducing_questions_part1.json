@@ -1,0 +1,902 @@
+[
+  {
+    "id": 1,
+    "chapter": "Chapter 1: Introducing Indian Society",
+    "question": "Sociology is unlike any other subject because:",
+    "options": ["A. No one starts from zero – everyone already knows something about society", "B. It is taught only at school", "C. It requires no prior knowledge", "D. It is not part of growing up"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "The book states: 'Sociology is unlike any other subject that you may have studied. It is a subject in which no one starts from zero – everyone already knows something about society.'"
+  },
+  {
+    "id": 2,
+    "chapter": "Chapter 1: Introducing Indian Society",
+    "question": "The prior knowledge or familiarity with society is:",
+    "options": ["A. Only an advantage for sociology", "B. Both an advantage and a disadvantage for sociology", "C. Only a disadvantage for sociology", "D. Irrelevant to sociology"],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "The book explains: 'This prior knowledge or familiarity with society is both an advantage and a disadvantage for sociology, the discipline that studies society.'"
+  },
+  {
+    "id": 3,
+    "chapter": "Chapter 1: Introducing Indian Society",
+    "question": "Our common sense knowledge about society is acquired from:",
+    "options": ["A. A completely unbiased viewpoint", "B. The viewpoint of the social group and environment we are socialised into", "C. Textbooks only", "D. Foreign sources"],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "Book: 'Our common sense is acquired from a particular viewpoint. This is the viewpoint of the social group and the social environment that we are socialised into.'"
+  },
+  {
+    "id": 4,
+    "chapter": "Chapter 1: Introducing Indian Society",
+    "question": "The word 'partial' in the context of common sense knowledge means:",
+    "options": ["A. Complete and fair", "B. Incomplete (opposite of whole) and biased (opposite of impartial)", "C. Accurate and objective", "D. Universal and neutral"],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "Book: 'The word partial is being used here in two different senses – incomplete (the opposite of whole), and biased (the opposite of impartial).'"
+  },
+  {
+    "id": 5,
+    "chapter": "Chapter 1: Introducing Indian Society",
+    "question": "Sociology teaches us to see the world from:",
+    "options": ["A. Only our own viewpoint", "B. Many vantage points – not just our own, but also that of others unlike ourselves", "C. A single ideal vantage point", "D. No vantage point"],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "Book: 'What sociology offers is to teach us how to see the world from many vantage points – not just our own, but also that of others unlike ourselves.'"
+  },
+  {
+    "id": 6,
+    "chapter": "Chapter 1: Introducing Indian Society",
+    "question": "'Self-reflexivity' or reflexivity in sociology refers to:",
+    "options": ["A. Looking only outward", "B. The ability to reflect upon yourself, to turn back your gaze towards yourself", "C. Ignoring personal opinions", "D. Accepting common sense fully"],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "Book: 'This is called ‘self-reflexivity’, or sometimes just reflexivity. This is the ability to reflect upon yourself, to turn back your gaze (which is usually directed outward) back towards yourself.'"
+  },
+  {
+    "id": 7,
+    "chapter": "Chapter 1: Introducing Indian Society",
+    "question": "Understanding Indian society provides:",
+    "options": ["A. A geographical map", "B. A sort of social map on which you could locate yourself", "C. Only economic data", "D. No map at all"],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "Book: 'At the simplest level, you could say that understanding Indian society and its structure provides a sort of social map on which you could locate yourself.'"
+  },
+  {
+    "id": 8,
+    "chapter": "Chapter 1: Introducing Indian Society",
+    "question": "C.Wright Mills called the links between individual problems and large-scale social forces:",
+    "options": ["A. Personal troubles and social issues", "B. Economic troubles only", "C. Psychological issues", "D. Cultural gaps"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Book: 'Sociology can help you to map the links and connections between “personal troubles” and “social issues”.'"
+  },
+  {
+    "id": 9,
+    "chapter": "Chapter 1: Introducing Indian Society",
+    "question": "The generation gap is an example of:",
+    "options": ["A. A personal trouble only", "B. A social issue", "C. An individual worry", "D. A family secret"],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "Book: 'The “generation gap” or friction between older and younger generations is a social phenomenon... A social issue... is about large groups and not about the individuals who make them up.'"
+  },
+  {
+    "id": 10,
+    "chapter": "Chapter 1: Introducing Indian Society",
+    "question": "Casteism is described in the book as:",
+    "options": ["A. Only a personal belief", "B. The exclusion or oppression of some castes by others – a society-wide problem", "C. A modern invention", "D. Irrelevant today"],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "Book: 'Casteism, which is the exclusion or oppression of some castes by others, are again society-wide problems.'"
+  },
+  {
+    "id": 11,
+    "chapter": "Chapter 1: Introducing Indian Society",
+    "question": "The common sense map of society is provided by:",
+    "options": ["A. School textbooks", "B. The process of socialisation", "C. Government policies", "D. Media only"],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "Book: 'One version of such a map is already provided to us in childhood by the process of socialisation... This is the common sense map.'"
+  },
+  {
+    "id": 12,
+    "chapter": "Chapter 1: Introducing Indian Society",
+    "question": "A specifically Indian consciousness took shape in:",
+    "options": ["A. Pre-colonial times", "B. The colonial period", "C. Post-independence only", "D. Ancient times"],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "Book: 'Broadly speaking, it was in the colonial period that a specifically Indian consciousness took shape.'"
+  },
+  {
+    "id": 13,
+    "chapter": "Chapter 1: Introducing Indian Society",
+    "question": "Colonialism gave birth to its own enemy –:",
+    "options": ["A. Capitalism", "B. Nationalism", "C. Globalisation", "D. Socialism"],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "Book: 'But paradoxically, colonialism also gave birth to its own enemy – nationalism.'"
+  },
+  {
+    "id": 14,
+    "chapter": "Chapter 1: Introducing Indian Society",
+    "question": "The urban middle classes were the main carriers of:",
+    "options": ["A. Tribal movements", "B. Nationalism", "C. Caste reforms only", "D. Economic policies"],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "Book: 'The urban middle classes were the main carriers of nationalism and they led the campaign for freedom.'"
+  },
+  {
+    "id": 15,
+    "chapter": "Chapter 1: Introducing Indian Society",
+    "question": "This book (first textbook) introduces you to:",
+    "options": ["A. Social change only", "B. The basic structure of Indian society", "C. Project work only", "D. Economics"],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "Book: 'In this, the first of two textbooks on sociology, you will be introduced to the basic structure of Indian society.'"
+  },
+  {
+    "id": 16,
+    "chapter": "Chapter 1: Introducing Indian Society",
+    "question": "Chapter 3 of the book revisits:",
+    "options": ["A. Demography", "B. The basic building blocks of Indian society in the form of caste, tribe and family", "C. Markets", "D. Project work"],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "Book preview: 'In Chapter 3, we revisit the basic building blocks of Indian society in the form of the institutions of caste, tribe and family.'"
+  },
+  {
+    "id": 17,
+    "chapter": "Chapter 1: Introducing Indian Society",
+    "question": "Chapter 5 is devoted to:",
+    "options": ["A. Markets", "B. Inequality and exclusion in the context of caste, tribe, gender and the ‘disabled’", "C. Demography", "D. Cultural diversity"],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "Book: 'Among the features of our society that have been the cause of greatest concern are its seemingly unlimited capacity for generating inequality and exclusion. Chapter 5 is devoted to this important subject.'"
+  },
+  {
+    "id": 18,
+    "chapter": "Chapter 1: Introducing Indian Society",
+    "question": "Chapter 6 deals with:",
+    "options": ["A. Project work", "B. The difficult challenges posed by the immense diversity of Indian society", "C. Demography", "D. Markets"],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "Book: 'Chapter 6 deals with the difficult challenges posed by the immense diversity of Indian society.'"
+  },
+  {
+    "id": 19,
+    "chapter": "Chapter 1: Introducing Indian Society",
+    "question": "Chapter 7 provides suggestions for:",
+    "options": ["A. Theory only", "B. The practical component of your course (project work)", "C. Exams", "D. Reading only"],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "Book: 'Finally, in Chapter 7, some suggestions are provided for you and your teachers to think about the practical component of your course.'"
+  },
+  {
+    "id": 20,
+    "chapter": "Chapter 1: Introducing Indian Society",
+    "question": "The second textbook (not in this book) focuses on:",
+    "options": ["A. Basic structure", "B. The specifics of social change and development in India", "C. Demography only", "D. Caste only"],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "Book: '(The second textbook will be focussed on the specifics of social change and development in India.)'"
+  },
+  {
+    "id": 21,
+    "chapter": "Chapter 2: The Demographic Structure of the Indian Society",
+    "question": "Demography is the systematic study of:",
+    "options": ["A. Economy", "B. Population", "C. Culture only", "D. Politics"],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "Book: 'Demography is the systematic study of population.'"
+  },
+  {
+    "id": 22,
+    "chapter": "Chapter 2: The Demographic Structure of the Indian Society",
+    "question": "The Indian census has been conducted regularly since:",
+    "options": ["A. 1790", "B. 1881", "C. 1951 only", "D. 1867"],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "Book: 'Regular ten yearly (or decennial) censuses have been conducted since 1881.'"
+  },
+  {
+    "id": 23,
+    "chapter": "Chapter 2: The Demographic Structure of the Indian Society",
+    "question": "Malthus argued that population grows in:",
+    "options": ["A. Arithmetic progression", "B. Geometric progression", "C. Linear fashion", "D. Same rate as food"],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "Book: 'While population rises in geometric progression (i.e., like 2, 4, 8, 16, 32 etc.)...'"
+  },
+  {
+    "id": 24,
+    "chapter": "Chapter 2: The Demographic Structure of the Indian Society",
+    "question": "The theory of demographic transition has how many basic phases?",
+    "options": ["A. Two", "B. Three", "C. Four", "D. Five"],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "Book: 'There are three basic phases of population growth.'"
+  },
+  {
+    "id": 25,
+    "chapter": "Chapter 2: The Demographic Structure of the Indian Society",
+    "question": "The birth rate is the number of live births per:",
+    "options": ["A. 100 population", "B. 1000 population", "C. 10000 population", "D. 100000 population"],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "Book: 'The birth rate is the number of live births per 1000 population.'"
+  },
+  {
+    "id": 26,
+    "chapter": "Chapter 2: The Demographic Structure of the Indian Society",
+    "question": "The rate of natural increase is:",
+    "options": ["A. Birth rate minus death rate", "B. Death rate only", "C. Migration rate", "D. Fertility rate"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Book: 'The rate of natural increase or the growth rate of population refers to the difference between the birth rate and the death rate.'"
+  },
+  {
+    "id": 27,
+    "chapter": "Chapter 2: The Demographic Structure of the Indian Society",
+    "question": "The total fertility rate is the average number of births to a woman up to the end of:",
+    "options": ["A. Childhood", "B. The reproductive age period", "C. Old age", "D. Adolescence"],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "Book: 'The total fertility rate refers to the total number of live births that a hypothetical woman would have if she lived through the reproductive age group...'"
+  },
+  {
+    "id": 28,
+    "chapter": "Chapter 2: The Demographic Structure of the Indian Society",
+    "question": "High infant and maternal mortality rates indicate:",
+    "options": ["A. Development", "B. Backwardness and poverty", "C. High education", "D. Urbanisation"],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "Book: 'High rates of infant and maternal mortality are an unambiguous indicator of backwardness and poverty...'"
+  },
+  {
+    "id": 29,
+    "chapter": "Chapter 2: The Demographic Structure of the Indian Society",
+    "question": "The sex ratio in India has been declining due to:",
+    "options": ["A. Natural causes only", "B. Prevailing social norms that value males much more than females (son preference)", "C. High female births", "D. Migration"],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "Book: 'This phenomenon has been linked to prevailing social norms that tend to value males much more than females, which leads to ‘son preference’ and the relative neglect of girl babies.'"
+  },
+  {
+    "id": 30,
+    "chapter": "Chapter 2: The Demographic Structure of the Indian Society",
+    "question": "The dependency ratio compares:",
+    "options": ["A. Workers to workers", "B. Dependents (children and elderly) to the working age group (15-64)", "C. Males to females", "D. Urban to rural"],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "Book: 'The dependency ratio is a measure comparing the portion of a population which is composed of dependents... with the portion that is in the working age group...'"
+  },
+  {
+    "id": 31,
+    "chapter": "Chapter 2: The Demographic Structure of the Indian Society",
+    "question": "India is the second most populous country after:",
+    "options": ["A. USA", "B. China", "C. Russia", "D. Japan"],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "Book: 'India is the second most populous country in the world after China...'"
+  },
+  {
+    "id": 32,
+    "chapter": "Chapter 2: The Demographic Structure of the Indian Society",
+    "question": "The growth rate of India’s population was negative between:",
+    "options": ["A. 1901-1911", "B. 1911-1921", "C. 1931-1941", "D. 1951-1961"],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "Book Table 1: '1921... -0.03%' due to influenza epidemic."
+  },
+  {
+    "id": 33,
+    "chapter": "Chapter 2: The Demographic Structure of the Indian Society",
+    "question": "The principal reason for decline in death rate after 1921 was:",
+    "options": ["A. Lower birth rate", "B. Increased control over famines and epidemic diseases", "C. Migration", "D. War"],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "Book: 'The principal reasons for the decline in the death rate after 1921 were increased levels of control over famines and epidemic diseases.'"
+  },
+  {
+    "id": 34,
+    "chapter": "Chapter 2: The Demographic Structure of the Indian Society",
+    "question": "The 1918-19 influenza pandemic is also known as:",
+    "options": ["A. Asian Flu", "B. Spanish Flu", "C. Hong Kong Flu", "D. Bird Flu"],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "Book Box 2.2: 'The most infamous pandemic was “Spanish Flu”...'"
+  },
+  {
+    "id": 35,
+    "chapter": "Chapter 2: The Demographic Structure of the Indian Society",
+    "question": "Kerala and Tamil Nadu have brought down their TFR to:",
+    "options": ["A. 3.9", "B. 1.7", "C. 3.3", "D. 2.2"],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "Book: 'Some states, like Kerala and Tamil Nadu have managed to bring down their total fertility rates (TFR) to 1.7 each (2009).'"
+  },
+  {
+    "id": 36,
+    "chapter": "Chapter 2: The Demographic Structure of the Indian Society",
+    "question": "The share of the under 15 age group in India’s population in 2001 was:",
+    "options": ["A. 42%", "B. 35%", "C. 23%", "D. 59%"],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "Book Table 2: '2001... 0-14 Years: 34%' (approx 35% as per text)."
+  },
+  {
+    "id": 37,
+    "chapter": "Chapter 2: The Demographic Structure of the Indian Society",
+    "question": "The demographic dividend arises from:",
+    "options": ["A. High death rate", "B. A relatively large working-age population with a small preceding generation of old people", "C. Negative growth", "D. High dependency"],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "Book Box 2.3: 'The demographic advantage or ‘dividend’... results from an increase in the proportion of workers relative to non-workers...'"
+  },
+  {
+    "id": 38,
+    "chapter": "Chapter 2: The Demographic Structure of the Indian Society",
+    "question": "In 2020, the average age of an Indian was projected to be:",
+    "options": ["A. 48", "B. 29", "C. 45", "D. 37"],
+    "answer": 1,
+    "difficulty": "hard",
+    "explanation": "Book Box 2.3: 'In 2020, the average Indian will be only 29 years old...'"
+  },
+  {
+    "id": 39,
+    "chapter": "Chapter 2: The Demographic Structure of the Indian Society",
+    "question": "The widest part of the population pyramid in 2026 is in the:",
+    "options": ["A. 0-4 age group", "B. Middle age groups (creating a bulge)", "C. 80+ age group", "D. Bottom only"],
+    "answer": 1,
+    "difficulty": "hard",
+    "explanation": "Book Exercise for Chart 4: 'The middle of the pyramid grows wider and wider... This creates a ‘bulge’ in the middle age groups...'"
+  },
+  {
+    "id": 40,
+    "chapter": "Chapter 2: The Demographic Structure of the Indian Society",
+    "question": "Uttar Pradesh’s age structure pyramid in 2026 shows:",
+    "options": ["A. Wider top like developed countries", "B. High proportions in younger age groups", "C. Low young population", "D. Ageing population like Kerala"],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "Book: 'Uttar Pradesh presents a very different picture with high proportions in the younger age groups...'"
+  },
+  {
+    "id": 41,
+    "chapter": "Chapter 3: Social Institutions: Continuity and Change",
+    "question": "Chapter 3 discusses three central social institutions:",
+    "options": ["A. Market, state, media", "B. Caste, tribe and family", "C. Economy, politics, religion", "D. Education only"],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "Book (p.42): 'In this chapter we will be looking at three institutions that are central to Indian society, namely caste, tribe and family.'"
+  },
+  {
+    "id": 42,
+    "chapter": "Chapter 3: Social Institutions: Continuity and Change",
+    "question": "Colonialism brought major changes in the institution of caste through:",
+    "options": ["A. Land revenue systems and legal changes", "B. Only education", "C. Migration only", "D. No change"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Book snippet (p.46): 'Thus colonialism brought about major changes in the institution of caste.'"
+  },
+  {
+    "id": 43,
+    "chapter": "Chapter 3: Social Institutions: Continuity and Change",
+    "question": "The concept of ‘tribe’ in India was introduced in the context of:",
+    "options": ["A. Colonial administration", "B. Post-independence", "C. Ancient texts", "D. Modern economy"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Book preview: 'What is the context in which the concept of ‘tribe’ was introduced into India?'"
+  },
+  {
+    "id": 44,
+    "chapter": "Chapter 3: Social Institutions: Continuity and Change",
+    "question": "Education is creating an urbanised professional class among:",
+    "options": ["A. Only upper castes", "B. Tribal communities", "C. Urban middle class only", "D. No one"],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "Book (p.55): 'In conjunction with policies of reservation... education is creating an urbanised professional class. As tribal societies get more differentiated...'"
+  },
+  {
+    "id": 45,
+    "chapter": "Chapter 3: Social Institutions: Continuity and Change",
+    "question": "Families in India have different structures, and the book refers to Class XI discussion on family in:",
+    "options": ["A. Chapter 1 of Introducing Society", "B. Chapter 2", "C. No reference", "D. Chapter 5"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Book (p.56): '(This and other dimensions of the family have been discussed in Chapter 1, of your Class XI textbook, Introducing Society)'"
+  },
+  {
+    "id": 46,
+    "chapter": "Chapter 4: The Market as a Social Institution",
+    "question": "The market is described as:",
+    "options": ["A. Only an economic institution", "B. Also a social institution comparable to caste, tribe or family", "C. Irrelevant to sociology", "D. Political only"],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "Book (p.62): 'The market is also a social institution. In its own way, the market is comparable to more obviously social institutions like caste, tribe or family...'"
+  },
+  {
+    "id": 47,
+    "chapter": "Chapter 4: The Market as a Social Institution",
+    "question": "Chapter 4 looks at how markets evolved in India due to:",
+    "options": ["A. Colonialism and developmental policies", "B. Only ancient trade", "C. Modern globalisation only", "D. No change"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Book preview: 'Given that the most sweeping and rapid economic changes were brought about first by colonialism and then by developmental policies...'"
+  },
+  {
+    "id": 48,
+    "chapter": "Chapter 5: Patterns of Social Inequality and Exclusion",
+    "question": "Chapter 5 focuses on four groups suffering serious social inequality:",
+    "options": ["A. Caste, tribe, gender and the disabled", "B. Only economic classes", "C. Urban and rural", "D. North and South"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Book (p.87): 'In this chapter we focus on four such groups who have suffered from serious social inequality and exclusion, namely... caste, tribe, gender and the disabled.'"
+  },
+  {
+    "id": 49,
+    "chapter": "Chapter 5: Patterns of Social Inequality and Exclusion",
+    "question": "The OBCs are defined negatively as:",
+    "options": ["A. Forward castes", "B. Neither part of the ‘forward’ castes nor the SCs and STs", "C. Only tribes", "D. Urban groups"],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "Book (p.96): 'Like the category of the ‘tribe’... the OBCs are defined negatively, by what they are not. They are neither part of the ‘forward’ castes nor the SCs and STs.'"
+  },
+  {
+    "id": 50,
+    "chapter": "Chapter 5: Patterns of Social Inequality and Exclusion",
+    "question": "The declining sex ratio is discussed in relation to Chapter:",
+    "options": ["A. 1", "B. 2 (demography)", "C. 4", "D. 7"],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "Book (p.106): 'You will recall the discussion of the declining sex ratio in Chapter 2.'"
+  },
+  {
+    "id": 51,
+    "chapter": "Chapter 6: The Challenges of Cultural Diversity",
+    "question": "Chapter 6 deals with tensions associated with:",
+    "options": ["A. Economic growth only", "B. Cultural diversity", "C. Population only", "D. Markets"],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "Book (p.114): 'In this chapter, you will learn about some of the tensions and difficulties associated with cultural diversity.'"
+  },
+  {
+    "id": 52,
+    "chapter": "Chapter 6: The Challenges of Cultural Diversity",
+    "question": "India is a stronger nation-state today despite:",
+    "options": ["A. Failures", "B. The very same institutions that can be sources of inequality", "C. No diversity", "D. Uniform culture"],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "Book (p.114): 'As Chapters 4 and 5 showed, the very same institutions can also be sources of inequality and exclusion... but is a stronger nation-state today.'"
+  },
+  {
+    "id": 53,
+    "chapter": "Chapter 6: The Challenges of Cultural Diversity",
+    "question": "The modern era is characterised by:",
+    "options": ["A. Only monarchy", "B. Establishment of democracy and nation-states", "C. Tribal systems", "D. Feudalism"],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "Book (p.120): 'One of the characteristic features of the modern era... is the establishment of democracy and nation-states.'"
+  },
+  {
+    "id": 54,
+    "chapter": "Chapter 6: The Challenges of Cultural Diversity",
+    "question": "India has how many States and Union Territories?",
+    "options": ["A. 28 States and 7 Union Territories", "B. 29 States and 7 Union Territories", "C. 22 States", "D. No UTs"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Book (p.127): '28 States and 7 Union territories...'"
+  },
+  {
+    "id": 55,
+    "chapter": "Chapter 7: Suggestions for Project Work",
+    "question": "Chapter 7 suggests small practical research projects to experience:",
+    "options": ["A. Theory only", "B. The excitement and difficulties of sociological research", "C. Exams", "D. Reading"],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "Book (p.142): 'This chapter suggests some small practical research projects that you can try out... to the excitement and also some of the difficulties of sociological research.'"
+  },
+  {
+    "id": 56,
+    "chapter": "Chapter 7: Suggestions for Project Work",
+    "question": "Before reading Chapter 7, refer to Class XI textbook chapter on:",
+    "options": ["A. Demography", "B. Doing Sociology: Research Methods", "C. Markets", "D. Caste"],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "Book (p.142): 'Before you read this chapter, please refer once again to Chapter 5 (“Doing Sociology: Research Methods”) in the Class XI textbook...'"
+  },
+  {
+    "id": 57,
+    "chapter": "Chapter 1: Introducing Indian Society",
+    "question": "The initial stage of learning sociology consists mainly of:",
+    "options": ["A. Memorising facts", "B. Unlearning what we already know about society", "C. Reading only", "D. Ignoring common sense"],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "Book: 'The initial stage of learning Sociology consists mainly of such unlearning.'"
+  },
+  {
+    "id": 58,
+    "chapter": "Chapter 1: Introducing Indian Society",
+    "question": "Sociology can show you what you look like to others through:",
+    "options": ["A. Common sense", "B. Self-reflexivity", "C. Maps only", "D. Statistics"],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "Book: 'Sociology can show you what you look like to others; it can teach you how to look at yourself ‘from the outside’... This is called ‘self-reflexivity’.'"
+  },
+  {
+    "id": 59,
+    "chapter": "Chapter 2: The Demographic Structure of the Indian Society",
+    "question": "Formal demography is primarily concerned with:",
+    "options": ["A. Social aspects", "B. Measurement and analysis of the components of population change (quantitative)", "C. Political causes", "D. Cultural consequences"],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "Book: 'Formal demography is primarily concerned with the measurement and analysis of the components of population change. Its focus is on quantitative analysis...'"
+  },
+  {
+    "id": 60,
+    "chapter": "Chapter 2: The Demographic Structure of the Indian Society",
+    "question": "Malthus was criticised for asserting that poverty was caused by:",
+    "options": ["A. Unequal distribution", "B. Population growth", "C. Technology", "D. Education"],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "Book: 'Malthus was also criticised by liberal and Marxist scholars for asserting that poverty was caused by population growth.'"
+  },
+  {
+    "id": 61,
+    "chapter": "Chapter 3: Social Institutions: Continuity and Change",
+    "question": "Caste has always attracted scholarly attention as a unique feature of:",
+    "options": ["A. The world", "B. The Indian subcontinent", "C. Europe", "D. Africa"],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "Book preview: 'As a unique feature of the Indian subcontinent, caste has always attracted a lot of scholarly attention.'"
+  },
+  {
+    "id": 62,
+    "chapter": "Chapter 5: Patterns of Social Inequality and Exclusion",
+    "question": "Social reform movements were initiated by many Indians against:",
+    "options": ["A. Equality", "B. Social inequality and exclusion", "C. Markets", "D. Demography"],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "Book (p.87): 'Many Indians initiated and participated in a large number of social reform movements.'"
+  },
+  {
+    "id": 63,
+    "chapter": "Chapter 6: The Challenges of Cultural Diversity",
+    "question": "The chapter invites us to step outside:",
+    "options": ["A. Our normal, comfortable ways of thinking", "B. The classroom", "C. Urban areas", "D. Rural areas"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Book (p.114): 'This chapter invites us to step outside our normal, comfortable ways of thinking.'"
+  },
+  {
+    "id": 64,
+    "chapter": "Chapter 7: Suggestions for Project Work",
+    "question": "The practical component of the course can be:",
+    "options": ["A. Boring", "B. Quite interesting and enjoyable", "C. Theoretical only", "D. Exam-focused"],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "Book (p.7): 'This can be quite interesting and enjoyable, as you will discover.'"
+  },
+  {
+    "id": 65,
+    "chapter": "Chapter 1: Introducing Indian Society",
+    "question": "Sociology does not offer a perspective that shows us:",
+    "options": ["A. Partial views", "B. The whole of reality in a completely unbiased way", "C. Common sense", "D. Only our group view"],
+    "answer": 1,
+    "difficulty": "hard",
+    "explanation": "Book: 'Sociology does not offer a solution to this problem in the form of a perspective that can show us the whole of reality in a completely unbiased way.'"
+  },
+  {
+    "id": 66,
+    "chapter": "Chapter 2: The Demographic Structure of the Indian Society",
+    "question": "The 2011 Census provisional total population of India was:",
+    "options": ["A. 1028 million", "B. 1210 million", "C. 846 million", "D. 548 million"],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "Book Table 1: '2011... 1210'"
+  },
+  {
+    "id": 67,
+    "chapter": "Chapter 2: The Demographic Structure of the Indian Society",
+    "question": "The influenza epidemic of 1918-19 killed about:",
+    "options": ["A. 2.5 million", "B. 12.5 million", "C. 25 million", "D. 5 million"],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "Book: 'The influenza epidemic during 1918–19 which killed about 12.5 million persons...'"
+  },
+  {
+    "id": 68,
+    "chapter": "Chapter 4: The Market as a Social Institution",
+    "question": "Markets of different kinds have evolved in India and set in motion:",
+    "options": ["A. No reactions", "B. Chain reactions", "C. Only economic changes", "D. Cultural isolation"],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "Book preview: '...and the chain reactions they set in motion.'"
+  },
+  {
+    "id": 69,
+    "chapter": "Chapter 5: Patterns of Social Inequality and Exclusion",
+    "question": "The caste system has been the object of attempts by the state and oppressed castes to:",
+    "options": ["A. Strengthen it", "B. Reform or even abolish it", "C. Ignore it", "D. Export it"],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "Book (p.82): 'Notorious as an instrument of division and injustice, the caste system has been the object of concerted attempts by the state and by the oppressed castes to reform or even abolish it.'"
+  },
+  {
+    "id": 70,
+    "chapter": "Chapter 6: The Challenges of Cultural Diversity",
+    "question": "The familiar clichés about India being a land of:",
+    "options": ["A. Division", "B. Unity in diversity", "C. Conflict only", "D. Homogeneity"],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "Book (p.114): 'The familiar cliches and slogans about India being a land of unity in diversity...'"
+  },
+  {
+    "id": 71,
+    "chapter": "Chapter 1: Introducing Indian Society",
+    "question": "Sociology helps locate yourself in society by describing:",
+    "options": ["A. Only economic class", "B. Kinds of groups or groupings, their relationships, and what this might mean in terms of your own life", "C. Geography only", "D. History"],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "Book: 'Sociology tells you about what kinds of groups or groupings there are in society, what their relationships are to each other, and what this might mean in terms of your own life.'"
+  },
+  {
+    "id": 72,
+    "chapter": "Chapter 2: The Demographic Structure of the Indian Society",
+    "question": "The death rate is expressed as the number of deaths per:",
+    "options": ["A. 1000 population", "B. 100 population", "C. 10000 population", "D. 1 population"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Book: 'The death rate is... the number of deaths in a given area during a given time per 1000 population.'"
+  },
+  {
+    "id": 73,
+    "chapter": "Chapter 3: Social Institutions: Continuity and Change",
+    "question": "Tribal communities define themselves in contemporary India in the context of:",
+    "options": ["A. Globalisation only", "B. Policies of reservation and education", "C. No definition", "D. Colonial rules"],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "Book (p.55): 'How do tribal communities define themselves in contemporary India?'"
+  },
+  {
+    "id": 74,
+    "chapter": "Chapter 5: Patterns of Social Inequality and Exclusion",
+    "question": "Movements to resist caste exclusion have been launched from Jyotiba Phule to:",
+    "options": ["A. Modern parties like Bahujan Samaj Party", "B. Only British", "C. No movements", "D. Economic reforms"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Book (p.95): '...from the movements launched by people like Jyotiba Phule... to contemporary political organisations like the Bahujan Samaj Party...'"
+  },
+  {
+    "id": 75,
+    "chapter": "Chapter 6: The Challenges of Cultural Diversity",
+    "question": "The state is a very crucial institution when it comes to:",
+    "options": ["A. Cultural diversity", "B. Markets only", "C. Demography", "D. Family"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Book (p.137): 'The state is indeed a very crucial institution when it comes to cultural diversity.'"
+  },
+  {
+    "id": 76,
+    "chapter": "Chapter 7: Suggestions for Project Work",
+    "question": "The chapter on project work refers to the Class XI textbook chapter:",
+    "options": ["A. 1", "B. 5 (Doing Sociology: Research Methods)", "C. 2", "D. 7"],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "Book (p.142): 'Please refer once again to Chapter 5 (“Doing Sociology: Research Methods”)...'"
+  },
+  {
+    "id": 77,
+    "chapter": "Chapter 1: Introducing Indian Society",
+    "question": "A sociological perspective teaches you how to:",
+    "options": ["A. Draw social maps", "B. Ignore society", "C. Accept common sense", "D. Study only history"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Book: 'A sociological perspective teaches you how to draw social maps.'"
+  },
+  {
+    "id": 78,
+    "chapter": "Chapter 2: The Demographic Structure of the Indian Society",
+    "question": "The fertility rate is the number of live births per 1000 women in the:",
+    "options": ["A. 0-14 age group", "B. Child-bearing age group (15-49 years)", "C. 60+ age group", "D. 15-64 age group"],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "Book: 'The fertility rate refers to the number of live births per 1000 women in the child-bearing age group, usually taken to be 15 to 49 years.'"
+  },
+  {
+    "id": 79,
+    "chapter": "Chapter 4: The Market as a Social Institution",
+    "question": "The chapter on market as a social institution is:",
+    "options": ["A. Chapter 3", "B. Chapter 4", "C. Chapter 5", "D. Chapter 6"],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "Book (p.61): 'Chapter 4 The Market as a Social Institution'"
+  },
+  {
+    "id": 80,
+    "chapter": "Chapter 5: Patterns of Social Inequality and Exclusion",
+    "question": "Chapter 5 looks at inequality in the context of:",
+    "options": ["A. Only caste", "B. Caste, tribe, gender and the disabled", "C. Only gender", "D. Markets"],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "Book (p.82): 'Chapter 5 looks at inequality and exclusion in the context of caste, tribe, gender and the ‘disabled’.'"
+  },
+  {
+    "id": 81,
+    "chapter": "Chapter 1: Introducing Indian Society",
+    "question": "The book is meant to introduce Indian society from a:",
+    "options": ["A. Common sense point of view", "B. Sociological rather than common sense point of view", "C. Economic point of view", "D. Political point of view"],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "Book (p.5): 'This entire book is meant to introduce you to Indian society from a sociological rather than common sense point of view.'"
+  },
+  {
+    "id": 82,
+    "chapter": "Chapter 2: The Demographic Structure of the Indian Society",
+    "question": "The age structure of the population changes in response to:",
+    "options": ["A. Only migration", "B. Changes in levels of development and the average life expectancy", "C. Birth rate only", "D. Death rate only"],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "Book: 'The age structure of the population refers to the proportion of persons in different age groups relative to the total population. The age structure changes in response to changes in levels of development and the average life expectancy.'"
+  },
+  {
+    "id": 83,
+    "chapter": "Chapter 3: Social Institutions: Continuity and Change",
+    "question": "The institution of family has been subjected to tremendous pressure due to:",
+    "options": ["A. No change", "B. Rapid and intense social change", "C. Colonialism only", "D. Markets"],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "Book preview: 'The family as an institution has also been subjected to tremendous pressure in these times of rapid and intense social change.'"
+  },
+  {
+    "id": 84,
+    "chapter": "Chapter 5: Patterns of Social Inequality and Exclusion",
+    "question": "The women’s movement has had an impact on:",
+    "options": ["A. No institutions", "B. The social institutions that have oppressed women", "C. Only economy", "D. Demography"],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "Book (p.82): 'How much of an impact has the women’s movement had on the social institutions that have oppressed women?'"
+  },
+  {
+    "id": 85,
+    "chapter": "Chapter 6: The Challenges of Cultural Diversity",
+    "question": "India has not done too badly on the front of:",
+    "options": ["A. Unity in diversity", "B. Division", "C. Conflict", "D. Exclusion"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Book (p.114): 'Despite all the failures and inadequacies, India has not done too badly on this front.'"
+  },
+  {
+    "id": 86,
+    "chapter": "Chapter 2: The Demographic Structure of the Indian Society",
+    "question": "The life expectancy is calculated on the basis of data on:",
+    "options": ["A. Birth rates", "B. Age-specific death rates", "C. Migration", "D. Fertility"],
+    "answer": 1,
+    "difficulty": "hard",
+    "explanation": "Book: 'Life expectancy... is calculated on the basis of data on age-specific death rates in a given area over a period of time.'"
+  },
+  {
+    "id": 87,
+    "chapter": "Chapter 1: Introducing Indian Society",
+    "question": "Personal troubles derive meaning from:",
+    "options": ["A. A personalised perspective", "B. Society-wide issues", "C. Global forces", "D. Economic data"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Book: 'But all of these are about one person and derive meaning from this personalised perspective.'"
+  },
+  {
+    "id": 88,
+    "chapter": "Chapter 2: The Demographic Structure of the Indian Society",
+    "question": "The total dependency ratio fell from 79 in 1970 to:",
+    "options": ["A. 64 in 2005", "B. 48 in 2025", "C. 50 in 2050", "D. 100"],
+    "answer": 0,
+    "difficulty": "hard",
+    "explanation": "Book Box 2.3: 'The total dependency ratio fell from 79 in 1970 to 64 in 2005.'"
+  },
+  {
+    "id": 89,
+    "chapter": "Chapter 4: The Market as a Social Institution",
+    "question": "The discipline of economics is aimed at understanding:",
+    "options": ["A. Social aspects only", "B. The economy", "C. Culture", "D. Demography"],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "Book (p.62): 'The discipline of economics is aimed at understanding the economy.'"
+  },
+  {
+    "id": 90,
+    "chapter": "Chapter 5: Patterns of Social Inequality and Exclusion",
+    "question": "The chapter ends by looking at caste, tribe, gender and disability as institutions that:",
+    "options": ["A. Generate and perpetuate inequality and exclusion", "B. Promote equality", "C. Ignore exclusion", "D. Only create communities"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Book (p.110): 'In this chapter we have looked at caste, tribe, gender and disability as institutions that generate and perpetuate inequality and exclusion.'"
+  },
+  {
+    "id": 91,
+    "chapter": "Chapter 6: The Challenges of Cultural Diversity",
+    "question": "Every minority in India should not feel:",
+    "options": ["A. Secure", "B. Insecure or at risk", "C. Happy", "D. Isolated"],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "Book (p.114): 'Why is it important for our collective future as a nation that every minority in India not feel that it is insecure or at risk?'"
+  },
+  {
+    "id": 92,
+    "chapter": "Chapter 7: Suggestions for Project Work",
+    "question": "The variety of methods in project work is discussed in Class XI textbook Chapter:",
+    "options": ["A. 5", "B. 1", "C. 2", "D. 7"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Book (p.143): 'You may remember the discussion of research methods in Chapter 5 of the Class XI textbook...'"
+  },
+  {
+    "id": 93,
+    "chapter": "Chapter 1: Introducing Indian Society",
+    "question": "The book was published for the year:",
+    "options": ["A. 2018-19", "B. 2000", "C. 1990", "D. 2020"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Footer on every page: '2018-19'"
+  },
+  {
+    "id": 94,
+    "chapter": "Chapter 2: The Demographic Structure of the Indian Society",
+    "question": "The crude birth rate in India in 2015 was:",
+    "options": ["A. 6.5", "B. 20.8", "C. 25", "D. 10"],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "Book Chart 1 note: 'Total birth rate was reported to be 20.8... in 2015.'"
+  },
+  {
+    "id": 95,
+    "chapter": "Chapter 3: Social Institutions: Continuity and Change",
+    "question": "The boundaries between ‘tribe’ and ‘caste’ are:",
+    "options": ["A. Rigid", "B. Quite porous", "C. Non-existent", "D. Only in urban areas"],
+    "answer": 1,
+    "difficulty": "hard",
+    "explanation": "Book (p.97): 'The boundaries between ‘tribe’ and ‘caste’ quite porous.'"
+  },
+  {
+    "id": 96,
+    "chapter": "Chapter 5: Patterns of Social Inequality and Exclusion",
+    "question": "Jyotiba Phule, Periyar and Ambedkar fought against:",
+    "options": ["A. Markets", "B. Caste oppression", "C. Demography", "D. Diversity"],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "Book (p.95): 'Movements launched by people like Jyotiba Phule... to contemporary...'"
+  },
+  {
+    "id": 97,
+    "chapter": "Chapter 6: The Challenges of Cultural Diversity",
+    "question": "The chapter is concerned with:",
+    "options": ["A. The state as a crucial institution", "B. Only civil society", "C. Markets", "D. Family"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Book (p.137): 'Much of this chapter has been concerned with the state.'"
+  },
+  {
+    "id": 98,
+    "chapter": "Chapter 2: The Demographic Structure of the Indian Society",
+    "question": "The population pyramid for 2026 shows the estimated future size based on:",
+    "options": ["A. Past rates of growth of each age group", "B. Current only", "C. No data", "D. Projections only"],
+    "answer": 0,
+    "difficulty": "hard",
+    "explanation": "Book (p.23): 'The pyramid for 2026 shows the estimated future size... based on data on the past rates of growth...'"
+  },
+  {
+    "id": 99,
+    "chapter": "Chapter 1: Introducing Indian Society",
+    "question": "Colonial interventions crystallised:",
+    "options": ["A. Only economic classes", "B. Religious and caste based communities", "C. Markets", "D. Demography"],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "Book (p.5): 'Colonial interventions also crystallised religious and caste based communities.'"
+  },
+  {
+    "id": 100,
+    "chapter": "Chapter 2: The Demographic Structure of the Indian Society",
+    "question": "The demographic dividend is temporary because the larger pool of working age people will eventually:",
+    "options": ["A. Stay young", "B. Turn into non-working old people", "C. Migrate", "D. Increase birth rate"],
+    "answer": 1,
+    "difficulty": "hard",
+    "explanation": "Book: 'However, this benefit is temporary because the larger pool of working age people will eventually turn into non-working old people.'"
+  }
+]

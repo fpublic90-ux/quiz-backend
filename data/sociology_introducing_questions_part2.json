@@ -1,0 +1,902 @@
+[
+  {
+    "id": 101,
+    "chapter": "Chapter 3: Social Institutions: Continuity and Change",
+    "question": "The family as an institution in India shows:",
+    "options": ["A. No diversity", "B. Diverse forms", "C. Only nuclear", "D. Only joint"],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "Book preview: 'What changes do we see in the diverse forms of the family that exist in India?'"
+  },
+  {
+    "id": 102,
+    "chapter": "Chapter 5: Patterns of Social Inequality and Exclusion",
+    "question": "The disabled have special problems discussed in the context of:",
+    "options": ["A. Responsiveness of society", "B. Markets", "C. Demography", "D. Diversity"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Book (p.82): 'To what extent is our society responsive to the needs of the disabled?'"
+  },
+  {
+    "id": 103,
+    "chapter": "Chapter 6: The Challenges of Cultural Diversity",
+    "question": "Communal conflict, regional or linguistic chauvinism and casteism are issues faced by:",
+    "options": ["A. Young adults", "B. Only elders", "C. Government only", "D. No one"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Book (p.114): 'How may young adults face issues like communal conflict, regional or linguistic chauvinism, and casteism...'"
+  },
+  {
+    "id": 104,
+    "chapter": "Chapter 7: Suggestions for Project Work",
+    "question": "The chapter is to help experience:",
+    "options": ["A. The practical side of sociology", "B. Theory only", "C. Exams", "D. Reading"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Book (p.142): 'There is a big difference between reading about research and actually doing it...'"
+  },
+  {
+    "id": 105,
+    "chapter": "Chapter 1: Introducing Indian Society",
+    "question": "The shared experience of colonial domination helped unify:",
+    "options": ["A. Only elites", "B. Different sections of the community", "C. No one", "D. Only tribes"],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "Book (p.5): 'The shared experience of colonial domination helped unify and energise different sections of the community.'"
+  },
+  {
+    "id": 106,
+    "chapter": "Chapter 2: The Demographic Structure of the Indian Society",
+    "question": "The SRS Bulletin 2016 reported the highest birth rate states as:",
+    "options": ["A. Kerala and Tamil Nadu", "B. Uttar Pradesh and Bihar", "C. Punjab and Haryana", "D. Maharashtra"],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "Book (p.19): 'The highest birth rate in India is of Uttar Pradesh (26.7) and Bihar (26.3)...'"
+  },
+  {
+    "id": 107,
+    "chapter": "Chapter 3: Social Institutions: Continuity and Change",
+    "question": "Reservation policies (mentioned in Ch3) are discussed in more detail in:",
+    "options": ["A. Chapter 5", "B. Chapter 2", "C. Chapter 4", "D. Chapter 1"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Book (p.55): '(about which you will learn more in Chapter 5)'"
+  },
+  {
+    "id": 108,
+    "chapter": "Chapter 4: The Market as a Social Institution",
+    "question": "The chapter ends by noting that there are many different kinds of markets in:",
+    "options": ["A. Contemporary India", "B. Ancient India only", "C. Europe", "D. No markets"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Book (p.78): 'In this chapter we have seen that there are many different kinds of markets in contemporary India...'"
+  },
+  {
+    "id": 109,
+    "chapter": "Chapter 5: Patterns of Social Inequality and Exclusion",
+    "question": "The chapter discusses the special problems of:",
+    "options": ["A. Tribal movements", "B. Markets", "C. Demography", "D. Project work"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Book (p.82): 'What have been the special problems of tribal movements?'"
+  },
+  {
+    "id": 110,
+    "chapter": "Chapter 6: The Challenges of Cultural Diversity",
+    "question": "The word “State” with capital S in the chapter denotes:",
+    "options": ["A. The federal units within the Indian nation-state", "B. Only central government", "C. Foreign states", "D. Markets"],
+    "answer": 0,
+    "difficulty": "hard",
+    "explanation": "Book (p.127): 'Note: In this chapter, the word “State” has a capital S when it is used to denote the federal units...'"
+  },
+  {
+    "id": 111,
+    "chapter": "Chapter 2: The Demographic Structure of the Indian Society",
+    "question": "The chart on birth and death rates shows both rates declining after:",
+    "options": ["A. 1901", "B. 1921-1931", "C. 1951", "D. 2001"],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "Book Chart 1: 'The impact of the demographic transition phase is clearly seen... after the decade of 1921 to 1931.'"
+  },
+  {
+    "id": 112,
+    "chapter": "Chapter 1: Introducing Indian Society",
+    "question": "Western education gave the impetus for the rediscovery of:",
+    "options": ["A. Tradition", "B. Colonialism", "C. Markets", "D. Demography"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Book (p.5): 'Ironically, colonialism and western education also gave the impetus for the rediscovery of tradition.'"
+  },
+  {
+    "id": 113,
+    "chapter": "Chapter 2: The Demographic Structure of the Indian Society",
+    "question": "The dependency ratio projected to fall to 48 in:",
+    "options": ["A. 2005", "B. 2025", "C. 2050", "D. 1970"],
+    "answer": 1,
+    "difficulty": "hard",
+    "explanation": "Book Box 2.3: '...projected to fall to 48 in 2025...'"
+  },
+  {
+    "id": 114,
+    "chapter": "Chapter 5: Patterns of Social Inequality and Exclusion",
+    "question": "The Bahujan Samaj Party is an example of a contemporary organisation fighting:",
+    "options": ["A. Caste exclusion", "B. Markets", "C. Demography", "D. Diversity"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Book (p.95): '...contemporary political organisations like the Bahujan Samaj Party...'"
+  },
+  {
+    "id": 115,
+    "chapter": "Chapter 6: The Challenges of Cultural Diversity",
+    "question": "The chapter asks why it is important that every minority not feel insecure for our:",
+    "options": ["A. Collective future as a nation", "B. Economy", "C. Population", "D. Markets"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Book (p.114): '...our collective future as a nation...'"
+  },
+  {
+    "id": 116,
+    "chapter": "Chapter 7: Suggestions for Project Work",
+    "question": "Project work helps understand:",
+    "options": ["A. The difference between reading about research and actually doing it", "B. Theory only", "C. No difference", "D. Exams"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Book (p.142): 'There is a big difference between reading about research and actually doing it...'"
+  },
+  {
+    "id": 117,
+    "chapter": "Chapter 1: Introducing Indian Society",
+    "question": "The advantage of prior knowledge in sociology is that students are generally not:",
+    "options": ["A. Afraid of Sociology", "B. Interested", "C. Confused", "D. Bored"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Book: 'The advantage is that students are generally not afraid of Sociology – they feel that it can’t be a very hard subject to learn.'"
+  },
+  {
+    "id": 118,
+    "chapter": "Chapter 2: The Demographic Structure of the Indian Society",
+    "question": "The single biggest epidemic in India’s past was the influenza epidemic of:",
+    "options": ["A. 1901", "B. 1918-19", "C. 1951", "D. 2001"],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "Book (p.18): 'The single biggest epidemic was the influenza epidemic of 1918-19...'"
+  },
+  {
+    "id": 119,
+    "chapter": "Chapter 3: Social Institutions: Continuity and Change",
+    "question": "Caste has been changing over the centuries, and the chapter asks what caste really means:",
+    "options": ["A. Today", "B. In ancient times only", "C. Never", "D. In future"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Book preview: 'How has this institution been changing over the centuries, and what does caste really mean today?'"
+  },
+  {
+    "id": 120,
+    "chapter": "Chapter 5: Patterns of Social Inequality and Exclusion",
+    "question": "The concrete problems and issues faced by attempts to reform caste are discussed in:",
+    "options": ["A. Chapter 5", "B. Chapter 2", "C. Chapter 1", "D. Chapter 7"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Book (p.82): 'What are the concrete problems and issues that this attempt faced?'"
+  },
+  {
+    "id": 121,
+    "chapter": "Chapter 6: The Challenges of Cultural Diversity",
+    "question": "The chapter has a hard and complex side to the clichés of:",
+    "options": ["A. Unity in diversity", "B. Division", "C. Conflict", "D. Markets"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Book (p.114): 'The familiar cliches and slogans about India being a land of unity in diversity have a hard and complex side to them.'"
+  },
+  {
+    "id": 122,
+    "chapter": "Chapter 2: The Demographic Structure of the Indian Society",
+    "question": "The age-based dependency ratio is projected to rise to 50 by 2050 because of:",
+    "options": ["A. Increase in children", "B. An increase in the proportion of the aged", "C. Migration", "D. Birth rate rise"],
+    "answer": 1,
+    "difficulty": "hard",
+    "explanation": "Book Box 2.3: '...rise to 50 by 2050 because of an increase in the proportion of the aged.'"
+  },
+  {
+    "id": 123,
+    "chapter": "Chapter 1: Introducing Indian Society",
+    "question": "The economic, political and administrative unification of India under colonial rule was achieved at:",
+    "options": ["A. No cost", "B. Great expense", "C. Low cost", "D. Benefit only"],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "Book (p.5): 'The economic, political and administrative unification of India under colonial rule was achieved at great expense.'"
+  },
+  {
+    "id": 124,
+    "chapter": "Chapter 2: The Demographic Structure of the Indian Society",
+    "question": "Chart 2 shows state-wise birth rates for the year:",
+    "options": ["A. 1901", "B. 2016", "C. 1951", "D. 2026"],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "Book Chart 2: 'State-wise Birth Rates in India, 2016'"
+  },
+  {
+    "id": 125,
+    "chapter": "Chapter 3: Social Institutions: Continuity and Change",
+    "question": "The chapter builds the base for looking at further aspects of Indian society which would presuppose:",
+    "options": ["A. Caste, tribe and family", "B. Markets only", "C. Demography", "D. Diversity"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Book preview: 'Chapter 3 builds the base for looking at further aspects of Indian society which would pre-suppose caste, tribe and family.'"
+  },
+  {
+    "id": 126,
+    "chapter": "Chapter 5: Patterns of Social Inequality and Exclusion",
+    "question": "The chapter discusses how successful movements to resist caste exclusion have been in:",
+    "options": ["A. Our recent past", "B. Ancient times", "C. Future", "D. No past"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Book (p.82): 'How successful have movements to resist caste exclusion been in our recent past?'"
+  },
+  {
+    "id": 127,
+    "chapter": "Chapter 6: The Challenges of Cultural Diversity",
+    "question": "The chapter asks what have been our strengths and weaknesses on the front of:",
+    "options": ["A. Unity in diversity", "B. Inequality", "C. Markets", "D. Demography"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Book (p.114): 'What have been our strengths and our weaknesses?'"
+  },
+  {
+    "id": 128,
+    "chapter": "Chapter 7: Suggestions for Project Work",
+    "question": "The chapter is quite interesting and enjoyable as you will:",
+    "options": ["A. Discover", "B. Forget", "C. Ignore", "D. Read only"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Book (p.7): 'This can be quite interesting and enjoyable, as you will discover.'"
+  },
+  {
+    "id": 129,
+    "chapter": "Chapter 2: The Demographic Structure of the Indian Society",
+    "question": "The population of India in 1901 was:",
+    "options": ["A. 361 million", "B. 238 million", "C. 1210 million", "D. 846 million"],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "Book Table 1: '1901... 238'"
+  },
+  {
+    "id": 130,
+    "chapter": "Chapter 1: Introducing Indian Society",
+    "question": "The emerging middle classes began to challenge colonialism with the aid of:",
+    "options": ["A. Western style education", "B. Common sense", "C. Markets", "D. Demography"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Book (p.5): 'The emerging middle classes began, with the aid of western style education, to challenge colonialism...'"
+  },
+  {
+    "id": 131,
+    "chapter": "Chapter 2: The Demographic Structure of the Indian Society",
+    "question": "The decadal growth rate for 1971-81 was:",
+    "options": ["A. 17.6%", "B. 24.7%", "C. 21.5%", "D. 23.9%"],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "Book Table 1: '1981... 24.7'"
+  },
+  {
+    "id": 132,
+    "chapter": "Chapter 5: Patterns of Social Inequality and Exclusion",
+    "question": "The chapter discusses the context in which tribal identities are:",
+    "options": ["A. Reasserting themselves today", "B. Declining", "C. Irrelevant", "D. Only historical"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Book (p.82): 'In what context are tribal identities reasserting themselves today?'"
+  },
+  {
+    "id": 133,
+    "chapter": "Chapter 6: The Challenges of Cultural Diversity",
+    "question": "The chapter is difficult because:",
+    "options": ["A. There are no easy answers", "B. It is simple", "C. No issues", "D. Only positive"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Book (p.114): 'This chapter deals with difficult issues for which there are no easy answers.'"
+  },
+  {
+    "id": 134,
+    "chapter": "Chapter 2: The Demographic Structure of the Indian Society",
+    "question": "The projected contribution of UP and Bihar to population growth up to 2026 is:",
+    "options": ["A. 16%", "B. 30%", "C. 13%", "D. 6%"],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "Book Chart 3: 'UP, Bihar 30%'"
+  },
+  {
+    "id": 135,
+    "chapter": "Chapter 1: Introducing Indian Society",
+    "question": "Colonial exploitation and domination scarred Indian society in:",
+    "options": ["A. Few ways", "B. Many ways", "C. No ways", "D. Only economic ways"],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "Book (p.5): 'Colonial exploitation and domination scarred Indian society in many ways.'"
+  },
+  {
+    "id": 136,
+    "chapter": "Chapter 2: The Demographic Structure of the Indian Society",
+    "question": "The population pyramid for Kerala in 2026 is beginning to look like that of:",
+    "options": ["A. Developing countries", "B. Developed countries", "C. Uttar Pradesh", "D. Ancient India"],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "Book (p.25): 'A state like Kerala is beginning to acquire an age structure like that of the developed countries...'"
+  },
+  {
+    "id": 137,
+    "chapter": "Chapter 3: Social Institutions: Continuity and Change",
+    "question": "The chapter asks how tribal communities define themselves in:",
+    "options": ["A. Contemporary India", "B. Colonial times only", "C. No context", "D. Future only"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Book preview: 'How do tribal communities define themselves in contemporary India?'"
+  },
+  {
+    "id": 138,
+    "chapter": "Chapter 5: Patterns of Social Inequality and Exclusion",
+    "question": "The chapter discusses the impact of the women’s movement on social institutions that have:",
+    "options": ["A. Promoted women", "B. Oppressed women", "C. Ignored women", "D. No impact"],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "Book (p.82): '...the social institutions that have oppressed women?'"
+  },
+  {
+    "id": 139,
+    "chapter": "Chapter 6: The Challenges of Cultural Diversity",
+    "question": "The chapter reminds us that some answers are:",
+    "options": ["A. Better than others", "B. All equal", "C. No answers", "D. Only bad"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Book (p.114): 'But some answers are better than others.'"
+  },
+  {
+    "id": 140,
+    "chapter": "Chapter 2: The Demographic Structure of the Indian Society",
+    "question": "The age structure pyramid for 1961 shows a broad base indicating:",
+    "options": ["A. Ageing population", "B. High proportion of young people", "C. Low birth rate", "D. High death rate"],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "Book Chart 4: Broad base in 1961 pyramid."
+  },
+  {
+    "id": 141,
+    "chapter": "Chapter 1: Introducing Indian Society",
+    "question": "The book has 7 chapters in total including:",
+    "options": ["A. Suggestions for Project Work", "B. Only 5", "C. 8", "D. 6"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Book preview: 'Finally, in Chapter 7...'"
+  },
+  {
+    "id": 142,
+    "chapter": "Chapter 2: The Demographic Structure of the Indian Society",
+    "question": "The death rate in India in 2015 was reported as:",
+    "options": ["A. 20.8", "B. 6.5", "C. 25.7", "D. 17.1"],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "Book Chart 1 note: '...death rate as 6.5 in India in 2015.'"
+  },
+  {
+    "id": 143,
+    "chapter": "Chapter 3: Social Institutions: Continuity and Change",
+    "question": "The chapter revisits the basic building blocks after studying:",
+    "options": ["A. Demography in Chapter 2", "B. Markets", "C. Inequality", "D. Diversity"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Book (p.42): 'Having studied the structure and dynamics of the population of India in Chapter 2...'"
+  },
+  {
+    "id": 144,
+    "chapter": "Chapter 5: Patterns of Social Inequality and Exclusion",
+    "question": "The chapter looks at how successful have movements to resist:",
+    "options": ["A. Caste exclusion", "B. Markets", "C. Demography", "D. Diversity"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Book (p.82): 'How successful have movements to resist caste exclusion been...'"
+  },
+  {
+    "id": 145,
+    "chapter": "Chapter 6: The Challenges of Cultural Diversity",
+    "question": "The chapter discusses the state and:",
+    "options": ["A. Civil society", "B. Markets only", "C. Demography", "D. Family"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Book (p.137): '6.4 STATE AND CIVIL SOCIETY'"
+  },
+  {
+    "id": 146,
+    "chapter": "Chapter 2: The Demographic Structure of the Indian Society",
+    "question": "The widest part of the pyramid moves to middle age groups by:",
+    "options": ["A. 1961", "B. 2026", "C. 1901", "D. 1981"],
+    "answer": 1,
+    "difficulty": "hard",
+    "explanation": "Book (p.23): '...the widest part of the pyramid as you move from 1961 to 2026?'"
+  },
+  {
+    "id": 147,
+    "chapter": "Chapter 1: Introducing Indian Society",
+    "question": "The book was for the academic year:",
+    "options": ["A. 2018-19", "B. 2026", "C. 1901", "D. 1951"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Footer throughout: '2018-19'"
+  },
+  {
+    "id": 148,
+    "chapter": "Chapter 2: The Demographic Structure of the Indian Society",
+    "question": "The map in Chart 2 uses colors to show birth rates ranging from:",
+    "options": ["A. Below 15.2 to 25.7 and above", "B. 0 to 10", "C. 50 to 60", "D. Only one color"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Book Chart 2 legend: '25.7 and above... below 15.2'"
+  },
+  {
+    "id": 149,
+    "chapter": "Chapter 3: Social Institutions: Continuity and Change",
+    "question": "The chapter discusses how the family has been subjected to:",
+    "options": ["A. Tremendous pressure", "B. No pressure", "C. Only positive", "D. Markets"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Book preview: '...the family as an institution has also been subjected to tremendous pressure...'"
+  },
+  {
+    "id": 150,
+    "chapter": "Chapter 5: Patterns of Social Inequality and Exclusion",
+    "question": "The chapter includes discussion on the special problems of:",
+    "options": ["A. Tribal movements", "B. Urban middle class", "C. Markets", "D. Demography"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Book (p.82): 'What have been the special problems of tribal movements?'"
+  },
+  {
+    "id": 151,
+    "chapter": "Chapter 6: The Challenges of Cultural Diversity",
+    "question": "The chapter discusses 28 States and:",
+    "options": ["A. 7 Union territories", "B. 29 States", "C. 8 UTs", "D. No UTs"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Book (p.127): '28 States and 7 Union territories...'"
+  },
+  {
+    "id": 152,
+    "chapter": "Chapter 7: Suggestions for Project Work",
+    "question": "The chapter is the last one and is about:",
+    "options": ["A. Practical projects", "B. Theory", "C. Demography", "D. Markets"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Book (p.141): 'Chapter 7 Suggestions for Project Work'"
+  },
+  {
+    "id": 153,
+    "chapter": "Chapter 2: The Demographic Structure of the Indian Society",
+    "question": "The total fertility rate of Bihar in 2009 was:",
+    "options": ["A. 1.7", "B. 3.9", "C. 3.3", "D. 2.2"],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "Book (p.19): '...Bihar... 3.9...'"
+  },
+  {
+    "id": 154,
+    "chapter": "Chapter 1: Introducing Indian Society",
+    "question": "The book has images on the cover representing:",
+    "options": ["A. Diversity of Indian society", "B. Only urban life", "C. Only rural", "D. No images"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Page 1 cover collage shows diverse scenes from Indian society."
+  },
+  {
+    "id": 155,
+    "chapter": "Chapter 2: The Demographic Structure of the Indian Society",
+    "question": "The dependency ratio is usually expressed as a:",
+    "options": ["A. Percentage", "B. Ratio only", "C. Fraction", "D. Decimal"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Book: '...the ratio is usually expressed as a percentage.'"
+  },
+  {
+    "id": 156,
+    "chapter": "Chapter 3: Social Institutions: Continuity and Change",
+    "question": "The chapter discusses caste as having changed due to:",
+    "options": ["A. Colonialism", "B. No change", "C. Only modern", "D. Markets"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Book (p.46): 'Thus colonialism brought about major changes in the institution of caste.'"
+  },
+  {
+    "id": 157,
+    "chapter": "Chapter 5: Patterns of Social Inequality and Exclusion",
+    "question": "The chapter mentions reformers like Jyotiba Phule and:",
+    "options": ["A. Periyar, Ambedkar", "B. Malthus", "C. Mills", "D. Durkheim"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Book (p.95): '...Jyotiba Phule, Iyotheedas, Periyar, Ambedkar...'"
+  },
+  {
+    "id": 158,
+    "chapter": "Chapter 6: The Challenges of Cultural Diversity",
+    "question": "The chapter has sections on:",
+    "options": ["A. State and Civil Society", "B. Markets only", "C. Demography", "D. Family"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Book (p.137): '6.4 STATE AND CIVIL SOCIETY'"
+  },
+  {
+    "id": 159,
+    "chapter": "Chapter 2: The Demographic Structure of the Indian Society",
+    "question": "The population pyramid shape in 2051 or 3001 is speculated in the exercise to be:",
+    "options": ["A. Even narrower base and wider top", "B. Same as 1961", "C. No change", "D. Broader base"],
+    "answer": 0,
+    "difficulty": "hard",
+    "explanation": "Book Exercise: 'What do you think the shape of the pyramid might be in the year 2051 and 3001?' (implying continued narrowing base, widening top)"
+  },
+  {
+    "id": 160,
+    "chapter": "Chapter 1: Introducing Indian Society",
+    "question": "The book has orange and grey design elements on every page with the year:",
+    "options": ["A. 2018-19", "B. 2026", "C. 1901", "D. 1951"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Footer on all pages."
+  },
+  {
+    "id": 161,
+    "chapter": "Chapter 2: The Demographic Structure of the Indian Society",
+    "question": "The source for Chart 3 on regional shares is:",
+    "options": ["A. 2001 Census and National Commission on Population 2006", "B. 2011 only", "C. Malthus", "D. Durkheim"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Book Chart 3 source: 'Computed from 2001 Census figures and the Report of the Technical Group... 2006.'"
+  },
+  {
+    "id": 162,
+    "chapter": "Chapter 3: Social Institutions: Continuity and Change",
+    "question": "The chapter starts with Chapter 3 which revisits basic building blocks on page:",
+    "options": ["A. 41", "B. 1", "C. 9", "D. 61"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Tool result: 'Chapter 3... page 41'"
+  },
+  {
+    "id": 163,
+    "chapter": "Chapter 5: Patterns of Social Inequality and Exclusion",
+    "question": "The chapter starts with Chapter 5 which looks at inequality on page:",
+    "options": ["A. 81", "B. 61", "C. 113", "D. 141"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Tool result: 'Chapter 5... page 81'"
+  },
+  {
+    "id": 164,
+    "chapter": "Chapter 6: The Challenges of Cultural Diversity",
+    "question": "The chapter starts with Chapter 6 which deals with diversity on page:",
+    "options": ["A. 113", "B. 81", "C. 61", "D. 41"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Tool result: 'Chapter 6... page 113'"
+  },
+  {
+    "id": 165,
+    "chapter": "Chapter 7: Suggestions for Project Work",
+    "question": "The chapter starts with Chapter 7 which suggests project work on page:",
+    "options": ["A. 141", "B. 113", "C. 81", "D. 61"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Tool result: 'Chapter 7... page 141'"
+  },
+  {
+    "id": 166,
+    "chapter": "Chapter 2: The Demographic Structure of the Indian Society",
+    "question": "The book notes that India will overtake China as the most populous country in:",
+    "options": ["A. A few decades", "B. Never", "C. 2011", "D. 1901"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Book (p.9): '...in a few decades is projected to overtake China...'"
+  },
+  {
+    "id": 167,
+    "chapter": "Chapter 1: Introducing Indian Society",
+    "question": "The chapter has an activity map showing 'YOU ARE HERE' with boundaries of:",
+    "options": ["A. Age, regional, economic, religious, caste", "B. Only political", "C. No boundaries", "D. Economic only"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Book p.4 map caption: 'Age Boundaries... Caste Boundaries... YOU ARE HERE'"
+  },
+  {
+    "id": 168,
+    "chapter": "Chapter 2: The Demographic Structure of the Indian Society",
+    "question": "The global mortality rate from Spanish Flu is estimated at:",
+    "options": ["A. 2.5 – 5%", "B. 0.5%", "C. 10%", "D. 20%"],
+    "answer": 0,
+    "difficulty": "hard",
+    "explanation": "Book Box 2.2: '...global mortality rate... is estimated at 2.5 – 5%...'"
+  },
+  {
+    "id": 169,
+    "chapter": "Chapter 3: Social Institutions: Continuity and Change",
+    "question": "The chapter discusses how caste has been the object of scholarly attention as:",
+    "options": ["A. Unique to Indian subcontinent", "B. Common everywhere", "C. Modern only", "D. Irrelevant"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Book preview: 'As a unique feature of the Indian subcontinent...'"
+  },
+  {
+    "id": 170,
+    "chapter": "Chapter 5: Patterns of Social Inequality and Exclusion",
+    "question": "The chapter asks to what extent our society is responsive to the needs of the:",
+    "options": ["A. Disabled", "B. Rich", "C. Urban", "D. Markets"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Book (p.82): '...To what extent is our society responsive to the needs of the disabled?'"
+  },
+  {
+    "id": 171,
+    "chapter": "Chapter 6: The Challenges of Cultural Diversity",
+    "question": "The chapter deals with the immense diversity of Indian society and how India has:",
+    "options": ["A. Not done too badly", "B. Failed completely", "C. No diversity", "D. Uniformity"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Book (p.114): 'Despite all the failures and inadequacies, India has not done too badly on this front.'"
+  },
+  {
+    "id": 172,
+    "chapter": "Chapter 2: The Demographic Structure of the Indian Society",
+    "question": "The activity 2.1 asks to find out why Malthus was wrong due to increases in:",
+    "options": ["A. Productivity of agriculture", "B. Death rate", "C. Migration", "D. Birth rate"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Book Activity 2.1: '...substantial increases in the productivity of agriculture...'"
+  },
+  {
+    "id": 173,
+    "chapter": "Chapter 1: Introducing Indian Society",
+    "question": "The book cover has the year 2018-19 and is from NCERT for Class:",
+    "options": ["A. 12 Indian Society", "B. 11", "C. 10", "D. 9"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Metadata and content: Sociology_1.pdf – Class 12 Indian Society."
+  },
+  {
+    "id": 174,
+    "chapter": "Chapter 2: The Demographic Structure of the Indian Society",
+    "question": "The total population in 2011 was 1210 million or:",
+    "options": ["A. 1.21 billion", "B. 1.028 billion", "C. 0.846 billion", "D. 0.548 billion"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Book (p.16): '1210 (or 1.21 billion)'"
+  },
+  {
+    "id": 175,
+    "chapter": "Chapter 3: Social Institutions: Continuity and Change",
+    "question": "The chapter mentions that you will read more on untouchability in:",
+    "options": ["A. Chapter 5", "B. Chapter 2", "C. Chapter 1", "D. Chapter 4"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Book (p.46): '(You will read more on untouchability and the struggles against it in Chapter 5...)'"
+  },
+  {
+    "id": 176,
+    "chapter": "Chapter 5: Patterns of Social Inequality and Exclusion",
+    "question": "The chapter discusses the exclusion or oppression of some castes by others as:",
+    "options": ["A. Casteism", "B. Tribalism", "C. Gender", "D. Disability"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Book (p.4 in Ch1 but referenced): '...casteism, which is the exclusion or oppression of some castes by others...'"
+  },
+  {
+    "id": 177,
+    "chapter": "Chapter 6: The Challenges of Cultural Diversity",
+    "question": "The chapter has 28 States and 7 UTs within the Indian:",
+    "options": ["A. Nation-state", "B. Market", "C. Family", "D. Tribe"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Book (p.127): '...within the Indian nation-state.'"
+  },
+  {
+    "id": 178,
+    "chapter": "Chapter 2: The Demographic Structure of the Indian Society",
+    "question": "The book has a collage of black and white photos on page 11 showing:",
+    "options": ["A. Crowded public gatherings and traffic", "B. Rural only", "C. No photos", "D. Graphs only"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Book p.11 image description."
+  },
+  {
+    "id": 179,
+    "chapter": "Chapter 1: Introducing Indian Society",
+    "question": "The book has a figure on page 4 showing a map with boundaries labeled:",
+    "options": ["A. Age, Regional, Economic, Religious, Caste", "B. Only economic", "C. No map", "D. Political only"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Book p.4 figure caption."
+  },
+  {
+    "id": 180,
+    "chapter": "Chapter 2: The Demographic Structure of the Indian Society",
+    "question": "The activity 2.2 asks why the birth rate is slow to decline but the death rate can fall:",
+    "options": ["A. Relatively fast", "B. Slow", "C. Never", "D. Same rate"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Book Activity 2.2: '...why the birth rate is slow to decline but the death rate can fall relatively fast.'"
+  },
+  {
+    "id": 181,
+    "chapter": "Chapter 3: Social Institutions: Continuity and Change",
+    "question": "The chapter is titled 'Social Institutions Continuity and Change' and starts after:",
+    "options": ["A. Demographic chapter", "B. Markets", "C. Inequality", "D. Diversity"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Book structure: After Ch2."
+  },
+  {
+    "id": 182,
+    "chapter": "Chapter 5: Patterns of Social Inequality and Exclusion",
+    "question": "The chapter has an activity 5.4 to find out about a social reformer in your part of the country:",
+    "options": ["A. Yes", "B. No", "C. Only theory", "D. No activity"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Book (p.102): '**ACTIVITY 5.4** * Find out about a social reformer...'"
+  },
+  {
+    "id": 183,
+    "chapter": "Chapter 6: The Challenges of Cultural Diversity",
+    "question": "The chapter starts with the quote or note that India is a stronger nation-state today despite:",
+    "options": ["A. Failures", "B. Success only", "C. No issues", "D. Uniformity"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Book (p.114): '...but is a stronger nation-state today.'"
+  },
+  {
+    "id": 184,
+    "chapter": "Chapter 2: The Demographic Structure of the Indian Society",
+    "question": "The book has four pyramids in Chart 4 for years:",
+    "options": ["A. 1961, 1981, 2001 and 2026", "B. 1901 only", "C. 2011 only", "D. 1951"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Book Chart 4 title."
+  },
+  {
+    "id": 185,
+    "chapter": "Chapter 1: Introducing Indian Society",
+    "question": "The disadvantage of prior knowledge is that it can be a problem because we need to 'unlearn' what we already know about:",
+    "options": ["A. Society", "B. Economy", "C. Politics", "D. History"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Book: '...in order to learn Sociology, we need to “unlearn” what we already know about society.'"
+  },
+  {
+    "id": 186,
+    "chapter": "Chapter 2: The Demographic Structure of the Indian Society",
+    "question": "The chapter has a box on Malthus with the quote from his Essay on the Principle of Population:",
+    "options": ["A. 1798", "B. 1790", "C. 1800", "D. 1810"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Book Box 2.1: '...1798.'"
+  },
+  {
+    "id": 187,
+    "chapter": "Chapter 3: Social Institutions: Continuity and Change",
+    "question": "The chapter mentions that you will learn more on reservation in:",
+    "options": ["A. Chapter 5", "B. Chapter 2", "C. Chapter 1", "D. Chapter 4"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Book (p.55): '...policies of reservation (about which you will learn more in Chapter 5)...'"
+  },
+  {
+    "id": 188,
+    "chapter": "Chapter 5: Patterns of Social Inequality and Exclusion",
+    "question": "The chapter discusses the sharp fall in the child sex ratio as an implicit social bias against the:",
+    "options": ["A. Girl child", "B. Boy child", "C. No bias", "D. Both"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Book (p.106): '...the implicit social bias against the girl child...'"
+  },
+  {
+    "id": 189,
+    "chapter": "Chapter 6: The Challenges of Cultural Diversity",
+    "question": "The chapter has a note on the word “State” with capital S denoting federal units within the:",
+    "options": ["A. Indian nation-state", "B. World", "C. Europe", "D. Market"],
+    "answer": 0,
+    "difficulty": "hard",
+    "explanation": "Book (p.127 note)"
+  },
+  {
+    "id": 190,
+    "chapter": "Chapter 2: The Demographic Structure of the Indian Society",
+    "question": "The book mentions that in the pyramids, males are shown on the:",
+    "options": ["A. Left side", "B. Right side", "C. Top", "D. Bottom"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Book Chart 4: 'Males (on the left side)'"
+  },
+  {
+    "id": 191,
+    "chapter": "Chapter 1: Introducing Indian Society",
+    "question": "The chapter title is:",
+    "options": ["A. Introducing Indian Society", "B. Demographic Structure", "C. Market", "D. Inequality"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Page 1."
+  },
+  {
+    "id": 192,
+    "chapter": "Chapter 2: The Demographic Structure of the Indian Society",
+    "question": "The chapter title is:",
+    "options": ["A. The Demographic Structure of the Indian Society", "B. Introducing Indian Society", "C. Social Institutions", "D. Patterns of Inequality"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Page 9."
+  },
+  {
+    "id": 193,
+    "chapter": "Chapter 3: Social Institutions: Continuity and Change",
+    "question": "The chapter title is:",
+    "options": ["A. Social Institutions Continuity and Change", "B. Demographic", "C. Market", "D. Inequality"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Page 41."
+  },
+  {
+    "id": 194,
+    "chapter": "Chapter 4: The Market as a Social Institution",
+    "question": "The chapter title is:",
+    "options": ["A. The Market as a Social Institution", "B. Social Institutions", "C. Inequality", "D. Diversity"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Page 61."
+  },
+  {
+    "id": 195,
+    "chapter": "Chapter 5: Patterns of Social Inequality and Exclusion",
+    "question": "The chapter title is:",
+    "options": ["A. Patterns of Social Inequality and Exclusion", "B. Market", "C. Demographic", "D. Introducing"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Page 81."
+  },
+  {
+    "id": 196,
+    "chapter": "Chapter 6: The Challenges of Cultural Diversity",
+    "question": "The chapter title is:",
+    "options": ["A. The Challenges of Cultural Diversity", "B. Inequality", "C. Market", "D. Project Work"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Page 113."
+  },
+  {
+    "id": 197,
+    "chapter": "Chapter 7: Suggestions for Project Work",
+    "question": "The chapter title is:",
+    "options": ["A. Suggestions for Project Work", "B. Cultural Diversity", "C. Inequality", "D. Demographic"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Page 141."
+  },
+  {
+    "id": 198,
+    "chapter": "Chapter 2: The Demographic Structure of the Indian Society",
+    "question": "The real problem in defining dependency ratio is the ratio determined by:",
+    "options": ["A. Extent of unemployment and underemployment", "B. Birth rate", "C. Death rate", "D. Migration"],
+    "answer": 0,
+    "difficulty": "hard",
+    "explanation": "Book Box 2.3: 'The real problem is... determined by the extent of unemployment and underemployment...'"
+  },
+  {
+    "id": 199,
+    "chapter": "Chapter 1: Introducing Indian Society",
+    "question": "The chapter ends with 1.2 A Preview of this Book and lists Chapter 7 as:",
+    "options": ["A. Suggestions for Project Work", "B. Demographic", "C. Market", "D. Inequality"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Book p.7."
+  },
+  {
+    "id": 200,
+    "chapter": "Chapter 2: The Demographic Structure of the Indian Society",
+    "question": "The chapter has an image collage on page 11 of:",
+    "options": ["A. Crowded scenes and traffic", "B. Pyramids only", "C. Maps", "D. Tables only"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Book p.11 description."
+  }
+]

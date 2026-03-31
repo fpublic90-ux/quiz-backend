@@ -11,8 +11,8 @@ const questionSchema = new mongoose.Schema(
             type: [String],
             required: true,
             validate: {
-                validator: (v) => v.length === 4,
-                message: 'Options must have exactly 4 choices',
+                validator: (v) => v.length >= 2 && v.length <= 4,
+                message: 'Options must have between 2 and 4 choices',
             },
         },
         correctIndex: {

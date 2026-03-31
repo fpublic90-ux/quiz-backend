@@ -1,0 +1,902 @@
+[
+  {
+    "id": 101,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "Management as a profession has some features but does not meet the exact criteria because entry is not restricted.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "hard",
+    "explanation": "Direct from the book."
+  },
+  {
+    "id": 102,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "Top management is responsible for the welfare and survival of the organisation.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Direct from levels of management."
+  },
+  {
+    "id": 103,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "Middle management is responsible for implementing and controlling plans and strategies developed by top management.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Direct from levels."
+  },
+  {
+    "id": 104,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "Supervisory management plays a very important role because they interact with the actual workforce.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Direct from levels."
+  },
+  {
+    "id": 105,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "Coordination is the essence of management because it is the force that binds all functions.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "hard",
+    "explanation": "Direct from coordination section."
+  },
+  {
+    "id": 106,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "Coordination is implicit and inherent in all functions of an organisation.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Direct from the book."
+  },
+  {
+    "id": 107,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "Coordination is the responsibility of all managers at all levels.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Direct from characteristics of coordination."
+  },
+  {
+    "id": 108,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "Coordination is a deliberate function because a manager has to coordinate consciously and deliberately.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Direct from characteristics."
+  },
+  {
+    "id": 109,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "The Dabbawallas system requires negligible technology but relies on coordination.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Direct from the example in the book."
+  },
+  {
+    "id": 110,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "Jack Welch laid down pointers for managers including create a vision, focus on strategic issues, involve everyone, lead by example.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Direct from the GE box."
+  },
+  {
+    "id": 111,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "The ITC E-Choupal initiative transforms the Indian farmer into a progressive knowledge-seeking citizen.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Direct from the social responsibility example."
+  },
+  {
+    "id": 112,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "Management has features of both art and science, they complement each other.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "hard",
+    "explanation": "Direct from the book conclusion."
+  },
+  {
+    "id": 113,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "There are several associations of practising managers in India, like the AIMA.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Direct from profession section."
+  },
+  {
+    "id": 114,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "The basic purpose of management is to help the organisation achieve its stated goal.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Direct from profession."
+  },
+  {
+    "id": 115,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "Managerial levels are shown in a pyramid with top, middle and operational management.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Direct from levels diagram description."
+  },
+  {
+    "id": 116,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "Planning is the first function and controlling is the last in the sequence of management functions.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Direct from functions."
+  },
+  {
+    "id": 117,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "The various functions of a manager are interrelated and it is often difficult to pinpoint where one ended and the other began.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Direct from the book."
+  },
+  {
+    "id": 118,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "Coordination is balancing and keeping together the team by ensuring suitable allocation of tasks.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Direct from definitions of coordination."
+  },
+  {
+    "id": 119,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "Coordination is the orderly synchronising of efforts of subordinates to provide proper amount, timing and quality of execution.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Direct from Theo Haimann definition."
+  },
+  {
+    "id": 120,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "In the absence of coordination there is overlapping and chaos instead of harmony.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Direct from the book."
+  },
+  {
+    "id": 121,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "The Dabbawallas system is an example of coordination with low capital and use of local trains.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Direct from the example."
+  },
+  {
+    "id": 122,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "Coordination is required at all levels of management.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Direct from characteristics."
+  },
+  {
+    "id": 123,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "Coordination is implicit and inherent in all functions.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Direct from essence."
+  },
+  {
+    "id": 124,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "The chapter ends with the importance of coordination in growth in size and functional differentiation.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Direct from importance section."
+  },
+  {
+    "id": 125,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "The book includes cross-disciplinary perspectives from anthropology, economics, philosophy, political science, psychology and sociology.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "hard",
+    "explanation": "Direct from the box in Chapter 1."
+  },
+  {
+    "id": 126,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "Psychology is the science that seeks to measure, explain, and sometimes change the behaviour of humans and other animals.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Direct from the cross-disciplinary box."
+  },
+  {
+    "id": 127,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "Sociology is the study of people in relation to their fellow human beings.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Direct from the box."
+  },
+  {
+    "id": 128,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "The chapter has a figure showing management as a multidimensional activity with planning, organising, staffing, directing, controlling around human, financial, physical and informational resources.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Direct from the figure description."
+  },
+  {
+    "id": 129,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "The chapter includes the management mantra from GE by Jack Welch.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Direct from the box."
+  },
+  {
+    "id": 130,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "The chapter has an image caption 'Together Everyone Achieves More as a TEAM'.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Direct from the book image."
+  },
+  {
+    "id": 131,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "The chapter has a pyramid diagram for managerial levels with top, middle and operational management.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Direct from functions section."
+  },
+  {
+    "id": 132,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "The chapter concludes that coordination is not a separate function but the essence of management.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "hard",
+    "explanation": "Direct from the book."
+  },
+  {
+    "id": 133,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "The chapter has an activity to think of other instances of the mix and match of traditional and modern.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Direct from the book (though activity in Ch2, but cross). Note: This is from Ch2, but included for completeness."
+  },
+  {
+    "id": 134,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "The chapter has references to Harold Koontz, Robert L. Trewelly, Kreitner for definitions of management.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "hard",
+    "explanation": "Direct from definitions box."
+  },
+  {
+    "id": 135,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "The book mentions that management is a universal activity that is integral to any organisation.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Direct from importance."
+  },
+  {
+    "id": 136,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "The chapter has a box on 'The Management Mantra from GE'.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Direct from the book."
+  },
+  {
+    "id": 137,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "The chapter has a box on 'ITC – Empowering Rural India'.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Direct from the book."
+  },
+  {
+    "id": 138,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "The chapter has a figure showing management - a multidimensional activity.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Direct from the book."
+  },
+  {
+    "id": 139,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "The chapter has an image of the managerial levels pyramid.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Direct from the book."
+  },
+  {
+    "id": 140,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "The chapter ends with the statement that coordination is not a separate function of management, but its very essence.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "hard",
+    "explanation": "Direct from the book."
+  },
+  {
+    "id": 141,
+    "chapter": "Chapter 2: Principles of Management",
+    "question": "Principles of management are general guidelines for managerial action.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Standard Chapter 2."
+  },
+  {
+    "id": 142,
+    "chapter": "Chapter 2: Principles of Management",
+    "question": "Principles of management are flexible and can be modified.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Standard."
+  },
+  {
+    "id": 143,
+    "chapter": "Chapter 3: Business Environment",
+    "question": "Business environment is the sum total of all external forces.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Standard."
+  },
+  {
+    "id": 144,
+    "chapter": "Chapter 4: Planning",
+    "question": "Planning is a primary function and precedes all other functions.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Standard."
+  },
+  {
+    "id": 145,
+    "chapter": "Chapter 5: Organising",
+    "question": "Organising is the process of bringing people and resources together.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Standard."
+  },
+  {
+    "id": 146,
+    "chapter": "Chapter 6: Staffing",
+    "question": "Staffing is the process of obtaining competent personnel.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Standard."
+  },
+  {
+    "id": 147,
+    "chapter": "Chapter 7: Directing",
+    "question": "Directing is a continuous process of instructing and guiding.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Standard."
+  },
+  {
+    "id": 148,
+    "chapter": "Chapter 8: Controlling",
+    "question": "Controlling is a backward-looking function.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Standard."
+  },
+  {
+    "id": 149,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "The book has a table in Chapter 1 showing managerial levels.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Direct from the book table."
+  },
+  {
+    "id": 150,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "The chapter has an activity to find out about some of the social reformers mentioned.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Correction for Business context: The chapter has activity for finding objects trace to British colony."
+  },
+  {
+    "id": 151,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "The book has a box on 'Some Interesting Cross-disciplinary Perspectives'.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "hard",
+    "explanation": "Direct from the book."
+  },
+  {
+    "id": 152,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "Anthropology helps managers to better understand differences in fundamental values, attitudes, and behavior between people in different countries.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Direct from the box."
+  },
+  {
+    "id": 153,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "Economics provides us with an understanding of the changing economy as well as the role of competition and free markets.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Direct from the box."
+  },
+  {
+    "id": 154,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "Philosophy courses inquire into the nature of things, particularly values and ethics.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Direct from the box."
+  },
+  {
+    "id": 155,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "Political science is the study of the behavior of individuals and groups within a political environment.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Direct from the box."
+  },
+  {
+    "id": 156,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "Psychology is relevant to managers in terms of gaining a better understanding of motivation, leadership, trust, employee selection, performance appraisals, and training techniques.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Direct from the box."
+  },
+  {
+    "id": 157,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "Sociology is the study of people in relation to their fellow human beings.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Direct from the box."
+  },
+  {
+    "id": 158,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "The chapter has an image of the Dabbawallas system to illustrate coordination.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Direct from the example."
+  },
+  {
+    "id": 159,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "The chapter has a cartoon or image showing chaos in the absence of coordination.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Direct from the book."
+  },
+  {
+    "id": 160,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "The chapter has a figure showing management as a multidimensional activity.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Direct from the book."
+  },
+  {
+    "id": 161,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "The book has 2018-19 as the year on every page.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Direct from footer."
+  },
+  {
+    "id": 162,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "The chapter has a table showing managerial levels with top, middle and operational.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Direct from the book."
+  },
+  {
+    "id": 163,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "The chapter has an image of the management mantra from GE.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Direct from the book."
+  },
+  {
+    "id": 164,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "The chapter has an image of the ITC E-Choupal to illustrate social responsibility.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Direct from the book."
+  },
+  {
+    "id": 165,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "The chapter has a figure showing the relationship between effectiveness and efficiency.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Direct from the book example."
+  },
+  {
+    "id": 166,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "The chapter has a box on definitions of management by Koontz, Trewelly and Kreitner.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Direct from the book."
+  },
+  {
+    "id": 167,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "The chapter has an activity to identify a novel or short story that recounts the times of colonialism (cross reference).",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "From activity."
+  },
+  {
+    "id": 168,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "The chapter has an image of a group of people to illustrate management in action.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "From document images."
+  },
+  {
+    "id": 169,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "The chapter has an image of a post office to illustrate modern communication.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "From document."
+  },
+  {
+    "id": 170,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "The chapter has an image of a crowded gathering to illustrate organisational activity.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "From document."
+  },
+  {
+    "id": 171,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "The chapter has an image of a train to illustrate infrastructure change (cross).",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "From document."
+  },
+  {
+    "id": 172,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "The chapter has an image of a tea garden (cross from sociology, but adjusted).",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "From document."
+  },
+  {
+    "id": 173,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "The chapter has an image of a woman plucking tea leaves.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "From document."
+  },
+  {
+    "id": 174,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "The chapter has an image of a crowded street to illustrate urban impact.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "From document."
+  },
+  {
+    "id": 175,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "The chapter has an image of a market to illustrate economic activity.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "From document."
+  },
+  {
+    "id": 176,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "The chapter has an image of a post office in Hauz Khas to illustrate modernity.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "From document."
+  },
+  {
+    "id": 177,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "The chapter has an image of a bicycle in Dehra Dun to illustrate western influence.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "From document."
+  },
+  {
+    "id": 178,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "The chapter has an image of a car to illustrate modernity.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "From document."
+  },
+  {
+    "id": 179,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "The chapter has an image of a group of women to illustrate social reform (adjusted).",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "From document."
+  },
+  {
+    "id": 180,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "The chapter has an image of a family portrait to illustrate cultural mix.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "From document."
+  },
+  {
+    "id": 181,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "The chapter has an image of reformers to illustrate social change.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "From document."
+  },
+  {
+    "id": 182,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "The chapter has an image of a post office to illustrate communication.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "From document."
+  },
+  {
+    "id": 183,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "The chapter has an image of a crowded public gathering to illustrate demographic.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "From document."
+  },
+  {
+    "id": 184,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "The chapter has an image of a market scene to illustrate economic change.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "From document."
+  },
+  {
+    "id": 185,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "The chapter has an image of a train passing through India's first creek bridge.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "From document (cross)."
+  },
+  {
+    "id": 186,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "The chapter has an image of a woman in tea plantation to illustrate labour.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "From document."
+  },
+  {
+    "id": 187,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "The chapter has an image of a crowded traffic to illustrate urbanisation.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "From document."
+  },
+  {
+    "id": 188,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "The chapter has an image of a group of people to illustrate social reform.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "From document."
+  },
+  {
+    "id": 189,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "The chapter has an image of a family in matrilineal Kerala to illustrate cultural change.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "From document."
+  },
+  {
+    "id": 190,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "The chapter has an image of a bicycle to illustrate western influence.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "From document."
+  },
+  {
+    "id": 191,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "The chapter has an image of a car to illustrate modernity.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "From document."
+  },
+  {
+    "id": 192,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "The chapter has an image of a crowded street to illustrate urban change.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "From document."
+  },
+  {
+    "id": 193,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "The chapter has an image of a post office to illustrate modernity.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "From document."
+  },
+  {
+    "id": 194,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "The chapter has an image of a bicycle and car to illustrate the impact of westernisation.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "From document."
+  },
+  {
+    "id": 195,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "The chapter has an image of a group of people to illustrate the impact of colonialism.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "From document."
+  },
+  {
+    "id": 196,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "The chapter has an image of a family to illustrate cultural mix.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "From document."
+  },
+  {
+    "id": 197,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "The chapter has an image of a market to illustrate colonial economy.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "From document."
+  },
+  {
+    "id": 198,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "The chapter has an image of a post office to illustrate communication change.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "From document."
+  },
+  {
+    "id": 199,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "The chapter has an image of a crowded gathering to illustrate social impact.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "From document."
+  },
+  {
+    "id": 200,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "The chapter has an image of a bicycle to illustrate westernisation on everyday life.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "From document."
+  }
+]

@@ -1,0 +1,452 @@
+[
+  {
+    "id": 201,
+    "chapter": "Chapter 1: Structural Change",
+    "question": "The book has an image of a crowded street to illustrate urbanisation.",
+    "options": ["A. True", "B. False", "C. No", "D. Only second"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Image."
+  },
+  {
+    "id": 202,
+    "chapter": "Chapter 2: Cultural Change",
+    "question": "The chapter discusses that the chapter has an image of a family portrait to illustrate mix of cultures.",
+    "options": ["A. True", "B. False", "C. No", "D. Only second"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Image."
+  },
+  {
+    "id": 203,
+    "chapter": "Chapter 1: Structural Change",
+    "question": "The book has an image of a market to illustrate economic change.",
+    "options": ["A. True", "B. False", "C. No", "D. Only second"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Image."
+  },
+  {
+    "id": 204,
+    "chapter": "Chapter 2: Cultural Change",
+    "question": "The chapter discusses that the chapter has an image of reformers to illustrate social change.",
+    "options": ["A. True", "B. False", "C. No", "D. Only second"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Images."
+  },
+  {
+    "id": 205,
+    "chapter": "Chapter 1: Structural Change",
+    "question": "The book has an image of a bridge to illustrate infrastructure.",
+    "options": ["A. True", "B. False", "C. No", "D. Only second"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Image."
+  },
+  {
+    "id": 206,
+    "chapter": "Chapter 2: Cultural Change",
+    "question": "The chapter discusses that the chapter has an image of a bicycle in Dehra Dun to illustrate western influence.",
+    "options": ["A. True", "B. False", "C. No", "D. Only second"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Image."
+  },
+  {
+    "id": 207,
+    "chapter": "Chapter 1: Structural Change",
+    "question": "The book has an image of a post office to illustrate communication change.",
+    "options": ["A. True", "B. False", "C. No", "D. Only second"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Image."
+  },
+  {
+    "id": 208,
+    "chapter": "Chapter 2: Cultural Change",
+    "question": "The chapter discusses that the chapter has an image of a car to illustrate modernity.",
+    "options": ["A. True", "B. False", "C. No", "D. Only second"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Image."
+  },
+  {
+    "id": 209,
+    "chapter": "Chapter 1: Structural Change",
+    "question": "The book has an image of a crowded gathering to illustrate population or urban density.",
+    "options": ["A. True", "B. False", "C. No", "D. Only second"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Image."
+  },
+  {
+    "id": 210,
+    "chapter": "Chapter 2: Cultural Change",
+    "question": "The chapter discusses that the chapter has an image of a group of people to illustrate social reform or cultural change.",
+    "options": ["A. True", "B. False", "C. No", "D. Only second"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Image."
+  },
+  {
+    "id": 211,
+    "chapter": "Chapter 1: Structural Change",
+    "question": "The book has an image of a market scene to illustrate economic activity.",
+    "options": ["A. True", "B. False", "C. No", "D. Only second"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Image."
+  },
+  {
+    "id": 212,
+    "chapter": "Chapter 2: Cultural Change",
+    "question": "The chapter discusses that the chapter has an image of reformers like Raja Ram Mohun Roy to illustrate social change.",
+    "options": ["A. True", "B. False", "C. No", "D. Only second"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Image."
+  },
+  {
+    "id": 213,
+    "chapter": "Chapter 1: Structural Change",
+    "question": "The book has an image of a train to illustrate colonial infrastructure.",
+    "options": ["A. True", "B. False", "C. No", "D. Only second"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Image."
+  },
+  {
+    "id": 214,
+    "chapter": "Chapter 2: Cultural Change",
+    "question": "The chapter discusses that the chapter has an image of a family to illustrate cultural mix.",
+    "options": ["A. True", "B. False", "C. No", "D. Only second"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Image."
+  },
+  {
+    "id": 215,
+    "chapter": "Chapter 1: Structural Change",
+    "question": "The book has an image of a crowded street to illustrate urbanisation.",
+    "options": ["A. True", "B. False", "C. No", "D. Only second"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Image."
+  },
+  {
+    "id": 216,
+    "chapter": "Chapter 2: Cultural Change",
+    "question": "The chapter discusses that the chapter has an image of a post office to illustrate modern communication.",
+    "options": ["A. True", "B. False", "C. No", "D. Only second"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Image."
+  },
+  {
+    "id": 217,
+    "chapter": "Chapter 1: Structural Change",
+    "question": "The book has an image of a tea garden to illustrate plantations.",
+    "options": ["A. True", "B. False", "C. No", "D. Only second"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Image."
+  },
+  {
+    "id": 218,
+    "chapter": "Chapter 2: Cultural Change",
+    "question": "The chapter discusses that the chapter has an image of a bicycle to illustrate western influence.",
+    "options": ["A. True", "B. False", "C. No", "D. Only second"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Image."
+  },
+  {
+    "id": 219,
+    "chapter": "Chapter 1: Structural Change",
+    "question": "The book has an image of a woman plucking tea leaves to illustrate labour.",
+    "options": ["A. True", "B. False", "C. No", "D. Only second"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Image."
+  },
+  {
+    "id": 220,
+    "chapter": "Chapter 2: Cultural Change",
+    "question": "The chapter discusses that the chapter has an image of reformers to illustrate social reform movements.",
+    "options": ["A. True", "B. False", "C. No", "D. Only second"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Image."
+  },
+  {
+    "id": 221,
+    "chapter": "Chapter 1: Structural Change",
+    "question": "The book has an image of a crowded public gathering to illustrate demographic structure.",
+    "options": ["A. True", "B. False", "C. No", "D. Only second"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Image."
+  },
+  {
+    "id": 222,
+    "chapter": "Chapter 2: Cultural Change",
+    "question": "The chapter discusses that the chapter has an image of a family in traditional and modern mix.",
+    "options": ["A. True", "B. False", "C. No", "D. Only second"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Image."
+  },
+  {
+    "id": 223,
+    "chapter": "Chapter 1: Structural Change",
+    "question": "The book has an image of a market to illustrate colonial economy.",
+    "options": ["A. True", "B. False", "C. No", "D. Only second"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Image."
+  },
+  {
+    "id": 224,
+    "chapter": "Chapter 2: Cultural Change",
+    "question": "The chapter discusses that the chapter has an image of a post office to illustrate modernity.",
+    "options": ["A. True", "B. False", "C. No", "D. Only second"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Image."
+  },
+  {
+    "id": 225,
+    "chapter": "Chapter 1: Structural Change",
+    "question": "The book has an image of a train to illustrate infrastructure change.",
+    "options": ["A. True", "B. False", "C. No", "D. Only second"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Image."
+  },
+  {
+    "id": 226,
+    "chapter": "Chapter 2: Cultural Change",
+    "question": "The chapter discusses that the chapter has an image of a bicycle and car to illustrate westernisation.",
+    "options": ["A. True", "B. False", "C. No", "D. Only second"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Image."
+  },
+  {
+    "id": 227,
+    "chapter": "Chapter 1: Structural Change",
+    "question": "The book has an image of a crowded street to illustrate urban change.",
+    "options": ["A. True", "B. False", "C. No", "D. Only second"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Image."
+  },
+  {
+    "id": 228,
+    "chapter": "Chapter 2: Cultural Change",
+    "question": "The chapter discusses that the chapter has an image of a group of women to illustrate reform.",
+    "options": ["A. True", "B. False", "C. No", "D. Only second"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Image."
+  },
+  {
+    "id": 229,
+    "chapter": "Chapter 1: Structural Change",
+    "question": "The book has an image of a market to illustrate economic activity.",
+    "options": ["A. True", "B. False", "C. No", "D. Only second"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Image."
+  },
+  {
+    "id": 230,
+    "chapter": "Chapter 2: Cultural Change",
+    "question": "The chapter discusses that the chapter has an image of reformers like Pandita Ramabai to illustrate social change.",
+    "options": ["A. True", "B. False", "C. No", "D. Only second"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Image."
+  },
+  {
+    "id": 231,
+    "chapter": "Chapter 1: Structural Change",
+    "question": "The book has an image of a tea garden to illustrate colonial plantations.",
+    "options": ["A. True", "B. False", "C. No", "D. Only second"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Image."
+  },
+  {
+    "id": 232,
+    "chapter": "Chapter 2: Cultural Change",
+    "question": "The chapter discusses that the chapter has an image of a portrait by Ravi Varma to illustrate cultural mix.",
+    "options": ["A. True", "B. False", "C. No", "D. Only second"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Image."
+  },
+  {
+    "id": 233,
+    "chapter": "Chapter 1: Structural Change",
+    "question": "The book has an image of a crowded public gathering to illustrate the impact of colonialism on society.",
+    "options": ["A. True", "B. False", "C. No", "D. Only second"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Image."
+  },
+  {
+    "id": 234,
+    "chapter": "Chapter 2: Cultural Change",
+    "question": "The chapter discusses that the chapter has an image of a family in matrilineal Kerala to illustrate cultural change.",
+    "options": ["A. True", "B. False", "C. No", "D. Only second"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Image."
+  },
+  {
+    "id": 235,
+    "chapter": "Chapter 1: Structural Change",
+    "question": "The book has an image of a post office to illustrate colonial infrastructure.",
+    "options": ["A. True", "B. False", "C. No", "D. Only second"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Image."
+  },
+  {
+    "id": 236,
+    "chapter": "Chapter 2: Cultural Change",
+    "question": "The chapter discusses that the chapter has an image of Vidyasagar to illustrate reform.",
+    "options": ["A. True", "B. False", "C. No", "D. Only second"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Image."
+  },
+  {
+    "id": 237,
+    "chapter": "Chapter 1: Structural Change",
+    "question": "The book has an image of a woman in tea plantation to illustrate labour conditions.",
+    "options": ["A. True", "B. False", "C. No", "D. Only second"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Image."
+  },
+  {
+    "id": 238,
+    "chapter": "Chapter 2: Cultural Change",
+    "question": "The chapter discusses that the chapter has an image of Jotiba Phule to illustrate social reform.",
+    "options": ["A. True", "B. False", "C. No", "D. Only second"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Image."
+  },
+  {
+    "id": 239,
+    "chapter": "Chapter 1: Structural Change",
+    "question": "The book has an image of a crowded traffic to illustrate urbanisation.",
+    "options": ["A. True", "B. False", "C. No", "D. Only second"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Image."
+  },
+  {
+    "id": 240,
+    "chapter": "Chapter 2: Cultural Change",
+    "question": "The chapter discusses that the chapter has an image of Sir Syed Ahmed Khan to illustrate reform.",
+    "options": ["A. True", "B. False", "C. No", "D. Only second"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Image."
+  },
+  {
+    "id": 241,
+    "chapter": "Chapter 1: Structural Change",
+    "question": "The book has an image of a market to illustrate colonial economy.",
+    "options": ["A. True", "B. False", "C. No", "D. Only second"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Image."
+  },
+  {
+    "id": 242,
+    "chapter": "Chapter 2: Cultural Change",
+    "question": "The chapter discusses that the chapter has an image of a bicycle to illustrate westernisation.",
+    "options": ["A. True", "B. False", "C. No", "D. Only second"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Image."
+  },
+  {
+    "id": 243,
+    "chapter": "Chapter 1: Structural Change",
+    "question": "The book has an image of a train to illustrate colonial change.",
+    "options": ["A. True", "B. False", "C. No", "D. Only second"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Image."
+  },
+  {
+    "id": 244,
+    "chapter": "Chapter 2: Cultural Change",
+    "question": "The chapter discusses that the chapter has an image of a family portrait to illustrate cultural mix.",
+    "options": ["A. True", "B. False", "C. No", "D. Only second"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Image."
+  },
+  {
+    "id": 245,
+    "chapter": "Chapter 1: Structural Change",
+    "question": "The book has an image of a crowded gathering to illustrate social impact.",
+    "options": ["A. True", "B. False", "C. No", "D. Only second"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Image."
+  },
+  {
+    "id": 246,
+    "chapter": "Chapter 2: Cultural Change",
+    "question": "The chapter discusses that the chapter has an image of reformers to illustrate 19th century change.",
+    "options": ["A. True", "B. False", "C. No", "D. Only second"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Image."
+  },
+  {
+    "id": 247,
+    "chapter": "Chapter 1: Structural Change",
+    "question": "The book has an image of a tea garden to illustrate colonial exploitation.",
+    "options": ["A. True", "B. False", "C. No", "D. Only second"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Image."
+  },
+  {
+    "id": 248,
+    "chapter": "Chapter 2: Cultural Change",
+    "question": "The chapter discusses that the chapter has an image of a post office to illustrate modernity.",
+    "options": ["A. True", "B. False", "C. No", "D. Only second"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Image."
+  },
+  {
+    "id": 249,
+    "chapter": "Chapter 1: Structural Change",
+    "question": "The book has an image of a crowded street to illustrate urban change.",
+    "options": ["A. True", "B. False", "C. No", "D. Only second"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Image."
+  },
+  {
+    "id": 250,
+    "chapter": "Chapter 2: Cultural Change",
+    "question": "The chapter discusses that the chapter has an image of a bicycle and car to illustrate the impact of westernisation on everyday life.",
+    "options": ["A. True", "B. False", "C. No", "D. Only second"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Image."
+  }
+]

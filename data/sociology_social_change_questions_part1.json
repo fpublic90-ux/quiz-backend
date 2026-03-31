@@ -1,0 +1,902 @@
+[
+  {
+    "id": 1,
+    "chapter": "Chapter 1: Structural Change",
+    "question": "Colonialism simply means the establishment of rule by one country over another, but in the modern period western colonialism had the greatest impact because:",
+    "options": ["A. It was based on capitalist system that directly interfered to ensure greatest profit", "B. It did not interfere with the economic base", "C. It only exacted tribute without changing laws", "D. It was limited to pre-capitalist times"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "The book states: 'In contrast British colonialism which was based on a capitalist system directly interfered to ensure greatest profit and benefit to British capitalism. Every policy was geared towards the strengthening and expansion of British capitalism.'"
+  },
+  {
+    "id": 2,
+    "chapter": "Chapter 1: Structural Change",
+    "question": "Pre-capitalist conquerors benefited from domination by:",
+    "options": ["A. Changing the economic base", "B. Exacting a continuous flow of tribute without interfering with the economic base", "C. Introducing capitalist policies", "D. Building factories"],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "The book explains: 'Apart from outright pillage, the pre-capitalist conquerors benefited from their domination by exacting a continuous flow of tribute. On the whole they did not interfere with the economic base.'"
+  },
+  {
+    "id": 3,
+    "chapter": "Chapter 1: Structural Change",
+    "question": "The advent of railways in Bengal marked an important turning point in forest policy in Assam because:",
+    "options": ["A. It led to laissez faire policy", "B. The demand for railway sleepers transformed forests from unproductive wilderness into a lucrative source of revenue", "C. It prevented deforestation", "D. It protected tribal communities"],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "Box 1.1: 'The advent of the railways in Bengal...marked an important turning point... The demand for railway sleepers transformed the forests in Assam...from an unproductive wilderness into a lucrative source of revenue.'"
+  },
+  {
+    "id": 4,
+    "chapter": "Chapter 1: Structural Change",
+    "question": "Colonialism led to considerable movement of people, including:",
+    "options": ["A. Only within India", "B. People from present day Jharkhand to Assam for tea plantations, middle classes to different parts, and carting to other colonised lands", "C. Only overseas migration", "D. No movement"],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "The book states: 'Colonialism also led to considerable movement of people. It led to movement of people from one part to another within India. For instance people from present day Jharkhand moved to Assam to work on the tea plantations...People were carted in ships from India to work on other colonised lands...'"
+  },
+  {
+    "id": 5,
+    "chapter": "Chapter 1: Structural Change",
+    "question": "To facilitate smooth functioning of its rule, colonialism introduced changes in:",
+    "options": ["A. Only legal sphere", "B. Every sphere – legal, cultural, architectural", "C. Only economic", "D. None"],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "The book: 'To facilitate the smooth functioning of its rule, colonialism introduced a wide array of changes in every sphere, be it legal or cultural or architectural.'"
+  },
+  {
+    "id": 6,
+    "chapter": "Chapter 1: Structural Change",
+    "question": "The magnitude and depth of structural changes unleashed by colonialism can be better grasped by understanding basic features of:",
+    "options": ["A. Feudalism", "B. Capitalism", "C. Tribal systems", "D. Monarchy"],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "The book: 'This magnitude and depth of the structural changes that colonialism unleashed can be better grasped if we try and understand some basic features of capitalism.'"
+  },
+  {
+    "id": 7,
+    "chapter": "Chapter 1: Structural Change",
+    "question": "Capitalism is an economic system in which:",
+    "options": ["A. Means of production are owned by the state", "B. The means of production are privately owned and organised to accumulate profits within a market system", "C. Production is for subsistence only", "D. There is no market"],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "The book: 'Capitalism is an economic system in which the means of production are privately owned and organised to accumulate profits within a market system.'"
+  },
+  {
+    "id": 8,
+    "chapter": "Chapter 1: Structural Change",
+    "question": "Nation states became the dominant political form along with the rise of:",
+    "options": ["A. Capitalism", "B. Tribalism", "C. Feudalism", "D. Monarchy"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "The book: 'If capitalism became the dominant economic system, nation states became the dominant political form.'"
+  },
+  {
+    "id": 9,
+    "chapter": "Chapter 1: Structural Change",
+    "question": "Industrialisation refers to the emergence of machine production based on the use of:",
+    "options": ["A. Animate power resources", "B. Inanimate power resources like steam or electricity", "C. Human labour only", "D. Animal power"],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "The book: 'Industrialisation refers to the emergence of machine production, based on the use of inanimate power resources like steam or electricity.'"
+  },
+  {
+    "id": 10,
+    "chapter": "Chapter 1: Structural Change",
+    "question": "In Britain, the first society to undergo industrialisation, by 1900 what percentage of the population lived in towns or cities of more than 10,000 inhabitants?",
+    "options": ["A. 20%", "B. 74%", "C. 50%", "D. 90%"],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "The book: 'By 1900 this proportion had become 74 per cent.'"
+  },
+  {
+    "id": 11,
+    "chapter": "Chapter 1: Structural Change",
+    "question": "In India the impact of British industrialisation led to:",
+    "options": ["A. Only growth in all sectors", "B. Deindustrialisation in some sectors and decline of old urban centres", "C. No change in urban centres", "D. Increase in traditional exports"],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "The book: 'In India the impact of the very same British industrialisation led to deindustrialisation in some sectors. And decline of old urban centres.'"
+  },
+  {
+    "id": 12,
+    "chapter": "Chapter 1: Structural Change",
+    "question": "The Census of India Report, 1911 noted that the extensive importation of cheap European piecegoods and the establishment of factories had:",
+    "options": ["A. Strengthened village industries", "B. More or less destroyed many village industries", "C. Had no effect", "D. Increased agricultural produce only"],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "Box 1.3: 'The extensive importation of cheap European piecegoods...have more or less destroyed many village industries.'"
+  },
+  {
+    "id": 13,
+    "chapter": "Chapter 1: Structural Change",
+    "question": "Unlike Britain where industrialisation led to more people moving into urban areas, in India the initial impact led to more people moving into:",
+    "options": ["A. Factories", "B. Agriculture", "C. Overseas", "D. Cities"],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "The book: 'Unlike Britain where the impact of industrialisation led to more people moving into urban areas, in India the initial impact of the same British industrialisation led to more people moving into agriculture.'"
+  },
+  {
+    "id": 14,
+    "chapter": "Chapter 1: Structural Change",
+    "question": "Sociological writings in India have often discussed the contradictory and unintended consequences of:",
+    "options": ["A. Independence", "B. Colonialism", "C. Sanskritisation", "D. Westernisation"],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "The book: 'Sociological writings in India have often discussed both the contradictory and unintended consequences of colonialism.'"
+  },
+  {
+    "id": 15,
+    "chapter": "Chapter 1: Structural Change",
+    "question": "Cities had a key role in the economic system of empires. Colonial cities were the prime link between the economic centre in Britain and periphery in colonised India. In British India, Bombay was planned so that by 1900 over three-quarters of India's raw cotton were shipped through:",
+    "options": ["A. Calcutta", "B. Madras", "C. Bombay", "D. Surat"],
+    "answer": 2,
+    "difficulty": "medium",
+    "explanation": "The book: 'In British India for example Bombay was planned and re-developed so that by 1900 over three-quarters of India’s raw cotton were shipped through the city.'"
+  },
+  {
+    "id": 16,
+    "chapter": "Chapter 1: Structural Change",
+    "question": "Urbanisation in the colonial period saw the decline of some earlier urban centres like Surat and Masulipatnam while growth of:",
+    "options": ["A. Only rural areas", "B. Bombay, Madras, Calcutta", "C. No new cities", "D. Only Thanjavur"],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "The book: 'This period also saw the further decline of cities such as Surat and Masulipatnam while Bombay and Madras grew.'"
+  },
+  {
+    "id": 17,
+    "chapter": "Chapter 1: Structural Change",
+    "question": "M.S.A. Rao argued that in India many villages are becoming subject to urban influences in three different situations. The first is villages with a sizeable number of people employed in far-off cities who:",
+    "options": ["A. Never return", "B. Send money regularly and visit the village", "C. Settle permanently in cities", "D. Abandon agriculture"],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "Box 1.10: 'Firstly, there are villages in which a sizeable number of people have sought employment in far-off cities...About 75 percent of the total migrants send money regularly...'"
+  },
+  {
+    "id": 18,
+    "chapter": "Chapter 1: Structural Change",
+    "question": "The second kind of urban impact per M.S.A. Rao is seen in villages situated near:",
+    "options": ["A. A pilgrim centre", "B. An industrial town like Bhilai", "C. A rural area", "D. Overseas"],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "Box 1.10: 'The second kind of urban impact is to be seen in villages which are situated near an industrial town...When an industrial town like Bhilai comes up...'"
+  },
+  {
+    "id": 19,
+    "chapter": "Chapter 1: Structural Change",
+    "question": "The growth of metropolitan cities accounts for the third type of urban impact on surrounding villages where:",
+    "options": ["A. Only land is used for urban development", "B. Few villages are totally absorbed in expansion while land of others is used for urban development", "C. No absorption", "D. Only rural growth"],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "Box 1.10: '...The growth of metropolitan cities accounts for the third type of urban impact on the surrounding villages...While a few villages are totally absorbed...only the land of many others...is used for urban development...'"
+  },
+  {
+    "id": 20,
+    "chapter": "Chapter 1: Structural Change",
+    "question": "In 1951, what percentage of India's population lived in towns?",
+    "options": ["A. 31.16%", "B. 17.29%", "C. 50%", "D. 10%"],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "The book: 'In 1951, 17.29% of India's population i.e., 62.44 million people, were living in 2,843 towns.'"
+  },
+  {
+    "id": 21,
+    "chapter": "Chapter 1: Structural Change",
+    "question": "The Planning Commission was set up in:",
+    "options": ["A. 1938", "B. March 1950", "C. 1947", "D. 1961"],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "Box 1.9: 'The Planning Commission was set up in March 1950...'"
+  },
+  {
+    "id": 22,
+    "chapter": "Chapter 1: Structural Change",
+    "question": "Jawaharlal Nehru visualised a modern and prosperous India built on giant steel plants or gigantic dams and power stations, calling Bhakra Nangal dam:",
+    "options": ["A. A temple of modern India", "B. A source of pollution", "C. A colonial remnant", "D. A rural project"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "The book quotes Nehru: 'Which place can be greater than this, this Bhakra Nangal...these days the biggest temple...is the place where man works for the good of mankind.'"
+  },
+  {
+    "id": 23,
+    "chapter": "Chapter 2: Cultural Change",
+    "question": "Social reform movements in the 19th century arose to the challenges that colonial Indian society faced, including:",
+    "options": ["A. Only economic issues", "B. Sati, child marriage, widow remarriage and caste discrimination", "C. Only urbanisation", "D. No social evils"],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "The book: 'The well-known issues are that of sati, child marriage, widow remarriage and caste discrimination.'"
+  },
+  {
+    "id": 24,
+    "chapter": "Chapter 2: Cultural Change",
+    "question": "Raja Ram Mohun Roy attacked the practice of sati on the basis of:",
+    "options": ["A. Only British laws", "B. Both appeals to humanitarian and natural rights doctrines as well as Hindu shastras", "C. Only traditional texts", "D. No basis"],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "Box 2.1: 'Ram Mohun Roy attacked the practice of sati on the basis of both appeals to humanitarian and natural rights doctrines as well as Hindu shastras.'"
+  },
+  {
+    "id": 25,
+    "chapter": "Chapter 2: Cultural Change",
+    "question": "The content of new education introduced was:",
+    "options": ["A. Traditional only", "B. Modernising and liberal, drawn from European Renaissance, Reformation and Enlightenment", "C. Only religious", "D. No education"],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "Box 2.1: 'The content of new education was modernising and liberal. The literary content...was drawn from the literature of the European Renaissance, Reformation and Enlightenment.'"
+  },
+  {
+    "id": 26,
+    "chapter": "Chapter 2: Cultural Change",
+    "question": "Sir Syed Ahmed Khan's interpretation of Islam emphasised:",
+    "options": ["A. Rigid orthodoxy", "B. The validity of free enquiry (ijtihad) and similarities between Koranic revelations and modern science", "C. No enquiry", "D. Only tradition"],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "Box 2.1: 'Sir Sayed Ahmed Khan's interpretation of Islam emphasised the validity of free enquiry (ijtihad) and the alleged similarities between Koranic revelations and the laws of nature discovered by modern science.'"
+  },
+  {
+    "id": 27,
+    "chapter": "Chapter 2: Cultural Change",
+    "question": "New technologies like printing press, telegraph, and railways helped quick movement of new ideas. Within India, social reformers from Punjab and Bengal exchanged ideas with reformers from:",
+    "options": ["A. Only Europe", "B. Madras and Maharashtra", "C. Only rural areas", "D. No exchange"],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "The book: 'Within India, social reformers from Punjab and Bengal exchanged ideas with reformers from Madras and Maharashtra.'"
+  },
+  {
+    "id": 28,
+    "chapter": "Chapter 2: Cultural Change",
+    "question": "Modern social organisations like the Brahmo Samaj in Bengal and Arya Samaj in Punjab were set up. The All-India Muslim Ladies Conference was founded in:",
+    "options": ["A. 1850", "B. 1914", "C. 1900", "D. 1947"],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "The book: 'The All-India Muslim Ladies Conference (Anjuman-E-Khawatn-E-Islam) was founded in 1914.'"
+  },
+  {
+    "id": 29,
+    "chapter": "Chapter 2: Cultural Change",
+    "question": "The value of education became very important as it was seen as crucial for a nation to become modern but also retain its ancient heritage. The idea of female education was debated intensely, and the first school for women in Pune was opened by:",
+    "options": ["A. Raja Ram Mohun Roy", "B. Jotiba Phule", "C. Sir Syed Ahmed Khan", "D. Vidyasagar"],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "The book: 'It was the social reformer Jotiba Phule who opened the first school for women in Pune.'"
+  },
+  {
+    "id": 30,
+    "chapter": "Chapter 2: Cultural Change",
+    "question": "Muslim social reformers actively debated the meaning of polygamy and purdah. A resolution against polygamy was proposed by Jahanara Shah Nawas arguing it was against the true spirit of the Quran at the:",
+    "options": ["A. Brahmo Samaj meeting", "B. All India Muslim Ladies Conference", "C. Arya Samaj", "D. No conference"],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "The book: 'A resolution against the evils of polygamy was proposed by Jahanara Shah Nawas at the All India Muslim Ladies Conference.'"
+  },
+  {
+    "id": 31,
+    "chapter": "Chapter 2: Cultural Change",
+    "question": "The term sanskritisation was coined by M.N. Srinivas. It is the process by which a 'low' caste or tribe takes over the customs, ritual, beliefs, ideology and style of life of a high and, in particular, a 'twice-born (dwija) caste'.",
+    "options": ["A. True", "B. False", "C. Only for tribes", "D. Only for upper castes"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "The book: 'The term sanskritisation was coined by M.N. Srinivas. It may be briefly defined as the process by which a ‘low’ caste or tribe or other group takes over the customs, ritual, beliefs, ideology and style of life of a high and, in particular, a ‘twice-born (dwija) caste’.'"
+  },
+  {
+    "id": 32,
+    "chapter": "Chapter 2: Cultural Change",
+    "question": "The impact of Sanskritisation is primarily a process that takes place within:",
+    "options": ["A. The Muslim space", "B. The Hindu space though visible outside Hinduism", "C. Only secular space", "D. Christian space"],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "The book: 'It is primarily a process that takes place within the Hindu space though Srinivas argued that it was visible even in sects and religious groups outside Hinduism.'"
+  },
+  {
+    "id": 33,
+    "chapter": "Chapter 2: Cultural Change",
+    "question": "Sanskritisation of a group usually has the effect of improving its position in the local caste hierarchy, normally presupposing:",
+    "options": ["A. No change", "B. An improvement in the economic or political position or higher group self-consciousness", "C. Decline in status", "D. Isolation"],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "The book: 'Srinivas argued that, “the Sanskritisation of a group has usually the effect of improving its position in the local caste hierarchy. It normally presupposes either an improvement in the economic or political position...or a higher group self-consciousness...”'"
+  },
+  {
+    "id": 34,
+    "chapter": "Chapter 2: Cultural Change",
+    "question": "Sanskritisation has been criticised for:",
+    "options": ["A. Exaggerating social mobility and leading to no structural change but only positional change", "B. Promoting equality", "C. Reducing inequality", "D. No criticism"],
+    "answer": 0,
+    "difficulty": "hard",
+    "explanation": "The book: 'Sanskritisation as a concept has been criticised...One, it has been criticised for exaggerating social mobility...For it leads to no structural change but only positional change of some individuals.'"
+  },
+  {
+    "id": 35,
+    "chapter": "Chapter 2: Cultural Change",
+    "question": "The ideology of sanskritisation accepts the ways of the 'upper caste' as superior and that of the 'lower caste' as inferior, therefore it:",
+    "options": ["A. Rejects hierarchy", "B. Seems to justify a model that rests on inequality and exclusion", "C. Promotes equality", "D. Is democratic"],
+    "answer": 1,
+    "difficulty": "hard",
+    "explanation": "The book: 'Third, ‘sanskratisation’ seems to justify a model that rests on inequality and exclusion.'"
+  },
+  {
+    "id": 36,
+    "chapter": "Chapter 2: Cultural Change",
+    "question": "Sanskritisation results in the adoption of upper caste rites and rituals leading to practices like:",
+    "options": ["A. Ending seclusion of women", "B. Secluding girls and women, adopting dowry practices", "C. Promoting bride-price", "D. No change in gender practices"],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "The book: 'Fourth, since sanskritisation results in the adoption of upper caste rites and rituals it leads to practices of secluding girls and women, adopting dowry practices instead of bride-price...'"
+  },
+  {
+    "id": 37,
+    "chapter": "Chapter 2: Cultural Change",
+    "question": "M.N. Srinivas defines westernisation as the changes brought about in Indian society and culture as a result of over 150 years of British rule, subsuming changes at different levels like:",
+    "options": ["A. Only technology", "B. Technology, institutions, ideology and values", "C. Only values", "D. No changes"],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "The book: 'M.N. Srinivas defines westernisation as “the changes brought about in Indian society and culture as a result of over 150 years of British rule, the term subsuming changes occurring at different levels…technology, institutions, ideology and values”.'"
+  },
+  {
+    "id": 38,
+    "chapter": "Chapter 2: Cultural Change",
+    "question": "Westernisation includes the emergence of a westernised sub-cultural pattern through a minority section of Indians who first came in contact with Western culture, including:",
+    "options": ["A. Only rural people", "B. Indian intellectuals who adopted many cognitive patterns and styles of life", "C. Only lower castes", "D. No intellectuals"],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "The book: 'One kind refers to the emergence of a westernised sub-cultural pattern through a minority section of Indians who first came in contact with Western culture. This included the sub culture of Indian intellectuals...'"
+  },
+  {
+    "id": 39,
+    "chapter": "Chapter 2: Cultural Change",
+    "question": "There has been the general spread of Western cultural traits such as the use of new technology, dress, food, and changes in habits. Across the country many middle class homes have:",
+    "options": ["A. Only traditional items", "B. A television set, a fridge, sofa set, dining table", "C. No modern items", "D. Only rural items"],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "The book: 'Across the country a very wide section of middle class homes have a television set, a fridge, some kind of sofa set, a dining table and chair in the living room.'"
+  },
+  {
+    "id": 40,
+    "chapter": "Chapter 2: Cultural Change",
+    "question": "Westernisation does involve the imitation of external forms of culture but does not necessarily mean that people adopt modern values of:",
+    "options": ["A. Hierarchy", "B. Democracy and equality", "C. Tradition only", "D. No values"],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "The book: 'Westernisation does involve the imitation of external forms of culture. It does not necessarily mean that people adopt modern values of democracy and equality.'"
+  },
+  {
+    "id": 41,
+    "chapter": "Chapter 2: Cultural Change",
+    "question": "The west influenced Indian art and literature. Artists like Ravi Varma were grappling with the colonial encounter by blending:",
+    "options": ["A. Only traditional styles", "B. Elements of two-dimensional style with newer techniques of perspective and illusionism using oil", "C. No blending", "D. Only Western"],
+    "answer": 1,
+    "difficulty": "hard",
+    "explanation": "Box 2.4: 'This is a transitional work which blends elements of a flatter, two-dimensional style...with the newer techniques of perspective and illusionism, made possible by the use of a medium like oil.'"
+  },
+  {
+    "id": 42,
+    "chapter": "Chapter 2: Cultural Change",
+    "question": "In contemporary context, conflicts between generations are often seen as cultural conflicts resulting from:",
+    "options": ["A. Only sanskritisation", "B. Westernisation", "C. No conflicts", "D. Only secularisation"],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "The book: 'In the contemporary context often conflicts between generations are seen as cultural conflicts resulting from westernisation.'"
+  },
+  {
+    "id": 43,
+    "chapter": "Chapter 2: Cultural Change",
+    "question": "Srinivas suggested that while 'lower castes' sought to be Sanskritised, 'upper castes' sought to be:",
+    "options": ["A. Traditional", "B. Westernised", "C. Rural", "D. Isolated"],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "The book: 'Srinivas suggested that while ‘lower castes’ sought to be Sanskritised, ‘upper castes’ sought to be Westernised.'"
+  },
+  {
+    "id": 44,
+    "chapter": "Chapter 2: Cultural Change",
+    "question": "In Punjab culturally Sanskritic influence was never very strong. For many centuries until the third quarter of the 19th century the dominant influence was:",
+    "options": ["A. Sanskrit", "B. Persian", "C. English only", "D. No influence"],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "The book: 'In Punjab culturally Sanskritic influence was never very strong. For many centuries until the third quarter of the 19th century the Persian influence was the dominant one.'"
+  },
+  {
+    "id": 45,
+    "chapter": "Chapter 2: Cultural Change",
+    "question": "The Backward Classes Movement emphasised the role of secular factors in the upward mobility of caste groups, and in the case of dominant castes, there was no longer any desire to pass for the:",
+    "options": ["A. Lower castes", "B. Vaisyas, Kshatriyas and Brahmins", "C. Dalits", "D. Tribals"],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "The book: 'In the case of the dominant castes, there was no longer any desire to pass for the Vaisyas, Kshatriyas and Brahmins.'"
+  },
+  {
+    "id": 46,
+    "chapter": "Chapter 2: Cultural Change",
+    "question": "Recent years have seen assertions of Dalits who now pride their identity as Dalits. However, sometimes among the poorest dalit caste groups, caste identity seems to compensate their marginality in other domains by giving:",
+    "options": ["A. No pride", "B. Some pride and self-confidence", "C. Only exclusion", "D. No compensation"],
+    "answer": 1,
+    "difficulty": "hard",
+    "explanation": "The book: 'However, sometimes as among the poorest and the most marginalised of the dalit caste groups, caste identity seems to compensate their marginality in other domains.'"
+  },
+  {
+    "id": 47,
+    "chapter": "Chapter 1: Structural Change",
+    "question": "The National Planning Committee with Jawaharlal Nehru as Chairman was set up by the Indian National Congress in:",
+    "options": ["A. 1950", "B. 1938", "C. 1947", "D. 1961"],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "Box 1.9: 'Nearly a decade before the country’s Independence, in 1938 a National Planning Committee...was set up...'"
+  },
+  {
+    "id": 48,
+    "chapter": "Chapter 1: Structural Change",
+    "question": "The Planning Commission was set up by a resolution of the Government of India in March:",
+    "options": ["A. 1938", "B. 1950", "C. 1947", "D. 1961"],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "Box 1.9: 'The Planning Commission was set up in March 1950...'"
+  },
+  {
+    "id": 49,
+    "chapter": "Chapter 2: Cultural Change",
+    "question": "The mix of ideas in social reform included Ranade's writings on the lawfulness of widow remarriage elaborating the shastric sanction, and the new education being modernising and liberal with themes from the European:",
+    "options": ["A. Renaissance, Reformation and Enlightenment", "B. Feudal times", "C. Pre-modern", "D. Only religious texts"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Box 2.1: 'Ranade's writings...elaborated the shastric sanction...The content of new education was modernising and liberal...drawn from the literature of the European Renaissance, Reformation and Enlightenment.'"
+  },
+  {
+    "id": 50,
+    "chapter": "Chapter 2: Cultural Change",
+    "question": "Kandukuri Viresalingam's 'The Sources of Knowledge' reflected his familiarity with navya-nyaya logic. At the same time he translated:",
+    "options": ["A. Only Sanskrit texts", "B. Julius Huxley", "C. No Western author", "D. Only traditional"],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "Box 2.1: 'Kandukuri Viresalingam's The Sources of Knowledge reflected his familiarity with navya-nyaya logic. At the same time he translated Julius Huxley.'"
+  },
+  {
+    "id": 51,
+    "chapter": "Chapter 1: Structural Change",
+    "question": "The first Ford Model T in Dehra Dun was brought by Alfred Massey, and the story is retold in Ford News to show how people came by train and bullock cart to see the 'engine' with rubber tyres being unloaded, and it took an hour to fit the wheels and open the hood.",
+    "options": ["A. True as per box", "B. False", "C. Only in Bombay", "D. No story"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "The image caption and text in Ch1 describe this."
+  },
+  {
+    "id": 52,
+    "chapter": "Chapter 2: Cultural Change",
+    "question": "Sanskritisation is criticised for leading to the erosion of key characteristics of dalit culture and society, where the very worth of labour which 'lower castes' do is degraded and rendered:",
+    "options": ["A. Valuable", "B. Shameful", "C. Equal", "D. Modern"],
+    "answer": 1,
+    "difficulty": "hard",
+    "explanation": "The book: 'For example the very worth of labour which ‘lower castes’ do is degraded and rendered ‘shameful’.'"
+  },
+  {
+    "id": 53,
+    "chapter": "Chapter 1: Structural Change",
+    "question": "In the tea plantations of Assam, the labour system was essentially that of indenture by which the labourers went to Assam under contract for a number of years, and the government helped the planters by providing for penal sanction in case of non-fulfillment of the contract.",
+    "options": ["A. True", "B. False", "C. No penal sanction", "D. Voluntary only"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Box 1.7: 'The labour system in Assam was essentially that of indenture...The government helped the planters by providing for penal sanction...'"
+  },
+  {
+    "id": 54,
+    "chapter": "Chapter 2: Cultural Change",
+    "question": "The resolution condemning polygamy at the All India Muslim Ladies Conference caused considerable debate in the Muslim press, with Tahsib-e-Niswan coming out in favour but others disapproving.",
+    "options": ["A. True", "B. False", "C. No debate", "D. All approved"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "The book: 'The resolution condemning polygamy caused considerable debate in the Muslim press. Tahsib-e-Niswan...came out in favour...but others disapproved.'"
+  },
+  {
+    "id": 55,
+    "chapter": "Chapter 1: Structural Change",
+    "question": "The Census of India Report 1911 noted that high prices of agricultural produce led many village artisans to abandon their hereditary craft in favour of:",
+    "options": ["A. Industry", "B. Agriculture", "C. Migration", "D. No change"],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "Box 1.3: 'The high prices of agricultural produce have also led many village artisans to abandon their hereditary craft in favour of agriculture...'"
+  },
+  {
+    "id": 56,
+    "chapter": "Chapter 2: Cultural Change",
+    "question": "The first school for women in Pune was opened by the social reformer:",
+    "options": ["A. Raja Ram Mohun Roy", "B. Jotiba Phule", "C. Vidyasagar", "D. Sir Syed Ahmed Khan"],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "The book: 'It was the social reformer Jotiba Phule who opened the first school for women in Pune.'"
+  },
+  {
+    "id": 57,
+    "chapter": "Chapter 1: Structural Change",
+    "question": "The extensive importation of cheap European piecegoods had more or less destroyed many village industries, and the change is most noticeable in the more advanced provinces, as per the:",
+    "options": ["A. 2011 Census", "B. Census of India Report, 1911", "C. 1901 Census", "D. No report"],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "Box 1.3: 'The Census of India Report, 1911...The change is most noticeable in the more advanced provinces.'"
+  },
+  {
+    "id": 58,
+    "chapter": "Chapter 2: Cultural Change",
+    "question": "M.N. Srinivas argued that Sanskritisation of a group has usually the effect of improving its position in the local caste hierarchy, and it normally presupposes an improvement in the economic or political position or a higher group self-consciousness from contact with a source of the 'Great Tradition' of Hinduism such as a:",
+    "options": ["A. Pilgrim centre", "B. Factory", "C. City only", "D. Rural area"],
+    "answer": 0,
+    "difficulty": "hard",
+    "explanation": "The book: '...or a higher group self-consciousness resulting from its contact with a source of the ‘Great Tradition’ of Hinduism such as a pilgrim centre or a monastery...'"
+  },
+  {
+    "id": 59,
+    "chapter": "Chapter 1: Structural Change",
+    "question": "The Planning Commission focussed attention on major areas including agriculture, industries, human factor (labour and population), exchange and finance, public utilities, social services, education, and woman's role in a planned economy.",
+    "options": ["A. True", "B. False", "C. Only economic", "D. No focus"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Box 1.9 lists these areas."
+  },
+  {
+    "id": 60,
+    "chapter": "Chapter 2: Cultural Change",
+    "question": "Kumud Pawade, a Dalit woman, became a Sanskrit teacher despite taunting by the Head of the Department, and she recalls that although she tries to forget her caste, it is impossible to forget, remembering the expression 'What comes by birth, but can’t be cast off by dying - that is caste?'",
+    "options": ["A. True as per her autobiography", "B. False", "C. No such story", "D. Only for men"],
+    "answer": 0,
+    "difficulty": "hard",
+    "explanation": "The book quotes from her autobiography."
+  },
+  {
+    "id": 61,
+    "chapter": "Chapter 1: Structural Change",
+    "question": "The first ever bicycle in Dehra Dun was brought dismembered and packed in a box by Alfred Massey, and the first Ford Model T to Massey's Garage caused people to come by train and bullock cart to see it.",
+    "options": ["A. True", "B. False", "C. Only in Calcutta", "D. No car"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Image caption in Ch1."
+  },
+  {
+    "id": 62,
+    "chapter": "Chapter 2: Cultural Change",
+    "question": "The mix and match of traditional and modern is seen in how the sari, a loose unstitched piece of cloth was traditionally worn differently in different regions, but the standard way the modern middle class woman wears it is a novel combination of the traditional sari with the western 'petticoat' and 'blouse'.",
+    "options": ["A. True", "B. False", "C. No change", "D. Only traditional"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "The book: 'The standard way that the modern middle class woman wears it was a novel combination of the traditional sari with the western ‘petticoat’ and ‘blouse’.'"
+  },
+  {
+    "id": 63,
+    "chapter": "Chapter 1: Structural Change",
+    "question": "The National Rural Employment Guarantee Act is the latest state initiative to tackle the problem of hunger and starvation in rural areas (mentioned in previous book but referenced in context of post-independence efforts).",
+    "options": ["A. True in context", "B. False", "C. No such act", "D. Only colonial"],
+    "answer": 0,
+    "difficulty": "hard",
+    "explanation": "Cross-reference in earlier book, but structural change context."
+  },
+  {
+    "id": 64,
+    "chapter": "Chapter 2: Cultural Change",
+    "question": "The chapter on cultural change focuses on two related developments: the deliberate efforts by 19th century social reformers and early 20th century nationalists to bring changes in social practices discriminating against women and 'lower' castes, and the less deliberate changes in cultural practices understood as the four processes of:",
+    "options": ["A. Sanskritisation, modernisation, secularisation and westernisation", "B. Only industrialisation", "C. Only urbanisation", "D. No processes"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "The book: 'The first deals with the deliberate...The second with the less deliberate yet decisive changes in cultural practices which can broadly be understood as the four processes of sanskritisation, modernisation, secularisation and westernisation.'"
+  },
+  {
+    "id": 65,
+    "chapter": "Chapter 1: Structural Change",
+    "question": "The book notes that for the first time since Independence, the absolute increase in population is more in urban areas than in rural areas due to a sharp decline in the growth rate in rural areas, while the growth rate in urban areas remains almost the same.",
+    "options": ["A. True", "B. False", "C. No increase", "D. Only rural"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "The book: 'For the first time since Independence, the absolute increase in population is more in urban areas than in rural areas. This is due to a sharp decline in the growth rate in rural areas, while the growth rate in urban areas remains almost the same.'"
+  },
+  {
+    "id": 66,
+    "chapter": "Chapter 2: Cultural Change",
+    "question": "Sanskritisation is primarily a process that takes place within the Hindu space, though Srinivas argued it was visible even in sects and religious groups outside Hinduism. Studies show it operated differently in different parts of the country.",
+    "options": ["A. True", "B. False", "C. Only outside", "D. No variation"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "The book: 'It is primarily a process that takes place within the Hindu space though Srinivas argued that it was visible even in sects and religious groups outside Hinduism. Studies of different areas...operated differently...'"
+  },
+  {
+    "id": 67,
+    "chapter": "Chapter 1: Structural Change",
+    "question": "In the tea plantations, the recruitment of labourers for tea gardens of Assam was carried on for years mostly by contractors under the provisions of the Transport of Native Labourers Act of 1863 of Bengal as amended in 1865, 1870 and 1873.",
+    "options": ["A. True", "B. False", "C. No contractors", "D. Voluntary"],
+    "answer": 0,
+    "difficulty": "hard",
+    "explanation": "Box 1.6."
+  },
+  {
+    "id": 68,
+    "chapter": "Chapter 2: Cultural Change",
+    "question": "The chapter invites discussion on how sanskritisation is gendered, affecting women differently from men, and even if it leads to positional change among men, the reverse may be true about women.",
+    "options": ["A. Activity 2.4 suggests this", "B. No", "C. Only men", "D. Equal"],
+    "answer": 0,
+    "difficulty": "hard",
+    "explanation": "Activity 2.4 in the book asks this."
+  },
+  {
+    "id": 69,
+    "chapter": "Chapter 1: Structural Change",
+    "question": "The model of the South Asian colonial city had the European town with spacious bungalows, planned streets, clubs, and open space reserved for Western recreational facilities, and when domestic water supply, electric connections were available, the European town residents utilised them fully, whereas their use was quite restricted to the native town.",
+    "options": ["A. True as per Box 1.5", "B. False", "C. No model", "D. Only native"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Box 1.5."
+  },
+  {
+    "id": 70,
+    "chapter": "Chapter 2: Cultural Change",
+    "question": "Western education often implied opening up to new opportunities for different groups of people in the North-East, as per the account in the book.",
+    "options": ["A. True", "B. False", "C. Only South", "D. No opportunities"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "The book mentions this in context of Westernisation."
+  },
+  {
+    "id": 71,
+    "chapter": "Chapter 1: Structural Change",
+    "question": "The book concludes that colonialism is not just a topic in history but something which lives on in complex ways in our lives even today, and industrialisation and urbanisation imply changes not just in production systems but also ‘a way of life’ (Wirth, 1938).",
+    "options": ["A. True", "B. False", "C. Only history", "D. No conclusion"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Conclusion in Ch1."
+  },
+  {
+    "id": 72,
+    "chapter": "Chapter 2: Cultural Change",
+    "question": "The chapter on cultural change notes that India's structural and cultural diversity is self-evident, and this diversity shapes the different ways modernisation or westernisation, sanskritisation or secularisation affects different groups.",
+    "options": ["A. True", "B. False", "C. No diversity", "D. Uniform"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "The book: 'India’s structural and cultural diversity is self-evident. This diversity shapes the different ways that modernisation or westernisation, sanskritisation or secularisation effects or does not effect different groups of people.'"
+  },
+  {
+    "id": 73,
+    "chapter": "Chapter 1: Structural Change",
+    "question": "The tea industry began in India in 1851. Most of the tea gardens were situated in Assam. In 1903, the industry employed 4,79,000 permanent and 93,000 temporary employees.",
+    "options": ["A. True", "B. False", "C. 1851 start", "D. No numbers"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Box 1.6."
+  },
+  {
+    "id": 74,
+    "chapter": "Chapter 2: Cultural Change",
+    "question": "Sanskritisation leads to the adoption of upper caste rites and rituals, which can lead to practices of secluding girls and women, adopting dowry practices instead of bride-price, and practising caste discrimination against other groups.",
+    "options": ["A. True", "B. False", "C. No such", "D. Only equality"],
+    "answer": 0,
+    "difficulty": "hard",
+    "explanation": "The book: 'Fourth, since sanskritisation results in the adoption of upper caste rites and rituals it leads to practices of secluding girls and women, adopting dowry practices instead of bride-price and practising caste discrimination against other groups, etc.'"
+  },
+  {
+    "id": 75,
+    "chapter": "Chapter 1: Structural Change",
+    "question": "The book has a table on decadal growth rate of urban population showing it was 41.42% in 1951 and 31.80% in 2011, with the per cent share of urban population increasing from 17.29% to 31.16%.",
+    "options": ["A. True", "B. False", "C. No table", "D. Decreasing only"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "The text on p.14-15."
+  },
+  {
+    "id": 76,
+    "chapter": "Chapter 2: Cultural Change",
+    "question": "The chapter asks to think of other instances of the mix and match of traditional and modern, both from everyday life and the wider level, and gives the example of A.K. Ramanujan's father wearing neat white turbans, a Sri Vaisnava caste mark, yet wearing Tootal ties, Kromentz buttons and English serge jackets over muslin dhotis.",
+    "options": ["A. True", "B. False", "C. No example", "D. Only modern"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Activity 2.3 and quote."
+  },
+  {
+    "id": 77,
+    "chapter": "Chapter 1: Structural Change",
+    "question": "The growth of metropolitan cities accounts for the third type of urban impact, where while a few villages are totally absorbed in the process of expansion, only the land of many others, excluding the inhabited area, is used for urban development.",
+    "options": ["A. True", "B. False", "C. All absorbed", "D. No impact"],
+    "answer": 0,
+    "difficulty": "hard",
+    "explanation": "Box 1.10."
+  },
+  {
+    "id": 78,
+    "chapter": "Chapter 2: Cultural Change",
+    "question": "Westernisation does not necessarily mean that people adopt modern values of democracy and equality, as one can find people who are western educated but holding very prejudiced views about particular ethnic or religious communities.",
+    "options": ["A. True", "B. False", "C. Always adopt", "D. No prejudice"],
+    "answer": 0,
+    "difficulty": "hard",
+    "explanation": "Activity 2.5."
+  },
+  {
+    "id": 79,
+    "chapter": "Chapter 1: Structural Change",
+    "question": "The book mentions that in 2011, 31.16% of India's population i.e., 377.10 million people, were living in 7,935 towns.",
+    "options": ["A. True", "B. False", "C. 1951", "D. No 2011 data"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "The text."
+  },
+  {
+    "id": 80,
+    "chapter": "Chapter 2: Cultural Change",
+    "question": "The chapter notes that the very idea of purity and pollution are valued or seen as worthwhile ideas to have in some groups, as in the Goldsmith-castes being higher but polluting because they wash excrement to dig out gold.",
+    "options": ["A. True", "B. False", "C. No such", "D. Only equality"],
+    "answer": 0,
+    "difficulty": "hard",
+    "explanation": "The book example on p.24."
+  },
+  {
+    "id": 81,
+    "chapter": "Chapter 1: Structural Change",
+    "question": "The book has an activity to find out more about towns like Bokaro, Bhilai, Rourkela, Durgapur, and whether such industrial towns exist in your region, or townships built around fertiliser plants and oil wells.",
+    "options": ["A. Activity 1.4", "B. No activity", "C. Only rural", "D. No towns"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Activity 1.4 in Ch1."
+  },
+  {
+    "id": 82,
+    "chapter": "Chapter 2: Cultural Change",
+    "question": "The chapter discusses that modernity spelled not merely new ideas but also rethinking and reinterpretation of tradition. Both culture and tradition are living entities. People learn them and in turn modify them.",
+    "options": ["A. True", "B. False", "C. Static", "D. No reinterpretation"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "The book: 'As this chapter will show, modernity spelled not merely new ideas but also rethinking and reinterpretation of tradition. Both culture and tradition are living entities. People learn them and in turn modify them.'"
+  },
+  {
+    "id": 83,
+    "chapter": "Chapter 1: Structural Change",
+    "question": "The book notes that the principal reasons for the decline in the death rate after 1921 were increased levels of control over famines and epidemic diseases (from previous book, but referenced in structural context).",
+    "options": ["A. True", "B. False", "C. No decline", "D. Only birth"],
+    "answer": 0,
+    "difficulty": "hard",
+    "explanation": "Cross reference in context."
+  },
+  {
+    "id": 84,
+    "chapter": "Chapter 2: Cultural Change",
+    "question": "The chapter has an activity to return to Activity 2.2 after finishing the chapter and see if there is any difference between common sense usage of the terms western, modern, secular, sanskritised and their sociological meaning.",
+    "options": ["A. Activity 2.2", "B. No", "C. Only one term", "D. No difference"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Activity 2.2."
+  },
+  {
+    "id": 85,
+    "chapter": "Chapter 1: Structural Change",
+    "question": "The book has a collage of photos on page 1 and page 11 showing crowded public gatherings and traffic, to illustrate the demographic or urban aspects.",
+    "options": ["A. True", "B. False", "C. No photos", "D. Only rural"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "From the document images."
+  },
+  {
+    "id": 86,
+    "chapter": "Chapter 2: Cultural Change",
+    "question": "The chapter discusses that the very worth of labour which 'lower castes' do is degraded and rendered 'shameful'. Identities based on the basis of work, crafts and artisanal abilities, knowledge forms of medicine, ecology, agriculture, animal husbandry, etc., are regarded useless in the industrial era.",
+    "options": ["A. True", "B. False", "C. Valued", "D. No degradation"],
+    "answer": 0,
+    "difficulty": "hard",
+    "explanation": "The book on p.24."
+  },
+  {
+    "id": 87,
+    "chapter": "Chapter 1: Structural Change",
+    "question": "The book mentions that the National Rural Employment Guarantee Act is the latest state initiative to tackle hunger and starvation in rural areas, linking to post-independence development.",
+    "options": ["A. True (cross-reference)", "B. False", "C. No act", "D. Colonial"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "From previous book referenced."
+  },
+  {
+    "id": 88,
+    "chapter": "Chapter 2: Cultural Change",
+    "question": "The chapter notes that with the growth of the anti-Brahminical movement and the development of regional self-consciousness in the twentieth century there was an attempt in several Indian languages to drop Sanskrit words and phrases.",
+    "options": ["A. True", "B. False", "C. No attempt", "D. Increase Sanskrit"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "The book: 'With the growth of the anti-Brahminical movement...there was an attempt in several Indian languages to drop Sanskrit words and phrases.'"
+  },
+  {
+    "id": 89,
+    "chapter": "Chapter 1: Structural Change",
+    "question": "The book has an image of a woman plucking tea leaves and a tea garden to illustrate the tea plantations section.",
+    "options": ["A. True", "B. False", "C. No image", "D. Only urban"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "From document images."
+  },
+  {
+    "id": 90,
+    "chapter": "Chapter 2: Cultural Change",
+    "question": "The chapter asks if sanskritisation is gendered, affecting women differently from men, and if even if it leads to positional change among men, the reverse may be true about women.",
+    "options": ["A. Activity suggests yes", "B. No", "C. Only men affected", "D. No gender"],
+    "answer": 0,
+    "difficulty": "hard",
+    "explanation": "Activity 2.4."
+  },
+  {
+    "id": 91,
+    "chapter": "Chapter 1: Structural Change",
+    "question": "The book has a chart on population of selected metropolitan cities (urban agglomerations) 1951-2011, showing urban population and no. of UA/towns increasing.",
+    "options": ["A. True", "B. False", "C. No chart", "D. Decreasing"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "From p.14 chart."
+  },
+  {
+    "id": 92,
+    "chapter": "Chapter 2: Cultural Change",
+    "question": "The chapter discusses that the Backward Classes Movement was to emphasise the role of secular factors in the upward mobility of caste groups and individuals.",
+    "options": ["A. True", "B. False", "C. No movement", "D. Only religious"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "The book: 'A crucial result of the Backward Classes Movement was to emphasise the role of secular factors in the upward mobility of caste groups and individuals.'"
+  },
+  {
+    "id": 93,
+    "chapter": "Chapter 1: Structural Change",
+    "question": "The book notes that the decennial growth rate of the urban population in India showed a declining trend during 1981–2001, reversed the trend and showed marginal increase in 2011.",
+    "options": ["A. True", "B. False", "C. No trend", "D. Always increasing"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "The text."
+  },
+  {
+    "id": 94,
+    "chapter": "Chapter 2: Cultural Change",
+    "question": "The chapter has a quote from A.K. Ramanujan about his father wearing neat white turbans and Sri Vaisnava caste mark yet wearing Tootal ties and English serge jackets over muslin dhotis, illustrating the mix of traditional and modern.",
+    "options": ["A. True", "B. False", "C. No quote", "D. Only traditional"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "From Activity 2.3."
+  },
+  {
+    "id": 95,
+    "chapter": "Chapter 1: Structural Change",
+    "question": "The book concludes that industrialisation and urbanisation are linked processes, and asks to identify any town or city and find out both the history of its growth and its contemporary status.",
+    "options": ["A. Question 2 and 3 in exercises", "B. No", "C. Only rural", "D. No city"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Exercises in Ch1."
+  },
+  {
+    "id": 96,
+    "chapter": "Chapter 2: Cultural Change",
+    "question": "The chapter notes that the mix and match of the traditional and modern is seen in the sari or jain sem or sarong worn in India today, with the standard way the modern middle class woman wears the sari being a novel combination with western petticoat and blouse.",
+    "options": ["A. True", "B. False", "C. No mix", "D. Only traditional"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "The book example."
+  },
+  {
+    "id": 97,
+    "chapter": "Chapter 1: Structural Change",
+    "question": "The book has an activity to describe the place where you live and ask what features make you think it is a town not a city, a village not a town, or a city not a village, and whether there is any factory, if agriculture is the main job, etc.",
+    "options": ["A. Question 4 in exercises", "B. No activity", "C. Only urban", "D. No description"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Exercises in Ch1."
+  },
+  {
+    "id": 98,
+    "chapter": "Chapter 2: Cultural Change",
+    "question": "The chapter discusses that in a highly unequal society such as India there were and still are obstacles to any easy taking over of the customs of the higher castes by the lower, and traditionally, the dominant caste punished those low castes which were audacious enough to attempt it.",
+    "options": ["A. True", "B. False", "C. No obstacles", "D. Easy"],
+    "answer": 0,
+    "difficulty": "hard",
+    "explanation": "The book: 'But in a highly unequal society such as India there were and still are obstacles to any easy taking over of the customs of the higher castes by the lower. Indeed, traditionally, the dominant caste punished those low castes...'"
+  },
+  {
+    "id": 99,
+    "chapter": "Chapter 1: Structural Change",
+    "question": "The book has a photo of a train passing through India's first creek bridge near Thane - 1854, to illustrate the impact of railways on forest policy.",
+    "options": ["A. True", "B. False", "C. No photo", "D. Only modern"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "From Box 1.1 image."
+  },
+  {
+    "id": 100,
+    "chapter": "Chapter 2: Cultural Change",
+    "question": "The chapter asks to find out about some social reformers like Viresalingam, Pandita Ramabai, Vidyasagar, Dayanand Saraswati, Jotiba Phule, Sri Narayan Guru, Sir Sayed Ahmed Khan, and what issues they fought for and how they conducted their campaign, and if there was opposition.",
+    "options": ["A. Activity 2.1", "B. No activity", "C. Only one", "D. No reformers"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Activity 2.1."
+  }
+]

@@ -1,0 +1,902 @@
+[
+  {
+    "id": 1,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "At a time when India had a total of 250 computers, Shiv Nadar led a young team which passionately believed in the growth of the indigenous IT industry. That vision in 1976 has resulted in creating a US $ 3.5 billion global enterprise called:",
+    "options": ["A. HCL", "B. Infosys", "C. Wipro", "D. TCS"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "The book states: 'HCL is today a leader in the IT industry...'"
+  },
+  {
+    "id": 2,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "HCL’s basic plan of developing an indigenous microcomputer bore fruit in 1978 at the same time as:",
+    "options": ["A. IBM", "B. Apple", "C. Microsoft", "D. Dell"],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "The book states: 'HCL’s basic plan of developing an indigenous microcomputer bore fruit in 1978 at the same time as Apple and three years before IBM.'"
+  },
+  {
+    "id": 3,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "Shiv Nadar, Chairman and CEO of HCL Enterprises, attributes the success of the group to its management team and their:",
+    "options": ["A. Risk-taking ability", "B. Entrepreneurial spirit", "C. Both A and B", "D. None"],
+    "answer": 2,
+    "difficulty": "medium",
+    "explanation": "The book states: 'Shiv Nadar’s risk-taking ability is legendary... attributes the success of the group to its management team and their entrepreneurial spirit.'"
+  },
+  {
+    "id": 4,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "Management is required in all kinds of organisations whether they are manufacturing computers or handlooms, trading in consumer goods or providing hairstyling services and even in:",
+    "options": ["A. Non-business organisations", "B. Only profit-making organisations", "C. Only manufacturing organisations", "D. Only service organisations"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "The book states: 'Management is required in all kinds of organisations... and even in non-business organisations.'"
+  },
+  {
+    "id": 5,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "Suhasini is the branch manager of Fabmart, an organisation that promotes the sales of Indian handloom and handicraft products while providing equitable employment to traditional artisans. Fabmart sources its products from over:",
+    "options": ["A. 7500 craft persons and artisans", "B. 5000", "C. 10000", "D. 2000"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "The book states: 'Fabmart sources its products from over 7500 craft persons and artisans across India.'"
+  },
+  {
+    "id": 6,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "Management consists of a series of interrelated functions that are performed by all managers. These functions are:",
+    "options": ["A. Planning, organising, staffing, directing and controlling", "B. Only planning and controlling", "C. Only organising and staffing", "D. None"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "The book states: 'Management consists of a series of interrelated functions... planning, organising, staffing, directing and controlling.'"
+  },
+  {
+    "id": 7,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "Management has been defined as a process of getting things done with the aim of achieving goals:",
+    "options": ["A. Effectively and efficiently", "B. Only effectively", "C. Only efficiently", "D. Neither"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "The book states: 'Management, has therefore, been defined as a process of getting things done with the aim of achieving goals effectively and efficiently.'"
+  },
+  {
+    "id": 8,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "Being effective or doing work effectively basically means:",
+    "options": ["A. Finishing the given task", "B. Doing it with minimum cost", "C. Both", "D. Neither"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "The book states: 'Being effective or doing work effectively basically means finishing the given task.'"
+  },
+  {
+    "id": 9,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "Efficiency means doing the task correctly and with minimum cost. It is a kind of:",
+    "options": ["A. Cost-benefit analysis", "B. Only cost reduction", "C. Only benefit maximisation", "D. None"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "The book states: 'Efficiency means doing the task correctly and with minimum cost. There is a kind of cost-benefit analysis involved...'"
+  },
+  {
+    "id": 10,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "Effectiveness and efficiency are two sides of the same coin. For management, it is important to be both effective and efficient. But management at times has to compromise with:",
+    "options": ["A. Efficiency", "B. Effectiveness", "C. Both", "D. Neither"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "The book states: 'Effectiveness and efficiency are two sides of the same coin. But these two aspects need to be balanced and management at times, has to compromise with efficiency.'"
+  },
+  {
+    "id": 11,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "Management is a goal-oriented process because an organisation has a set of basic goals which are the basic reason for its existence. These should be:",
+    "options": ["A. Simple and clearly stated", "B. Complex", "C. Vague", "D. Unstated"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "The book states: 'Management is a goal-oriented process: An organisation has a set of basic goals which are the basic reason for its existence. These should be simple and clearly stated.'"
+  },
+  {
+    "id": 12,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "Management is all pervasive because the activities involved in managing an enterprise are common to all organisations whether:",
+    "options": ["A. Economic, social or political", "B. Only economic", "C. Only social", "D. Only political"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "The book states: 'Management is all pervasive: The activities involved in managing an enterprise are common to all organisations whether economic, social or political.'"
+  },
+  {
+    "id": 13,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "Management is multidimensional because it has three main dimensions. These are management of work, management of people and management of:",
+    "options": ["A. Operations", "B. Finance", "C. Marketing", "D. None"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "The book states: 'Management is multidimensional: ... These are: (a) Management of work (b) Management of people (c) Management of operations.'"
+  },
+  {
+    "id": 14,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "Management of operations requires a production process which entails the flow of input material and the technology for transforming this input into the desired output for consumption. This is interlinked with both the management of work and the management of people.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "The book states: 'Management of operations: ... This is interlinked with both the management of work and the management of people.'"
+  },
+  {
+    "id": 15,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "Management is a continuous process because the process of management is a series of continuous, composite, but separate functions.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "The book states: 'Management is a continuous process: The process of management is a series of continuous, composite, but separate functions...'"
+  },
+  {
+    "id": 16,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "Management is a group activity because an organisation is a collection of diverse individuals with different needs. Every member of the group has a different purpose for joining the organisation but as members they work towards fulfilling the common organisational goal.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "The book states: 'Management is a group activity: An organisation is a collection of diverse individuals with different needs...'"
+  },
+  {
+    "id": 17,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "Management is a dynamic function and has to adapt itself to the changing environment. An organisation interacts with its external environment which consists of various social, economic and political factors.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "The book states: 'Management is a dynamic function: Management is a dynamic function and has to adapt itself to the changing environment.'"
+  },
+  {
+    "id": 18,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "Management is an intangible force that cannot be seen but its presence can be felt in the way the organisation functions. The effect of management is noticeable in an organisation where targets are met according to plans, employees are happy and satisfied, and there is orderliness instead of chaos.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "The book states: 'Management is an intangible force: Management is an intangible force that cannot be seen but its presence can be felt...'"
+  },
+  {
+    "id": 19,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "Objectives of management can be classified into organisational objectives, social objectives and:",
+    "options": ["A. Personal or individual objectives", "B. Financial objectives", "C. Marketing objectives", "D. None"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "The book states: 'Objectives can be classified into organisational objectives, social objectives and personal or individual objectives.'"
+  },
+  {
+    "id": 20,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "The main objective of any organisation should be to utilise human and material resources to the maximum possible advantage, i.e., to fulfill the economic objectives of a business. These are:",
+    "options": ["A. Survival, profit and growth", "B. Only profit", "C. Only survival", "D. Only growth"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "The book states: 'The main objective of any organisation should be to utilise human and material resources to the maximum possible advantage, i.e., to fulfill the economic objectives of a business. These are survival, profit and growth.'"
+  },
+  {
+    "id": 21,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "Social objectives of management involve the creation of benefit for society. This includes using environmental friendly methods of production, giving employment opportunities to the disadvantaged sections of society and providing basic amenities like schools and crèches to employees.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "The book states: 'Social objectives: It involves the creation of benefit for society...'"
+  },
+  {
+    "id": 22,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "Personal objectives of management are to satisfy the diverse needs of employees which vary from financial needs such as competitive salaries and perks, social needs such as peer recognition and higher level needs such as personal growth and development.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "The book states: 'Personal objectives: ... These vary from financial needs such as competitive salaries and perks, social needs such as peer recognition and higher level needs such as personal growth and development.'"
+  },
+  {
+    "id": 23,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "Importance of management includes helping in achieving group goals, increasing efficiency, creating a dynamic organisation, helping in achieving personal objectives and helping in the development of society.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "The book states: 'Importance of management... (i) Management helps in achieving group goals... (v) Management helps in the development of society.'"
+  },
+  {
+    "id": 24,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "Management is as old as civilisation. Although modern organisations are of recent origin, organised activity has existed since the time of the ancient civilisations.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "The book states: 'Management is as old as civilisation...'"
+  },
+  {
+    "id": 25,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "Management as an art satisfies the following criteria: existence of theoretical knowledge, personalised application, and based on practice and creativity.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "The book states: 'Management can be said to be an art since it satisfies the following criteria: (i) A successful manager practices the art of management...'"
+  },
+  {
+    "id": 26,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "Management as a science has the following features: systematised body of knowledge, principles based on experimentation, universal validity.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "The book states: 'Management as a science... (i) Management has a systematised body of knowledge...'"
+  },
+  {
+    "id": 27,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "Management as a profession has well-defined body of knowledge, restricted entry, professional association, ethical code of conduct and service motive. However, it does not meet the exact criteria because there is no restriction on anyone being designated as manager.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "hard",
+    "explanation": "The book states: 'Management does not meet the exact criteria of a profession. However, it does have some of the features... (ii) There is no restriction on anyone being designated or appointed as manager...'"
+  },
+  {
+    "id": 28,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "Levels of management are top management, middle management and:",
+    "options": ["A. Supervisory or operational management", "B. Lower management", "C. Executive management", "D. None"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "The book states: 'Generally speaking there are three levels... (iii) Supervisory or Operational Management...'"
+  },
+  {
+    "id": 29,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "Top management consists of the senior-most executives of the organisation. Their basic task is to integrate diverse elements and coordinate the activities of different departments according to the overall objectives of the organisation.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "The book states: 'Top Management: ... Their basic task is to integrate diverse elements and coordinate the activities of different departments...'"
+  },
+  {
+    "id": 30,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "Middle management is the link between top and lower level managers. Their main task is to carry out the plans formulated by the top managers.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "The book states: 'Middle Management: ... Their main task is to carry out the plans formulated by the top managers.'"
+  },
+  {
+    "id": 31,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "Functions of management are planning, organising, staffing, directing and:",
+    "options": ["A. Controlling", "B. Coordinating", "C. Leading", "D. Motivating"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "The book states: 'Functions of management... planning, organising, directing and controlling...'"
+  },
+  {
+    "id": 32,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "Planning is the function of determining in advance what is to be done and who is to do it.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "The book states: 'Planning is the function of determining in advance what is to be done and who is to do it.'"
+  },
+  {
+    "id": 33,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "Organising is the management function of assigning duties, grouping tasks, establishing authority and allocating resources required to carry out a specific plan.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "The book states: 'Organising is the management function of assigning duties...'"
+  },
+  {
+    "id": 34,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "Staffing simply stated, is finding the right people for the right job.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "The book states: 'Staffing simply stated, is finding the right people for the right job.'"
+  },
+  {
+    "id": 35,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "Directing involves leading, influencing and motivating employees to perform the tasks assigned to them.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "The book states: 'Directing involves leading, influencing and motivating employees...'"
+  },
+  {
+    "id": 36,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "Controlling is the management function of monitoring organisational performance towards the attainment of organisational goals.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "The book states: 'Controlling is the management function of monitoring organisational performance...'"
+  },
+  {
+    "id": 37,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "Coordination is the force that binds all the other functions of management. It is the essence of management.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "The book states: 'Coordination — The Essence of Management... Coordination is the force that binds all the other functions of management. It is the essence of management.'"
+  },
+  {
+    "id": 38,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "Coordination integrates group efforts and ensures unity of action.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "The book states: '(i) Coordination integrates group efforts... (ii) Coordination ensures unity of action...'"
+  },
+  {
+    "id": 39,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "Coordination is a continuous process, all pervasive function and the responsibility of all managers.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "The book states: '(iii) Coordination is a continuous process... (iv) Coordination is an all pervasive function... (v) Coordination is the responsibility of all managers...'"
+  },
+  {
+    "id": 40,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "Importance of coordination includes growth in size and functional differentiation.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "hard",
+    "explanation": "The book states: 'Importance of coordination... (i) Growth in size... (ii) Functional differentiation...'"
+  },
+  {
+    "id": 41,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "The Dabbawallas of Mumbai is the story of a SIX SIGMA business enterprise. The success of the business lies in the complex yet well coordinated exercise that is carried out on the streets of Mumbai day after day.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "The book states the Dabbawallas example under importance of coordination."
+  },
+  {
+    "id": 42,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "Jack Welch’s mastery of the four E’s of leadership – Energy, Energise, Edge, and Execution – was always in evidence.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "The book quotes Jack Welch’s management mantra."
+  },
+  {
+    "id": 43,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "The ITC’s E-Choupal initiative is a fine example of a business organisation fulfilling corporate social responsibility.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "The book gives the ITC example for social objectives."
+  },
+  {
+    "id": 44,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "Management helps in the development of society by providing good quality products and services, creates employment opportunities, adopts new technology for the greater good of the people.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "The book states: '(v) Management helps in the development of society...'"
+  },
+  {
+    "id": 45,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "Management as a profession has restricted entry because anyone can be called a manager irrespective of the educational qualifications possessed.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "hard",
+    "explanation": "The book states: 'There is no restriction on anyone being designated or appointed as manager...'"
+  },
+  {
+    "id": 46,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "The process of coordinating the activities of an organisation begins at the planning stage itself.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "The book states: 'The process of coordinating the activities of an organisation begins at the planning stage itself.'"
+  },
+  {
+    "id": 47,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "Coordination without cooperation may lead to dissatisfaction among employees.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "The book states: 'Coordination without cooperation may lead to dissatisfaction among employees.'"
+  },
+  {
+    "id": 48,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "The definitions of coordination by E.F.L. Brech, McFarland and Theo Haimann all emphasise synchronising efforts for common purpose.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "hard",
+    "explanation": "The book provides these definitions."
+  },
+  {
+    "id": 49,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "Management is a dynamic subject with its own special characteristics. However, one question that needs to be addressed pertaining to the nature of management is whether it is a science or an art or both?",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "The book states: 'However, one question that needs to be addressed pertaining to the nature of management is whether it is a science or an art or both?'"
+  },
+  {
+    "id": 50,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "Suhasini is the manager of Fabmart. So is Nusli Wadia of Bombay Dyeing, Bill Gates of Microsoft, Shiv Nadar of HCL Enterprises, Indra Nooyi of PepsiCo and the Principal of your school.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "The book gives this example."
+  },
+  {
+    "id": 51,
+    "chapter": "Chapter 2: Principles of Management",
+    "question": "Principles of management are the guidelines to action which help in achieving organisational goals.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Based on standard book content in Chapter 2."
+  },
+  {
+    "id": 52,
+    "chapter": "Chapter 2: Principles of Management",
+    "question": "Henri Fayol gave 14 principles of management.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Standard content."
+  },
+  {
+    "id": 53,
+    "chapter": "Chapter 2: Principles of Management",
+    "question": "F.W. Taylor is known as the father of scientific management.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Standard content."
+  },
+  {
+    "id": 54,
+    "chapter": "Chapter 2: Principles of Management",
+    "question": "Principles of management are not as rigid as principles of science.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Standard content."
+  },
+  {
+    "id": 55,
+    "chapter": "Chapter 2: Principles of Management",
+    "question": "Taylor's principle of 'Science, not rule of thumb' means management should be based on scientific study.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Standard content."
+  },
+  {
+    "id": 56,
+    "chapter": "Chapter 3: Business Environment",
+    "question": "Business environment includes all forces that affect the performance of the business.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Standard content."
+  },
+  {
+    "id": 57,
+    "chapter": "Chapter 3: Business Environment",
+    "question": "The business environment is dynamic because it is constantly changing.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Standard content."
+  },
+  {
+    "id": 58,
+    "chapter": "Chapter 3: Business Environment",
+    "question": "Economic environment includes interest rates, inflation, income levels.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Standard content."
+  },
+  {
+    "id": 59,
+    "chapter": "Chapter 4: Planning",
+    "question": "Planning is the first function of management.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Standard content."
+  },
+  {
+    "id": 60,
+    "chapter": "Chapter 4: Planning",
+    "question": "Planning involves setting objectives and developing courses of action.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Standard content."
+  },
+  {
+    "id": 61,
+    "chapter": "Chapter 4: Planning",
+    "question": "Planning reduces risk of uncertainty.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Standard content."
+  },
+  {
+    "id": 62,
+    "chapter": "Chapter 5: Organising",
+    "question": "Organising is the process of identifying and grouping the work to be performed.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Standard content."
+  },
+  {
+    "id": 63,
+    "chapter": "Chapter 5: Organising",
+    "question": "Organising establishes authority and reporting relationships.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Standard content."
+  },
+  {
+    "id": 64,
+    "chapter": "Chapter 6: Staffing",
+    "question": "Staffing is the process of finding the right people for the right job.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Standard content."
+  },
+  {
+    "id": 65,
+    "chapter": "Chapter 6: Staffing",
+    "question": "Staffing includes recruitment, selection, training and development.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Standard content."
+  },
+  {
+    "id": 66,
+    "chapter": "Chapter 7: Directing",
+    "question": "Directing is the process of instructing, guiding and motivating employees.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Standard content."
+  },
+  {
+    "id": 67,
+    "chapter": "Chapter 7: Directing",
+    "question": "Directing includes supervision, motivation, leadership and communication.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Standard content."
+  },
+  {
+    "id": 68,
+    "chapter": "Chapter 8: Controlling",
+    "question": "Controlling is the process of ensuring that actual performance conforms to planned performance.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Standard content."
+  },
+  {
+    "id": 69,
+    "chapter": "Chapter 8: Controlling",
+    "question": "Controlling involves setting standards, measuring performance and taking corrective action.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Standard content."
+  },
+  {
+    "id": 70,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "HCL has a strong sense of social responsibility. It has set up educational institutions in the fields of management, engineering and computer education, in which one-third of the students are girls.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Direct from Chapter 1 text."
+  },
+  {
+    "id": 71,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "According to Shiv Nadar, the future belongs to the global enterprise which is able to transform itself according to the challenges of global economy.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Direct from Chapter 1 text."
+  },
+  {
+    "id": 72,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "The above case is an example of a successful organisation which is amongst the top companies in India. It has risen to the top because of its quality of management.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Direct from Chapter 1 introduction."
+  },
+  {
+    "id": 73,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "Suhasini has to plan a special festive collection for Diwali and Christmas. This means organising more funds and recruiting more artisans.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Direct from Chapter 1 text."
+  },
+  {
+    "id": 74,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "A typical day in Suhasini’s life consists of a series of interrelated and continuous functions.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Direct from Chapter 1 text."
+  },
+  {
+    "id": 75,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "Management is essential for all organisations big or small, profit or non-profit, services or manufacturing.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Direct from Chapter 1 text."
+  },
+  {
+    "id": 76,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "The time spent by managers in different functions however is different. Managers at the top level spend more time in planning and organising than managers at lower levels of the organisation.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Direct from Chapter 1 text."
+  },
+  {
+    "id": 77,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "Process in the definition means the primary functions or activities that management performs to get things done. These functions are planning, organising, staffing, directing and controlling.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Direct from Chapter 1 text."
+  },
+  {
+    "id": 78,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "Effectiveness in management is concerned with doing the right task, completing activities and achieving goals.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Direct from Chapter 1 text."
+  },
+  {
+    "id": 79,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "Efficiency is increased when for the same benefit or outputs, fewer resources are used and less costs are incurred.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Direct from Chapter 1 text."
+  },
+  {
+    "id": 80,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "In the example of the company’s target production of 5000 units, the manager was effective but not so efficient since more inputs were used.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Direct from Chapter 1 effectiveness vs efficiency example."
+  },
+  {
+    "id": 81,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "Management is a goal-oriented process: An organisation has a set of basic goals which are the basic reason for its existence.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Direct from characteristics."
+  },
+  {
+    "id": 82,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "Management is all pervasive: The activities involved in managing an enterprise are common to all organisations.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Direct from characteristics."
+  },
+  {
+    "id": 83,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "Management of work: All organisations exist for the performance of some work.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Direct from multidimensional."
+  },
+  {
+    "id": 84,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "Management of people: Human resources or people are an organisation’s greatest asset.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Direct from multidimensional."
+  },
+  {
+    "id": 85,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "Management is a continuous process: The process of management is a series of continuous, composite, but separate functions.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Direct from characteristics."
+  },
+  {
+    "id": 86,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "Management is a group activity: An organisation is a collection of diverse individuals with different needs.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Direct from characteristics."
+  },
+  {
+    "id": 87,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "Management is a dynamic function: Management is a dynamic function and has to adapt itself to the changing environment.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Direct from characteristics."
+  },
+  {
+    "id": 88,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "Management is an intangible force: Management is an intangible force that cannot be seen but its presence can be felt.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Direct from characteristics."
+  },
+  {
+    "id": 89,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "Organisational objectives include survival, profit and growth.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Direct from objectives."
+  },
+  {
+    "id": 90,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "Social objectives involve the creation of benefit for society.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Direct from objectives."
+  },
+  {
+    "id": 91,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "Personal objectives satisfy the diverse needs of employees.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Direct from objectives."
+  },
+  {
+    "id": 92,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "Management helps in achieving group goals by giving a common direction to the individual effort.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Direct from importance."
+  },
+  {
+    "id": 93,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "Management increases efficiency by reducing costs and increasing productivity.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Direct from importance."
+  },
+  {
+    "id": 94,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "Management creates a dynamic organisation by helping people adapt to changes.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Direct from importance."
+  },
+  {
+    "id": 95,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "Management helps in achieving personal objectives by motivating and leading the team.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Direct from importance."
+  },
+  {
+    "id": 96,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "Management helps in the development of society by providing good quality products and creating employment opportunities.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Direct from importance."
+  },
+  {
+    "id": 97,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "Art is the skillful and personal application of existing knowledge to achieve desired results.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Direct from management as an art."
+  },
+  {
+    "id": 98,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "Science is a systematised body of knowledge that explains general truths or the operation of general laws.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Direct from management as a science."
+  },
+  {
+    "id": 99,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "Management is both an art and a science.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Direct from the book."
+  },
+  {
+    "id": 100,
+    "chapter": "Chapter 1: Nature and Significance of Management",
+    "question": "A profession has well-defined body of knowledge, restricted entry, professional association, ethical code of conduct and service motive.",
+    "options": ["A. True", "B. False"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Direct from management as a profession."
+  }
+]
