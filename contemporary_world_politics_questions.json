@@ -1,0 +1,1602 @@
+[
+{
+"id": 1,
+"chapter": "Cold War Era",
+"difficulty": "easy",
+"question": "Cold War was between:",
+"options": ["USA & USSR", "India & China", "UK & France", "None"],
+"answer": 0
+},
+{
+"id": 2,
+"chapter": "End of Bipolarity",
+"difficulty": "easy",
+"question": "USSR collapsed in:",
+"options": ["1989", "1991", "2000", "1975"],
+"answer": 1
+},
+{
+"id": 3,
+"chapter": "US Hegemony",
+"difficulty": "easy",
+"question": "Hegemony means:",
+"options": ["Weak power", "Dominance", "Equality", "None"],
+"answer": 1
+},
+{
+"id": 4,
+"chapter": "Alternative Centres",
+"difficulty": "easy",
+"question": "EU stands for:",
+"options": ["European Union", "Economic Union", "Eastern Union", "None"],
+"answer": 0
+},
+{
+"id": 5,
+"chapter": "South Asia",
+"difficulty": "easy",
+"question": "India and Pakistan conflict over:",
+"options": ["Kashmir", "Trade", "Water", "None"],
+"answer": 0
+},
+{
+"id": 6,
+"chapter": "International Organizations",
+"difficulty": "easy",
+"question": "UN was formed in:",
+"options": ["1945", "1950", "1960", "None"],
+"answer": 0
+},
+{
+"id": 7,
+"chapter": "Security",
+"difficulty": "easy",
+"question": "Traditional security focuses on:",
+"options": ["Military", "Environment", "Health", "None"],
+"answer": 0
+},
+{
+"id": 8,
+"chapter": "Environment",
+"difficulty": "easy",
+"question": "Global warming is due to:",
+"options": ["Greenhouse gases", "Water", "Soil", "None"],
+"answer": 0
+},
+{
+"id": 9,
+"chapter": "Globalisation",
+"difficulty": "easy",
+"question": "Globalisation means:",
+"options": ["Isolation", "Integration", "Separation", "None"],
+"answer": 1
+},
+{
+"id": 10,
+"chapter": "Cold War Era",
+"difficulty": "easy",
+"question": "Cold War avoided:",
+"options": ["Nuclear war", "Trade", "Peace", "None"],
+"answer": 0
+},
+{
+"id": 11,
+"chapter": "End of Bipolarity",
+"difficulty": "medium",
+"question": "Collapse of USSR created:",
+"options": ["Unipolar world", "Bipolar world", "Multipolar", "None"],
+"answer": 0
+},
+{
+"id": 12,
+"chapter": "US Hegemony",
+"difficulty": "medium",
+"question": "USA dominance is called:",
+"options": ["Hegemony", "Alliance", "Neutrality", "None"],
+"answer": 0
+},
+{
+"id": 13,
+"chapter": "Alternative Centres",
+"difficulty": "medium",
+"question": "ASEAN is in:",
+"options": ["Europe", "Asia", "Africa", "None"],
+"answer": 1
+},
+{
+"id": 14,
+"chapter": "South Asia",
+"difficulty": "medium",
+"question": "SAARC formed in:",
+"options": ["1985", "1991", "2000", "None"],
+"answer": 0
+},
+{
+"id": 15,
+"chapter": "International Organizations",
+"difficulty": "medium",
+"question": "UN Security Council has:",
+"options": ["5 permanent members", "10 members", "15 members", "None"],
+"answer": 0
+},
+{
+"id": 16,
+"chapter": "Security",
+"difficulty": "medium",
+"question": "Non-traditional security includes:",
+"options": ["Terrorism", "Climate change", "Health", "All"],
+"answer": 3
+},
+{
+"id": 17,
+"chapter": "Environment",
+"difficulty": "medium",
+"question": "Kyoto Protocol deals with:",
+"options": ["Climate change", "War", "Trade", "None"],
+"answer": 0
+},
+{
+"id": 18,
+"chapter": "Globalisation",
+"difficulty": "medium",
+"question": "WTO deals with:",
+"options": ["Trade", "War", "Health", "None"],
+"answer": 0
+},
+{
+"id": 19,
+"chapter": "Cold War Era",
+"difficulty": "medium",
+"question": "NATO is:",
+"options": ["Military alliance", "Trade group", "UN body", "None"],
+"answer": 0
+},
+{
+"id": 20,
+"chapter": "End of Bipolarity",
+"difficulty": "medium",
+"question": "Russia emerged after:",
+"options": ["USSR collapse", "Cold War", "WW2", "None"],
+"answer": 0
+},
+{
+"id": 21,
+"chapter": "US Hegemony",
+"difficulty": "hard",
+"question": "Soft power includes:",
+"options": ["Culture", "Ideas", "Policies", "All"],
+"answer": 3
+},
+{
+"id": 22,
+"chapter": "Alternative Centres",
+"difficulty": "hard",
+"question": "EU integration includes:",
+"options": ["Economic", "Political", "Monetary", "All"],
+"answer": 3
+},
+{
+"id": 23,
+"chapter": "South Asia",
+"difficulty": "hard",
+"question": "South Asia faces:",
+"options": ["Conflict", "Poverty", "Instability", "All"],
+"answer": 3
+},
+{
+"id": 24,
+"chapter": "International Organizations",
+"difficulty": "hard",
+"question": "UN reforms aim to:",
+"options": ["Increase efficiency", "Representation", "Power balance", "All"],
+"answer": 3
+},
+{
+"id": 25,
+"chapter": "Security",
+"difficulty": "hard",
+"question": "Human security includes:",
+"options": ["Food", "Health", "Freedom", "All"],
+"answer": 3
+},
+{
+"id": 26,
+"chapter": "Environment",
+"difficulty": "hard",
+"question": "Sustainable development means:",
+"options": ["Future protection", "Growth", "Balance", "All"],
+"answer": 3
+},
+{
+"id": 27,
+"chapter": "Globalisation",
+"difficulty": "hard",
+"question": "Globalisation affects:",
+"options": ["Economy", "Culture", "Politics", "All"],
+"answer": 3
+},
+{
+"id": 28,
+"chapter": "Cold War Era",
+"difficulty": "easy",
+"question": "NAM avoided:",
+"options": ["Alliances", "Trade", "Peace", "None"],
+"answer": 0
+},
+{
+"id": 29,
+"chapter": "End of Bipolarity",
+"difficulty": "easy",
+"question": "Gorbachev introduced:",
+"options": ["Reforms", "War", "Trade", "None"],
+"answer": 0
+},
+{
+"id": 30,
+"chapter": "US Hegemony",
+"difficulty": "easy",
+"question": "USA is strongest in:",
+"options": ["Military", "Economy", "Technology", "All"],
+"answer": 3
+},
+{
+"id": 31,
+"chapter": "Alternative Centres",
+"difficulty": "medium",
+"question": "China is rising as:",
+"options": ["Power center", "Weak state", "Neutral", "None"],
+"answer": 0
+},
+{
+"id": 32,
+"chapter": "South Asia",
+"difficulty": "medium",
+"question": "Democracy exists in:",
+"options": ["India", "Pakistan", "Both", "None"],
+"answer": 0
+},
+{
+"id": 33,
+"chapter": "International Organizations",
+"difficulty": "medium",
+"question": "WHO deals with:",
+"options": ["Health", "Trade", "War", "None"],
+"answer": 0
+},
+{
+"id": 34,
+"chapter": "Security",
+"difficulty": "medium",
+"question": "Terrorism is:",
+"options": ["Security threat", "Trade issue", "Health issue", "None"],
+"answer": 0
+},
+{
+"id": 35,
+"chapter": "Environment",
+"difficulty": "medium",
+"question": "Deforestation causes:",
+"options": ["Climate change", "Rain", "Peace", "None"],
+"answer": 0
+},
+{
+"id": 36,
+"chapter": "Globalisation",
+"difficulty": "medium",
+"question": "MNC means:",
+"options": ["Multinational company", "National company", "Local firm", "None"],
+"answer": 0
+},
+{
+"id": 37,
+"chapter": "Cold War Era",
+"difficulty": "hard",
+"question": "Cold War system was:",
+"options": ["Bipolar", "Unipolar", "Multipolar", "None"],
+"answer": 0
+},
+{
+"id": 38,
+"chapter": "End of Bipolarity",
+"difficulty": "hard",
+"question": "Shock therapy means:",
+"options": ["Rapid reforms", "War", "Trade", "None"],
+"answer": 0
+},
+{
+"id": 39,
+"chapter": "US Hegemony",
+"difficulty": "hard",
+"question": "USA uses:",
+"options": ["Hard power", "Soft power", "Both", "None"],
+"answer": 2
+},
+{
+"id": 40,
+"chapter": "Alternative Centres",
+"difficulty": "hard",
+"question": "Japan is strong in:",
+"options": ["Economy", "Military", "Agriculture", "None"],
+"answer": 0
+},
+{
+"id": 41,
+"chapter": "South Asia",
+"difficulty": "easy",
+"question": "SAARC promotes:",
+"options": ["Cooperation", "War", "Isolation", "None"],
+"answer": 0
+},
+{
+"id": 42,
+"chapter": "International Organizations",
+"difficulty": "easy",
+"question": "UN promotes:",
+"options": ["Peace", "War", "Conflict", "None"],
+"answer": 0
+},
+{
+"id": 43,
+"chapter": "Security",
+"difficulty": "easy",
+"question": "Security means:",
+"options": ["Protection", "War", "Trade", "None"],
+"answer": 0
+},
+{
+"id": 44,
+"chapter": "Environment",
+"difficulty": "easy",
+"question": "Pollution harms:",
+"options": ["Health", "Nature", "All", "None"],
+"answer": 2
+},
+{
+"id": 45,
+"chapter": "Globalisation",
+"difficulty": "easy",
+"question": "Internet promotes:",
+"options": ["Globalisation", "Isolation", "War", "None"],
+"answer": 0
+},
+{
+"id": 46,
+"chapter": "Cold War Era",
+"difficulty": "medium",
+"question": "Proxy wars avoided:",
+"options": ["Direct war", "Trade", "Peace", "None"],
+"answer": 0
+},
+{
+"id": 47,
+"chapter": "End of Bipolarity",
+"difficulty": "medium",
+"question": "USSR disintegration led to:",
+"options": ["New states", "War", "Peace only", "None"],
+"answer": 0
+},
+{
+"id": 48,
+"chapter": "US Hegemony",
+"difficulty": "medium",
+"question": "USA dominance seen in:",
+"options": ["Economy", "Military", "Culture", "All"],
+"answer": 3
+},
+{
+"id": 49,
+"chapter": "Alternative Centres",
+"difficulty": "medium",
+"question": "EU uses:",
+"options": ["Euro currency", "Dollar", "Rupee", "None"],
+"answer": 0
+},
+{
+"id": 50,
+"chapter": "Globalisation",
+"difficulty": "medium",
+"question": "Globalisation increases:",
+"options": ["Interconnection", "Isolation", "War", "None"],
+"answer": 0
+},
+{
+"id": 51,
+"chapter": "Cold War Era",
+"difficulty": "easy",
+"question": "Cold War rivalry was mainly between:",
+"options": ["Two superpowers", "Three nations", "Many small states", "None"],
+"answer": 0
+},
+{
+"id": 52,
+"chapter": "End of Bipolarity",
+"difficulty": "easy",
+"question": "USSR was a:",
+"options": ["Union of republics", "Single nation", "Empire", "None"],
+"answer": 0
+},
+{
+"id": 53,
+"chapter": "US Hegemony",
+"difficulty": "easy",
+"question": "USA is dominant in:",
+"options": ["Technology", "Military", "Economy", "All"],
+"answer": 3
+},
+{
+"id": 54,
+"chapter": "Alternative Centres",
+"difficulty": "easy",
+"question": "China’s rise shows:",
+"options": ["Multipolarity", "Bipolarity", "Unipolarity", "None"],
+"answer": 0
+},
+{
+"id": 55,
+"chapter": "South Asia",
+"difficulty": "easy",
+"question": "India is largest country in:",
+"options": ["Europe", "South Asia", "Africa", "None"],
+"answer": 1
+},
+{
+"id": 56,
+"chapter": "International Organizations",
+"difficulty": "easy",
+"question": "UN headquarters is in:",
+"options": ["New York", "London", "Paris", "None"],
+"answer": 0
+},
+{
+"id": 57,
+"chapter": "Security",
+"difficulty": "easy",
+"question": "Security threats include:",
+"options": ["War", "Terrorism", "Disease", "All"],
+"answer": 3
+},
+{
+"id": 58,
+"chapter": "Environment",
+"difficulty": "easy",
+"question": "Ozone layer protects from:",
+"options": ["UV rays", "Rain", "Heat", "None"],
+"answer": 0
+},
+{
+"id": 59,
+"chapter": "Globalisation",
+"difficulty": "easy",
+"question": "Globalisation increases:",
+"options": ["Connectivity", "Isolation", "War", "None"],
+"answer": 0
+},
+{
+"id": 60,
+"chapter": "Cold War Era",
+"difficulty": "easy",
+"question": "Cold War created:",
+"options": ["Division", "Unity", "Peace", "None"],
+"answer": 0
+},
+{
+"id": 61,
+"chapter": "End of Bipolarity",
+"difficulty": "medium",
+"question": "Baltic states separated from:",
+"options": ["USSR", "USA", "China", "None"],
+"answer": 0
+},
+{
+"id": 62,
+"chapter": "US Hegemony",
+"difficulty": "medium",
+"question": "Hard power includes:",
+"options": ["Military force", "Culture", "Ideas", "None"],
+"answer": 0
+},
+{
+"id": 63,
+"chapter": "Alternative Centres",
+"difficulty": "medium",
+"question": "ASEAN promotes:",
+"options": ["Regional cooperation", "War", "Isolation", "None"],
+"answer": 0
+},
+{
+"id": 64,
+"chapter": "South Asia",
+"difficulty": "medium",
+"question": "South Asia includes:",
+"options": ["India", "Pakistan", "Bangladesh", "All"],
+"answer": 3
+},
+{
+"id": 65,
+"chapter": "International Organizations",
+"difficulty": "medium",
+"question": "UN General Assembly includes:",
+"options": ["All member states", "Only big nations", "Only 5 nations", "None"],
+"answer": 0
+},
+{
+"id": 66,
+"chapter": "Security",
+"difficulty": "medium",
+"question": "Human security focuses on:",
+"options": ["Individuals", "States", "Military", "None"],
+"answer": 0
+},
+{
+"id": 67,
+"chapter": "Environment",
+"difficulty": "medium",
+"question": "Acid rain is caused by:",
+"options": ["Pollution", "Rainwater", "Sunlight", "None"],
+"answer": 0
+},
+{
+"id": 68,
+"chapter": "Globalisation",
+"difficulty": "medium",
+"question": "IMF deals with:",
+"options": ["Finance", "War", "Environment", "None"],
+"answer": 0
+},
+{
+"id": 69,
+"chapter": "Cold War Era",
+"difficulty": "medium",
+"question": "Cold War alliances increased:",
+"options": ["Tension", "Peace", "Trade", "None"],
+"answer": 0
+},
+{
+"id": 70,
+"chapter": "End of Bipolarity",
+"difficulty": "medium",
+"question": "Commonwealth of Independent States formed after:",
+"options": ["USSR collapse", "WW2", "Cold War", "None"],
+"answer": 0
+},
+{
+"id": 71,
+"chapter": "US Hegemony",
+"difficulty": "hard",
+"question": "USA cultural influence is example of:",
+"options": ["Soft power", "Hard power", "Military power", "None"],
+"answer": 0
+},
+{
+"id": 72,
+"chapter": "Alternative Centres",
+"difficulty": "hard",
+"question": "EU parliament represents:",
+"options": ["People", "Governments", "Military", "None"],
+"answer": 0
+},
+{
+"id": 73,
+"chapter": "South Asia",
+"difficulty": "hard",
+"question": "South Asia conflicts due to:",
+"options": ["Borders", "Religion", "Politics", "All"],
+"answer": 3
+},
+{
+"id": 74,
+"chapter": "International Organizations",
+"difficulty": "hard",
+"question": "UN peacekeeping aims:",
+"options": ["Maintain peace", "Start war", "Trade", "None"],
+"answer": 0
+},
+{
+"id": 75,
+"chapter": "Security",
+"difficulty": "hard",
+"question": "Non-traditional security threats are:",
+"options": ["Global", "Local", "Both", "None"],
+"answer": 0
+},
+{
+"id": 76,
+"chapter": "Environment",
+"difficulty": "hard",
+"question": "Climate change affects:",
+"options": ["Weather", "Ecosystem", "Humans", "All"],
+"answer": 3
+},
+{
+"id": 77,
+"chapter": "Globalisation",
+"difficulty": "hard",
+"question": "Globalisation critics argue:",
+"options": ["Inequality", "Cultural loss", "Exploitation", "All"],
+"answer": 3
+},
+{
+"id": 78,
+"chapter": "Cold War Era",
+"difficulty": "easy",
+"question": "Cold War rivalry avoided:",
+"options": ["Direct war", "Trade", "Peace", "None"],
+"answer": 0
+},
+{
+"id": 79,
+"chapter": "End of Bipolarity",
+"difficulty": "easy",
+"question": "Russia replaced:",
+"options": ["USSR", "USA", "China", "None"],
+"answer": 0
+},
+{
+"id": 80,
+"chapter": "US Hegemony",
+"difficulty": "easy",
+"question": "USA global role increased after:",
+"options": ["Cold War end", "WW1", "WW2", "None"],
+"answer": 0
+},
+{
+"id": 81,
+"chapter": "Alternative Centres",
+"difficulty": "medium",
+"question": "BRICS includes:",
+"options": ["Brazil", "India", "China", "All"],
+"answer": 3
+},
+{
+"id": 82,
+"chapter": "South Asia",
+"difficulty": "medium",
+"question": "India follows:",
+"options": ["Democracy", "Monarchy", "Dictatorship", "None"],
+"answer": 0
+},
+{
+"id": 83,
+"chapter": "International Organizations",
+"difficulty": "medium",
+"question": "World Bank provides:",
+"options": ["Loans", "Weapons", "Trade", "None"],
+"answer": 0
+},
+{
+"id": 84,
+"chapter": "Security",
+"difficulty": "medium",
+"question": "Arms control aims:",
+"options": ["Reduce weapons", "Increase weapons", "Trade", "None"],
+"answer": 0
+},
+{
+"id": 85,
+"chapter": "Environment",
+"difficulty": "medium",
+"question": "Deforestation leads to:",
+"options": ["Climate change", "Rainfall", "Peace", "None"],
+"answer": 0
+},
+{
+"id": 86,
+"chapter": "Globalisation",
+"difficulty": "medium",
+"question": "Cultural globalisation spreads:",
+"options": ["Ideas", "Food", "Media", "All"],
+"answer": 3
+},
+{
+"id": 87,
+"chapter": "Cold War Era",
+"difficulty": "hard",
+"question": "Cold War system maintained by:",
+"options": ["Deterrence", "Trade", "Peace", "None"],
+"answer": 0
+},
+{
+"id": 88,
+"chapter": "End of Bipolarity",
+"difficulty": "hard",
+"question": "Shock therapy caused:",
+"options": ["Economic crisis", "Growth", "Peace", "None"],
+"answer": 0
+},
+{
+"id": 89,
+"chapter": "US Hegemony",
+"difficulty": "hard",
+"question": "USA dominance challenged by:",
+"options": ["China", "EU", "Russia", "All"],
+"answer": 3
+},
+{
+"id": 90,
+"chapter": "Alternative Centres",
+"difficulty": "hard",
+"question": "Multipolar world means:",
+"options": ["Many power centres", "One power", "Two powers", "None"],
+"answer": 0
+},
+{
+"id": 91,
+"chapter": "South Asia",
+"difficulty": "easy",
+"question": "Pakistan is in:",
+"options": ["South Asia", "Europe", "Africa", "None"],
+"answer": 0
+},
+{
+"id": 92,
+"chapter": "International Organizations",
+"difficulty": "easy",
+"question": "UN symbolises:",
+"options": ["Peace", "War", "Trade", "None"],
+"answer": 0
+},
+{
+"id": 93,
+"chapter": "Security",
+"difficulty": "easy",
+"question": "Security includes:",
+"options": ["Military", "Economic", "Human", "All"],
+"answer": 3
+},
+{
+"id": 94,
+"chapter": "Environment",
+"difficulty": "easy",
+"question": "Pollution causes:",
+"options": ["Disease", "Damage", "Climate change", "All"],
+"answer": 3
+},
+{
+"id": 95,
+"chapter": "Globalisation",
+"difficulty": "easy",
+"question": "Global trade increased due to:",
+"options": ["Globalisation", "War", "Isolation", "None"],
+"answer": 0
+},
+{
+"id": 96,
+"chapter": "Cold War Era",
+"difficulty": "medium",
+"question": "Cold War ended with:",
+"options": ["USSR collapse", "War", "Trade", "None"],
+"answer": 0
+},
+{
+"id": 97,
+"chapter": "End of Bipolarity",
+"difficulty": "medium",
+"question": "New world order after Cold War:",
+"options": ["Unipolar", "Bipolar", "Multipolar", "None"],
+"answer": 0
+},
+{
+"id": 98,
+"chapter": "US Hegemony",
+"difficulty": "medium",
+"question": "USA leadership seen in:",
+"options": ["Economy", "Military", "Culture", "All"],
+"answer": 3
+},
+{
+"id": 99,
+"chapter": "Alternative Centres",
+"difficulty": "medium",
+"question": "EU integration success in:",
+"options": ["Economy", "Currency", "Trade", "All"],
+"answer": 3
+},
+{
+"id": 100,
+"chapter": "Globalisation",
+"difficulty": "medium",
+"question": "Globalisation creates:",
+"options": ["Interdependence", "Isolation", "War", "None"],
+"answer": 0
+},
+{
+"id": 101,
+"chapter": "Cold War Era",
+"difficulty": "easy",
+"question": "Cold War was mainly ideological conflict between:",
+"options": ["Capitalism & Communism", "Democracy & Monarchy", "Trade blocs", "None"],
+"answer": 0
+},
+{
+"id": 102,
+"chapter": "End of Bipolarity",
+"difficulty": "easy",
+"question": "Gorbachev introduced:",
+"options": ["Glasnost", "Perestroika", "Both", "None"],
+"answer": 2
+},
+{
+"id": 103,
+"chapter": "US Hegemony",
+"difficulty": "easy",
+"question": "USA dominance increased after:",
+"options": ["Cold War", "WW1", "WW2", "None"],
+"answer": 0
+},
+{
+"id": 104,
+"chapter": "Alternative Centres",
+"difficulty": "easy",
+"question": "EU uses common currency:",
+"options": ["Dollar", "Euro", "Rupee", "None"],
+"answer": 1
+},
+{
+"id": 105,
+"chapter": "South Asia",
+"difficulty": "easy",
+"question": "Bangladesh was formed in:",
+"options": ["1971", "1947", "1965", "None"],
+"answer": 0
+},
+{
+"id": 106,
+"chapter": "International Organizations",
+"difficulty": "easy",
+"question": "UN Secretary General is:",
+"options": ["Head of UN", "President", "Judge", "None"],
+"answer": 0
+},
+{
+"id": 107,
+"chapter": "Security",
+"difficulty": "easy",
+"question": "Terrorism affects:",
+"options": ["Security", "Economy", "Society", "All"],
+"answer": 3
+},
+{
+"id": 108,
+"chapter": "Environment",
+"difficulty": "easy",
+"question": "Greenhouse effect causes:",
+"options": ["Global warming", "Rain", "Snow", "None"],
+"answer": 0
+},
+{
+"id": 109,
+"chapter": "Globalisation",
+"difficulty": "easy",
+"question": "Globalisation reduces:",
+"options": ["Distance barriers", "Trade", "Communication", "None"],
+"answer": 0
+},
+{
+"id": 110,
+"chapter": "Cold War Era",
+"difficulty": "easy",
+"question": "Cold War involved:",
+"options": ["Tension", "Competition", "Rivalry", "All"],
+"answer": 3
+},
+{
+"id": 111,
+"chapter": "End of Bipolarity",
+"difficulty": "medium",
+"question": "Perestroika means:",
+"options": ["Reconstruction", "War", "Peace", "None"],
+"answer": 0
+},
+{
+"id": 112,
+"chapter": "US Hegemony",
+"difficulty": "medium",
+"question": "Soft power includes:",
+"options": ["Culture", "Diplomacy", "Values", "All"],
+"answer": 3
+},
+{
+"id": 113,
+"chapter": "Alternative Centres",
+"difficulty": "medium",
+"question": "China’s growth is mainly:",
+"options": ["Economic", "Military", "Cultural", "None"],
+"answer": 0
+},
+{
+"id": 114,
+"chapter": "South Asia",
+"difficulty": "medium",
+"question": "Nepal shifted to:",
+"options": ["Republic", "Monarchy", "Empire", "None"],
+"answer": 0
+},
+{
+"id": 115,
+"chapter": "International Organizations",
+"difficulty": "medium",
+"question": "UN veto power held by:",
+"options": ["5 nations", "10 nations", "All nations", "None"],
+"answer": 0
+},
+{
+"id": 116,
+"chapter": "Security",
+"difficulty": "medium",
+"question": "Traditional security focuses on:",
+"options": ["State", "Individual", "Environment", "None"],
+"answer": 0
+},
+{
+"id": 117,
+"chapter": "Environment",
+"difficulty": "medium",
+"question": "Sustainable development means:",
+"options": ["Future protection", "Growth", "Balance", "All"],
+"answer": 3
+},
+{
+"id": 118,
+"chapter": "Globalisation",
+"difficulty": "medium",
+"question": "MNCs operate in:",
+"options": ["Many countries", "One country", "Local areas", "None"],
+"answer": 0
+},
+{
+"id": 119,
+"chapter": "Cold War Era",
+"difficulty": "medium",
+"question": "Proxy wars occurred in:",
+"options": ["Korea", "Vietnam", "Afghanistan", "All"],
+"answer": 3
+},
+{
+"id": 120,
+"chapter": "End of Bipolarity",
+"difficulty": "medium",
+"question": "Shock therapy aimed at:",
+"options": ["Rapid transition", "War", "Peace", "None"],
+"answer": 0
+},
+{
+"id": 121,
+"chapter": "US Hegemony",
+"difficulty": "hard",
+"question": "USA hegemony includes:",
+"options": ["Military", "Economic", "Cultural", "All"],
+"answer": 3
+},
+{
+"id": 122,
+"chapter": "Alternative Centres",
+"difficulty": "hard",
+"question": "EU success lies in:",
+"options": ["Integration", "Trade", "Currency", "All"],
+"answer": 3
+},
+{
+"id": 123,
+"chapter": "South Asia",
+"difficulty": "hard",
+"question": "South Asia faces challenges of:",
+"options": ["Conflict", "Poverty", "Instability", "All"],
+"answer": 3
+},
+{
+"id": 124,
+"chapter": "International Organizations",
+"difficulty": "hard",
+"question": "UN reform debate focuses on:",
+"options": ["Representation", "Power", "Efficiency", "All"],
+"answer": 3
+},
+{
+"id": 125,
+"chapter": "Security",
+"difficulty": "hard",
+"question": "Human security includes:",
+"options": ["Food", "Health", "Freedom", "All"],
+"answer": 3
+},
+{
+"id": 126,
+"chapter": "Environment",
+"difficulty": "hard",
+"question": "Climate change caused by:",
+"options": ["Human activity", "Nature", "Both", "None"],
+"answer": 2
+},
+{
+"id": 127,
+"chapter": "Globalisation",
+"difficulty": "hard",
+"question": "Globalisation leads to:",
+"options": ["Integration", "Inequality", "Cultural change", "All"],
+"answer": 3
+},
+{
+"id": 128,
+"chapter": "Cold War Era",
+"difficulty": "easy",
+"question": "Cold War avoided:",
+"options": ["Direct war", "Trade", "Peace", "None"],
+"answer": 0
+},
+{
+"id": 129,
+"chapter": "End of Bipolarity",
+"difficulty": "easy",
+"question": "Russia became successor of:",
+"options": ["USSR", "USA", "China", "None"],
+"answer": 0
+},
+{
+"id": 130,
+"chapter": "US Hegemony",
+"difficulty": "easy",
+"question": "USA influence is global due to:",
+"options": ["Power", "Economy", "Technology", "All"],
+"answer": 3
+},
+{
+"id": 131,
+"chapter": "Alternative Centres",
+"difficulty": "medium",
+"question": "BRICS promotes:",
+"options": ["Economic cooperation", "War", "Isolation", "None"],
+"answer": 0
+},
+{
+"id": 132,
+"chapter": "South Asia",
+"difficulty": "medium",
+"question": "Sri Lanka faced:",
+"options": ["Civil war", "Peace", "Trade war", "None"],
+"answer": 0
+},
+{
+"id": 133,
+"chapter": "International Organizations",
+"difficulty": "medium",
+"question": "WHO focuses on:",
+"options": ["Health", "Trade", "War", "None"],
+"answer": 0
+},
+{
+"id": 134,
+"chapter": "Security",
+"difficulty": "medium",
+"question": "Arms control reduces:",
+"options": ["Weapons", "Trade", "Peace", "None"],
+"answer": 0
+},
+{
+"id": 135,
+"chapter": "Environment",
+"difficulty": "medium",
+"question": "Ozone depletion increases:",
+"options": ["UV rays", "Rain", "Cold", "None"],
+"answer": 0
+},
+{
+"id": 136,
+"chapter": "Globalisation",
+"difficulty": "medium",
+"question": "Global culture spreads via:",
+"options": ["Media", "Internet", "Travel", "All"],
+"answer": 3
+},
+{
+"id": 137,
+"chapter": "Cold War Era",
+"difficulty": "hard",
+"question": "Cold War system based on:",
+"options": ["Deterrence", "War", "Peace", "None"],
+"answer": 0
+},
+{
+"id": 138,
+"chapter": "End of Bipolarity",
+"difficulty": "hard",
+"question": "Soviet collapse caused:",
+"options": ["Economic crisis", "Political change", "New states", "All"],
+"answer": 3
+},
+{
+"id": 139,
+"chapter": "US Hegemony",
+"difficulty": "hard",
+"question": "USA dominance challenged by:",
+"options": ["China", "EU", "Russia", "All"],
+"answer": 3
+},
+{
+"id": 140,
+"chapter": "Alternative Centres",
+"difficulty": "hard",
+"question": "Multipolarity increases:",
+"options": ["Balance", "Competition", "Cooperation", "All"],
+"answer": 3
+},
+{
+"id": 141,
+"chapter": "South Asia",
+"difficulty": "easy",
+"question": "Afghanistan is in:",
+"options": ["South Asia", "Europe", "Africa", "None"],
+"answer": 0
+},
+{
+"id": 142,
+"chapter": "International Organizations",
+"difficulty": "easy",
+"question": "UN works for:",
+"options": ["Peace", "War", "Conflict", "None"],
+"answer": 0
+},
+{
+"id": 143,
+"chapter": "Security",
+"difficulty": "easy",
+"question": "Security ensures:",
+"options": ["Safety", "War", "Trade", "None"],
+"answer": 0
+},
+{
+"id": 144,
+"chapter": "Environment",
+"difficulty": "easy",
+"question": "Climate change affects:",
+"options": ["Weather", "Nature", "Humans", "All"],
+"answer": 3
+},
+{
+"id": 145,
+"chapter": "Globalisation",
+"difficulty": "easy",
+"question": "Globalisation increases:",
+"options": ["Trade", "Connectivity", "Interaction", "All"],
+"answer": 3
+},
+{
+"id": 146,
+"chapter": "Cold War Era",
+"difficulty": "medium",
+"question": "Cold War rivalry shaped:",
+"options": ["World politics", "Economy", "Military", "All"],
+"answer": 3
+},
+{
+"id": 147,
+"chapter": "End of Bipolarity",
+"difficulty": "medium",
+"question": "Post-Cold War world became:",
+"options": ["Unipolar", "Bipolar", "Multipolar", "None"],
+"answer": 0
+},
+{
+"id": 148,
+"chapter": "US Hegemony",
+"difficulty": "medium",
+"question": "USA leadership seen in:",
+"options": ["Military", "Economy", "Culture", "All"],
+"answer": 3
+},
+{
+"id": 149,
+"chapter": "Alternative Centres",
+"difficulty": "medium",
+"question": "EU success includes:",
+"options": ["Integration", "Trade", "Currency", "All"],
+"answer": 3
+},
+{
+"id": 150,
+"chapter": "Globalisation",
+"difficulty": "medium",
+"question": "Globalisation creates:",
+"options": ["Interdependence", "Isolation", "War", "None"],
+"answer": 0
+},
+{
+"id": 151,
+"chapter": "Mixed",
+"difficulty": "hard",
+"question": "World politics today is:",
+"options": ["Multipolar", "Unipolar", "Bipolar", "None"],
+"answer": 0
+},
+{
+"id": 152,
+"chapter": "Mixed",
+"difficulty": "hard",
+"question": "Global issues include:",
+"options": ["Climate", "Security", "Trade", "All"],
+"answer": 3
+},
+{
+"id": 153,
+"chapter": "Mixed",
+"difficulty": "hard",
+"question": "International cooperation needed for:",
+"options": ["Peace", "Environment", "Security", "All"],
+"answer": 3
+},
+{
+"id": 154,
+"chapter": "Mixed",
+"difficulty": "hard",
+"question": "Global governance includes:",
+"options": ["UN", "WTO", "IMF", "All"],
+"answer": 3
+},
+{
+"id": 155,
+"chapter": "Mixed",
+"difficulty": "hard",
+"question": "Modern security threats are:",
+"options": ["Complex", "Global", "Interconnected", "All"],
+"answer": 3
+},
+{
+"id": 156,
+"chapter": "Mixed",
+"difficulty": "easy",
+"question": "Globalisation connects:",
+"options": ["Countries", "Markets", "People", "All"],
+"answer": 3
+},
+{
+"id": 157,
+"chapter": "Mixed",
+"difficulty": "easy",
+"question": "Peace requires:",
+"options": ["Cooperation", "War", "Isolation", "None"],
+"answer": 0
+},
+{
+"id": 158,
+"chapter": "Mixed",
+"difficulty": "easy",
+"question": "Development improves:",
+"options": ["Life", "Economy", "Health", "All"],
+"answer": 3
+},
+{
+"id": 159,
+"chapter": "Mixed",
+"difficulty": "easy",
+"question": "Security ensures:",
+"options": ["Stability", "Growth", "Peace", "All"],
+"answer": 3
+},
+{
+"id": 160,
+"chapter": "Mixed",
+"difficulty": "easy",
+"question": "Environment protection is:",
+"options": ["Global need", "Local need", "Optional", "None"],
+"answer": 0
+},
+{
+"id": 161,
+"chapter": "Mixed",
+"difficulty": "medium",
+"question": "Global issues need:",
+"options": ["Cooperation", "Isolation", "War", "None"],
+"answer": 0
+},
+{
+"id": 162,
+"chapter": "Mixed",
+"difficulty": "medium",
+"question": "Globalisation impacts:",
+"options": ["Economy", "Culture", "Politics", "All"],
+"answer": 3
+},
+{
+"id": 163,
+"chapter": "Mixed",
+"difficulty": "medium",
+"question": "Security threats are:",
+"options": ["Military", "Non-military", "Both", "None"],
+"answer": 2
+},
+{
+"id": 164,
+"chapter": "Mixed",
+"difficulty": "medium",
+"question": "International institutions promote:",
+"options": ["Peace", "Cooperation", "Development", "All"],
+"answer": 3
+},
+{
+"id": 165,
+"chapter": "Mixed",
+"difficulty": "medium",
+"question": "Modern world is:",
+"options": ["Interdependent", "Isolated", "Divided", "None"],
+"answer": 0
+},
+{
+"id": 166,
+"chapter": "Mixed",
+"difficulty": "hard",
+"question": "Globalisation critics argue:",
+"options": ["Inequality", "Exploitation", "Cultural loss", "All"],
+"answer": 3
+},
+{
+"id": 167,
+"chapter": "Mixed",
+"difficulty": "hard",
+"question": "Security includes:",
+"options": ["Human", "Economic", "Environmental", "All"],
+"answer": 3
+},
+{
+"id": 168,
+"chapter": "Mixed",
+"difficulty": "hard",
+"question": "Development requires:",
+"options": ["Sustainability", "Equity", "Growth", "All"],
+"answer": 3
+},
+{
+"id": 169,
+"chapter": "Mixed",
+"difficulty": "hard",
+"question": "Global governance challenges:",
+"options": ["Inequality", "Conflict", "Environment", "All"],
+"answer": 3
+},
+{
+"id": 170,
+"chapter": "Mixed",
+"difficulty": "hard",
+"question": "Modern world order is:",
+"options": ["Dynamic", "Complex", "Changing", "All"],
+"answer": 3
+},
+{
+"id": 171,
+"chapter": "Mixed",
+"difficulty": "easy",
+"question": "World peace needs:",
+"options": ["Dialogue", "War", "Conflict", "None"],
+"answer": 0
+},
+{
+"id": 172,
+"chapter": "Mixed",
+"difficulty": "easy",
+"question": "Security threats include:",
+"options": ["Terrorism", "War", "Disease", "All"],
+"answer": 3
+},
+{
+"id": 173,
+"chapter": "Mixed",
+"difficulty": "easy",
+"question": "Globalisation improves:",
+"options": ["Trade", "Communication", "Travel", "All"],
+"answer": 3
+},
+{
+"id": 174,
+"chapter": "Mixed",
+"difficulty": "easy",
+"question": "Development includes:",
+"options": ["Health", "Education", "Income", "All"],
+"answer": 3
+},
+{
+"id": 175,
+"chapter": "Mixed",
+"difficulty": "easy",
+"question": "Environment needs:",
+"options": ["Protection", "Exploitation", "Neglect", "None"],
+"answer": 0
+},
+{
+"id": 176,
+"chapter": "Mixed",
+"difficulty": "medium",
+"question": "Global issues are:",
+"options": ["Shared", "Local", "Isolated", "None"],
+"answer": 0
+},
+{
+"id": 177,
+"chapter": "Mixed",
+"difficulty": "medium",
+"question": "Security policies aim at:",
+"options": ["Protection", "Peace", "Stability", "All"],
+"answer": 3
+},
+{
+"id": 178,
+"chapter": "Mixed",
+"difficulty": "medium",
+"question": "Globalisation creates:",
+"options": ["Interdependence", "Competition", "Opportunities", "All"],
+"answer": 3
+},
+{
+"id": 179,
+"chapter": "Mixed",
+"difficulty": "medium",
+"question": "International cooperation solves:",
+"options": ["Global problems", "Local problems", "None", "None"],
+"answer": 0
+},
+{
+"id": 180,
+"chapter": "Mixed",
+"difficulty": "medium",
+"question": "Modern world needs:",
+"options": ["Peace", "Cooperation", "Sustainability", "All"],
+"answer": 3
+},
+{
+"id": 181,
+"chapter": "Mixed",
+"difficulty": "hard",
+"question": "Global governance requires:",
+"options": ["Coordination", "Institutions", "Policies", "All"],
+"answer": 3
+},
+{
+"id": 182,
+"chapter": "Mixed",
+"difficulty": "hard",
+"question": "Security challenges are:",
+"options": ["Complex", "Global", "Interlinked", "All"],
+"answer": 3
+},
+{
+"id": 183,
+"chapter": "Mixed",
+"difficulty": "hard",
+"question": "Development challenges include:",
+"options": ["Poverty", "Inequality", "Environment", "All"],
+"answer": 3
+},
+{
+"id": 184,
+"chapter": "Mixed",
+"difficulty": "hard",
+"question": "Globalisation requires:",
+"options": ["Regulation", "Balance", "Policies", "All"],
+"answer": 3
+},
+{
+"id": 185,
+"chapter": "Mixed",
+"difficulty": "hard",
+"question": "Modern politics is:",
+"options": ["Interconnected", "Complex", "Dynamic", "All"],
+"answer": 3
+},
+{
+"id": 186,
+"chapter": "Mixed",
+"difficulty": "easy",
+"question": "Peace depends on:",
+"options": ["Cooperation", "Conflict", "War", "None"],
+"answer": 0
+},
+{
+"id": 187,
+"chapter": "Mixed",
+"difficulty": "easy",
+"question": "Security ensures:",
+"options": ["Safety", "Fear", "War", "None"],
+"answer": 0
+},
+{
+"id": 188,
+"chapter": "Mixed",
+"difficulty": "easy",
+"question": "Globalisation connects:",
+"options": ["World", "Local areas", "None", "None"],
+"answer": 0
+},
+{
+"id": 189,
+"chapter": "Mixed",
+"difficulty": "easy",
+"question": "Environment protection is:",
+"options": ["Necessary", "Optional", "None", "None"],
+"answer": 0
+},
+{
+"id": 190,
+"chapter": "Mixed",
+"difficulty": "easy",
+"question": "Development improves:",
+"options": ["Quality of life", "War", "Conflict", "None"],
+"answer": 0
+},
+{
+"id": 191,
+"chapter": "Mixed",
+"difficulty": "medium",
+"question": "Global cooperation helps:",
+"options": ["Solve problems", "Create war", "Increase conflict", "None"],
+"answer": 0
+},
+{
+"id": 192,
+"chapter": "Mixed",
+"difficulty": "medium",
+"question": "Security includes:",
+"options": ["Military", "Human", "Economic", "All"],
+"answer": 3
+},
+{
+"id": 193,
+"chapter": "Mixed",
+"difficulty": "medium",
+"question": "Globalisation leads to:",
+"options": ["Integration", "Isolation", "None", "None"],
+"answer": 0
+},
+{
+"id": 194,
+"chapter": "Mixed",
+"difficulty": "medium",
+"question": "Development needs:",
+"options": ["Growth", "Equity", "Sustainability", "All"],
+"answer": 3
+},
+{
+"id": 195,
+"chapter": "Mixed",
+"difficulty": "medium",
+"question": "Modern world requires:",
+"options": ["Peace", "Stability", "Cooperation", "All"],
+"answer": 3
+},
+{
+"id": 196,
+"chapter": "Mixed",
+"difficulty": "hard",
+"question": "Global governance challenges include:",
+"options": ["Conflict", "Inequality", "Climate change", "All"],
+"answer": 3
+},
+{
+"id": 197,
+"chapter": "Mixed",
+"difficulty": "hard",
+"question": "Security threats are:",
+"options": ["Traditional", "Non-traditional", "Both", "None"],
+"answer": 2
+},
+{
+"id": 198,
+"chapter": "Mixed",
+"difficulty": "hard",
+"question": "Development goals include:",
+"options": ["Growth", "Equity", "Sustainability", "All"],
+"answer": 3
+},
+{
+"id": 199,
+"chapter": "Mixed",
+"difficulty": "hard",
+"question": "Globalisation requires:",
+"options": ["Balance", "Regulation", "Cooperation", "All"],
+"answer": 3
+},
+{
+"id": 200,
+"chapter": "Mixed",
+"difficulty": "hard",
+"question": "Modern world is:",
+"options": ["Complex", "Interconnected", "Dynamic", "All"],
+"answer": 3
+}
+]

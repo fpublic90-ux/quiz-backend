@@ -188,7 +188,13 @@ function markAnswered(code, socketId) {
     const room = rooms[code];
     if (!room) return false;
     room.answeredPlayers.add(socketId);
-    return room.answeredPlayers.size >= room.players.length;
+    
+    // Count ONLY active human players and bots
+    // Bots don't have socket IDs (null in some room types), so we check if player.id starts with 'bot_' 
+    // or if they are marked with isBot (if available in room objects)
+    const activeCount = room.players.filter(p => p.isActive || p.id?.startsWith('bot_') || p.isBot).length;
+    
+    return room.answeredPlayers.size >= activeCount;
 }
 
 /**

@@ -23,8 +23,8 @@ class MatchmakingManager {
 
         this.tryMatch(io);
 
-        // Set fallback timeout with a unique reference if needed, though simple setTimeout is fine here
-        console.log(`⏱️ Matchmaking: Fallback timer started for ${playerName} (5s)`);
+        // Set fallback timeout with a unique reference if needed
+        console.log(`⏱️ Matchmaking: Fallback timer started for ${playerName} (${this.matchmakingTimeout / 1000}s)`);
         setTimeout(() => {
             this.handleFallback(io, uid);
         }, this.matchmakingTimeout);

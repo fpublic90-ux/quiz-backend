@@ -35,6 +35,8 @@ class NotificationManager {
                         data: {
                             ...data,
                             type: type,
+                            title: title, // Also pass title/body in data for logic handling
+                            body: message,
                             click_action: 'FLUTTER_NOTIFICATION_CLICK',
                         },
                         android: {

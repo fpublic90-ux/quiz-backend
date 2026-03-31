@@ -1,0 +1,1202 @@
+[
+{
+"id": 1,
+"chapter": "Nation Building",
+"difficulty": "easy",
+"question": "India became independent in:",
+"options": ["1947", "1950", "1945", "1930"],
+"answer": 0
+},
+{
+"id": 2,
+"chapter": "Nation Building",
+"difficulty": "easy",
+"question": "Partition divided India into:",
+"options": ["India & Pakistan", "India & China", "India & Nepal", "None"],
+"answer": 0
+},
+{
+"id": 3,
+"chapter": "Nation Building",
+"difficulty": "easy",
+"question": "Princely states were integrated by:",
+"options": ["Nehru", "Sardar Patel", "Gandhi", "Ambedkar"],
+"answer": 1
+},
+{
+"id": 4,
+"chapter": "One Party Dominance",
+"difficulty": "easy",
+"question": "Dominant party after independence:",
+"options": ["BJP", "Congress", "CPI", "None"],
+"answer": 1
+},
+{
+"id": 5,
+"chapter": "Planned Development",
+"difficulty": "easy",
+"question": "Planning Commission was set up in:",
+"options": ["1950", "1947", "1960", "None"],
+"answer": 0
+},
+{
+"id": 6,
+"chapter": "External Relations",
+"difficulty": "easy",
+"question": "India followed policy of:",
+"options": ["Alignment", "Non-alignment", "Isolation", "None"],
+"answer": 1
+},
+{
+"id": 7,
+"chapter": "Challenges to Democracy",
+"difficulty": "easy",
+"question": "Linguistic reorganization of states done in:",
+"options": ["1956", "1947", "1971", "None"],
+"answer": 0
+},
+{
+"id": 8,
+"chapter": "Crisis of Democratic Order",
+"difficulty": "easy",
+"question": "Emergency declared in:",
+"options": ["1975", "1962", "1980", "None"],
+"answer": 0
+},
+{
+"id": 9,
+"chapter": "Popular Movements",
+"difficulty": "easy",
+"question": "JP movement led by:",
+"options": ["Nehru", "Jayaprakash Narayan", "Indira Gandhi", "None"],
+"answer": 1
+},
+{
+"id": 10,
+"chapter": "Regional Aspirations",
+"difficulty": "easy",
+"question": "Punjab issue involved:",
+"options": ["Khalistan demand", "Language issue", "Trade", "None"],
+"answer": 0
+},
+{
+"id": 11,
+"chapter": "Nation Building",
+"difficulty": "medium",
+"question": "Rehabilitation of refugees was:",
+"options": ["Major challenge", "Minor issue", "None", "None"],
+"answer": 0
+},
+{
+"id": 12,
+"chapter": "One Party Dominance",
+"difficulty": "medium",
+"question": "Congress dominance due to:",
+"options": ["Leadership", "Freedom struggle legacy", "Organization", "All"],
+"answer": 3
+},
+{
+"id": 13,
+"chapter": "Planned Development",
+"difficulty": "medium",
+"question": "Mixed economy means:",
+"options": ["Public + Private", "Only private", "Only public", "None"],
+"answer": 0
+},
+{
+"id": 14,
+"chapter": "External Relations",
+"difficulty": "medium",
+"question": "NAM leaders included:",
+"options": ["Nehru", "Nasser", "Tito", "All"],
+"answer": 3
+},
+{
+"id": 15,
+"chapter": "Challenges to Democracy",
+"difficulty": "medium",
+"question": "States reorganization based on:",
+"options": ["Language", "Religion", "Economy", "None"],
+"answer": 0
+},
+{
+"id": 16,
+"chapter": "Crisis of Democratic Order",
+"difficulty": "medium",
+"question": "Emergency limited:",
+"options": ["Rights", "Freedom", "Democracy", "All"],
+"answer": 3
+},
+{
+"id": 17,
+"chapter": "Popular Movements",
+"difficulty": "medium",
+"question": "Chipko movement related to:",
+"options": ["Environment", "War", "Politics", "None"],
+"answer": 0
+},
+{
+"id": 18,
+"chapter": "Regional Aspirations",
+"difficulty": "medium",
+"question": "Regionalism means:",
+"options": ["Local identity", "Global identity", "None", "None"],
+"answer": 0
+},
+{
+"id": 19,
+"chapter": "Recent Developments",
+"difficulty": "medium",
+"question": "Coalition politics means:",
+"options": ["Many parties govern", "Single party rule", "None", "None"],
+"answer": 0
+},
+{
+"id": 20,
+"chapter": "Nation Building",
+"difficulty": "medium",
+"question": "Integration policy ensured:",
+"options": ["Unity", "Division", "Conflict", "None"],
+"answer": 0
+},
+{
+"id": 21,
+"chapter": "One Party Dominance",
+"difficulty": "hard",
+"question": "Dominance system allowed:",
+"options": ["Competition", "Stability", "Democracy", "All"],
+"answer": 3
+},
+{
+"id": 22,
+"chapter": "Planned Development",
+"difficulty": "hard",
+"question": "Five-year plans aimed at:",
+"options": ["Growth", "Development", "Equality", "All"],
+"answer": 3
+},
+{
+"id": 23,
+"chapter": "External Relations",
+"difficulty": "hard",
+"question": "Non-alignment ensured:",
+"options": ["Independence", "Neutrality", "Peace", "All"],
+"answer": 3
+},
+{
+"id": 24,
+"chapter": "Challenges to Democracy",
+"difficulty": "hard",
+"question": "Reorganization helped:",
+"options": ["Unity", "Stability", "Administration", "All"],
+"answer": 3
+},
+{
+"id": 25,
+"chapter": "Crisis of Democratic Order",
+"difficulty": "hard",
+"question": "Emergency showed:",
+"options": ["Power misuse", "Authoritarianism", "Weak democracy", "All"],
+"answer": 3
+},
+{
+"id": 26,
+"chapter": "Popular Movements",
+"difficulty": "hard",
+"question": "Movements ensured:",
+"options": ["Rights", "Awareness", "Participation", "All"],
+"answer": 3
+},
+{
+"id": 27,
+"chapter": "Regional Aspirations",
+"difficulty": "hard",
+"question": "Regional demands include:",
+"options": ["Autonomy", "Statehood", "Identity", "All"],
+"answer": 3
+},
+{
+"id": 28,
+"chapter": "Recent Developments",
+"difficulty": "hard",
+"question": "Coalition politics reflects:",
+"options": ["Diversity", "Fragmentation", "Democracy", "All"],
+"answer": 3
+},
+{
+"id": 29,
+"chapter": "Nation Building",
+"difficulty": "easy",
+"question": "India adopted constitution in:",
+"options": ["1950", "1947", "1960", "None"],
+"answer": 0
+},
+{
+"id": 30,
+"chapter": "One Party Dominance",
+"difficulty": "easy",
+"question": "Opposition parties were:",
+"options": ["Weak initially", "Strong", "None", "None"],
+"answer": 0
+},
+{
+"id": 31,
+"chapter": "Planned Development",
+"difficulty": "medium",
+"question": "Public sector role:",
+"options": ["Growth", "Development", "Employment", "All"],
+"answer": 3
+},
+{
+"id": 32,
+"chapter": "External Relations",
+"difficulty": "medium",
+"question": "India-China war in:",
+"options": ["1962", "1971", "1947", "None"],
+"answer": 0
+},
+{
+"id": 33,
+"chapter": "Challenges to Democracy",
+"difficulty": "medium",
+"question": "Punjab crisis related to:",
+"options": ["Identity", "Religion", "Politics", "All"],
+"answer": 3
+},
+{
+"id": 34,
+"chapter": "Crisis of Democratic Order",
+"difficulty": "medium",
+"question": "Emergency lifted in:",
+"options": ["1977", "1975", "1980", "None"],
+"answer": 0
+},
+{
+"id": 35,
+"chapter": "Popular Movements",
+"difficulty": "medium",
+"question": "Narmada Bachao movement is:",
+"options": ["Environmental", "Political", "War", "None"],
+"answer": 0
+},
+{
+"id": 36,
+"chapter": "Regional Aspirations",
+"difficulty": "medium",
+"question": "North-East issues include:",
+"options": ["Autonomy", "Identity", "Development", "All"],
+"answer": 3
+},
+{
+"id": 37,
+"chapter": "Recent Developments",
+"difficulty": "medium",
+"question": "Economic reforms started in:",
+"options": ["1991", "1980", "1971", "None"],
+"answer": 0
+},
+{
+"id": 38,
+"chapter": "Nation Building",
+"difficulty": "hard",
+"question": "Nation building required:",
+"options": ["Unity", "Integration", "Development", "All"],
+"answer": 3
+},
+{
+"id": 39,
+"chapter": "One Party Dominance",
+"difficulty": "hard",
+"question": "Congress system ensured:",
+"options": ["Stability", "Continuity", "Democracy", "All"],
+"answer": 3
+},
+{
+"id": 40,
+"chapter": "Planned Development",
+"difficulty": "hard",
+"question": "Planning ensured:",
+"options": ["Growth", "Equity", "Development", "All"],
+"answer": 3
+},
+{
+"id": 41,
+"chapter": "External Relations",
+"difficulty": "easy",
+"question": "India-Pak war in 1971 led to:",
+"options": ["Bangladesh creation", "Peace", "None", "None"],
+"answer": 0
+},
+{
+"id": 42,
+"chapter": "Security",
+"difficulty": "easy",
+"question": "India nuclear test in:",
+"options": ["1974", "1991", "1980", "None"],
+"answer": 0
+},
+{
+"id": 43,
+"chapter": "Recent Developments",
+"difficulty": "easy",
+"question": "Coalition era began in:",
+"options": ["1990s", "1970s", "1950s", "None"],
+"answer": 0
+},
+{
+"id": 44,
+"chapter": "Regional Aspirations",
+"difficulty": "easy",
+"question": "Statehood demand means:",
+"options": ["New state creation", "War", "Trade", "None"],
+"answer": 0
+},
+{
+"id": 45,
+"chapter": "Popular Movements",
+"difficulty": "easy",
+"question": "Movements increase:",
+"options": ["Awareness", "Participation", "Rights", "All"],
+"answer": 3
+},
+{
+"id": 46,
+"chapter": "Challenges to Democracy",
+"difficulty": "medium",
+"question": "Democracy challenges include:",
+"options": ["Diversity", "Conflict", "Inequality", "All"],
+"answer": 3
+},
+{
+"id": 47,
+"chapter": "Crisis of Democratic Order",
+"difficulty": "medium",
+"question": "Emergency suspended:",
+"options": ["Rights", "Elections", "Freedom", "All"],
+"answer": 3
+},
+{
+"id": 48,
+"chapter": "Recent Developments",
+"difficulty": "medium",
+"question": "Globalisation affected:",
+"options": ["Economy", "Politics", "Society", "All"],
+"answer": 3
+},
+{
+"id": 49,
+"chapter": "External Relations",
+"difficulty": "medium",
+"question": "India’s foreign policy based on:",
+"options": ["Peace", "Cooperation", "Non-alignment", "All"],
+"answer": 3
+},
+{
+"id": 50,
+"chapter": "Nation Building",
+"difficulty": "medium",
+"question": "India unity ensured through:",
+"options": ["Integration", "Democracy", "Constitution", "All"],
+"answer": 3
+},
+{
+"id": 51,
+"chapter": "Nation Building",
+"difficulty": "easy",
+"question": "Integration of princely states ensured:",
+"options": ["Unity", "Division", "Conflict", "None"],
+"answer": 0
+},
+{
+"id": 52,
+"chapter": "Nation Building",
+"difficulty": "medium",
+"question": "Partition caused:",
+"options": ["Migration", "Violence", "Refugee crisis", "All"],
+"answer": 3
+},
+{
+"id": 53,
+"chapter": "Nation Building",
+"difficulty": "hard",
+"question": "Nation building required:",
+"options": ["Unity", "Development", "Integration", "All"],
+"answer": 3
+},
+{
+"id": 54,
+"chapter": "One Party Dominance",
+"difficulty": "easy",
+"question": "Congress dominance lasted until:",
+"options": ["1967", "1977", "1989", "None"],
+"answer": 0
+},
+{
+"id": 55,
+"chapter": "One Party Dominance",
+"difficulty": "medium",
+"question": "Congress system included:",
+"options": ["Factions", "Opposition inside party", "Broad support", "All"],
+"answer": 3
+},
+{
+"id": 56,
+"chapter": "One Party Dominance",
+"difficulty": "hard",
+"question": "Dominant party system ensured:",
+"options": ["Stability", "Continuity", "Democracy", "All"],
+"answer": 3
+},
+{
+"id": 57,
+"chapter": "Planned Development",
+"difficulty": "easy",
+"question": "Five-year plans focused on:",
+"options": ["Growth", "Development", "Both", "None"],
+"answer": 2
+},
+{
+"id": 58,
+"chapter": "Planned Development",
+"difficulty": "medium",
+"question": "Public sector aimed at:",
+"options": ["Infrastructure", "Industry", "Employment", "All"],
+"answer": 3
+},
+{
+"id": 59,
+"chapter": "Planned Development",
+"difficulty": "hard",
+"question": "Planning model in India was:",
+"options": ["Mixed economy", "Capitalism", "Socialism", "None"],
+"answer": 0
+},
+{
+"id": 60,
+"chapter": "External Relations",
+"difficulty": "easy",
+"question": "India fought war with Pakistan in:",
+"options": ["1947", "1965", "1971", "All"],
+"answer": 3
+},
+{
+"id": 61,
+"chapter": "External Relations",
+"difficulty": "medium",
+"question": "India-China conflict occurred due to:",
+"options": ["Border dispute", "Trade", "Religion", "None"],
+"answer": 0
+},
+{
+"id": 62,
+"chapter": "External Relations",
+"difficulty": "hard",
+"question": "Non-alignment policy ensured:",
+"options": ["Strategic autonomy", "Peace", "Neutrality", "All"],
+"answer": 3
+},
+{
+"id": 63,
+"chapter": "Challenges to Democracy",
+"difficulty": "easy",
+"question": "States reorganized based on:",
+"options": ["Language", "Religion", "Economy", "None"],
+"answer": 0
+},
+{
+"id": 64,
+"chapter": "Challenges to Democracy",
+"difficulty": "medium",
+"question": "Linguistic states helped:",
+"options": ["Unity", "Administration", "Stability", "All"],
+"answer": 3
+},
+{
+"id": 65,
+"chapter": "Challenges to Democracy",
+"difficulty": "hard",
+"question": "Democratic challenges include:",
+"options": ["Diversity", "Inequality", "Conflict", "All"],
+"answer": 3
+},
+{
+"id": 66,
+"chapter": "Crisis of Democratic Order",
+"difficulty": "easy",
+"question": "Emergency declared by:",
+"options": ["Indira Gandhi", "Nehru", "Rajiv Gandhi", "None"],
+"answer": 0
+},
+{
+"id": 67,
+"chapter": "Crisis of Democratic Order",
+"difficulty": "medium",
+"question": "Emergency restricted:",
+"options": ["Freedom", "Rights", "Media", "All"],
+"answer": 3
+},
+{
+"id": 68,
+"chapter": "Crisis of Democratic Order",
+"difficulty": "hard",
+"question": "Emergency showed weakness of:",
+"options": ["Institutions", "Democracy", "Leadership", "All"],
+"answer": 3
+},
+{
+"id": 69,
+"chapter": "Popular Movements",
+"difficulty": "easy",
+"question": "Chipko movement focused on:",
+"options": ["Forest protection", "War", "Trade", "None"],
+"answer": 0
+},
+{
+"id": 70,
+"chapter": "Popular Movements",
+"difficulty": "medium",
+"question": "JP movement aimed at:",
+"options": ["Democracy restoration", "War", "Trade", "None"],
+"answer": 0
+},
+{
+"id": 71,
+"chapter": "Popular Movements",
+"difficulty": "hard",
+"question": "Movements strengthen:",
+"options": ["Democracy", "Participation", "Awareness", "All"],
+"answer": 3
+},
+{
+"id": 72,
+"chapter": "Regional Aspirations",
+"difficulty": "easy",
+"question": "Punjab crisis related to:",
+"options": ["Khalistan", "Trade", "Economy", "None"],
+"answer": 0
+},
+{
+"id": 73,
+"chapter": "Regional Aspirations",
+"difficulty": "medium",
+"question": "Regionalism reflects:",
+"options": ["Identity", "Autonomy", "Culture", "All"],
+"answer": 3
+},
+{
+"id": 74,
+"chapter": "Regional Aspirations",
+"difficulty": "hard",
+"question": "Regional demands include:",
+"options": ["Statehood", "Autonomy", "Recognition", "All"],
+"answer": 3
+},
+{
+"id": 75,
+"chapter": "Recent Developments",
+"difficulty": "easy",
+"question": "Coalition government includes:",
+"options": ["Many parties", "Single party", "None", "None"],
+"answer": 0
+},
+{
+"id": 76,
+"chapter": "Recent Developments",
+"difficulty": "medium",
+"question": "Economic reforms introduced:",
+"options": ["Liberalisation", "Privatisation", "Globalisation", "All"],
+"answer": 3
+},
+{
+"id": 77,
+"chapter": "Recent Developments",
+"difficulty": "hard",
+"question": "Coalition politics shows:",
+"options": ["Diversity", "Fragmentation", "Democracy", "All"],
+"answer": 3
+},
+{
+"id": 78,
+"chapter": "Nation Building",
+"difficulty": "easy",
+"question": "Refugee problem after partition was:",
+"options": ["Major challenge", "Minor issue", "None", "None"],
+"answer": 0
+},
+{
+"id": 79,
+"chapter": "One Party Dominance",
+"difficulty": "medium",
+"question": "Opposition role initially:",
+"options": ["Weak", "Strong", "None", "None"],
+"answer": 0
+},
+{
+"id": 80,
+"chapter": "Planned Development",
+"difficulty": "medium",
+"question": "Planning Commission replaced by:",
+"options": ["NITI Aayog", "Finance Commission", "UN", "None"],
+"answer": 0
+},
+{
+"id": 81,
+"chapter": "External Relations",
+"difficulty": "easy",
+"question": "India follows:",
+"options": ["Peaceful coexistence", "War policy", "Isolation", "None"],
+"answer": 0
+},
+{
+"id": 82,
+"chapter": "Challenges to Democracy",
+"difficulty": "easy",
+"question": "Democracy ensures:",
+"options": ["Rights", "Participation", "Equality", "All"],
+"answer": 3
+},
+{
+"id": 83,
+"chapter": "Crisis of Democratic Order",
+"difficulty": "medium",
+"question": "Emergency period:",
+"options": ["1975-77", "1962-65", "1980-85", "None"],
+"answer": 0
+},
+{
+"id": 84,
+"chapter": "Popular Movements",
+"difficulty": "medium",
+"question": "Environmental movements include:",
+"options": ["Chipko", "Narmada", "Both", "None"],
+"answer": 2
+},
+{
+"id": 85,
+"chapter": "Regional Aspirations",
+"difficulty": "medium",
+"question": "North-East issues include:",
+"options": ["Identity", "Autonomy", "Development", "All"],
+"answer": 3
+},
+{
+"id": 86,
+"chapter": "Recent Developments",
+"difficulty": "easy",
+"question": "LPG reforms started in:",
+"options": ["1991", "1980", "1971", "None"],
+"answer": 0
+},
+{
+"id": 87,
+"chapter": "Nation Building",
+"difficulty": "hard",
+"question": "Integration of states required:",
+"options": ["Leadership", "Policy", "Strategy", "All"],
+"answer": 3
+},
+{
+"id": 88,
+"chapter": "One Party Dominance",
+"difficulty": "hard",
+"question": "Congress system involved:",
+"options": ["Internal democracy", "Broad coalition", "Flexibility", "All"],
+"answer": 3
+},
+{
+"id": 89,
+"chapter": "Planned Development",
+"difficulty": "hard",
+"question": "Planning focused on:",
+"options": ["Growth", "Equity", "Development", "All"],
+"answer": 3
+},
+{
+"id": 90,
+"chapter": "External Relations",
+"difficulty": "hard",
+"question": "Foreign policy goals:",
+"options": ["Peace", "Security", "Development", "All"],
+"answer": 3
+},
+{
+"id": 91,
+"chapter": "Mixed",
+"difficulty": "easy",
+"question": "India is:",
+"options": ["Democracy", "Monarchy", "Dictatorship", "None"],
+"answer": 0
+},
+{
+"id": 92,
+"chapter": "Mixed",
+"difficulty": "easy",
+"question": "Elections ensure:",
+"options": ["Representation", "War", "Trade", "None"],
+"answer": 0
+},
+{
+"id": 93,
+"chapter": "Mixed",
+"difficulty": "easy",
+"question": "Development improves:",
+"options": ["Economy", "Life", "Society", "All"],
+"answer": 3
+},
+{
+"id": 94,
+"chapter": "Mixed",
+"difficulty": "easy",
+"question": "Movements create:",
+"options": ["Awareness", "Participation", "Rights", "All"],
+"answer": 3
+},
+{
+"id": 95,
+"chapter": "Mixed",
+"difficulty": "easy",
+"question": "Federalism means:",
+"options": ["Power sharing", "Central rule", "None", "None"],
+"answer": 0
+},
+{
+"id": 96,
+"chapter": "Mixed",
+"difficulty": "medium",
+"question": "Indian democracy is:",
+"options": ["Largest", "Oldest", "Newest", "None"],
+"answer": 0
+},
+{
+"id": 97,
+"chapter": "Mixed",
+"difficulty": "medium",
+"question": "Political participation includes:",
+"options": ["Voting", "Protests", "Movements", "All"],
+"answer": 3
+},
+{
+"id": 98,
+"chapter": "Mixed",
+"difficulty": "medium",
+"question": "Development policies aim at:",
+"options": ["Growth", "Equity", "Justice", "All"],
+"answer": 3
+},
+{
+"id": 99,
+"chapter": "Mixed",
+"difficulty": "medium",
+"question": "Security includes:",
+"options": ["Internal", "External", "Both", "None"],
+"answer": 2
+},
+{
+"id": 100,
+"chapter": "Mixed",
+"difficulty": "medium",
+"question": "India’s strength is:",
+"options": ["Unity in diversity", "Uniformity", "Isolation", "None"],
+"answer": 0
+},
+{
+"id": 101,
+"chapter": "Mixed",
+"difficulty": "hard",
+"question": "Democracy requires:",
+"options": ["Participation", "Rights", "Institutions", "All"],
+"answer": 3
+},
+{
+"id": 102,
+"chapter": "Mixed",
+"difficulty": "hard",
+"question": "Development challenges include:",
+"options": ["Poverty", "Inequality", "Unemployment", "All"],
+"answer": 3
+},
+{
+"id": 103,
+"chapter": "Mixed",
+"difficulty": "hard",
+"question": "Political system is:",
+"options": ["Dynamic", "Changing", "Complex", "All"],
+"answer": 3
+},
+{
+"id": 104,
+"chapter": "Mixed",
+"difficulty": "easy",
+"question": "India follows:",
+"options": ["Secularism", "Religion state", "None", "None"],
+"answer": 0
+},
+{
+"id": 105,
+"chapter": "Mixed",
+"difficulty": "easy",
+"question": "Rights protect:",
+"options": ["Citizens", "Government", "None", "None"],
+"answer": 0
+},
+{
+"id": 106,
+"chapter": "Mixed",
+"difficulty": "medium",
+"question": "Governance includes:",
+"options": ["Policy", "Administration", "Law", "All"],
+"answer": 3
+},
+{
+"id": 107,
+"chapter": "Mixed",
+"difficulty": "medium",
+"question": "Reforms improve:",
+"options": ["Economy", "Efficiency", "Growth", "All"],
+"answer": 3
+},
+{
+"id": 108,
+"chapter": "Mixed",
+"difficulty": "hard",
+"question": "Modern India faces:",
+"options": ["Development issues", "Security threats", "Political challenges", "All"],
+"answer": 3
+},
+{
+"id": 109,
+"chapter": "Mixed",
+"difficulty": "easy",
+"question": "Citizens participate through:",
+"options": ["Voting", "Movements", "Discussion", "All"],
+"answer": 3
+},
+{
+"id": 110,
+"chapter": "Mixed",
+"difficulty": "medium",
+"question": "India's democracy is:",
+"options": ["Vibrant", "Weak", "None", "None"],
+"answer": 0
+},
+{
+"id": 111,
+"chapter": "Mixed",
+"difficulty": "hard",
+"question": "Political stability depends on:",
+"options": ["Institutions", "Leadership", "Participation", "All"],
+"answer": 3
+},
+{
+"id": 112,
+"chapter": "Mixed",
+"difficulty": "easy",
+"question": "India’s unity based on:",
+"options": ["Diversity", "Uniformity", "None", "None"],
+"answer": 0
+},
+{
+"id": 113,
+"chapter": "Mixed",
+"difficulty": "medium",
+"question": "Economic reforms include:",
+"options": ["Liberalisation", "Privatisation", "Globalisation", "All"],
+"answer": 3
+},
+{
+"id": 114,
+"chapter": "Mixed",
+"difficulty": "hard",
+"question": "Governance challenges include:",
+"options": ["Corruption", "Inefficiency", "Inequality", "All"],
+"answer": 3
+},
+{
+"id": 115,
+"chapter": "Mixed",
+"difficulty": "easy",
+"question": "Democracy ensures:",
+"options": ["Freedom", "Rights", "Participation", "All"],
+"answer": 3
+},
+{
+"id": 116,
+"chapter": "Mixed",
+"difficulty": "medium",
+"question": "India is:",
+"options": ["Federal", "Unitary", "None", "None"],
+"answer": 0
+},
+{
+"id": 117,
+"chapter": "Mixed",
+"difficulty": "hard",
+"question": "Federalism promotes:",
+"options": ["Unity", "Diversity", "Decentralisation", "All"],
+"answer": 3
+},
+{
+"id": 118,
+"chapter": "Mixed",
+"difficulty": "easy",
+"question": "Government represents:",
+"options": ["People", "Elite", "None", "None"],
+"answer": 0
+},
+{
+"id": 119,
+"chapter": "Mixed",
+"difficulty": "medium",
+"question": "Policy making includes:",
+"options": ["Planning", "Execution", "Evaluation", "All"],
+"answer": 3
+},
+{
+"id": 120,
+"chapter": "Mixed",
+"difficulty": "hard",
+"question": "Modern governance requires:",
+"options": ["Transparency", "Accountability", "Efficiency", "All"],
+"answer": 3
+},
+{
+"id": 121,
+"chapter": "Mixed",
+"difficulty": "easy",
+"question": "Citizens have:",
+"options": ["Rights", "Duties", "Both", "None"],
+"answer": 2
+},
+{
+"id": 122,
+"chapter": "Mixed",
+"difficulty": "medium",
+"question": "Democracy requires:",
+"options": ["Free elections", "Participation", "Rule of law", "All"],
+"answer": 3
+},
+{
+"id": 123,
+"chapter": "Mixed",
+"difficulty": "hard",
+"question": "India's political system is:",
+"options": ["Complex", "Dynamic", "Inclusive", "All"],
+"answer": 3
+},
+{
+"id": 124,
+"chapter": "Mixed",
+"difficulty": "easy",
+"question": "Development improves:",
+"options": ["Standard of living", "War", "Conflict", "None"],
+"answer": 0
+},
+{
+"id": 125,
+"chapter": "Mixed",
+"difficulty": "medium",
+"question": "Reforms aim at:",
+"options": ["Growth", "Efficiency", "Equity", "All"],
+"answer": 3
+},
+{
+"id": 126,
+"chapter": "Mixed",
+"difficulty": "hard",
+"question": "Challenges include:",
+"options": ["Poverty", "Inequality", "Governance", "All"],
+"answer": 3
+},
+{
+"id": 127,
+"chapter": "Mixed",
+"difficulty": "easy",
+"question": "India is diverse in:",
+"options": ["Culture", "Language", "Religion", "All"],
+"answer": 3
+},
+{
+"id": 128,
+"chapter": "Mixed",
+"difficulty": "medium",
+"question": "Participation strengthens:",
+"options": ["Democracy", "War", "None", "None"],
+"answer": 0
+},
+{
+"id": 129,
+"chapter": "Mixed",
+"difficulty": "hard",
+"question": "Governance ensures:",
+"options": ["Development", "Stability", "Justice", "All"],
+"answer": 3
+},
+{
+"id": 130,
+"chapter": "Mixed",
+"difficulty": "easy",
+"question": "Rights ensure:",
+"options": ["Freedom", "Equality", "Justice", "All"],
+"answer": 3
+},
+{
+"id": 131,
+"chapter": "Mixed",
+"difficulty": "medium",
+"question": "Democracy requires:",
+"options": ["Institutions", "Participation", "Rule of law", "All"],
+"answer": 3
+},
+{
+"id": 132,
+"chapter": "Mixed",
+"difficulty": "hard",
+"question": "Political system includes:",
+"options": ["Institutions", "Processes", "Policies", "All"],
+"answer": 3
+},
+{
+"id": 133,
+"chapter": "Mixed",
+"difficulty": "easy",
+"question": "India is largest:",
+"options": ["Democracy", "Monarchy", "None", "None"],
+"answer": 0
+},
+{
+"id": 134,
+"chapter": "Mixed",
+"difficulty": "medium",
+"question": "Development needs:",
+"options": ["Growth", "Equity", "Sustainability", "All"],
+"answer": 3
+},
+{
+"id": 135,
+"chapter": "Mixed",
+"difficulty": "hard",
+"question": "Modern India requires:",
+"options": ["Reforms", "Governance", "Participation", "All"],
+"answer": 3
+},
+{
+"id": 136,
+"chapter": "Mixed",
+"difficulty": "easy",
+"question": "Citizens influence:",
+"options": ["Government", "Policy", "Elections", "All"],
+"answer": 3
+},
+{
+"id": 137,
+"chapter": "Mixed",
+"difficulty": "medium",
+"question": "Political awareness leads to:",
+"options": ["Participation", "Democracy", "Rights", "All"],
+"answer": 3
+},
+{
+"id": 138,
+"chapter": "Mixed",
+"difficulty": "hard",
+"question": "Strong democracy needs:",
+"options": ["Institutions", "Participation", "Accountability", "All"],
+"answer": 3
+},
+{
+"id": 139,
+"chapter": "Mixed",
+"difficulty": "easy",
+"question": "India follows constitution for:",
+"options": ["Governance", "Rights", "Law", "All"],
+"answer": 3
+},
+{
+"id": 140,
+"chapter": "Mixed",
+"difficulty": "medium",
+"question": "Governance ensures:",
+"options": ["Development", "Stability", "Justice", "All"],
+"answer": 3
+},
+{
+"id": 141,
+"chapter": "Mixed",
+"difficulty": "hard",
+"question": "India's future depends on:",
+"options": ["Development", "Unity", "Democracy", "All"],
+"answer": 3
+},
+{
+"id": 142,
+"chapter": "Mixed",
+"difficulty": "easy",
+"question": "Citizens rights include:",
+"options": ["Freedom", "Equality", "Justice", "All"],
+"answer": 3
+},
+{
+"id": 143,
+"chapter": "Mixed",
+"difficulty": "medium",
+"question": "Policies aim at:",
+"options": ["Growth", "Equity", "Development", "All"],
+"answer": 3
+},
+{
+"id": 144,
+"chapter": "Mixed",
+"difficulty": "hard",
+"question": "Governance challenges include:",
+"options": ["Corruption", "Inefficiency", "Inequality", "All"],
+"answer": 3
+},
+{
+"id": 145,
+"chapter": "Mixed",
+"difficulty": "easy",
+"question": "India is governed by:",
+"options": ["Constitution", "King", "None", "None"],
+"answer": 0
+},
+{
+"id": 146,
+"chapter": "Mixed",
+"difficulty": "medium",
+"question": "Democracy promotes:",
+"options": ["Participation", "Equality", "Justice", "All"],
+"answer": 3
+},
+{
+"id": 147,
+"chapter": "Mixed",
+"difficulty": "hard",
+"question": "Political system requires:",
+"options": ["Transparency", "Accountability", "Efficiency", "All"],
+"answer": 3
+},
+{
+"id": 148,
+"chapter": "Mixed",
+"difficulty": "easy",
+"question": "India’s unity depends on:",
+"options": ["Diversity", "Uniformity", "None", "None"],
+"answer": 0
+},
+{
+"id": 149,
+"chapter": "Mixed",
+"difficulty": "medium",
+"question": "Governance improves:",
+"options": ["Life", "Economy", "Society", "All"],
+"answer": 3
+},
+{
+"id": 150,
+"chapter": "Mixed",
+"difficulty": "hard",
+"question": "India’s strength is:",
+"options": ["Democracy", "Diversity", "Unity", "All"],
+"answer": 3
+}
+]

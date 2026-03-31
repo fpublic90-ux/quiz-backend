@@ -45,20 +45,38 @@ module.exports = (io, userSockets) => {
                 }
 
                 if (practiceLevel && category) {
-                    // Advance practice level if user performed well (e.g. perfect score to master)
-                    // We now expand practice levels to 10 minimum
-                    if (validatedScore >= 100) { 
+                    // Category-specific passing thresholds
+                    let threshold = 100;
+                    if (category === 'PSC') threshold = 50;
+                    else if (category === 'Student Center') threshold = 80;
+
+                    // Advance practice level and track mastered levels if user performed well
+                    if (validatedScore >= threshold) {
                         const existing = user.practiceLevels.get(category) || 0;
                         if (practiceLevel > existing) {
                             if (!update.$set) update.$set = {};
                             update.$set[`practiceLevels.${category}`] = practiceLevel;
                         }
+
+                        // Also update masteredLevels for UI badge ("COMPLETED")
+                        const levelNum = parseInt(practiceLevel);
+                        let mastered = user.masteredLevels.get(category) || [];
+                        if (!mastered.includes(levelNum)) {
+                            if (!update.$set) update.$set = {};
+                            mastered.push(levelNum);
+                            update.$set[`masteredLevels.${category}`] = mastered;
+                        }
                     }
                 }
 
                 // Practice Rewards: 10/10 correct (100+ score) -> 20 coins + 10 XP
-                const isPerfect = validatedScore >= 100;
-                const practiceRewards = isPerfect ? { coins: 20, xp: 10 } : { coins: 0, xp: 0 };
+                // Adjusted for PSC (5/10) and Student Center (8/10)
+                let isPassed = false;
+                if (category === 'PSC') isPassed = validatedScore >= 50;
+                else if (category === 'Student Center') isPassed = validatedScore >= 80;
+                else isPassed = validatedScore >= 100;
+
+                const practiceRewards = isPassed ? { coins: 20, xp: 10 } : { coins: 0, xp: 0 };
                 
                 if (!update.$inc) update.$inc = {};
                 update.$inc.coins = practiceRewards.coins;

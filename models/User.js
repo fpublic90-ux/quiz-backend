@@ -112,11 +112,17 @@ const userSchema = new mongoose.Schema({
         board: { type: String, default: null },
         class: { type: String, default: null },
         medium: { type: String, default: null },
-        selectedSubjects: { type: [String], default: [] }
+        selectedSubjects: { type: [String], default: [] },
+        favouriteSubjects: { type: [String], default: [] }
     },
     studentProgress: {
         type: Map,
         of: Number, // format: "Board|Class|Medium|Subject|Chapter" -> LastCompletedLevel
+        default: {}
+    },
+    masteredLevels: {
+        type: Map,
+        of: [Number], // Map of category names to arrays of mastered level numbers
         default: {}
     },
     createdAt: {

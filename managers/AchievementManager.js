@@ -81,6 +81,35 @@ class AchievementManager {
             }
         });
 
+        // 2. Track Level Mastery (Dynamic Thresholds)
+        if (room.level && room.category) {
+            const category = room.category;
+            const level = parseInt(room.level);
+
+            // Category-specific passing thresholds for mastering
+            let threshold = 100;
+            if (category === 'PSC') threshold = 50;
+            else if (category === 'Student Center') threshold = 80;
+            
+            if (roomPlayer.score >= threshold) {
+                // Ensure masteredLevels exists (it's a Map in the model)
+                if (!user.masteredLevels) user.masteredLevels = new Map();
+                
+                let masteredInCat = [];
+                if (typeof user.masteredLevels.get === 'function') {
+                    masteredInCat = user.masteredLevels.get(category) || [];
+                } else {
+                    masteredInCat = user.masteredLevels[category] || [];
+                }
+                
+                if (!masteredInCat.includes(level)) {
+                    masteredInCat.push(level);
+                    // Mark for update in RewardManager
+                    statsUpdate[`masteredLevels.${category}`] = masteredInCat;
+                }
+            }
+        }
+
         // 2. Evaluate all defined achievements
         ACHIEVEMENTS.forEach(achievement => {
             if (!unlockedIds.has(achievement.id) && achievement.condition(user, roomPlayer, room)) {

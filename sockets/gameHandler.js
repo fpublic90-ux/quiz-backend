@@ -643,7 +643,11 @@ function registerGameHandlers(io, socket, userSockets) {
     socket.on('invite_friend', async ({ targetUid, roomCode, hostName }) => {
         try {
             const targetUser = await User.findOne({ uid: targetUid }).select('allowInvitations');
-            if (targetUser && targetUser.allowInvitations === false) {
+            if (!targetUser) {
+                socket.emit('error', { message: 'Player not found or has deleted their account.' });
+                return;
+            }
+            if (targetUser.allowInvitations === false) {
                 socket.emit('error', { message: 'User has disabled game invitations.' });
                 return;
             }

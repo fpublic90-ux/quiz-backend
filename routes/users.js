@@ -7,7 +7,7 @@ module.exports = (io, userSockets) => {
     // Sync user profile (Create or Update)
     router.post('/sync', verifyToken, async (req, res) => {
         try {
-            const { uid, displayName, email, avatar } = req.body;
+            const { uid, displayName, email, avatar, studentInfo } = req.body;
 
             if (!uid || !email) {
                 return res.status(400).json({ message: 'UID and Email are required' });
@@ -19,6 +19,13 @@ module.exports = (io, userSockets) => {
                 // Update existing user
                 user.displayName = displayName || user.displayName;
                 user.avatar = avatar || user.avatar;
+                
+                // Merge or update student info to preserve favorites
+                if (studentInfo) {
+                    user.studentInfo = { ...user.studentInfo, ...studentInfo };
+                    user.markModified('studentInfo');
+                }
+                
                 await user.save();
             } else {
                 // Create new user
@@ -26,7 +33,8 @@ module.exports = (io, userSockets) => {
                     uid,
                     displayName: displayName || 'Guest Player',
                     email,
-                    avatar: avatar || 'default'
+                    avatar: avatar || 'default',
+                    studentInfo: studentInfo || {}
                 });
                 await user.save();
             }
@@ -208,6 +216,38 @@ module.exports = (io, userSockets) => {
             res.status(200).json(user);
         } catch (error) {
             console.error('Error updating settings:', error);
+            res.status(500).json({ message: 'Server error' });
+        }
+    });
+
+    // Toggle favorite subject
+    router.post('/toggle-favorite-subject', verifyToken, async (req, res) => {
+        try {
+            const { uid, subject } = req.body;
+            if (!uid || !subject) {
+                return res.status(400).json({ message: 'UID and subject are required' });
+            }
+
+            const user = await User.findOne({ uid });
+            if (!user) return res.status(404).json({ message: 'User not found' });
+
+            if (!user.studentInfo) user.studentInfo = {};
+            if (!user.studentInfo.favouriteSubjects) user.studentInfo.favouriteSubjects = [];
+
+            const index = user.studentInfo.favouriteSubjects.indexOf(subject);
+            if (index > -1) {
+                user.studentInfo.favouriteSubjects.splice(index, 1);
+            } else {
+                user.studentInfo.favouriteSubjects.push(subject);
+            }
+
+            // Explicitly mark as modified
+            user.markModified('studentInfo');
+            await user.save();
+            
+            res.status(200).json(user);
+        } catch (error) {
+            console.error('Error toggling favorite subject:', error);
             res.status(500).json({ message: 'Server error' });
         }
     });

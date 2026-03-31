@@ -20,7 +20,7 @@ router.get('/', async (req, res) => {
             query.board = { $exists: false };
             query.subject = { $exists: false };
             query.class = { $exists: false };
-            query.category = { $nin: ['Islamic', 'Kerala', 'SSLC', 'Kerala Padavali'] };
+            query.category = { $nin: ['Islamic', 'Kerala', 'SSLC', 'Kerala Padavali', 'PSC'] };
         }
         if (className) query.class = className;
         if (medium) query.medium = medium;
@@ -60,9 +60,11 @@ router.get('/', async (req, res) => {
             if (questions.length < requestedCount) {
                 const needed = requestedCount - questions.length;
                 const currentIds = questions.map(q => q._id);
-                // Fetch random from the same category
+                
+                // Try fetching random from the SAME subject/chapter first
+                const fallbackQuery = { ...deterministicQuery, _id: { $nin: currentIds } };
                 const fallbackQuestions = await Question.aggregate([
-                    { $match: { ...deterministicQuery, _id: { $nin: currentIds } } },
+                    { $match: fallbackQuery },
                     { $sample: { size: needed } }
                 ]);
                 questions = [...questions, ...fallbackQuestions];
@@ -151,8 +153,8 @@ router.get('/chapters', async (req, res) => {
         if (subject) query.subject = subject;
 
         const chapters = await Question.distinct('chapter', query);
-        // Filter out null/empty and sort
-        const filteredChapters = chapters.filter(c => c).sort();
+        // Filter out null/empty, trim, and deduplicate then sort
+        const filteredChapters = [...new Set(chapters.filter(c => c).map(c => c.trim()))].sort();
         res.json(filteredChapters);
     } catch (err) {
         console.error('Error fetching chapters:', err);
