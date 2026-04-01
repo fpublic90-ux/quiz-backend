@@ -1,59 +1,87 @@
 [
   {
     "subject": null,
-    "count": 31944
+    "count": 32294
   },
   {
-    "subject": "Mathematics",
+    "subject": "Maths",
     "count": 1068
   },
   {
-    "subject": "Social Science II",
+    "subject": "Biology",
+    "count": 1003
+  },
+  {
+    "subject": "Geography",
     "count": 965
   },
   {
-    "subject": "Biology",
-    "count": 759
+    "subject": "Physics 1",
+    "count": 823
   },
   {
-    "subject": "ICT",
+    "subject": "Chemistry 1",
+    "count": 818
+  },
+  {
+    "subject": "Computer Science",
     "count": 660
   },
   {
-    "subject": "Physics",
-    "count": 623
+    "subject": "Malayalam Adisthana Padavali",
+    "count": 471
   },
   {
-    "subject": "Chemistry",
-    "count": 618
+    "subject": "Business Studies 2",
+    "count": 400
   },
   {
     "subject": "English",
     "count": 399
   },
   {
-    "subject": "Social Science I",
+    "subject": "History",
     "count": 399
+  },
+  {
+    "subject": "Business Studies 1",
+    "count": 394
   },
   {
     "subject": "Physics 2",
     "count": 371
   },
   {
-    "subject": "Adisthana Padavali",
-    "count": 326
-  },
-  {
     "subject": "Hindi",
     "count": 326
   },
   {
-    "subject": "Kerala Padavali",
+    "subject": "Malayalam Kerala Padavali",
     "count": 296
+  },
+  {
+    "subject": "Microeconomics",
+    "count": 249
+  },
+  {
+    "subject": "Macroeconomics",
+    "count": 246
+  },
+  {
+    "subject": "Introducing Indian Society",
+    "count": 244
   },
   {
     "subject": "Arabic Oriental",
     "count": 238
+  },
+  {
+    "subject": "COMPUTER APPLICATIONS (Humanities)",
+    "count": 237
+  },
+  {
+    "subject": "COMPUTER APPLICATIONS (Commerce)",
+    "count": 229
   },
   {
     "subject": "Arabic Academic",
@@ -64,15 +92,15 @@
     "count": 210
   },
   {
-    "subject": "Business Studies 2",
+    "subject": "India: People and Economy",
+    "count": 203
+  },
+  {
+    "subject": "Computer Science 1",
     "count": 200
   },
   {
-    "subject": "Chemistry 1",
-    "count": 200
-  },
-  {
-    "subject": "Physics 1",
+    "subject": "Computer Science 2",
     "count": 200
   },
   {
@@ -80,8 +108,16 @@
     "count": 199
   },
   {
-    "subject": "Business Studies 1",
-    "count": 196
+    "subject": "Practical Work in Geography Part II",
+    "count": 193
+  },
+  {
+    "subject": "Contemporary World Politics",
+    "count": 174
+  },
+  {
+    "subject": "PHILOSOPHY",
+    "count": 159
   },
   {
     "subject": "Anthropology",
@@ -92,12 +128,40 @@
     "count": 150
   },
   {
-    "subject": "Malayalam Adisthana Padavali",
-    "count": 145
+    "subject": "Politics in India since Independence",
+    "count": 137
   },
   {
     "subject": "Chemistry 2",
     "count": 95
+  },
+  {
+    "subject": "History 2",
+    "count": 70
+  },
+  {
+    "subject": "History 3",
+    "count": 70
+  },
+  {
+    "subject": "History 1",
+    "count": 60
+  },
+  {
+    "subject": "Accountancy 1",
+    "count": 50
+  },
+  {
+    "subject": "Accountancy 2",
+    "count": 50
+  },
+  {
+    "subject": "Accountancy 3",
+    "count": 50
+  },
+  {
+    "subject": "Fundamentals of Human Geography",
+    "count": 50
   },
   {
     "subject": "General",
